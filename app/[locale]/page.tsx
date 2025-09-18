@@ -8,12 +8,12 @@ import CompressionSettings from '@/components/CompressionSettings';
 import CompressionResults from '@/components/CompressionResults';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getTranslations, getTranslationsSync } from '@/lib/translations';
+import { getTranslations, Translations } from '@/lib/translations';
 
 export default function Home({ params }: { params: { locale: string } }) {
   const { locale } = params;
   const [currentLanguage, setCurrentLanguage] = useState(locale);
-  const [translations, setTranslations] = useState<any>(null);
+  const [translations, setTranslations] = useState<Translations | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   
   // 当locale参数改变时，更新currentLanguage状态
