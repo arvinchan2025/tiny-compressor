@@ -13,6 +13,9 @@ interface LanguageSwitcherProps {
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
 ];
 
 export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: LanguageSwitcherProps) {
@@ -26,8 +29,19 @@ export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: 
   const handleLanguageChange = (languageCode: string) => {
     if (languageCode === currentLanguage) return;
     
+    // 防止重复点击
+    if (isOpen === false) return;
+    
+    // 先关闭下拉菜单
+    setIsOpen(false);
+    
     // 获取当前路径，移除语言前缀
-    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/';
+    let pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '');
+    
+    // 如果路径为空或者是根路径，确保有斜杠
+    if (!pathWithoutLocale || pathWithoutLocale === '') {
+      pathWithoutLocale = '/';
+    }
     
     // 导航到新语言路径
     // 英文使用根路径，其他语言使用语言前缀
@@ -35,14 +49,22 @@ export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: 
       ? pathWithoutLocale 
       : `/${languageCode}${pathWithoutLocale}`;
     
-    router.push(newPath);
-    
-    // 调用回调函数（如果提供）
-    if (onLanguageChange) {
-      onLanguageChange(languageCode);
-    }
-    
-    setIsOpen(false);
+    // 使用requestAnimationFrame确保DOM更新完成后再导航
+    requestAnimationFrame(() => {
+      // 再次使用setTimeout确保所有动画完成
+      setTimeout(() => {
+        try {
+          router.push(newPath);
+          
+          // 调用回调函数（如果提供）
+          if (onLanguageChange) {
+            onLanguageChange(languageCode);
+          }
+        } catch (error) {
+          console.error('Language switch error:', error);
+        }
+      }, 200);
+    });
   };
 
   useEffect(() => {
@@ -78,9 +100,10 @@ export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: 
         </motion.div>
       </button>
 
-      <AnimatePresence>
+      <AnimatePresence mode="wait" onExitComplete={() => {}}>
         {isOpen && (
           <motion.div
+            key="language-dropdown"
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}

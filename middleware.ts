@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // 支持的语言列表
-const locales = ['en', 'zh'];
+const locales = ['en', 'zh', 'es', 'de', 'fr'];
 const defaultLocale = 'en';
 
 export function middleware(request: NextRequest) {

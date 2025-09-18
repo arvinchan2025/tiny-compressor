@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Shield, Eye, Lock, Database, UserCheck, FileText } from 'lucide-react';
 import ClientHeader from '@/components/ClientHeader';
 import Footer from '@/components/Footer';
@@ -7,7 +8,36 @@ import { getTranslations } from '@/lib/translations';
 
 export default function PrivacyPolicy({ params }: { params: { locale: string } }) {
   const { locale } = params;
-  const translations = getTranslations(locale);
+  const [translations, setTranslations] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadTranslations = async () => {
+      try {
+        const trans = await getTranslations(locale);
+        setTranslations(trans);
+      } catch (error) {
+        console.error('Failed to load translations:', error);
+        const fallback = await getTranslations('en');
+        setTranslations(fallback);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    
+    loadTranslations();
+  }, [locale]);
+
+  if (isLoading || !translations) {
+    return (
+      <div className="min-h-screen gradient-bg flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
+          <p className="text-neutral-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
   
   return (
     <div className="min-h-screen gradient-bg">

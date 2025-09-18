@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 const inter = Inter({ subsets: ['latin'] });
 
 // 支持的语言列表
-const locales = ['en', 'zh'];
+const locales = ['en', 'zh', 'es', 'de', 'fr'];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -63,14 +63,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         ? '免费在线压缩图片！减少60-90%文件大小同时保持质量。'
         : 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality.',
     },
-    alternates: {
-      canonical: locale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${locale}`,
-      languages: {
-        'en': 'https://tinycompressor.com',
-        'zh': 'https://tinycompressor.com/zh',
-        'x-default': 'https://tinycompressor.com',
-      },
-    },
+           alternates: {
+             canonical: locale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${locale}`,
+             languages: {
+               'en': 'https://tinycompressor.com',
+               'zh': 'https://tinycompressor.com/zh',
+               'es': 'https://tinycompressor.com/es',
+               'de': 'https://tinycompressor.com/de',
+               'fr': 'https://tinycompressor.com/fr',
+               'x-default': 'https://tinycompressor.com',
+             },
+           },
   };
 }
 
@@ -111,11 +114,14 @@ export default function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <head>
-        {/* hreflang标签 */}
-        <link rel="alternate" hrefLang="en" href="https://tinycompressor.com/" />
-        <link rel="alternate" hrefLang="zh" href="https://tinycompressor.com/zh" />
-        <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
+             <head>
+               {/* hreflang标签 */}
+               <link rel="alternate" hrefLang="en" href="https://tinycompressor.com/" />
+               <link rel="alternate" hrefLang="zh" href="https://tinycompressor.com/zh" />
+               <link rel="alternate" hrefLang="es" href="https://tinycompressor.com/es" />
+               <link rel="alternate" hrefLang="de" href="https://tinycompressor.com/de" />
+               <link rel="alternate" hrefLang="fr" href="https://tinycompressor.com/fr" />
+               <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
         
         <script
           type="application/ld+json"

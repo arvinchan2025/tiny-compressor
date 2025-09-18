@@ -76,7 +76,7 @@ export default function CompressionResults({ results, onReset, translations }: C
         <div className="flex items-center space-x-2">
           <CheckCircle className="w-6 h-6 text-green-500" />
         <h2 className="text-2xl font-bold text-gray-900">
-          Compression Results
+          {translations.results.title}
         </h2>
         </div>
         <button
@@ -84,7 +84,7 @@ export default function CompressionResults({ results, onReset, translations }: C
           className="btn-secondary flex items-center space-x-2"
         >
           <RotateCcw className="w-4 h-4" />
-          <span>Compress More Images</span>
+          <span>{translations.results.compressMore}</span>
         </button>
       </div>
 
@@ -95,20 +95,20 @@ export default function CompressionResults({ results, onReset, translations }: C
             <div className="text-2xl font-bold text-gray-900">
               {formatFileSize(totalSavings.original)}
             </div>
-            <div className="text-sm text-gray-600">Original Size</div>
+            <div className="text-sm text-gray-600">{translations.results.originalSize}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-gray-900">
               {formatFileSize(totalSavings.compressed)}
             </div>
-            <div className="text-sm text-gray-600">Compressed Size</div>
+            <div className="text-sm text-gray-600">{translations.results.compressedSize}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-green-600 flex items-center justify-center space-x-1">
               <TrendingDown className="w-6 h-6" />
               <span>{totalCompressionRatio}%</span>
             </div>
-            <div className="text-sm text-gray-600">Space Saved</div>
+            <div className="text-sm text-gray-600">{translations.results.spaceSaved}</div>
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function CompressionResults({ results, onReset, translations }: C
                     className="btn-primary flex items-center space-x-2 text-sm px-3 py-2"
                   >
                     <Download className="w-4 h-4" />
-                    <span>Download</span>
+                    <span>{translations.results.download}</span>
                   </button>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function CompressionResults({ results, onReset, translations }: C
               {/* Size comparison with visual bar */}
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-gray-600">Original Size</span>
+                  <span className="text-gray-600">{translations.results.originalSize}</span>
                   <span className="font-medium text-gray-900">{formatFileSize(result.originalSize)}</span>
                 </div>
                 
@@ -160,7 +160,7 @@ export default function CompressionResults({ results, onReset, translations }: C
                 </div>
                 
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-gray-600">Compressed Size</span>
+                  <span className="text-gray-600">{translations.results.compressedSize}</span>
                   <span className="font-medium text-gray-900">{formatFileSize(result.compressedSize)}</span>
                 </div>
                 
@@ -190,7 +190,7 @@ export default function CompressionResults({ results, onReset, translations }: C
             className="btn-primary text-lg px-8 py-3 flex items-center justify-center space-x-2 mx-auto"
           >
             <Archive className="w-5 h-5" />
-            <span>Download All as ZIP</span>
+            <span>{translations.results.downloadAll}</span>
           </button>
         </div>
       )}

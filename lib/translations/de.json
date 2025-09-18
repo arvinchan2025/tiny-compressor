@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "about": "Über uns",
+    "language": "Sprache"
+  },
+  "hero": {
+    "title": "Komprimiere Bilder Sofort",
+    "subtitle": "Reduziere Dateigrößen ohne Qualitätsverlust. Schnell, sicher und völlig kostenlos.",
+    "cta": "Jetzt Komprimieren",
+    "trustedBy": "Vertraut von Tausenden von Benutzern weltweit"
+  },
+  "upload": {
+    "title": "Lade Deine Bilder Hoch",
+    "subtitle": "Ziehe deine Bilder hierher oder klicke zum Durchsuchen",
+    "dragActive": "Bilder hier ablegen",
+    "dragInactive": "Bilder hierher ziehen und ablegen",
+    "dragReject": "Ungültiger Dateityp",
+    "supportedFormats": "Unterstützt JPG, PNG, WebP und mehr",
+    "maxSize": "Max. Dateigröße: 10MB pro Bild",
+    "uploadedFiles": "Hochgeladene Dateien",
+    "removeFile": "Datei entfernen",
+    "ready": "Bereit"
+  },
+  "compression": {
+    "title": "Komprimierungseinstellungen",
+    "mode": {
+      "quick": "Schnellkomprimierung",
+      "custom": "Benutzerdefinierte Einstellungen"
+    },
+    "quickMode": {
+      "title": "Schnellkomprimierung",
+      "description": "Optimierte Einstellungen für die meisten Bilder. Perfektes Gleichgewicht zwischen Qualität und Dateigröße.",
+      "compress": "Jetzt Komprimieren",
+      "formatNote": "Behält das ursprüngliche Dateiformat bei"
+    },
+    "customMode": {
+      "title": "Benutzerdefinierte Einstellungen",
+      "quality": "Qualität",
+      "maxWidth": "Max. Breite",
+      "maxHeight": "Max. Höhe",
+      "format": "Ausgabeformat",
+      "compress": "Bilder Komprimieren",
+      "compressing": "Komprimiere...",
+      "qualityDescription": {
+        "low": "Maximale Komprimierung, niedrigste Qualität",
+        "medium": "Ausgewogene Komprimierung und Qualität",
+        "high": "Hohe Qualität, minimale Komprimierung"
+      },
+      "sizeDescription": {
+        "small": "Kleine Bilder, schnelles Laden",
+        "medium": "Moderate Größe, gute Qualität",
+        "large": "Große Bilder, maximale Qualität"
+      },
+      "formatDescription": {
+        "jpeg": "Verlustbehaftete Komprimierung, kleinere Datei",
+        "png": "Verlustfreie Komprimierung, unterstützt Transparenz",
+        "webp": "Modernes Format mit ausgezeichneter Komprimierung"
+      }
+    }
+  },
+  "results": {
+    "title": "Komprimierungsergebnisse",
+    "originalSize": "Ursprüngliche Größe",
+    "compressedSize": "Komprimierte Größe",
+    "savings": "Platz Gespart",
+    "download": "Herunterladen",
+    "downloadAll": "Alle als ZIP Herunterladen",
+    "compressMore": "Mehr Bilder Komprimieren",
+    "compressionRatio": "Komprimierungsverhältnis",
+    "spaceSaved": "Platz Gespart"
+  },
+  "features": {
+    "title": "Warum TinyCompressor Wählen?",
+    "fast": {
+      "title": "Blitzschnell",
+      "description": "Sofortige Komprimierung in deinem Browser ohne Wartezeiten"
+    },
+    "secure": {
+      "title": "100% Privat",
+      "description": "Deine Bilder verlassen nie dein Gerät"
+    },
+    "quality": {
+      "title": "Hohe Qualität",
+      "description": "Behalte die Bildqualität bei und reduziere die Dateigröße erheblich"
+    },
+    "free": {
+      "title": "Völlig Kostenlos",
+      "description": "Keine Registrierung erforderlich, keine versteckten Kosten, keine Limits"
+    }
+  },
+  "howItWorks": {
+    "title": "Wie Es Funktioniert",
+    "step1": {
+      "title": "Bilder Hochladen",
+      "description": "Ziehe deine Bilder hierher oder klicke zum Durchsuchen. Unterstützt JPG, PNG, WebP und weitere Formate."
+    },
+    "step2": {
+      "title": "Einstellungen Anpassen",
+      "description": "Passe Komprimierungsqualität, Dimensionen und Ausgabeformat nach deinen Bedürfnissen an."
+    },
+    "step3": {
+      "title": "Ergebnisse Herunterladen",
+      "description": "Lade einzelne Dateien herunter oder erhalte alle komprimierten Bilder in einer praktischen ZIP-Datei."
+    }
+  },
+  "formats": {
+    "title": "Unterstützte Bildformate",
+    "jpeg": {
+      "title": "JPEG/JPG",
+      "description": "Am besten für Fotos und komplexe Bilder mit vielen Farben"
+    },
+    "png": {
+      "title": "PNG",
+      "description": "Ideal für Grafiken mit Transparenz und festen Farben"
+    },
+    "webp": {
+      "title": "WebP",
+      "description": "Modernes Format mit ausgezeichneter Komprimierung und Qualität"
+    },
+    "gif": {
+      "title": "GIF/BMP",
+      "description": "Unterstützung für animierte GIFs und Bitmap-Bilder"
+    }
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "questions": {
+      "privacy": {
+        "question": "Sind meine Daten sicher und privat?",
+        "answer": "Ja, absolut! Die gesamte Bildverarbeitung erfolgt lokal in deinem Browser. Deine Bilder werden niemals auf unsere Server hochgeladen, was vollständige Privatsphäre und Sicherheit gewährleistet."
+      },
+      "fileSize": {
+        "question": "Wie groß ist die maximale Dateigröße, die ich komprimieren kann?",
+        "answer": "Du kannst Bilder bis zu 10MB komprimieren. Es gibt keine Begrenzung für die Anzahl der Bilder, die du in einer Sitzung verarbeiten kannst."
+      },
+      "compression": {
+        "question": "Wie viel kann ich die Dateigröße reduzieren?",
+        "answer": "Komprimierungsverhältnisse variieren je nach Bildtyp und Einstellungen, aber typischerweise kannst du die Dateigröße um 60-90% reduzieren und dabei eine gute visuelle Qualität beibehalten."
+      },
+      "account": {
+        "question": "Muss ich ein Konto erstellen?",
+        "answer": "Kein Konto erforderlich! TinyCompressor ist völlig kostenlos zu verwenden, ohne Registrierung, ohne versteckte Kosten und ohne Limits."
+      },
+      "browsers": {
+        "question": "Welche Browser werden unterstützt?",
+        "answer": "TinyCompressor funktioniert in allen modernen Browsern einschließlich Chrome, Firefox, Safari und Edge. Es ist auch vollständig für mobile Geräte optimiert."
+      }
+    }
+  },
+  "useCases": {
+    "title": "Perfekt Für",
+    "webDev": {
+      "title": "Webentwicklung",
+      "description": "Optimiere Bilder für Websites, um Ladegeschwindigkeit und Benutzererfahrung zu verbessern"
+    },
+    "mobile": {
+      "title": "Mobile Apps",
+      "description": "Reduziere App-Größe durch Komprimierung von Bildern bei gleichzeitiger Qualitätserhaltung"
+    },
+    "social": {
+      "title": "Soziale Medien",
+      "description": "Bereite Bilder für soziale Plattformen mit optimalen Dateigrößen vor"
+    },
+    "email": {
+      "title": "E-Mail-Anhänge",
+      "description": "Sende Bilder per E-Mail ohne Größenprobleme"
+    },
+    "storage": {
+      "title": "Fotospeicherung",
+      "description": "Spare Speicherplatz durch Komprimierung von Fotosammlungen"
+    },
+    "ecommerce": {
+      "title": "E-Commerce",
+      "description": "Optimiere Produktbilder für Online-Shops und Marktplätze"
+    }
+  },
+  "cta": {
+    "title": "Bereit, Deine Bilder zu Komprimieren?",
+    "subtitle": "Schließe dich Tausenden von Benutzern an, die TinyCompressor für ihre Bildoptimierungsbedürfnisse vertrauen",
+    "button": "Jetzt Komprimieren"
+  },
+  "footer": {
+    "description": "TinyCompressor - Das beste kostenlose Online-Bildkomprimierungstool",
+    "quickLinks": "Schnelle Links",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "© 2025 TinyCompressor. Alle Rechte vorbehalten."
+  },
+  "perfectFor": {
+    "title": "Perfekt Für",
+    "webDevelopers": {
+      "title": "Webentwickler",
+      "description": "Optimiere Bilder für Websites, um Ladegeschwindigkeit und Benutzererfahrung zu verbessern."
+    },
+    "designers": {
+      "title": "Designer",
+      "description": "Reduziere Dateigrößen von Designs bei gleichzeitiger visueller Qualitätserhaltung."
+    },
+    "socialMedia": {
+      "title": "Soziale Medien",
+      "description": "Bereite Bilder für soziale Plattformen mit optimalen Dateigrößen vor."
+    },
+    "emailAttachments": {
+      "title": "E-Mail-Anhänge",
+      "description": "Sende Bilder per E-Mail ohne Größenlimit-Probleme."
+    },
+    "ecommerce": {
+      "title": "E-Commerce",
+      "description": "Optimiere Produktbilder für Online-Shops und Marktplätze."
+    },
+    "photoStorage": {
+      "title": "Fotospeicherung",
+      "description": "Spare Speicherplatz durch Komprimierung von Fotosammlungen."
+    }
+  }
+}

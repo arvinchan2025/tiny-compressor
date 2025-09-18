@@ -159,9 +159,10 @@ export default function ImageUploader({ onFilesUploaded, disabled, translations 
       )}
 
       {/* Uploaded Files */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {uploadedFiles.length > 0 && (
           <motion.div
+            key="uploaded-files"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}

@@ -7,7 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "translations:generate": "node scripts/translation-generator.js generate",
+    "translations:validate": "node scripts/translation-generator.js validate",
+    "translations:generate-all": "node scripts/translation-generator.js generate all"
   },
   "dependencies": {
     "@types/node": "^20.0.0",
