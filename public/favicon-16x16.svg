@@ -1,0 +1,58 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 主渐变 - 与主Logo保持一致 -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0284c7;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- 箭头渐变 -->
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 背景光晕效果 -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景光晕 -->
+  <circle cx="8" cy="8" r="7" fill="url(#glowGradient)"/>
+  
+  <!-- 主文档图标 -->
+  <path d="M3 4C3 3.44772 3.44772 3 4 3H10C10.5523 3 11 3.44772 11 4V10C11 10.5523 10.5523 11 10 11H4C3.44772 11 3 10.5523 3 10V4Z" 
+        fill="url(#mainGradient)" 
+        stroke="url(#mainGradient)" 
+        stroke-width="0.2"
+        rx="0.8"
+        ry="0.8"/>
+  
+  <!-- 折叠角 -->
+  <path d="M9 3L11 5V4C11 3.44772 10.5523 3 10 3H9Z" 
+        fill="url(#mainGradient)" 
+        fill-opacity="0.8"/>
+  
+  <!-- 压缩箭头 -->
+  <path d="M5 7L7 7M6 5L7 7L6 9" 
+        stroke="url(#arrowGradient)" 
+        stroke-width="1.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- 数据流粒子 - 简化设计适应小尺寸 -->
+  <circle cx="4.5" cy="6" r="0.6" fill="url(#mainGradient)" opacity="0.9"/>
+  <circle cx="3.5" cy="7" r="0.5" fill="url(#mainGradient)" opacity="0.7"/>
+  <circle cx="5" cy="9" r="0.4" fill="url(#mainGradient)" opacity="0.5"/>
+  
+  <circle cx="9.5" cy="6" r="0.6" fill="url(#mainGradient)" opacity="0.9"/>
+  <circle cx="10.5" cy="7" r="0.5" fill="url(#mainGradient)" opacity="0.7"/>
+  <circle cx="10" cy="9" r="0.4" fill="url(#mainGradient)" opacity="0.5"/>
+  
+  <!-- 装饰粒子 -->
+  <circle cx="8" cy="5" r="0.3" fill="url(#arrowGradient)" opacity="0.6"/>
+  <circle cx="8" cy="10" r="0.25" fill="url(#arrowGradient)" opacity="0.4"/>
+</svg>

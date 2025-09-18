@@ -1,0 +1,65 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 主渐变 - 使用Tailwind primary色彩系统 -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0284c7;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- 箭头渐变 - 更亮的蓝色调 -->
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 背景光晕效果 -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- 阴影效果 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0ea5e9" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景光晕 -->
+  <circle cx="20" cy="20" r="18" fill="url(#glowGradient)"/>
+  
+  <!-- 主文档图标 - 使用更现代的圆角设计 -->
+  <path d="M8 10C8 8.34315 9.34315 7 11 7H25C26.6569 7 28 8.34315 28 10V24C28 25.6569 26.6569 27 25 27H11C9.34315 27 8 25.6569 8 24V10Z" 
+        fill="url(#mainGradient)" 
+        stroke="url(#mainGradient)" 
+        stroke-width="0.5"
+        rx="2"
+        ry="2"
+        filter="url(#shadow)"/>
+  
+  <!-- 折叠角 - 更精致的处理 -->
+  <path d="M23 7L28 12V10C28 8.34315 26.6569 7 25 7H23Z" 
+        fill="url(#mainGradient)" 
+        fill-opacity="0.8"/>
+  
+  <!-- 压缩箭头 - 更现代的设计 -->
+  <path d="M13 18L19 18M16 15L19 18L16 21" 
+        stroke="url(#arrowGradient)" 
+        stroke-width="2.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#shadow)"/>
+  
+  <!-- 数据流粒子 - 重新设计为更现代的流动效果 -->
+  <circle cx="11" cy="15" r="1.5" fill="url(#mainGradient)" opacity="0.9"/>
+  <circle cx="9" cy="18" r="1.2" fill="url(#mainGradient)" opacity="0.7"/>
+  <circle cx="12" cy="22" r="1" fill="url(#mainGradient)" opacity="0.5"/>
+  
+  <circle cx="25" cy="15" r="1.5" fill="url(#mainGradient)" opacity="0.9"/>
+  <circle cx="27" cy="18" r="1.2" fill="url(#mainGradient)" opacity="0.7"/>
+  <circle cx="26" cy="22" r="1" fill="url(#mainGradient)" opacity="0.5"/>
+  
+  <!-- 额外的装饰粒子 -->
+  <circle cx="20" cy="12" r="0.8" fill="url(#arrowGradient)" opacity="0.6"/>
+  <circle cx="20" cy="25" r="0.6" fill="url(#arrowGradient)" opacity="0.4"/>
+</svg>

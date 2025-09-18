@@ -1,0 +1,73 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 背景渐变 - 使用Tailwind primary色彩系统 -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e0f2fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bae6fd;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 主文档渐变 -->
+    <linearGradient id="doc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0284c7;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- 箭头渐变 -->
+    <linearGradient id="arrow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影效果 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0ea5e9" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆角矩形 - iOS风格 -->
+  <rect x="10" y="10" width="160" height="160" rx="40" ry="40" fill="url(#bg)"/>
+  
+  <!-- 主文档图标 -->
+  <path d="M45 50C45 45.5817 48.5817 42 53 42H127C131.418 42 135 45.5817 135 50V130C135 134.418 131.418 138 127 138H53C48.5817 138 45 134.418 45 130V50Z" 
+        fill="url(#doc)" 
+        stroke="url(#doc)" 
+        stroke-width="2"
+        rx="8"
+        ry="8"
+        filter="url(#shadow)"/>
+  
+  <!-- 折叠角 -->
+  <path d="M90 42L135 87V50C135 45.5817 131.418 42 127 42H90Z" 
+        fill="url(#doc)" 
+        fill-opacity="0.8"/>
+  
+  <!-- 压缩箭头 -->
+  <path d="M68 90L108 90M88 78L108 90L88 102" 
+        stroke="url(#arrow)" 
+        stroke-width="8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#shadow)"/>
+  
+  <!-- 数据流粒子 - 重新设计为更现代的流动效果 -->
+  <circle cx="56" cy="73" r="6" fill="url(#doc)" opacity="0.9"/>
+  <circle cx="50" cy="85" r="5" fill="url(#doc)" opacity="0.7"/>
+  <circle cx="62" cy="107" r="4" fill="url(#doc)" opacity="0.5"/>
+  
+  <circle cx="96" cy="73" r="6" fill="url(#doc)" opacity="0.9"/>
+  <circle cx="107" cy="85" r="5" fill="url(#doc)" opacity="0.7"/>
+  <circle cx="101" cy="107" r="4" fill="url(#doc)" opacity="0.5"/>
+  
+  <!-- 装饰粒子 -->
+  <circle cx="90" cy="60" r="3" fill="url(#arrow)" opacity="0.6"/>
+  <circle cx="90" cy="120" r="2.5" fill="url(#arrow)" opacity="0.4"/>
+  
+  <!-- 额外的流动效果粒子 -->
+  <circle cx="75" cy="65" r="2" fill="url(#arrow)" opacity="0.5"/>
+  <circle cx="105" cy="65" r="2" fill="url(#arrow)" opacity="0.5"/>
+  <circle cx="75" cy="115" r="1.5" fill="url(#arrow)" opacity="0.3"/>
+  <circle cx="105" cy="115" r="1.5" fill="url(#arrow)" opacity="0.3"/>
+</svg>
+
