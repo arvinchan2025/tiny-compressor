@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { generateAlternatesConfig, generateHreflangTags } from '../lib/i18n';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,17 +34,7 @@ export const metadata: Metadata = {
     title: 'TinyCompressor - Free Online Image Compression Tool',
     description: 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality.',
   },
-         alternates: {
-           canonical: 'https://tinycompressor.com',
-           languages: {
-             'en': 'https://tinycompressor.com',
-             'zh': 'https://tinycompressor.com/zh',
-             'es': 'https://tinycompressor.com/es',
-             'de': 'https://tinycompressor.com/de',
-             'fr': 'https://tinycompressor.com/fr',
-             'x-default': 'https://tinycompressor.com',
-           },
-         },
+         alternates: generateAlternatesConfig(),
 };
 
 export default function RootLayout({
@@ -76,7 +67,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html>
       <head>
         {/* Favicon */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -85,11 +76,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
         
         {/* hreflang标签 */}
-        <link rel="alternate" hrefLang="en" href="https://tinycompressor.com/" />
-        <link rel="alternate" hrefLang="zh" href="https://tinycompressor.com/zh" />
-        <link rel="alternate" hrefLang="es" href="https://tinycompressor.com/es" />
-        <link rel="alternate" hrefLang="de" href="https://tinycompressor.com/de" />
-        <link rel="alternate" hrefLang="fr" href="https://tinycompressor.com/fr" />
+        {generateHreflangTags().map(({ hrefLang, href }) => (
+          <link key={hrefLang} rel="alternate" hrefLang={hrefLang} href={href} />
+        ))}
         <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
         
         {/* Sitemap */}

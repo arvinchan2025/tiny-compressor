@@ -41,6 +41,14 @@
     <priority>1.0</priority>
   </url>
   
+  <!-- 主页 - 阿拉伯语版本 -->
+  <url>
+    <loc>https://tinycompressor.com/ar</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
   <!-- 隐私政策 - 英语版本 -->
   <url>
     <loc>https://tinycompressor.com/privacy</loc>
@@ -116,6 +124,22 @@
   <!-- 服务条款 - 法语版本 -->
   <url>
     <loc>https://tinycompressor.com/fr/terms</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 隐私政策 - 阿拉伯语版本 -->
+  <url>
+    <loc>https://tinycompressor.com/ar/privacy</loc>
+    <lastmod>2025-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 服务条款 - 阿拉伯语版本 -->
+  <url>
+    <loc>https://tinycompressor.com/ar/terms</loc>
     <lastmod>2025-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

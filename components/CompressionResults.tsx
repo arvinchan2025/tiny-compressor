@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Download, RotateCcw, CheckCircle, TrendingDown, Archive } from 'lucide-react';
-import { Translations } from '@/lib/translations';
+import { Translations } from '@/lib/i18n';
 import JSZip from 'jszip';
 
 interface CompressionResultsProps {

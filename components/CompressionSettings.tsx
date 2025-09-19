@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Settings, Zap, Wand2, Sliders } from 'lucide-react';
 import imageCompression from 'browser-image-compression';
-import { Translations } from '@/lib/translations';
+import { Translations } from '@/lib/i18n';
 
 interface CompressionSettingsProps {
   settings: {
@@ -146,14 +146,14 @@ export default function CompressionSettings({
         </div>
       </div>
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="popLayout">
         {compressionMode === 'quick' ? (
           <motion.div
             key="quick"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
             className="space-y-6"
           >
             {/* Quick Mode */}

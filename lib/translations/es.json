@@ -1,4 +1,13 @@
 {
+  "metadata": {
+    "title": "TinyCompressor - Herramienta Gratuita de Compresión de Imágenes | Comprimir JPG, PNG, WebP",
+    "description": "¡Comprime imágenes en línea gratis! Reduce el tamaño de archivos en 60-90% manteniendo la calidad. Soporta formatos JPG, PNG, WebP. No requiere registro. Rápido, seguro y completamente privado.",
+    "keywords": "compresión de imágenes, comprimir imágenes, reducir tamaño de archivo, herramienta en línea, gratis, compresión JPG, compresión PNG, compresión WebP, optimizador de imágenes, compresión de fotos, compresión por lotes, privacidad, seguro",
+    "openGraphTitle": "TinyCompressor - Herramienta Gratuita de Compresión de Imágenes",
+    "openGraphDescription": "¡Comprime imágenes en línea gratis! Reduce el tamaño de archivos en 60-90% manteniendo la calidad. Soporta formatos JPG, PNG, WebP. No requiere registro.",
+    "twitterTitle": "TinyCompressor - Herramienta Gratuita de Compresión de Imágenes",
+    "twitterDescription": "¡Comprime imágenes en línea gratis! Reduce el tamaño de archivos en 60-90% manteniendo la calidad."
+  },
   "nav": {
     "features": "Características",
     "about": "Acerca de",

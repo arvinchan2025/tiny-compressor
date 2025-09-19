@@ -1,4 +1,13 @@
 {
+  "metadata": {
+    "title": "TinyCompressor - 免费在线图片压缩工具 | 压缩 JPG、PNG、WebP",
+    "description": "免费在线压缩图片！减少60-90%文件大小同时保持质量。支持JPG、PNG、WebP格式。无需注册。快速、安全、完全私密。",
+    "keywords": "图片压缩, 压缩图片, 减少文件大小, 在线工具, 免费, JPG压缩, PNG压缩, WebP压缩, 图片优化, 照片压缩, 批量压缩, 隐私, 安全",
+    "openGraphTitle": "TinyCompressor - 免费在线图片压缩工具",
+    "openGraphDescription": "免费在线压缩图片！减少60-90%文件大小同时保持质量。支持JPG、PNG、WebP格式。无需注册。",
+    "twitterTitle": "TinyCompressor - 免费在线图片压缩工具",
+    "twitterDescription": "免费在线压缩图片！减少60-90%文件大小同时保持质量。"
+  },
   "nav": {
     "features": "功能",
     "about": "关于",

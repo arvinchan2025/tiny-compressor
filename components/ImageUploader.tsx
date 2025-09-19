@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useDropzone, FileRejection } from 'react-dropzone';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Upload, Image as ImageIcon, X, CheckCircle, AlertCircle } from 'lucide-react';
-import { Translations } from '@/lib/translations';
+import { Translations } from '@/lib/i18n';
 
 interface ImageUploaderProps {
   onFilesUploaded: (files: File[]) => void;
@@ -158,14 +158,14 @@ export default function ImageUploader({ onFilesUploaded, disabled, translations 
       )}
 
       {/* Uploaded Files */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="popLayout">
         {uploadedFiles.length > 0 && (
           <motion.div
             key="uploaded-files"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
             className="space-y-4"
           >
             <h3 className="text-lg font-semibold text-gray-700">

@@ -8,38 +8,68 @@ import CompressionSettings from '@/components/CompressionSettings';
 import CompressionResults from '@/components/CompressionResults';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getTranslations, Translations } from '@/lib/translations';
+import { getTranslations } from '@/lib/translations';
+import { Translations } from '@/lib/i18n';
+import { createTranslationAccessor } from '@/lib/safe-translations';
 
 export default function Home({ params }: { params: { locale: string } }) {
   const { locale } = params;
-  const [currentLanguage, setCurrentLanguage] = useState(locale);
   const [translations, setTranslations] = useState<Translations | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   
-  // 当locale参数改变时，更新currentLanguage状态
-  useEffect(() => {
-    setCurrentLanguage(locale);
-  }, [locale]);
+  // 直接使用locale，避免额外的状态管理
+  const currentLanguage = locale;
   
   // 异步加载翻译
   useEffect(() => {
+    let isMounted = true;
+    
     const loadTranslations = async () => {
+      if (!isMounted) return;
+      
+      console.log(`Loading translations for locale: ${locale}`);
       setIsLoading(true);
+      
       try {
-        const trans = await getTranslations(currentLanguage);
-        setTranslations(trans);
+        const trans = await getTranslations(locale);
+        console.log(`Translations loaded for ${locale}:`, trans ? 'Success' : 'Failed');
+        
+        if (isMounted) {
+          setTranslations(trans);
+        }
       } catch (error) {
-        console.error('Failed to load translations:', error);
+        console.error(`Failed to load translations for ${locale}:`, error);
         // 回退到英语
-        const fallback = await getTranslations('en');
-        setTranslations(fallback);
+        try {
+          console.log('Falling back to English translations...');
+          const fallback = await getTranslations('en');
+          console.log('Fallback translations loaded:', fallback ? 'Success' : 'Failed');
+          
+          if (isMounted) {
+            setTranslations(fallback);
+          }
+        } catch (fallbackError) {
+          console.error('Failed to load fallback translations:', fallbackError);
+          // 如果连英语都加载失败，设置一个基本的空翻译对象
+          if (isMounted) {
+            setTranslations(null);
+            // 保持加载状态，避免渲染错误
+            setIsLoading(true);
+          }
+        }
       } finally {
-        setIsLoading(false);
+        if (isMounted) {
+          setIsLoading(false);
+        }
       }
     };
     
     loadTranslations();
-  }, [currentLanguage]);
+    
+    return () => {
+      isMounted = false;
+    };
+  }, [locale]); // 直接使用locale作为依赖
   
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
   const [compressedFiles, setCompressedFiles] = useState<{ file: File; originalSize: number; compressedSize: number }[]>([]);
@@ -84,6 +114,9 @@ export default function Home({ params }: { params: { locale: string } }) {
     );
   }
 
+  // 创建安全的翻译访问器
+  const t = createTranslationAccessor(translations);
+
   // FAQ结构化数据
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -91,42 +124,42 @@ export default function Home({ params }: { params: { locale: string } }) {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": translations.faq.questions.privacy.question,
+        "name": t.faq.questions.privacy.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": translations.faq.questions.privacy.answer
+          "text": t.faq.questions.privacy.answer
         }
       },
       {
         "@type": "Question",
-        "name": translations.faq.questions.fileSize.question,
+        "name": t.faq.questions.fileSize.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": translations.faq.questions.fileSize.answer
+          "text": t.faq.questions.fileSize.answer
         }
       },
       {
         "@type": "Question",
-        "name": translations.faq.questions.compression.question,
+        "name": t.faq.questions.compression.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": translations.faq.questions.compression.answer
+          "text": t.faq.questions.compression.answer
         }
       },
       {
         "@type": "Question",
-        "name": translations.faq.questions.account.question,
+        "name": t.faq.questions.account.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": translations.faq.questions.account.answer
+          "text": t.faq.questions.account.answer
         }
       },
       {
         "@type": "Question",
-        "name": translations.faq.questions.browsers.question,
+        "name": t.faq.questions.browsers.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": translations.faq.questions.browsers.answer
+          "text": t.faq.questions.browsers.answer
         }
       }
     ]
@@ -142,7 +175,11 @@ export default function Home({ params }: { params: { locale: string } }) {
       
       <Header 
         currentLanguage={currentLanguage}
-        onLanguageChange={setCurrentLanguage}
+        onLanguageChange={(lang) => {
+          // 语言切换由路由处理，这里不需要状态更新
+          const newPath = lang === 'en' ? '/' : `/${lang}`;
+          window.location.href = newPath;
+        }}
       />
       
       <main className="container mx-auto px-4 py-8">
@@ -154,10 +191,10 @@ export default function Home({ params }: { params: { locale: string } }) {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-4 sm:mb-6 px-4">
-            {translations.hero.title}
+            {t.hero.title}
           </h1>
           <p className="text-lg sm:text-xl text-neutral-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-            {translations.hero.subtitle}
+            {t.hero.subtitle}
           </p>
           <motion.button
             className="btn-primary text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4"
@@ -165,7 +202,7 @@ export default function Home({ params }: { params: { locale: string } }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            {translations.hero.cta}
+            {t.hero.cta}
           </motion.button>
         </motion.section>
 
@@ -181,7 +218,7 @@ export default function Home({ params }: { params: { locale: string } }) {
             <ImageUploader 
               onFilesUploaded={handleFilesUploaded}
               disabled={isCompressing}
-              translations={translations}
+              translations={t as any}
             />
           </div>
         </motion.section>
@@ -202,7 +239,7 @@ export default function Home({ params }: { params: { locale: string } }) {
                 isCompressing={isCompressing}
                 files={uploadedFiles}
                 onCompressionComplete={handleCompressionComplete}
-                translations={translations}
+                translations={t as any}
               />
             </div>
           </motion.section>
@@ -220,7 +257,7 @@ export default function Home({ params }: { params: { locale: string } }) {
               <CompressionResults
                 results={compressedFiles}
                 onReset={handleReset}
-                translations={translations}
+                translations={t as any}
               />
             </div>
           </motion.section>
@@ -235,7 +272,7 @@ export default function Home({ params }: { params: { locale: string } }) {
         >
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-neutral-900 mb-8 sm:mb-12 md:mb-16">
-              {translations.features.title}
+              {t.features.title}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               <motion.div 
@@ -244,8 +281,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Zap className="w-10 h-10 sm:w-12 sm:h-12 text-primary-600 mx-auto mb-3 sm:mb-4" />
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">{translations.features.fast.title}</h3>
-                <p className="text-sm sm:text-base text-neutral-600">{translations.features.fast.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{t.features.fast.title}</h3>
+                <p className="text-sm sm:text-base text-neutral-600">{t.features.fast.description}</p>
               </motion.div>
               
               <motion.div 
@@ -254,8 +291,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Shield className="w-10 h-10 sm:w-12 sm:h-12 text-primary-600 mx-auto mb-3 sm:mb-4" />
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">{translations.features.secure.title}</h3>
-                <p className="text-sm sm:text-base text-neutral-600">{translations.features.secure.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{t.features.secure.title}</h3>
+                <p className="text-sm sm:text-base text-neutral-600">{t.features.secure.description}</p>
               </motion.div>
               
               <motion.div 
@@ -264,8 +301,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Star className="w-10 h-10 sm:w-12 sm:h-12 text-primary-600 mx-auto mb-3 sm:mb-4" />
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">{translations.features.quality.title}</h3>
-                <p className="text-sm sm:text-base text-neutral-600">{translations.features.quality.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{t.features.quality.title}</h3>
+                <p className="text-sm sm:text-base text-neutral-600">{t.features.quality.description}</p>
               </motion.div>
               
               <motion.div 
@@ -274,8 +311,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Gift className="w-10 h-10 sm:w-12 sm:h-12 text-primary-600 mx-auto mb-3 sm:mb-4" />
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">{translations.features.free.title}</h3>
-                <p className="text-sm sm:text-base text-neutral-600">{translations.features.free.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{t.features.free.title}</h3>
+                <p className="text-sm sm:text-base text-neutral-600">{t.features.free.description}</p>
               </motion.div>
             </div>
           </div>
@@ -290,7 +327,7 @@ export default function Home({ params }: { params: { locale: string } }) {
         >
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12 md:mb-16">
-              {translations.howItWorks.title}
+              {t.howItWorks.title}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               <motion.div 
@@ -301,8 +338,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 <div className="bg-primary-100 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <Upload className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">{translations.howItWorks.step1.title}</h3>
-                <p className="text-sm sm:text-base text-gray-600">{translations.howItWorks.step1.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{t.howItWorks.step1.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{t.howItWorks.step1.description}</p>
               </motion.div>
               
               <motion.div 
@@ -313,8 +350,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 <div className="bg-primary-100 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <Settings className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">{translations.howItWorks.step2.title}</h3>
-                <p className="text-sm sm:text-base text-gray-600">{translations.howItWorks.step2.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{t.howItWorks.step2.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{t.howItWorks.step2.description}</p>
               </motion.div>
               
               <motion.div 
@@ -325,8 +362,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 <div className="bg-primary-100 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <Download className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">{translations.howItWorks.step3.title}</h3>
-                <p className="text-sm sm:text-base text-gray-600">{translations.howItWorks.step3.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{t.howItWorks.step3.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{t.howItWorks.step3.description}</p>
               </motion.div>
             </div>
           </div>
@@ -341,31 +378,31 @@ export default function Home({ params }: { params: { locale: string } }) {
         >
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
-              {translations.formats.title}
+              {t.formats.title}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="card text-center">
                 <FileImage className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">{translations.formats.jpeg.title}</h3>
-                <p className="text-gray-600 text-sm">{translations.formats.jpeg.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{t.formats.jpeg.title}</h3>
+                <p className="text-gray-600 text-sm">{t.formats.jpeg.description}</p>
               </div>
               
               <div className="card text-center">
                 <FileImage className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">{translations.formats.png.title}</h3>
-                <p className="text-gray-600 text-sm">{translations.formats.png.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{t.formats.png.title}</h3>
+                <p className="text-gray-600 text-sm">{t.formats.png.description}</p>
               </div>
               
               <div className="card text-center">
                 <FileImage className="w-12 h-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">{translations.formats.webp.title}</h3>
-                <p className="text-gray-600 text-sm">{translations.formats.webp.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{t.formats.webp.title}</h3>
+                <p className="text-gray-600 text-sm">{t.formats.webp.description}</p>
               </div>
               
               <div className="card text-center">
                 <FileImage className="w-12 h-12 text-orange-600 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">{translations.formats.gif.title}</h3>
-                <p className="text-gray-600 text-sm">{translations.formats.gif.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{t.formats.gif.title}</h3>
+                <p className="text-gray-600 text-sm">{t.formats.gif.description}</p>
               </div>
             </div>
           </div>
@@ -380,7 +417,7 @@ export default function Home({ params }: { params: { locale: string } }) {
         >
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12 md:mb-16">
-              {translations.faq.title}
+              {t.faq.title}
             </h2>
             <div className="space-y-4 sm:space-y-6">
               <motion.div 
@@ -390,10 +427,10 @@ export default function Home({ params }: { params: { locale: string } }) {
               >
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 flex items-start sm:items-center">
                   <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary-600 mr-2 mt-0.5 sm:mt-0 flex-shrink-0" />
-                  {translations.faq.questions.privacy.question}
+                  {t.faq.questions.privacy.question}
                 </h3>
                 <p className="text-sm sm:text-base text-gray-600">
-                  {translations.faq.questions.privacy.answer}
+                  {t.faq.questions.privacy.answer}
                 </p>
               </motion.div>
               
@@ -404,10 +441,10 @@ export default function Home({ params }: { params: { locale: string } }) {
               >
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 flex items-start sm:items-center">
                   <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary-600 mr-2 mt-0.5 sm:mt-0 flex-shrink-0" />
-                  {translations.faq.questions.fileSize.question}
+                  {t.faq.questions.fileSize.question}
                 </h3>
                 <p className="text-sm sm:text-base text-gray-600">
-                  {translations.faq.questions.fileSize.answer}
+                  {t.faq.questions.fileSize.answer}
                 </p>
               </motion.div>
               
@@ -418,10 +455,10 @@ export default function Home({ params }: { params: { locale: string } }) {
               >
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 flex items-start sm:items-center">
                   <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary-600 mr-2 mt-0.5 sm:mt-0 flex-shrink-0" />
-                  {translations.faq.questions.compression.question}
+                  {t.faq.questions.compression.question}
                 </h3>
                 <p className="text-sm sm:text-base text-gray-600">
-                  {translations.faq.questions.compression.answer}
+                  {t.faq.questions.compression.answer}
                 </p>
               </motion.div>
               
@@ -432,24 +469,24 @@ export default function Home({ params }: { params: { locale: string } }) {
               >
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 flex items-start sm:items-center">
                   <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary-600 mr-2 mt-0.5 sm:mt-0 flex-shrink-0" />
-                  {translations.faq.questions.account.question}
+                  {t.faq.questions.account.question}
                 </h3>
                 <p className="text-sm sm:text-base text-gray-600">
-                  {translations.faq.questions.account.answer}
+                  {t.faq.questions.account.answer}
                 </p>
               </motion.div>
               
               <motion.div 
-                className="card"
+                className="card p-4 sm:p-6"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary-600 mr-2" />
-                  Which browsers are supported?
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 flex items-start sm:items-center">
+                  <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary-600 mr-2 mt-0.5 sm:mt-0 flex-shrink-0" />
+                  {t.faq.questions.browsers.question}
                 </h3>
-                <p className="text-gray-600">
-                  TinyCompressor works on all modern browsers including Chrome, Firefox, Safari, and Edge. It&apos;s also fully optimized for mobile devices.
+                <p className="text-sm sm:text-base text-gray-600">
+                  {t.faq.questions.browsers.answer}
                 </p>
               </motion.div>
             </div>
@@ -465,7 +502,7 @@ export default function Home({ params }: { params: { locale: string } }) {
         >
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
-              {translations.perfectFor.title}
+              {t.perfectFor.title}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <motion.div 
@@ -474,8 +511,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Globe className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{translations.perfectFor.webDevelopers.title}</h3>
-                <p className="text-gray-600">{translations.perfectFor.webDevelopers.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{t.perfectFor.webDevelopers.title}</h3>
+                <p className="text-gray-600">{t.perfectFor.webDevelopers.description}</p>
               </motion.div>
               
               <motion.div 
@@ -484,8 +521,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Smartphone className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{translations.perfectFor.designers.title}</h3>
-                <p className="text-gray-600">{translations.perfectFor.designers.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{t.perfectFor.designers.title}</h3>
+                <p className="text-gray-600">{t.perfectFor.designers.description}</p>
               </motion.div>
               
               <motion.div 
@@ -494,8 +531,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Users className="w-12 h-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{translations.perfectFor.socialMedia.title}</h3>
-                <p className="text-gray-600">{translations.perfectFor.socialMedia.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{t.perfectFor.socialMedia.title}</h3>
+                <p className="text-gray-600">{t.perfectFor.socialMedia.description}</p>
               </motion.div>
               
               <motion.div 
@@ -504,8 +541,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <Monitor className="w-12 h-12 text-orange-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{translations.perfectFor.emailAttachments.title}</h3>
-                <p className="text-gray-600">{translations.perfectFor.emailAttachments.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{t.perfectFor.emailAttachments.title}</h3>
+                <p className="text-gray-600">{t.perfectFor.emailAttachments.description}</p>
               </motion.div>
               
               <motion.div 
@@ -514,8 +551,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <FileImage className="w-12 h-12 text-red-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{translations.perfectFor.photoStorage.title}</h3>
-                <p className="text-gray-600">{translations.perfectFor.photoStorage.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{t.perfectFor.photoStorage.title}</h3>
+                <p className="text-gray-600">{t.perfectFor.photoStorage.description}</p>
               </motion.div>
               
               <motion.div 
@@ -524,8 +561,8 @@ export default function Home({ params }: { params: { locale: string } }) {
                 transition={{ duration: 0.2 }}
               >
                 <CheckCircle className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{translations.perfectFor.ecommerce.title}</h3>
-                <p className="text-gray-600">{translations.perfectFor.ecommerce.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{t.perfectFor.ecommerce.title}</h3>
+                <p className="text-gray-600">{t.perfectFor.ecommerce.description}</p>
               </motion.div>
             </div>
           </div>
@@ -540,10 +577,10 @@ export default function Home({ params }: { params: { locale: string } }) {
         >
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Compress Your Images?
+              {t.cta.title}
             </h2>
             <p className="text-xl text-primary-100 mb-8">
-              Join thousands of users who trust TinyCompressor for their image optimization needs
+              {t.cta.subtitle}
             </p>
             <motion.button
               className="bg-white text-primary-600 font-semibold py-4 px-8 rounded-lg text-lg hover:bg-gray-100 transition-colors"
@@ -551,13 +588,13 @@ export default function Home({ params }: { params: { locale: string } }) {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Start Compressing Now
+              {t.cta.button}
             </motion.button>
           </div>
         </motion.section>
       </main>
 
-        <Footer translations={translations} locale={locale} />
+        <Footer translations={t as any} locale={locale} />
     </div>
   );
 }

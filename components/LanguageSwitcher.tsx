@@ -4,19 +4,12 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, Check } from 'lucide-react';
 import { useRouter, usePathname } from 'next/navigation';
+import { SUPPORTED_LANGUAGES, LANGUAGE_INFO } from '@/lib/i18n';
 
 interface LanguageSwitcherProps {
   currentLanguage: string;
   onLanguageChange?: (language: string) => void;
 }
-
-const languages = [
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'zh', name: '中文', flag: '🇨🇳' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-];
 
 export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,15 +17,12 @@ export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: 
   const router = useRouter();
   const pathname = usePathname();
 
-  const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
+  const currentLang = LANGUAGE_INFO[currentLanguage as keyof typeof LANGUAGE_INFO] || LANGUAGE_INFO.en;
 
   const handleLanguageChange = (languageCode: string) => {
-    if (languageCode === currentLanguage) return;
+    if (languageCode === currentLanguage || !isOpen) return;
     
-    // 防止重复点击
-    if (isOpen === false) return;
-    
-    // 先关闭下拉菜单
+    // 立即关闭下拉菜单，避免DOM操作冲突
     setIsOpen(false);
     
     // 获取当前路径，移除语言前缀
@@ -51,19 +41,17 @@ export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: 
     
     // 使用requestAnimationFrame确保DOM更新完成后再导航
     requestAnimationFrame(() => {
-      // 再次使用setTimeout确保所有动画完成
-      setTimeout(() => {
-        try {
-          router.push(newPath);
-          
-          // 调用回调函数（如果提供）
-          if (onLanguageChange) {
-            onLanguageChange(languageCode);
-          }
-        } catch (error) {
-          console.error('Language switch error:', error);
+      try {
+        // 调用回调函数（如果提供）
+        if (onLanguageChange) {
+          onLanguageChange(languageCode);
         }
-      }, 200);
+        
+        // 直接导航，避免setTimeout的延迟
+        window.location.href = newPath;
+      } catch (error) {
+        console.error('Language switch error:', error);
+      }
     });
   };
 
@@ -89,7 +77,7 @@ export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: 
       >
         <Globe className="w-4 h-4 text-neutral-700" />
         <span className="text-sm font-medium text-neutral-700">{currentLang.flag}</span>
-        <span className="text-sm text-neutral-700 hidden sm:inline">{currentLang.name}</span>
+        <span className="text-sm text-neutral-700 hidden sm:inline">{currentLang.nativeName}</span>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.2 }}
@@ -100,31 +88,34 @@ export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: 
         </motion.div>
       </button>
 
-      <AnimatePresence mode="wait" onExitComplete={() => {}}>
+      <AnimatePresence mode="popLayout">
         {isOpen && (
           <motion.div
             key="language-dropdown"
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
             className="absolute right-0 mt-2 w-48 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-neutral-200/50 py-2 z-50"
           >
-            {languages.map((language) => (
-              <button
-                key={language.code}
-                onClick={() => handleLanguageChange(language.code)}
-                className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors duration-150"
-              >
-                <div className="flex items-center space-x-3">
-                  <span className="text-lg">{language.flag}</span>
-                  <span className="text-sm font-medium text-gray-900">{language.name}</span>
-                </div>
-                {currentLanguage === language.code && (
-                  <Check className="w-4 h-4 text-primary-600" />
-                )}
-              </button>
-            ))}
+            {SUPPORTED_LANGUAGES.map((langCode) => {
+              const lang = LANGUAGE_INFO[langCode];
+              return (
+                <button
+                  key={langCode}
+                  onClick={() => handleLanguageChange(langCode)}
+                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors duration-150"
+                >
+                  <div className="flex items-center space-x-3">
+                    <span className="text-lg">{lang.flag}</span>
+                    <span className="text-sm font-medium text-gray-900">{lang.nativeName}</span>
+                  </div>
+                  {currentLanguage === langCode && (
+                    <Check className="w-4 h-4 text-primary-600" />
+                  )}
+                </button>
+              );
+            })}
           </motion.div>
         )}
       </AnimatePresence>

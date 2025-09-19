@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { FileText, Shield, AlertTriangle, CheckCircle, XCircle } from 'lucide-react';
-import ClientHeader from '@/components/ClientHeader';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getTranslations, Translations } from '@/lib/translations';
+import { getTranslations } from '@/lib/translations';
+import { Translations } from '@/lib/i18n';
 
 export default function TermsOfService({ params }: { params: { locale: string } }) {
   const { locale } = params;
@@ -51,8 +52,11 @@ export default function TermsOfService({ params }: { params: { locale: string } 
         <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/terms" />
       </head>
       
-      <ClientHeader 
-        currentLanguage={locale}
+      <Header 
+        currentLanguage={locale} 
+        onLanguageChange={(lang) => {
+          window.location.href = lang === 'en' ? '/terms' : `/${lang}/terms`;
+        }} 
       />
 
       {/* Main Content */}

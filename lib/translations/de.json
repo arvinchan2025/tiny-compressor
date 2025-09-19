@@ -1,4 +1,13 @@
 {
+  "metadata": {
+    "title": "TinyCompressor - Kostenloses Online-Bildkomprimierungstool | JPG, PNG, WebP komprimieren",
+    "description": "Komprimieren Sie Bilder online kostenlos! Reduzieren Sie Dateigrößen um 60-90% bei gleichbleibender Qualität. Unterstützt JPG, PNG, WebP Formate. Keine Registrierung erforderlich. Schnell, sicher und völlig privat.",
+    "keywords": "Bildkomprimierung, Bilder komprimieren, Dateigröße reduzieren, Online-Tool, kostenlos, JPG-Komprimierung, PNG-Komprimierung, WebP-Komprimierung, Bildoptimierer, Foto-Komprimierung, Batch-Komprimierung, Privatsphäre, sicher",
+    "openGraphTitle": "TinyCompressor - Kostenloses Online-Bildkomprimierungstool",
+    "openGraphDescription": "Komprimieren Sie Bilder online kostenlos! Reduzieren Sie Dateigrößen um 60-90% bei gleichbleibender Qualität. Unterstützt JPG, PNG, WebP Formate. Keine Registrierung erforderlich.",
+    "twitterTitle": "TinyCompressor - Kostenloses Online-Bildkomprimierungstool",
+    "twitterDescription": "Komprimieren Sie Bilder online kostenlos! Reduzieren Sie Dateigrößen um 60-90% bei gleichbleibender Qualität."
+  },
   "nav": {
     "features": "Funktionen",
     "about": "Über uns",

@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './lib/i18n';
 
 // 支持的语言列表
-const locales = ['en', 'zh', 'es', 'de', 'fr'];
-const defaultLocale = 'en';
+const locales = SUPPORTED_LANGUAGES;
+const defaultLocale = DEFAULT_LANGUAGE;
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;

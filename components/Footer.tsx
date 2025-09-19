@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ImageIcon, Heart, Github, Twitter, Mail } from 'lucide-react';
-import { Translations } from '@/lib/translations';
+import { Translations } from '@/lib/i18n';
 
 interface FooterProps {
   translations: Translations;
@@ -111,13 +111,13 @@ export default function Footer({ translations, locale = 'en' }: FooterProps) {
               <li>
                 <a href={locale === 'en' ? '/privacy' : `/${locale}/privacy`} className="text-gray-300 hover:text-primary-400 transition-colors duration-200 flex items-center group">
                   <span className="w-2 h-2 bg-primary-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
-                  {translations.footer.privacy}
+                  {translations.footer.links.privacy}
                 </a>
               </li>
               <li>
                 <a href={locale === 'en' ? '/terms' : `/${locale}/terms`} className="text-gray-300 hover:text-primary-400 transition-colors duration-200 flex items-center group">
                   <span className="w-2 h-2 bg-primary-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
-                  {translations.footer.terms}
+                  {translations.footer.links.terms}
                 </a>
               </li>
             </ul>

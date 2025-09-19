@@ -2,11 +2,13 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../globals.css';
 import { notFound } from 'next/navigation';
+import { SUPPORTED_LANGUAGES, isRTLLanguage, generateAlternatesConfig, generateHreflangTags, getLanguageInfo, isValidLanguage, SupportedLanguage } from '../../lib/i18n';
+import { loadTranslations } from '../../lib/translations';
 
 const inter = Inter({ subsets: ['latin'] });
 
 // 支持的语言列表
-const locales = ['en', 'zh', 'es', 'de', 'fr'];
+const locales = SUPPORTED_LANGUAGES;
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -15,22 +17,19 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = params;
   
-  if (!locales.includes(locale)) {
+  if (!isValidLanguage(locale)) {
     notFound();
   }
 
-  const isZh = locale === 'zh';
+  // 确保locale是有效的语言代码
+  const validLocale = isValidLanguage(locale) ? locale : 'en';
+  const langInfo = getLanguageInfo(validLocale as SupportedLanguage);
+  const translations = await loadTranslations(validLocale);
   
   return {
-    title: isZh 
-      ? 'TinyCompressor - 免费在线图片压缩工具 | 压缩 JPG、PNG、WebP'
-      : 'TinyCompressor - Free Online Image Compression Tool | Compress JPG, PNG, WebP',
-    description: isZh
-      ? '免费在线压缩图片！减少60-90%文件大小同时保持质量。支持JPG、PNG、WebP格式。无需注册。快速、安全、完全私密。'
-      : 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required. Fast, secure, and completely private.',
-    keywords: isZh
-      ? '图片压缩, 压缩图片, 减少文件大小, 在线工具, 免费, JPG压缩, PNG压缩, WebP压缩, 图片优化, 照片压缩, 批量压缩, 隐私, 安全'
-      : 'image compression, compress images, reduce file size, online tool, free, JPG compression, PNG compression, WebP compression, image optimizer, photo compression, batch compression, privacy, secure',
+    title: translations.metadata.title,
+    description: translations.metadata.description,
+    keywords: translations.metadata.keywords,
     authors: [{ name: 'TinyCompressor' }],
     robots: 'index, follow',
     icons: {
@@ -43,37 +42,22 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       ]
     },
     openGraph: {
-      title: isZh 
-        ? 'TinyCompressor - 免费在线图片压缩工具'
-        : 'TinyCompressor - Free Online Image Compression Tool',
-      description: isZh
-        ? '免费在线压缩图片！减少60-90%文件大小同时保持质量。支持JPG、PNG、WebP格式。无需注册。'
-        : 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required.',
+      title: translations.metadata.openGraphTitle,
+      description: translations.metadata.openGraphDescription,
       type: 'website',
-      locale: isZh ? 'zh_CN' : 'en_US',
+      locale: langInfo.locale,
       siteName: 'TinyCompressor',
       url: 'https://tinycompressor.com',
     },
     twitter: {
       card: 'summary_large_image',
-      title: isZh 
-        ? 'TinyCompressor - 免费在线图片压缩工具'
-        : 'TinyCompressor - Free Online Image Compression Tool',
-      description: isZh
-        ? '免费在线压缩图片！减少60-90%文件大小同时保持质量。'
-        : 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality.',
+      title: translations.metadata.twitterTitle,
+      description: translations.metadata.twitterDescription,
     },
-           alternates: {
-             canonical: locale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${locale}`,
-             languages: {
-               'en': 'https://tinycompressor.com',
-               'zh': 'https://tinycompressor.com/zh',
-               'es': 'https://tinycompressor.com/es',
-               'de': 'https://tinycompressor.com/de',
-               'fr': 'https://tinycompressor.com/fr',
-               'x-default': 'https://tinycompressor.com',
-             },
-           },
+    alternates: {
+      ...generateAlternatesConfig(),
+      canonical: locale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${locale}`,
+    },
   };
 }
 
@@ -86,15 +70,18 @@ export default function LocaleLayout({
 }) {
   const { locale } = params;
   
-  if (!locales.includes(locale)) {
+  if (!isValidLanguage(locale)) {
     notFound();
   }
+
+  // 确保locale是有效的语言代码，避免服务端和客户端不一致
+  const validLocale = isValidLanguage(locale) ? locale : 'en';
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "TinyCompressor",
-    "description": locale === 'zh' 
+    "description": validLocale === 'zh' 
       ? "免费在线图片压缩工具，减少60-90%文件大小同时保持质量"
       : "Free online image compression tool that reduces file sizes by 60-90% while maintaining quality",
     "url": "https://tinycompressor.com",
@@ -112,15 +99,16 @@ export default function LocaleLayout({
     "screenshot": "https://tinycompressor.com/screenshot.jpg"
   };
 
+  // 检查是否为RTL语言
+  const isRTL = isRTLLanguage(validLocale as SupportedLanguage);
+  
   return (
-    <html lang={locale}>
+    <html lang={validLocale} dir={isRTL ? 'rtl' : 'ltr'}>
              <head>
                {/* hreflang标签 */}
-               <link rel="alternate" hrefLang="en" href="https://tinycompressor.com/" />
-               <link rel="alternate" hrefLang="zh" href="https://tinycompressor.com/zh" />
-               <link rel="alternate" hrefLang="es" href="https://tinycompressor.com/es" />
-               <link rel="alternate" hrefLang="de" href="https://tinycompressor.com/de" />
-               <link rel="alternate" hrefLang="fr" href="https://tinycompressor.com/fr" />
+               {generateHreflangTags().map(({ hrefLang, href }) => (
+                 <link key={hrefLang} rel="alternate" hrefLang={hrefLang} href={href} />
+               ))}
                <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
         
         <script

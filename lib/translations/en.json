@@ -1,4 +1,13 @@
 {
+  "metadata": {
+    "title": "TinyCompressor - Free Online Image Compression Tool | Compress JPG, PNG, WebP",
+    "description": "Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required. Fast, secure, and completely private.",
+    "keywords": "image compression, compress images, reduce file size, online tool, free, JPG compression, PNG compression, WebP compression, image optimizer, photo compression, batch compression, privacy, secure",
+    "openGraphTitle": "TinyCompressor - Free Online Image Compression Tool",
+    "openGraphDescription": "Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required.",
+    "twitterTitle": "TinyCompressor - Free Online Image Compression Tool",
+    "twitterDescription": "Compress images online for free! Reduce file sizes by 60-90% while maintaining quality."
+  },
   "nav": {
     "features": "Features",
     "about": "About",
@@ -61,14 +70,16 @@
   },
   "results": {
     "title": "Compression Results",
+    "before": "Before",
+    "after": "After",
+    "reduction": "Reduction",
     "originalSize": "Original Size",
     "compressedSize": "Compressed Size",
-    "savings": "Space Saved",
+    "spaceSaved": "Space Saved",
     "download": "Download",
     "downloadAll": "Download All as ZIP",
     "compressMore": "Compress More Images",
-    "compressionRatio": "Compression Ratio",
-    "spaceSaved": "Space Saved"
+    "noResults": "No results to display"
   },
   "features": {
     "title": "Why Choose TinyCompressor?",
@@ -184,9 +195,14 @@
     "description": "TinyCompressor - The best free online image compression tool",
     "quickLinks": "Quick Links",
     "legal": "Legal",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
     "copyright": "© 2025 TinyCompressor. All rights reserved."
+  },
+  "howItWorks": {
+    "title": "How It Works"
   },
   "perfectFor": {
     "title": "Perfect For",
