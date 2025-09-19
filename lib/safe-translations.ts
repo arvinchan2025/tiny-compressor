@@ -214,11 +214,34 @@ export function createTranslationAccessor(translations: Translations | null) {
       },
       quickMode: {
         title: getSafeTranslation(translations, TRANSLATION_PATHS.compressionQuickTitle, 'Quick Compression'),
-        description: getSafeTranslation(translations, TRANSLATION_PATHS.compressionQuickDescription, 'Optimized settings for best results')
+        description: getSafeTranslation(translations, TRANSLATION_PATHS.compressionQuickDescription, 'Optimized settings for best results'),
+        compress: getSafeTranslation(translations, 'compression.quickMode.compress', 'Compress Images'),
+        formatNote: getSafeTranslation(translations, 'compression.quickMode.formatNote', 'Output format will match original')
       },
       customMode: {
         title: getSafeTranslation(translations, TRANSLATION_PATHS.compressionCustomTitle, 'Custom Settings'),
-        description: getSafeTranslation(translations, TRANSLATION_PATHS.compressionCustomDescription, 'Fine-tune compression parameters')
+        description: getSafeTranslation(translations, TRANSLATION_PATHS.compressionCustomDescription, 'Fine-tune compression parameters'),
+        quality: getSafeTranslation(translations, 'compression.customMode.quality', 'Quality'),
+        maxWidth: getSafeTranslation(translations, 'compression.customMode.maxWidth', 'Max Width'),
+        maxHeight: getSafeTranslation(translations, 'compression.customMode.maxHeight', 'Max Height'),
+        format: getSafeTranslation(translations, 'compression.customMode.format', 'Output Format'),
+        compress: getSafeTranslation(translations, 'compression.customMode.compress', 'Compress Images'),
+        compressing: getSafeTranslation(translations, 'compression.customMode.compressing', 'Compressing...'),
+        qualityDescription: {
+          low: getSafeTranslation(translations, 'compression.customMode.qualityDescription.low', 'Maximum compression, lowest quality'),
+          medium: getSafeTranslation(translations, 'compression.customMode.qualityDescription.medium', 'Balanced compression and quality'),
+          high: getSafeTranslation(translations, 'compression.customMode.qualityDescription.high', 'High quality, minimal compression')
+        },
+        sizeDescription: {
+          small: getSafeTranslation(translations, 'compression.customMode.sizeDescription.small', 'Small size (mobile optimized)'),
+          medium: getSafeTranslation(translations, 'compression.customMode.sizeDescription.medium', 'Medium size (tablet/desktop)'),
+          large: getSafeTranslation(translations, 'compression.customMode.sizeDescription.large', 'Large size (high resolution)')
+        },
+        formatDescription: {
+          jpeg: getSafeTranslation(translations, 'compression.customMode.formatDescription.jpeg', 'Lossy compression, smaller file size'),
+          png: getSafeTranslation(translations, 'compression.customMode.formatDescription.png', 'Lossless compression, supports transparency'),
+          webp: getSafeTranslation(translations, 'compression.customMode.formatDescription.webp', 'Modern format with excellent compression')
+        }
       }
     },
     
