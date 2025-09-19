@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useDropzone } from 'react-dropzone';
+import { useDropzone, FileRejection } from 'react-dropzone';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Upload, Image as ImageIcon, X, CheckCircle, AlertCircle } from 'lucide-react';
 import { Translations } from '@/lib/translations';
@@ -25,7 +25,7 @@ export default function ImageUploader({ onFilesUploaded, disabled, translations 
   };
 
   const { getRootProps, getInputProps, isDragActive, isDragReject } = useDropzone({
-    onDrop: (acceptedFiles: File[], rejectedFiles: { file: File; errors: { code: string; message: string }[] }[]) => {
+    onDrop: (acceptedFiles: File[], rejectedFiles: FileRejection[]) => {
       setUploadError(null);
       setUploadSuccess(null);
       
