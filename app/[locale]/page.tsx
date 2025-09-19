@@ -218,7 +218,7 @@ export default function Home({ params }: { params: { locale: string } }) {
             <ImageUploader 
               onFilesUploaded={handleFilesUploaded}
               disabled={isCompressing}
-              translations={t as any}
+                     translations={t as any}
             />
           </div>
         </motion.section>
@@ -239,7 +239,7 @@ export default function Home({ params }: { params: { locale: string } }) {
                 isCompressing={isCompressing}
                 files={uploadedFiles}
                 onCompressionComplete={handleCompressionComplete}
-                translations={t as any}
+                     translations={t as any}
               />
             </div>
           </motion.section>
@@ -257,7 +257,7 @@ export default function Home({ params }: { params: { locale: string } }) {
               <CompressionResults
                 results={compressedFiles}
                 onReset={handleReset}
-                translations={t as any}
+                     translations={t as any}
               />
             </div>
           </motion.section>

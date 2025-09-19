@@ -17,11 +17,11 @@ export function getSafeTranslation(
   if (!translations) return defaultValue;
   
   const keys = path.split('.');
-  let current: any = translations;
+  let current: unknown = translations;
   
   for (const key of keys) {
     if (current && typeof current === 'object' && key in current) {
-      current = current[key];
+      current = (current as Record<string, unknown>)[key];
     } else {
       return defaultValue;
     }
@@ -36,22 +36,22 @@ export function getSafeTranslation(
 export function getSafeNestedTranslation(
   translations: Translations | null,
   path: string,
-  defaultValue: any = {}
-): any {
+  defaultValue: Record<string, unknown> = {}
+): Record<string, unknown> {
   if (!translations) return defaultValue;
   
   const keys = path.split('.');
-  let current: any = translations;
+  let current: unknown = translations;
   
   for (const key of keys) {
     if (current && typeof current === 'object' && key in current) {
-      current = current[key];
+      current = (current as Record<string, unknown>)[key];
     } else {
       return defaultValue;
     }
   }
   
-  return current || defaultValue;
+  return (current as Record<string, unknown>) || defaultValue;
 }
 
 /**

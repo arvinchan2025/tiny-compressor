@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, Check } from 'lucide-react';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { SUPPORTED_LANGUAGES, LANGUAGE_INFO } from '@/lib/i18n';
 
 interface LanguageSwitcherProps {
@@ -14,7 +14,6 @@ interface LanguageSwitcherProps {
 export default function LanguageSwitcher({ currentLanguage, onLanguageChange }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
   const pathname = usePathname();
 
   const currentLang = LANGUAGE_INFO[currentLanguage as keyof typeof LANGUAGE_INFO] || LANGUAGE_INFO.en;
