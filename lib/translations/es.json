@@ -214,5 +214,89 @@
       "title": "Almacenamiento de Fotos",
       "description": "Ahorra espacio de almacenamiento comprimiendo colecciones de fotos."
     }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 18 de septiembre de 2025",
+    "introduction": {
+      "title": "Introducción",
+      "content": "TinyCompressor ('nosotros', 'nuestro' o 'nos') se compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos su información cuando utiliza nuestro servicio de compresión de imágenes."
+    },
+    "informationCollection": {
+      "title": "Información que Recopilamos",
+      "content": "No recopilamos, almacenamos ni transmitimos información personal. Todo el procesamiento de imágenes se realiza localmente en su navegador. No tenemos acceso a sus imágenes ni a ningún dato asociado."
+    },
+    "dataProcessing": {
+      "title": "Cómo Procesamos Sus Datos",
+      "content": "Sus imágenes se procesan completamente en su dispositivo usando JavaScript del lado del cliente. No se envían datos a nuestros servidores ni a terceros. Esto garantiza la privacidad y seguridad completa de sus archivos."
+    },
+    "cookies": {
+      "title": "Cookies y Seguimiento",
+      "content": "Podemos usar cookies esenciales para mantener su preferencia de idioma y mejorar su experiencia. No usamos cookies de seguimiento ni recopilamos datos de análisis que puedan identificarlo personalmente."
+    },
+    "thirdParty": {
+      "title": "Servicios de Terceros",
+      "content": "No compartimos su información con terceros. Nuestro servicio opera independientemente sin servicios externos de procesamiento de datos."
+    },
+    "dataSecurity": {
+      "title": "Seguridad de Datos",
+      "content": "Dado que todo el procesamiento ocurre localmente en su dispositivo, sus datos nunca abandonan su navegador. Esto proporciona el más alto nivel de seguridad y protección de privacidad."
+    },
+    "changes": {
+      "title": "Cambios a Esta Política",
+      "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "content": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos a través de nuestro sitio web."
+    }
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: 18 de septiembre de 2025",
+    "acceptance": {
+      "title": "Aceptación de Términos",
+      "content": "Al acceder y usar TinyCompressor, acepta y se compromete a cumplir con los términos y disposiciones de este acuerdo."
+    },
+    "description": {
+      "title": "Descripción del Servicio",
+      "content": "TinyCompressor es una herramienta gratuita de compresión de imágenes en línea que permite a los usuarios reducir el tamaño de archivos de imágenes manteniendo la calidad. Todo el procesamiento se realiza localmente en su navegador."
+    },
+    "userResponsibilities": {
+      "title": "Responsabilidades del Usuario",
+      "content": "Los usuarios son responsables de asegurar que tienen el derecho de procesar las imágenes que suben. Los usuarios no deben subir material con derechos de autor sin permiso o cualquier contenido ilegal."
+    },
+    "limitations": {
+      "title": "Limitaciones del Servicio",
+      "content": "Nuestro servicio se proporciona 'tal como está' sin garantías. No garantizamos ratios de compresión específicos o niveles de calidad. Los usuarios son responsables de respaldar sus archivos originales."
+    },
+    "prohibitedUses": {
+      "title": "Usos Prohibidos",
+      "content": "No puede usar nuestro servicio para ningún propósito ilegal o para solicitar a otros que realicen actos ilegales. No puede violar ninguna regulación internacional, federal, provincial o estatal, reglas, leyes u ordenanzas locales."
+    },
+    "intellectualProperty": {
+      "title": "Propiedad Intelectual",
+      "content": "El servicio y su contenido original, características y funcionalidad son propiedad de TinyCompressor y están protegidos por leyes internacionales de derechos de autor, marcas registradas, patentes, secretos comerciales y otras leyes de propiedad intelectual."
+    },
+    "disclaimer": {
+      "title": "Descargo de Responsabilidad",
+      "content": "La información en este servicio se proporciona 'tal como está'. En la medida máxima permitida por la ley, esta Compañía excluye todas las representaciones, garantías, condiciones y términos."
+    },
+    "limitationLiability": {
+      "title": "Limitación de Responsabilidad",
+      "content": "En ningún caso TinyCompressor, ni sus directores, empleados, socios, agentes, proveedores o afiliados, serán responsables de daños indirectos, incidentales, especiales, consecuenciales o punitivos."
+    },
+    "governingLaw": {
+      "title": "Ley Aplicable",
+      "content": "Estos Términos serán interpretados y regidos por las leyes de la jurisdicción en la que opera TinyCompressor, sin consideración a sus disposiciones de conflicto de leyes."
+    },
+    "changes": {
+      "title": "Cambios a los Términos",
+      "content": "Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Si una revisión es material, intentaremos proporcionar al menos 30 días de aviso antes de que cualquier nuevo término entre en vigor."
+    },
+    "contact": {
+      "title": "Información de Contacto",
+      "content": "Si tiene alguna pregunta sobre estos Términos de Servicio, contáctenos a través de nuestro sitio web."
+    }
   }
 }

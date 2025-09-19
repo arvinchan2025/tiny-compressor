@@ -214,5 +214,89 @@
       "title": "Photo Storage",
       "description": "Save storage space by compressing photo collections."
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: September 18, 2025",
+    "introduction": {
+      "title": "Introduction",
+      "content": "TinyCompressor ('we', 'our', or 'us') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our image compression service."
+    },
+    "informationCollection": {
+      "title": "Information We Collect",
+      "content": "We do not collect, store, or transmit any personal information. All image processing is performed locally in your browser. We do not have access to your images or any data associated with them."
+    },
+    "dataProcessing": {
+      "title": "How We Process Your Data",
+      "content": "Your images are processed entirely on your device using client-side JavaScript. No data is sent to our servers or any third parties. This ensures complete privacy and security of your files."
+    },
+    "cookies": {
+      "title": "Cookies and Tracking",
+      "content": "We may use essential cookies to maintain your language preference and improve your experience. We do not use tracking cookies or collect analytics data that could identify you personally."
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "content": "We do not share your information with third parties. Our service operates independently without external data processing services."
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "content": "Since all processing occurs locally on your device, your data never leaves your browser. This provides the highest level of security and privacy protection."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about this Privacy Policy, please contact us through our website."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: September 18, 2025",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By accessing and using TinyCompressor, you accept and agree to be bound by the terms and provision of this agreement."
+    },
+    "description": {
+      "title": "Service Description",
+      "content": "TinyCompressor is a free online image compression tool that allows users to reduce file sizes of images while maintaining quality. All processing is performed locally in your browser."
+    },
+    "userResponsibilities": {
+      "title": "User Responsibilities",
+      "content": "Users are responsible for ensuring they have the right to process the images they upload. Users must not upload copyrighted material without permission or any illegal content."
+    },
+    "limitations": {
+      "title": "Service Limitations",
+      "content": "Our service is provided 'as is' without warranties. We do not guarantee specific compression ratios or quality levels. Users are responsible for backing up their original files."
+    },
+    "prohibitedUses": {
+      "title": "Prohibited Uses",
+      "content": "You may not use our service for any unlawful purpose or to solicit others to perform unlawful acts. You may not violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "content": "The service and its original content, features, and functionality are owned by TinyCompressor and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "The information on this service is provided on an 'as is' basis. To the fullest extent permitted by law, this Company excludes all representations, warranties, conditions and terms."
+    },
+    "limitationLiability": {
+      "title": "Limitation of Liability",
+      "content": "In no event shall TinyCompressor, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "content": "These Terms shall be interpreted and governed by the laws of the jurisdiction in which TinyCompressor operates, without regard to its conflict of law provisions."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "content": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days notice prior to any new terms taking effect."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "content": "If you have any questions about these Terms of Service, please contact us through our website."
+    }
   }
 }

@@ -240,6 +240,94 @@ export interface Translations {
       description: string;
     };
   };
+  
+  // Privacy Policy
+  privacy: {
+    title: string;
+    lastUpdated: string;
+    introduction: {
+      title: string;
+      content: string;
+    };
+    informationCollection: {
+      title: string;
+      content: string;
+    };
+    dataProcessing: {
+      title: string;
+      content: string;
+    };
+    cookies: {
+      title: string;
+      content: string;
+    };
+    thirdParty: {
+      title: string;
+      content: string;
+    };
+    dataSecurity: {
+      title: string;
+      content: string;
+    };
+    changes: {
+      title: string;
+      content: string;
+    };
+    contact: {
+      title: string;
+      content: string;
+    };
+  };
+  
+  // Terms of Service
+  terms: {
+    title: string;
+    lastUpdated: string;
+    acceptance: {
+      title: string;
+      content: string;
+    };
+    description: {
+      title: string;
+      content: string;
+    };
+    userResponsibilities: {
+      title: string;
+      content: string;
+    };
+    limitations: {
+      title: string;
+      content: string;
+    };
+    prohibitedUses: {
+      title: string;
+      content: string;
+    };
+    intellectualProperty: {
+      title: string;
+      content: string;
+    };
+    disclaimer: {
+      title: string;
+      content: string;
+    };
+    limitationLiability: {
+      title: string;
+      content: string;
+    };
+    governingLaw: {
+      title: string;
+      content: string;
+    };
+    changes: {
+      title: string;
+      content: string;
+    };
+    contact: {
+      title: string;
+      content: string;
+    };
+  };
 }
 
 // 动态导入翻译文件

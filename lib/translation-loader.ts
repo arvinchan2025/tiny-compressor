@@ -139,6 +139,33 @@ class TranslationLoader {
         emailAttachments: { title: '', description: '' }, 
         ecommerce: { title: '', description: '' }, 
         photoStorage: { title: '', description: '' } 
+      },
+      privacy: {
+        title: '',
+        lastUpdated: '',
+        introduction: { title: '', content: '' },
+        informationCollection: { title: '', content: '' },
+        dataProcessing: { title: '', content: '' },
+        cookies: { title: '', content: '' },
+        thirdParty: { title: '', content: '' },
+        dataSecurity: { title: '', content: '' },
+        changes: { title: '', content: '' },
+        contact: { title: '', content: '' }
+      },
+      terms: {
+        title: '',
+        lastUpdated: '',
+        acceptance: { title: '', content: '' },
+        description: { title: '', content: '' },
+        userResponsibilities: { title: '', content: '' },
+        limitations: { title: '', content: '' },
+        prohibitedUses: { title: '', content: '' },
+        intellectualProperty: { title: '', content: '' },
+        disclaimer: { title: '', content: '' },
+        limitationLiability: { title: '', content: '' },
+        governingLaw: { title: '', content: '' },
+        changes: { title: '', content: '' },
+        contact: { title: '', content: '' }
       }
     };
   }
