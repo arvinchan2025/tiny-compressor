@@ -141,7 +141,6 @@ export default function Home({ params }: { params: { locale: string } }) {
       />
       
       <Header 
-        translations={translations}
         currentLanguage={currentLanguage}
         onLanguageChange={setCurrentLanguage}
       />

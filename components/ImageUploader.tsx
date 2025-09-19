@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Upload, Image as ImageIcon, X, CheckCircle, AlertCircle } from 'lucide-react';
@@ -17,24 +17,6 @@ export default function ImageUploader({ onFilesUploaded, disabled, translations 
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [uploadSuccess, setUploadSuccess] = useState<string | null>(null);
 
-  const onDrop = useCallback((acceptedFiles: File[], rejectedFiles: any[]) => {
-    setUploadError(null);
-    setUploadSuccess(null);
-    
-    if (rejectedFiles.length > 0) {
-      setUploadError(`${rejectedFiles.length} file(s) were rejected. Please check file types and sizes.`);
-    }
-    
-    if (acceptedFiles.length > 0) {
-      setUploadSuccess(`${acceptedFiles.length} file(s) uploaded successfully!`);
-      // Clear success message after 3 seconds
-      setTimeout(() => setUploadSuccess(null), 3000);
-    }
-    
-    const newFiles = [...uploadedFiles, ...acceptedFiles];
-    setUploadedFiles(newFiles);
-    onFilesUploaded(newFiles);
-  }, [uploadedFiles, onFilesUploaded]);
 
   const removeFile = (index: number) => {
     const newFiles = uploadedFiles.filter((_, i) => i !== index);
@@ -43,7 +25,24 @@ export default function ImageUploader({ onFilesUploaded, disabled, translations 
   };
 
   const { getRootProps, getInputProps, isDragActive, isDragReject } = useDropzone({
-    onDrop,
+    onDrop: (acceptedFiles: File[], rejectedFiles: { file: File; errors: { code: string; message: string }[] }[]) => {
+      setUploadError(null);
+      setUploadSuccess(null);
+      
+      if (rejectedFiles.length > 0) {
+        setUploadError(`${rejectedFiles.length} file(s) were rejected. Please check file types and sizes.`);
+      }
+      
+      if (acceptedFiles.length > 0) {
+        setUploadSuccess(`${acceptedFiles.length} file(s) uploaded successfully!`);
+        // Clear success message after 3 seconds
+        setTimeout(() => setUploadSuccess(null), 3000);
+      }
+      
+      const newFiles = [...uploadedFiles, ...acceptedFiles];
+      setUploadedFiles(newFiles);
+      onFilesUploaded(newFiles);
+    },
     accept: {
       'image/*': ['.jpeg', '.jpg', '.png', '.webp', '.gif', '.bmp']
     },

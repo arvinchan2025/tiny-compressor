@@ -13,7 +13,7 @@ interface CompressionSettingsProps {
     maxHeight: number;
     format: 'jpeg' | 'png' | 'webp';
   };
-  onSettingsChange: (settings: any) => void;
+  onSettingsChange: (settings: { quality: number; maxWidth: number; maxHeight: number; format: 'jpeg' | 'png' | 'webp' }) => void;
   onCompress: () => void;
   isCompressing: boolean;
   files: File[];
@@ -55,7 +55,6 @@ export default function CompressionSettings({
         setCompressionProgress((i / files.length) * 100);
         // Get original file format
         const originalFormat = file.type.split('/')[1];
-        const originalExtension = file.name.split('.').pop()?.toLowerCase();
         
         // Determine the target format - keep original format unless explicitly changed in custom mode
         let targetFormat = originalFormat;

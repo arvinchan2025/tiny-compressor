@@ -2,12 +2,13 @@
 
 import { motion } from 'framer-motion';
 import { Download, RotateCcw, CheckCircle, TrendingDown, Archive } from 'lucide-react';
+import { Translations } from '@/lib/translations';
 import JSZip from 'jszip';
 
 interface CompressionResultsProps {
   results: { file: File; originalSize: number; compressedSize: number }[];
   onReset: () => void;
-  translations: any;
+  translations: Translations;
 }
 
 export default function CompressionResults({ results, onReset, translations }: CompressionResultsProps) {

@@ -1,0 +1,65 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 主渐变 - 使用Tailwind primary色彩系统 -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0284c7;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- 箭头渐变 - 更亮的蓝色调 -->
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 背景光晕效果 -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- 阴影效果 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1.6" stdDeviation="1.6" flood-color="#0ea5e9" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景光晕 -->
+  <circle cx="16" cy="16" r="14.4" fill="url(#glowGradient)"/>
+  
+  <!-- 主文档图标 - 与logo完全一致的比例设计 -->
+  <path d="M4.8 6.4C4.8 5.07452 5.87452 4 7.2 4H24.8C26.1255 4 27.2 5.07452 27.2 6.4V25.6C27.2 26.9255 26.1255 28 24.8 28H7.2C5.87452 28 4.8 26.9255 4.8 25.6V6.4Z" 
+        fill="url(#mainGradient)" 
+        stroke="url(#mainGradient)" 
+        stroke-width="0.64"
+        rx="2.4"
+        ry="2.4"
+        filter="url(#shadow)"/>
+  
+  <!-- 折叠角 - 与logo完全一致 -->
+  <path d="M23.2 4L27.2 8V6.4C27.2 5.07452 26.1255 4 24.8 4H23.2Z" 
+        fill="url(#mainGradient)" 
+        fill-opacity="0.8"/>
+  
+  <!-- 压缩箭头 - 与logo完全一致的比例和位置 -->
+  <path d="M12 16L20 16M16 12L20 16L16 20" 
+        stroke="url(#arrowGradient)" 
+        stroke-width="2.4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#shadow)"/>
+  
+  <!-- 数据流粒子 - 与logo完全一致的位置和大小比例 -->
+  <circle cx="9.6" cy="12.8" r="1.6" fill="url(#mainGradient)" opacity="0.9"/>
+  <circle cx="7.2" cy="16" r="1.28" fill="url(#mainGradient)" opacity="0.7"/>
+  <circle cx="10.4" cy="20.8" r="0.96" fill="url(#mainGradient)" opacity="0.5"/>
+  
+  <circle cx="22.4" cy="12.8" r="1.6" fill="url(#mainGradient)" opacity="0.9"/>
+  <circle cx="24.8" cy="16" r="1.28" fill="url(#mainGradient)" opacity="0.7"/>
+  <circle cx="21.6" cy="20.8" r="0.96" fill="url(#mainGradient)" opacity="0.5"/>
+  
+  <!-- 额外的装饰粒子 - 与logo完全一致 -->
+  <circle cx="16" cy="9.6" r="0.96" fill="url(#arrowGradient)" opacity="0.6"/>
+  <circle cx="16" cy="22.4" r="0.8" fill="url(#arrowGradient)" opacity="0.4"/>
+</svg>

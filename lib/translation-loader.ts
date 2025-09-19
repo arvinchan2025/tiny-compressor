@@ -30,8 +30,8 @@ class TranslationLoader {
       this.cache.set(language, validatedTranslation);
       
       return validatedTranslation;
-    } catch (error) {
-      console.warn(`Failed to load translation for ${language}, falling back to ${this.fallbackLanguage}`);
+           } catch {
+             console.warn(`Failed to load translation for ${language}, falling back to ${this.fallbackLanguage}`);
       
       // 回退到英语
       if (language !== this.fallbackLanguage) {
@@ -43,7 +43,7 @@ class TranslationLoader {
     }
   }
 
-  private validateTranslation(translation: any, language: string): Translations {
+         private validateTranslation(translation: Record<string, unknown>, language: string): Translations {
     // 这里可以添加翻译完整性验证逻辑
     // 检查必需的键是否存在
     const requiredKeys = [
@@ -58,7 +58,7 @@ class TranslationLoader {
       }
     }
 
-    return translation as Translations;
+    return translation as unknown as Translations;
   }
 
   private getEmptyTranslation(): Translations {

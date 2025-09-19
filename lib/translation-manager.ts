@@ -7,8 +7,8 @@ const loadTranslations = async (locale: string) => {
   try {
     const translations = await import(`./translations/${locale}.json`);
     return translations.default;
-  } catch (error) {
-    console.warn(`Failed to load translations for locale: ${locale}`);
+         } catch {
+           console.warn(`Failed to load translations for locale: ${locale}`);
     // 回退到英语
     const fallback = await import(`./translations/en.json`);
     return fallback.default;
@@ -19,9 +19,9 @@ const loadTranslations = async (locale: string) => {
 export class TranslationManager {
   private static instance: TranslationManager;
   private currentLanguage: SupportedLanguage = 'en';
-  private translations: Map<SupportedLanguage, any> = new Map();
-  private listeners: Set<(language: SupportedLanguage) => void> = new Set();
-  private loadingPromises: Map<SupportedLanguage, Promise<any>> = new Map();
+         private translations: Map<SupportedLanguage, Record<string, unknown>> = new Map();
+         private listeners: Set<(language: SupportedLanguage) => void> = new Set();
+         private loadingPromises: Map<SupportedLanguage, Promise<Record<string, unknown>>> = new Map();
 
   static getInstance(): TranslationManager {
     if (!TranslationManager.instance) {
@@ -81,12 +81,14 @@ export class TranslationManager {
     }
 
     const translations = await this.loadingPromises.get(language);
-    this.translations.set(language, translations);
+    if (translations) {
+      this.translations.set(language, translations);
+    }
   }
 
-  // 获取嵌套值
-  private getNestedValue(obj: any, path: string): string | undefined {
-    return path.split('.').reduce((current, key) => current?.[key], obj);
+         // 获取嵌套值
+         private getNestedValue(obj: Record<string, unknown>, path: string): string | undefined {
+    return path.split('.').reduce((current: unknown, key) => (current as Record<string, unknown>)?.[key], obj);
   }
 
   // 注册语言变化监听器
@@ -120,8 +122,8 @@ export class TranslationManager {
     return issues;
   }
 
-  // 查找缺失的键
-  private findMissingKeys(translation: any, prefix = ''): string[] {
+         // 查找缺失的键
+         private findMissingKeys(translation: Record<string, unknown>, prefix = ''): string[] {
     const missingKeys: string[] = [];
     
     // 这里可以定义必需的键结构

@@ -335,7 +335,7 @@ const loadTranslations = async (locale: string): Promise<Translations> => {
   try {
     const translations = await import(`./translations/${locale}.json`);
     return translations.default;
-  } catch (error) {
+  } catch {
     console.warn(`Failed to load translations for locale: ${locale}`);
     // 回退到英语
     const fallback = await import(`./translations/en.json`);
@@ -357,7 +357,7 @@ export const getTranslations = async (locale: string): Promise<Translations> => 
     const translations = await loadTranslations(locale);
     translationCache.set(locale, translations);
     return translations;
-  } catch (error) {
+  } catch {
     console.warn(`Failed to load translations for locale: ${locale}, falling back to English`);
     // 回退到英语
     const fallback = await loadTranslations('en');
@@ -386,11 +386,11 @@ export const clearTranslationCache = (): void => {
 // 获取嵌套翻译值
 export const getNestedTranslation = (translations: Translations, key: string): string => {
   const keys = key.split('.');
-  let value: any = translations;
+  let value: unknown = translations;
   
   for (const k of keys) {
     if (value && typeof value === 'object' && k in value) {
-      value = value[k];
+      value = (value as Record<string, unknown>)[k];
     } else {
       return key; // 返回键名作为fallback
     }

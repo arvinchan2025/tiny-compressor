@@ -53,7 +53,6 @@ export default function TermsOfService({ params }: { params: { locale: string } 
       
       <ClientHeader 
         currentLanguage={locale}
-        translations={translations}
       />
 
       {/* Main Content */}

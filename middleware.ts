@@ -28,7 +28,7 @@ export const config = {
     // - api 路由
     // - _next/static (静态文件)
     // - _next/image (图片优化)
-    // - favicon.ico (网站图标)
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    // - 所有静态文件 (favicon, apple-touch-icon, robots.txt, sitemap.xml, logo.svg等)
+    '/((?!api|_next/static|_next/image|favicon|apple-touch-icon|robots.txt|sitemap|google-site-verification|logo\\.svg).*)',
   ],
 };

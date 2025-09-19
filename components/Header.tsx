@@ -4,16 +4,14 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
-import { Translations } from '@/lib/translations';
 import LogoIcon from '/public/logo.svg';
 
 interface HeaderProps {
-  translations: Translations;
   currentLanguage: string;
   onLanguageChange: (language: string) => void;
 }
 
-export default function Header({ translations, currentLanguage, onLanguageChange }: HeaderProps) {
+export default function Header({ currentLanguage, onLanguageChange }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
 

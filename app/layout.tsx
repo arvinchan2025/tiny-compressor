@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   robots: 'index, follow',
   icons: {
     icon: [
+      { url: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
       { url: '/favicon-16x16.svg', sizes: '16x16', type: 'image/svg+xml' },
       { url: '/favicon-32x32.svg', sizes: '32x32', type: 'image/svg+xml' }
     ],
@@ -77,13 +78,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-               {/* hreflang标签 */}
-               <link rel="alternate" hrefLang="en" href="https://tinycompressor.com/" />
-               <link rel="alternate" hrefLang="zh" href="https://tinycompressor.com/zh" />
-               <link rel="alternate" hrefLang="es" href="https://tinycompressor.com/es" />
-               <link rel="alternate" hrefLang="de" href="https://tinycompressor.com/de" />
-               <link rel="alternate" hrefLang="fr" href="https://tinycompressor.com/fr" />
-               <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
+        <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+        
+        {/* hreflang标签 */}
+        <link rel="alternate" hrefLang="en" href="https://tinycompressor.com/" />
+        <link rel="alternate" hrefLang="zh" href="https://tinycompressor.com/zh" />
+        <link rel="alternate" hrefLang="es" href="https://tinycompressor.com/es" />
+        <link rel="alternate" hrefLang="de" href="https://tinycompressor.com/de" />
+        <link rel="alternate" hrefLang="fr" href="https://tinycompressor.com/fr" />
+        <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
         
         {/* Sitemap */}
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
