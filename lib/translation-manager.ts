@@ -88,7 +88,14 @@ export class TranslationManager {
 
          // 获取嵌套值
          private getNestedValue(obj: Record<string, unknown>, path: string): string | undefined {
-    return path.split('.').reduce((current: unknown, key) => (current as Record<string, unknown>)?.[key], obj);
+    const result = path.split('.').reduce((current: unknown, key) => {
+      if (current && typeof current === 'object' && key in current) {
+        return (current as Record<string, unknown>)[key];
+      }
+      return undefined;
+    }, obj as unknown);
+    
+    return typeof result === 'string' ? result : undefined;
   }
 
   // 注册语言变化监听器
