@@ -177,14 +177,28 @@
     "button": "开始使用"
   },
   "footer": {
-    "description": "专业的在线图片压缩和转换工具，帮助您优化图片以获得更好的Web性能。",
+    "description": "专业级的图片压缩和转换工具，快速、安全且完全免费。",
     "quickLinks": "快速链接",
-    "legal": "法律信息",
+    "legal": "法律与支持",
     "links": {
+      "home": "首页",
+      "compressor": "压缩器",
+      "converter": "转换器",
       "privacy": "隐私政策",
       "terms": "服务条款"
     },
-    "copyright": "© 2025 TinyCompressor. 保留所有权利。"
+    "features": {
+      "free": "100% 免费",
+      "freeDesc": "无隐藏费用或订阅",
+      "secure": "安全私密",
+      "secureDesc": "文件在您的浏览器中本地处理",
+      "fast": "极速处理",
+      "fastDesc": "针对速度和性能优化"
+    },
+    "copyright": "© 2025 TinyCompressor. 保留所有权利。",
+    "madeWith": "用",
+    "forDevelopers": "为开发者制作",
+    "freeOpenSource": "免费开源"
   },
   "useCases": {
     "title": "使用场景",

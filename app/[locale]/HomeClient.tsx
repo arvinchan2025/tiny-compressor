@@ -232,7 +232,7 @@ export default function HomeClient({ locale }: HomeClientProps) {
                 size="lg"
                 leftIcon={<StandardIcon name="compress" size="md" />}
               >
-                <Link href="/compress-png">
+                <Link href={`/${locale}/compressor`}>
                   {translations?.cta?.compressButton || "Start Compressing"}
                 </Link>
               </StandardButton>
@@ -243,7 +243,7 @@ export default function HomeClient({ locale }: HomeClientProps) {
                 size="lg"
                 leftIcon={<StandardIcon name="convert" size="md" />}
               >
-                <Link href="/convert-png-to-jpg">
+                <Link href={`/${locale}/converter`}>
                   {translations?.cta?.convertButton || "Start Converting"}
                 </Link>
               </StandardButton>

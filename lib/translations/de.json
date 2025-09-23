@@ -708,16 +708,28 @@
     "button": "Jetzt Komprimieren"
   },
   "footer": {
-    "description": "TinyCompressor - Das beste kostenlose Online-Bildkomprimierungstool",
+    "description": "Professionelle Bildkomprimierungs- und Konvertierungstools, die schnell, sicher und völlig kostenlos sind.",
     "quickLinks": "Schnelle Links",
-    "legal": "Rechtliches",
-    "privacy": "Datenschutzrichtlinie",
-    "terms": "Nutzungsbedingungen",
-    "copyright": "© 2025 TinyCompressor. Alle Rechte vorbehalten.",
+    "legal": "Rechtliches & Support",
     "links": {
+      "home": "Startseite",
+      "compressor": "Kompressor",
+      "converter": "Konverter",
       "privacy": "Datenschutz",
       "terms": "Nutzungsbedingungen"
-    }
+    },
+    "features": {
+      "free": "100% Kostenlos",
+      "freeDesc": "Keine versteckten Kosten oder Abonnements",
+      "secure": "Sicher & Privat",
+      "secureDesc": "Dateien werden lokal in Ihrem Browser verarbeitet",
+      "fast": "Blitzschnell",
+      "fastDesc": "Optimiert für Geschwindigkeit und Leistung"
+    },
+    "copyright": "© 2025 TinyCompressor. Alle Rechte vorbehalten.",
+    "madeWith": "Gemacht mit",
+    "forDevelopers": "für Entwickler",
+    "freeOpenSource": "Kostenlos & Open Source"
   },
   "perfectFor": {
     "title": "Perfekt Für",

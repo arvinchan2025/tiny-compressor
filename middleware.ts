@@ -16,13 +16,20 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // 检查是否已有语言前缀
+  // 检查是否已有语言前缀（排除英语，因为英语是默认语言）
   const hasLocale = SUPPORTED_LOCALES.some(locale => 
-    pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    locale !== DEFAULT_LOCALE && 
+    (pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`)
   );
   
+  // 如果访问的是 /en 路径，重定向到根路径（移除 /en 前缀）
+  if (pathname.startsWith('/en/') || pathname === '/en') {
+    const newPath = pathname === '/en' ? '/' : pathname.replace('/en', '');
+    return NextResponse.redirect(new URL(newPath, request.url));
+  }
+  
   if (!hasLocale) {
-    // 重写到默认语言版本
+    // 对于没有语言前缀的路径，重写到英语版本（内部处理）
     return NextResponse.rewrite(new URL(`/${DEFAULT_LOCALE}${pathname}`, request.url));
   }
 

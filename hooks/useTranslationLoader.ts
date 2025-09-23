@@ -154,10 +154,24 @@ function getFallbackTranslations() {
       quickLinks: 'Quick Links',
       legal: 'Legal',
       links: {
+        home: 'Home',
+        compressor: 'Compressor',
+        converter: 'Converter',
         privacy: 'Privacy Policy',
         terms: 'Terms of Service'
       },
-      copyright: '© 2025 TinyCompressor. All rights reserved.'
+      features: {
+        free: '100% Free',
+        freeDesc: 'No hidden costs or subscriptions',
+        secure: 'Secure & Private',
+        secureDesc: 'Files processed locally in your browser',
+        fast: 'Lightning Fast',
+        fastDesc: 'Optimized for speed and performance'
+      },
+      copyright: '© 2025 TinyCompressor. All rights reserved.',
+      madeWith: 'Made with',
+      forDevelopers: 'for developers',
+      freeOpenSource: 'Free & Open Source'
     },
     meta: {
       title: 'TinyCompressor - Free Image Compression Tool',

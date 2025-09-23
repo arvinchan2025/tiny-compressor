@@ -648,16 +648,28 @@
     "button": "Commencer la Compression Maintenant"
   },
   "footer": {
-    "description": "TinyCompressor - Le meilleur outil gratuit de compression d'images en ligne",
+    "description": "Outils professionnels de compression et conversion d'images, rapides, sécurisés et entièrement gratuits.",
     "quickLinks": "Liens Rapides",
-    "legal": "Légal",
-    "privacy": "Politique de Confidentialité",
-    "terms": "Conditions d'Utilisation",
-    "copyright": "© 2025 TinyCompressor. Tous droits réservés.",
+    "legal": "Légal et Support",
     "links": {
+      "home": "Accueil",
+      "compressor": "Compresseur",
+      "converter": "Convertisseur",
       "privacy": "Politique de Confidentialité",
       "terms": "Conditions d'Utilisation"
-    }
+    },
+    "features": {
+      "free": "100% Gratuit",
+      "freeDesc": "Aucun coût caché ou abonnement",
+      "secure": "Sécurisé et Privé",
+      "secureDesc": "Fichiers traités localement dans votre navigateur",
+      "fast": "Ultra Rapide",
+      "fastDesc": "Optimisé pour la vitesse et les performances"
+    },
+    "copyright": "© 2025 TinyCompressor. Tous droits réservés.",
+    "madeWith": "Fait avec",
+    "forDevelopers": "pour les développeurs",
+    "freeOpenSource": "Gratuit et Open Source"
   },
   "perfectFor": {
     "title": "Parfait Pour",

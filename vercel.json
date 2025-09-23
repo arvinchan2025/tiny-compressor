@@ -73,16 +73,5 @@
       "destination": "/api/robots"
     }
   ],
-  "redirects": [
-    {
-      "source": "/compressor",
-      "destination": "/en/compressor",
-      "permanent": false
-    },
-    {
-      "source": "/converter",
-      "destination": "/en/converter",
-      "permanent": false
-    }
-  ]
+  "redirects": []
 }

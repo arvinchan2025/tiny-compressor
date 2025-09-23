@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { SupportedLanguage } from '@/types/i18n';
-import { getHomePath, getConverterPath, getPrivacyPath, getTermsPath } from '@/lib/path-utils';
+import { getHomePath, getCompressorPath, getConverterPath, getPrivacyPath, getTermsPath } from '@/lib/path-utils';
 import StandardContainer from './StandardContainer';
 import StandardGrid from './StandardGrid';
 import StandardIcon from './StandardIcon';
@@ -37,7 +37,7 @@ export default function StandardFooter({
     },
     { 
       name: t('footer.links.compressor') || 'Compressor', 
-      path: getHomePath(currentLocale),
+      path: getCompressorPath(currentLocale),
       icon: 'compress'
     },
     { 

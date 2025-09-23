@@ -38,6 +38,22 @@
     "autoSave": "Guardado automático",
     "progressNotifications": "Notificaciones de progreso",
     "theme": "Tema",
+    "presets": {
+      "title": "Configuraciones Rápidas",
+      "highQuality": "Alta Calidad",
+      "highQualityDesc": "Mejor calidad, archivo más grande",
+      "balanced": "Equilibrado",
+      "balancedDesc": "Buen equilibrio entre calidad y tamaño de archivo",
+      "optimized": "Optimizado para Web",
+      "optimizedDesc": "Optimizado para web, archivo más pequeño"
+    },
+    "quality": "Calidad",
+    "lowQuality": "Baja",
+    "highQuality": "Alta",
+    "colorSpace": "Espacio de Color",
+    "auto": "Automático",
+    "srgb": "sRGB",
+    "adobe": "Adobe RGB",
     "colorScheme": "Esquema de colores",
     "light": "Claro",
     "dark": "Oscuro",
@@ -60,6 +76,29 @@
     "clickToUpload": "o haz clic para navegar",
     "supportedFormatsList": "Soporta JPG, PNG, WebP, GIF, BMP y más",
     "maxSize": "Tamaño máximo de archivo: 10MB por imagen",
+    "comparison": {
+      "title": "Comparación de Formatos",
+      "subtitle": "Compara formatos fuente y destino para entender las diferencias",
+      "fileSize": "Tamaño de Archivo",
+      "quality": "Calidad",
+      "transparency": "Transparencia",
+      "browserSupport": "Soporte del Navegador",
+      "sourceFormat": "Formato Fuente",
+      "targetFormat": "Formato Destino",
+      "features": "Características",
+      "larger": "Más Grande",
+      "smaller": "Más Pequeño",
+      "high": "Alto",
+      "supported": "Soportado",
+      "varies": "Varía",
+      "excellent": "Excelente",
+      "recommendation": "Recomendación"
+    },
+    "upload": "Subir",
+    "settings": "Configuración",
+    "howItWorks": "Cómo Funciona",
+    "notes": "Notas",
+    "faq": "Preguntas Frecuentes",
     "uploadedFiles": "Archivos Subidos",
     "removeFile": "Eliminar",
     "ready": "Listo para convertir",
@@ -448,6 +487,12 @@
           "title": "Carga Progresiva",
           "content": "Habilita la carga progresiva para mejor rendimiento web. Las imágenes cargan gradualmente de baja a alta calidad.",
           "type": "tip"
+        },
+        {
+          "icon": "🔄",
+          "title": "Advertencia de Re-compresión",
+          "content": "Re-comprimir imágenes ya comprimidas reducirá aún más la calidad. Siempre trabaja con imágenes originales cuando sea posible.",
+          "type": "warning"
         }
       ]
     },
@@ -466,8 +511,42 @@
         {
           "question": "¿Puedo comprimir múltiples imágenes?",
           "answer": "¡Sí! Puedes subir múltiples imágenes a la vez para compresión por lotes, con soporte de descarga ZIP."
+        },
+        {
+          "question": "¿Qué formatos de imagen son compatibles?",
+          "answer": "Soportamos todos los formatos principales: JPG, PNG, WebP, AVIF y GIF. Cada formato tiene configuraciones de compresión optimizadas para los mejores resultados."
+        },
+        {
+          "question": "¿Es seguro comprimir mis imágenes?",
+          "answer": "¡Absolutamente! Todo el procesamiento ocurre localmente en tu navegador. Tus imágenes nunca se suben a nuestros servidores, garantizando privacidad y seguridad completas."
+        },
+        {
+          "question": "¿Cuánto tiempo toma comprimir las imágenes?",
+          "answer": "La compresión es instantánea para la mayoría de imágenes. El tiempo depende del tamaño y complejidad de la imagen, pero generalmente toma solo unos segundos."
         }
       ]
+    },
+    "formats": {
+      "jpeg": {
+        "title": "JPEG",
+        "description": "Mejor para fotografías e imágenes complejas"
+      },
+      "png": {
+        "title": "PNG",
+        "description": "Perfecto para gráficos con transparencia"
+      },
+      "webp": {
+        "title": "WebP",
+        "description": "Formato moderno con mejor compresión"
+      },
+      "avif": {
+        "title": "AVIF",
+        "description": "Formato de próxima generación"
+      },
+      "gif": {
+        "title": "GIF",
+        "description": "Ideal para animaciones simples"
+      }
     }
   },
   "hero": {
@@ -480,12 +559,17 @@
     "convertButton": "Convertir imágenes",
     "stats": {
       "sizeReduction": "Hasta 90% de reducción de tamaño",
-      "supportedFormats": "10+ formatos soportados"
+      "supportedFormats": "10+ formatos soportados",
+      "freeSecure": "100% Gratis y Seguro"
     }
   },
   "upload": {
     "title": "Sube Tus Imágenes",
     "subtitle": "Arrastra y suelta tus imágenes aquí o haz clic para explorar",
+    "clickToUpload": "o haz clic para navegar",
+    "maxFiles": "Máximo 20 archivos",
+    "uploadError": "Error al subir archivo",
+    "uploadSuccess": "Archivo subido exitosamente",
     "dragActive": "Suelta las imágenes aquí",
     "dragInactive": "Arrastra y suelta imágenes aquí",
     "dragReject": "Tipo de archivo inválido",
@@ -648,16 +732,28 @@
     "button": "Comenzar a Comprimir Ahora"
   },
   "footer": {
-    "description": "TinyCompressor - La mejor herramienta gratuita de compresión de imágenes online",
+    "description": "Herramientas profesionales de compresión y conversión de imágenes, rápidas, seguras y completamente gratuitas.",
     "quickLinks": "Enlaces Rápidos",
-    "legal": "Legal",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio",
-    "copyright": "© 2025 TinyCompressor. Todos los derechos reservados.",
+    "legal": "Legal y Soporte",
     "links": {
+      "home": "Inicio",
+      "compressor": "Compresor",
+      "converter": "Convertidor",
       "privacy": "Política de Privacidad",
       "terms": "Términos de Servicio"
-    }
+    },
+    "features": {
+      "free": "100% Gratis",
+      "freeDesc": "Sin costos ocultos o suscripciones",
+      "secure": "Seguro y Privado",
+      "secureDesc": "Archivos procesados localmente en tu navegador",
+      "fast": "Súper Rápido",
+      "fastDesc": "Optimizado para velocidad y rendimiento"
+    },
+    "copyright": "© 2025 TinyCompressor. Todos los derechos reservados.",
+    "madeWith": "Hecho con",
+    "forDevelopers": "para desarrolladores",
+    "freeOpenSource": "Gratis y Código Abierto"
   },
   "perfectFor": {
     "title": "Perfecto Para",
