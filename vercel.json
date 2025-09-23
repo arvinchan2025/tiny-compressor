@@ -61,6 +61,28 @@
           "value": "public, max-age=3600"
         }
       ]
+    },
+    {
+      "source": "/api/translations/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=300"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Language"
+        }
+      ]
+    },
+    {
+      "source": "/((?!api|_next|_vercel|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     }
   ],
   "rewrites": [
