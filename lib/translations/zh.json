@@ -1,27 +1,301 @@
 {
   "metadata": {
-    "title": "TinyCompressor - 免费在线图片压缩工具 | 压缩 JPG、PNG、WebP",
-    "description": "免费在线压缩图片！减少60-90%文件大小同时保持质量。支持JPG、PNG、WebP格式。无需注册。快速、安全、完全私密。",
-    "keywords": "图片压缩, 压缩图片, 减少文件大小, 在线工具, 免费, JPG压缩, PNG压缩, WebP压缩, 图片优化, 照片压缩, 批量压缩, 隐私, 安全",
-    "openGraphTitle": "TinyCompressor - 免费在线图片压缩工具",
-    "openGraphDescription": "免费在线压缩图片！减少60-90%文件大小同时保持质量。支持JPG、PNG、WebP格式。无需注册。",
-    "twitterTitle": "TinyCompressor - 免费在线图片压缩工具",
-    "twitterDescription": "免费在线压缩图片！减少60-90%文件大小同时保持质量。"
+    "title": "TinyCompressor - 免费在线图片压缩和转换工具 | JPG、PNG、WebP、AVIF、GIF",
+    "description": "专业图片压缩和格式转换工具。压缩JPG、PNG、WebP、AVIF、GIF图片，文件大小减少高达90%，零质量损失。即时转换格式。100%免费、安全、注重隐私。无需注册。",
+    "keywords": "图片压缩, 图片转换器, 压缩图片, 减少文件大小, JPG压缩, PNG压缩, WebP压缩, AVIF压缩, GIF压缩, 图片格式转换器, 在线图片优化器, 照片压缩, 批量压缩, 隐私, 安全, 免费图片工具, Web优化",
+    "openGraphTitle": "TinyCompressor - 免费在线图片压缩和转换工具",
+    "openGraphDescription": "免费在线压缩和转换图片。减少文件大小高达90%同时保持质量。支持JPG、PNG、WebP、AVIF、GIF格式。快速、安全、完全私密。",
+    "twitterTitle": "TinyCompressor - 免费图片压缩和转换工具",
+    "twitterDescription": "专业图片压缩和格式转换。压缩图片高达90%更小，零质量损失。100%免费安全。"
   },
   "nav": {
     "features": "功能",
     "about": "关于",
-    "language": "语言"
+    "language": "语言",
+    "compressor": "压缩器",
+    "converter": "转换器",
+    "home": "首页"
+  },
+  "features": {
+    "title": "强大的图片处理功能",
+    "subtitle": "一站式解决您的图片压缩和转换需求",
+    "compression": {
+      "title": "智能压缩",
+      "description": "先进的压缩算法，在保持视觉质量的同时减少文件大小高达90%"
+    },
+    "conversion": {
+      "title": "格式转换",
+      "description": "支持多种图片格式之间的无缝转换，保持高质量"
+    },
+    "batch": {
+      "title": "批量处理",
+      "description": "一次性处理多张图片，支持ZIP下载，提高工作效率"
+    },
+    "privacy": {
+      "title": "隐私保护",
+      "description": "所有处理都在您的浏览器中进行，图片不会上传到服务器"
+    },
+    "quality": {
+      "title": "质量保证",
+      "description": "智能算法确保在压缩和转换过程中保持最佳图片质量"
+    },
+    "speed": {
+      "title": "快速处理",
+      "description": "优化的处理引擎，即使是大型图片也能快速完成处理"
+    },
+    "fast": {
+      "title": "极速处理",
+      "description": "优化的处理引擎，即使是大型图片也能快速完成处理"
+    },
+    "formats": {
+      "title": "广泛支持",
+      "description": "支持JPG、PNG、WebP、AVIF、GIF等多种主流图片格式"
+    },
+    "free": {
+      "title": "完全免费",
+      "description": "所有功能完全免费使用，无需注册，无隐藏费用"
+    },
+    "secure": {
+      "title": "安全可靠",
+      "description": "本地处理确保数据安全，符合隐私保护标准"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "获取关于我们工具的常见问题答案",
+    "questions": [
+      {
+        "question": "这个工具是完全免费的吗？",
+        "answer": "是的，TinyCompressor完全免费使用。您可以无限制地压缩和转换图片，无需注册或付费。"
+      },
+      {
+        "question": "我的图片安全吗？",
+        "answer": "绝对安全！所有图片处理都在您的浏览器中进行，图片不会上传到我们的服务器。您的隐私得到完全保护。"
+      },
+      {
+        "question": "支持哪些图片格式？",
+        "answer": "我们支持JPG、PNG、WebP、AVIF、GIF、HEIC、BMP、TIFF、ICO、SVG等多种主流图片格式。"
+      },
+      {
+        "question": "压缩会降低图片质量吗？",
+        "answer": "我们的智能算法在压缩过程中保持最佳视觉质量。您可以调整质量设置来平衡文件大小和图片质量。"
+      },
+      {
+        "question": "可以批量处理图片吗？",
+        "answer": "是的！您可以一次性上传多张图片进行批量压缩或转换，支持ZIP格式打包下载。"
+      },
+      {
+        "question": "有文件大小限制吗？",
+        "answer": "单张图片最大支持50MB，批量处理最多支持20张图片。这些限制确保处理速度和浏览器稳定性。"
+      },
+      {
+        "question": "转换后的图片质量如何？",
+        "answer": "我们使用先进的转换算法，确保在不同格式之间转换时保持高质量的视觉效果。"
+      },
+      {
+        "question": "支持透明度转换吗？",
+        "answer": "是的，我们完全支持透明度转换。当目标格式支持透明度时，透明区域会被完美保留。"
+      },
+      {
+        "question": "处理速度快吗？",
+        "answer": "我们的工具经过优化，处理速度很快。即使是大型图片，通常也能在几秒钟内完成处理。"
+      },
+      {
+        "question": "需要安装软件吗？",
+        "answer": "不需要！这是一个完全基于浏览器的在线工具，无需下载或安装任何软件。"
+      },
+      {
+        "question": "支持移动设备吗？",
+        "answer": "是的，我们的工具完全响应式设计，在手机、平板和桌面设备上都能完美运行。"
+      }
+    ],
+    "privacy": {
+      "question": "我的图片隐私安全吗？",
+      "answer": "绝对安全！所有图片处理都在您的浏览器本地进行，图片不会上传到我们的服务器，确保您的隐私得到完全保护。"
+    },
+    "fileSize": {
+      "question": "有文件大小限制吗？",
+      "answer": "单张图片最大支持50MB，批量处理最多支持20张图片。这些限制确保处理速度和浏览器稳定性。"
+    },
+    "compression": {
+      "question": "压缩会影响图片质量吗？",
+      "answer": "我们的智能算法在压缩过程中保持最佳视觉质量。您可以调整质量设置来平衡文件大小和图片质量。"
+    },
+    "account": {
+      "question": "需要注册账户吗？",
+      "answer": "不需要！这是一个完全免费的工具，无需注册账户即可使用所有功能。"
+    },
+    "browsers": {
+      "question": "支持哪些浏览器？",
+      "answer": "我们支持所有现代浏览器，包括Chrome、Firefox、Safari、Edge等。工具采用响应式设计，在手机和桌面设备上都能完美运行。"
+    },
+    "questions": {
+      "privacy": {
+        "question": "我的图片会被上传到服务器吗？",
+        "answer": "不会！所有图片处理都在您的浏览器本地进行，图片不会上传到我们的服务器。您的隐私得到完全保护。"
+      },
+      "fileSize": {
+        "question": "可以压缩多大的文件？",
+        "answer": "单张图片最大支持50MB，批量处理最多支持20张图片。这些限制确保处理速度和浏览器稳定性。"
+      },
+      "compression": {
+        "question": "压缩会影响图片质量吗？",
+        "answer": "我们的智能算法在压缩过程中保持最佳视觉质量。您可以调整质量设置来平衡文件大小和图片质量。"
+      },
+      "account": {
+        "question": "需要注册账户吗？",
+        "answer": "不需要！这是一个完全免费的工具，无需注册账户即可使用所有功能。"
+      },
+      "browsers": {
+        "question": "支持哪些浏览器？",
+        "answer": "我们支持所有现代浏览器，包括Chrome、Firefox、Safari、Edge等。工具采用响应式设计，在手机和桌面设备上都能完美运行。"
+      }
+    }
+  },
+  "formats": {
+    "title": "支持的图片格式",
+    "jpeg": {
+      "title": "JPEG",
+      "description": "最适合照片和复杂图片"
+    },
+    "png": {
+      "title": "PNG", 
+      "description": "最适合带透明度的图形"
+    },
+    "webp": {
+      "title": "WebP",
+      "description": "具有出色压缩的现代格式"
+    },
+    "gif": {
+      "title": "GIF",
+      "description": "最适合简单动画"
+    }
+  },
+  "cta": {
+    "title": "开始压缩您的图片",
+    "subtitle": "立即体验专业的图片压缩和转换服务",
+    "button": "开始使用"
+  },
+  "footer": {
+    "description": "专业的在线图片压缩和转换工具，帮助您优化图片以获得更好的Web性能。",
+    "quickLinks": "快速链接",
+    "legal": "法律信息",
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    },
+    "copyright": "© 2025 TinyCompressor. 保留所有权利。"
+  },
+  "useCases": {
+    "title": "使用场景",
+    "webDev": {
+      "title": "Web开发",
+      "description": "优化网站图片以提高加载速度和用户体验"
+    },
+    "mobile": {
+      "title": "移动应用",
+      "description": "压缩移动应用中的图片以节省存储空间和带宽"
+    },
+    "social": {
+      "title": "社交媒体",
+      "description": "优化社交媒体图片以确保快速上传和分享"
+    },
+    "email": {
+      "title": "邮件附件",
+      "description": "压缩邮件附件中的图片以减少邮件大小"
+    },
+    "storage": {
+      "title": "存储优化",
+      "description": "减少图片存储空间，节省云存储成本"
+    },
+    "ecommerce": {
+      "title": "电商平台",
+      "description": "优化产品图片以提高网站性能和销售转化率"
+    }
+  },
+  "perfectFor": {
+    "title": "完美适用于",
+    "webDevelopers": {
+      "title": "Web开发者",
+      "description": "优化网站图片，提高页面加载速度"
+    },
+    "designers": {
+      "title": "设计师",
+      "description": "压缩设计稿和素材图片，保持质量"
+    },
+    "socialMedia": {
+      "title": "社交媒体经理",
+      "description": "优化社交媒体内容图片"
+    },
+    "emailAttachments": {
+      "title": "邮件用户",
+      "description": "压缩邮件附件，确保快速发送"
+    },
+    "ecommerce": {
+      "title": "电商卖家",
+      "description": "优化产品图片，提升网站性能"
+    },
+    "photoStorage": {
+      "title": "照片存储",
+      "description": "压缩照片库，节省存储空间"
+    }
+  },
+  "settings": {
+    "settings": "设置",
+    "processingMode": "处理模式",
+    "singleFile": "单文件",
+    "batchMode": "批量模式",
+    "ui": "界面",
+    "advancedSettings": "高级设置",
+    "batchOperations": "批量操作",
+    "smartPresets": "智能预设",
+    "fileThumbnails": "文件缩略图",
+    "compactMode": "紧凑模式",
+    "defaults": "默认值",
+    "compressionQuality": "压缩质量",
+    "conversionFormat": "转换格式",
+    "preserveMetadata": "保留元数据",
+    "optimizeForWeb": "Web优化",
+    "features": "功能",
+    "dragDrop": "拖拽上传",
+    "keyboardShortcuts": "键盘快捷键",
+    "autoSave": "自动保存",
+    "progressNotifications": "进度通知",
+    "theme": "主题",
+    "colorScheme": "配色方案",
+    "light": "浅色",
+    "dark": "深色",
+    "auto": "自动",
+    "accentColor": "强调色",
+    "save": "保存",
+    "reset": "重置",
+    "close": "关闭",
+    "optional": "（可选）",
+    "showSettings": "显示设置",
+    "hideSettings": "隐藏设置",
+    "toggleSettings": "切换设置"
   },
   "hero": {
     "title": "即时图片压缩",
     "subtitle": "无损压缩图片文件大小，快速、安全、完全免费",
+    "description": "专业的图片压缩和格式转换工具。压缩JPG、PNG、WebP、AVIF、GIF图片，文件大小减少高达90%，零质量损失。即时转换格式。100%免费、安全、注重隐私。无需注册。",
     "cta": "开始压缩",
-    "trustedBy": "全球数千用户信赖"
+    "compressButton": "压缩图片",
+    "convertButton": "转换图片",
+    "trustedBy": "全球数千用户信赖",
+    "stats": {
+      "sizeReduction": "文件大小减少90%",
+      "supportedFormats": "支持10+格式",
+      "freeSecure": "100%免费安全"
+    }
   },
   "upload": {
     "title": "上传您的图片",
     "subtitle": "拖拽图片到此处或点击浏览",
+    "singleFileTitle": "上传您的图片",
+    "singleFileSubtitle": "拖拽您的图片到此处或点击浏览",
+    "batchTitle": "上传多张图片",
+    "batchSubtitle": "拖拽多张图片到此处或点击浏览",
     "dragActive": "释放图片",
     "dragInactive": "拖拽图片到此处",
     "dragReject": "不支持的文件类型",
@@ -29,7 +303,12 @@
     "maxSize": "单文件最大：10MB",
     "uploadedFiles": "已上传文件",
     "removeFile": "移除文件",
-    "ready": "就绪"
+    "ready": "就绪",
+    "addMore": "添加更多文件",
+    "clickToUpload": "或点击浏览",
+    "maxFiles": "最大文件数：20",
+    "uploadError": "上传失败",
+    "uploadSuccess": "上传成功"
   },
   "compression": {
     "title": "压缩设置",
@@ -39,16 +318,24 @@
     },
     "quickMode": {
       "title": "快速压缩",
-      "description": "针对大多数图片的优化设置，质量和文件大小的完美平衡",
+      "description": "为大多数图片优化的设置。质量和文件大小的完美平衡。",
       "compress": "立即压缩",
       "formatNote": "保持原始文件格式"
     },
     "customMode": {
       "title": "自定义设置",
       "quality": "质量",
+      "qualityDesc": "调整压缩质量（1-100）",
+      "format": "格式",
+      "formatDesc": "选择输出格式",
+      "dimensions": "尺寸",
+      "dimensionsDesc": "调整输出尺寸",
+      "preserveAspectRatio": "保持宽高比",
+      "preserveAspectRatioDesc": "保持原始图片比例",
+      "customWidth": "自定义宽度",
+      "customHeight": "自定义高度",
       "maxWidth": "最大宽度",
       "maxHeight": "最大高度",
-      "format": "输出格式",
       "compress": "压缩图片",
       "compressing": "压缩中...",
       "qualityDescription": {
@@ -62,250 +349,1063 @@
         "large": "大尺寸（高分辨率）"
       },
       "formatDescription": {
-        "jpeg": "有损压缩，文件更小",
-        "png": "无损压缩，支持透明",
-        "webp": "现代格式，压缩效果极佳"
+        "jpeg": "JPEG格式，适合照片和复杂图像",
+        "png": "PNG格式，支持透明度和无损压缩",
+        "webp": "WebP格式，现代Web标准，压缩率更高"
       }
+    },
+    "advanced": {
+      "title": "高级选项",
+      "progressive": "渐进式加载",
+      "progressiveDesc": "启用渐进式加载以获得更好的Web性能",
+      "optimizeHuffman": "优化霍夫曼表",
+      "optimizeHuffmanDesc": "优化压缩表以获得更好的文件大小减少",
+      "colorSpace": "色彩空间",
+      "colorSpaceDesc": "sRGB推荐用于Web，Adobe RGB用于专业打印",
+      "keepMetadata": "保留元数据",
+      "keepMetadataDesc": "在压缩的图片中保留EXIF数据（相机设置、GPS等）",
+      "optimizeForWeb": "Web优化",
+      "optimizeForWebDesc": "优化图片以在Web上快速加载"
+    },
+    "tips": {
+      "title": "压缩技巧",
+      "quality": "更高的质量设置会产生更大的文件但图像质量更好",
+      "web": "Web优化在保持良好的视觉质量的同时减少文件大小",
+      "metadata": "元数据会增加文件大小但保留图像信息"
     }
   },
-  "results": {
-    "title": "压缩结果",
-    "originalSize": "原始大小",
-    "compressedSize": "压缩后大小",
-    "savings": "节省空间",
+  "converter": {
+    "title": "图片格式转换器",
+    "subtitle": "在不同格式之间即时转换图片",
+    "description": "将您的图片转换为JPG、PNG、WebP等多种格式，高质量快速处理。",
+    "supportedFormats": "支持的格式",
+    "dragDrop": "拖拽图片到此处或点击浏览",
+    "clickToUpload": "或点击浏览",
+    "supportedFormatsList": "支持JPG、PNG、WebP、GIF、BMP等多种格式",
+    "maxSize": "单文件最大：50MB",
+    "uploadedFiles": "已上传文件",
+    "removeFile": "移除",
+    "ready": "准备转换",
+    "converting": "转换中...",
     "download": "下载",
-    "downloadAll": "打包下载ZIP",
-    "compressMore": "压缩更多图片",
-    "compressionRatio": "压缩比例",
-    "spaceSaved": "节省空间"
-  },
-  "features": {
-    "title": "为什么选择TinyCompressor？",
-    "fast": {
-      "title": "闪电般快速",
-      "description": "使用我们的优化算法在几秒钟内压缩图片"
+    "downloadAll": "全部下载",
+    "convertMore": "转换更多",
+    "noResults": "暂无结果",
+    "before": "转换前",
+    "after": "转换后",
+    "originalSize": "原始大小",
+    "convertedSize": "转换后大小",
+    "spaceSaved": "节省空间",
+    "quality": "质量",
+    "dimensions": "尺寸",
+    "settings": "设置",
+    "reset": "重置",
+    "hero": {
+      "smartConversion": "智能图片转换",
+      "smartConversionDesc": "在不同格式之间转换图片，同时保持质量并根据您的需求进行优化",
+      "formatFlexibility": "格式灵活性",
+      "formatFlexibilityDesc": "在不同图片格式之间转换，具有智能优化功能",
+      "qualityPreservation": "质量保持",
+      "qualityPreservationDesc": "使用先进算法在格式转换过程中保持图片质量",
+      "batchProcessing": "批量处理",
+      "batchProcessingDesc": "一次性转换多张图片，支持ZIP下载和格式优化"
     },
-    "secure": {
-      "title": "100% 安全",
-      "description": "您的图片在本地处理，永远不会存储在我们的服务器上"
+    "comparison": {
+      "title": "格式对比",
+      "subtitle": "比较源格式和目标格式以了解差异",
+      "fileSize": "文件大小",
+      "quality": "质量",
+      "transparency": "透明度",
+      "browserSupport": "浏览器支持",
+      "sourceFormat": "源格式",
+      "targetFormat": "目标格式",
+      "features": "特性",
+      "larger": "更大",
+      "smaller": "更小",
+      "high": "高",
+      "supported": "支持",
+      "varies": "变化",
+      "excellent": "优秀",
+      "recommendation": "推荐"
     },
-    "quality": {
-      "title": "高质量",
-      "description": "在显著减小文件大小的同时保持图片质量"
+    "upload": {
+      "title": "上传您的图片",
+      "subtitle": "上传源格式图片以转换为目标格式",
+      "dragActive": "在此处释放图片",
+      "dragInactive": "拖拽图片到此处",
+      "dragReject": "无效文件类型",
+      "clickToUpload": "或点击浏览",
+      "supportedFormats": "支持源格式图片",
+      "maxSize": "最大文件大小：每张图片10MB",
+      "maxFiles": "最大文件数：20",
+      "removeFile": "移除文件",
+      "uploadError": "上传失败",
+      "uploadSuccess": "上传成功",
+      "uploadedFiles": "已上传文件",
+      "convertNow": "立即转换",
+      "formatInfo": {
+        "title": "格式信息",
+        "description": "我们接受源格式图片并将其转换为目标格式。转换过程保持高质量的同时优化文件大小。"
+      }
     },
-    "free": {
-      "title": "完全免费",
-      "description": "无需注册，无隐藏费用，无使用限制"
-    }
-  },
-  "howItWorks": {
-    "title": "工作原理",
-    "step1": {
-      "title": "上传图片",
-      "description": "拖拽图片到此处或点击浏览。支持JPG、PNG、WebP等多种格式。"
+    "settings": {
+      "title": "转换设置",
+      "presets": {
+        "title": "快速预设",
+        "highQuality": "高质量",
+        "highQualityDesc": "最佳质量，文件较大",
+        "balanced": "平衡",
+        "balancedDesc": "质量与文件大小的良好平衡",
+        "optimized": "Web优化",
+        "optimizedDesc": "针对Web优化，文件较小"
+      },
+      "quality": "质量",
+      "lowQuality": "低",
+      "highQuality": "高",
+      "colorSpace": "色彩空间",
+      "auto": "自动",
+      "srgb": "sRGB",
+      "adobe": "Adobe RGB",
+      "colorSpaceDesc": "建议Web使用sRGB，专业打印使用Adobe RGB。",
+      "preserveMetadata": "保留元数据",
+      "preserveMetadataDesc": "在转换的图片中保留EXIF数据（相机设置、GPS等）。",
+      "optimizeForWeb": "Web优化",
+      "optimizeForWebDesc": "优化图片以加快Web加载和提升性能。",
+      "progressive": "渐进式加载",
+      "progressiveDesc": "启用渐进式加载以获得更好的Web性能。",
+      "tips": {
+        "title": "转换技巧",
+        "quality": "更高的质量设置会产生更大的文件但图像质量更好",
+        "web": "Web优化在保持良好的视觉质量的同时减少文件大小",
+        "metadata": "元数据会增加文件大小但保留图像信息"
+      }
     },
-    "step2": {
-      "title": "调整设置",
-      "description": "自定义压缩质量、尺寸和输出格式以满足您的需求。"
+    "howItWorks": {
+      "title": "图片转换工作原理",
+      "subtitle": "我们的转换器使用先进算法在不同格式之间转换图片，同时保持质量",
+      "steps": {
+        "upload": {
+          "title": "上传源图片",
+          "description": "拖拽或选择源格式图片进行转换。支持批量上传。"
+        },
+        "settings": {
+          "title": "配置转换设置",
+          "description": "调整质量、色彩空间和其他转换参数以获得最佳结果。"
+        },
+        "convert": {
+          "title": "转换为目标格式",
+          "description": "我们的先进算法将源格式转换为目标格式，同时保持质量。"
+        },
+        "download": {
+          "title": "下载结果",
+          "description": "单独下载转换后的文件或作为ZIP存档进行批量处理。"
+        }
+      },
+      "technicalDetails": {
+        "title": "技术细节",
+        "algorithm": {
+          "title": "转换算法",
+          "description": "我们使用先进的图像处理算法，确保格式转换过程中的最佳质量和性能。",
+          "step1": "图像解码：使用优化的解码器读取源格式图片",
+          "step2": "格式分析：分析图片特征以选择最佳转换参数",
+          "step3": "色彩空间转换：智能转换色彩空间以保持视觉质量",
+          "step4": "编码优化：使用先进编码器生成目标格式文件"
+        },
+        "quality": {
+          "title": "质量控制",
+          "description": "智能质量控制算法确保转换后的图片保持原始视觉质量。",
+          "step1": "质量评估：分析原始图片的质量特征",
+          "step2": "参数优化：根据源格式和目标格式调整转换参数",
+          "step3": "质量保持：在转换过程中保持重要视觉细节",
+          "step4": "结果验证：验证转换后的图片质量"
+        },
+        "performance": {
+          "title": "性能优化",
+          "description": "优化的处理管道确保快速转换，即使是大文件也能快速处理。",
+          "step1": "并行处理：利用多核处理器进行并行转换",
+          "step2": "内存优化：智能内存管理减少处理时间",
+          "step3": "算法优化：使用高效的转换算法",
+          "step4": "缓存机制：缓存中间结果提高处理速度"
+        }
+      }
     },
-    "step3": {
-      "title": "下载结果",
-      "description": "单独下载文件或打包下载所有压缩后的图片。"
-    }
-  },
-  "formats": {
-    "title": "支持的图片格式",
-    "jpeg": {
-      "title": "JPEG/JPG",
-      "description": "最适合照片和复杂多色图片"
+    "notes": {
+      "title": "转换说明",
+      "subtitle": "帮助您获得最佳转换结果的重要信息",
+      "formatSpecific": {
+        "title": "格式特定说明",
+        "source": "源格式",
+        "target": "目标格式",
+        "compatibility": "兼容性",
+        "quality": "质量影响",
+        "useCase": "使用场景",
+        "sourceFeatures": "源格式特性",
+        "targetFeatures": "目标格式特性",
+        "recommendation": {
+          "title": "推荐设置",
+          "content": "根据源格式和目标格式的特点，我们推荐以下设置以获得最佳转换结果。"
+        }
+      },
+      "transparency": {
+        "title": "透明度处理",
+        "content": "转换涉及透明度的格式时，请确保目标格式支持透明度，否则透明区域将被白色填充。"
+      },
+      "quality": {
+        "title": "质量设置",
+        "content": "选择合适的质量设置平衡文件大小和视觉质量。高质量设置产生更大的文件但保持更好的视觉质量。"
+      },
+      "compatibility": {
+        "title": "浏览器兼容性",
+        "content": "考虑目标格式的浏览器支持情况。WebP和AVIF提供更好的压缩效果，但需要现代浏览器支持。"
+      },
+      "reconversion": {
+        "title": "重新转换",
+        "content": "避免多次转换同一文件，因为每次转换都可能累积质量损失。建议从原始高质量文件开始转换。"
+      }
     },
-    "png": {
-      "title": "PNG",
-      "description": "完美支持透明度和锐利边缘的图形"
-    },
-    "webp": {
-      "title": "WebP",
-      "description": "现代格式，压缩效果和画质俱佳"
-    },
-    "gif": {
-      "title": "GIF/BMP",
-      "description": "支持动画GIF和位图图像"
-    }
-  },
-  "faq": {
-    "title": "常见问题",
-    "questions": {
-      "privacy": {
-        "question": "我的数据安全私密吗？",
-        "answer": "是的，绝对安全！所有图片处理都在您的浏览器本地进行。您的图片永远不会上传到我们的服务器，确保完全的隐私和安全。"
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "获取关于图片转换和我们工具的常见问题答案",
+      "transparency": {
+        "question": "转换时如何保持透明度？",
+        "answer": "确保目标格式支持透明度（如PNG、WebP）。如果目标格式不支持透明度，透明区域将被白色填充。"
+      },
+      "quality": {
+        "question": "转换会影响图片质量吗？",
+        "answer": "我们的智能算法在转换过程中保持最佳质量。选择合适的质量设置可以平衡文件大小和视觉质量。"
       },
       "fileSize": {
-        "question": "我可以压缩的最大文件大小是多少？",
-        "answer": "您可以压缩最大10MB的图片。单次会话处理的图片数量没有限制。"
+        "question": "转换后文件大小会如何变化？",
+        "answer": "文件大小变化取决于源格式和目标格式。通常，现代格式（如WebP、AVIF）提供更好的压缩效果。"
       },
-      "compression": {
-        "question": "我可以减少多少文件大小？",
-        "answer": "压缩比例因图片类型和设置而异，但通常您可以在保持良好的视觉质量的同时减少60-90%的文件大小。"
+      "metadata": {
+        "question": "转换会保留EXIF数据吗？",
+        "answer": "您可以选择保留或移除EXIF数据。保留元数据会增加文件大小，移除元数据可以减小文件大小。"
       },
-      "account": {
-        "question": "我需要创建账户吗？",
-        "answer": "无需注册！TinyCompressor完全免费使用，无需注册，无隐藏费用，无使用限制。"
+      "batch": {
+        "question": "可以批量转换不同格式的图片吗？",
+        "answer": "是的，您可以将不同格式的图片转换为统一的目标格式，支持批量处理和ZIP下载。"
       },
-      "browsers": {
-        "question": "支持哪些浏览器？",
-        "answer": "TinyCompressor支持所有现代浏览器，包括Chrome、Firefox、Safari和Edge。同时也完全优化了移动设备体验。"
+      "security": {
+        "question": "我的图片安全吗？",
+        "answer": "是的，所有处理都在您的浏览器中进行，图片不会上传到服务器。我们注重您的隐私和安全。"
+      }
+    },
+    "results": {
+      "title": "转换结果",
+      "subtitle": "您的图片已成功转换",
+      "original": "原始",
+      "converted": "转换后",
+      "sizeReduced": "大小减少",
+      "sizeIncreased": "大小增加",
+      "download": "下载",
+      "downloadAll": "全部下载ZIP",
+      "before": "转换前",
+      "after": "转换后",
+      "conversion": "转换",
+      "conversionTime": "转换时间",
+      "formatChange": "格式变化",
+      "compressionRatio": "压缩比例",
+      "spaceSaved": "节省空间",
+      "convertMore": "转换更多",
+      "stats": {
+        "filesConverted": "已转换文件",
+        "sizeReduction": "大小减少",
+        "totalSize": "总大小",
+        "totalTime": "总时间"
+      }
+    },
+    "formats": {
+      "jpg": {
+        "title": "JPG",
+        "description": "最适合照片和复杂图片"
+      },
+      "png": {
+        "title": "PNG",
+        "description": "最适合带透明度的图形"
+      },
+      "webp": {
+        "title": "WebP",
+        "description": "具有出色压缩的现代格式"
+      },
+      "gif": {
+        "title": "GIF",
+        "description": "最适合简单动画"
+      },
+      "avif": {
+        "title": "AVIF",
+        "description": "具有卓越压缩的下一代格式"
+      },
+      "heic": {
+        "title": "HEIC",
+        "description": "苹果的高效图片格式"
+      },
+      "bmp": {
+        "title": "BMP",
+        "description": "未压缩的位图格式"
+      },
+      "tiff": {
+        "title": "TIFF",
+        "description": "高质量图片格式"
+      },
+      "ico": {
+        "title": "ICO",
+        "description": "Windows图标格式"
+      },
+      "svg": {
+        "title": "SVG",
+        "description": "可缩放矢量图形"
+      }
+    },
+    "conversions": {
+      "jpgToPng": {
+        "title": "JPG转PNG - 添加透明度支持",
+        "description": "将JPG照片转换为PNG格式，支持透明度并保持高质量",
+        "seoTitle": "免费JPG转PNG在线转换器 - 保持图片质量",
+        "seoDescription": "将JPG图片转换为PNG格式，支持透明度。高质量转换，保持图片细节。免费在线工具。"
+      },
+      "pngToJpg": {
+        "title": "PNG转JPG - 优化文件大小",
+        "description": "将PNG图片转换为JPG格式，减少文件大小并保持良好质量",
+        "seoTitle": "免费PNG转JPG在线转换器 - 减小文件大小",
+        "seoDescription": "将PNG图片转换为JPG格式，显著减少文件大小。保持图片质量，免费在线转换。"
+      },
+      "webpToJpg": {
+        "title": "WebP转JPG - 兼容性转换",
+        "description": "将WebP图片转换为JPG格式，提高浏览器兼容性",
+        "seoTitle": "免费WebP转JPG在线转换器 - 提高兼容性",
+        "seoDescription": "将WebP图片转换为JPG格式，确保在所有浏览器中正常显示。免费在线转换工具。"
+      },
+      "webpToPng": {
+        "title": "WebP转PNG - 保持透明度",
+        "description": "将WebP图片转换为PNG格式，保持透明度和高质量",
+        "seoTitle": "免费WebP转PNG在线转换器 - 保持透明度",
+        "seoDescription": "将WebP图片转换为PNG格式，保持透明度和图片质量。免费在线转换。"
+      },
+      "pngToWebp": {
+        "title": "PNG转WebP - 现代格式优化",
+        "description": "将PNG图片转换为WebP格式，获得更好的压缩效果",
+        "seoTitle": "免费PNG转WebP在线转换器 - 现代格式",
+        "seoDescription": "将PNG图片转换为WebP格式，获得更好的压缩效果和加载速度。免费在线工具。"
+      },
+      "jpgToWebp": {
+        "title": "JPG转WebP - 下一代格式",
+        "description": "将JPG照片转换为WebP格式，获得更好的压缩和性能",
+        "seoTitle": "免费JPG转WebP在线转换器 - 下一代格式",
+        "seoDescription": "将JPG图片转换为WebP格式，获得更好的压缩效果和Web性能。免费在线转换。"
+      },
+      "pngToAvif": {
+        "title": "PNG转AVIF - 最佳压缩",
+        "description": "将PNG图片转换为AVIF格式，获得最佳的压缩效果",
+        "seoTitle": "免费PNG转AVIF在线转换器 - 最佳压缩",
+        "seoDescription": "将PNG图片转换为AVIF格式，获得最佳的压缩效果。下一代图片格式，免费在线转换。"
+      },
+      "jpgToAvif": {
+        "title": "JPG转AVIF - 超级压缩",
+        "description": "将JPG照片转换为AVIF格式，获得超级压缩效果",
+        "seoTitle": "免费JPG转AVIF在线转换器 - 超级压缩",
+        "seoDescription": "将JPG图片转换为AVIF格式，获得超级压缩效果和更好的质量。免费在线工具。"
+      },
+      "webpToAvif": {
+        "title": "WebP转AVIF - 格式升级",
+        "description": "将WebP图片转换为AVIF格式，获得更好的压缩和性能",
+        "seoTitle": "免费WebP转AVIF在线转换器 - 格式升级",
+        "seoDescription": "将WebP图片转换为AVIF格式，获得更好的压缩效果。下一代图片格式，免费在线转换。"
+      },
+      "heicToJpg": {
+        "title": "HEIC转JPG - iPhone照片转换",
+        "description": "将iPhone的HEIC照片转换为JPG格式，提高兼容性",
+        "seoTitle": "免费HEIC转JPG在线转换器 - iPhone照片",
+        "seoDescription": "将iPhone的HEIC照片转换为JPG格式，提高兼容性。免费在线转换工具。"
+      },
+      "heicToPng": {
+        "title": "HEIC转PNG - 保持质量",
+        "description": "将HEIC图片转换为PNG格式，保持最高质量",
+        "seoTitle": "免费HEIC转PNG在线转换器 - 保持质量",
+        "seoDescription": "将HEIC图片转换为PNG格式，保持最高质量和透明度。免费在线转换。"
+      },
+      "bmpToJpg": {
+        "title": "BMP转JPG - 减小文件大小",
+        "description": "将BMP位图转换为JPG格式，显著减小文件大小",
+        "seoTitle": "免费BMP转JPG在线转换器 - 减小文件大小",
+        "seoDescription": "将BMP位图转换为JPG格式，显著减小文件大小。免费在线转换工具。"
+      },
+      "bmpToPng": {
+        "title": "BMP转PNG - 无损转换",
+        "description": "将BMP位图转换为PNG格式，无损压缩",
+        "seoTitle": "免费BMP转PNG在线转换器 - 无损转换",
+        "seoDescription": "将BMP位图转换为PNG格式，无损压缩并保持质量。免费在线转换。"
+      },
+      "tiffToJpg": {
+        "title": "TIFF转JPG - 专业格式转换",
+        "description": "将TIFF专业图片转换为JPG格式，便于分享",
+        "seoTitle": "免费TIFF转JPG在线转换器 - 专业格式",
+        "seoDescription": "将TIFF专业图片转换为JPG格式，便于分享和Web使用。免费在线转换工具。"
+      },
+      "tiffToPng": {
+        "title": "TIFF转PNG - 保持质量",
+        "description": "将TIFF图片转换为PNG格式，保持高质量",
+        "seoTitle": "免费TIFF转PNG在线转换器 - 保持质量",
+        "seoDescription": "将TIFF图片转换为PNG格式，保持高质量和透明度。免费在线转换。"
+      },
+      "icoToPng": {
+        "title": "ICO转PNG - 图标转换",
+        "description": "将Windows ICO图标转换为PNG格式，支持透明度",
+        "seoTitle": "免费ICO转PNG在线转换器 - 图标转换",
+        "seoDescription": "将Windows ICO图标转换为PNG格式，支持透明度。免费在线转换工具。"
+      },
+      "svgToPng": {
+        "title": "SVG转PNG - 矢量转位图",
+        "description": "将SVG矢量图转换为PNG位图，指定尺寸输出",
+        "seoTitle": "免费SVG转PNG在线转换器 - 矢量转位图",
+        "seoDescription": "将SVG矢量图转换为PNG位图，可指定尺寸输出。免费在线转换。"
+      },
+      "svgToJpg": {
+        "title": "SVG转JPG - 矢量图转换",
+        "description": "将SVG矢量图转换为JPG格式，便于分享",
+        "seoTitle": "免费SVG转JPG在线转换器 - 矢量图转换",
+        "seoDescription": "将SVG矢量图转换为JPG格式，便于分享和Web使用。免费在线转换工具。"
+      },
+      "gifToPng": {
+        "title": "GIF转PNG - 静态图片",
+        "description": "将GIF动画转换为PNG静态图片，保持透明度",
+        "seoTitle": "免费GIF转PNG在线转换器 - 静态图片",
+        "seoDescription": "将GIF动画转换为PNG静态图片，保持透明度。免费在线转换。"
+      },
+      "gifToJpg": {
+        "title": "GIF转JPG - 减小文件大小",
+        "description": "将GIF图片转换为JPG格式，减小文件大小",
+        "seoTitle": "免费GIF转JPG在线转换器 - 减小文件大小",
+        "seoDescription": "将GIF图片转换为JPG格式，减小文件大小。免费在线转换工具。"
       }
     }
   },
-  "useCases": {
-    "title": "完美适用于",
-    "webDev": {
-      "title": "Web开发",
-      "description": "优化网站图片以提升加载速度和用户体验"
+  "compressor": {
+    "hero": {
+      "title": "专业图片压缩器",
+      "subtitle": "将图片文件大小减少高达90%，同时保持视觉质量",
+      "description": "先进的压缩算法优化您的图片以获得更好的Web性能和存储效率。"
     },
-    "mobile": {
-      "title": "移动应用",
-      "description": "通过压缩图片减少应用大小，同时保持质量"
+    "stats": {
+      "reduction": {
+        "value": "90%",
+        "label": "平均文件大小减少"
+      },
+      "formats": {
+        "value": "5+",
+        "label": "支持格式"
+      },
+      "batch": {
+        "value": "20",
+        "label": "批量处理限制"
+      }
     },
-    "social": {
-      "title": "社交媒体",
-      "description": "为社交平台准备具有最佳文件大小的图片"
+    "upload": {
+      "title": "上传您的图片",
+      "subtitle": "拖拽或点击上传您的图片进行压缩"
     },
-    "email": {
-      "title": "邮件附件",
-      "description": "压缩邮件图片以保持在大小限制内"
+    "results": {
+      "title": "压缩结果",
+      "subtitle": "您的图片已成功压缩",
+      "before": "压缩前",
+      "after": "压缩后",
+      "reduction": "减少",
+      "originalSize": "原始大小",
+      "compressedSize": "压缩后大小",
+      "savings": "节省空间",
+      "download": "下载",
+      "downloadAll": "打包下载ZIP",
+      "compressMore": "压缩更多图片",
+      "compressionRatio": "压缩比例",
+      "spaceSaved": "节省空间",
+      "noResults": "暂无结果"
     },
-    "storage": {
-      "title": "照片存储",
-      "description": "通过压缩照片集合来节省存储空间"
+    "howItWorks": {
+      "title": "图片压缩工作原理",
+      "subtitle": "我们的压缩器使用先进算法在保持视觉质量的同时减少文件大小",
+      "steps": {
+        "upload": {
+          "title": "上传图片",
+          "description": "拖拽或点击上传您的图片。一次最多支持20个文件。"
+        },
+        "settings": {
+          "title": "调整设置",
+          "description": "选择质量级别，启用渐进式加载，并配置高级选项。"
+        },
+        "process": {
+          "title": "智能压缩",
+          "description": "我们的算法分析并压缩图片，同时保持视觉质量。"
+        },
+        "download": {
+          "title": "下载结果",
+          "description": "单独下载压缩后的图片或作为ZIP文件进行批量处理。"
+        }
+      }
     },
-    "ecommerce": {
-      "title": "电商平台",
-      "description": "优化在线商店和市场的产品图片"
-    }
-  },
-  "cta": {
-    "title": "准备压缩您的图片了吗？",
-    "subtitle": "加入数千名信赖TinyCompressor进行图片优化的用户",
-    "button": "立即开始压缩"
-  },
-  "footer": {
-    "description": "TinyCompressor - 最佳免费在线图片压缩工具",
-    "quickLinks": "快速链接",
-    "legal": "法律条款",
-    "privacy": "隐私政策",
-    "terms": "服务条款",
-    "copyright": "© 2025 TinyCompressor. 保留所有权利。"
-  },
-  "perfectFor": {
-    "title": "完美适用于",
-    "webDevelopers": {
-      "title": "Web开发",
-      "description": "优化网站图片以提升加载速度和用户体验。"
+    "notes": {
+      "title": "重要说明",
+      "subtitle": "帮助您获得最佳压缩结果的关键信息",
+      "items": [
+        {
+          "icon": "⚠️",
+          "title": "有损压缩",
+          "content": "JPEG使用有损压缩，意味着某些图像数据会被永久移除。更高的质量设置保留更多细节。",
+          "type": "warning"
+        },
+        {
+          "icon": "🎯",
+          "title": "质量与大小",
+          "content": "质量85-95适合大多数用途。质量低于70可能显示可见的伪影。找到您的最佳平衡点。",
+          "type": "info"
+        },
+        {
+          "icon": "📱",
+          "title": "渐进式加载",
+          "content": "启用渐进式加载以获得更好的Web性能。图像从低质量到高质量逐渐加载。",
+          "type": "tip"
+        },
+        {
+          "icon": "🔧",
+          "title": "元数据处理",
+          "content": "EXIF数据会增加文件大小。对于Web使用，建议移除元数据以减小文件大小。",
+          "type": "info"
+        },
+        {
+          "icon": "🎨",
+          "title": "色彩空间",
+          "content": "sRGB适合Web显示，Adobe RGB适合专业打印。选择合适的色彩空间很重要。",
+          "type": "tip"
+        }
+      ]
     },
-    "designers": {
-      "title": "移动应用",
-      "description": "通过压缩图片减少应用大小，同时保持质量。"
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "获取关于图片压缩和我们工具的常见问题答案",
+      "items": [
+        {
+          "question": "什么是最佳的压缩质量设置？",
+          "answer": "对于Web使用，质量85-90通常是最佳选择。对于打印，使用质量95-100。平衡质量和文件大小是关键。"
+        },
+        {
+          "question": "压缩会降低图片质量吗？",
+          "answer": "我们的智能算法在压缩过程中保持最佳视觉质量。您可以调整质量设置来平衡文件大小和图片质量。"
+        },
+        {
+          "question": "可以批量压缩图片吗？",
+          "answer": "是的！您可以一次性上传多张图片进行批量压缩，支持ZIP格式打包下载。"
+        },
+        {
+          "question": "支持哪些图片格式？",
+          "answer": "我们支持JPG、PNG、WebP、AVIF、GIF等多种主流图片格式。"
+        },
+        {
+          "question": "压缩后的图片安全吗？",
+          "answer": "绝对安全！所有图片处理都在您的浏览器本地进行，图片不会上传到我们的服务器。"
+        }
+      ]
     },
-    "socialMedia": {
-      "title": "社交媒体",
-      "description": "为社交平台准备具有最佳文件大小的图片。"
-    },
-    "emailAttachments": {
-      "title": "邮件附件",
-      "description": "压缩邮件图片以保持在大小限制内。"
-    },
-    "ecommerce": {
-      "title": "电商",
-      "description": "优化产品图片以提升在线商店性能。"
-    },
-    "photoStorage": {
-      "title": "照片存储",
-      "description": "通过压缩照片集合来节省存储空间。"
+    "formats": {
+      "jpeg": {
+        "title": "JPEG压缩器 - 优化您的照片",
+        "subtitle": "将JPEG文件大小减少高达90%，同时保持出色的视觉质量",
+        "description": "先进的JPEG压缩，具有质量控制、渐进式加载和色彩空间优化。完美适用于Web优化和存储效率。",
+        "settings": {
+          "title": "JPEG压缩设置",
+          "quality": "压缩质量",
+          "progressive": "启用渐进式加载",
+          "progressiveDesc": "图片从低质量到高质量逐渐加载，改善感知加载速度。",
+          "optimizeHuffman": "优化霍夫曼表",
+          "optimizeHuffmanDesc": "优化压缩表以获得更好的文件大小减少。",
+          "colorSpace": "色彩空间",
+          "colorSpaceDesc": "建议Web使用sRGB，专业打印使用Adobe RGB。",
+          "keepMetadata": "保留元数据",
+          "keepMetadataDesc": "在压缩的图片中保留EXIF数据（相机设置、GPS等）。",
+          "compress": "开始JPEG压缩",
+          "compressing": "压缩中..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "上传图片",
+            "description": "拖拽或选择JPEG图片进行压缩。支持批量上传。",
+            "icon": "📤"
+          },
+          {
+            "step": "2", 
+            "title": "调整压缩设置",
+            "description": "选择质量级别、启用渐进式加载并配置高级选项。",
+            "icon": "⚙️"
+          },
+          {
+            "step": "3",
+            "title": "智能JPEG压缩",
+            "description": "我们的算法优化JPEG压缩以获得最佳质量和文件大小。",
+            "icon": "🧠"
+          },
+          {
+            "step": "4",
+            "title": "下载结果",
+            "description": "下载优化的JPEG文件，单独或作为ZIP存档。",
+            "icon": "⬇️"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "📸",
+            "title": "JPEG最佳实践",
+            "content": "JPEG最适合照片和复杂图像。避免用于需要透明度的图形。",
+            "type": "info"
+          },
+          {
+            "icon": "⚡",
+            "title": "渐进式加载",
+            "content": "启用渐进式加载可改善Web体验，图片从模糊到清晰逐渐显示。",
+            "type": "tip"
+          },
+          {
+            "icon": "🎯",
+            "title": "质量设置",
+            "content": "质量85-95适合Web使用，质量95-100适合打印。平衡质量和文件大小。",
+            "type": "tip"
+          },
+          {
+            "icon": "🔧",
+            "title": "高级优化",
+            "content": "启用霍夫曼表优化可进一步减少文件大小，但会增加处理时间。",
+            "type": "info"
+          }
+        ],
+        "faq": [
+          {
+            "question": "什么是最佳的JPEG质量设置？",
+            "answer": "对于Web使用，质量85-90通常是最佳选择。对于打印，使用质量95-100。平衡质量和文件大小是关键。"
+          },
+          {
+            "question": "渐进式JPEG有什么好处？",
+            "answer": "渐进式JPEG在Web上加载更快，用户会看到图片从模糊逐渐变清晰，提供更好的用户体验。"
+          },
+          {
+            "question": "JPEG压缩会降低图片质量吗？",
+            "answer": "JPEG是有损压缩，但我们的智能算法在保持视觉质量的同时最大化文件大小减少。"
+          },
+          {
+            "question": "应该保留EXIF数据吗？",
+            "answer": "对于Web使用，通常建议移除EXIF数据以减小文件大小。对于摄影作品，保留EXIF数据很重要。"
+          },
+          {
+            "question": "JPEG和PNG有什么区别？",
+            "answer": "JPEG适合照片和复杂图像，文件更小。PNG适合图形和需要透明度的图像，文件通常更大。"
+          },
+          {
+            "question": "可以多次压缩JPEG吗？",
+            "answer": "不建议多次压缩JPEG，因为每次压缩都会累积质量损失。建议从原始高质量图片开始压缩。"
+          }
+        ]
+      },
+      "png": {
+        "title": "PNG压缩器 - 优化您的图形",
+        "subtitle": "在保持透明度和色彩准确性的同时减少PNG文件大小",
+        "description": "先进的PNG压缩，支持透明度、色彩优化和无损压缩。完美适用于图形、徽标和需要精确再现的图片。",
+        "settings": {
+          "title": "PNG压缩设置",
+          "compressionLevel": "压缩级别",
+          "compressionLevelDesc": "更高的级别提供更好的压缩但处理时间更长。",
+          "colorType": "颜色类型",
+          "colorTypeDesc": "选择最适合您图片的颜色类型。",
+          "keepTransparency": "保持透明度",
+          "keepTransparencyDesc": "保留图片中的透明区域。",
+          "optimizePalette": "优化调色板",
+          "optimizePaletteDesc": "优化颜色调色板以获得更好的压缩。",
+          "colorOptimization": "颜色优化",
+          "colorOptimizationDesc": "优化颜色调色板以获得更好的压缩效果。",
+          "transparencyHandling": "透明度处理",
+          "transparencyHandlingDesc": "智能处理透明度以保持图像质量。",
+          "keepMetadata": "保留元数据",
+          "keepMetadataDesc": "在压缩的PNG文件中保留元数据。",
+          "compress": "开始PNG压缩",
+          "compressing": "压缩中..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "上传PNG图片",
+            "description": "拖拽或选择PNG图片进行优化。支持透明度和各种颜色深度。",
+            "icon": "📤"
+          },
+          {
+            "step": "2",
+            "title": "配置PNG设置",
+            "description": "调整压缩级别、颜色类型和透明度选项。",
+            "icon": "⚙️"
+          },
+          {
+            "step": "3",
+            "title": "无损PNG优化",
+            "description": "我们的算法优化PNG压缩，在保持质量的同时减少文件大小。",
+            "icon": "🧠"
+          },
+          {
+            "step": "4",
+            "title": "下载结果",
+            "description": "下载优化的PNG文件，单独或作为ZIP存档。",
+            "icon": "⬇️"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🎨",
+            "title": "无损压缩",
+            "content": "PNG使用无损压缩，保留所有图像数据和透明度。完美适用于需要精确再现的图形。",
+            "type": "info"
+          },
+          {
+            "icon": "🔍",
+            "title": "透明度支持",
+            "content": "PNG的主要优势是支持透明度。对于徽标、图标和图形，始终保留透明度。",
+            "type": "tip"
+          },
+          {
+            "icon": "📊",
+            "title": "颜色优化",
+            "content": "启用颜色优化可通过优化调色板减少文件大小，而不影响视觉质量。",
+            "type": "tip"
+          },
+          {
+            "icon": "⚡",
+            "title": "压缩级别",
+            "content": "更高的压缩级别（6-9）提供更好的压缩但处理更慢。级别6通常是最佳选择。",
+            "type": "info"
+          }
+        ],
+        "faq": [
+          {
+            "question": "PNG的最佳压缩级别是什么？",
+            "answer": "压缩级别6在文件大小减少和处理速度之间提供最佳平衡。级别8-9提供最大压缩但处理时间更长。"
+          },
+          {
+            "question": "应该启用颜色优化吗？",
+            "answer": "是的，颜色优化可以显著减少PNG文件大小，通过优化调色板而不影响视觉质量，特别是对于颜色有限的图像。"
+          },
+          {
+            "question": "PNG压缩可以是有损的吗？",
+            "answer": "标准PNG总是无损的，但一些高级工具提供有损PNG压缩。对于有损压缩，考虑WebP或JPEG格式。"
+          },
+          {
+            "question": "如何在PNG中保持透明度？",
+            "answer": "确保启用'保持透明度'。这保持alpha通道，对于徽标、图标和带透明背景的图形至关重要。"
+          },
+          {
+            "question": "什么时候应该使用PNG而不是JPEG？",
+            "answer": "对图形、徽标、截图和需要透明度的图像使用PNG。对照片和不需要透明度的复杂图像使用JPEG。"
+          },
+          {
+            "question": "PNG文件可以多次压缩吗？",
+            "answer": "是的，PNG压缩是无损的，所以您可以多次压缩PNG文件而不会损失质量，与JPEG不同。"
+          }
+        ]
+      },
+      "webp": {
+        "title": "WebP转换器 - 下一代图片格式",
+        "subtitle": "将图片转换为WebP格式，获得比JPEG好25-35%的压缩效果",
+        "description": "先进的WebP转换，具有有损和无损压缩、透明度支持和卓越的质量。完美适用于现代Web优化。",
+        "settings": {
+          "title": "WebP转换设置",
+          "compressionMode": "压缩模式",
+          "lossy": "有损（推荐）",
+          "lossless": "无损",
+          "lossyDesc": "照片使用有损，图形和需要精确再现的图片使用无损。",
+          "quality": "质量",
+          "method": "压缩方法",
+          "methodDesc": "更高的方法提供更好的压缩但编码更慢。",
+          "alphaQuality": "Alpha质量",
+          "alphaQualityDesc": "控制透明度通道的质量。",
+          "keepMetadata": "保留元数据",
+          "keepMetadataDesc": "在转换的图片中保留EXIF数据和其他元数据。",
+          "convert": "转换为WebP",
+          "converting": "转换中..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "上传WebP图片",
+            "description": "选择要压缩的WebP图片文件。"
+          },
+          {
+            "step": "2",
+            "title": "调整设置",
+            "description": "选择压缩质量和输出设置。"
+          },
+          {
+            "step": "3",
+            "title": "开始压缩",
+            "description": "点击压缩按钮开始处理。"
+          },
+          {
+            "step": "4",
+            "title": "下载结果",
+            "description": "下载压缩后的WebP图片。"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🚀",
+            "title": "现代格式",
+            "content": "WebP是Google开发的现代图片格式，提供比JPEG更好的压缩率。"
+          },
+          {
+            "icon": "🎨",
+            "title": "透明度支持",
+            "content": "WebP支持透明度，是PNG的绝佳替代品。"
+          },
+          {
+            "icon": "📱",
+            "title": "Web优化",
+            "content": "WebP专为Web设计，加载速度更快。"
+          }
+        ],
+        "faq": [
+          {
+            "question": "WebP有什么优势？",
+            "answer": "WebP提供比JPEG更好的压缩率，同时支持透明度和动画。它是现代Web的标准格式。"
+          },
+          {
+            "question": "WebP兼容性如何？",
+            "answer": "所有现代浏览器都支持WebP。对于旧浏览器，我们提供自动回退到JPEG的功能。"
+          },
+          {
+            "question": "WebP压缩会影响质量吗？",
+            "answer": "WebP使用先进的压缩算法，在保持高质量的同时提供更好的压缩效果。"
+          }
+        ]
+      },
+      "avif": {
+        "title": "AVIF转换器 - 下一代图片格式",
+        "subtitle": "将图片转换为AVIF格式，获得比JPEG好50%的压缩效果",
+        "description": "先进的AVIF转换，具有有损和无损压缩、卓越质量和下一代算法。完美适用于现代Web优化。",
+        "settings": {
+          "title": "AVIF转换设置",
+          "compressionMode": "压缩模式",
+          "lossy": "有损（推荐）",
+          "lossless": "无损",
+          "lossyDesc": "照片使用有损，图形和需要精确再现的图片使用无损。",
+          "quality": "质量",
+          "speed": "编码速度",
+          "speedDesc": "更高的速度编码更快但文件大小更大。",
+          "keepMetadata": "保留元数据",
+          "keepMetadataDesc": "在转换的图片中保留EXIF数据和其他元数据。",
+          "convert": "转换为AVIF",
+          "converting": "转换中..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "上传AVIF图片",
+            "description": "选择要压缩的AVIF图片文件。"
+          },
+          {
+            "step": "2",
+            "title": "调整设置",
+            "description": "选择压缩质量和输出设置。"
+          },
+          {
+            "step": "3",
+            "title": "开始压缩",
+            "description": "点击压缩按钮开始处理。"
+          },
+          {
+            "step": "4",
+            "title": "下载结果",
+            "description": "下载压缩后的AVIF图片。"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🚀",
+            "title": "下一代格式",
+            "content": "AVIF是最新的图片格式，提供比JPEG好50%的压缩率。"
+          },
+          {
+            "icon": "🎨",
+            "title": "卓越质量",
+            "content": "AVIF在保持高质量的同时提供卓越的压缩效果。"
+          },
+          {
+            "icon": "📱",
+            "title": "现代标准",
+            "content": "AVIF是下一代Web图片格式，被现代浏览器广泛支持。"
+          }
+        ],
+        "faq": [
+          {
+            "question": "AVIF有什么优势？",
+            "answer": "AVIF提供比JPEG好50%的压缩率，同时支持透明度和动画。它是下一代Web图片格式。"
+          },
+          {
+            "question": "AVIF兼容性如何？",
+            "answer": "现代浏览器都支持AVIF。对于旧浏览器，我们提供自动回退到WebP或JPEG的功能。"
+          },
+          {
+            "question": "AVIF压缩会影响质量吗？",
+            "answer": "AVIF使用最新的压缩算法，在保持高质量的同时提供卓越的压缩效果。"
+          }
+        ]
+      },
+      "gif": {
+        "title": "GIF压缩器 - 优化您的动画",
+        "subtitle": "在保持动画和透明度的同时减少GIF文件大小",
+        "description": "先进的GIF压缩，具有颜色优化、抖动控制和动画保持。完美适用于图形、徽标和简单动画。",
+        "settings": {
+          "title": "GIF压缩设置",
+          "colorCount": "颜色数量",
+          "dithering": "启用抖动",
+          "ditheringDesc": "通过创建平滑渐变在减少颜色时改善视觉质量。",
+          "optimize": "优化调色板",
+          "optimizeDesc": "优化颜色调色板以获得更好的压缩和文件大小减少。",
+          "interlaced": "交错加载",
+          "interlacedDesc": "为大图片启用渐进式加载（文件大小略有增加）。",
+          "keepMetadata": "保留元数据",
+          "keepMetadataDesc": "在压缩的GIF文件中保留元数据。",
+          "compress": "开始GIF压缩",
+          "compressing": "压缩中..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "上传GIF图片",
+            "description": "选择要压缩的GIF图片文件。"
+          },
+          {
+            "step": "2",
+            "title": "调整设置",
+            "description": "选择压缩质量和输出设置。"
+          },
+          {
+            "step": "3",
+            "title": "开始压缩",
+            "description": "点击压缩按钮开始处理。"
+          },
+          {
+            "step": "4",
+            "title": "下载结果",
+            "description": "下载压缩后的GIF图片。"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🎬",
+            "title": "动画支持",
+            "content": "GIF支持动画，是简单动画和图形的理想格式。"
+          },
+          {
+            "icon": "🎨",
+            "title": "颜色优化",
+            "content": "GIF使用调色板，颜色优化可以显著减少文件大小。"
+          },
+          {
+            "icon": "📱",
+            "title": "广泛兼容",
+            "content": "GIF被所有浏览器和平台支持，兼容性极佳。"
+          }
+        ],
+        "faq": [
+          {
+            "question": "GIF压缩会影响动画吗？",
+            "answer": "我们的压缩算法专门优化GIF，在保持动画流畅性的同时减少文件大小。"
+          },
+          {
+            "question": "GIF支持多少种颜色？",
+            "answer": "GIF最多支持256种颜色。我们的工具会智能优化调色板以获得最佳效果。"
+          },
+          {
+            "question": "GIF压缩会降低质量吗？",
+            "answer": "我们使用先进的颜色优化算法，在保持视觉质量的同时最大化压缩效果。"
+          }
+        ]
+      }
     }
   },
   "privacy": {
     "title": "隐私政策",
-    "lastUpdated": "最后更新：2025年9月18日",
+    "lastUpdated": "2025年9月23日",
     "introduction": {
       "title": "介绍",
-      "content": "TinyCompressor（'我们'、'我们的'或'我们'）致力于保护您的隐私。本隐私政策解释了您使用我们的图片压缩服务时，我们如何收集、使用和保护您的信息。"
+      "content": "我们重视您的隐私权。本隐私政策说明我们如何收集、使用和保护您的信息。"
     },
     "informationCollection": {
-      "title": "我们收集的信息",
-      "content": "我们不收集、存储或传输任何个人信息。所有图片处理都在您的浏览器中本地进行。我们无法访问您的图片或任何相关数据。"
+      "title": "信息收集",
+      "content": "我们不收集、存储或传输您的图片文件。所有处理都在您的浏览器本地进行。"
     },
     "dataProcessing": {
-      "title": "我们如何处理您的数据",
-      "content": "您的图片完全在您的设备上使用客户端JavaScript进行处理。不会向我们的服务器或任何第三方发送数据。这确保了您文件的完全隐私和安全性。"
+      "title": "数据处理",
+      "content": "所有图片压缩和转换操作都在您的设备上进行，图片不会上传到我们的服务器。"
     },
     "cookies": {
-      "title": "Cookie和跟踪",
-      "content": "我们可能使用必要的Cookie来维护您的语言偏好并改善您的体验。我们不使用跟踪Cookie或收集可能识别您个人身份的分析数据。"
+      "title": "Cookie使用",
+      "content": "我们可能使用Cookie来改善用户体验，但不用于跟踪或收集个人信息。"
     },
     "thirdParty": {
       "title": "第三方服务",
-      "content": "我们不与第三方分享您的信息。我们的服务独立运行，不依赖外部数据处理服务。"
+      "content": "我们不与第三方分享您的图片或个人信息。"
     },
     "dataSecurity": {
       "title": "数据安全",
-      "content": "由于所有处理都在您的设备上本地进行，您的数据永远不会离开您的浏览器。这提供了最高级别的安全和隐私保护。"
+      "content": "我们采用行业标准的安全措施来保护我们的服务。"
     },
     "changes": {
       "title": "政策变更",
-      "content": "我们可能会不时更新此隐私政策。我们将通过在此页面上发布新的隐私政策来通知您任何变更。"
+      "content": "我们可能会更新本隐私政策。重大变更将通过网站通知用户。"
     },
     "contact": {
       "title": "联系我们",
-      "content": "如果您对此隐私政策有任何疑问，请通过我们的网站联系我们。"
+      "content": "如果您对本隐私政策有任何问题，请通过网站联系我们。"
     }
   },
   "terms": {
     "title": "服务条款",
-    "lastUpdated": "最后更新：2025年9月18日",
+    "lastUpdated": "2025年9月23日",
     "acceptance": {
-      "title": "条款接受",
-      "content": "通过访问和使用TinyCompressor，您接受并同意受本协议条款和规定的约束。"
+      "title": "接受条款",
+      "content": "通过使用我们的服务，您同意遵守这些服务条款。"
     },
     "description": {
       "title": "服务描述",
-      "content": "TinyCompressor是一个免费的在线图片压缩工具，允许用户在保持质量的同时减少图片的文件大小。所有处理都在您的浏览器中本地进行。"
+      "content": "我们提供免费的在线图片压缩和转换服务。"
     },
     "userResponsibilities": {
       "title": "用户责任",
-      "content": "用户有责任确保他们有权处理上传的图片。用户不得上传未经许可的受版权保护材料或任何非法内容。"
+      "content": "用户不得上传违法、有害或侵犯他人权利的内容。"
     },
     "limitations": {
       "title": "服务限制",
-      "content": "我们的服务按'现状'提供，不提供任何保证。我们不保证特定的压缩比或质量水平。用户有责任备份其原始文件。"
+      "content": "我们的服务按\"现状\"提供，不提供任何明示或暗示的保证。"
     },
     "prohibitedUses": {
-      "title": "禁止使用",
-      "content": "您不得将我们的服务用于任何非法目的或怂恿他人进行非法行为。您不得违反任何国际、联邦、省或州法规、规则、法律或地方法令。"
+      "title": "禁止用途",
+      "content": "禁止将服务用于非法目的或侵犯他人权利。"
     },
     "intellectualProperty": {
       "title": "知识产权",
-      "content": "服务及其原始内容、功能和特性归TinyCompressor所有，并受国际版权、商标、专利、商业秘密和其他知识产权法律保护。"
+      "content": "用户保留其上传图片的所有权。我们不对转换后的图片主张所有权。"
     },
     "disclaimer": {
       "title": "免责声明",
-      "content": "本服务上的信息按'现状'提供。在法律允许的最大范围内，本公司排除所有陈述、保证、条件和条款。"
+      "content": "在法律允许的最大范围内，我们不承担因使用服务而产生的任何损害责任。"
     },
     "limitationLiability": {
       "title": "责任限制",
-      "content": "在任何情况下，TinyCompressor及其董事、员工、合作伙伴、代理、供应商或关联公司均不对任何间接、偶然、特殊、后果性或惩罚性损害承担责任。"
+      "content": "我们努力保持服务的持续可用性，但不保证100%的正常运行时间。"
     },
     "governingLaw": {
       "title": "适用法律",
-      "content": "这些条款应根据TinyCompressor运营所在司法管辖区的法律进行解释和管辖，不考虑其法律冲突条款。"
+      "content": "这些条款受适用法律管辖，任何争议应通过适当法律程序解决。"
     },
     "changes": {
       "title": "条款变更",
-      "content": "我们保留随时修改或替换这些条款的权利。如果修订是实质性的，我们将尝试在新条款生效前至少提供30天的通知。"
+      "content": "我们保留随时修改或终止服务的权利，无需事先通知。"
     },
     "contact": {
-      "title": "联系信息",
-      "content": "如果您对这些服务条款有任何疑问，请通过我们的网站联系我们。"
+      "title": "联系我们",
+      "content": "如果您对这些服务条款有任何问题，请通过网站联系我们。"
     }
   }
 }

@@ -1,40 +1,70 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { generateAlternatesConfig, generateHreflangTags } from '../lib/i18n';
+// import { ToastProvider } from '@/components/ui/Toast'; // 移除Toast，改用进度条
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'TinyCompressor - Free Online Image Compression Tool | Compress JPG, PNG, WebP',
-  description: 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required. Fast, secure, and completely private.',
-  keywords: 'image compression, compress images, reduce file size, online tool, free, JPG compression, PNG compression, WebP compression, image optimizer, photo compression, batch compression, privacy, secure',
-  authors: [{ name: 'TinyCompressor' }],
-  robots: 'index, follow',
-  icons: {
-    icon: [
-      { url: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
-      { url: '/favicon-16x16.svg', sizes: '16x16', type: 'image/svg+xml' },
-      { url: '/favicon-32x32.svg', sizes: '32x32', type: 'image/svg+xml' }
-    ],
-    apple: [
-      { url: '/apple-touch-icon.svg', sizes: '180x180', type: 'image/svg+xml' }
-    ]
+  title: 'TinyCompressor - Free Online Image Compression Tool',
+  description: 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required.',
+  keywords: 'image compression, compress images, reduce file size, online tool, free, JPG compression, PNG compression, WebP compression',
+  authors: [{ name: 'TinyCompressor Team' }],
+  creator: 'TinyCompressor',
+  publisher: 'TinyCompressor',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://tinycompressor.com'),
+  alternates: {
+    canonical: 'https://tinycompressor.com',
+    languages: {
+      'en': 'https://tinycompressor.com',
+      'zh': 'https://tinycompressor.com/zh',
+      'es': 'https://tinycompressor.com/es',
+      'de': 'https://tinycompressor.com/de',
+      'fr': 'https://tinycompressor.com/fr',
+      'ar': 'https://tinycompressor.com/ar'
+    }
   },
   openGraph: {
     title: 'TinyCompressor - Free Online Image Compression Tool',
-    description: 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required.',
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'TinyCompressor',
+    description: 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats.',
     url: 'https://tinycompressor.com',
+    siteName: 'TinyCompressor',
+    images: [
+      {
+        url: 'https://tinycompressor.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'TinyCompressor - Free Online Image Compression Tool',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TinyCompressor - Free Online Image Compression Tool',
     description: 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality.',
+    images: ['https://tinycompressor.com/twitter-image.jpg'],
   },
-         alternates: generateAlternatesConfig(),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+  },
 };
 
 export default function RootLayout({
@@ -42,52 +72,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "TinyCompressor",
-    "description": "Free online image compression tool that reduces file sizes by 60-90% while maintaining quality",
-    "url": "https://tinycompressor.com",
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": [
-      "Image compression",
-      "Batch processing",
-      "Multiple format support",
-      "Privacy protection",
-      "No registration required"
-    ],
-    "browserRequirements": "Requires JavaScript. Requires HTML5.",
-    "screenshot": "https://tinycompressor.com/screenshot.jpg"
-  };
-
   return (
     <html>
       <head>
-        {/* Favicon */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
         <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
-        
-        {/* hreflang标签 */}
-        {generateHreflangTags().map(({ hrefLang, href }) => (
-          <link key={hrefLang} rel="alternate" hrefLang={hrefLang} href={href} />
-        ))}
-        <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
-        
-        {/* Sitemap */}
-        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-        
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
         {children}

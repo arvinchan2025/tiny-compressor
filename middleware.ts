@@ -1,35 +1,38 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './lib/i18n';
 
-// 支持的语言列表
-const locales = SUPPORTED_LANGUAGES;
-const defaultLocale = DEFAULT_LANGUAGE;
+const SUPPORTED_LOCALES = ['en', 'zh', 'es', 'de', 'fr', 'ar'];
+const DEFAULT_LOCALE = 'en';
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
-  // 检查路径是否已经包含语言前缀
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
-
-  // 如果路径没有语言前缀，重写为英文路径（不重定向）
-  if (!pathnameHasLocale) {
-    const newUrl = new URL(`/en${pathname}`, request.url);
-    return NextResponse.rewrite(newUrl);
+  // 跳过API路由和静态文件
+  if (
+    pathname.startsWith('/api/') ||
+    pathname.startsWith('/_next/') ||
+    pathname.startsWith('/favicon.ico') ||
+    pathname.includes('.')
+  ) {
+    return NextResponse.next();
   }
 
-  // 如果路径有语言前缀，继续处理
+  // 检查是否已有语言前缀
+  const hasLocale = SUPPORTED_LOCALES.some(locale => 
+    pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+  
+  if (!hasLocale) {
+    // 重写到默认语言版本
+    return NextResponse.rewrite(new URL(`/${DEFAULT_LOCALE}${pathname}`, request.url));
+  }
+
   return NextResponse.next();
 }
 
 export const config = {
+  // 匹配所有路径，除了静态文件和API路由
   matcher: [
-    // 匹配所有路径，除了：
-    // - api 路由
-    // - _next/static (静态文件)
-    // - _next/image (图片优化)
-    // - 所有静态文件 (favicon, apple-touch-icon, robots.txt, sitemap.xml, logo.svg等)
-    '/((?!api|_next/static|_next/image|favicon|apple-touch-icon|robots.txt|sitemap|google-site-verification|logo\\.svg).*)',
-  ],
+    // 匹配所有路径，但排除API路由、静态文件和Next.js内部文件
+    '/((?!api|_next|_vercel|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)'
+  ]
 };

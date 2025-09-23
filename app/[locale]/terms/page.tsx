@@ -1,163 +1,66 @@
-'use client';
+import { Metadata } from 'next';
+import { SupportedLanguage } from '@/types/i18n';
 
-import { useState, useEffect } from 'react';
-import { FileText, Shield, AlertTriangle, CheckCircle, XCircle } from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { getTranslations } from '@/lib/translations';
-import { Translations } from '@/lib/i18n';
+interface TermsPageProps {
+  params: {
+    locale: SupportedLanguage;
+  };
+}
 
-export default function TermsOfService({ params }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: TermsPageProps): Promise<Metadata> {
   const { locale } = params;
-  const [translations, setTranslations] = useState<Translations | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  
+  return {
+    title: 'Terms of Service - TinyCompressor',
+    description: 'Terms of Service for TinyCompressor - Learn about our service terms and conditions.',
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
 
-  useEffect(() => {
-    const loadTranslations = async () => {
-      try {
-        const trans = await getTranslations(locale);
-        setTranslations(trans);
-      } catch (error) {
-        console.error('Failed to load translations:', error);
-        const fallback = await getTranslations('en');
-        setTranslations(fallback);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    
-    loadTranslations();
-  }, [locale]);
+export default function TermsPage({ params }: TermsPageProps) {
+  const { locale } = params;
 
-  if (isLoading || !translations) {
-    return (
-      <div className="min-h-screen gradient-bg flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
-          <p className="text-neutral-600">Loading...</p>
+  return (
+    <div className="min-h-screen bg-gray-50 py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-lg shadow-sm p-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-8">Terms of Service</h1>
+          
+          <div className="prose prose-gray max-w-none">
+            <p className="text-gray-600 mb-6">
+              Last updated: September 23, 2025
+            </p>
+            
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Service Description</h2>
+            <p className="text-gray-700 mb-4">
+              TinyCompressor provides free online image compression and conversion services. All processing is done locally in your browser.
+            </p>
+            
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Acceptable Use</h2>
+            <p className="text-gray-700 mb-4">
+              You may use our service for lawful purposes only. Do not upload copyrighted material without permission.
+            </p>
+            
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Service Availability</h2>
+            <p className="text-gray-700 mb-4">
+              We strive to maintain high service availability but cannot guarantee uninterrupted access.
+            </p>
+            
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Limitation of Liability</h2>
+            <p className="text-gray-700 mb-4">
+              TinyCompressor is provided "as is" without warranties. We are not liable for any damages arising from use of our service.
+            </p>
+            
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Changes to Terms</h2>
+            <p className="text-gray-700">
+              We may update these terms at any time. Continued use of our service constitutes acceptance of updated terms.
+            </p>
+          </div>
         </div>
       </div>
-    );
-  }
-  
-  return (
-    <div className="min-h-screen gradient-bg">
-      {/* hreflang标签 */}
-      <head>
-        <link rel="alternate" hrefLang="en" href="https://tinycompressor.com/terms" />
-        <link rel="alternate" hrefLang="zh" href="https://tinycompressor.com/zh/terms" />
-        <link rel="alternate" hrefLang="es" href="https://tinycompressor.com/es/terms" />
-        <link rel="alternate" hrefLang="de" href="https://tinycompressor.com/de/terms" />
-        <link rel="alternate" hrefLang="fr" href="https://tinycompressor.com/fr/terms" />
-        <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/terms" />
-      </head>
-      
-      <Header 
-        currentLanguage={locale} 
-        onLanguageChange={(lang) => {
-          window.location.href = lang === 'en' ? '/terms' : `/${lang}/terms`;
-        }} 
-      />
-
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-12 max-w-4xl">
-        <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-neutral-200/50 p-8">
-          {/* Title */}
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-6">
-              <FileText className="w-12 h-12 text-primary-600 mr-4" />
-              <h1 className="text-4xl font-bold text-gray-900">{translations.terms.title}</h1>
-            </div>
-            <p className="text-gray-600 text-lg">{translations.terms.lastUpdated}</p>
-          </div>
-
-          {/* Content */}
-          <div className="prose prose-lg max-w-none">
-            {/* Acceptance */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center">
-                <CheckCircle className="w-6 h-6 text-primary-600 mr-3" />
-                {translations.terms.acceptance.title}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.acceptance.content}</p>
-            </section>
-
-            {/* Description */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center">
-                <FileText className="w-6 h-6 text-primary-600 mr-3" />
-                {translations.terms.description.title}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.description.content}</p>
-            </section>
-
-            {/* User Responsibilities */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center">
-                <Shield className="w-6 h-6 text-primary-600 mr-3" />
-                {translations.terms.userResponsibilities.title}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.userResponsibilities.content}</p>
-            </section>
-
-            {/* Limitations */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center">
-                <AlertTriangle className="w-6 h-6 text-primary-600 mr-3" />
-                {translations.terms.limitations.title}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.limitations.content}</p>
-            </section>
-
-            {/* Prohibited Uses */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center">
-                <XCircle className="w-6 h-6 text-primary-600 mr-3" />
-                {translations.terms.prohibitedUses.title}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.prohibitedUses.content}</p>
-            </section>
-
-            {/* Intellectual Property */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{translations.terms.intellectualProperty.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.intellectualProperty.content}</p>
-            </section>
-
-            {/* Disclaimer */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{translations.terms.disclaimer.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.disclaimer.content}</p>
-            </section>
-
-            {/* Limitation of Liability */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{translations.terms.limitationLiability.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.limitationLiability.content}</p>
-            </section>
-
-            {/* Governing Law */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{translations.terms.governingLaw.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.governingLaw.content}</p>
-            </section>
-
-            {/* Changes */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{translations.terms.changes.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.changes.content}</p>
-            </section>
-
-            {/* Contact */}
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{translations.terms.contact.title}</h2>
-              <p className="text-gray-700 leading-relaxed">{translations.terms.contact.content}</p>
-            </section>
-          </div>
-        </div>
-      </main>
-
-      <Footer translations={translations} locale={locale} />
     </div>
   );
 }

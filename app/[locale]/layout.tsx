@@ -1,125 +1,107 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import '../globals.css';
 import { notFound } from 'next/navigation';
-import { SUPPORTED_LANGUAGES, isRTLLanguage, generateAlternatesConfig, generateHreflangTags, getLanguageInfo, isValidLanguage, SupportedLanguage } from '../../lib/i18n';
-import { loadTranslations } from '../../lib/translations';
-
-const inter = Inter({ subsets: ['latin'] });
+import { SupportedLanguage } from '@/types/i18n';
 
 // 支持的语言列表
-const locales = SUPPORTED_LANGUAGES;
+const locales = ['en', 'zh', 'es', 'de', 'fr', 'ar'];
+
+// 语言信息
+const languageInfo = {
+  en: { name: 'English', nativeName: 'English', flag: '🇺🇸', direction: 'ltr', locale: 'en_US' },
+  zh: { name: 'Chinese', nativeName: '中文', flag: '🇨🇳', direction: 'ltr', locale: 'zh_CN' },
+  es: { name: 'Spanish', nativeName: 'Español', flag: '🇪🇸', direction: 'ltr', locale: 'es_ES' },
+  de: { name: 'German', nativeName: 'Deutsch', flag: '🇩🇪', direction: 'ltr', locale: 'de_DE' },
+  fr: { name: 'French', nativeName: 'Français', flag: '🇫🇷', direction: 'ltr', locale: 'fr_FR' },
+  ar: { name: 'Arabic', nativeName: 'العربية', flag: '🇸🇦', direction: 'rtl', locale: 'ar_SA' }
+} as const;
+
+interface LocaleLayoutProps {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+}
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const { locale } = params;
+export async function generateMetadata({
+  params: { locale }
+}: {
+  params: { locale: string };
+}) {
+  // 验证语言是否支持
+  const validLocale: SupportedLanguage = locales.includes(locale) ? (locale as SupportedLanguage) : 'en';
   
-  if (!isValidLanguage(locale)) {
-    notFound();
-  }
+  const langInfo = languageInfo[validLocale];
+  const isRTL = langInfo.direction === 'rtl';
 
-  // 确保locale是有效的语言代码
-  const validLocale = isValidLanguage(locale) ? locale : 'en';
-  const langInfo = getLanguageInfo(validLocale as SupportedLanguage);
-  const translations = await loadTranslations(validLocale);
-  
-  return {
-    title: translations.metadata.title,
-    description: translations.metadata.description,
-    keywords: translations.metadata.keywords,
-    authors: [{ name: 'TinyCompressor' }],
+  // 基础元数据
+  const baseMetadata = {
+    title: 'TinyCompressor - Free Online Image Compression Tool',
+    description: 'Compress images online for free! Support JPG, PNG, WebP formats. Fast, secure, and privacy-friendly.',
+    keywords: 'image compression, online compressor, JPG, PNG, WebP, free tool',
+    authors: [{ name: 'TinyCompressor Team' }],
+    creator: 'TinyCompressor',
+    publisher: 'TinyCompressor',
     robots: 'index, follow',
-    icons: {
-      icon: [
-        { url: '/favicon-16x16.svg', sizes: '16x16', type: 'image/svg+xml' },
-        { url: '/favicon-32x32.svg', sizes: '32x32', type: 'image/svg+xml' }
-      ],
-      apple: [
-        { url: '/apple-touch-icon.svg', sizes: '180x180', type: 'image/svg+xml' }
-      ]
-    },
     openGraph: {
-      title: translations.metadata.openGraphTitle,
-      description: translations.metadata.openGraphDescription,
       type: 'website',
       locale: langInfo.locale,
+      url: validLocale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${validLocale}`,
       siteName: 'TinyCompressor',
-      url: 'https://tinycompressor.com',
+      title: 'TinyCompressor - Free Online Image Compression Tool',
+      description: 'Compress images online for free! Support JPG, PNG, WebP formats.',
+      images: [
+        {
+          url: '/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'TinyCompressor - Image Compression Tool'
+        }
+      ]
     },
     twitter: {
       card: 'summary_large_image',
-      title: translations.metadata.twitterTitle,
-      description: translations.metadata.twitterDescription,
+      title: 'TinyCompressor - Free Online Image Compression Tool',
+      description: 'Compress images online for free!',
+      images: ['/og-image.jpg']
     },
     alternates: {
-      ...generateAlternatesConfig(),
-      canonical: locale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${locale}`,
-    },
+      canonical: validLocale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${validLocale}`,
+      languages: {
+        'en': 'https://tinycompressor.com',
+        'zh': 'https://tinycompressor.com/zh',
+        'es': 'https://tinycompressor.com/es',
+        'de': 'https://tinycompressor.com/de',
+        'fr': 'https://tinycompressor.com/fr',
+        'ar': 'https://tinycompressor.com/ar'
+      }
+    }
   };
+
+  return baseMetadata;
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const { locale } = params;
+  params: { locale }
+}: LocaleLayoutProps) {
+  // 验证语言是否支持
+  const validLocale: SupportedLanguage = locales.includes(locale) ? (locale as SupportedLanguage) : 'en';
   
-  if (!isValidLanguage(locale)) {
+  if (!locales.includes(locale)) {
     notFound();
   }
 
-  // 确保locale是有效的语言代码，避免服务端和客户端不一致
-  const validLocale = isValidLanguage(locale) ? locale : 'en';
+  const langInfo = languageInfo[validLocale];
+  const isRTL = langInfo.direction === 'rtl';
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "TinyCompressor",
-    "description": validLocale === 'zh' 
-      ? "免费在线图片压缩工具，减少60-90%文件大小同时保持质量"
-      : "Free online image compression tool that reduces file sizes by 60-90% while maintaining quality",
-    "url": "https://tinycompressor.com",
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": locale === 'zh' 
-      ? ["图片压缩", "批量处理", "多格式支持", "隐私保护", "无需注册"]
-      : ["Image compression", "Batch processing", "Multiple format support", "Privacy protection", "No registration required"],
-    "browserRequirements": "Requires JavaScript. Requires HTML5.",
-    "screenshot": "https://tinycompressor.com/screenshot.jpg"
-  };
-
-  // 检查是否为RTL语言
-  const isRTL = isRTLLanguage(validLocale as SupportedLanguage);
-  
   return (
     <html lang={validLocale} dir={isRTL ? 'rtl' : 'ltr'}>
-             <head>
-               {/* hreflang标签 */}
-               {generateHreflangTags().map(({ hrefLang, href }) => (
-                 <link key={hrefLang} rel="alternate" hrefLang={hrefLang} href={href} />
-               ))}
-               <link rel="alternate" hrefLang="x-default" href="https://tinycompressor.com/" />
-        
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </head>
-      <body className={inter.className}>
+      <body>
         {children}
       </body>
     </html>
   );
 }
-

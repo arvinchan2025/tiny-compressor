@@ -1,52 +1,57 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 启用实验性功能
+  experimental: {
+    // 启用服务器组件
+    serverComponentsExternalPackages: [],
+  },
+  
+  // 图片优化配置
   images: {
-    domains: ['localhost'],
     formats: ['image/webp', 'image/avif'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
-    return config;
-  },
-  // 确保静态文件正确服务
+
+  // 压缩配置
+  compress: true,
+
+  // 重写规则
   async rewrites() {
     return [
       {
         source: '/sitemap.xml',
-        destination: '/api/sitemap',
+        destination: '/api/sitemap'
       },
       {
         source: '/robots.txt',
-        destination: '/api/robots',
-      },
+        destination: '/api/robots'
+      }
     ];
   },
-  // 确保静态文件可以被访问
+
+  // 头部配置
   async headers() {
     return [
       {
-        source: '/sitemap.xml',
+        source: '/(.*)',
         headers: [
           {
-            key: 'Content-Type',
-            value: 'application/xml',
+            key: 'X-Frame-Options',
+            value: 'DENY'
           },
-        ],
-      },
-      {
-        source: '/robots.txt',
-        headers: [
           {
-            key: 'Content-Type',
-            value: 'text/plain',
+            key: 'X-Content-Type-Options',
+            value: 'nosniff'
           },
-        ],
-      },
+          {
+            key: 'Referrer-Policy',
+            value: 'origin-when-cross-origin'
+          }
+        ]
+      }
     ];
-  },
+  }
 };
 
 module.exports = nextConfig;

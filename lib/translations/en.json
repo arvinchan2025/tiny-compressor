@@ -1,34 +1,88 @@
 {
   "metadata": {
-    "title": "TinyCompressor - Free Online Image Compression Tool | Compress JPG, PNG, WebP",
-    "description": "Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required. Fast, secure, and completely private.",
-    "keywords": "image compression, compress images, reduce file size, online tool, free, JPG compression, PNG compression, WebP compression, image optimizer, photo compression, batch compression, privacy, secure",
-    "openGraphTitle": "TinyCompressor - Free Online Image Compression Tool",
-    "openGraphDescription": "Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required.",
-    "twitterTitle": "TinyCompressor - Free Online Image Compression Tool",
-    "twitterDescription": "Compress images online for free! Reduce file sizes by 60-90% while maintaining quality."
+    "title": "TinyCompressor - Free Online Image Compression & Converter Tool | JPG, PNG, WebP, AVIF, GIF",
+    "description": "Professional image compression and format conversion tool. Compress JPG, PNG, WebP, AVIF, GIF images up to 90% smaller with zero quality loss. Convert between formats instantly. 100% free, secure, and privacy-focused. No registration required.",
+    "keywords": "image compression, image converter, compress images, reduce file size, JPG compression, PNG compression, WebP compression, AVIF compression, GIF compression, image format converter, online image optimizer, photo compression, batch compression, privacy, secure, free image tools, web optimization",
+    "openGraphTitle": "TinyCompressor - Free Online Image Compression & Converter",
+    "openGraphDescription": "Compress and convert images online for free. Reduce file sizes by up to 90% while maintaining quality. Support JPG, PNG, WebP, AVIF, GIF formats. Fast, secure, and completely private.",
+    "twitterTitle": "TinyCompressor - Free Image Compression & Converter",
+    "twitterDescription": "Professional image compression and format conversion. Compress images up to 90% smaller with zero quality loss. 100% free and secure."
   },
   "nav": {
     "features": "Features",
     "about": "About",
-    "language": "Language"
+    "language": "Language",
+    "compressor": "Compressor",
+    "converter": "Converter",
+    "home": "Home"
+  },
+  "settings": {
+    "settings": "Settings",
+    "processingMode": "Processing Mode",
+    "singleFile": "Single File",
+    "batchMode": "Batch Mode",
+    "ui": "Interface",
+    "advancedSettings": "Advanced Settings",
+    "batchOperations": "Batch Operations",
+    "smartPresets": "Smart Presets",
+    "fileThumbnails": "File Thumbnails",
+    "compactMode": "Compact Mode",
+    "defaults": "Defaults",
+    "compressionQuality": "Compression Quality",
+    "conversionFormat": "Conversion Format",
+    "preserveMetadata": "Preserve Metadata",
+    "optimizeForWeb": "Optimize for Web",
+    "features": "Features",
+    "dragDrop": "Drag & Drop",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "autoSave": "Auto Save",
+    "progressNotifications": "Progress Notifications",
+    "theme": "Theme",
+    "colorScheme": "Color Scheme",
+    "light": "Light",
+    "dark": "Dark",
+    "auto": "Auto",
+    "accentColor": "Accent Color",
+    "save": "Save",
+    "reset": "Reset",
+    "close": "Close",
+    "optional": "(Optional)",
+    "showSettings": "Show Settings",
+    "hideSettings": "Hide Settings"
   },
   "hero": {
-    "title": "Compress Images Instantly",
-    "subtitle": "Reduce file sizes without losing quality. Fast, secure, and completely free.",
-    "cta": "Start Compressing",
-    "trustedBy": "Trusted by thousands of users worldwide"
+    "title": "Professional Image Compression & Conversion Tool",
+    "subtitle": "Reduce file sizes by up to 90% while maintaining quality. Fast, secure, and completely free.",
+    "description": "Advanced image processing tools that work directly in your browser. No uploads, no watermarks, no hidden fees.",
+    "cta": "Start Processing Images",
+    "compressButton": "Compress Images",
+    "convertButton": "Convert Images",
+    "trustedBy": "Trusted by 100,000+ users worldwide",
+    "stats": {
+      "sizeReduction": "Up to 90% Size Reduction",
+      "supportedFormats": "10+ Supported Formats",
+      "freeSecure": "100% Free & Secure"
+    }
   },
   "upload": {
     "title": "Upload Your Images",
     "subtitle": "Drag and drop your images here or click to browse",
+    "singleFileTitle": "Upload Your Image",
+    "singleFileSubtitle": "Drag and drop your image here or click to browse",
+    "batchTitle": "Upload Multiple Images",
+    "batchSubtitle": "Drag and drop multiple images here or click to browse",
+    "addMore": "Add more files",
     "dragActive": "Drop images here",
     "dragInactive": "Drag & drop images here",
     "dragReject": "Invalid file type",
+    "clickToUpload": "or click to browse",
     "supportedFormats": "Supports JPG, PNG, WebP, and more",
     "maxSize": "Max file size: 10MB per image",
+    "maxFiles": "Max files: 20",
     "uploadedFiles": "Uploaded Files",
     "removeFile": "Remove file",
+    "uploadError": "Upload failed",
+    "uploadSuccess": "Upload successful",
     "ready": "Ready"
   },
   "compression": {
@@ -68,19 +122,6 @@
       }
     }
   },
-  "results": {
-    "title": "Compression Results",
-    "before": "Before",
-    "after": "After",
-    "reduction": "Reduction",
-    "originalSize": "Original Size",
-    "compressedSize": "Compressed Size",
-    "spaceSaved": "Space Saved",
-    "download": "Download",
-    "downloadAll": "Download All as ZIP",
-    "compressMore": "Compress More Images",
-    "noResults": "No results to display"
-  },
   "features": {
     "title": "Why Choose TinyCompressor?",
     "fast": {
@@ -98,21 +139,6 @@
     "free": {
       "title": "Completely Free",
       "description": "No registration required, no hidden costs, no limits"
-    }
-  },
-  "howItWorks": {
-    "title": "How It Works",
-    "step1": {
-      "title": "Upload Images",
-      "description": "Drag and drop your images or click to browse. Supports JPG, PNG, WebP, and more formats."
-    },
-    "step2": {
-      "title": "Adjust Settings",
-      "description": "Customize compression quality, dimensions, and output format to meet your needs."
-    },
-    "step3": {
-      "title": "Download Results",
-      "description": "Download individual files or get all compressed images in a convenient ZIP file."
     }
   },
   "formats": {
@@ -191,6 +217,399 @@
     "subtitle": "Join thousands of users who trust TinyCompressor for their image optimization needs",
     "button": "Start Compressing Now"
   },
+  "converter": {
+    "title": "Image Converter",
+    "subtitle": "Convert images between different formats instantly",
+    "description": "Convert your images to JPG, PNG, WebP, and more formats with high quality and fast processing.",
+    "supportedFormats": "Supported Formats",
+    "dragDrop": "Drag & drop images here or click to browse",
+    "clickToUpload": "or click to browse",
+    "supportedFormatsList": "Supports JPG, PNG, WebP, GIF, BMP and more",
+    "maxSize": "Max file size: 10MB per image",
+    "uploadedFiles": "Uploaded Files",
+    "removeFile": "Remove",
+    "ready": "Ready to convert",
+    "converting": "Converting...",
+    "download": "Download",
+    "downloadAll": "Download All",
+    "convertMore": "Convert More",
+    "noResults": "No results yet",
+    "before": "Before",
+    "after": "After",
+    "originalSize": "Original Size",
+    "convertedSize": "Converted Size",
+    "spaceSaved": "Space Saved",
+    "hero": {
+      "smartConversion": "Smart Image Conversion",
+      "smartConversionDesc": "Convert images between different formats while maintaining quality and optimizing for your needs",
+      "formatFlexibility": "Format Flexibility",
+      "formatFlexibilityDesc": "Convert between different image formats with intelligent optimization",
+      "qualityPreservation": "Quality Preservation",
+      "qualityPreservationDesc": "Maintain image quality while converting between formats with advanced algorithms",
+      "batchProcessing": "Batch Processing",
+      "batchProcessingDesc": "Convert multiple images at once with ZIP download and format optimization"
+    },
+    "comparison": {
+      "title": "Format Comparison",
+      "subtitle": "Compare source and target formats to understand the differences",
+      "fileSize": "File Size",
+      "quality": "Quality",
+      "transparency": "Transparency",
+      "browserSupport": "Browser Support",
+      "sourceFormat": "Source Format",
+      "targetFormat": "Target Format",
+      "features": "Features",
+      "larger": "Larger",
+      "smaller": "Smaller",
+      "high": "High",
+      "supported": "Supported",
+      "varies": "Varies",
+      "excellent": "Excellent",
+      "recommendation": "Recommendation"
+    },
+    "upload": {
+      "title": "Upload Your Images",
+      "subtitle": "Upload source format images to convert to target format",
+      "dragActive": "Drop images here",
+      "dragInactive": "Drag & drop images here",
+      "dragReject": "Invalid file type",
+      "clickToUpload": "or click to browse",
+      "supportedFormats": "Supports source format images",
+      "maxSize": "Max file size: 10MB per image",
+      "maxFiles": "Max files: 20",
+      "removeFile": "Remove file",
+      "uploadError": "Upload failed",
+      "uploadSuccess": "Upload successful",
+      "uploadedFiles": "Uploaded Files",
+      "convertNow": "Convert Now",
+      "formatInfo": {
+        "title": "Format Information",
+        "description": "We accept source format images and will convert them to target format. The conversion process maintains high quality while optimizing file size."
+      }
+    },
+    "settings": {
+      "title": "Conversion Settings",
+      "presets": {
+        "title": "Quick Presets",
+        "highQuality": "High Quality",
+        "highQualityDesc": "Best quality, larger file size",
+        "balanced": "Balanced",
+        "balancedDesc": "Good balance of quality and file size",
+        "optimized": "Web Optimized",
+        "optimizedDesc": "Optimized for web, smaller file size"
+      },
+      "quality": "Quality",
+      "lowQuality": "Low",
+      "highQuality": "High",
+      "colorSpace": "Color Space",
+      "auto": "Auto",
+      "srgb": "sRGB",
+      "adobe": "Adobe RGB",
+      "colorSpaceDesc": "sRGB is recommended for web use, Adobe RGB for professional printing.",
+      "preserveMetadata": "Keep Metadata",
+      "preserveMetadataDesc": "Preserve EXIF data (camera settings, GPS, etc.) in converted images.",
+      "optimizeForWeb": "Optimize for Web",
+      "optimizeForWebDesc": "Optimize images for faster web loading and better performance.",
+      "progressive": "Progressive Loading",
+      "progressiveDesc": "Enable progressive loading for better web performance.",
+      "tips": {
+        "title": "Conversion Tips",
+        "quality": "Higher quality settings produce larger files but better image quality",
+        "web": "Web optimization reduces file size while maintaining good visual quality",
+        "metadata": "Metadata increases file size but preserves image information"
+      }
+    },
+    "howItWorks": {
+      "title": "How Image Conversion Works",
+      "subtitle": "Our converter uses advanced algorithms to transform images between formats while maintaining quality",
+      "steps": {
+        "upload": {
+          "title": "Upload Source Images",
+          "description": "Drag & drop or select source format images to convert. Support for batch upload."
+        },
+        "settings": {
+          "title": "Configure Conversion Settings",
+          "description": "Adjust quality, color space, and other conversion parameters for optimal results."
+        },
+        "convert": {
+          "title": "Convert to Target Format",
+          "description": "Our advanced algorithm converts source to target format while preserving quality."
+        },
+        "download": {
+          "title": "Download Results",
+          "description": "Download converted files individually or as a ZIP archive for batch processing."
+        }
+      },
+      "technicalDetails": {
+        "title": "Technical Details",
+        "algorithm": {
+          "title": "Conversion Algorithm",
+          "step1": "Advanced format detection and validation",
+          "step2": "Intelligent color space conversion and optimization",
+          "step3": "Quality preservation with compression optimization",
+          "step4": "Metadata handling and format-specific optimizations"
+        },
+        "quality": {
+          "title": "Quality Assurance",
+          "step1": "Lossless metadata preservation when requested",
+          "step2": "Color accuracy maintenance across format conversion",
+          "step3": "Automatic quality optimization for target format",
+          "step4": "Real-time conversion preview and validation"
+        },
+        "performance": {
+          "title": "Performance Optimization",
+          "description": "Our conversion engine uses optimized algorithms and parallel processing to ensure fast, efficient conversion of your images while maintaining the highest quality standards."
+        }
+      }
+    },
+    "notes": {
+      "title": "Important Notes",
+      "subtitle": "Key information to help you get the best conversion results",
+      "transparency": {
+        "title": "Transparency Handling",
+        "content": "Converting between formats may affect transparency support. Please check the target format capabilities."
+      },
+      "quality": {
+        "title": "Quality Optimization",
+        "content": "Use appropriate quality settings to balance file size and visual quality for your specific use case."
+      },
+      "compatibility": {
+        "title": "Browser Compatibility",
+        "content": "Ensure the target format is supported by your target browsers and applications."
+      },
+      "reconversion": {
+        "title": "Re-conversion Warning",
+        "content": "Re-converting already converted images may result in quality loss. Always work with original source files when possible."
+      },
+      "formatSpecific": {
+        "title": "Format-Specific Information",
+        "source": "Source Format",
+        "target": "Target Format",
+        "sourceFeatures": "Key features and capabilities",
+        "targetFeatures": "Key features and capabilities",
+        "recommendation": {
+          "title": "Conversion Recommendation",
+          "content": "For optimal results when converting between formats, consider the specific characteristics and limitations of each format to ensure the best quality and compatibility."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Get answers to common questions about image conversion",
+      "quality": {
+        "question": "Will the image quality be affected during conversion?",
+        "answer": "Our conversion algorithm is designed to maintain the highest possible quality while optimizing for the target format. The quality loss is minimal and often imperceptible to the human eye."
+      },
+      "transparency": {
+        "question": "How is transparency handled during conversion?",
+        "answer": "Transparency support depends on the target format. Some formats like PNG support transparency, while others like JPEG do not. We handle this intelligently based on the target format capabilities."
+      },
+      "fileSize": {
+        "question": "Will the file size change after conversion?",
+        "answer": "File size typically changes during conversion due to different compression algorithms and format characteristics. We optimize the conversion to achieve the best balance between quality and file size."
+      },
+      "metadata": {
+        "question": "Is metadata preserved during conversion?",
+        "answer": "Metadata preservation depends on your settings. You can choose to keep or remove EXIF data, GPS information, and other metadata during the conversion process."
+      },
+      "batch": {
+        "question": "Can I convert multiple images at once?",
+        "answer": "Yes! You can upload and convert up to 20 images simultaneously. All converted images can be downloaded individually or as a single ZIP file."
+      },
+      "security": {
+        "question": "Is my data secure during conversion?",
+        "answer": "Absolutely! All conversion happens locally in your browser. Your images are never uploaded to our servers, ensuring complete privacy and security."
+      }
+    },
+    "results": {
+      "title": "Conversion Results",
+      "subtitle": "Your images have been converted successfully",
+      "original": "Original",
+      "converted": "Converted",
+      "sizeReduced": "Size reduced",
+      "sizeIncreased": "Size increased",
+      "download": "Download",
+      "downloadAll": "Download All as ZIP",
+      "before": "Before",
+      "after": "After",
+      "conversion": "Conversion",
+      "conversionTime": "Conversion Time",
+      "formatChange": "Format Change",
+      "compressionRatio": "Compression Ratio",
+      "spaceSaved": "Space Saved",
+      "convertMore": "Convert More Images",
+      "stats": {
+        "filesConverted": "Files Converted",
+        "sizeReduction": "Size Reduction",
+        "totalSize": "Total Size",
+        "totalTime": "Total Time"
+      }
+    },
+    "formats": {
+      "jpg": {
+        "title": "JPG",
+        "description": "Best for photographs and complex images"
+      },
+      "png": {
+        "title": "PNG", 
+        "description": "Best for graphics with transparency"
+      },
+      "webp": {
+        "title": "WebP",
+        "description": "Modern format with excellent compression"
+      },
+      "gif": {
+        "title": "GIF",
+        "description": "Best for simple animations"
+      },
+      "avif": {
+        "title": "AVIF",
+        "description": "Next-generation format with superior compression"
+      },
+      "heic": {
+        "title": "HEIC",
+        "description": "Apple's efficient image format"
+      },
+      "bmp": {
+        "title": "BMP",
+        "description": "Uncompressed bitmap format"
+      },
+      "tiff": {
+        "title": "TIFF",
+        "description": "High-quality image format"
+      },
+      "ico": {
+        "title": "ICO",
+        "description": "Windows icon format"
+      },
+      "svg": {
+        "title": "SVG",
+        "description": "Scalable vector graphics"
+      }
+    },
+    "conversions": {
+      "jpgToPng": {
+        "title": "JPG to PNG Converter",
+        "description": "Convert JPG images to PNG format with transparency support",
+        "seoTitle": "JPG to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert JPG to PNG online for free! Add transparency support to your images. Fast, secure, and completely private conversion."
+      },
+      "pngToJpg": {
+        "title": "PNG to JPG Converter", 
+        "description": "Convert PNG images to JPG format for smaller file sizes",
+        "seoTitle": "PNG to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert PNG to JPG online for free! Reduce file sizes while maintaining quality. Fast, secure, and completely private conversion."
+      },
+      "webpToJpg": {
+        "title": "WebP to JPG Converter",
+        "description": "Convert WebP images to JPG format for better compatibility",
+        "seoTitle": "WebP to JPG Converter - Free Online Image Format Converter", 
+        "seoDescription": "Convert WebP to JPG online for free! Improve compatibility with older browsers. Fast, secure, and completely private conversion."
+      },
+      "webpToPng": {
+        "title": "WebP to PNG Converter",
+        "description": "Convert WebP images to PNG format with transparency support",
+        "seoTitle": "WebP to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert WebP to PNG online for free! Add transparency support to your images. Fast, secure, and completely private conversion."
+      },
+      "pngToWebp": {
+        "title": "PNG to WebP Converter",
+        "description": "Convert PNG images to WebP format for better compression",
+        "seoTitle": "PNG to WebP Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert PNG to WebP online for free! Get better compression and modern format support. Fast, secure, and completely private conversion."
+      },
+      "jpgToWebp": {
+        "title": "JPG to WebP Converter",
+        "description": "Convert JPG images to WebP format for better compression",
+        "seoTitle": "JPG to WebP Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert JPG to WebP online for free! Get better compression and modern format support. Fast, secure, and completely private conversion."
+      },
+      "pngToAvif": {
+        "title": "PNG to AVIF Converter",
+        "description": "Convert PNG images to AVIF format for superior compression",
+        "seoTitle": "PNG to AVIF Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert PNG to AVIF online for free! Get next-generation compression with excellent quality. Fast, secure, and completely private conversion."
+      },
+      "jpgToAvif": {
+        "title": "JPG to AVIF Converter",
+        "description": "Convert JPG images to AVIF format for superior compression",
+        "seoTitle": "JPG to AVIF Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert JPG to AVIF online for free! Get next-generation compression with excellent quality. Fast, secure, and completely private conversion."
+      },
+      "webpToAvif": {
+        "title": "WebP to AVIF Converter",
+        "description": "Convert WebP images to AVIF format for even better compression",
+        "seoTitle": "WebP to AVIF Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert WebP to AVIF online for free! Get next-generation compression with superior quality. Fast, secure, and completely private conversion."
+      },
+      "heicToJpg": {
+        "title": "HEIC to JPG Converter",
+        "description": "Convert HEIC images to JPG format for better compatibility",
+        "seoTitle": "HEIC to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert HEIC to JPG online for free! Improve compatibility with all devices and platforms. Fast, secure, and completely private conversion."
+      },
+      "heicToPng": {
+        "title": "HEIC to PNG Converter",
+        "description": "Convert HEIC images to PNG format with transparency support",
+        "seoTitle": "HEIC to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert HEIC to PNG online for free! Add transparency support and improve compatibility. Fast, secure, and completely private conversion."
+      },
+      "bmpToJpg": {
+        "title": "BMP to JPG Converter",
+        "description": "Convert BMP images to JPG format for smaller file sizes",
+        "seoTitle": "BMP to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert BMP to JPG online for free! Reduce file sizes while maintaining quality. Fast, secure, and completely private conversion."
+      },
+      "bmpToPng": {
+        "title": "BMP to PNG Converter",
+        "description": "Convert BMP images to PNG format with transparency support",
+        "seoTitle": "BMP to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert BMP to PNG online for free! Add transparency support and improve compatibility. Fast, secure, and completely private conversion."
+      },
+      "tiffToJpg": {
+        "title": "TIFF to JPG Converter",
+        "description": "Convert TIFF images to JPG format for smaller file sizes",
+        "seoTitle": "TIFF to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert TIFF to JPG online for free! Reduce file sizes while maintaining quality. Fast, secure, and completely private conversion."
+      },
+      "tiffToPng": {
+        "title": "TIFF to PNG Converter",
+        "description": "Convert TIFF images to PNG format with transparency support",
+        "seoTitle": "TIFF to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert TIFF to PNG online for free! Add transparency support and improve compatibility. Fast, secure, and completely private conversion."
+      },
+      "icoToPng": {
+        "title": "ICO to PNG Converter",
+        "description": "Convert ICO images to PNG format for better compatibility",
+        "seoTitle": "ICO to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert ICO to PNG online for free! Improve compatibility with modern browsers and applications. Fast, secure, and completely private conversion."
+      },
+      "svgToPng": {
+        "title": "SVG to PNG Converter",
+        "description": "Convert SVG images to PNG format for better compatibility",
+        "seoTitle": "SVG to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert SVG to PNG online for free! Convert vector graphics to raster images. Fast, secure, and completely private conversion."
+      },
+      "svgToJpg": {
+        "title": "SVG to JPG Converter",
+        "description": "Convert SVG images to JPG format for smaller file sizes",
+        "seoTitle": "SVG to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert SVG to JPG online for free! Convert vector graphics to compressed images. Fast, secure, and completely private conversion."
+      },
+      "gifToPng": {
+        "title": "GIF to PNG Converter",
+        "description": "Convert GIF images to PNG format for better quality",
+        "seoTitle": "GIF to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert GIF to PNG online for free! Convert animated or static GIFs to PNG format. Fast, secure, and completely private conversion."
+      },
+      "gifToJpg": {
+        "title": "GIF to JPG Converter",
+        "description": "Convert GIF images to JPG format for smaller file sizes",
+        "seoTitle": "GIF to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert GIF to JPG online for free! Convert animated or static GIFs to JPG format. Fast, secure, and completely private conversion."
+      }
+    }
+  },
   "footer": {
     "description": "TinyCompressor - The best free online image compression tool",
     "quickLinks": "Quick Links",
@@ -200,9 +619,6 @@
       "terms": "Terms of Service"
     },
     "copyright": "© 2025 TinyCompressor. All rights reserved."
-  },
-  "howItWorks": {
-    "title": "How It Works"
   },
   "perfectFor": {
     "title": "Perfect For",
@@ -313,6 +729,605 @@
     "contact": {
       "title": "Contact Information",
       "content": "If you have any questions about these Terms of Service, please contact us through our website."
+    }
+  },
+  "compressor": {
+    "hero": {
+      "title": "Professional Image Compressor",
+      "subtitle": "Reduce image file sizes by up to 90% while maintaining visual quality",
+      "description": "Advanced compression algorithms optimize your images for web performance and efficient storage."
+    },
+    "stats": {
+      "reduction": { "value": "90%", "label": "Average file size reduction" },
+      "formats": { "value": "5+", "label": "Supported formats" },
+      "batch": { "value": "20", "label": "Batch processing limit" }
+    },
+    "upload": {
+      "title": "Upload Your Images",
+      "subtitle": "Drag & drop or click to upload your images for compression"
+    },
+    "results": {
+      "title": "Compression Results",
+      "subtitle": "Your images have been compressed successfully",
+      "before": "Before",
+      "after": "After",
+      "reduction": "Reduction",
+      "originalSize": "Original Size",
+      "compressedSize": "Compressed Size",
+      "spaceSaved": "Space Saved",
+      "download": "Download",
+      "downloadAll": "Download All as ZIP",
+      "compressMore": "Compress More Images",
+      "noResults": "No results to display"
+    },
+    "howItWorks": {
+      "title": "How Image Compression Works",
+      "subtitle": "Our compressor uses advanced algorithms to reduce file sizes while maintaining visual quality",
+      "steps": {
+        "upload": { 
+          "title": "Upload Images", 
+          "description": "Drag & drop or click to upload your images. Support up to 20 files at once." 
+        },
+        "settings": { 
+          "title": "Adjust Settings", 
+          "description": "Choose quality level, enable progressive loading, and configure advanced options." 
+        },
+        "process": { 
+          "title": "Smart Compression", 
+          "description": "Our algorithm analyzes and compresses images while preserving visual quality." 
+        },
+        "download": { 
+          "title": "Download Results", 
+          "description": "Download compressed images individually or as a ZIP file for batch processing." 
+        }
+      }
+    },
+    "notes": {
+      "title": "Important Notes",
+      "subtitle": "Key information to help you get the best compression results",
+      "items": [
+        {
+          "icon": "⚠️",
+          "title": "Lossy Compression",
+          "content": "JPEG uses lossy compression, meaning some image data is permanently removed. Higher quality settings preserve more detail.",
+          "type": "warning"
+        },
+        {
+          "icon": "🎯",
+          "title": "Quality vs Size",
+          "content": "Quality 85-95 is ideal for most uses. Quality below 70 may show visible artifacts. Find your optimal balance.",
+          "type": "info"
+        },
+        {
+          "icon": "📱",
+          "title": "Progressive Loading",
+          "content": "Enable progressive loading for better web performance. Images load gradually from low to high quality.",
+          "type": "tip"
+        },
+        {
+          "icon": "🔄",
+          "title": "Re-compression Warning",
+          "content": "Re-compressing already compressed images will further reduce quality. Always work with original images when possible.",
+          "type": "warning"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Get answers to common questions about image compression and our tools",
+      "items": [
+        {
+          "question": "How much can I reduce image file sizes?",
+          "answer": "Our smart compression algorithms can reduce file sizes by 60-90% while maintaining excellent visual quality. The exact reduction depends on the original image format and content."
+        },
+        {
+          "question": "Will image quality be affected?",
+          "answer": "Our compression uses advanced algorithms that preserve visual quality while reducing file size. You can adjust quality settings to find the perfect balance for your needs."
+        },
+        {
+          "question": "Which image formats are supported?",
+          "answer": "We support all major formats: JPG, PNG, WebP, AVIF, and GIF. Each format has optimized compression settings for the best results."
+        },
+        {
+          "question": "Can I process multiple images at once?",
+          "answer": "Yes! You can upload and compress up to 20 images simultaneously. This saves time when optimizing multiple photos or graphics."
+        },
+        {
+          "question": "Is my data secure and private?",
+          "answer": "Absolutely! All processing happens locally in your browser. Your images are never uploaded to our servers, ensuring complete privacy and security."
+        },
+        {
+          "question": "What's the difference between quick and custom compression?",
+          "answer": "Quick compression uses smart defaults for immediate results. Custom compression lets you fine-tune quality, dimensions, and other settings for specific requirements."
+        }
+      ]
+    },
+    "formats": {
+      "jpeg": {
+        "title": "JPEG Compressor - Optimize Your Photos",
+        "subtitle": "Reduce JPEG file sizes by up to 90% while maintaining excellent visual quality",
+        "description": "Advanced JPEG compression with quality control, progressive loading, and color space optimization. Perfect for web optimization and storage efficiency.",
+        "settings": {
+          "title": "JPEG Compression Settings",
+          "quality": "Compression Quality",
+          "progressive": "Enable Progressive Loading",
+          "progressiveDesc": "Images load gradually from low to high quality, improving perceived loading speed.",
+          "optimizeHuffman": "Optimize Huffman Tables",
+          "optimizeHuffmanDesc": "Optimize compression tables for better file size reduction.",
+          "colorSpace": "Color Space",
+          "colorSpaceDesc": "sRGB is recommended for web use, Adobe RGB for professional printing.",
+          "keepMetadata": "Keep Metadata",
+          "keepMetadataDesc": "Preserve EXIF data (camera settings, GPS, etc.) in compressed images.",
+          "compress": "Start JPEG Compression",
+          "compressing": "Compressing..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "Upload JPEG Images",
+            "description": "Drag & drop or select JPEG images up to 20MB each. Support for batch upload.",
+            "icon": "📤"
+          },
+          {
+            "step": "2",
+            "title": "Adjust Quality Settings",
+            "description": "Fine-tune compression quality, enable progressive loading, and optimize color space.",
+            "icon": "⚙️"
+          },
+          {
+            "step": "3",
+            "title": "Smart JPEG Compression",
+            "description": "Our algorithm optimizes JPEG compression while preserving visual quality.",
+            "icon": "🧠"
+          },
+          {
+            "step": "4",
+            "title": "Download Results",
+            "description": "Download compressed JPEG files individually or as a ZIP archive.",
+            "icon": "⬇️"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "⚠️",
+            "title": "Lossy Compression",
+            "content": "JPEG uses lossy compression, meaning some image data is permanently removed. Higher quality settings preserve more detail.",
+            "type": "warning"
+          },
+          {
+            "icon": "🎯",
+            "title": "Quality vs Size",
+            "content": "Quality 85-95 is ideal for most uses. Quality below 70 may show visible artifacts. Find your optimal balance.",
+            "type": "info"
+          },
+          {
+            "icon": "📱",
+            "title": "Progressive Loading",
+            "content": "Enable progressive loading for better web performance. Images load gradually from low to high quality.",
+            "type": "tip"
+          },
+          {
+            "icon": "🔄",
+            "title": "Re-compression Warning",
+            "content": "Re-compressing already compressed images will further reduce quality. Always work with original images when possible.",
+            "type": "warning"
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the best quality setting for JPEG compression?",
+            "answer": "For most use cases, quality 85-90 provides the best balance between file size and visual quality. Use 95+ for archival purposes and 70-85 for web optimization."
+          },
+          {
+            "question": "Should I enable progressive JPEG?",
+            "answer": "Yes, progressive JPEG is recommended for web use as it allows images to load gradually, improving perceived loading speed and user experience."
+          },
+          {
+            "question": "Can I compress JPEG images multiple times?",
+            "answer": "While possible, re-compressing JPEG images will cause additional quality loss. It's best to always work with original uncompressed images when possible."
+          },
+          {
+            "question": "What's the difference between lossy and lossless compression?",
+            "answer": "JPEG uses lossy compression, permanently removing some data to reduce file size. For lossless compression, consider PNG format instead."
+          },
+          {
+            "question": "How much can I reduce JPEG file sizes?",
+            "answer": "JPEG compression can typically reduce file sizes by 60-90% depending on the original image and quality settings, while maintaining excellent visual quality."
+          },
+          {
+            "question": "What color space should I use?",
+            "answer": "sRGB is recommended for web use as it's the standard color space for most displays. Use Adobe RGB only for professional printing workflows."
+          }
+        ]
+      },
+      "png": {
+        "title": "PNG Compressor - Optimize Your Graphics",
+        "subtitle": "Reduce PNG file sizes while preserving transparency and color accuracy",
+        "description": "Advanced PNG compression with transparency support, color optimization, and lossless compression. Perfect for graphics, logos, and images requiring exact reproduction.",
+        "settings": {
+          "title": "PNG Compression Settings",
+          "compressionLevel": "Compression Level",
+          "colorOptimization": "Optimize Color Palette",
+          "colorOptimizationDesc": "Reduce file size by optimizing color palettes without affecting visual quality.",
+          "transparencyHandling": "Transparency Handling",
+          "transparencyHandlingDesc": "Preserve transparency for logos and graphics, remove for smaller file sizes.",
+          "keepMetadata": "Keep Metadata",
+          "keepMetadataDesc": "Preserve EXIF data and other metadata in compressed images.",
+          "compress": "Start PNG Compression",
+          "compressing": "Compressing..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "Upload PNG Images",
+            "description": "Drag & drop or select PNG images with transparency support. Optimize graphics and screenshots.",
+            "icon": "📤"
+          },
+          {
+            "step": "2",
+            "title": "Configure PNG Settings",
+            "description": "Adjust compression level, color optimization, and transparency handling for best results.",
+            "icon": "⚙️"
+          },
+          {
+            "step": "3",
+            "title": "Smart PNG Compression",
+            "description": "Our algorithm optimizes PNG compression while preserving transparency and color accuracy.",
+            "icon": "🧠"
+          },
+          {
+            "step": "4",
+            "title": "Download Results",
+            "description": "Download optimized PNG files individually or as a ZIP archive.",
+            "icon": "⬇️"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🎨",
+            "title": "Lossless Compression",
+            "content": "PNG uses lossless compression, preserving all image data and transparency. Perfect for graphics and images requiring exact reproduction.",
+            "type": "info"
+          },
+          {
+            "icon": "🔍",
+            "title": "Transparency Support",
+            "content": "PNG's main advantage is its support for transparency. Always preserve transparency for logos, icons, and graphics.",
+            "type": "tip"
+          },
+          {
+            "icon": "📊",
+            "title": "Color Optimization",
+            "content": "Enable color optimization to reduce file sizes by optimizing color palettes without affecting visual quality.",
+            "type": "tip"
+          },
+          {
+            "icon": "⚡",
+            "title": "Compression Level",
+            "content": "Higher compression levels (6-9) provide better compression but slower processing. Level 6 is usually optimal.",
+            "type": "info"
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is the best compression level for PNG?",
+            "answer": "Compression level 6 provides the best balance between file size reduction and processing speed. Levels 8-9 offer maximum compression but take longer to process."
+          },
+          {
+            "question": "Should I enable color optimization?",
+            "answer": "Yes, color optimization can significantly reduce PNG file sizes by optimizing color palettes without affecting visual quality, especially for images with limited colors."
+          },
+          {
+            "question": "Can PNG compression be lossy?",
+            "answer": "Standard PNG is always lossless, but some advanced tools offer lossy PNG compression. For lossy compression, consider WebP or JPEG formats."
+          },
+          {
+            "question": "How do I preserve transparency in PNG?",
+            "answer": "Ensure 'Preserve Transparency' is enabled. This maintains the alpha channel, essential for logos, icons, and graphics with transparent backgrounds."
+          },
+          {
+            "question": "When should I use PNG vs JPEG?",
+            "answer": "Use PNG for graphics, logos, screenshots, and images with transparency. Use JPEG for photographs and complex images without transparency needs."
+          },
+          {
+            "question": "Can PNG files be compressed multiple times?",
+            "answer": "Yes, PNG compression is lossless, so you can compress PNG files multiple times without quality loss, unlike JPEG."
+          }
+        ]
+      },
+      "webp": {
+        "title": "WebP Converter - Next-Gen Image Format",
+        "subtitle": "Convert images to WebP format with 25-35% better compression than JPEG",
+        "description": "Advanced WebP conversion with lossy and lossless compression, transparency support, and superior quality. Perfect for modern web optimization.",
+        "settings": {
+          "title": "WebP Conversion Settings",
+          "compressionMode": "Compression Mode",
+          "lossy": "Lossy (Recommended)",
+          "lossless": "Lossless",
+          "lossyDesc": "Lossy for photos, lossless for graphics and images requiring exact reproduction.",
+          "quality": "Quality",
+          "method": "Compression Method",
+          "methodDesc": "Higher methods provide better compression but slower encoding.",
+          "alphaQuality": "Alpha Quality",
+          "alphaQualityDesc": "Controls the quality of transparency channel.",
+          "keepMetadata": "Keep Metadata",
+          "keepMetadataDesc": "Preserve EXIF data and other metadata in converted images.",
+          "convert": "Convert to WebP",
+          "converting": "Converting..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "Upload Images",
+            "description": "Drag & drop or select images to convert to WebP format. Support for JPG, PNG, and other formats.",
+            "icon": "📤"
+          },
+          {
+            "step": "2",
+            "title": "Configure WebP Settings",
+            "description": "Choose between lossy and lossless compression, adjust quality, and set transparency options.",
+            "icon": "⚙️"
+          },
+          {
+            "step": "3",
+            "title": "Advanced WebP Compression",
+            "description": "Our algorithm converts images to WebP format with superior compression and quality.",
+            "icon": "🧠"
+          },
+          {
+            "step": "4",
+            "title": "Download WebP Files",
+            "description": "Download optimized WebP files individually or as a ZIP archive.",
+            "icon": "⬇️"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🚀",
+            "title": "Superior Compression",
+            "content": "WebP provides 25-35% better compression than JPEG while maintaining similar visual quality. Perfect for web optimization.",
+            "type": "info"
+          },
+          {
+            "icon": "🎨",
+            "title": "Lossy & Lossless Support",
+            "content": "WebP supports both lossy compression for photos and lossless compression for graphics, all in one format.",
+            "type": "tip"
+          },
+          {
+            "icon": "🔍",
+            "title": "Transparency Support",
+            "content": "WebP supports alpha transparency like PNG but with much better compression ratios.",
+            "type": "tip"
+          },
+          {
+            "icon": "🌐",
+            "title": "Modern Browser Support",
+            "content": "WebP is supported by all modern browsers. Consider fallbacks for older browsers.",
+            "type": "info"
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is WebP format?",
+            "answer": "WebP is a modern image format developed by Google that provides 25-35% better compression than JPEG while maintaining superior quality and supporting transparency."
+          },
+          {
+            "question": "Should I use lossy or lossless WebP?",
+            "answer": "Use lossy WebP for photographs and complex images (quality 70-90). Use lossless WebP for graphics and images requiring exact reproduction."
+          },
+          {
+            "question": "How much smaller are WebP files?",
+            "answer": "WebP files are typically 25-35% smaller than JPEG files with similar quality, and 25-50% smaller than PNG files while supporting transparency."
+          },
+          {
+            "question": "Do all browsers support WebP?",
+            "answer": "Modern browsers (Chrome, Firefox, Safari, Edge) support WebP. For older browsers, consider providing JPEG/PNG fallbacks."
+          },
+          {
+            "question": "Can WebP replace both JPEG and PNG?",
+            "answer": "Yes, WebP can replace both formats. Use lossy WebP for photos and lossless WebP for graphics with transparency."
+          },
+          {
+            "question": "What's the best quality setting for WebP?",
+            "answer": "For web use, quality 75-85 provides excellent compression with minimal quality loss. For archival purposes, use lossless mode."
+          }
+        ]
+      },
+      "avif": {
+        "title": "AVIF Converter - Next-Generation Image Format",
+        "subtitle": "Convert images to AVIF format with 50% better compression than JPEG",
+        "description": "Advanced AVIF conversion with lossy and lossless compression, superior quality, and next-generation algorithms. Perfect for modern web optimization.",
+        "settings": {
+          "title": "AVIF Conversion Settings",
+          "compressionMode": "Compression Mode",
+          "lossy": "Lossy (Recommended)",
+          "lossless": "Lossless",
+          "lossyDesc": "Lossy for photos, lossless for graphics and images requiring exact reproduction.",
+          "quality": "Quality",
+          "speed": "Encoding Speed",
+          "speedDesc": "Higher speeds encode faster but with larger file sizes.",
+          "keepMetadata": "Keep Metadata",
+          "keepMetadataDesc": "Preserve EXIF data and other metadata in converted images.",
+          "convert": "Convert to AVIF",
+          "converting": "Converting..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "Upload Images",
+            "description": "Drag & drop or select images to convert to AVIF format. Support for JPG, PNG, and other formats.",
+            "icon": "📤"
+          },
+          {
+            "step": "2",
+            "title": "Configure AVIF Settings",
+            "description": "Choose between lossy and lossless compression, adjust quality and encoding speed.",
+            "icon": "⚙️"
+          },
+          {
+            "step": "3",
+            "title": "Advanced AVIF Compression",
+            "description": "Our algorithm converts images to AVIF format with superior compression and quality.",
+            "icon": "🧠"
+          },
+          {
+            "step": "4",
+            "title": "Download AVIF Files",
+            "description": "Download optimized AVIF files individually or as a ZIP archive.",
+            "icon": "⬇️"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🚀",
+            "title": "Next-Gen Compression",
+            "content": "AVIF provides 50% better compression than JPEG while maintaining superior quality. The future of web images.",
+            "type": "info"
+          },
+          {
+            "icon": "🎨",
+            "title": "Lossy & Lossless Support",
+            "content": "AVIF supports both lossy compression for photos and lossless compression for graphics with transparency.",
+            "type": "tip"
+          },
+          {
+            "icon": "🔍",
+            "title": "Superior Quality",
+            "content": "AVIF uses advanced compression algorithms to deliver better image quality at smaller file sizes.",
+            "type": "tip"
+          },
+          {
+            "icon": "🌐",
+            "title": "Browser Support",
+            "content": "AVIF is supported by modern browsers including Chrome, Firefox, and Safari. Check compatibility before use.",
+            "type": "info"
+          }
+        ],
+        "faq": [
+          {
+            "question": "What is AVIF format?",
+            "answer": "AVIF is a next-generation image format based on AV1 video codec that provides 50% better compression than JPEG while maintaining superior quality."
+          },
+          {
+            "question": "Should I use lossy or lossless AVIF?",
+            "answer": "Use lossy AVIF for photographs and complex images (quality 70-85). Use lossless AVIF for graphics and images requiring exact reproduction."
+          },
+          {
+            "question": "How much smaller are AVIF files?",
+            "answer": "AVIF files are typically 50% smaller than JPEG files with similar or better quality, making them ideal for web optimization."
+          },
+          {
+            "question": "Do all browsers support AVIF?",
+            "answer": "AVIF is supported by modern browsers (Chrome 85+, Firefox 93+, Safari 16+). For older browsers, consider providing JPEG/PNG fallbacks."
+          },
+          {
+            "question": "What's the best quality setting for AVIF?",
+            "answer": "For web use, quality 75-85 provides excellent compression with minimal quality loss. For archival purposes, use lossless mode."
+          },
+          {
+            "question": "Is AVIF the future of web images?",
+            "answer": "AVIF represents the next generation of web images with superior compression and quality, but adoption is still growing."
+          }
+        ]
+      },
+      "gif": {
+        "title": "GIF Compressor - Optimize Your Animations",
+        "subtitle": "Reduce GIF file sizes while preserving animation and transparency",
+        "description": "Advanced GIF compression with color optimization, dithering control, and animation preservation. Perfect for graphics, logos, and simple animations.",
+        "settings": {
+          "title": "GIF Compression Settings",
+          "colorCount": "Color Count",
+          "dithering": "Enable Dithering",
+          "ditheringDesc": "Improves visual quality when reducing colors by creating smooth gradients.",
+          "optimize": "Optimize Palette",
+          "optimizeDesc": "Optimize color palette for better compression and file size reduction.",
+          "interlaced": "Interlaced Loading",
+          "interlacedDesc": "Enable progressive loading for large images (increases file size slightly).",
+          "keepMetadata": "Keep Metadata",
+          "keepMetadataDesc": "Preserve metadata in compressed GIF files.",
+          "compress": "Start GIF Compression",
+          "compressing": "Compressing..."
+        },
+        "steps": [
+          {
+            "step": "1",
+            "title": "Upload GIF Images",
+            "description": "Drag & drop or select GIF images. Support for animated and static GIFs.",
+            "icon": "📤"
+          },
+          {
+            "step": "2",
+            "title": "Configure GIF Settings",
+            "description": "Adjust color count, dithering, and optimization settings for best compression.",
+            "icon": "⚙️"
+          },
+          {
+            "step": "3",
+            "title": "Smart GIF Compression",
+            "description": "Our algorithm optimizes GIF compression while preserving animation quality.",
+            "icon": "🧠"
+          },
+          {
+            "step": "4",
+            "title": "Download Results",
+            "description": "Download compressed GIF files individually or as a ZIP archive.",
+            "icon": "⬇️"
+          }
+        ],
+        "notes": [
+          {
+            "icon": "🎬",
+            "title": "Animation Support",
+            "content": "GIF format supports animation and is widely compatible. Perfect for simple animations and graphics.",
+            "type": "info"
+          },
+          {
+            "icon": "🎨",
+            "title": "Color Limitation",
+            "content": "GIF is limited to 256 colors. Reducing colors significantly decreases file size but may affect quality.",
+            "type": "warning"
+          },
+          {
+            "icon": "🔧",
+            "title": "Dithering",
+            "content": "Dithering helps maintain visual quality when reducing colors, but increases file size slightly.",
+            "type": "tip"
+          },
+          {
+            "icon": "📱",
+            "title": "Universal Compatibility",
+            "content": "GIF has universal browser support and is ideal for simple graphics, logos, and animations.",
+            "type": "info"
+          }
+        ],
+        "faq": [
+          {
+            "question": "How many colors should I use for GIF compression?",
+            "answer": "Use 128-256 colors for good quality, 64-128 for smaller files, and 32-64 for maximum compression. Quality decreases with fewer colors."
+          },
+          {
+            "question": "Should I enable dithering?",
+            "answer": "Enable dithering to maintain visual quality when reducing colors. It helps create smoother gradients and better color transitions."
+          },
+          {
+            "question": "Can I compress animated GIFs?",
+            "answer": "Yes, our compressor supports both static and animated GIFs. Animation will be preserved during compression."
+          },
+          {
+            "question": "What's the difference between GIF and other formats?",
+            "answer": "GIF supports animation and transparency but is limited to 256 colors. For photos, use JPEG or WebP. For graphics with many colors, consider PNG."
+          },
+          {
+            "question": "How much can I reduce GIF file sizes?",
+            "answer": "GIF compression can typically reduce file sizes by 30-70% depending on the original image and color settings used."
+          },
+          {
+            "question": "Should I use interlaced GIFs?",
+            "answer": "Interlaced GIFs load progressively but are larger. Use for large images where progressive loading improves user experience."
+          }
+        ]
+      }
     }
   }
 }

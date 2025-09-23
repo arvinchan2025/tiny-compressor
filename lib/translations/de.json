@@ -11,13 +11,533 @@
   "nav": {
     "features": "Funktionen",
     "about": "Über uns",
-    "language": "Sprache"
+    "language": "Sprache",
+    "compressor": "Kompressor",
+    "converter": "Konverter",
+    "home": "Startseite"
+  },
+  "settings": {
+    "settings": "Einstellungen",
+    "processingMode": "Verarbeitungsmodus",
+    "singleFile": "Einzeldatei",
+    "batchMode": "Batch-Modus",
+    "ui": "Benutzeroberfläche",
+    "advancedSettings": "Erweiterte Einstellungen",
+    "batchOperations": "Batch-Operationen",
+    "smartPresets": "Intelligente Voreinstellungen",
+    "fileThumbnails": "Datei-Vorschaubilder",
+    "compactMode": "Kompakter Modus",
+    "defaults": "Standardwerte",
+    "compressionQuality": "Komprimierungsqualität",
+    "conversionFormat": "Konvertierungsformat",
+    "preserveMetadata": "Metadaten beibehalten",
+    "optimizeForWeb": "Für Web optimieren",
+    "features": "Funktionen",
+    "dragDrop": "Drag & Drop",
+    "keyboardShortcuts": "Tastaturkürzel",
+    "autoSave": "Automatisches Speichern",
+    "progressNotifications": "Fortschrittsbenachrichtigungen",
+    "theme": "Design",
+    "colorScheme": "Farbschema",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "auto": "Automatisch",
+    "accentColor": "Akzentfarbe",
+    "save": "Speichern",
+    "reset": "Zurücksetzen",
+    "close": "Schließen",
+    "optional": "(Optional)",
+    "showSettings": "Einstellungen anzeigen",
+    "hideSettings": "Einstellungen ausblenden",
+    "toggleSettings": "Einstellungen umschalten"
+  },
+  "converter": {
+    "title": "Bildkonverter",
+    "subtitle": "Konvertieren Sie Bilder zwischen verschiedenen Formaten sofort",
+    "description": "Konvertieren Sie Ihre Bilder zu JPG, PNG, WebP und mehr Formaten mit hoher Qualität und schneller Verarbeitung.",
+    "supportedFormats": "Unterstützte Formate",
+    "dragDrop": "Bilder hier hineinziehen oder klicken zum Durchsuchen",
+    "clickToUpload": "oder klicken zum Durchsuchen",
+    "supportedFormatsList": "Unterstützt JPG, PNG, WebP, GIF, BMP und mehr",
+    "maxSize": "Maximale Dateigröße: 10MB pro Bild",
+    "uploadedFiles": "Hochgeladene Dateien",
+    "removeFile": "Entfernen",
+    "ready": "Bereit zur Konvertierung",
+    "converting": "Konvertieren...",
+    "download": "Herunterladen",
+    "downloadAll": "Alle Herunterladen",
+    "convertMore": "Mehr Konvertieren",
+    "noResults": "Noch keine Ergebnisse",
+    "before": "Vorher",
+    "after": "Nachher",
+    "originalSize": "Originalgröße",
+    "convertedSize": "Konvertierte Größe",
+    "spaceSaved": "Platz Gespart",
+    "hero": {
+      "smartConversion": "Intelligente Bildkonvertierung",
+      "smartConversionDesc": "Konvertiere Bilder zwischen verschiedenen Formaten bei Beibehaltung der Qualität und Optimierung für deine Bedürfnisse",
+      "formatFlexibility": "Format-Flexibilität",
+      "formatFlexibilityDesc": "Konvertiere zwischen verschiedenen Bildformaten mit intelligenter Optimierung",
+      "qualityPreservation": "Qualitätserhaltung",
+      "qualityPreservationDesc": "Behalte die Bildqualität bei der Konvertierung zwischen Formaten mit fortgeschrittenen Algorithmen",
+      "batchProcessing": "Batch-Verarbeitung",
+      "batchProcessingDesc": "Konvertiere mehrere Bilder gleichzeitig mit ZIP-Download und Format-Optimierung"
+    },
+    "comparison": {
+      "title": "Format-Vergleich",
+      "subtitle": "Vergleiche Quell- und Zielformate, um die Unterschiede zu verstehen",
+      "fileSize": "Dateigröße",
+      "quality": "Qualität",
+      "transparency": "Transparenz",
+      "browserSupport": "Browser-Unterstützung",
+      "sourceFormat": "Quellformat",
+      "targetFormat": "Zielformat",
+      "features": "Funktionen",
+      "larger": "Größer",
+      "smaller": "Kleiner",
+      "high": "Hoch",
+      "supported": "Unterstützt",
+      "varies": "Variiert",
+      "excellent": "Ausgezeichnet",
+      "recommendation": "Empfehlung"
+    },
+    "upload": {
+      "title": "Bilder für Konvertierung hochladen",
+      "subtitle": "Ziehe Bilder hierher oder klicke zum Durchsuchen",
+      "description": "Wähle die Bilder aus, die du konvertieren möchtest",
+      "dragActive": "Bilder hier ablegen",
+      "dragInactive": "Bilder hierher ziehen",
+      "dragReject": "Ungültiger Dateityp",
+      "dragDrop": "Bilder hierher ziehen",
+      "clickToUpload": "oder klicke zum Durchsuchen",
+      "supportedFormats": "Unterstützte Formate: JPG, PNG, WebP, GIF, BMP und mehr",
+      "maxSize": "Maximal: 10MB pro Bild",
+      "maxFiles": "Maximal: 20 Bilder auf einmal",
+      "uploadedFiles": "Hochgeladene Dateien",
+      "removeFile": "Datei entfernen",
+      "ready": "Bereit zur Konvertierung",
+      "converting": "Konvertiere...",
+      "singleFileTitle": "Lade dein Bild hoch",
+      "singleFileSubtitle": "Ziehe dein Bild hierher oder klicke zum Durchsuchen",
+      "batchTitle": "Lade mehrere Bilder hoch",
+      "batchSubtitle": "Ziehe mehrere Bilder hierher oder klicke zum Durchsuchen",
+      "addMore": "Weitere Dateien hinzufügen"
+    },
+    "settings": {
+      "title": "Konvertierungseinstellungen",
+      "subtitle": "Passe die Konvertierungseinstellungen für optimale Ergebnisse an",
+      "presets": {
+        "title": "Voreinstellungen",
+        "highQuality": "Hohe Qualität",
+        "highQualityDesc": "Beste Qualität für professionelle Verwendung",
+        "balanced": "Ausgewogen",
+        "balancedDesc": "Gutes Gleichgewicht zwischen Qualität und Dateigröße",
+        "smallSize": "Kleine Größe",
+        "smallSizeDesc": "Optimiert für Web und schnelle Übertragung"
+      },
+      "outputFormat": "Ausgabeformat",
+      "outputFormatDesc": "Wähle das Format, in das deine Bilder konvertiert werden sollen",
+      "quality": "Qualität",
+      "qualityDesc": "Stelle die Qualität der konvertierten Bilder ein (1-100)",
+      "preserveMetadata": "Metadaten beibehalten",
+      "preserveMetadataDesc": "Behalte EXIF-Daten und andere Metadaten bei",
+      "optimizeForWeb": "Für Web optimieren",
+      "optimizeForWebDesc": "Optimiere Bilder für die Web-Anzeige",
+      "resize": "Größe ändern",
+      "resizeDesc": "Ändere die Bildgröße während der Konvertierung",
+      "width": "Breite",
+      "height": "Höhe",
+      "maintainAspectRatio": "Seitenverhältnis beibehalten",
+      "maintainAspectRatioDesc": "Behalte das ursprüngliche Seitenverhältnis des Bildes bei",
+      "convert": "Konvertierung starten",
+      "converting": "Konvertiere..."
+    },
+    "howItWorks": {
+      "title": "Wie funktioniert die Bildkonvertierung",
+      "subtitle": "Unser Konverter verwendet fortgeschrittene Algorithmen zur Konvertierung zwischen Formaten bei Beibehaltung der Qualität",
+      "steps": {
+        "upload": {
+          "title": "Bilder hochladen",
+          "description": "Ziehe deine Bilder hierher oder klicke zum Durchsuchen. Unterstützt bis zu 20 Dateien auf einmal."
+        },
+        "settings": {
+          "title": "Einstellungen anpassen",
+          "description": "Wähle das Ausgabeformat, stelle die Qualität ein und konfiguriere erweiterte Optionen."
+        },
+        "process": {
+          "title": "Intelligente Konvertierung",
+          "description": "Unsere Algorithmen analysieren und konvertieren Bilder bei Beibehaltung der visuellen Qualität."
+        },
+        "download": {
+          "title": "Ergebnisse herunterladen",
+          "description": "Lade konvertierte Bilder einzeln oder als ZIP-Paket herunter."
+        }
+      },
+      "technicalDetails": {
+        "title": "Technische Details",
+        "subtitle": "Verstehe, wie die Bildkonvertierung funktioniert",
+        "algorithms": "Fortgeschrittene Algorithmen",
+        "algorithmsDesc": "Wir verwenden die neuesten Bildkonvertierungsalgorithmen für beste Qualität",
+        "qualityControl": "Qualitätskontrolle",
+        "qualityControlDesc": "Wir erhalten die visuelle Qualität während der Konvertierung zwischen Formaten",
+        "formatOptimization": "Format-Optimierung",
+        "formatOptimizationDesc": "Wir optimieren jedes Format entsprechend seiner einzigartigen Eigenschaften"
+      }
+    },
+    "notes": {
+      "title": "Wichtige Hinweise",
+      "subtitle": "Wichtige Informationen, um die besten Konvertierungsergebnisse zu erzielen",
+      "transparency": {
+        "title": "Transparenz",
+        "content": "Stelle sicher, dass das Zielformat Transparenz unterstützt (wie PNG, WebP). Wenn nicht, werden transparente Bereiche mit Weiß gefüllt."
+      },
+      "quality": {
+        "title": "Qualität",
+        "content": "Wähle die passenden Qualitätseinstellungen für deine Bedürfnisse. Hohe Qualität bedeutet größere Dateien und umgekehrt."
+      },
+      "metadata": {
+        "title": "Metadaten",
+        "content": "Du kannst wählen, ob du EXIF-Daten und andere Metadaten während der Konvertierung beibehalten oder entfernen möchtest."
+      },
+      "formats": {
+        "title": "Unterstützte Formate",
+        "content": "Wir unterstützen alle Hauptformate einschließlich JPG, PNG, WebP, AVIF, GIF und mehr."
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Erhalte Antworten auf häufige Fragen zur Bildkonvertierung und unseren Tools",
+      "quality": {
+        "question": "Wird die Bildqualität während der Konvertierung beeinträchtigt?",
+        "answer": "Unser Konvertierungsalgorithmus ist darauf ausgelegt, die höchstmögliche Qualität bei der Optimierung für das Zielformat zu erhalten. Der Qualitätsverlust ist minimal und oft für das menschliche Auge nicht wahrnehmbar."
+      },
+      "transparency": {
+        "question": "Wie wird Transparenz während der Konvertierung behandelt?",
+        "answer": "Die Transparenzunterstützung hängt vom Zielformat ab. Einige Formate wie PNG unterstützen Transparenz, während andere wie JPEG dies nicht tun. Wir behandeln dies intelligent basierend auf den Zielformat-Fähigkeiten."
+      },
+      "fileSize": {
+        "question": "Wird sich die Dateigröße nach der Konvertierung ändern?",
+        "answer": "Die Dateigröße ändert sich typischerweise während der Konvertierung aufgrund verschiedener Komprimierungsalgorithmen und Formateigenschaften. Wir optimieren die Konvertierung für das beste Gleichgewicht zwischen Qualität und Dateigröße."
+      },
+      "metadata": {
+        "question": "Werden Metadaten während der Konvertierung beibehalten?",
+        "answer": "Die Metadatenbeibehaltung hängt von deinen Einstellungen ab. Du kannst wählen, ob du EXIF-Daten, GPS-Informationen und andere Metadaten während des Konvertierungsprozesses beibehalten oder entfernen möchtest."
+      },
+      "batch": {
+        "question": "Kann ich mehrere Bilder gleichzeitig konvertieren?",
+        "answer": "Ja! Du kannst bis zu 20 Bilder gleichzeitig hochladen und konvertieren. Alle konvertierten Bilder können einzeln oder als einzelne ZIP-Datei heruntergeladen werden."
+      },
+      "security": {
+        "question": "Sind meine Daten während der Konvertierung sicher?",
+        "answer": "Absolut! Die gesamte Konvertierung erfolgt lokal in deinem Browser. Deine Bilder werden niemals auf unsere Server hochgeladen, was vollständige Privatsphäre und Sicherheit gewährleistet."
+      }
+    },
+    "results": {
+      "title": "Konvertierungsergebnisse",
+      "subtitle": "Deine Bilder wurden erfolgreich konvertiert",
+      "original": "Original",
+      "converted": "Konvertiert",
+      "sizeReduced": "Größe reduziert",
+      "sizeIncreased": "Größe erhöht",
+      "download": "Herunterladen",
+      "downloadAll": "Alle als ZIP herunterladen",
+      "before": "Vorher",
+      "after": "Nachher",
+      "conversion": "Konvertierung",
+      "conversionTime": "Konvertierungszeit",
+      "formatChange": "Format-Änderung",
+      "compressionRatio": "Komprimierungsverhältnis",
+      "spaceSaved": "Platz gespart",
+      "convertMore": "Mehr Bilder konvertieren",
+      "stats": {
+        "filesConverted": "Konvertierte Dateien",
+        "sizeReduction": "Größenreduktion",
+        "totalSize": "Gesamtgröße",
+        "totalTime": "Gesamtzeit"
+      }
+    },
+    "formats": {
+      "jpg": {
+        "title": "JPG",
+        "description": "Best for photographs and complex images"
+      },
+      "png": {
+        "title": "PNG",
+        "description": "Best for graphics with transparency"
+      },
+      "webp": {
+        "title": "WebP",
+        "description": "Modern format with excellent compression"
+      },
+      "gif": {
+        "title": "GIF",
+        "description": "Best for simple animations"
+      },
+      "avif": {
+        "title": "AVIF",
+        "description": "Next-generation format with superior compression"
+      },
+      "heic": {
+        "title": "HEIC",
+        "description": "Apple's efficient image format"
+      },
+      "bmp": {
+        "title": "BMP",
+        "description": "Uncompressed bitmap format"
+      },
+      "tiff": {
+        "title": "TIFF",
+        "description": "High-quality image format"
+      },
+      "ico": {
+        "title": "ICO",
+        "description": "Windows icon format"
+      },
+      "svg": {
+        "title": "SVG",
+        "description": "Scalable vector graphics"
+      }
+    },
+    "conversions": {
+      "jpgToPng": {
+        "title": "JPG to PNG Converter",
+        "description": "Convert JPG images to PNG format with transparency support",
+        "seoTitle": "JPG to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert JPG to PNG online for free! Add transparency support to your images. Fast, secure, and completely private conversion."
+      },
+      "pngToJpg": {
+        "title": "PNG to JPG Converter",
+        "description": "Convert PNG images to JPG format for smaller file sizes",
+        "seoTitle": "PNG to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert PNG to JPG online for free! Reduce file sizes while maintaining quality. Fast, secure, and completely private conversion."
+      },
+      "webpToJpg": {
+        "title": "WebP to JPG Converter",
+        "description": "Convert WebP images to JPG format for better compatibility",
+        "seoTitle": "WebP to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert WebP to JPG online for free! Improve compatibility with older browsers. Fast, secure, and completely private conversion."
+      },
+      "webpToPng": {
+        "title": "WebP to PNG Converter",
+        "description": "Convert WebP images to PNG format with transparency support",
+        "seoTitle": "WebP to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert WebP to PNG online for free! Add transparency support to your images. Fast, secure, and completely private conversion."
+      },
+      "pngToWebp": {
+        "title": "PNG to WebP Converter",
+        "description": "Convert PNG images to WebP format for better compression",
+        "seoTitle": "PNG to WebP Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert PNG to WebP online for free! Get better compression and modern format support. Fast, secure, and completely private conversion."
+      },
+      "jpgToWebp": {
+        "title": "JPG to WebP Converter",
+        "description": "Convert JPG images to WebP format for better compression",
+        "seoTitle": "JPG to WebP Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert JPG to WebP online for free! Get better compression and modern format support. Fast, secure, and completely private conversion."
+      },
+      "pngToAvif": {
+        "title": "PNG to AVIF Converter",
+        "description": "Convert PNG images to AVIF format for superior compression",
+        "seoTitle": "PNG to AVIF Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert PNG to AVIF online for free! Get next-generation compression with excellent quality. Fast, secure, and completely private conversion."
+      },
+      "jpgToAvif": {
+        "title": "JPG to AVIF Converter",
+        "description": "Convert JPG images to AVIF format for superior compression",
+        "seoTitle": "JPG to AVIF Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert JPG to AVIF online for free! Get next-generation compression with excellent quality. Fast, secure, and completely private conversion."
+      },
+      "webpToAvif": {
+        "title": "WebP to AVIF Converter",
+        "description": "Convert WebP images to AVIF format for even better compression",
+        "seoTitle": "WebP to AVIF Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert WebP to AVIF online for free! Get next-generation compression with superior quality. Fast, secure, and completely private conversion."
+      },
+      "heicToJpg": {
+        "title": "HEIC to JPG Converter",
+        "description": "Convert HEIC images to JPG format for better compatibility",
+        "seoTitle": "HEIC to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert HEIC to JPG online for free! Improve compatibility with all devices and platforms. Fast, secure, and completely private conversion."
+      },
+      "heicToPng": {
+        "title": "HEIC to PNG Converter",
+        "description": "Convert HEIC images to PNG format with transparency support",
+        "seoTitle": "HEIC to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert HEIC to PNG online for free! Add transparency support and improve compatibility. Fast, secure, and completely private conversion."
+      },
+      "bmpToJpg": {
+        "title": "BMP to JPG Converter",
+        "description": "Convert BMP images to JPG format for smaller file sizes",
+        "seoTitle": "BMP to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert BMP to JPG online for free! Reduce file sizes while maintaining quality. Fast, secure, and completely private conversion."
+      },
+      "bmpToPng": {
+        "title": "BMP to PNG Converter",
+        "description": "Convert BMP images to PNG format with transparency support",
+        "seoTitle": "BMP to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert BMP to PNG online for free! Add transparency support and improve compatibility. Fast, secure, and completely private conversion."
+      },
+      "tiffToJpg": {
+        "title": "TIFF to JPG Converter",
+        "description": "Convert TIFF images to JPG format for smaller file sizes",
+        "seoTitle": "TIFF to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert TIFF to JPG online for free! Reduce file sizes while maintaining quality. Fast, secure, and completely private conversion."
+      },
+      "tiffToPng": {
+        "title": "TIFF to PNG Converter",
+        "description": "Convert TIFF images to PNG format with transparency support",
+        "seoTitle": "TIFF to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert TIFF to PNG online for free! Add transparency support and improve compatibility. Fast, secure, and completely private conversion."
+      },
+      "icoToPng": {
+        "title": "ICO to PNG Converter",
+        "description": "Convert ICO images to PNG format for better compatibility",
+        "seoTitle": "ICO to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert ICO to PNG online for free! Improve compatibility with modern browsers and applications. Fast, secure, and completely private conversion."
+      },
+      "svgToPng": {
+        "title": "SVG to PNG Converter",
+        "description": "Convert SVG images to PNG format for better compatibility",
+        "seoTitle": "SVG to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert SVG to PNG online for free! Convert vector graphics to raster images. Fast, secure, and completely private conversion."
+      },
+      "svgToJpg": {
+        "title": "SVG to JPG Converter",
+        "description": "Convert SVG images to JPG format for smaller file sizes",
+        "seoTitle": "SVG to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert SVG to JPG online for free! Convert vector graphics to compressed images. Fast, secure, and completely private conversion."
+      },
+      "gifToPng": {
+        "title": "GIF to PNG Converter",
+        "description": "Convert GIF images to PNG format for better quality",
+        "seoTitle": "GIF to PNG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert GIF to PNG online for free! Convert animated or static GIFs to PNG format. Fast, secure, and completely private conversion."
+      },
+      "gifToJpg": {
+        "title": "GIF to JPG Converter",
+        "description": "Convert GIF images to JPG format for smaller file sizes",
+        "seoTitle": "GIF to JPG Converter - Free Online Image Format Converter",
+        "seoDescription": "Convert GIF to JPG online for free! Convert animated or static GIFs to JPG format. Fast, secure, and completely private conversion."
+      }
+    }
+  },
+  "compressor": {
+    "hero": {
+      "title": "Professioneller Bildkompressor",
+      "subtitle": "Reduziere Bilddateigrößen um bis zu 90% bei Beibehaltung der visuellen Qualität",
+      "description": "Fortgeschrittene Komprimierungsalgorithmen optimieren deine Bilder für bessere Web-Leistung und Speichereffizienz."
+    },
+    "stats": {
+      "reduction": {
+        "value": "90%",
+        "label": "Durchschnittliche Dateigrößenreduktion"
+      },
+      "formats": {
+        "value": "5+",
+        "label": "Unterstützte Formate"
+      },
+      "batch": {
+        "value": "20",
+        "label": "Batch-Verarbeitungslimit"
+      }
+    },
+    "upload": {
+      "title": "Lade deine Bilder hoch",
+      "subtitle": "Ziehe oder klicke, um deine Bilder zur Komprimierung hochzuladen"
+    },
+    "howItWorks": {
+      "title": "Wie Bildkomprimierung funktioniert",
+      "subtitle": "Unser Kompressor verwendet fortgeschrittene Algorithmen zur Dateigrößenreduktion bei Beibehaltung der visuellen Qualität",
+      "steps": {
+        "upload": {
+          "title": "Bilder hochladen",
+          "description": "Ziehe oder klicke, um deine Bilder hochzuladen. Unterstützung für bis zu 20 Dateien gleichzeitig."
+        },
+        "settings": {
+          "title": "Einstellungen anpassen",
+          "description": "Qualitätsstufe wählen, progressives Laden aktivieren und erweiterte Optionen konfigurieren."
+        },
+        "process": {
+          "title": "Intelligente Komprimierung",
+          "description": "Unser Algorithmus analysiert und komprimiert Bilder unter Beibehaltung der visuellen Qualität."
+        },
+        "download": {
+          "title": "Ergebnisse herunterladen",
+          "description": "Komprimierte Bilder einzeln oder als ZIP-Datei für Batch-Verarbeitung herunterladen."
+        }
+      }
+    },
+    "formats": {
+      "jpeg": {
+        "title": "JPEG-Kompressor - Optimiere deine Fotos",
+        "subtitle": "Reduziere JPEG-Dateigrößen um bis zu 90% bei hervorragender visueller Qualität",
+        "description": "Fortgeschrittene JPEG-Komprimierung mit Qualitätskontrolle, progressivem Laden und Farbraum-Optimierung. Perfekt für Web-Optimierung und Speichereffizienz.",
+        "settings": {
+          "title": "JPEG-Komprimierungseinstellungen",
+          "quality": "Komprimierungsqualität",
+          "progressive": "Progressives Laden aktivieren",
+          "progressiveDesc": "Bilder laden schrittweise von niedriger zu hoher Qualität und verbessern die wahrgenommene Ladegeschwindigkeit.",
+          "optimizeHuffman": "Huffman-Tabellen optimieren",
+          "optimizeHuffmanDesc": "Komprimierungstabellen für bessere Dateigrößenreduktion optimieren.",
+          "colorSpace": "Farbraum",
+          "colorSpaceDesc": "sRGB wird für Web empfohlen, Adobe RGB für professionellen Druck.",
+          "keepMetadata": "Metadaten beibehalten",
+          "keepMetadataDesc": "EXIF-Daten (Kameraeinstellungen, GPS, etc.) in komprimierten Bildern beibehalten.",
+          "compress": "JPEG-Komprimierung starten",
+          "compressing": "Komprimiere..."
+        }
+      },
+      "png": {
+        "title": "PNG-Kompressor - Optimiere deine Grafiken",
+        "subtitle": "Reduziere PNG-Dateigrößen bei Beibehaltung von Transparenz und Farbgenauigkeit",
+        "description": "Fortgeschrittene PNG-Komprimierung mit Transparenz-Unterstützung, Farboptimierung und verlustfreier Komprimierung. Perfekt für Grafiken, Logos und Bilder, die exakte Wiedergabe erfordern.",
+        "settings": {
+          "title": "PNG-Komprimierungseinstellungen",
+          "compressionLevel": "Komprimierungsstufe",
+          "compressionLevelDesc": "Höhere Stufen bieten bessere Komprimierung, aber längere Verarbeitungszeit.",
+          "colorType": "Farbtyp",
+          "colorTypeDesc": "Wähle den für deine Bilder am besten geeigneten Farbtyp.",
+          "keepTransparency": "Transparenz beibehalten",
+          "keepTransparencyDesc": "Transparente Bereiche in Bildern beibehalten.",
+          "optimizePalette": "Farbpalette optimieren",
+          "optimizePaletteDesc": "Farbpalette des Bildes für bessere Komprimierung optimieren.",
+          "compress": "PNG-Komprimierung starten",
+          "compressing": "Komprimiere..."
+        }
+      }
+    }
+  },
+  "home": {
+    "title": "TinyCompressor - Kostenloses Online-Bildkomprimierungstool",
+    "subtitle": "Professionelles Bildkomprimierungs- und Formatkonvertierungstool",
+    "description": "Komprimiere JPG, PNG, WebP, AVIF, GIF Bilder, reduziere Dateigrößen um bis zu 90% ohne Qualitätsverlust. Sofortige Formatkonvertierung. 100% kostenlos, sicher und datenschutzorientiert.",
+    "quickStart": "Schnellstart",
+    "dragDrop": "Ziehe Bilder hierher",
+    "orClick": "oder klicke zum Durchsuchen",
+    "supportedFormats": "Unterstützt JPG, PNG, WebP, AVIF, GIF Formate",
+    "maxFileSize": "Max. 10MB pro Datei",
+    "processingMode": "Verarbeitungsmodus",
+    "compress": "Komprimieren",
+    "convert": "Konvertieren",
+    "targetFormat": "Zielformat",
+    "processNow": "Jetzt verarbeiten",
+    "processing": "Verarbeite...",
+    "downloadResult": "Ergebnis herunterladen",
+    "processMore": "Mehr verarbeiten"
   },
   "hero": {
     "title": "Komprimiere Bilder Sofort",
     "subtitle": "Reduziere Dateigrößen ohne Qualitätsverlust. Schnell, sicher und völlig kostenlos.",
     "cta": "Jetzt Komprimieren",
-    "trustedBy": "Vertraut von Tausenden von Benutzern weltweit"
+    "trustedBy": "Vertraut von Tausenden von Benutzern weltweit",
+    "description": "Fortgeschrittene Bildverarbeitungstools, die direkt in Ihrem Browser arbeiten. Keine Uploads, keine Wasserzeichen, keine versteckten Gebühren.",
+    "compressButton": "Bilder komprimieren",
+    "convertButton": "Bilder konvertieren",
+    "stats": {
+      "sizeReduction": "Bis zu 90% Größenreduktion",
+      "supportedFormats": "10+ unterstützte Formate",
+      "freeSecure": "Kostenlos und sicher"
+    }
   },
   "upload": {
     "title": "Lade Deine Bilder Hoch",
@@ -29,7 +549,16 @@
     "maxSize": "Max. Dateigröße: 10MB pro Bild",
     "uploadedFiles": "Hochgeladene Dateien",
     "removeFile": "Datei entfernen",
-    "ready": "Bereit"
+    "ready": "Bereit",
+    "singleFileTitle": "Lade dein Bild hoch",
+    "singleFileSubtitle": "Ziehe dein Bild hierher oder klicke zum Durchsuchen",
+    "batchTitle": "Lade mehrere Bilder hoch",
+    "batchSubtitle": "Ziehe mehrere Bilder hierher oder klicke zum Durchsuchen",
+    "addMore": "Weitere Dateien hinzufügen",
+    "clickToUpload": "oder klicken zum Durchsuchen",
+    "maxFiles": "Maximal: 20 Bilder auf einmal",
+    "uploadError": "Fehler beim Hochladen",
+    "uploadSuccess": "Erfolgreich hochgeladen"
   },
   "compression": {
     "title": "Komprimierungseinstellungen",
@@ -77,7 +606,11 @@
     "downloadAll": "Alle als ZIP Herunterladen",
     "compressMore": "Mehr Bilder Komprimieren",
     "compressionRatio": "Komprimierungsverhältnis",
-    "spaceSaved": "Platz Gespart"
+    "spaceSaved": "Platz Gespart",
+    "before": "Vorher",
+    "after": "Nachher",
+    "reduction": "Reduzierung",
+    "noResults": "Keine Ergebnisse"
   },
   "features": {
     "title": "Warum TinyCompressor Wählen?",
@@ -96,21 +629,6 @@
     "free": {
       "title": "Völlig Kostenlos",
       "description": "Keine Registrierung erforderlich, keine versteckten Kosten, keine Limits"
-    }
-  },
-  "howItWorks": {
-    "title": "Wie Es Funktioniert",
-    "step1": {
-      "title": "Bilder Hochladen",
-      "description": "Ziehe deine Bilder hierher oder klicke zum Durchsuchen. Unterstützt JPG, PNG, WebP und weitere Formate."
-    },
-    "step2": {
-      "title": "Einstellungen Anpassen",
-      "description": "Passe Komprimierungsqualität, Dimensionen und Ausgabeformat nach deinen Bedürfnissen an."
-    },
-    "step3": {
-      "title": "Ergebnisse Herunterladen",
-      "description": "Lade einzelne Dateien herunter oder erhalte alle komprimierten Bilder in einer praktischen ZIP-Datei."
     }
   },
   "formats": {
@@ -195,7 +713,11 @@
     "legal": "Rechtliches",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "copyright": "© 2025 TinyCompressor. Alle Rechte vorbehalten."
+    "copyright": "© 2025 TinyCompressor. Alle Rechte vorbehalten.",
+    "links": {
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen"
+    }
   },
   "perfectFor": {
     "title": "Perfekt Für",
