@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "WebP zu AVIF Konverter - WebP Bilder Online Konvertieren",
+    "description": "Konvertieren Sie WebP-Bilder online in AVIF-Format. Kostenloser, schneller und einfach zu bedienender WebP zu AVIF Konverter.",
+    "keywords": "WebP zu AVIF, WebP konvertieren, Bildkonverter, Online-Tool"
+  },
+  "hero": {
+    "title": "WebP zu AVIF Konverter",
+    "subtitle": "Konvertieren Sie WebP-Bilder online in AVIF-Format",
+    "description": "Konvertieren Sie WebP-Bilder in AVIF-Format der nächsten Generation für noch bessere Kompression und überlegene Qualität mit moderner Browser-Unterstützung."
+  },
+  "features": {
+    "title": "WebP zu AVIF Konvertierungsfunktionen",
+    "description": "Warum von WebP zu AVIF der nächsten Generation upgraden",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "20-30% Bessere Kompression",
+        "description": "AVIF bietet überlegene Kompression im Vergleich zu WebP"
+      },
+      {
+        "icon": "✨",
+        "title": "Verbesserte Qualität",
+        "description": "Bessere perzeptuelle Qualität mit fortschrittlichem AV1-Codec"
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR & 10-Bit Farbe",
+        "description": "Unterstützung für HDR und breiteren Farbraum als WebP"
+      },
+      {
+        "icon": "💎",
+        "title": "Fortschrittliche Funktionen",
+        "description": "Filmkorn-Synthese und perzeptuelle Optimierung"
+      },
+      {
+        "icon": "⚡",
+        "title": "Batch-Konvertierung",
+        "description": "Konvertieren Sie mehrere WebP-Dateien gleichzeitig in AVIF"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Sicher",
+        "description": "Alle Konvertierungen erfolgen lokal in Ihrem Browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "WebP vs AVIF Formatvergleich",
+    "subtitle": "Die Unterschiede zwischen WebP- und AVIF-Formaten verstehen",
+    "webp": {
+      "description": "WebP ist ein modernes Bildformat, das überlegene Kompression im Vergleich zu JPG und PNG bietet.",
+      "features": [
+        "VP8/VP9 Kompression",
+        "25-35% besser als PNG/JPG",
+        "95%+ Browser-Unterstützung",
+        "Transparenz-Unterstützung"
+      ]
+    },
+    "avif": {
+      "description": "AVIF ist ein Bildformat der nächsten Generation basierend auf AV1-Video-Codec mit außergewöhnlicher Kompression.",
+      "features": [
+        "AV1 Kompression",
+        "20-30% besser als WebP",
+        "92%+ Browser-Unterstützung",
+        "HDR und breiter Farbraum"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Wie WebP zu AVIF Konvertierung Funktioniert",
+    "description": "Die technischen Vorteile von AVIF gegenüber WebP verstehen",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "AV1 vs VP8/VP9 Kompression",
+        "description": "AVIF verwendet AV1-Codec, der 20-30% effizienter ist als WebPs VP8/VP9 und bessere Kompression durch fortschrittliche Vorhersage und moderne Kodierungstechniken erreicht.",
+        "benefits": [
+          "AV1 vs VP8/VP9",
+          "20-30% bessere Kompression",
+          "Überlegene perzeptuelle Qualität",
+          "Next-Gen Codec"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "Verbesserte Farbfähigkeiten",
+        "description": "AVIF unterstützt HDR, breiten Farbraum (BT.2020) und bis zu 12-Bit Farbtiefe, weit über WebPs 8-Bit-Begrenzung hinaus für überlegene Farbwiedergabe.",
+        "benefits": [
+          "HDR-Unterstützung (HLG, PQ)",
+          "10-Bit und 12-Bit Farbe",
+          "Breiter Farbraum (BT.2020)",
+          "Besser als WebPs 8-Bit"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "Fortschrittliche Alpha-Kompression",
+        "description": "AVIFs Alphakanal-Kompression ist effizienter als WebPs und erreicht 15-25% bessere Transparenz-Kompression bei beibehaltener Qualität.",
+        "benefits": [
+          "15-25% bessere Alpha-Kompression",
+          "Effiziente Transparenz-Behandlung",
+          "Qualität erhalten",
+          "Optimiert für Web-Grafiken"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Flexible Kodierungsoptionen",
+        "description": "AVIF bietet sowohl verlustfreie als auch verlustbehaftete Modi mit feingranularer Qualitätskontrolle, perfekt optimiert für moderne Web-Bereitstellung.",
+        "benefits": [
+          "Verlustfrei oder verlustbehaftet",
+          "Qualitätsbereich 0-63",
+          "Geschwindigkeit vs Qualitäts-Kompromisse",
+          "Für Web optimiert"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Wann & Wie WebP zu AVIF Konvertieren",
+    "description": "Häufige Szenarien und Best Practices für WebP zu AVIF Konvertierung",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Cutting-Edge Web-Performance",
+        "description": "Maximale Kompression für Performance-kritische Sites.",
+        "content": "Konvertieren Sie WebP zu AVIF für zusätzliche 20-30% Größenreduktion. Ideal für Performance-kritische Websites und bildintensive Anwendungen. Verwenden Sie Qualität 50-55 für Fotos (entspricht WebP-Qualität 80-85 bei kleinerer Größe). Implementieren Sie <picture>-Element mit AVIF primär, WebP-Fallback für maximale Reichweite bei optimaler Performance."
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR & Hochwertige Fotografie",
+        "description": "Nutzen Sie AVIFs fortschrittliche Farbfähigkeiten.",
+        "content": "AVIF glänzt für hochwertige Fotografie mit HDR-Unterstützung und 10-Bit/12-Bit Farbtiefe. Konvertieren Sie WebP-Fotos zu AVIF bei Qualität 55-60 für atemberaubende Qualität bei 20-30% kleinerer Größe. Perfekt für Portfolio-Sites, Fotografie-Galerien und Premium-Inhalt, wo Qualität kritisch ist."
+      },
+      {
+        "icon": "💾",
+        "title": "Maximale CDN & Speichereinsparungen",
+        "description": "Reduzieren Sie Bandbreiten- und Speicherkosten weiter.",
+        "content": "Konvertierung von WebP zu AVIF reduziert CDN- und Speicherkosten um zusätzliche 20-30%. Kombiniert mit ursprünglicher PNG/JPG zu WebP Konvertierung erreichen Sie 60-80% Gesamteinsparungen. Batch-konvertieren Sie WebP-Bibliotheken. Überwachen Sie Browser-Unterstützung (92%+) und liefern Sie AVIF an moderne Browser."
+      },
+      {
+        "icon": "📱",
+        "title": "Mobile-First Apps",
+        "description": "Optimale Performance für mobile Benutzer.",
+        "content": "AVIFs überlegene Kompression ist kritisch für mobile Benutzer auf langsamen Verbindungen. Konvertieren Sie WebP zu AVIF für 20-30% kleinere Dateien, was schnellere Ladezeiten und reduzierte Datennutzung bedeutet. Besonders effektiv für Progressive Web Apps und mobile-first Websites. Moderne mobile Browser haben ausgezeichnete AVIF-Unterstützung."
+      },
+      {
+        "icon": "🎮",
+        "title": "Spiele & Interaktive Medien",
+        "description": "Schnellere Ladezeiten für Assets.",
+        "content": "Konvertieren Sie WebP-Game-Assets zu AVIF für 20-30% kleinere Größen. Schnellere Asset-Ladezeiten verbessern Benutzererfahrung und reduzieren initiale Ladezeit. AVIF ist ideal für Spiele-Texturen, UI-Assets und Hintergrund-Bilder. Kombinieren Sie mit Lazy Loading für optimale Performance."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Wann WebP Behalten",
+        "description": "Szenarien, wo WebP noch die bessere Wahl ist.",
+        "content": "Behalten Sie WebP, wenn: 1) Safari <16 oder Chrome <85 Unterstützung benötigt (prüfen Sie Analytics), 2) AVIF-Kodierungszeit kritisch ist (AVIF ist langsamer), 3) Mit Tools arbeiten, die AVIF nicht unterstützen, 4) WebP bereits gute Ergebnisse liefert. WebP hat breitere Unterstützung (95%+). AVIF glänzt für moderne Browser (92%+) und Performance-kritische Szenarien."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "description": "Häufige Fragen zur WebP zu AVIF Konvertierung",
+    "items": [
+      {
+        "question": "Warum WebP zu AVIF konvertieren, wenn WebP bereits gut ist?",
+        "answer": "AVIF bietet 20-30% zusätzliche Kompression über WebP hinaus mit gleicher oder besserer Qualität. Für Performance-kritische Sites summiert sich dies zu signifikanten Bandbreiten- und CDN-Kosteneinsparungen. AVIF unterstützt auch HDR, 10-Bit/12-Bit Farbe und fortschrittliche Funktionen, die WebP fehlen. Mit 92%+ Browser-Unterstützung ist AVIF bereit für Mainstream-Nutzung."
+      },
+      {
+        "question": "Wird die Konvertierung von WebP zu AVIF die Bildqualität verbessern?",
+        "answer": "Konvertierung kann bei ursprünglicher WebP-Kompression verlorene Qualität nicht wiederherstellen, aber AVIFs fortschrittliche Algorithmen können perzeptuelle Qualität bei gleicher oder kleinerer Größe erhalten oder verbessern. Bei gleicher Dateigröße sieht AVIF oft besser aus als WebP. Bei 20-30% kleinerer Größe kann AVIF WebP-Qualität entsprechen. Für beste Ergebnisse von höchster verfügbarer WebP-Qualität konvertieren."
+      },
+      {
+        "question": "Wie viel kleiner sind AVIF-Dateien im Vergleich zu WebP?",
+        "answer": "AVIF bietet 20-30% bessere Kompression als WebP bei gleichwertiger Qualität. Zum Beispiel könnte ein 500KB WebP-Foto 350-400KB als AVIF werden mit gleicher visueller Qualität. Tatsächliche Einsparungen hängen von Bildinhalt ab - Fotos mit Verläufen und Texturen sehen bessere Kompression. AVIF ist aktuell das am besten komprimierende verfügbare Bildformat."
+      },
+      {
+        "question": "Welche Browser unterstützen AVIF-Format?",
+        "answer": "AVIF hat 92%+ Browser-Unterstützung ab 2024. Unterstützt von Chrome 85+ (2020), Firefox 93+ (2021), Safari 16+ (2022), Edge 121+ (2024), Opera 71+ (2020). Mobile-Unterstützung umfasst Chrome Android, Safari iOS 16+, Samsung Internet 14+. Für ältere Browser implementieren Sie <picture>-Element mit AVIF primär, WebP-Fallback für universelle Kompatibilität."
+      },
+      {
+        "question": "Sollte ich alle meine WebP-Bilder zu AVIF konvertieren?",
+        "answer": "Für Performance-kritische moderne Websites, ja - AVIF bietet zusätzliche 20-30% Größenreduktion mit 92%+ Browser-Unterstützung. Implementieren Sie progressive Verbesserung: AVIF → WebP → JPG/PNG-Fallback. Priorisieren Sie große Bilder (>100KB) für maximale Wirkung. Überwachen Sie Browser-Analytics Ihrer Zielgruppe. AVIF ist ideal für moderne Web-Apps, die Performance priorisieren."
+      },
+      {
+        "question": "Ist WebP zu AVIF Konvertierung kostenlos und sicher?",
+        "answer": "Ja, unser WebP zu AVIF Konverter ist vollständig kostenlos ohne Registrierung, Wasserzeichen oder Zahlungsanforderung. Alle Konvertierungen erfolgen lokal in Ihrem Browser mit WebAssembly - Ihre Bilder verlassen niemals Ihr Gerät. Dies gewährleistet 100% Privatsphäre und Sicherheit, ohne Server-Uploads, Datenerfassung oder Drittanbieter-Zugriff. AVIF-Kodierung wird vollständig client-seitig mit fortschrittlichen Kompressionsalgorithmen durchgeführt."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Verwandte Tools",
+    "description": "Entdecken Sie mehr Bildkonvertierungs- und Komprimierungswerkzeuge",
+    "items": [
+      {
+        "title": "AVIF zu WebP Konverter",
+        "description": "Konvertieren Sie AVIF-Bilder zurück in WebP-Format",
+        "url": "/converter/convert-avif-to-webp"
+      },
+      {
+        "title": "WebP Komprimieren",
+        "description": "Optimieren Sie WebP-Dateien weiter",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "AVIF Komprimieren",
+        "description": "Optimieren Sie AVIF-Dateien für noch kleinere Größen",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Ziehen Sie WebP-Dateien hierher oder klicken Sie zum Auswählen",
+      "subtitle": "Unterstützt WebP-Format, bis zu {maxFiles} Dateien, max 10MB je Datei",
+      "selectFiles": "WebP-Dateien Auswählen"
+    },
+    "errors": {
+      "maxFiles": "Maximal {maxFiles} Dateien erlaubt",
+      "fileTooLarge": "Datei {fileName} ist zu groß, bitte wählen Sie Dateien kleiner als 10MB",
+      "unsupportedFormat": "Nicht unterstütztes Dateiformat: {fileName}. Nur WebP-Dateien werden unterstützt.",
+      "uploadFailed": "Datei-Upload fehlgeschlagen",
+      "conversionFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+    },
+    "files": {
+      "title": "Ausgewählte WebP-Dateien",
+      "count": "{count} Dateien ausgewählt",
+      "reset": "Alle Zurücksetzen",
+      "remove": "Entfernen",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Zu AVIF Konvertieren",
+      "simpleStart": "Schnell WebP zu AVIF Konvertieren",
+      "advancedStart": "WebP zu AVIF Konvertieren (Erweitert)",
+      "processing": "Konvertierung zu AVIF... {progress}%"
+    },
+    "progress": {
+      "label": "Konvertierungsfortschritt",
+      "status": "Konvertierung WebP zu AVIF... {progress}% abgeschlossen"
+    },
+    "settings": {
+      "title": "AVIF-Konvertierungseinstellungen",
+      "simple": "Einfach",
+      "advanced": "Erweitert",
+      "simpleTitle": "Schnelleinstellungen",
+      "advancedTitle": "Erweiterte AVIF-Einstellungen",
+      "quality": "Qualität",
+      "qualityHighest": "Höchste (Qualität 60)",
+      "qualityHigh": "Hoch (Qualität 55)",
+      "qualityMedium": "Ausgeglichen (Qualität 50)",
+      "qualityLow": "Kleine Größe (Qualität 45)",
+      "qualityLowest": "Kleinste (Qualität 40)",
+      "speed": "Kodierungsgeschwindigkeit",
+      "speedFastest": "Schnellste (Geschwindigkeit 8)",
+      "speedBalanced": "Ausgeglichen (Geschwindigkeit 6)",
+      "speedBest": "Beste Qualität (Geschwindigkeit 4)",
+      "colorDepth": "Farbtiefe",
+      "colorDepth8": "8-Bit (Standard)",
+      "colorDepth10": "10-Bit (HDR)",
+      "colorDepth12": "12-Bit (Professionell)",
+      "metadata": "Metadaten Beibehalten",
+      "optimize": "Für Web Optimieren",
+      "presetWeb": "Web Optimiert",
+      "presetWebDesc": "Qualität 50, 20-30% kleiner",
+      "presetBalanced": "Ausgeglichen",
+      "presetBalancedDesc": "Qualität 55, ausgezeichnete Qualität",
+      "presetQuality": "Hohe Qualität",
+      "presetQualityDesc": "Qualität 60, beste Qualität"
+    },
+    "downloadAll": "Alle AVIF-Dateien Herunterladen",
+    "results": {
+      "title": "AVIF-Konvertierungsergebnisse",
+      "count": "{count} WebP-Dateien zu AVIF konvertiert",
+      "sizeInfo": "Original WebP: {original} MB → AVIF: {converted} MB ({change}% Reduktion)",
+      "download": "AVIF Herunterladen"
+    }
+  }
+}

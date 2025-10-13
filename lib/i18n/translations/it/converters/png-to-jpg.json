@@ -1,0 +1,298 @@
+{
+  "seo": {
+    "title": "Convertitore PNG a JPG - Converti Immagini PNG Online",
+    "description": "Converti immagini PNG in formato JPG online. Convertitore PNG a JPG gratuito, veloce e facile da usare.",
+    "keywords": "PNG a JPG, converti PNG, convertitore di immagini, strumento online"
+  },
+  "hero": {
+    "title": "Convertitore PNG a JPG",
+    "subtitle": "Converti immagini PNG in formato JPG online",
+    "description": "Converti immagini PNG in formato JPG mantenendo buona qualità. Perfetto per foto e immagini web."
+  },
+  "features": {
+    "title": "Funzionalità di Conversione PNG a JPG",
+    "description": "Perché convertire PNG a JPG per migliore performance web",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "Riduzione Dimensione 50-80%",
+        "description": "Riduci drasticamente dimensione file convertendo PNG lossless a JPG efficiente"
+      },
+      {
+        "icon": "🌐",
+        "title": "Boost Performance Web",
+        "description": "Caricamenti pagina più veloci e banda ridotta - ideale per siti e blog"
+      },
+      {
+        "icon": "🎛️",
+        "title": "Controllo Qualità",
+        "description": "Qualità JPG regolabile (60-95%) per bilanciare dimensione e fedeltà visiva"
+      },
+      {
+        "icon": "📱",
+        "title": "Compatibilità Universale",
+        "description": "JPG funziona ovunque - tutti dispositivi, browser e piattaforme"
+      },
+      {
+        "icon": "⚡",
+        "title": "Conversione Batch",
+        "description": "Converti più file PNG in JPG simultaneamente"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Sicuro",
+        "description": "Tutta la conversione avviene localmente nel tuo browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Confronto Formato PNG vs JPG",
+    "subtitle": "Comprendere le differenze tra formati PNG e JPG",
+    "png": {
+      "description": "PNG (Portable Network Graphics) è formato file grafico raster che supporta compressione dati lossless e trasparenza.",
+      "features": [
+        "Compressione lossless",
+        "Supporto trasparenza",
+        "Perfetto per grafica e loghi",
+        "Dimensioni file maggiori"
+      ]
+    },
+    "jpg": {
+      "description": "JPG (JPEG) è metodo comunemente usato di compressione lossy per immagini digitali, particolarmente per fotografie digitali.",
+      "features": [
+        "Compressione lossy",
+        "Dimensioni file minori",
+        "Ottimo per foto",
+        "Nessun supporto trasparenza"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Come Funziona la Conversione PNG a JPG",
+    "description": "Comprendere processo tecnico e algoritmi dietro conversione formato",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "Rimozione Trasparenza & Riempimento Sfondo",
+        "description": "Canale alfa di PNG viene rimosso perché JPG non supporta trasparenza. Pixel trasparenti sono sostituiti con sfondo solido (tipicamente bianco, configurabile ad altri colori).",
+        "benefits": [
+          "Dati canale alfa eliminati",
+          "Aree trasparenti riempite con colore solido",
+          "Complessità file ridotta",
+          "Prepara immagine per codifica JPG"
+        ]
+      },
+      {
+        "icon": "📐",
+        "title": "Conversione Algoritmo Compressione",
+        "description": "Passa da compressione DEFLATE lossless di PNG a compressione DCT (Discrete Cosine Transform) lossy di JPG, raggiungendo riduzione dimensione file 50-80%.",
+        "benefits": [
+          "DEFLATE (lossless) → DCT (lossy)",
+          "Riduzione dimensione file 50-80% tipica",
+          "Ottimizzato per contenuto fotografico",
+          "Trade-off qualità regolabile (1-100%)"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "Spazio Colore & Subsampling Croma",
+        "description": "Converte dati colore RGB a spazio colore YCbCr e applica subsampling croma (4:2:0), riducendo informazione colore mantenendo luminosità percepita.",
+        "benefits": [
+          "Conversione spazio colore RGB → YCbCr",
+          "Subsampling croma (4:2:0)",
+          "30% compressione aggiuntiva",
+          "Perdita qualità percettuale minima"
+        ]
+      },
+      {
+        "icon": "📦",
+        "title": "Gestione Metadata & EXIF",
+        "description": "Trasferisce opzionalmente dati EXIF (impostazioni fotocamera, data, posizione) e profili colore da PNG a JPG, o li rimuove per ridurre dimensione file 5-15%.",
+        "benefits": [
+          "Preservazione metadata selettiva",
+          "Trasferimento dati EXIF (info camera, GPS)",
+          "Embedding profilo colore ICC",
+          "Risparmio dimensione 5-15% se rimosso"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quando & Come Convertire PNG a JPG",
+    "description": "Scenari comuni e best practice per conversione PNG a JPG",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Ottimizzazione Performance Sito Web",
+        "description": "Riduci tempi caricamento pagina e migliora ranking SEO.",
+        "content": "Converti fotografie PNG a JPG (qualità 85-90) per riduzione dimensione file 50-80%. Essenziale per blog, portfolio e siti ricchi contenuti. Usa qualità 85 per immagini web generali, 90 per immagini hero. Evita convertire loghi o grafica con testo - mantieni quelli come PNG."
+      },
+      {
+        "icon": "📱",
+        "title": "Social Media & Condivisione Mobile",
+        "description": "Upload più veloci e migliore esperienza mobile.",
+        "content": "Piattaforme social ricomprimono immagini comunque, quindi converti PNG a JPG prima (qualità 80-85) per controllo e upload più veloci. Specialmente importante su connessioni mobile. Controlla prima per trasparenza - se presente e necessaria, usa PNG o converti a WebP invece."
+      },
+      {
+        "icon": "💾",
+        "title": "Storage Cloud & Backup",
+        "description": "Risparmia spazio storage e riduci costi.",
+        "content": "Converti foto PNG a JPG (qualità 85-90) per ridurre cloud storage 60-85%. Particolarmente efficace per screenshot erroneamente salvati come PNG. Mantieni originali se potresti necessitare qualità lossless dopo - conversione JPG non è reversibile."
+      },
+      {
+        "icon": "📧",
+        "title": "Allegati Email",
+        "description": "Rimani entro limiti dimensione mantenendo qualità.",
+        "content": "Servizi email limitano allegati a 10-25MB. Converti PNG a JPG a qualità 85 per condividere più immagini per email. Ridimensiona a dimensioni visualizzazione prima (es. larghezza 1920px) prima di convertire per risultati ottimali e file più piccoli."
+      },
+      {
+        "icon": "📸",
+        "title": "Workflow Fotografia",
+        "description": "Consegna professionale e condivisione clienti.",
+        "content": "Dopo editing in software che esporta PNG, converti a JPG per consegna. Usa qualità 90-95 per lavoro clienti, 85-90 per pubblicazione web. Ridimensiona sempre a dimensioni finali prima di convertire per evitare spreco qualità su pixel non necessari."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Quando NON Convertire",
+        "description": "Conosci limitazioni per evitare problemi qualità.",
+        "content": "Non convertire se: 1) Immagine ha trasparenza di cui necessiti (loghi, grafica), 2) Contiene testo o bordi netti (screenshot, diagrammi), 3) Già piccola (<50KB), 4) Necessiti qualità pixel-perfect. Per questi casi, mantieni PNG o usa WebP per migliore compressione con supporto lossless/trasparenza."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "description": "Domande comuni sulla conversione PNG a JPG",
+    "items": [
+      {
+        "question": "Convertire PNG a JPG ridurrà la qualità dell'immagine?",
+        "answer": "JPG usa compressione lossy, quindi avviene qualche perdita qualità. Tuttavia, a qualità 85-90, differenza è impercettibile a maggior parte spettatori. Conversione PNG a JPG funziona meglio per fotografie e immagini naturali. Evita convertire grafica con testo, loghi o bordi netti poiché questi mostrano artefatti compressione visibili in JPG."
+      },
+      {
+        "question": "Cosa succede a trasparenza convertendo PNG a JPG?",
+        "answer": "JPG non supporta trasparenza. Pixel trasparenti sono automaticamente riempiti con colore sfondo solido (tipicamente bianco). Se necessiti trasparenza, considera convertire a WebP invece, che supporta sia trasparenza che migliore compressione di PNG."
+      },
+      {
+        "question": "Quale impostazione qualità dovrei usare per conversione PNG a JPG?",
+        "answer": "Qualità 85 è sweet spot per uso web - fornisce riduzione dimensione file 60-70% con perdita qualità visibile minima. Usa 90-95 per fotografia professionale o lavoro clienti. Usa 80 per contenuto web generale. Evita andare sotto 75 poiché artefatti compressione diventano notevoli."
+      },
+      {
+        "question": "Posso convertire screenshot PNG a JPG?",
+        "answer": "Sebbene tecnicamente possibile, non è raccomandato. PNG è superiore per screenshot perché preserva chiarezza testo e bordi netti senza artefatti. Compressione lossy di JPG crea sfocatura visibile attorno a testo. Mantieni screenshot come PNG o converti a WebP lossless per migliori risultati."
+      },
+      {
+        "question": "La conversione PNG a JPG è reversibile?",
+        "answer": "No. Compressione JPG è lossy - una volta convertito, dati scartati non possono essere recuperati. Convertire JPG indietro a PNG non ripristina qualità persa, cambia solo formato contenitore. Mantieni sempre file PNG originali se potresti necessitare qualità originale dopo."
+      },
+      {
+        "question": "Quanto più piccoli saranno miei file dopo aver convertito PNG a JPG?",
+        "answer": "Riduzione dimensione file varia per contenuto: fotografie tipicamente vedono riduzione 60-80%, grafica complessa 40-60% e grafica semplice 30-50%. Riduzione esatta dipende da complessità immagine, conteggio colori e impostazione qualità scelta. Immagini più complesse comprimono meglio in JPG."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Strumenti Correlati",
+    "description": "Esplora più strumenti di conversione immagini",
+    "items": [
+      {
+        "title": "Convertitore PNG a WebP",
+        "description": "Migliore compressione con supporto trasparenza",
+        "url": "/converter/convert-png-to-webp"
+      },
+      {
+        "title": "Convertitore JPG a PNG",
+        "description": "Converti JPG indietro in formato PNG",
+        "url": "/converter/convert-jpg-to-png"
+      },
+      {
+        "title": "Compressore JPEG",
+        "description": "Comprimi ulteriormente file JPG",
+        "url": "/compressor/compress-jpeg"
+      }
+    ]
+  },
+  "operation": {
+    "modes": {
+      "simple": "Semplice",
+      "advanced": "Avanzato"
+    },
+    "upload": {
+      "title": "Trascina il tuo file qui o clicca per selezionare",
+      "subtitle": "Supporta formato {sourceFormat}, max 50MB",
+      "selectFiles": "Seleziona File"
+    },
+    "errors": {
+      "maxFiles": "Massimo {maxFiles} file consentiti",
+      "fileTooLarge": "File {fileName} troppo grande. Seleziona file minore di 50MB",
+      "unsupportedFormat": "Formato file non supportato: {fileName}",
+      "uploadFailed": "Upload file fallito",
+      "conversionFailed": "Conversione fallita",
+      "unknownError": "Errore sconosciuto",
+      "processingFailed": "Elaborazione di {fileName} fallita"
+    },
+    "files": {
+      "title": "File Selezionati",
+      "count": "{count} file selezionati",
+      "reset": "Resetta",
+      "remove": "Rimuovi",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Converti a {targetFormat}",
+      "simpleStart": "Conversione Rapida {sourceFormat} a {targetFormat}",
+      "advancedStart": "Converti {sourceFormat} a {targetFormat} (Avanzato)",
+      "processing": "Conversione... {progress}%"
+    },
+    "progress": {
+      "label": "Progresso Conversione",
+      "status": "Elaborazione... {progress}% completato"
+    },
+    "settings": {
+      "title": "Impostazioni Conversione",
+      "simple": "Semplice",
+      "advanced": "Avanzato",
+      "simpleTitle": "Impostazioni Rapide",
+      "advancedTitle": "Impostazioni Avanzate",
+      "quality": "Qualità",
+      "qualityLow": "Bassa (60)",
+      "qualityMedium": "Media (80)",
+      "qualityHigh": "Alta (100)",
+      "colorSpace": "Spazio Colore",
+      "colorSpaceAuto": "Auto",
+      "colorSpaceSrgb": "sRGB",
+      "colorSpaceAdobe": "Adobe RGB",
+      "progressive": "JPEG Progressivo",
+      "progressiveDesc": "Migliore per web",
+      "optimize": "Ottimizza per Web",
+      "optimizeForWeb": "Ottimizza per Web",
+      "optimizeDesc": "Dimensione file minore",
+      "metadata": "Mantieni Metadata",
+      "metadataDesc": "EXIF, GPS, info camera",
+      "presetHigh": "Alta Qualità",
+      "presetHighDesc": "Migliore qualità, file più grande",
+      "presetBalanced": "Bilanciato",
+      "presetBalancedDesc": "Buona qualità, file più piccolo",
+      "presetSmall": "File Piccolo",
+      "presetSmallDesc": "File più piccolo, qualità inferiore"
+    },
+    "downloadAll": "Scarica Tutto",
+    "results": {
+      "title": "Conversione Completata! 🎉",
+      "subtitle": "La tua immagine è stata ottimizzata con successo",
+      "count": "{count} file convertiti",
+      "original": "Originale",
+      "originalFormat": "Formato {format}",
+      "converted": "Convertito",
+      "convertedFormat": "Formato {format}",
+      "sizeChange": "Cambio Dimensione",
+      "time": "Tempo",
+      "format": "Formato",
+      "smaller": "Più Piccolo",
+      "larger": "Più Grande",
+      "successMessage": "Conversione riuscita!",
+      "successDescription": "La tua immagine è stata convertita e ottimizzata. Pronta per download!",
+      "download": "Scarica",
+      "reset": "Converti Altro",
+      "sizeInfo": "Originale: {original} MB → Convertito: {converted} MB ({change}% {changeType})"
+    }
+  }
+}

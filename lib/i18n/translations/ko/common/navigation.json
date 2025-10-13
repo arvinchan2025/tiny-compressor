@@ -1,0 +1,387 @@
+{
+  "brand": {
+    "name": "TinyCompressor"
+  },
+  "nav": {
+    "home": "홈",
+    "compressor": "압축기",
+    "converter": "변환기",
+    "language": "언어",
+    "menu": "메뉴",
+    "close": "닫기"
+  },
+  "breadcrumbs": {
+    "home": "홈",
+    "compressor": "압축기",
+    "converter": "변환기"
+  },
+  "compressor": {
+    "title": "이미지 압축기",
+    "subtitle": "품질을 유지하면서 이미지 파일 크기를 최대 90%까지 줄입니다. 빠르고, 안전하며, 완전히 무료입니다.",
+    "description": "웹, 이메일, 저장용 이미지를 최적화하는 전문적인 이미지 압축 도구. 모든 주요 이미지 형식을 지원하며 고급 압축 알고리즘을 사용합니다.",
+    "badge": "이미지 압축",
+    "statsLabels": {
+      "compression": "압축률",
+      "speed": "속도"
+    },
+    "tools": {
+      "png": {
+        "name": "PNG 압축기",
+        "description": "무손실 최적화로 PNG 이미지 압축",
+        "features": [
+          "무손실 압축",
+          "투명도 지원",
+          "웹 최적화"
+        ],
+        "compression": "최대 80%"
+      },
+      "jpeg": {
+        "name": "JPEG 압축기",
+        "description": "스마트 압축으로 JPEG 파일 크기 줄이기",
+        "features": [
+          "스마트 압축",
+          "품질 제어",
+          "메타데이터 제거"
+        ],
+        "compression": "최대 90%"
+      },
+      "webp": {
+        "name": "WebP 압축기",
+        "description": "웹 전송을 위한 WebP 이미지 최적화",
+        "features": [
+          "현대적 형식",
+          "우수한 압축",
+          "웹 최적화"
+        ],
+        "compression": "최대 85%"
+      },
+      "avif": {
+        "name": "AVIF 압축기",
+        "description": "차세대 압축으로 AVIF 이미지 압축",
+        "features": [
+          "차세대 형식",
+          "최대 압축",
+          "미래 지향"
+        ],
+        "compression": "최대 95%"
+      },
+      "gif": {
+        "name": "GIF 압축기",
+        "description": "품질을 유지하면서 GIF 파일 크기 줄이기",
+        "features": [
+          "애니메이션 지원",
+          "색상 최적화",
+          "프레임 감소"
+        ],
+        "compression": "최대 70%"
+      },
+      "bmp": {
+        "name": "BMP 압축기",
+        "description": "고급 최적화로 BMP 비트맵 이미지 압축",
+        "features": [
+          "비트맵 최적화",
+          "레거시 지원",
+          "무손실 변환"
+        ],
+        "compression": "최대 90%"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "번개처럼 빠름",
+        "description": "최적화된 알고리즘으로 몇 초 안에 여러 이미지 처리",
+        "details": "최대 100개 이미지 동시 처리"
+      },
+      "security": {
+        "title": "개인정보 보호 우선",
+        "description": "이미지는 브라우저에서 로컬로 처리됩니다 - 업로드 불필요",
+        "details": "클라이언트 측 처리로 완전한 프라이버시 보장"
+      },
+      "quality": {
+        "title": "품질 제어",
+        "description": "파일 크기와 이미지 품질의 균형을 맞추는 고급 설정",
+        "details": "고급 알고리즘으로 시각적 품질 유지"
+      },
+      "title": "왜 우리의 이미지 압축기를 선택해야 할까요?",
+      "items": [
+        {
+          "title": "번개처럼 빠름",
+          "description": "최적화된 알고리즘으로 몇 초 안에 여러 이미지 처리"
+        },
+        {
+          "title": "개인정보 보호 우선",
+          "description": "이미지는 브라우저에서 로컬로 처리됩니다 - 업로드 불필요"
+        },
+        {
+          "title": "다양한 형식",
+          "description": "PNG, JPEG, WebP, AVIF, GIF, BMP 형식 지원"
+        },
+        {
+          "title": "품질 제어",
+          "description": "파일 크기와 이미지 품질의 균형을 맞추는 고급 설정"
+        },
+        {
+          "title": "일괄 처리",
+          "description": "시간을 절약하기 위해 한 번에 여러 이미지 압축"
+        },
+        {
+          "title": "영원히 무료",
+          "description": "등록 불필요, 워터마크 없음, 숨겨진 비용 없음"
+        }
+      ]
+    },
+    "stats": {
+      "processed": {
+        "number": "1500만+",
+        "label": "압축된 이미지",
+        "description": "월간"
+      },
+      "reduction": {
+        "number": "90%",
+        "label": "평균 감소",
+        "description": "파일 크기"
+      },
+      "formats": {
+        "number": "6",
+        "label": "지원 형식",
+        "description": "모든 주요 유형"
+      }
+    },
+    "whyChoose": {
+      "title": "왜 우리의 이미지 압축기를 선택해야 할까요?",
+      "items": [
+        {
+          "title": "초고속",
+          "description": "최적화된 알고리즘으로 몇 초 안에 여러 이미지 처리"
+        },
+        {
+          "title": "개인정보 보호 우선",
+          "description": "이미지가 브라우저에서 로컬로 처리됨 - 업로드 불필요"
+        },
+        {
+          "title": "다중 형식",
+          "description": "PNG, JPEG, WebP, AVIF, GIF, BMP 형식 지원"
+        },
+        {
+          "title": "품질 제어",
+          "description": "파일 크기와 이미지 품질의 균형을 맞추는 고급 설정"
+        },
+        {
+          "title": "일괄 처리",
+          "description": "시간을 절약하기 위해 여러 이미지를 한 번에 압축"
+        },
+        {
+          "title": "영구 무료",
+          "description": "등록 불필요, 워터마크 없음, 숨겨진 비용 없음"
+        }
+      ]
+    }
+  },
+  "converter": {
+    "title": "이미지 변환기",
+    "subtitle": "고품질과 빠른 처리로 다양한 형식 간 이미지 변환.",
+    "description": "이미지를 인기 있는 형식 간에 변환하는 전문적인 이미지 변환 도구. PNG, JPEG, WebP, AVIF, HEIC 형식을 지원하며 고급 변환 기술을 사용합니다.",
+    "badge": "형식 변환",
+    "statsLabels": {
+      "compression": "압축률",
+      "speed": "속도"
+    },
+    "tools": {
+      "pngToJpg": {
+        "name": "PNG를 JPG로",
+        "description": "PNG 이미지를 JPG 형식으로 변환",
+        "features": [
+          "배경 처리",
+          "품질 유지",
+          "웹 최적화"
+        ],
+        "conversion": "즉시"
+      },
+      "pngToWebp": {
+        "name": "PNG를 WebP로",
+        "description": "PNG 이미지를 WebP 형식으로 변환",
+        "features": [
+          "현대적 형식",
+          "우수한 품질",
+          "웹 전송"
+        ],
+        "conversion": "즉시"
+      },
+      "pngToAvif": {
+        "name": "PNG를 AVIF로",
+        "description": "PNG 이미지를 AVIF 형식으로 변환",
+        "features": [
+          "차세대 형식",
+          "최대 효율",
+          "미래 지향"
+        ],
+        "conversion": "즉시"
+      },
+      "jpgToPng": {
+        "name": "JPEG를 PNG로",
+        "description": "JPEG 이미지를 PNG 형식으로 변환",
+        "features": [
+          "투명도 지원",
+          "무손실 변환",
+          "품질 제어"
+        ],
+        "conversion": "즉시"
+      },
+      "webpToPng": {
+        "name": "WebP를 PNG로",
+        "description": "WebP 이미지를 PNG 형식으로 변환",
+        "features": [
+          "범용 호환성",
+          "무손실 변환",
+          "품질 유지"
+        ],
+        "conversion": "즉시"
+      },
+      "jpgToWebp": {
+        "name": "JPEG를 WebP로",
+        "description": "JPEG 이미지를 WebP 형식으로 변환",
+        "features": [
+          "크기 감소",
+          "품질 향상",
+          "웹 최적화"
+        ],
+        "conversion": "즉시"
+      },
+      "jpgToAvif": {
+        "name": "JPEG를 AVIF로",
+        "description": "JPEG 이미지를 AVIF 형식으로 변환",
+        "features": [
+          "최대 압축",
+          "우수한 품질",
+          "현대적 형식"
+        ],
+        "conversion": "즉시"
+      },
+      "webpToJpg": {
+        "name": "WebP를 JPEG로",
+        "description": "WebP 이미지를 JPEG 형식으로 변환",
+        "features": [
+          "레거시 지원",
+          "품질 최적화",
+          "범용 호환성"
+        ],
+        "conversion": "즉시"
+      },
+      "webpToAvif": {
+        "name": "WebP를 AVIF로",
+        "description": "WebP 이미지를 AVIF 형식으로 변환",
+        "features": [
+          "차세대 업그레이드",
+          "최대 효율",
+          "미래 지향"
+        ],
+        "conversion": "즉시"
+      },
+      "heicToJpg": {
+        "name": "HEIC를 JPEG로",
+        "description": "HEIC 이미지를 JPEG 형식으로 변환",
+        "features": [
+          "iPhone 호환성",
+          "크로스 플랫폼",
+          "품질 유지"
+        ],
+        "conversion": "즉시"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "번개처럼 빠름",
+        "description": "최적화된 알고리즘으로 몇 초 안에 여러 이미지 변환",
+        "details": "몇 초 내에 여러 이미지 변환"
+      },
+      "security": {
+        "title": "개인정보 보호 우선",
+        "description": "이미지는 브라우저에서 로컬로 처리됩니다 - 업로드 불필요",
+        "details": "클라이언트 측 처리로 완전한 프라이버시 보장"
+      },
+      "quality": {
+        "title": "품질 제어",
+        "description": "변환 과정에서 이미지 품질을 유지하는 고급 설정",
+        "details": "고급 알고리즘으로 이미지 품질 유지"
+      }
+    },
+    "stats": {
+      "converted": {
+        "number": "1000만+",
+        "label": "변환된 이미지",
+        "description": "월간"
+      },
+      "formats": {
+        "number": "10+",
+        "label": "지원 형식",
+        "description": "모든 주요 유형"
+      },
+      "quality": {
+        "number": "100%",
+        "label": "품질 보존",
+        "description": "무손실 변환"
+      }
+    },
+    "whyChoose": {
+      "title": "왜 우리의 이미지 변환기를 선택해야 할까요?",
+      "items": [
+        {
+          "title": "고품질 변환",
+          "description": "고급 알고리즘으로 형식 간 변환 시 이미지 품질 유지"
+        },
+        {
+          "title": "로컬 처리",
+          "description": "모든 변환이 브라우저에서 로컬로 수행 - 완전 비공개"
+        },
+        {
+          "title": "10+ 형식",
+          "description": "PNG, JPG, WebP, AVIF, HEIC 등 주요 형식 지원"
+        },
+        {
+          "title": "일괄 변환",
+          "description": "효율성 향상을 위해 여러 파일을 동시에 변환"
+        },
+        {
+          "title": "즉각적인 결과",
+          "description": "빠른 처리로 변환된 이미지를 즉시 얻기"
+        },
+        {
+          "title": "완전 무료",
+          "description": "무제한 사용, 등록 또는 결제 불필요"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "company": "TinyCompressor",
+    "description": "무료 온라인 이미지 압축 및 변환 도구",
+    "links": {
+      "privacy": "개인정보 보호정책",
+      "terms": "서비스 약관",
+      "about": "회사 소개",
+      "contact": "문의하기"
+    },
+    "copyright": "© 2024 TinyCompressor. 모든 권리 보유."
+  },
+  "language": {
+    "current": "현재 언어",
+    "change": "언어 변경",
+    "select": "언어 선택"
+  },
+  "tools": {
+    "title": "도구 선택",
+    "start": "지금 시작"
+  },
+  "features": {
+    "title": "왜 우리의 도구를 선택해야 할까요?",
+    "subtitle": "사용자 친화적 기능을 갖춘 고급 기술",
+    "free": "100% 무료",
+    "secure": "안전하고 비공개",
+    "fast": "번개처럼 빠름"
+  },
+  "cta": {
+    "title": "시작할 준비가 되셨나요?",
+    "description": "우리의 이미지 처리 도구를 신뢰하는 수천 명의 사용자에 합류하세요",
+    "backToHome": "홈으로 돌아가기"
+  }
+}

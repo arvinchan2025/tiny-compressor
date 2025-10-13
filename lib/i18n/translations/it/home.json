@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "Strumenti di Immagine Online Gratuiti",
+    "description": "Strumenti avanzati di compressione e conversione di immagini alimentati da algoritmi all'avanguardia. Riduci la dimensione del file fino al 90% mantenendo la qualità perfetta. Fulmineo, completamente sicuro e 100% gratuito per sempre.",
+    "getStarted": "Inizia a Comprimere",
+    "learnMore": "Prova il Convertitore",
+    "stats": {
+      "sizeReduction": "Fino al 90% di Riduzione",
+      "supportedFormats": "16+ Formati Supportati",
+      "freeSecure": "100% Gratuito e Sicuro",
+      "processingSpeed": "Elaborazione Subsecondo",
+      "privacy": "Elaborazione Lato Client",
+      "reliability": "99,9% Disponibilità"
+    }
+  },
+  "features": {
+    "title": "Perché Scegliere TinyCompressor?",
+    "subtitle": "Tecnologia avanzata di elaborazione delle immagini con funzionalità facili da usare",
+    "free": {
+      "title": "100% Gratuito Per Sempre",
+      "description": "Nessun costo nascosto, nessun abbonamento, nessun limite - completamente gratuito per sempre"
+    },
+    "secure": {
+      "title": "Privacy Prima di Tutto",
+      "description": "Tutta l'elaborazione avviene localmente nel tuo browser - i tuoi file non lasciano mai il tuo dispositivo"
+    },
+    "fast": {
+      "title": "Fulmineo",
+      "description": "Algoritmi ottimizzati alimentati da WebAssembly per le velocità di elaborazione più rapide"
+    },
+    "quality": {
+      "title": "Qualità Professionale",
+      "description": "Algoritmi avanzati garantiscono risultati ottimali sia per utenti occasionali che professionisti"
+    },
+    "global": {
+      "title": "Accessibilità Globale",
+      "description": "Disponibile in 11 lingue con design responsive per tutti i dispositivi"
+    },
+    "mobile": {
+      "title": "Ottimizzato per Mobile",
+      "description": "Esperienza perfetta su tutti i dispositivi con interfaccia touch-friendly"
+    }
+  },
+  "tools": {
+    "title": "Scegli Il Tuo Strumento",
+    "subtitle": "Strumenti di livello professionale per tutte le tue esigenze di elaborazione delle immagini",
+    "statsLabels": {
+      "compression": "Compressione",
+      "formats": "Formati",
+      "processing": "Elaborazione",
+      "quality": "Qualità",
+      "speed": "Velocità"
+    },
+    "compressor": {
+      "title": "Compressore di Immagini",
+      "description": "Riduci la dimensione del file mantenendo la qualità con i nostri algoritmi avanzati di compressione",
+      "button": "Inizia a Comprimere",
+      "features": [
+        "Supporto PNG, JPG, WebP, AVIF, GIF, BMP",
+        "Elaborazione batch per più file",
+        "Controllo qualità avanzato con anteprima in tempo reale",
+        "Opzioni di compressione con e senza perdita",
+        "Preservazione e rimozione dei metadati",
+        "Impostazioni di compressione personalizzate"
+      ],
+      "stats": {
+        "compression": "Fino al 90%",
+        "formats": "6+ formati",
+        "processing": "< 3 secondi"
+      }
+    },
+    "converter": {
+      "title": "Convertitore di Immagini",
+      "description": "Converti tra diversi formati di immagine con precisione e velocità",
+      "button": "Inizia a Convertire",
+      "features": [
+        "Conversione formato tra 10+ formati",
+        "Algoritmi di preservazione della qualità",
+        "Capacità di elaborazione batch",
+        "Molteplici opzioni di formato di output",
+        "Conversione spazio colore",
+        "Gestione trasparenza"
+      ],
+      "stats": {
+        "formats": "10+ formati",
+        "quality": "Senza perdita",
+        "speed": "Istantaneo"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Come Funziona",
+    "subtitle": "Elaborazione di immagini semplice, veloce e sicura in tre passaggi facili",
+    "steps": [
+      {
+        "title": "Carica Immagini",
+        "description": "Trascina e rilascia o fai clic per caricare le tue immagini. Supporto per caricamenti batch.",
+        "details": "Supporta tutti i formati principali con anteprima istantanea"
+      },
+      {
+        "title": "Scegli Impostazioni",
+        "description": "Seleziona livello di compressione, qualità o formato target con anteprima in tempo reale.",
+        "details": "Opzioni avanzate per risultati professionali"
+      },
+      {
+        "title": "Elabora e Scarica",
+        "description": "Ottieni immagini ottimizzate istantaneamente con statistiche di compressione dettagliate.",
+        "details": "Download batch con struttura file organizzata"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Perfetto per Ogni Caso d'Uso",
+    "subtitle": "Dallo sviluppo web ai social media, ottimizza le immagini per qualsiasi scopo",
+    "categories": [
+      {
+        "title": "Sviluppo Web",
+        "description": "Ottimizza le immagini del sito per caricamento più veloce e migliore esperienza utente",
+        "icon": "🌐"
+      },
+      {
+        "title": "App Mobili",
+        "description": "Ottimizza le risorse immagine per applicazioni iOS e Android",
+        "icon": "📱"
+      },
+      {
+        "title": "E-commerce",
+        "description": "Comprimi le immagini dei prodotti per migliorare le prestazioni del negozio online",
+        "icon": "🛒"
+      },
+      {
+        "title": "Social Media",
+        "description": "Ottimizza le immagini per varie piattaforme social",
+        "icon": "📢"
+      },
+      {
+        "title": "Lavoro di Design",
+        "description": "Ottimizza il flusso di lavoro per designer e professionisti creativi",
+        "icon": "🎨"
+      },
+      {
+        "title": "Creazione di Contenuti",
+        "description": "Ottimizza le immagini per blog, notizie e piattaforme di contenuti",
+        "icon": "📝"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronto a Ottimizzare Le Tue Immagini?",
+    "description": "Unisciti a milioni di utenti che si fidano di TinyCompressor per le loro esigenze di elaborazione delle immagini. Inizia a ottimizzare le tue immagini oggi e sperimenta la differenza!",
+    "getStarted": "Inizia Ora",
+    "learnMore": "Scopri di Più"
+  }
+}

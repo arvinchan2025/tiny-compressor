@@ -1,14 +1,19 @@
-import HomeClient from './HomeClient';
-import { SupportedLanguage } from '@/types/i18n';
+import { Locale, supportedLocales } from '@/lib/i18n';
+import StandardPageLayout from '@/components/layout/StandardPageLayout';
+import HomeClient from '@/components/home/HomeClient';
 
 export default async function Home({ params }: { params: { locale: string } }) {
   const { locale } = params;
   
-  // 确保 locale 是有效的 SupportedLanguage 类型
-  const validLocale: SupportedLanguage = ['en', 'zh', 'es', 'de', 'fr', 'ar'].includes(locale) 
-    ? (locale as SupportedLanguage) 
+  // 确保 locale 是有效的 Locale 类型
+  const validLocale: Locale = supportedLocales.includes(locale as Locale)
+    ? (locale as Locale) 
     : 'en';
   
-  // 直接传递 locale，让客户端组件处理翻译
-  return <HomeClient locale={validLocale} />;
+  // 使用标准页面布局
+  return (
+    <StandardPageLayout locale={validLocale}>
+      <HomeClient locale={validLocale} />
+    </StandardPageLayout>
+  );
 }

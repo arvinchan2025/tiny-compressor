@@ -1,0 +1,273 @@
+{
+  "seo": {
+    "title": "HEIC to JPG変換 - HEIC画像をオンラインで変換",
+    "description": "HEIC画像をオンラインでJPG形式に変換します。無料、高速、使いやすいHEIC to JPG変換ツール。",
+    "keywords": "HEIC to JPG、HEIC変換、画像変換ツール、オンラインツール"
+  },
+  "hero": {
+    "title": "HEIC to JPG変換",
+    "subtitle": "HEIC画像をオンラインでJPG形式に変換",
+    "description": "Apple HEIC/HEIF画像をJPG形式に変換して、すべてのデバイスとプラットフォームでユニバーサル互換性を実現します。"
+  },
+  "features": {
+    "title": "HEIC to JPG変換機能",
+    "description": "AppleのHEICをユニバーサルJPG形式に変換する理由",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "ユニバーサル互換性",
+        "description": "JPGはどこでも動作、HEICはAppleデバイスのみ"
+      },
+      {
+        "icon": "📱",
+        "title": "クロスプラットフォーム共有",
+        "description": "Apple写真をAndroidおよびWindowsユーザーと共有"
+      },
+      {
+        "icon": "🖥️",
+        "title": "ソフトウェア互換性",
+        "description": "すべての画像編集および表示ソフトウェアで動作"
+      },
+      {
+        "icon": "📧",
+        "title": "メールとソーシャルメディア",
+        "description": "メールおよびソーシャルメディアアップロードに最適"
+      },
+      {
+        "icon": "⚡",
+        "title": "バッチ変換",
+        "description": "複数のHEICファイルを一度にJPGに変換"
+      },
+      {
+        "icon": "🔐",
+        "title": "100%安全",
+        "description": "すべての変換はブラウザ内でローカルに行われます"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "HEIC vs JPG形式比較",
+    "subtitle": "HEICとJPG形式の違いを理解する",
+    "heic": {
+      "description": "HEIC (High Efficiency Image Container) は、HEVC圧縮に基づくAppleのデフォルト画像形式です。",
+      "features": [
+        "HEVC圧縮",
+        "JPGより優れた圧縮",
+        "Appleエコシステム",
+        "限定的な互換性"
+      ]
+    },
+    "jpg": {
+      "description": "JPG (JPEG) はユニバーサル互換性を持つ最も広く使用されている画像形式です。",
+      "features": [
+        "ユニバーサル互換性",
+        "100%ブラウザサポート",
+        "すべてのプラットフォームをサポート",
+        "業界標準"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "HEIC to JPG変換の仕組み",
+    "description": "Apple形式からユニバーサルJPGへの変換の技術的プロセスを理解する",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "HEVC解凍とJPG再エンコード",
+        "description": "HEICのHEVC (H.265) 圧縮データを完全に解凍し、すべてのプラットフォームでユニバーサル互換性を実現するためにJPG DCT圧縮を使用して再エンコードします。",
+        "benefits": [
+          "HEVC解凍",
+          "JPG DCT再エンコード",
+          "品質が保持される",
+          "ユニバーサル互換性"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "品質に関する考慮事項",
+        "description": "HEICは高度なHEVC圧縮を使用しています。JPGへの変換は現在の品質を保持しますが、JPG圧縮がHEVCより効率が低いため、ファイルサイズは1.5-2倍増加する可能性があります。",
+        "benefits": [
+          "品質が保持される",
+          "ファイルサイズが1.5-2倍増加",
+          "追加の品質損失なし",
+          "JPG品質は調整可能"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "色空間変換",
+        "description": "HEICは通常ワイド色域を使用します。JPGへの変換は標準sRGB色空間に変換され、ワイド色域ディスプレイでわずかな色シフトが発生する可能性があります。",
+        "benefits": [
+          "ワイド色域からsRGBへ",
+          "標準色空間",
+          "すべてのデバイスと互換性",
+          "一貫した色の外観"
+        ]
+      },
+      {
+        "icon": "🌍",
+        "title": "最大互換性の獲得",
+        "description": "JPGはすべてのブラウザ、デバイス、ソフトウェアで100%ユニバーサルサポートがあり、Apple写真を非Appleユーザーと共有するのに最適です。",
+        "benefits": [
+          "100%互換性",
+          "すべてのプラットフォームをサポート",
+          "特別なソフトウェア不要",
+          "メールとソーシャル対応"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "HEICをJPGに変換する時期と方法",
+    "description": "HEIC to JPG変換の一般的なシナリオとベストプラクティス",
+    "items": [
+      {
+        "icon": "📱",
+        "title": "クロスプラットフォーム写真共有",
+        "description": "iPhone写真をAndroidおよびWindowsユーザーと共有します。",
+        "content": "iPhone/iPad写真を非Appleユーザーと共有するにはHEICをJPGに変換します。HEICはiOS 11+、macOS High Sierra+、およびコーデックパックを備えたWindows 10でのみ動作します。JPGはすべてのデバイスでユニバーサル表示を保証します。バランスの取れた品質85-90を使用してください。家族写真、グループ共有、クロスプラットフォームコラボレーションに不可欠です。JPGは写真のユニバーサル言語です。"
+      },
+      {
+        "icon": "📧",
+        "title": "メールとソーシャルメディア",
+        "description": "どこでも画像が正しく表示されることを確認します。",
+        "content": "メール添付ファイルおよびソーシャルメディアアップロード用にHEICをJPGに変換します。多くのメールクライアントとプラットフォームはHEICをサポートしていません。JPGはユニバーサル表示を保証します。ソーシャルメディアには品質85-90を使用してください。メール添付ファイル、プロフィール写真、共有コンテンツに不可欠です。一部のプラットフォームはHEICを自動変換しますが、手動変換は一貫した品質と互換性を保証します。"
+      },
+      {
+        "icon": "🖥️",
+        "title": "WindowsおよびAndroid互換性",
+        "description": "Apple写真を非Appleデバイスで動作させます。",
+        "content": "WindowsおよびAndroid互換性のためにHEICをJPGに変換します。HEICはWindowsで特別なコーデックを必要とし、Androidではネイティブサポートされていません。JPGは追加ソフトウェアなしでどこでも動作します。一般的な使用には品質85-90を使用してください。非Appleデバイスを使用する同僚、クライアント、友人と写真を共有するために不可欠です。JPGはデフォルトの安全な選択です。"
+      },
+      {
+        "icon": "🎨",
+        "title": "デザインと編集ワークフロー",
+        "description": "すべてのデザインツールとの互換性を確保します。",
+        "content": "デザインソフトウェアで編集する前にHEICをJPGに変換します。主要ツール (Photoshop 2020+) はHEICをサポートしていますが、多くのプラグイン、古いバージョン、Webベースのツールはサポートしていません。JPGはユニバーサル互換性を保証します。品質損失を最小限に抑えるために編集には品質90-95を使用してください。チームメンバーが異なるソフトウェアとプラットフォームを使用する共同デザインプロジェクトに不可欠です。"
+      },
+      {
+        "icon": "🖨️",
+        "title": "印刷とプロフェッショナル使用",
+        "description": "印刷サービス用にApple写真を準備します。",
+        "content": "印刷サービスとフォトラボ用にHEICをJPGに変換します。ほとんどの印刷ソフトウェアはJPGまたはPNGを期待します。JPGは写真印刷の標準です。最良の結果を得るために印刷には品質95を使用してください。フォトブック、プリント、プロフェッショナル印刷サービスに不可欠です。一部の現代サービスはHEICをサポートしていますが、JPGはユニバーサル互換性を保証します。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "HEICを保持する場合",
+        "description": "HEICが優れている選択肢であるシナリオ。",
+        "content": "次の場合はHEICを保持してください：1) Appleエコシステム内にとどまる (iPhone、iPad、Mac)、2) より良い圧縮が必要 (HEICはJPGより40-50%小さい)、3) iCloudストレージが限られている、4) iOS 11+ユーザーとのみ共有する。HEICはApple専用ワークフローで優れています。クロスプラットフォーム共有、メール、ソーシャルメディア、ユニバーサル互換性のためにJPGに変換してください。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "HEIC to JPG変換に関する一般的な質問",
+    "items": [
+      {
+        "question": "HEIC形式とは何ですか？なぜAppleはそれを使用するのですか？",
+        "answer": "HEIC (High Efficiency Image Container) は、iOS 11 (2017) 以降のAppleのデフォルト画像形式です。HEVC (H.265) 圧縮を使用し、JPGより40-50%優れた圧縮を同じ品質で提供します。Appleは、iCloudストレージスペースを節約し、画像品質を向上させるためにHEICを採用しました。ただし、HEICはAppleエコシステム外では互換性が限られているため、JPG変換がクロスプラットフォーム共有に必要です。"
+      },
+      {
+        "question": "HEICをJPGに変換すると画質は低下しますか？",
+        "answer": "高いJPG品質設定 (85-95) を使用すると、HEICをJPGに変換しても視覚的品質が保持されます。JPG圧縮がHEVCより効率が低いため、ファイルサイズは1.5-2倍増加します。一般的な使用には品質85-90、重要な写真には90-95を使用してください。品質損失はわずかで、ほとんどの使用では知覚できません。トレードオフはユニバーサル互換性対ファイルサイズです。"
+      },
+      {
+        "question": "WindowsまたはAndroidでHEICファイルが開けないのはなぜですか？",
+        "answer": "HEICにはHEVC (H.265) コーデックが必要で、Windows (コーデックパックが必要) またはAndroid (ネイティブサポートなし) ではネイティブサポートされていません。Appleはより良い圧縮のためにHEIC形式を使用していますが、Appleエコシステム専用です。JPGへの変換はユニバーサル互換性を保証します。JPGは追加ソフトウェアなしですべてのデバイスで動作します。これが、HEIC to JPG変換がクロスプラットフォーム写真共有に不可欠な理由です。"
+      },
+      {
+        "question": "iPhone写真を自動的にJPGに変換する方法は？",
+        "answer": "iPhoneの設定 ← カメラ ← フォーマット ← 「互換性優先」を選択してHEICの代わりにJPGとして写真を保存します。既存のHEIC写真の場合、バッチ変換にコンバーターを使用してください。または、非Appleデバイスと共有する際にHEICをJPGに変換する「自動」転送設定を有効にします。最大互換性のために、JPGモードで撮影するか、HEICライブラリをバッチ変換してください。"
+      },
+      {
+        "question": "HEICを元の品質に戻すことはできますか？",
+        "answer": "いいえ、HEICをJPGに変換してから元に戻しても元の品質は復元されません。ロッシー形式間の各変換は累積的な品質損失を引き起こします。Appleエコシステム内にとどまる場合は、常に元のHEICファイルをバックアップとして保持してください。写真を共有する必要がある場合は、高品質 (90-95) で一度HEICをJPGに変換し、両方のバージョンを保持してください。前後に変換しないでください。"
+      },
+      {
+        "question": "HEIC to JPG変換は無料で安全ですか？",
+        "answer": "はい、当社のHEIC to JPGコンバーターは完全無料で、登録、ウォーターマーク、支払いは不要です。すべての変換はWebAssemblyを使用してブラウザ内でローカルに行われます - 画像はデバイスを離れることはありません。これにより、サーバーアップロード、データ収集、サードパーティアクセスなしで100%のプライバシーとセキュリティが保証されます。HEIC復号化とJPGエンコードは完全にクライアント側で実行されます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "関連ツール",
+    "description": "その他の画像変換および圧縮ツールを探索",
+    "items": [
+      {
+        "title": "JPG to PNG変換",
+        "description": "JPGをPNG形式に変換",
+        "url": "/converter/convert-jpg-to-png"
+      },
+      {
+        "title": "JPG圧縮",
+        "description": "JPGファイルをより小さいサイズに最適化",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "JPG to WebP変換",
+        "description": "JPGをモダンなWebP形式に変換",
+        "url": "/converter/convert-jpg-to-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "HEICファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "HEIC/HEIF形式をサポート、最大{maxFiles}ファイル、各最大10MB",
+      "selectFiles": "HEICファイルを選択"
+    },
+    "errors": {
+      "maxFiles": "最大{maxFiles}ファイルまで許可",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "unsupportedFormat": "サポートされていないファイル形式: {fileName}。HEIC/HEIFファイルのみサポートされています。",
+      "uploadFailed": "ファイルのアップロードに失敗しました",
+      "conversionFailed": "変換に失敗しました。もう一度お試しください。"
+    },
+    "files": {
+      "title": "選択されたHEICファイル",
+      "count": "{count}ファイル選択済み",
+      "reset": "すべてリセット",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "JPGに変換",
+      "simpleStart": "クイックHEIC to JPG変換",
+      "advancedStart": "HEIC to JPG変換 (詳細)",
+      "processing": "JPGに変換中... {progress}%"
+    },
+    "progress": {
+      "label": "変換進行状況",
+      "status": "HEIC to JPG変換中... {progress}%完了"
+    },
+    "settings": {
+      "title": "JPG変換設定",
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "simpleTitle": "クイック設定",
+      "advancedTitle": "JPG詳細設定",
+      "quality": "品質",
+      "qualityHighest": "最高 (95)",
+      "qualityHigh": "高 (90)",
+      "qualityMedium": "バランス (85)",
+      "qualityLow": "小サイズ (80)",
+      "qualityLowest": "最小 (75)",
+      "progressive": "プログレッシブJPG",
+      "metadata": "メタデータを保持",
+      "optimize": "Web用に最適化",
+      "presetSharing": "写真共有",
+      "presetSharingDesc": "品質85、共有用に最適化",
+      "presetWeb": "Web",
+      "presetWebDesc": "品質85、Web用に最適化",
+      "presetPrint": "印刷",
+      "presetPrintDesc": "品質95、印刷用高品質"
+    },
+    "downloadAll": "すべてのJPGファイルをダウンロード",
+    "results": {
+      "title": "JPG変換結果",
+      "count": "{count}個のHEICファイルがJPGに変換されました",
+      "sizeInfo": "元のHEIC: {original} MB → JPG: {converted} MB ({change}%増加)",
+      "download": "JPGをダウンロード"
+    }
+  }
+}

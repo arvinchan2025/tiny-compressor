@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "Kostenlose Online-Bildtools",
+    "description": "Fortschrittliche Bildkomprimierungs- und Konvertierungstools, die von modernsten Algorithmen angetrieben werden. Reduzieren Sie die Dateigröße um bis zu 90%, während Sie die perfekte Qualität beibehalten. Blitzschnell, vollkommen sicher und für immer 100% kostenlos.",
+    "getStarted": "Komprimierung Starten",
+    "learnMore": "Konverter Ausprobieren",
+    "stats": {
+      "sizeReduction": "Bis zu 90% Größenreduzierung",
+      "supportedFormats": "16+ Unterstützte Formate",
+      "freeSecure": "100% Kostenlos & Sicher",
+      "processingSpeed": "Sekundenbruchteil Verarbeitung",
+      "privacy": "Clientseitige Verarbeitung",
+      "reliability": "99,9% Verfügbarkeit"
+    }
+  },
+  "features": {
+    "title": "Warum TinyCompressor Wählen?",
+    "subtitle": "Fortschrittliche Bildverarbeitungstechnologie mit benutzerfreundlichen Funktionen",
+    "free": {
+      "title": "100% Kostenlos Für Immer",
+      "description": "Keine versteckten Kosten, keine Abonnements, keine Limits - für immer vollkommen kostenlos"
+    },
+    "secure": {
+      "title": "Datenschutz Zuerst",
+      "description": "Alle Verarbeitung erfolgt lokal in Ihrem Browser - Ihre Dateien verlassen nie Ihr Gerät"
+    },
+    "fast": {
+      "title": "Blitzschnell",
+      "description": "Optimierte Algorithmen, angetrieben von WebAssembly, für schnellste Verarbeitungsgeschwindigkeiten"
+    },
+    "quality": {
+      "title": "Professionelle Qualität",
+      "description": "Fortschrittliche Algorithmen gewährleisten optimale Ergebnisse für Gelegenheitsnutzer und Profis"
+    },
+    "global": {
+      "title": "Globale Zugänglichkeit",
+      "description": "Verfügbar in 11 Sprachen mit responsivem Design für alle Geräte"
+    },
+    "mobile": {
+      "title": "Mobil Optimiert",
+      "description": "Perfekte Erfahrung auf allen Geräten mit berührungsfreundlicher Oberfläche"
+    }
+  },
+  "tools": {
+    "title": "Wählen Sie Ihr Werkzeug",
+    "subtitle": "Professionelle Tools für alle Ihre Bildverarbeitungsbedürfnisse",
+    "statsLabels": {
+      "compression": "Komprimierung",
+      "formats": "Formate",
+      "processing": "Verarbeitung",
+      "quality": "Qualität",
+      "speed": "Geschwindigkeit"
+    },
+    "compressor": {
+      "title": "Bildkomprimierer",
+      "description": "Reduzieren Sie die Dateigröße bei gleichbleibender Qualität mit unseren fortschrittlichen Komprimierungsalgorithmen",
+      "button": "Komprimierung Starten",
+      "features": [
+        "PNG, JPG, WebP, AVIF, GIF, BMP Unterstützung",
+        "Stapelverarbeitung für mehrere Dateien",
+        "Erweiterte Qualitätskontrolle mit Echtzeitvorschau",
+        "Verlustfreie und verlustbehaftete Komprimierungsoptionen",
+        "Metadaten-Bewahrung und -Entfernung",
+        "Benutzerdefinierte Komprimierungseinstellungen"
+      ],
+      "stats": {
+        "compression": "Bis zu 90%",
+        "formats": "6+ Formate",
+        "processing": "< 3 Sekunden"
+      }
+    },
+    "converter": {
+      "title": "Bildkonverter",
+      "description": "Konvertieren Sie zwischen verschiedenen Bildformaten mit Präzision und Geschwindigkeit",
+      "button": "Konvertierung Starten",
+      "features": [
+        "Formatkonvertierung zwischen 10+ Formaten",
+        "Qualitätserhaltungsalgorithmen",
+        "Stapelverarbeitungsfähigkeiten",
+        "Mehrere Ausgabeformatoptionen",
+        "Farbraumkonvertierung",
+        "Transparenzbehandlung"
+      ],
+      "stats": {
+        "formats": "10+ Formate",
+        "quality": "Verlustfrei",
+        "speed": "Sofort"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Wie Es Funktioniert",
+    "subtitle": "Einfache, schnelle und sichere Bildverarbeitung in drei einfachen Schritten",
+    "steps": [
+      {
+        "title": "Bilder Hochladen",
+        "description": "Ziehen und ablegen oder klicken Sie, um Ihre Bilder hochzuladen. Unterstützung für Batch-Uploads.",
+        "details": "Unterstützt alle gängigen Formate mit sofortiger Vorschau"
+      },
+      {
+        "title": "Einstellungen Wählen",
+        "description": "Wählen Sie Komprimierungsstufe, Qualität oder Zielformat mit Echtzeitvorschau.",
+        "details": "Erweiterte Optionen für professionelle Ergebnisse"
+      },
+      {
+        "title": "Verarbeiten & Herunterladen",
+        "description": "Erhalten Sie optimierte Bilder sofort mit detaillierten Komprimierungsstatistiken.",
+        "details": "Batch-Download mit organisierter Dateistruktur"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Perfekt für Jeden Anwendungsfall",
+    "subtitle": "Von Webentwicklung bis Social Media, optimieren Sie Bilder für jeden Zweck",
+    "categories": [
+      {
+        "title": "Webentwicklung",
+        "description": "Optimieren Sie Websitebilder für schnelleres Laden und verbesserte Benutzererfahrung",
+        "icon": "🌐"
+      },
+      {
+        "title": "Mobile Apps",
+        "description": "Optimieren Sie Bildressourcen für iOS- und Android-Anwendungen",
+        "icon": "📱"
+      },
+      {
+        "title": "E-Commerce",
+        "description": "Komprimieren Sie Produktbilder zur Verbesserung der Online-Shop-Leistung",
+        "icon": "🛒"
+      },
+      {
+        "title": "Social Media",
+        "description": "Optimieren Sie Social-Media-Bilder für verschiedene Plattformen",
+        "icon": "📢"
+      },
+      {
+        "title": "Designarbeit",
+        "description": "Optimieren Sie den Workflow für Designer und kreative Profis",
+        "icon": "🎨"
+      },
+      {
+        "title": "Content-Erstellung",
+        "description": "Optimieren Sie Bilder für Blogs, Nachrichten und Content-Plattformen",
+        "icon": "📝"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Bereit, Ihre Bilder zu Optimieren?",
+    "description": "Schließen Sie sich Millionen von Nutzern an, die TinyCompressor für ihre Bildverarbeitungsbedürfnisse vertrauen. Beginnen Sie heute mit der Optimierung Ihrer Bilder und erleben Sie den Unterschied!",
+    "getStarted": "Jetzt Starten",
+    "learnMore": "Mehr Erfahren"
+  }
+}

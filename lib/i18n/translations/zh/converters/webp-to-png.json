@@ -1,0 +1,274 @@
+{
+  "seo": {
+    "title": "WebP 转 PNG - 在线转换 WebP 图片",
+    "description": "在线将 WebP 图片转换为 PNG 格式。免费、快速且易于使用的 WebP 转 PNG 转换器。",
+    "keywords": "WebP 转 PNG, 转换 WebP, 图片转换器, 在线工具"
+  },
+  "hero": {
+    "title": "WebP 转 PNG 转换器",
+    "subtitle": "在线将 WebP 图片转换为 PNG 格式",
+    "description": "将 WebP 图片转换为 PNG 格式，以获得更广泛的兼容性和无损质量保留。"
+  },
+  "features": {
+    "title": "WebP 转 PNG 转换功能",
+    "description": "为什么要将 WebP 转换为 PNG 以实现通用兼容性",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "通用兼容性",
+        "description": "PNG 可在任何地方使用 - 所有浏览器、所有设备、所有软件"
+      },
+      {
+        "icon": "🔒",
+        "title": "质量保留",
+        "description": "无损转换可保持图像质量和透明度"
+      },
+      {
+        "icon": "📧",
+        "title": "电子邮件和旧系统支持",
+        "description": "非常适合电子邮件和不支持 WebP 的系统"
+      },
+      {
+        "icon": "🎨",
+        "title": "设计工具兼容性",
+        "description": "适用于所有图像编辑和设计软件"
+      },
+      {
+        "icon": "⚡",
+        "title": "批量转换",
+        "description": "同时将多个 WebP 文件转换为 PNG"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 安全",
+        "description": "所有转换均在您的浏览器本地进行"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "WebP vs PNG 格式对比",
+    "subtitle": "了解 WebP 和 PNG 格式之间的差异",
+    "webp": {
+      "description": "WebP 是 Google 开发的现代图像格式，与 PNG 和 JPEG 相比提供了更好的压缩。",
+      "features": [
+        "卓越的压缩",
+        "透明度支持",
+        "有损和无损模式",
+        "文件大小更小"
+      ]
+    },
+    "png": {
+      "description": "PNG（Portable Network Graphics）是一种支持无损数据压缩和透明度的光栅图形文件格式。",
+      "features": [
+        "无损压缩",
+        "透明度支持",
+        "非常适合图形和徽标",
+        "通用兼容性"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "WebP 转 PNG 转换原理",
+    "description": "了解转换为通用 PNG 的技术过程",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "WebP 解压和 PNG 重新编码",
+        "description": "WebP 的 VP8/VP9 压缩数据被完全解压，然后使用 PNG 的 DEFLATE 无损算法重新编码以实现通用兼容性。",
+        "benefits": [
+          "完全 WebP 解压",
+          "PNG DEFLATE 重新编码",
+          "保持质量",
+          "文件大小增加 2-4 倍"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "透明度转换",
+        "description": "WebP 的 Alpha 通道被转换为 PNG 的 8 位 Alpha 格式。两种格式都支持 256 级透明度，确保完美的透明度保留。",
+        "benefits": [
+          "Alpha 通道保留",
+          "256 透明度级别",
+          "无质量损失",
+          "与所有软件兼容"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "质量注意事项",
+        "description": "如果原始 WebP 是有损的，转换为 PNG 会保留当前质量，但无法恢复原始 WebP 压缩中丢失的数据。无损 WebP 可以完美转换为 PNG。",
+        "benefits": [
+          "无损 WebP → 完美 PNG",
+          "有损 WebP → 质量冻结",
+          "无额外质量损失",
+          "透明度始终保留"
+        ]
+      },
+      {
+        "icon": "🌍",
+        "title": "通用兼容性增益",
+        "description": "PNG 拥有 100% 的浏览器支持（自 IE6/2001 起）并适用于所有图像软件，尽管文件大小较大，但对于最大兼容性来说是理想的。",
+        "benefits": [
+          "100% 浏览器支持",
+          "支持所有设计工具",
+          "电子邮件安全格式",
+          "打印就绪兼容性"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时以及如何将 WebP 转换为 PNG",
+    "description": "WebP 转 PNG 转换的常见场景和最佳实践",
+    "items": [
+      {
+        "icon": "📧",
+        "title": "电子邮件和新闻通讯图像",
+        "description": "确保图像在所有电子邮件客户端中正确显示。",
+        "content": "将 WebP 转换为 PNG 用于电子邮件营销和新闻通讯。许多电子邮件客户端（Outlook、Apple Mail）不支持 WebP。PNG 确保跨所有电子邮件客户端和设备的通用显示。预计文件大 2-4 倍，但保证兼容性。对于可靠性比文件大小更重要的交易电子邮件、新闻通讯和电子邮件签名至关重要。"
+      },
+      {
+        "icon": "🖥️",
+        "title": "旧系统支持",
+        "description": "与旧浏览器和软件的兼容性。",
+        "content": "将 WebP 转换为 PNG 用于运行旧浏览器的系统（IE11、Safari <14、Chrome <85）。对于具有旧系统的企业环境、具有广泛兼容性要求的政府网站以及针对旧设备的应用至关重要。PNG 自 2001 年以来拥有 100% 的浏览器支持。检查您的分析 - 如果超过 5% 的用户使用旧浏览器，请提供 PNG 后备。"
+      },
+      {
+        "icon": "🎨",
+        "title": "设计和编辑工作流程",
+        "description": "确保与所有设计工具的兼容性。",
+        "content": "在设计软件中编辑之前将 WebP 转换为 PNG。虽然主要工具（Photoshop 23.2+、GIMP 2.10+）支持 WebP，但许多插件、过滤器和旧版本不支持。PNG 确保跨所有设计工具、插件和工作流程的通用兼容性。对于团队成员使用不同软件版本的协作设计项目至关重要。"
+      },
+      {
+        "icon": "🖨️",
+        "title": "打印和专业用途",
+        "description": "为打印和专业应用准备图像。",
+        "content": "将 WebP 转换为 PNG 用于打印工作流程。大多数打印软件和专业应用程序期望 PNG、TIFF 或 JPEG。PNG 的无损压缩可确保在打印准备期间不会有额外的质量损失。对于宣传册、名片、海报和专业印刷至关重要。如果原始 WebP 是有损的，请从可用的最高质量开始。"
+      },
+      {
+        "icon": "📱",
+        "title": "应用和软件分发",
+        "description": "确保图像在所有环境中都能正常工作。",
+        "content": "将 WebP 转换为 PNG 用于软件分发、应用商店和文档。许多平台和工具期望图标、屏幕截图和资产使用 PNG。PNG 确保跨 Windows、macOS、Linux、iOS 和 Android 的兼容性，无需 WebP 库。对于最大覆盖范围和零兼容性问题至关重要。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "何时保留 WebP",
+        "description": "WebP 是更好选择的场景。",
+        "content": "如果以下情况，请保留 WebP：1）仅针对现代浏览器（95% 以上支持），2）Web 性能至关重要（比 PNG 小 25-35%），3）用户使用移动/蜂窝网络，4）使用渐进式增强（WebP → PNG 后备）。WebP 在现代 Web 应用中表现出色。对电子邮件、旧系统、打印和通用兼容性需求使用 PNG。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 WebP 转 PNG 转换的常见问题",
+    "items": [
+      {
+        "question": "如果 WebP 更好，为什么要将 WebP 转换为 PNG？",
+        "answer": "将 WebP 转换为 PNG 以实现通用兼容性。虽然 WebP 拥有 95% 以上的浏览器支持，但 PNG 在所有浏览器、电子邮件客户端、设计工具和旧系统上都有 100% 的支持。PNG 对于电子邮件、打印工作流程、旧浏览器（IE11、Safari <14）和具有旧系统的企业环境至关重要。当兼容性比文件大小更重要时，请选择 PNG。"
+      },
+      {
+        "question": "将 WebP 转换为 PNG 会影响图像质量吗？",
+        "answer": "质量取决于原始 WebP：1）无损 WebP → PNG：完美质量保留，无数据丢失。2）有损 WebP → PNG：保留当前质量，但无法恢复原始 WebP 压缩中丢失的数据。转换为 PNG 可防止进一步的质量损失并确保兼容性。由于 PNG 的压缩效率较低，文件大小将增加 2-4 倍。"
+      },
+      {
+        "question": "与 WebP 相比，PNG 文件会大多少？",
+        "answer": "PNG 文件通常比 WebP 大 2-4 倍。例如，500KB 的 WebP 可能成为 1-2MB 的 PNG。无损 WebP 转换为大小相似的 PNG，而有损 WebP 会产生更大的 PNG。这种大小增加是通用兼容性的权衡。PNG 较大的大小对于电子邮件、打印和兼容性至关重要的场景是可以接受的。"
+      },
+      {
+        "question": "哪些浏览器和软件支持 PNG 格式？",
+        "answer": "PNG 拥有 100% 的通用支持。自 IE6（2001）以来所有浏览器、所有电子邮件客户端、所有设计软件（Photoshop、GIMP、Figma、Sketch）、所有操作系统和所有图像查看器都支持。PNG 是 Web、打印和软件最兼容的图像格式。当您需要在所有平台和设备上保证兼容性时，这是安全的选择。"
+      },
+      {
+        "question": "我可以在不损失质量的情况下将有损 WebP 转换为 PNG 吗？",
+        "answer": "将有损 WebP 转换为 PNG 会保留当前质量，但无法恢复原始 WebP 压缩期间丢失的数据。可以将其视为「冻结」当前状态 - 您不会损失更多质量，但无法恢复已经丢失的内容。为获得最佳结果，请始终保留原始未压缩图像。如果您只有有损 WebP，转换为 PNG 可防止进一步降级。"
+      },
+      {
+        "question": "WebP 转 PNG 转换是否免费且安全？",
+        "answer": "是的，我们的 WebP 转 PNG 转换器完全免费，无需注册、无水印、无付款。所有转换都使用 WebAssembly 在您的浏览器中本地进行 - 图像不会离开您的设备。这可确保 100% 的隐私和安全，没有服务器上传、数据收集或第三方访问。WebP 解码和 PNG 编码完全在客户端执行。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像转换和压缩工具",
+    "items": [
+      {
+        "title": "PNG 转 WebP",
+        "description": "将 PNG 图片转换为现代 WebP 格式",
+        "url": "/converter/convert-png-to-webp"
+      },
+      {
+        "title": "PNG 压缩",
+        "description": "进一步优化 PNG 文件",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "WebP 压缩",
+        "description": "进一步优化 WebP 文件",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将 WebP 文件拖放到此处或点击选择",
+      "subtitle": "支持 WebP 格式，最多 {maxFiles} 个文件，每个最大 10MB",
+      "selectFiles": "选择 WebP 文件"
+    },
+    "errors": {
+      "maxFiles": "最多允许 {maxFiles} 个文件",
+      "fileTooLarge": "文件 {fileName} 太大，请选择小于 10MB 的文件",
+      "unsupportedFormat": "不支持的文件格式：{fileName}。仅支持 WebP 文件。",
+      "uploadFailed": "文件上传失败",
+      "conversionFailed": "转换失败。请重试。"
+    },
+    "files": {
+      "title": "已选择的 WebP 文件",
+      "count": "已选择 {count} 个文件",
+      "reset": "全部重置",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "转换为 PNG",
+      "simpleStart": "快速 WebP 转 PNG 转换",
+      "advancedStart": "WebP 转 PNG 转换（高级）",
+      "processing": "正在转换为 PNG... {progress}%"
+    },
+    "progress": {
+      "label": "转换进度",
+      "status": "正在将 WebP 转换为 PNG... {progress}% 完成"
+    },
+    "settings": {
+      "title": "PNG 转换设置",
+      "simple": "简单",
+      "advanced": "高级",
+      "simpleTitle": "快速设置",
+      "advancedTitle": "PNG 高级设置",
+      "compressionLevel": "压缩级别",
+      "compressionFastest": "最快（级别 1）",
+      "compressionBalanced": "平衡（级别 6）",
+      "compressionBest": "最高压缩（级别 9）",
+      "colorDepth": "色深",
+      "colorDepth24": "24 位 RGB",
+      "colorDepth32": "32 位 RGBA（带 Alpha）",
+      "interlace": "隔行扫描 PNG",
+      "metadata": "保留元数据",
+      "optimize": "为 Web 优化",
+      "presetFast": "快速转换",
+      "presetFastDesc": "快速转换，文件较大",
+      "presetBalanced": "平衡",
+      "presetBalancedDesc": "良好压缩，合理速度",
+      "presetOptimal": "最大压缩",
+      "presetOptimalDesc": "最小 PNG 文件，转换较慢"
+    },
+    "downloadAll": "下载所有 PNG 文件",
+    "results": {
+      "title": "PNG 转换结果",
+      "count": "{count} 个 WebP 文件已转换为 PNG",
+      "sizeInfo": "原始 WebP：{original} MB → PNG：{converted} MB（{change}% 增加）",
+      "download": "下载 PNG"
+    }
+  }
+}

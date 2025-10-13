@@ -1,0 +1,260 @@
+{
+  "seo": {
+    "title": "BMP 压缩 - 在线压缩 BMP 位图图片",
+    "description": "使用高级优化在线压缩 BMP 图片。在保留质量和支持各种色深的同时减少文件大小。",
+    "keywords": [
+      "BMP 压缩器",
+      "位图压缩",
+      "BMP 优化",
+      "图像压缩",
+      "在线工具"
+    ]
+  },
+  "hero": {
+    "title": "BMP 压缩器",
+    "subtitle": "使用高级优化压缩 BMP 位图图片",
+    "description": "使用智能优化在线压缩 BMP 图片，在保留图像质量和支持各种色深的同时减少文件大小。",
+    "badge": "压缩器"
+  },
+  "features": {
+    "title": "BMP 格式功能",
+    "description": "为什么 BMP 对 Windows 和旧系统至关重要",
+    "items": [
+      {
+        "icon": "💻",
+        "title": "Windows 原生格式",
+        "description": "原生 Windows 位图格式 - 直接 GDI/GDI+/DirectX 集成"
+      },
+      {
+        "icon": "💾",
+        "title": "未压缩或 RLE",
+        "description": "简单的未压缩存储或 4/8 位图像的无损 RLE 压缩"
+      },
+      {
+        "icon": "🔧",
+        "title": "旧系统支持",
+        "description": "对需要 BMP 兼容性的旧软件和硬件至关重要"
+      },
+      {
+        "icon": "🎨",
+        "title": "灵活的色深",
+        "description": "支持 1 位到 32 位色深（2 到 1670 万色 + Alpha）"
+      },
+      {
+        "icon": "📄",
+        "title": "简单的文件结构",
+        "description": "简单的格式 - 易于以编程方式读取/写入"
+      },
+      {
+        "icon": "🔄",
+        "title": "格式转换源",
+        "description": "用于转换为现代格式（PNG/WebP）的理想源，可减少 50-90% 的大小"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "BMP 压缩原理",
+    "description": "了解 BMP 优化背后的技术原理可帮助您对图像做出明智的决策。",
+    "items": [
+      {
+        "title": "RLE 压缩",
+        "description": "BMP 支持 4 位和 8 位图像的游程长度编码（RLE），有效压缩相同像素序列。",
+        "icon": "🔄",
+        "benefits": [
+          "无损压缩",
+          "快速编码/解码",
+          "原生 BMP 支持",
+          "非常适合简单图形"
+        ]
+      },
+      {
+        "title": "色深优化",
+        "description": "BMP 支持从 1 位到 32 位的各种色深。优化色深可以显著减少具有有限颜色的图像的文件大小。",
+        "icon": "🎨",
+        "benefits": [
+          "灵活的颜色选项",
+          "自适应位深度",
+          "调色板优化",
+          "高效存储"
+        ]
+      },
+      {
+        "title": "格式转换",
+        "description": "将 BMP 转换为 PNG 或 WebP 等现代格式可以在保持或改善质量的同时实现 50-90% 的大小减少。",
+        "icon": "🔄",
+        "benefits": [
+          "显著的大小减少",
+          "更好的压缩",
+          "现代格式支持",
+          "保留或改善的质量"
+        ]
+      },
+      {
+        "title": "元数据管理",
+        "description": "BMP 文件可以包含元数据和头。删除不必要的数据可以在不影响视觉质量的情况下减少文件大小。",
+        "icon": "✨",
+        "benefits": [
+          "减少开销",
+          "更清洁的文件",
+          "更快的加载",
+          "隐私保护"
+        ]
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将文件拖放到此处或点击选择",
+      "subtitle": "支持 {format} 格式，最多 {maxFiles} 个文件，每个最大 10MB",
+      "selectFiles": "选择文件"
+    },
+    "files": {
+      "title": "已选择的文件",
+      "count": "{count} 个文件",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "压缩 {format}",
+      "processing": "正在压缩... {progress}%"
+    },
+    "progress": {
+      "label": "处理中..."
+    },
+    "results": {
+      "title": "压缩结果",
+      "sizeInfo": "原始：{original} MB → 已压缩：{compressed} MB（{ratio}% 减少）",
+      "download": "下载"
+    },
+    "settings": {
+      "simple": "简单",
+      "advanced": "高级",
+      "advancedTitle": "高级设置",
+      "quality": "质量",
+      "metadata": "保留元数据"
+    },
+    "actions": {
+      "downloadAll": "全部下载",
+      "reset": "重置"
+    },
+    "error": {
+      "title": "错误"
+    },
+    "status": {
+      "starting": "开始压缩...",
+      "processing": "压缩中... {progress}%",
+      "completed": "压缩完成！"
+    }
+  },
+  "useCases": {
+    "title": "何时使用 BMP 压缩",
+    "description": "BMP 压缩和转换非常适合特定的旧系统和兼容性场景。",
+    "items": [
+      {
+        "title": "旧系统兼容性",
+        "description": "对需要 BMP 格式兼容性的应用和系统至关重要。",
+        "content": "BMP 在所有 Windows 应用和旧系统中得到普遍支持，使其成为旧软件和硬件兼容性所必需的。",
+        "icon": "💾"
+      },
+      {
+        "title": "简单的图形和图标",
+        "description": "非常适合具有有限颜色的简单图形、图标和插图。",
+        "content": "带有 RLE 压缩的 BMP 可有效存储具有实色和清晰边缘的简单图形、图标和徽标。",
+        "icon": "🎨"
+      },
+      {
+        "title": "扫描文档",
+        "description": "非常适合需要精确像素表示的扫描文档。",
+        "content": "BMP 的未压缩或 RLE 压缩格式可确保完美保留扫描文档数据，而不会出现压缩伪影。",
+        "icon": "📄"
+      },
+      {
+        "title": "专业图形编辑",
+        "description": "在专业图形应用中用于中间文件存储。",
+        "content": "BMP 为图形编辑工作流程中的临时存储提供了一种简单可靠的格式，然后再进行最终导出。",
+        "icon": "🖼️"
+      },
+      {
+        "title": "格式转换源",
+        "description": "将 BMP 转换为现代格式以实现显著的大小减少。",
+        "content": "使用 BMP 作为转换为 PNG、WebP 或 AVIF 的源格式，以在保持或改善质量的同时实现 50-90% 的文件大小减少。",
+        "icon": "🔄"
+      },
+      {
+        "title": "Windows 系统集成",
+        "description": "Windows 系统级图形和图标的原生格式。",
+        "content": "BMP 是原生 Windows 位图格式，用于系统图标、光标、壁纸和启动屏幕。无需为 Windows API 集成进行转换，确保与 GDI、GDI+ 和 DirectX 应用程序的完美兼容性。对于 Windows 驱动程序开发和系统级图形编程至关重要。",
+        "icon": "💻"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "BMP 压缩最佳实践",
+    "description": "遵循这些专家提示，在处理 BMP 文件时获得最佳结果。",
+    "tips": [
+      {
+        "icon": "💾",
+        "title": "了解 BMP 的旧系统角色",
+        "content": "BMP 是 Windows 时代的未压缩或最小压缩（RLE）格式。它产生大文件（比 PNG 大 2-10 倍，比 JPEG 大 5-20 倍），但提供与旧系统的通用兼容性。仅当旧软件、硬件或系统要求特别需要时才使用 BMP。"
+      },
+      {
+        "icon": "🔄",
+        "title": "转换为现代格式",
+        "content": "对于 99% 的用例，将 BMP 转换为现代格式：PNG 用于无损压缩（小 50-70%，非常适合屏幕截图和图形），JPEG 用于照片（小 80-95%），或 WebP 用于最佳整体压缩（小 70-90%）。这在保持或改善质量的同时大大减少了存储和带宽需求。"
+      },
+      {
+        "icon": "🎨",
+        "title": "如果保留 BMP 则优化色深",
+        "content": "如果 BMP 格式是强制性的，请根据内容减少色深：对简单图形使用 8 位（256 色），对非常简单的图像使用 4 位（16 色），或对黑白使用 1 位。对具有大实色区域的 4 位和 8 位图像启用 RLE 压缩 - 对于合适的图像可以实现 30-60% 的大小减少。"
+      },
+      {
+        "icon": "📦",
+        "title": "战略性批量转换",
+        "content": "从基于 BMP 的旧系统迁移时，批量转换为适当的格式：PNG 用于 UI 图形和屏幕截图，JPEG 质量 85-90 用于照片，WebP 用于现代 Web 应用。在替换原件之前，使用目标应用彻底测试转换后的文件。仅在旧兼容性绝对必要时才保留 BMP 备份。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 BMP 压缩的常见问题",
+    "items": [
+      {
+        "question": "BMP 格式用于什么？",
+        "answer": "BMP（位图）主要用于旧系统兼容性、简单图形存储和需要未压缩位图数据的应用。它在所有 Windows 应用中得到广泛支持，但与现代格式相比会产生大文件。"
+      },
+      {
+        "question": "BMP 文件可以压缩多少？",
+        "answer": "原生 BMP 压缩（RLE）通常对简单图形实现 20-50% 的大小减少。但是，将 BMP 转换为 PNG 等现代格式可以实现 50-70% 的减少，而转换为 WebP 可以实现 70-90% 的减少。"
+      },
+      {
+        "question": "我应该将 BMP 用于照片或 Web 图像吗？",
+        "answer": "不应该。BMP 产生非常大的文件大小，不适合 Web 使用或照片存储。对照片使用 JPEG，对具有透明度的图形使用 PNG，或对出色质量的最佳压缩使用 WebP。"
+      },
+      {
+        "question": "BMP 和 PNG 有什么区别？",
+        "answer": "PNG 提供了远远更好的压缩（通常小 50-70%），同时像 BMP 一样完全无损。PNG 还支持透明度，具有更好的色彩管理，并针对 Web 使用进行了优化。BMP 的主要优势是通用的旧系统兼容性。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像压缩和转换工具",
+    "items": [
+      {
+        "title": "PNG 压缩器",
+        "description": "使用比 BMP 更好的压缩来压缩 PNG 图片",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPEG 压缩器",
+        "description": "高效压缩 JPEG 照片",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP 压缩器",
+        "description": "具有卓越压缩的现代格式",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  }
+}

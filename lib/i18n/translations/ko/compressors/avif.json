@@ -1,0 +1,289 @@
+{
+  "seo": {
+    "title": "AVIF 압축 - 온라인 무료 AVIF 이미지 압축",
+    "description": "무료 AVIF 압축기로 AVIF 이미지를 온라인으로 압축하세요. 품질을 유지하면서 AVIF 파일 크기를 줄이세요. 빠르고 안전하며 사용하기 쉽습니다.",
+    "keywords": "AVIF 압축기, AVIF 압축, AVIF 최적화, AVIF 크기 줄이기, 온라인 AVIF 압축기, 무료 AVIF 압축기"
+  },
+  "hero": {
+    "title": "AVIF 이미지 압축기",
+    "description": "고급 압축 기술로 AVIF 이미지를 온라인으로 압축하세요. 뛰어난 품질과 최신 기능을 유지하면서 파일 크기를 줄이세요.",
+    "subtitle": "고급 압축 기술로 AVIF 이미지를 온라인으로 압축하세요. 뛰어난 품질과 최신 기능을 유지하면서 파일 크기를 줄이세요.",
+    "badge": "압축기"
+  },
+  "formatInfo": {
+    "description": "AVIF (AV1 Image File Format)는 우수한 압축 효율성과 HDR 지원과 같은 고급 기능을 제공하는 AV1 비디오 코덱 기반 최신 이미지 형식입니다."
+  },
+  "features": {
+    "title": "AVIF 형식 기능",
+    "description": "AVIF가 차세대 이미지 형식인 이유",
+    "items": [
+      {
+        "icon": "🏆",
+        "title": "최고 수준의 압축",
+        "description": "동일한 품질에서 WebP보다 30-50% 작고 JPEG보다 50-70% 작음"
+      },
+      {
+        "icon": "🎬",
+        "title": "AV1 코덱 기술",
+        "description": "로열티 프리 AV1 비디오 코덱 기반 - 최첨단 압축 알고리즘"
+      },
+      {
+        "icon": "🌈",
+        "title": "HDR 및 와이드 컬러 색역",
+        "description": "전문 사진 촬영을 위한 HDR 지원이 있는 10비트 및 12비트 색 심도"
+      },
+      {
+        "icon": "🎯",
+        "title": "지각 최적화",
+        "description": "고급 지각 튜닝을 통해 낮은 설정에서도 뛰어난 품질 유지"
+      },
+      {
+        "icon": "✨",
+        "title": "고급 알파 압축",
+        "description": "뛰어난 투명도 압축 - PNG 또는 WebP보다 우수"
+      },
+      {
+        "icon": "🎞️",
+        "title": "필름 그레인 합성",
+        "description": "파일 크기를 줄이면서 자연스러운 필름 그레인 보존"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "AVIF 압축 작동 방식",
+    "description": "AVIF 압축의 기술적 원리를 이해하면 이미지에 대해 정보에 입각한 결정을 내릴 수 있습니다.",
+    "items": [
+      {
+        "title": "AV1 코덱 기술",
+        "description": "AVIF는 이미지에 적용된 로열티 프리 AV1 비디오 코덱 기술을 사용하여 뛰어난 압축 효율성을 제공합니다.",
+        "icon": "🎬",
+        "benefits": [
+          "최고의 압축 비율",
+          "로열티 프리 기술",
+          "개방형 표준",
+          "미래 지향적 형식"
+        ]
+      },
+      {
+        "title": "고급 색상 과학",
+        "description": "AVIF는 전문가 수준의 이미지 품질을 위해 와이드 컬러 색역, HDR 및 높은 비트 심도를 지원합니다.",
+        "icon": "🎨",
+        "benefits": [
+          "10비트 및 12비트 색상",
+          "HDR 지원",
+          "와이드 컬러 색역",
+          "전문가 품질"
+        ]
+      },
+      {
+        "title": "지능형 최적화",
+        "description": "AVIF는 지각 최적화를 사용하여 최대 압축을 달성하면서 시각적 품질을 유지합니다.",
+        "icon": "🧠",
+        "benefits": [
+          "지각 품질 최적화",
+          "콘텐츠 인식 압축",
+          "적응형 인코딩 전략",
+          "인간 시각 최적화"
+        ]
+      },
+      {
+        "title": "효율적인 알파 압축",
+        "description": "AVIF는 투명도 데이터를 효율적으로 압축하기 위해 고급 알고리즘을 사용하여 알파 채널이 있는 이미지의 경우 PNG 또는 WebP보다 나은 결과를 달성합니다.",
+        "icon": "✨",
+        "benefits": [
+          "뛰어난 알파 압축",
+          "투명도가 있는 더 작은 파일",
+          "전체 알파 채널 지원",
+          "웹 그래픽에 이상적"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "AVIF 압축을 사용하는 시기",
+    "description": "AVIF 압축은 뛰어난 품질로 최고의 압축이 필요한 최신 애플리케이션에 이상적입니다.",
+    "items": [
+      {
+        "title": "차세대 웹 앱",
+        "description": "성능과 품질을 우선시하는 최신 웹 애플리케이션에 완벽합니다.",
+        "content": "AVIF는 대역폭에 민감한 애플리케이션에 타의 추종을 불허하는 압축 효율성을 제공하는 웹 이미지의 미래입니다.",
+        "icon": "🚀"
+      },
+      {
+        "title": "고품질 사진",
+        "description": "효율적인 스토리지로 최대 품질이 필요한 전문 사진에 이상적입니다.",
+        "content": "AVIF의 HDR 지원 및 높은 비트 심도는 전문 사진 워크플로에 완벽합니다.",
+        "icon": "📸"
+      },
+      {
+        "title": "스트리밍 서비스",
+        "description": "비디오 스트리밍 플랫폼 및 미디어 서비스에 탁월합니다.",
+        "content": "AVIF의 효율적인 압축은 뛰어난 시각적 품질을 유지하면서 대역폭 비용을 줄입니다.",
+        "icon": "🎥"
+      },
+      {
+        "title": "모바일 우선 디자인",
+        "description": "제한된 대역폭의 모바일 우선 애플리케이션에 필수적입니다.",
+        "content": "AVIF는 데이터 사용량을 크게 줄여 모바일 사용자 경험을 개선하고 비용을 절감합니다.",
+        "icon": "📱"
+      },
+      {
+        "title": "프리미엄 콘텐츠",
+        "description": "최고 품질이 필요한 프리미엄 콘텐츠 플랫폼에 완벽합니다.",
+        "content": "AVIF는 효율적인 대역폭 활용으로 프리미엄 품질 콘텐츠의 전달을 가능하게 합니다.",
+        "icon": "⭐"
+      },
+      {
+        "title": "전자 상거래 제품 이미지",
+        "description": "최소 파일 크기로 고품질 제품 사진이 필요한 온라인 상점에 최적입니다.",
+        "content": "AVIF를 사용하면 전자 상거래 사이트는 빠른 로딩 시간으로 상세한 제품 이미지를 표시할 수 있어 전환율과 사용자 경험을 개선하면서 JPEG와 비교하여 CDN 비용을 40-60% 줄입니다.",
+        "icon": "🛒"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "AVIF 압축 모범 사례",
+    "description": "AVIF 압축에서 최상의 결과를 얻으려면 다음 전문가 팁을 따르세요.",
+    "tips": [
+      {
+        "icon": "🚀",
+        "title": "차세대 압축 활용",
+        "content": "AVIF는 WebP보다 30-50%, JPEG보다 50-70% 더 나은 압축을 제공합니다. 웹 이미지에는 품질 75-85를 사용하세요. AVIF는 고급 지각 최적화로 인해 낮은 설정에서도 뛰어난 품질을 유지합니다. 고급 사진 촬영 또는 HDR 콘텐츠의 경우 AVIF의 10비트 및 12비트 색 심도 기능을 완전히 활용하려면 품질 85-95를 사용하세요."
+      },
+      {
+        "icon": "🎨",
+        "title": "최신 브라우저용 최적화",
+        "content": "AVIF는 90% 이상의 사용자 (Chrome, Edge, Firefox, Safari 16+)가 지원합니다. 최대 호환성을 위해 AVIF 기본, WebP 폴백 및 JPEG/PNG가 있는 <picture> 요소를 사용하세요. AVIF 인코딩은 JPEG/WebP보다 느리므로 프로덕션 웹사이트의 경우 즉시 생성하는 대신 빌드 시간 동안 이미지를 미리 생성하세요."
+      },
+      {
+        "icon": "⚡",
+        "title": "품질 대 크기 비율 최대화",
+        "content": "AVIF는 작은 파일 크기에서 고품질 이미지에 뛰어납니다. 품질이 중요한 히어로 이미지, 제품 사진 및 고해상도 디스플레이에 사용하세요. 사진 콘텐츠에 적응형 양자화 및 필름 그레인 합성을 활성화하세요. 단순한 그래픽이나 애니메이션의 경우 더 큰 파일 크기에도 불구하고 WebP 또는 PNG가 더 효율적일 수 있습니다."
+      },
+      {
+        "icon": "📦",
+        "title": "전략적 구현",
+        "content": "영향력이 큰 이미지 (히어로 섹션, 제품 사진, 추천 콘텐츠)부터 시작하세요. 인코딩 시간 및 서버 부하 모니터링 - AVIF 인코딩은 JPEG보다 5-10배 느릴 수 있습니다. 개발에는 더 빠른 인코딩 속도 (6-8)를 사용하고 프로덕션에는 더 느린 속도 (2-4)를 사용하여 품질과 처리 시간의 균형을 맞추세요. AVIF 전달을 위한 CDN 지원을 고려하세요."
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "description": "AVIF 압축 및 당사의 AVIF 압축기 도구에 대한 일반적인 질문.",
+    "items": [
+      {
+        "question": "AVIF 형식이란 무엇입니까?",
+        "answer": "AVIF는 우수한 압축 효율성과 HDR 지원 및 와이드 컬러 색역과 같은 고급 기능을 제공하는 AV1 비디오 코덱 기반 차세대 이미지 형식입니다."
+      },
+      {
+        "question": "AVIF는 JPEG 및 WebP와 어떻게 비교됩니까?",
+        "answer": "AVIF는 일반적으로 뛰어난 이미지 품질을 유지하면서 JPEG보다 50%, WebP보다 20-30% 더 나은 압축을 제공합니다."
+      },
+      {
+        "question": "모든 브라우저가 AVIF를 지원합니까?",
+        "answer": "Chrome, Firefox 및 Safari와 같은 최신 브라우저는 AVIF를 지원하지만 이전 브라우저는 지원하지 않을 수 있습니다. 폴백 형식을 제공하는 것이 좋습니다."
+      },
+      {
+        "question": "AVIF는 투명도를 지원합니까?",
+        "answer": "네, AVIF는 PNG 및 WebP와 유사한 알파 채널로 투명도를 완전히 지원합니다."
+      },
+      {
+        "question": "AVIF의 HDR 지원이란 무엇입니까?",
+        "answer": "AVIF는 10비트 및 12비트 색 심도로 HDR (High Dynamic Range) 이미징을 지원하여 호환 디스플레이에서 놀라운 이미지 품질을 가능하게 합니다."
+      },
+      {
+        "question": "AVIF를 언제 사용해야 합니까?",
+        "answer": "AVIF는 최대 압축 효율성과 품질이 우선시되는 최신 웹 애플리케이션, 모바일 앱 및 시나리오에 가장 적합합니다."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "더 많은 도구 탐색",
+    "items": [
+      {
+        "title": "WebP 압축기",
+        "description": "WebP 이미지 압축",
+        "path": "/compressor/compress-webp"
+      },
+      {
+        "title": "JPEG 변환기",
+        "description": "JPEG 형식으로 변환",
+        "path": "/converter/convert-avif-to-jpeg"
+      },
+      {
+        "title": "이미지 변환기",
+        "description": "다양한 이미지 형식 간 변환",
+        "path": "/converter"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+      "subtitle": "{format} 형식 지원, 최대 50MB",
+      "selectFiles": "파일 선택"
+    },
+    "files": {
+      "title": "선택된 파일",
+      "count": "{count}개 파일",
+      "remove": "제거",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "{format} 압축",
+      "processing": "압축 중... {progress}%"
+    },
+    "progress": {
+      "label": "처리 중...",
+      "compressing": "{format} 이미지 압축 중..."
+    },
+    "results": {
+      "title": "압축 완료! 🎉",
+      "subtitle": "이미지가 성공적으로 최적화되었습니다",
+      "original": "원본",
+      "compressed": "압축됨",
+      "saved": "절감됨",
+      "time": "시간",
+      "format": "형식",
+      "compressionRatio": "압축 비율",
+      "sizeReduction": "크기 감소",
+      "sizeIncrease": "크기 증가",
+      "greatJob": "잘했습니다!",
+      "considerAdjusting": "설정 조정 고려",
+      "savedSpace": "{amount} MB 절감됨",
+      "successMessage": "훌륭한 압축!",
+      "successDescription": "이미지가 이제 뛰어난 품질을 유지하면서 {ratio}% 더 작습니다. 웹 사용에 최적화되었습니다!",
+      "download": "다운로드",
+      "compressMore": "더 압축",
+      "reset": "재설정",
+      "sizeInfo": "원본: {original} MB → 압축됨: {compressed} MB ({ratio}% 감소)"
+    },
+    "settings": {
+      "simple": "간단",
+      "advanced": "고급",
+      "advancedTitle": "고급 설정",
+      "quality": "품질",
+      "qualityLow": "낮음",
+      "qualityMedium": "중간",
+      "qualityHigh": "높음",
+      "metadata": "메타데이터 유지",
+      "metadataDesc": "EXIF, GPS, 카메라 정보"
+    },
+    "actions": {
+      "downloadAll": "모두 다운로드",
+      "reset": "재설정"
+    },
+    "error": {
+      "title": "오류",
+      "tip": "💡 팁: 파일이 유효한 이미지 (PNG, JPEG, WebP, AVIF, GIF)이고 50MB 미만인지 확인하세요",
+      "unknownError": "알 수 없는 오류",
+      "processingFailed": "{fileName} 처리 실패",
+      "compressionFailed": "압축 실패"
+    },
+    "status": {
+      "starting": "압축 시작 중...",
+      "processing": "압축 중... {progress}%",
+      "completed": "압축 완료!"
+    }
+  }
+}

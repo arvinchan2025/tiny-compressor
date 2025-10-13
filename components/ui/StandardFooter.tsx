@@ -1,231 +1,211 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
-import { SupportedLanguage } from '@/types/i18n';
-import { getHomePath, getCompressorPath, getConverterPath, getPrivacyPath, getTermsPath } from '@/lib/path-utils';
+import { Locale } from '@/lib/i18n';
+import { useTranslation } from '@/hooks/useTranslation';
 import StandardContainer from './StandardContainer';
-import StandardGrid from './StandardGrid';
-import StandardIcon from './StandardIcon';
-import Image from 'next/image';
 
 interface StandardFooterProps {
-  translations: any;
-  currentLocale?: SupportedLanguage;
+  locale: Locale;
 }
 
-export default function StandardFooter({ 
-  translations, 
-  currentLocale = 'en' 
-}: StandardFooterProps) {
-  const t = (key: string) => {
-    if (!translations) return key;
-    const keys = key.split('.');
-    let value: any = translations;
-    for (const k of keys) {
-      value = value?.[k];
-    }
-    return value || key;
-  };
-
+export default function StandardFooter({ locale }: StandardFooterProps) {
   const currentYear = new Date().getFullYear();
+  const currentLocale = locale;
+  const { t } = useTranslation('footer', currentLocale);
 
   const quickLinks = [
     { 
-      name: t('footer.links.home') || 'Home', 
-      path: getHomePath(currentLocale),
+      name: t('links.home'), 
+      path: currentLocale === 'en' ? '/' : `/${currentLocale}`,
       icon: 'home'
     },
     { 
-      name: t('footer.links.compressor') || 'Compressor', 
-      path: getCompressorPath(currentLocale),
+      name: t('links.compressor'), 
+      path: currentLocale === 'en' ? '/compressor' : `/${currentLocale}/compressor`,
       icon: 'compress'
     },
     { 
-      name: t('footer.links.converter') || 'Converter', 
-      path: getConverterPath(currentLocale),
+      name: t('links.converter'), 
+      path: currentLocale === 'en' ? '/converter' : `/${currentLocale}/converter`,
       icon: 'convert'
+    }
+  ];
+
+  const formatLinks = [
+    { 
+      name: t('formats.jpeg'), 
+      path: currentLocale === 'en' ? '/compressor/compress-jpeg' : `/${currentLocale}/compressor/compress-jpeg`,
+      icon: 'jpeg'
+    },
+    { 
+      name: t('formats.webp'), 
+      path: currentLocale === 'en' ? '/compressor/compress-webp' : `/${currentLocale}/compressor/compress-webp`,
+      icon: 'webp'
+    },
+    { 
+      name: t('formats.avif'), 
+      path: currentLocale === 'en' ? '/compressor/compress-avif' : `/${currentLocale}/compressor/compress-avif`,
+      icon: 'avif'
+    },
+    { 
+      name: t('formats.png'), 
+      path: currentLocale === 'en' ? '/compressor/compress-png' : `/${currentLocale}/compressor/compress-png`,
+      icon: 'png'
     }
   ];
 
   const legalLinks = [
     { 
-      name: t('footer.links.privacy') || 'Privacy Policy', 
-      path: getPrivacyPath(currentLocale),
-      icon: 'info'
+      name: t('legal.privacy'), 
+      path: currentLocale === 'en' ? '/privacy' : `/${currentLocale}/privacy`,
+      icon: 'privacy'
     },
     { 
-      name: t('footer.links.terms') || 'Terms of Service', 
-      path: getTermsPath(currentLocale),
-      icon: 'info'
-    }
-  ];
-
-  const features = [
-    {
-      icon: 'success',
-      title: t('footer.features.free') || '100% Free',
-      description: t('footer.features.freeDesc') || 'No hidden costs or subscriptions'
-    },
-    {
-      icon: 'success',
-      title: t('footer.features.secure') || 'Secure & Private',
-      description: t('footer.features.secureDesc') || 'Files processed locally in your browser'
-    },
-    {
-      icon: 'success',
-      title: t('footer.features.fast') || 'Lightning Fast',
-      description: t('footer.features.fastDesc') || 'Optimized for speed and performance'
+      name: t('legal.terms'), 
+      path: currentLocale === 'en' ? '/terms' : `/${currentLocale}/terms`,
+      icon: 'terms'
     }
   ];
 
   return (
-    <footer className="bg-slate-900 text-white">
-      {/* Main Footer Content */}
-      <StandardContainer variant="page" size="lg">
-        <div className="py-16">
-          <StandardGrid cols={4} gap="lg">
-            {/* Brand Section */}
-            <div className="lg:col-span-2">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="mb-8"
-              >
-                <div className="flex items-center space-x-3 mb-6">
-                  <Image
-                    src="/logo.svg"
-                    alt="TinyCompressor Logo"
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
-                  />
-                  <div>
-                    <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                      TinyCompressor
-                    </h3>
-                    <p className="text-sm text-gray-400">Image Tools</p>
-                  </div>
-                </div>
-                <p className="text-gray-300 mb-8 max-w-md leading-relaxed">
-                  {t('footer.description') || 'Professional-grade image compression and conversion tools that are fast, secure, and completely free.'}
-                </p>
-                
-                {/* Features */}
-                <div className="space-y-4">
-                  {features.map((feature, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="flex items-center space-x-3"
-                    >
-                      <StandardIcon 
-                        name={feature.icon as any} 
-                        size="sm" 
-                        className="text-green-400" 
-                      />
-                      <div>
-                        <div className="text-sm font-medium text-white">
-                          {feature.title}
-                        </div>
-                        <div className="text-xs text-gray-400">
-                          {feature.description}
-                        </div>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Quick Links */}
+    <footer className="bg-gray-900 text-white">
+      <StandardContainer variant="content" size="lg" center>
+        <div className="py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* 品牌信息 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-1"
+            >
+              <h3 className="text-xl font-bold mb-4">{t('brand.name')}</h3>
+              <p className="text-gray-400 mb-4">{t('brand.description')}</p>
+              <div className="flex space-x-4">
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <span className="sr-only">{t('social.twitter')}</span>
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                  </svg>
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <span className="sr-only">{t('social.github')}</span>
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
+                  </svg>
+                </motion.a>
+              </div>
+            </motion.div>
+
+            {/* 快速链接 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold mb-6 text-white">
-                {t('footer.quickLinks') || 'Quick Links'}
-              </h4>
-              <ul className="space-y-3">
+              <h3 className="text-lg font-semibold mb-4">{t('sections.quickLinks')}</h3>
+              <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
-                  <li key={index}>
+                  <motion.li
+                    key={link.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                  >
                     <a
                       href={link.path}
-                      className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center group"
+                      className="text-gray-400 hover:text-white transition-colors"
                     >
-                      <StandardIcon 
-                        name={link.icon as any} 
-                        size="sm" 
-                        className="mr-3 group-hover:text-white transition-colors duration-200" 
-                      />
                       {link.name}
                     </a>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </motion.div>
 
-            {/* Legal & Support */}
+            {/* 格式链接 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold mb-6 text-white">
-                {t('footer.legal') || 'Legal & Support'}
-              </h4>
-              <ul className="space-y-3">
-                {legalLinks.map((link, index) => (
-                  <li key={index}>
+              <h3 className="text-lg font-semibold mb-4">{t('sections.formats')}</h3>
+              <ul className="space-y-2">
+                {formatLinks.map((link, index) => (
+                  <motion.li
+                    key={link.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+                  >
                     <a
                       href={link.path}
-                      className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center group"
+                      className="text-gray-400 hover:text-white transition-colors"
                     >
-                      <StandardIcon 
-                        name={link.icon as any} 
-                        size="sm" 
-                        className="mr-3 group-hover:text-white transition-colors duration-200" 
-                      />
                       {link.name}
                     </a>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </motion.div>
-          </StandardGrid>
+
+            {/* 法律链接 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <h3 className="text-lg font-semibold mb-4">{t('sections.legal')}</h3>
+              <ul className="space-y-2">
+                {legalLinks.map((link, index) => (
+                  <motion.li
+                    key={link.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+                  >
+                    <a
+                      href={link.path}
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+
+          {/* 底部版权信息 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-8 pt-8 border-t border-gray-800"
+          >
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 text-sm">
+                {t('copyright', { year: currentYear })}
+              </p>
+              <p className="text-gray-400 text-sm mt-2 md:mt-0">
+                {t('madeWith')} <span className="text-red-500">♥</span> {t('by')} {t('author')}
+              </p>
+            </div>
+          </motion.div>
         </div>
       </StandardContainer>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-slate-800 bg-slate-950">
-        <StandardContainer variant="page" size="lg">
-          <div className="py-6">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="flex items-center space-x-4 text-sm text-gray-400">
-                <span>© {currentYear} TinyCompressor. All rights reserved.</span>
-                <span className="hidden md:inline">•</span>
-                <span className="flex items-center space-x-1">
-                  <span>Made with</span>
-                  <StandardIcon name="success" size="sm" className="text-red-400" />
-                  <span>for developers</span>
-                </span>
-              </div>
-              
-              <div className="flex items-center space-x-2 text-sm text-gray-400">
-                <StandardIcon name="success" size="sm" className="text-green-400" />
-                <span>Free & Open Source</span>
-              </div>
-            </div>
-          </div>
-        </StandardContainer>
-      </div>
     </footer>
   );
 }

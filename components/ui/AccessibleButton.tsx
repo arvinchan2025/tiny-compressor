@@ -7,19 +7,19 @@ import { hoverEffects, transitions } from '@/lib/micro-interactions';
 import { ComponentSizeScale } from '@/lib/design-system';
 
 interface AccessibleButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'success' | 'warning' | 'error';
-  size?: ComponentSizeScale;
-  loading?: boolean;
-  leftIcon?: React.ReactNode;
-  rightIcon?: React.ReactNode;
-  fullWidth?: boolean;
-  asChild?: boolean;
+  variant: 'primary' | 'secondary' | 'outline' | 'ghost' | 'success' | 'warning' | 'error';
+  size: ComponentSizeScale;
+  loading: boolean;
+  leftIcon: React.ReactNode;
+  rightIcon: React.ReactNode;
+  fullWidth: boolean;
+  asChild: boolean;
   children: React.ReactNode;
-  // 可访问性属性
-  ariaLabel?: string;
-  ariaPressed?: boolean;
-  ariaExpanded?: boolean;
-  ariaDescribedBy?: string;
+  // 可访问性属
+  ariaLabel: string;
+  ariaPressed: boolean;
+  ariaExpanded: boolean;
+  ariaDescribedBy: string;
 }
 
 const AccessibleButton = forwardRef<HTMLButtonElement, AccessibleButtonProps>(
@@ -73,12 +73,12 @@ const AccessibleButton = forwardRef<HTMLButtonElement, AccessibleButtonProps>(
       ${className}
     `.trim().replace(/\s+/g, ' ');
 
-    // ARIA属性
+    // ARIA属
     const buttonState: {
-      pressed?: boolean;
-      expanded?: boolean;
-      disabled?: boolean;
-      loading?: boolean;
+      pressed: boolean;
+      expanded: boolean;
+      disabled: boolean;
+      loading: boolean;
     } = {
       disabled: disabled || loading,
       loading

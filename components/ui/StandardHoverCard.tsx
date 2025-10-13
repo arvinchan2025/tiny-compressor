@@ -6,9 +6,9 @@ import StandardCard from './StandardCard';
 
 interface StandardHoverCardProps {
   children: React.ReactNode;
-  hoverEffect?: 'scale' | 'scaleMedium' | 'lift' | 'liftMedium' | 'rotate' | 'shadow';
-  className?: string;
-  onClick?: () => void;
+  hoverEffect: 'scale' | 'scaleMedium' | 'lift' | 'liftMedium' | 'rotate' | 'shadow';
+  className: string;
+  onClick: () => void;
 }
 
 export default function StandardHoverCard({

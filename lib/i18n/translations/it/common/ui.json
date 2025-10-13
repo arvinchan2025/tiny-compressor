@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "Salva",
+    "cancel": "Annulla",
+    "submit": "Invia",
+    "download": "Scarica",
+    "upload": "Carica",
+    "remove": "Rimuovi",
+    "clear": "Cancella",
+    "reset": "Resetta",
+    "apply": "Applica",
+    "close": "Chiudi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "retry": "Riprova",
+    "selectAll": "Seleziona Tutto",
+    "deselectAll": "Deseleziona Tutto",
+    "removeSelected": "Rimuovi Selezionati"
+  },
+  "labels": {
+    "quality": "Qualità",
+    "size": "Dimensione",
+    "format": "Formato",
+    "filename": "Nome File",
+    "dimensions": "Dimensioni",
+    "fileSize": "Dimensione File",
+    "compressionRatio": "Rapporto Compressione",
+    "processingTime": "Tempo Elaborazione"
+  },
+  "placeholders": {
+    "search": "Cerca...",
+    "enterFilename": "Inserisci nome file",
+    "selectFormat": "Seleziona formato",
+    "selectQuality": "Seleziona qualità"
+  },
+  "tooltips": {
+    "download": "Scarica file",
+    "remove": "Rimuovi file",
+    "preview": "Anteprima immagine",
+    "settings": "Apri impostazioni",
+    "help": "Mostra aiuto"
+  },
+  "modals": {
+    "confirm": {
+      "title": "Conferma Azione",
+      "message": "Sei sicuro di voler continuare?",
+      "yes": "Sì",
+      "no": "No"
+    },
+    "error": {
+      "title": "Errore",
+      "message": "Si è verificato un errore. Riprova."
+    },
+    "success": {
+      "title": "Successo",
+      "message": "Operazione completata con successo."
+    }
+  },
+  "fileUploader": {
+    "dragActive": "Rilascia file qui",
+    "dragInactive": "Trascina file qui",
+    "dragReject": "Alcuni file non possono essere caricati",
+    "clickToUpload": "o clicca per selezionare file",
+    "supportedFormats": "Formati supportati",
+    "maxSize": "Dimensione max",
+    "maxFiles": "File max",
+    "errors": {
+      "fileTooLarge": "File {fileName} è troppo grande. Dimensione massima è {maxSize}.",
+      "fileInvalidType": "File {fileName} ha tipo non valido. Formati supportati: {formats}.",
+      "tooManyFiles": "Troppi file. Massimo consentito: {maxFiles}.",
+      "fileRejected": "File {fileName} è stato rifiutato: {errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "{count} file{plural} caricato{plural} con successo!"
+    }
+  },
+  "tabs": {
+    "simple": "Semplice",
+    "advanced": "Avanzato"
+  },
+  "forms": {
+    "required": "Questo campo è obbligatorio",
+    "optional": "Opzionale",
+    "invalidFormat": "Formato non valido",
+    "invalidValue": "Valore non valido"
+  }
+}

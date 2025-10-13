@@ -1,0 +1,387 @@
+{
+  "brand": {
+    "name": "TinyCompressor"
+  },
+  "nav": {
+    "home": "Startseite",
+    "compressor": "Kompressor",
+    "converter": "Konverter",
+    "language": "Sprache",
+    "menu": "Menü",
+    "close": "Schließen"
+  },
+  "breadcrumbs": {
+    "home": "Startseite",
+    "compressor": "Kompressor",
+    "converter": "Konverter"
+  },
+  "compressor": {
+    "title": "Bildkompressor",
+    "subtitle": "Reduzieren Sie die Bilddateigröße um bis zu 90% bei Qualitätserhaltung. Schnell, sicher und völlig kostenlos.",
+    "description": "Professionelle Bildkomprimierungs-Tools, die Ihnen helfen, Ihre Bilder für Web, E-Mail und Speicher zu optimieren. Unterstützung für alle wichtigen Bildformate mit fortschrittlichen Komprimierungsalgorithmen.",
+    "badge": "Bildkomprimierung",
+    "statsLabels": {
+      "compression": "Komprimierung",
+      "speed": "Geschwindigkeit"
+    },
+    "tools": {
+      "png": {
+        "name": "PNG-Kompressor",
+        "description": "Komprimieren Sie PNG-Bilder mit verlustfreier Optimierung",
+        "features": [
+          "Verlustfreie Komprimierung",
+          "Transparenzunterstützung",
+          "Web-Optimierung"
+        ],
+        "compression": "Bis zu 70% Dateigröße-Reduzierung"
+      },
+      "jpeg": {
+        "name": "JPEG-Kompressor",
+        "description": "Reduzieren Sie die JPEG-Dateigröße mit intelligenter Komprimierung",
+        "features": [
+          "Intelligente Komprimierung",
+          "Qualitätskontrolle",
+          "Metadaten-Entfernung"
+        ],
+        "compression": "Bis zu 80% Dateigröße-Reduzierung"
+      },
+      "webp": {
+        "name": "WebP-Kompressor",
+        "description": "Optimieren Sie WebP-Bilder für Web-Bereitstellung",
+        "features": [
+          "Modernes Format",
+          "Überlegene Komprimierung",
+          "Web-optimiert"
+        ],
+        "compression": "Bis zu 85% Dateigröße-Reduzierung"
+      },
+      "avif": {
+        "name": "AVIF-Kompressor",
+        "description": "Komprimieren Sie AVIF-Bilder mit Next-Gen-Komprimierung",
+        "features": [
+          "Next-Gen-Format",
+          "Maximale Komprimierung",
+          "Zukunftssicher"
+        ],
+        "compression": "Bis zu 90% Dateigröße-Reduzierung"
+      },
+      "gif": {
+        "name": "GIF-Kompressor",
+        "description": "Reduzieren Sie GIF-Dateigröße bei gleichbleibender Qualität",
+        "features": [
+          "Animations-Unterstützung",
+          "Farboptimierung",
+          "Frame-Reduzierung"
+        ],
+        "compression": "Bis zu 60% Dateigröße-Reduzierung"
+      },
+      "bmp": {
+        "name": "BMP-Kompressor",
+        "description": "Komprimieren Sie BMP-Bitmap-Bilder mit fortschrittlicher Optimierung",
+        "features": [
+          "Konvertierung zu effizienten Formaten",
+          "Massive Größenreduzierung",
+          "Paletten-Optimierung"
+        ],
+        "compression": "Bis zu 95% Dateigröße-Reduzierung"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "Blitzschnell",
+        "description": "Verarbeiten Sie mehrere Bilder in Sekunden mit unseren optimierten Algorithmen",
+        "details": "Nutzen Sie modernste Webtechnologie für blitzschnelle Verarbeitung direkt in Ihrem Browser"
+      },
+      "security": {
+        "title": "Datenschutz zuerst",
+        "description": "Ihre Bilder werden lokal in Ihrem Browser verarbeitet - keine Uploads erforderlich",
+        "details": "100% sichere clientseitige Verarbeitung - Ihre Dateien verlassen nie Ihr Gerät"
+      },
+      "quality": {
+        "title": "Qualitätskontrolle",
+        "description": "Erweiterte Einstellungen zum Ausgleich von Dateigröße und Bildqualität",
+        "details": "Passen Sie Komprimierungsstufen an, um die perfekte Balance zwischen Größe und Qualität zu finden"
+      },
+      "title": "Warum unseren Bildkompressor wählen?",
+      "items": [
+        {
+          "title": "Blitzschnell",
+          "description": "Verarbeiten Sie mehrere Bilder in Sekunden mit unseren optimierten Algorithmen"
+        },
+        {
+          "title": "Datenschutz zuerst",
+          "description": "Ihre Bilder werden lokal in Ihrem Browser verarbeitet - keine Uploads erforderlich"
+        },
+        {
+          "title": "Mehrere Formate",
+          "description": "Unterstützung für PNG, JPEG, WebP, AVIF, GIF und BMP Formate"
+        },
+        {
+          "title": "Qualitätskontrolle",
+          "description": "Erweiterte Einstellungen zum Ausgleich von Dateigröße und Bildqualität"
+        },
+        {
+          "title": "Batch-Verarbeitung",
+          "description": "Komprimieren Sie mehrere Bilder gleichzeitig, um Zeit zu sparen"
+        },
+        {
+          "title": "Für immer kostenlos",
+          "description": "Keine Registrierung, keine Wasserzeichen, keine versteckten Gebühren"
+        }
+      ]
+    },
+    "stats": {
+      "processed": {
+        "number": "15M+",
+        "label": "Komprimierte Bilder",
+        "description": "Monatlich"
+      },
+      "reduction": {
+        "number": "90%",
+        "label": "Durchschnittliche Reduzierung",
+        "description": "Dateigröße"
+      },
+      "formats": {
+        "number": "6",
+        "label": "Unterstützte Formate",
+        "description": "Alle Haupttypen"
+      }
+    },
+    "whyChoose": {
+      "title": "Warum Unseren Bildkomprimierer Wählen?",
+      "items": [
+        {
+          "title": "Blitzschnell",
+          "description": "Verarbeiten Sie mehrere Bilder in Sekunden mit unseren optimierten Algorithmen"
+        },
+        {
+          "title": "Datenschutz Zuerst",
+          "description": "Ihre Bilder werden lokal in Ihrem Browser verarbeitet - keine Uploads erforderlich"
+        },
+        {
+          "title": "Mehrere Formate",
+          "description": "Unterstützung für PNG, JPEG, WebP, AVIF, GIF und BMP Formate"
+        },
+        {
+          "title": "Qualitätskontrolle",
+          "description": "Erweiterte Einstellungen zum Ausgleich von Dateigröße und Bildqualität"
+        },
+        {
+          "title": "Stapelverarbeitung",
+          "description": "Komprimieren Sie mehrere Bilder auf einmal, um Zeit zu sparen"
+        },
+        {
+          "title": "Für Immer Kostenlos",
+          "description": "Keine Registrierung, keine Wasserzeichen, keine versteckten Gebühren"
+        }
+      ]
+    }
+  },
+  "converter": {
+    "title": "Bildkonverter",
+    "subtitle": "Konvertieren Sie Bilder zwischen verschiedenen Formaten mit hoher Qualität und schneller Verarbeitung.",
+    "description": "Professionelle Bildkonvertierungs-Tools, die Ihre Bilder zwischen beliebten Formaten umwandeln. Unterstützung für PNG, JPEG, WebP, AVIF und HEIC mit fortschrittlicher Konvertierungstechnologie.",
+    "badge": "Formatkonvertierung",
+    "statsLabels": {
+      "compression": "Komprimierung",
+      "speed": "Geschwindigkeit"
+    },
+    "tools": {
+      "pngToJpg": {
+        "name": "PNG zu JPG",
+        "description": "Konvertieren Sie PNG-Bilder in JPG-Format",
+        "features": [
+          "Hintergrundbehandlung",
+          "Qualitätsbewahrung",
+          "Web-Optimierung"
+        ],
+        "conversion": "PNG → JPEG"
+      },
+      "pngToWebp": {
+        "name": "PNG zu WebP",
+        "description": "Konvertieren Sie PNG in modernes WebP-Format",
+        "features": [
+          "Bessere Komprimierung",
+          "Transparenz bewahrt",
+          "Web-optimiert"
+        ],
+        "conversion": "PNG → WebP"
+      },
+      "pngToAvif": {
+        "name": "PNG zu AVIF",
+        "description": "Konvertieren Sie PNG in Next-Gen AVIF-Format",
+        "features": [
+          "Maximale Komprimierung",
+          "Überlegene Qualität",
+          "HDR-Unterstützung"
+        ],
+        "conversion": "PNG → AVIF"
+      },
+      "jpgToPng": {
+        "name": "JPEG zu PNG",
+        "description": "Konvertieren Sie JPEG-Bilder in PNG-Format",
+        "features": [
+          "Transparenz-Unterstützung",
+          "Qualitätsbewahrung",
+          "Verlustfreie Bearbeitung"
+        ],
+        "conversion": "JPEG → PNG"
+      },
+      "webpToPng": {
+        "name": "WebP zu PNG",
+        "description": "Konvertieren Sie WebP in universelles PNG-Format",
+        "features": [
+          "Universelle Kompatibilität",
+          "Verlustfreie Qualität",
+          "E-Mail-Unterstützung"
+        ],
+        "conversion": "WebP → PNG"
+      },
+      "jpgToWebp": {
+        "name": "JPEG zu WebP",
+        "description": "Konvertieren Sie JPEG in effizientes WebP-Format",
+        "features": [
+          "Kleinere Dateien",
+          "Qualität bewahrt",
+          "Modernes Web"
+        ],
+        "conversion": "JPEG → WebP"
+      },
+      "jpgToAvif": {
+        "name": "JPEG zu AVIF",
+        "description": "Konvertieren Sie JPEG in Next-Gen AVIF-Format",
+        "features": [
+          "Bessere Komprimierung",
+          "Überlegene Qualität",
+          "Moderne Funktionen"
+        ],
+        "conversion": "JPEG → AVIF"
+      },
+      "webpToJpg": {
+        "name": "WebP zu JPEG",
+        "description": "Konvertieren Sie WebP in universelles JPEG-Format",
+        "features": [
+          "Maximale Kompatibilität",
+          "Kleinere Dateien",
+          "Universelle Unterstützung"
+        ],
+        "conversion": "WebP → JPEG"
+      },
+      "webpToAvif": {
+        "name": "WebP zu AVIF",
+        "description": "Aktualisieren Sie WebP auf AVIF-Format",
+        "features": [
+          "Bessere Komprimierung",
+          "Verbesserte Qualität",
+          "Erweiterte Funktionen"
+        ],
+        "conversion": "WebP → AVIF"
+      },
+      "heicToJpg": {
+        "name": "HEIC zu JPEG",
+        "description": "Konvertieren Sie iPhone HEIC-Fotos in JPEG-Format",
+        "features": [
+          "Universelle Kompatibilität",
+          "Qualitätsbewahrung",
+          "Metadaten-Handhabung"
+        ],
+        "conversion": "HEIC → JPEG"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "Blitzschnell",
+        "description": "Konvertieren Sie mehrere Bilder in Sekunden mit unseren optimierten Algorithmen",
+        "details": "Blitzschnelle Formatkonvertierung direkt in Ihrem Browser mit modernster Technologie"
+      },
+      "security": {
+        "title": "Datenschutz zuerst",
+        "description": "Ihre Bilder werden lokal in Ihrem Browser verarbeitet - keine Uploads erforderlich",
+        "details": "100% sichere clientseitige Verarbeitung - Ihre Dateien bleiben privat und geschützt"
+      },
+      "quality": {
+        "title": "Qualitätskontrolle",
+        "description": "Erweiterte Einstellungen zur Aufrechterhaltung der Bildqualität während der Konvertierung",
+        "details": "Behalten Sie die maximale Bildqualität mit intelligenten Konvertierungsalgorithmen bei"
+      }
+    },
+    "stats": {
+      "converted": {
+        "number": "10M+",
+        "label": "Konvertierte Bilder",
+        "description": "Monatlich"
+      },
+      "formats": {
+        "number": "10+",
+        "label": "Unterstützte Formate",
+        "description": "Alle Haupttypen"
+      },
+      "quality": {
+        "number": "100%",
+        "label": "Qualitätsbewahrung",
+        "description": "Verlustfreie Konvertierung"
+      }
+    },
+    "whyChoose": {
+      "title": "Warum Unseren Bildkonverter Wählen?",
+      "items": [
+        {
+          "title": "Hochwertige Konvertierung",
+          "description": "Erhält die Bildqualität beim Konvertieren zwischen Formaten mit fortschrittlichen Algorithmen"
+        },
+        {
+          "title": "Lokale Verarbeitung",
+          "description": "Alle Konvertierungen erfolgen lokal in Ihrem Browser - vollständig privat"
+        },
+        {
+          "title": "10+ Formate",
+          "description": "Unterstützt wichtige Formate wie PNG, JPG, WebP, AVIF, HEIC"
+        },
+        {
+          "title": "Stapelkonvertierung",
+          "description": "Konvertieren Sie mehrere Dateien gleichzeitig für mehr Effizienz"
+        },
+        {
+          "title": "Sofortige Ergebnisse",
+          "description": "Schnelle Verarbeitung für sofortige konvertierte Bilder"
+        },
+        {
+          "title": "Völlig Kostenlos",
+          "description": "Unbegrenzte Nutzung, keine Registrierung oder Zahlung erforderlich"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "company": "TinyCompressor",
+    "description": "Kostenlose Online-Bildkomprimierungs- und Konvertierungstools",
+    "links": {
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2024 TinyCompressor. Alle Rechte vorbehalten."
+  },
+  "language": {
+    "current": "Aktuelle Sprache",
+    "change": "Sprache ändern",
+    "select": "Sprache auswählen"
+  },
+  "tools": {
+    "title": "Wählen Sie Ihr Tool",
+    "start": "Jetzt starten"
+  },
+  "features": {
+    "title": "Warum unsere Tools wählen?",
+    "subtitle": "Erweiterte Technologie mit benutzerfreundlichen Funktionen",
+    "free": "100% kostenlos",
+    "secure": "Sicher & privat",
+    "fast": "Blitzschnell"
+  },
+  "cta": {
+    "title": "Bereit zu beginnen?",
+    "description": "Schließen Sie sich Tausenden von Nutzern an, die unseren Bildverarbeitungstools vertrauen",
+    "backToHome": "Zurück zur Startseite"
+  }
+}

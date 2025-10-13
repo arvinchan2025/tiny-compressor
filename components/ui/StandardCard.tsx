@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { hoverEffects, transitions, commonVariants } from '@/lib/micro-interactions';
 
 interface StandardCardProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: 'default' | 'elevated' | 'outlined' | 'filled';
-  size?: 'sm' | 'md' | 'lg';
-  hover?: boolean;
+  variant: 'default' | 'elevated' | 'outlined' | 'filled';
+  size: 'sm' | 'md' | 'lg';
+  hover: boolean;
   children: React.ReactNode;
 }
 

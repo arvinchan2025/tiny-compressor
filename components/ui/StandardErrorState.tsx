@@ -9,13 +9,13 @@ interface ErrorStateProps {
   type: 'error' | 'warning' | 'info' | 'success';
   title: string;
   message: string;
-  suggestion?: string;
-  action?: {
+  suggestion: string;
+  action: {
     label: string;
     onClick: () => void;
   };
-  onDismiss?: () => void;
-  className?: string;
+  onDismiss: () => void;
+  className: string;
 }
 
 export default function StandardErrorState({

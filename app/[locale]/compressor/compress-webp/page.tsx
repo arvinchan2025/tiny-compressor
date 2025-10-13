@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import WebpCompressorNew from './WebpCompressorNew';
+import CompressWebpClient from './CompressWebpClient';
 
 interface CompressWebpPageProps {
   params: {
@@ -13,18 +13,22 @@ export async function generateMetadata({ params }: CompressWebpPageProps): Promi
   
   return {
     title: 'WebP Compressor - Compress WebP Images Online',
-    description: 'Free online WebP image compressor. Reduce WebP file size while maintaining quality. No registration required.',
-    keywords: 'WebP compressor, compress WebP, reduce WebP size, WebP optimization',
+    description: 'Compress WebP images online with our free WebP compressor. Superior compression with modern web optimization. Fast, secure, and easy to use.',
+    keywords: 'WebP compressor, compress WebP, WebP optimization, reduce WebP size, WebP compressor online, free WebP compressor',
     openGraph: {
       title: 'WebP Compressor - Compress WebP Images Online',
-      description: 'Free online WebP image compressor. Reduce WebP file size while maintaining quality.',
+      description: 'Compress WebP images online with our free WebP compressor. Superior compression with modern web optimization. Fast, secure, and easy to use.',
       type: 'website',
+      locale: locale,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'WebP Compressor - Compress WebP Images Online',
+      description: 'Compress WebP images online with our free WebP compressor. Superior compression with modern web optimization. Fast, secure, and easy to use.',
     },
   };
 }
 
 export default function CompressWebpPage({ params }: CompressWebpPageProps) {
-  const { locale } = params;
-  
-  return <WebpCompressorNew locale={locale} />;
+  return <CompressWebpClient locale={params.locale} />;
 }

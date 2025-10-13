@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "Compressore PNG - Comprimi Immagini PNG Online Gratis",
+    "description": "Comprimi immagini PNG online con nostro compressore PNG gratuito. Riduci dimensione file PNG mantenendo qualità. Veloce, sicuro e facile da usare.",
+    "keywords": "compressore PNG, comprimi PNG, ottimizzazione PNG, riduci dimensione PNG, compressore PNG online, compressore PNG gratuito"
+  },
+  "hero": {
+    "title": "Compressore Immagini PNG",
+    "description": "Comprimi immagini PNG online con nostra tecnologia compressione avanzata. Riduci dimensione file mantenendo qualità e trasparenza.",
+    "subtitle": "Comprimi immagini PNG online con nostra tecnologia compressione avanzata. Riduci dimensione file mantenendo qualità e trasparenza.",
+    "badge": "Compressore"
+  },
+  "formatInfo": {
+    "description": "PNG (Portable Network Graphics) è formato file grafico raster che supporta compressione dati lossless e trasparenza."
+  },
+  "features": {
+    "title": "Funzionalità Formato PNG",
+    "description": "Perché PNG è gold standard per grafica e immagini web",
+    "items": [
+      {
+        "icon": "🔒",
+        "title": "Qualità Lossless",
+        "description": "Zero perdita qualità - ogni pixel preservato perfettamente con compressione DEFLATE"
+      },
+      {
+        "icon": "✨",
+        "title": "Trasparenza Alfa",
+        "description": "Supporto canale alfa completo con 256 livelli trasparenza per bordi lisci"
+      },
+      {
+        "icon": "📐",
+        "title": "Bordi Netti",
+        "description": "Perfetto per testo, loghi e grafica - nessun artefatto compressione o sfocatura"
+      },
+      {
+        "icon": "🎨",
+        "title": "Supporto True Color",
+        "description": "RGB 24-bit (16.7M colori) o tavolozza indicizzata (2-256 colori) con ottimizzazione"
+      },
+      {
+        "icon": "🎯",
+        "title": "Ottimizzazione Tavolozza",
+        "description": "Riduzione colore intelligente a modalità indicizzata 8-bit per file 50-70% più piccoli"
+      },
+      {
+        "icon": "📦",
+        "title": "Metadata Ricchi",
+        "description": "Struttura basata chunk supporta profili colore, gamma, annotazioni testo"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Come Funziona la Compressione PNG",
+    "description": "Comprendere i principi tecnici dietro compressione PNG ti aiuta a prendere decisioni informate sulle tue immagini.",
+    "items": [
+      {
+        "title": "Algoritmo Compressione Lossless",
+        "description": "PNG usa algoritmo compressione DEFLATE, metodo compressione dati lossless che preserva ogni pixel della tua immagine senza degradazione qualità. Questo algoritmo funziona trovando pattern ripetuti in dati immagine e sostituendoli con codici più corti.",
+        "icon": "🔒",
+        "benefits": [
+          "Zero perdita qualità - ricostruzione perfetta",
+          "Ideale per grafica e loghi",
+          "Preserva trasparenza canale alfa",
+          "Adatto per immagini che richiedono riproduzione esatta"
+        ]
+      },
+      {
+        "title": "Sistema Filtraggio Avanzato",
+        "description": "PNG impiega sistema filtraggio sofisticato che preprocessa dati immagine prima compressione. Filtro predice valori pixel basati su pixel vicini, migliorando significativamente efficienza compressione riducendo ridondanza in flusso dati.",
+        "icon": "⚡",
+        "benefits": [
+          "Fino a 30% rapporti compressione migliori",
+          "Filtraggio adattivo per tipi immagine diversi",
+          "Ottimizzato per contenuto fotografico e grafico",
+          "Implementazione standard industriale"
+        ]
+      },
+      {
+        "title": "Ottimizzazione Tavolozza Colori",
+        "description": "PNG supporta modalità colore multiple incluso colore indicizzato (tavolozza), scala grigi e truecolor. Tecniche ottimizzazione tavolozza avanzate riducono numero colori mantenendo fedeltà visiva, risultando in dimensioni file minori.",
+        "icon": "🎨",
+        "benefits": [
+          "Riduzione colore automatica per immagini semplici",
+          "Mantiene qualità visiva con meno colori",
+          "Supporta profondità colore 8-bit, 24-bit e 32-bit",
+          "Ottimizzato per immagini semplici e complesse"
+        ]
+      },
+      {
+        "title": "Struttura Basata Chunk",
+        "description": "File PNG usano struttura modulare basata chunk che consente storage metadata, gestione colore e caricamento progressivo. Questo design abilita funzionalità avanzate come correzione gamma, profili colore e annotazioni testo.",
+        "icon": "📦",
+        "benefits": [
+          "Gestione metadata flessibile",
+          "Supporto gestione colore",
+          "Capacità caricamento progressivo",
+          "Design formato estensibile"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quando & Come Usare Compressione PNG",
+    "description": "Scenari comuni e best practice per compressione PNG",
+    "items": [
+      {
+        "title": "Grafica Web & Design UI",
+        "description": "Loghi, icone ed elementi interfaccia con trasparenza.",
+        "content": "PNG è gold standard per grafica web. Usa PNG-32 per loghi ed elementi UI con trasparenza alfa (mira a <200KB). Usa PNG-8 per icone semplici con colori limitati (2-256 colori) - può raggiungere file 50-70% più piccoli. Evita PNG per foto senza trasparenza - usa invece JPEG o WebP per file 50-80% più piccoli.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Screenshot & Documentazione",
+        "description": "Interfacce software, tutorial e contenuto tecnico.",
+        "content": "PNG preserva chiarezza testo e bordi netti perfettamente - essenziale per screenshot. Usa compressione lossless per immagini documentazione. Per pubblicazione web, mira a sotto 200KB per screenshot. Se più grande, considera dividere in più immagini o usare compressione lossy (qualità 85-90) per foto dentro screenshot.",
+        "icon": "📄"
+      },
+      {
+        "title": "Arte Digitale & Illustrazione",
+        "description": "Opere d'arte, illustrazioni stile vettoriale e flat design.",
+        "content": "PNG mantiene integrità opere d'arte riducendo dimensione file. Usa PNG-8 per illustrazioni con colori limitati (fino a 256) - raggiunge riduzione 60-80%. Usa PNG-24 per opere d'arte complesse con gradienti. Per opere d'arte senza trasparenza, considera WebP per compressione 25-35% migliore con qualità lossless.",
+        "icon": "🎨"
+      },
+      {
+        "title": "Sviluppo App Mobile",
+        "description": "Icone app, schermate splash ed elementi UI.",
+        "content": "PNG è universalmente supportato su iOS e Android. Usa PNG-32 per icone app con trasparenza e schermate splash. Ottimizza a dimensioni esatte richieste (es. 1024×1024 per icone iOS) prima comprimere. Raggruppa asset simili e applica impostazioni compressione consistenti per qualità uniforme su tua app.",
+        "icon": "📱"
+      },
+      {
+        "title": "Sviluppo Giochi & Asset",
+        "description": "Sprite, texture e asset giochi 2D con trasparenza.",
+        "content": "PNG è essenziale per sprite giochi ed elementi UI che richiedono trasparenza. Usa PNG-8 per pixel art e sprite semplici (2-256 colori). Usa PNG-32 per sprite complessi con trasparenza alfa. Elabora batch asset simili con impostazioni consistenti. Considera atlas texture per ridurre conteggio file e migliorare performance caricamento.",
+        "icon": "🎮"
+      },
+      {
+        "title": "Immagini Prodotti E-commerce",
+        "description": "Foto prodotti con sfondi trasparenti.",
+        "content": "PNG abilita immagini prodotti a funzionare su qualsiasi colore sfondo. Usa PNG-32 per prodotti con ombre morbide o trasparenza graduale. Mira a sotto 200KB per immagine prodotto per caricamenti pagina veloci. Per foto senza trasparenza, usa JPEG (50-80% più piccolo) o WebP (25-35% più piccolo) per migliore performance e tassi conversione.",
+        "icon": "🛒"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "description": "Domande comuni su compressione PNG e nostro strumento compressore PNG.",
+    "items": [
+      {
+        "question": "Cos'è compressione PNG e come funziona?",
+        "answer": "Compressione PNG è metodo compressione dati lossless che riduce dimensione file senza perdere qualità immagine o informazione trasparenza. Usa algoritmo DEFLATE combinato con filtraggio avanzato per identificare ed eliminare pattern dati ridondanti, risultando in dimensioni file minori mantenendo fedeltà immagine perfetta."
+      },
+      {
+        "question": "Quanto posso comprimere file PNG?",
+        "answer": "Rapporti compressione variano significativamente a seconda contenuto immagine e complessità. Grafica semplice con colori limitati può raggiungere riduzione dimensione 70-90%, mentre fotografie complesse potrebbero vedere riduzione 10-30%. Immagini con trasparenza comprimono tipicamente meno di sfondi solidi a causa dati canale alfa aggiuntivi."
+      },
+      {
+        "question": "La compressione PNG influenza qualità immagine o trasparenza?",
+        "answer": "No, PNG usa compressione lossless, significando che qualità immagine, colori e informazione trasparenza rimangono esattamente uguali dopo compressione e decompressione. Ogni pixel è preservato perfettamente, rendendo PNG ideale per grafica, loghi e immagini che richiedono riproduzione esatta."
+      },
+      {
+        "question": "Quando dovrei usare PNG invece di JPEG o altri formati?",
+        "answer": "Usa PNG per grafica con trasparenza, loghi, icone, screenshot con testo, arte digitale con colori solidi e qualsiasi immagine che richiede qualità lossless. JPEG è migliore per fotografie a causa rapporti compressione superiori, mentre WebP offre migliore compressione per uso web ma con supporto universale minore."
+      },
+      {
+        "question": "Posso comprimere file PNG con trasparenza e canali alfa?",
+        "answer": "Sì, compressione PNG preserva informazione trasparenza e canale alfa perfettamente. Questo rende PNG formato preferito per grafica web, elementi UI, loghi e qualsiasi immagine che deve funzionare su colori sfondo diversi o richiede effetti trasparenza."
+      },
+      {
+        "question": "Quanto tempo richiede compressione PNG con vostro strumento?",
+        "answer": "Nostro compressore PNG elabora tipicamente immagini in meno di 3 secondi, anche per file grandi fino a 10MB. Tempo elaborazione dipende da dimensione file, complessità e potenza elaborazione del tuo dispositivo. Tutta compressione avviene localmente nel tuo browser per massima privacy e velocità."
+      },
+      {
+        "question": "Quali sono best practice per compressione PNG?",
+        "answer": "Best practice includono: usare profondità colore appropriata (8-bit per grafica semplice, 24-bit per foto, 32-bit per trasparenza), ottimizzare tavolozze colori, rimuovere metadata non necessari, ridimensionare a dimensioni esatte necessarie e testare impostazioni compressione diverse per trovare equilibrio ottimale tra dimensione file e qualità."
+      },
+      {
+        "question": "C'è limite al numero file PNG che posso comprimere?",
+        "answer": "Nostro strumento supporta elaborazione batch più file PNG simultaneamente. Mentre non c'è limite stretto, raccomandiamo elaborare file in batch di 20-50 per performance ottimale. Ogni file può essere fino a 10MB, e tutta elaborazione avviene localmente nel tuo browser."
+      },
+      {
+        "question": "Come si confronta compressione PNG con altri formati immagine?",
+        "answer": "PNG offre compressione lossless con supporto trasparenza, rendendolo ideale per grafica e uso web. Rispetto a JPEG, PNG ha dimensioni file maggiori per foto ma mantiene qualità perfetta. WebP offre migliore compressione ma meno supporto browser. PNG rimane gold standard per grafica che richiede trasparenza e qualità lossless."
+      },
+      {
+        "question": "Posso usare file PNG compressi commercialmente?",
+        "answer": "Sì, tutti file PNG compressi mantengono loro licenza originale e possono essere usati per qualsiasi scopo, incluso uso commerciale. Nostro processo compressione non aggiunge watermark o restrizioni alle tue immagini. File compressi sono identici in qualità agli originali, solo con dimensioni file minori."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Strumenti Correlati",
+    "description": "Esplora più strumenti di compressione e conversione immagini",
+    "items": [
+      {
+        "title": "Compressore JPEG",
+        "description": "Comprimi immagini JPEG per web e mobile",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Compressore WebP",
+        "description": "Comprimi immagini WebP",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "Compressore AVIF",
+        "description": "Comprimi immagini AVIF",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Trascina il tuo file qui o clicca per selezionare",
+      "subtitle": "Supporta formato {format}, max 50MB",
+      "selectFiles": "Seleziona File"
+    },
+    "files": {
+      "title": "File Selezionati",
+      "count": "{count} file",
+      "remove": "Rimuovi",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "Comprimi {format}",
+      "processing": "Compressione... {progress}%"
+    },
+    "progress": {
+      "label": "Elaborazione...",
+      "compressing": "Comprimendo tua immagine {format}..."
+    },
+    "results": {
+      "title": "Compressione Completata! 🎉",
+      "subtitle": "La tua immagine è stata ottimizzata con successo",
+      "original": "Originale",
+      "compressed": "Compresso",
+      "saved": "Risparmiato",
+      "time": "Tempo",
+      "format": "Formato",
+      "compressionRatio": "Rapporto Compressione",
+      "sizeReduction": "Riduzione Dimensione",
+      "sizeIncrease": "Aumento Dimensione",
+      "greatJob": "Ottimo lavoro!",
+      "considerAdjusting": "Considera regolare impostazioni",
+      "savedSpace": "Risparmiato {amount} MB",
+      "successMessage": "Grande compressione!",
+      "successDescription": "La tua immagine è ora {ratio}% più piccola mantenendo qualità eccellente. Ottimizzata per uso web!",
+      "download": "Scarica",
+      "compressMore": "Comprimi Altro",
+      "reset": "Resetta",
+      "sizeInfo": "Originale: {original} MB → Compresso: {compressed} MB ({ratio}% riduzione)"
+    },
+    "settings": {
+      "simple": "Semplice",
+      "advanced": "Avanzato",
+      "advancedTitle": "Impostazioni Avanzate",
+      "quality": "Qualità",
+      "qualityLow": "Bassa",
+      "qualityMedium": "Media",
+      "qualityHigh": "Alta",
+      "metadata": "Mantieni Metadata",
+      "metadataDesc": "EXIF, GPS, info camera"
+    },
+    "actions": {
+      "downloadAll": "Scarica Tutto",
+      "reset": "Resetta"
+    },
+    "error": {
+      "title": "Errore",
+      "tip": "💡 Suggerimento: Assicurati che tuo file sia immagine valida (PNG, JPEG, WebP, AVIF, GIF) e sotto 50MB",
+      "unknownError": "Errore sconosciuto",
+      "processingFailed": "Elaborazione di {fileName} fallita",
+      "compressionFailed": "Compressione fallita"
+    },
+    "status": {
+      "starting": "Avvio compressione...",
+      "processing": "Compressione... {progress}%",
+      "completed": "Compressione completata!"
+    }
+  }
+}

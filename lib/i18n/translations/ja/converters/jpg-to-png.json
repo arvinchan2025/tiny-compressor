@@ -1,0 +1,274 @@
+{
+  "seo": {
+    "title": "JPEG to PNG変換 - JPEG画像をオンラインで変換",
+    "description": "JPEG画像をオンラインでPNG形式に変換します。無料、高速、使いやすいJPEG to PNG変換ツール。",
+    "keywords": "JPEG to PNG、JPEG変換、画像変換ツール、オンラインツール"
+  },
+  "hero": {
+    "title": "JPEG to PNG変換",
+    "subtitle": "JPEG画像をオンラインでPNG形式に変換",
+    "description": "ロスレス品質を復元し、必要に応じて透明度サポートを追加するためにJPEG画像をPNG形式に変換します。"
+  },
+  "features": {
+    "title": "JPEG to PNG変換機能",
+    "description": "ロスレス品質のためにJPEGをPNGに変換する理由",
+    "items": [
+      {
+        "icon": "🔒",
+        "title": "ロスレス品質保持",
+        "description": "PNGのロスレス圧縮でさらなる品質損失を防止"
+      },
+      {
+        "icon": "✨",
+        "title": "透明度サポート",
+        "description": "PNGは透明度効果のためのアルファチャネルをサポート"
+      },
+      {
+        "icon": "🎨",
+        "title": "編集に最適",
+        "description": "品質損失なしで複数の編集を必要とするグラフィックに最適"
+      },
+      {
+        "icon": "📐",
+        "title": "シャープなテキストとグラフィック",
+        "description": "テキスト、ロゴ、シャープエッジを持つ画像に最適"
+      },
+      {
+        "icon": "⚡",
+        "title": "バッチ変換",
+        "description": "複数のJPEGファイルを一度にPNGに変換"
+      },
+      {
+        "icon": "🔐",
+        "title": "100%安全",
+        "description": "すべての変換はブラウザ内でローカルに行われます"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "JPEG vs PNG形式比較",
+    "subtitle": "JPEGとPNG形式の違いを理解する",
+    "jpeg": {
+      "description": "JPEG (Joint Photographic Experts Group) は、デジタル画像、特にデジタル写真で一般的に使用されるロッシー圧縮方法です。",
+      "features": [
+        "ロッシー圧縮",
+        "より小さいファイルサイズ",
+        "写真に最適",
+        "透明度サポートなし"
+      ]
+    },
+    "png": {
+      "description": "PNG (Portable Network Graphics) は、ロスレスデータ圧縮と透明度をサポートするラスターグラフィックスファイル形式です。",
+      "features": [
+        "ロスレス圧縮",
+        "透明度サポート",
+        "グラフィックとロゴに最適",
+        "より大きいファイルサイズ"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "JPEG to PNG変換の仕組み",
+    "description": "ロッシーからロスレスへの変換の技術的プロセスを理解する",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "解凍と再エンコード",
+        "description": "JPEGのDCT (Discrete Cosine Transform) 圧縮データを完全に解凍し、PNGのロスレスDEFLATE圧縮アルゴリズムを使用して再エンコードします。",
+        "benefits": [
+          "完全なJPEG解凍",
+          "PNG DEFLATE再エンコード",
+          "追加の品質損失なし",
+          "より大きいファイルサイズ (2-5x)"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "品質は復元できない",
+        "description": "JPEGのロッシー圧縮は画像データを永久に破棄します。PNGへの変換は現在の状態を保持しますが、元のJPEG圧縮から失われた情報を回復することはできません。",
+        "benefits": [
+          "失われたJPEGデータは永久的",
+          "さらなる劣化を防止",
+          "アーカイブ目的に最適",
+          "現在の品質レベルを維持"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "透明度チャネルの追加",
+        "description": "JPEGは透明度をサポートしていませんが、PNGはアルファチャネルを追加します。変換された画像は完全な不透明度で開始しますが、変換後に透明度を追加できます。",
+        "benefits": [
+          "アルファチャネルサポートが有効",
+          "初期完全不透明度 (透明度なし)",
+          "透明度編集の準備完了",
+          "8ビットアルファをサポート (256レベル)"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "色空間とビット深度",
+        "description": "JPEGは通常8ビットYCbCr色空間を使用します。PNG変換はRGB色空間に変換し、チャネルあたり8ビット深度を維持します (合計24ビット、またはアルファ付き32ビット)。",
+        "benefits": [
+          "YCbCrからRGBへの変換",
+          "チャネルあたり8ビットが維持",
+          "24ビットRGBまたは32ビットRGBA",
+          "標準sRGB色空間"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "JPEGをPNGに変換する時期と方法",
+    "description": "JPEG to PNG変換の一般的なシナリオとベストプラクティス",
+    "items": [
+      {
+        "icon": "🎨",
+        "title": "グラフィックとロゴの編集",
+        "description": "さらなる品質損失なしで編集用にJPEGグラフィックを準備します。",
+        "content": "複数の保存からの累積的な品質損失を防ぐために、編集前にJPEGグラフィックをPNGに変換します。テキスト、ロゴ、またはさらなる編集が必要なシャープエッジを持つ画像に不可欠です。注意: JPEG圧縮ですでに失われた品質は復元できません。透明度またはロスレス編集が必要な誤ってJPEGとして保存されたグラフィックに最適です。"
+      },
+      {
+        "icon": "🖨️",
+        "title": "印刷とプロフェッショナル使用",
+        "description": "印刷またはプロフェッショナルアプリケーション用に画像を準備します。",
+        "content": "ロスレス形式を必要とする印刷ワークフロー用にPNGに変換します。PNGは編集とプルーフ中のさらなる品質劣化を防ぎます。2-5倍大きいファイルサイズを期待してください。最良の印刷結果を得るには、利用可能な最高品質のJPEGから開始してください。PNGは印刷プルーフ、デザインモックアップ、アーカイブ目的でJPEGよりも好まれます。"
+      },
+      {
+        "icon": "✂️",
+        "title": "透明度の追加",
+        "description": "合成とオーバーレイのために透明度を有効にします。",
+        "content": "製品写真、ロゴ、またはグラフィックに透明度を追加する必要がある場合、JPEGをPNGに変換します。変換後、写真編集ソフトウェアを使用して背景を削除します。PNGのアルファチャネルは、滑らかなエッジのために256レベルの透明度をサポートします。透明な背景を必要とするeコマース製品画像、ロゴオーバーレイ、Webグラフィックに最適です。"
+      },
+      {
+        "icon": "🔄",
+        "title": "マルチ編集ワークフロー",
+        "description": "反復編集中の品質損失を防ぎます。",
+        "content": "複数の保存を伴う編集ワークフローの開始時にPNGに変換します。各JPEG保存は追加の品質損失を引き起こします (世代損失)。PNGのロスレス圧縮は、無制限の保存を通じて品質を維持します。共同編集、A/Bテストバリエーション、反復デザインプロセスに不可欠です。元のJPEGをバックアップとして保持してください。"
+      },
+      {
+        "icon": "📸",
+        "title": "スクリーンショット強化",
+        "description": "テキストとUI要素を持つスクリーンショットを改善します。",
+        "content": "より良いテキスト明瞭性とUI要素のシャープネスのためにJPEGスクリーンショットをPNGに変換します。JPEGのロッシー圧縮は、テキストとシャープエッジの周りにアーティファクトを作成します。PNGはスクリーンショット、ドキュメンテーション、チュートリアル画像の標準です。スクリーンショットに注釈を付けたり編集したりする際の品質損失を防ぎます。改善された明瞭性のためにファイルサイズの増加は受け入れられます。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "変換しない場合",
+        "description": "JPEGを保持する方が良いシナリオ。",
+        "content": "次の場合は変換しないでください：1) 画像はWeb使用の写真 (JPEGは小さい)、2) さらなる編集は不要 (変換は品質を改善しません)、3) ファイルサイズが重要 (PNGは2-5倍大きい)、4) 画像はとにかくJPEGに再圧縮される。JPEG → PNG → JPEGの変換は二重の品質損失を引き起こします。写真にはJPEGを保持し、グラフィックにはPNGを使用してください。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "JPEG to PNG変換に関する一般的な質問",
+    "items": [
+      {
+        "question": "JPEGをPNGに変換すると画質は向上しますか？",
+        "answer": "いいえ、JPEGをPNGに変換しても、JPEG圧縮中にすでに失われた品質は復元できません。JPEGのロッシー圧縮は画像データを永久に破棄します。ただし、PNGへの変換は、その後の編集と保存中のさらなる品質損失を防ぎます。現在の品質レベルを「凍結」すると考えてください - より良い品質は得られませんが、さらに失うこともありません。"
+      },
+      {
+        "question": "品質を復元できないのに、なぜJPEGをPNGに変換すべきなのですか？",
+        "answer": "次の場合にJPEGをPNGに変換します：1) 透明度を追加する必要がある (製品写真、ロゴ)、2) 画像が複数の編集を受ける (各JPEG保存でより多くの品質が失われる)、3) シャープエッジが必要なグラフィック/テキストでの作業、4) 印刷ワークフローの準備、5) さらなる劣化を防ぐためのアーカイブ目的。PNGのロスレス圧縮は、誤ってJPEGとして保存されたグラフィックに最適です。"
+      },
+      {
+        "question": "JPEGと比較してPNGファイルはどのくらい大きくなりますか？",
+        "answer": "PNGファイルは通常、JPEGファイルより2-5倍大きいです。たとえば、1MBのJPEG写真は3-5MBのPNGになる可能性があります。正確なサイズは画像の複雑さによって異なります - グラデーションを持つ写真はより多く拡大し、単色のグラフィックはより良く圧縮されます。このサイズ増加はロスレス品質と透明度サポートのトレードオフです。"
+      },
+      {
+        "question": "JPEGをPNGに変換した後、透明度を追加できますか？",
+        "answer": "はい！変換自体は透明度を追加しませんが、PNG形式はアルファチャネルをサポートします。変換後、写真編集ソフトウェア (Photoshop、GIMP、Photopea) を使用して背景を削除するか、透明度を追加します。変換されたPNGは完全な不透明度 (透明度なし) で開始しますが、256レベルのアルファサポートで透明度編集の準備ができています。"
+      },
+      {
+        "question": "すべてのJPEG写真をPNGに変換すべきですか？",
+        "answer": "いいえ、Web使用の写真はJPEGのままにしてください。JPEGのロッシー圧縮は、2-5倍小さいファイルサイズが完璧な品質よりも重要な写真に最適です。次の場合のみJPEGをPNGに変換してください：1) 透明度を追加する必要がある、2) 画像にさらなる編集が必要、3) グラフィック/テキストでの作業 (写真ではない)、または 4) ファイルサイズが懸念事項ではない。Web写真には、JPEGまたはWebPのようなモダン形式を使用してください。"
+      },
+      {
+        "question": "JPEG to PNG変換は無料で安全ですか？",
+        "answer": "はい、当社のJPEG to PNGコンバーターは完全無料で、登録、ウォーターマーク、支払いは不要です。すべての変換はWebAssemblyを使用してブラウザ内でローカルに行われます - 画像はデバイスを離れることはありません。これにより、サーバーアップロード、データ収集、サードパーティアクセスなしで100%のプライバシーとセキュリティが保証されます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "関連ツール",
+    "description": "その他の画像変換および圧縮ツールを探索",
+    "items": [
+      {
+        "title": "PNG to JPEG変換",
+        "description": "PNG画像をJPEG形式に戻す",
+        "url": "/converter/convert-png-to-jpg"
+      },
+      {
+        "title": "PNG圧縮",
+        "description": "PNGファイルをより小さいサイズに最適化",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPG to WebP変換",
+        "description": "JPGをモダンなWebP形式に変換",
+        "url": "/converter/convert-jpg-to-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "JPEGファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "JPEG/JPG形式をサポート、最大{maxFiles}ファイル、各最大10MB",
+      "selectFiles": "JPEGファイルを選択"
+    },
+    "errors": {
+      "maxFiles": "最大{maxFiles}ファイルまで許可",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "unsupportedFormat": "サポートされていないファイル形式: {fileName}。JPEG/JPGファイルのみサポートされています。",
+      "uploadFailed": "ファイルのアップロードに失敗しました",
+      "conversionFailed": "変換に失敗しました。もう一度お試しください。"
+    },
+    "files": {
+      "title": "選択されたJPEGファイル",
+      "count": "{count}ファイル選択済み",
+      "reset": "すべてリセット",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "PNGに変換",
+      "simpleStart": "クイックJPEG to PNG変換",
+      "advancedStart": "JPEG to PNG変換 (詳細)",
+      "processing": "PNGに変換中... {progress}%"
+    },
+    "progress": {
+      "label": "変換進行状況",
+      "status": "JPEG to PNG変換中... {progress}%完了"
+    },
+    "settings": {
+      "title": "PNG変換設定",
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "simpleTitle": "クイック設定",
+      "advancedTitle": "PNG詳細設定",
+      "compressionLevel": "圧縮レベル",
+      "compressionFastest": "最速 (レベル1)",
+      "compressionBalanced": "バランス (レベル6)",
+      "compressionBest": "最高圧縮 (レベル9)",
+      "colorDepth": "色深度",
+      "colorDepth24": "24ビットRGB",
+      "colorDepth32": "32ビットRGBA (アルファ付き)",
+      "interlace": "インターレースPNG",
+      "metadata": "メタデータを保持",
+      "optimize": "Web用に最適化",
+      "presetFast": "高速変換",
+      "presetFastDesc": "迅速な変換、大きいファイル",
+      "presetBalanced": "バランス",
+      "presetBalancedDesc": "良好な圧縮、妥当な速度",
+      "presetOptimal": "最大圧縮",
+      "presetOptimalDesc": "最小PNGファイル、遅い変換"
+    },
+    "downloadAll": "すべてのPNGファイルをダウンロード",
+    "results": {
+      "title": "PNG変換結果",
+      "count": "{count}個のJPEGファイルがPNGに変換されました",
+      "sizeInfo": "元のJPEG: {original} MB → PNG: {converted} MB ({change}%増加)",
+      "download": "PNGをダウンロード"
+    }
+  }
+}

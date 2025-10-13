@@ -1,0 +1,273 @@
+{
+  "seo": {
+    "title": "Convertitore HEIC a JPG - Converti Immagini HEIC Online",
+    "description": "Converti immagini HEIC in formato JPG online. Convertitore HEIC a JPG gratuito, veloce e facile da usare.",
+    "keywords": "HEIC a JPG, converti HEIC, convertitore di immagini, strumento online"
+  },
+  "hero": {
+    "title": "Convertitore HEIC a JPG",
+    "subtitle": "Converti immagini HEIC in formato JPG online",
+    "description": "Converti immagini Apple HEIC/HEIF in formato JPG per compatibilità universale su tutti i dispositivi e piattaforme."
+  },
+  "features": {
+    "title": "Funzionalità di Conversione HEIC a JPG",
+    "description": "Perché convertire HEIC Apple in formato JPG universale",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "Compatibilità Universale",
+        "description": "JPG funziona ovunque, HEIC solo su dispositivi Apple"
+      },
+      {
+        "icon": "📱",
+        "title": "Condivisione Cross-Platform",
+        "description": "Condividi foto Apple con utenti Android e Windows"
+      },
+      {
+        "icon": "🖥️",
+        "title": "Compatibilità Software",
+        "description": "Funziona con tutti i software di editing e visualizzazione immagini"
+      },
+      {
+        "icon": "📧",
+        "title": "Email & Social Media",
+        "description": "Perfetto per email e upload su social media"
+      },
+      {
+        "icon": "⚡",
+        "title": "Conversione Batch",
+        "description": "Converti più file HEIC in JPG simultaneamente"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Sicuro",
+        "description": "Tutta la conversione avviene localmente nel tuo browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Confronto Formato HEIC vs JPG",
+    "subtitle": "Comprendere le differenze tra formati HEIC e JPG",
+    "heic": {
+      "description": "HEIC (High Efficiency Image Container) è il formato foto predefinito di Apple basato su compressione HEVC.",
+      "features": [
+        "Compressione HEVC",
+        "Migliore compressione di JPG",
+        "Ecosistema Apple",
+        "Compatibilità limitata"
+      ]
+    },
+    "jpg": {
+      "description": "JPG (JPEG) è il formato immagine più ampiamente usato con compatibilità universale.",
+      "features": [
+        "Compatibilità universale",
+        "100% supporto browser",
+        "Tutte le piattaforme supportate",
+        "Standard industriale"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Come Funziona la Conversione HEIC a JPG",
+    "description": "Comprendere il processo tecnico di conversione dal formato Apple a JPG universale",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "Decompressione HEVC & Ri-codifica JPG",
+        "description": "I dati compressi HEVC (H.265) di HEIC vengono completamente decompressi, poi ri-codificati usando compressione DCT di JPG per compatibilità universale su tutte le piattaforme.",
+        "benefits": [
+          "Decompressione HEVC",
+          "Ri-codifica JPG DCT",
+          "Qualità preservata",
+          "Compatibilità universale"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "Considerazioni sulla Qualità",
+        "description": "HEIC usa compressione HEVC avanzata. Convertire a JPG preserva qualità attuale ma dimensione file può aumentare 1.5-2x poiché compressione di JPG è meno efficiente di HEVC.",
+        "benefits": [
+          "Qualità preservata",
+          "Dimensione file aumenta 1.5-2x",
+          "Nessuna perdita di qualità aggiuntiva",
+          "Qualità JPG regolabile"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "Conversione Spazio Colore",
+        "description": "HEIC tipicamente usa gamma cromatica ampia. Conversione a JPG trasforma a spazio colore sRGB standard, che può risultare in leggeri spostamenti cromatici su display wide-gamut.",
+        "benefits": [
+          "Wide gamut a sRGB",
+          "Spazio colore standard",
+          "Compatibile con tutti i dispositivi",
+          "Aspetto colore consistente"
+        ]
+      },
+      {
+        "icon": "🌍",
+        "title": "Massimo Guadagno di Compatibilità",
+        "description": "JPG ha supporto universale 100% su tutti browser, dispositivi e software, ideale per condividere foto Apple con utenti non-Apple.",
+        "benefits": [
+          "100% compatibilità",
+          "Tutte le piattaforme supportate",
+          "Nessun software speciale necessario",
+          "Pronto per email & social media"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quando & Come Convertire HEIC a JPG",
+    "description": "Scenari comuni e best practice per conversione HEIC a JPG",
+    "items": [
+      {
+        "icon": "📱",
+        "title": "Condivisione Foto Cross-Platform",
+        "description": "Condividi foto iPhone con utenti Android e Windows.",
+        "content": "Converti HEIC a JPG per condividere foto iPhone/iPad con utenti non-Apple. HEIC funziona solo su iOS 11+, macOS High Sierra+ e Windows 10 con pacchetto codec. JPG assicura visualizzazione universale su tutti i dispositivi. Usa qualità 85-90 per buon equilibrio. Essenziale per foto familiari, condivisione di gruppo e collaborazione cross-platform. JPG è il linguaggio universale delle foto."
+      },
+      {
+        "icon": "📧",
+        "title": "Email & Social Media",
+        "description": "Assicura che le foto vengano visualizzate correttamente ovunque.",
+        "content": "Converti HEIC a JPG per allegati email e upload su social media. Molti client email e piattaforme non supportano HEIC. JPG assicura visualizzazione universale. Usa qualità 85-90 per social media. Essenziale per allegati email, foto profilo e contenuti condivisi. Sebbene alcune piattaforme auto-convertano HEIC, conversione manuale assicura qualità e compatibilità consistenti."
+      },
+      {
+        "icon": "🖥️",
+        "title": "Compatibilità Windows & Android",
+        "description": "Rendi foto Apple funzionanti su dispositivi non-Apple.",
+        "content": "Converti HEIC a JPG per compatibilità Windows e Android. HEIC richiede codec speciali su Windows e non è nativamente supportato su Android. JPG funziona ovunque senza software aggiuntivo. Usa qualità 85-90 per uso generale. Essenziale per condividere foto con colleghi, clienti e amici che usano dispositivi non-Apple. JPG è la scelta predefinita sicura."
+      },
+      {
+        "icon": "🎨",
+        "title": "Workflow Design & Editing",
+        "description": "Assicura compatibilità con tutti gli strumenti di design.",
+        "content": "Converti HEIC a JPG prima di editare in software di design. Mentre strumenti maggiori (Photoshop 2020+) supportano HEIC, molti plugin, versioni precedenti e strumenti web-based non lo fanno. JPG assicura compatibilità universale. Usa qualità 90-95 per editing per minimizzare perdita qualità. Essenziale per progetti design collaborativi dove membri team usano software e piattaforme diverse."
+      },
+      {
+        "icon": "🖨️",
+        "title": "Stampa & Uso Professionale",
+        "description": "Prepara foto Apple per servizi stampa.",
+        "content": "Converti HEIC a JPG per servizi stampa e laboratori fotografici. Maggior parte software stampa si aspetta JPG o PNG. JPG è lo standard per stampa fotografica. Usa qualità 95 per stampa per assicurare migliori risultati. Essenziale per fotolibri, stampe e servizi stampa professionali. Sebbene alcuni servizi moderni supportino HEIC, JPG assicura compatibilità universale."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Quando Mantenere HEIC",
+        "description": "Scenari dove HEIC è migliore.",
+        "content": "Mantieni HEIC se: 1) Rimani nell'ecosistema Apple (iPhone, iPad, Mac), 2) Necessiti migliore compressione (HEIC è 40-50% più piccolo di JPG), 3) Spazio iCloud è limitato, 4) Condividi solo con utenti iOS 11+. HEIC eccelle per workflow solo-Apple. Converti a JPG per condivisione cross-platform, email, social media e compatibilità universale."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "description": "Domande comuni sulla conversione HEIC a JPG",
+    "items": [
+      {
+        "question": "Cos'è il formato HEIC e perché Apple lo usa?",
+        "answer": "HEIC (High Efficiency Image Container) è il formato foto predefinito di Apple da iOS 11 (2017). Usa compressione HEVC (H.265), fornendo compressione 40-50% migliore di JPG a stessa qualità. Apple ha adottato HEIC per risparmiare spazio iCloud e migliorare qualità foto. Tuttavia, HEIC ha compatibilità limitata fuori ecosistema Apple, rendendo necessaria conversione JPG per condivisione cross-platform."
+      },
+      {
+        "question": "Convertire HEIC a JPG ridurrà la qualità dell'immagine?",
+        "answer": "Convertire HEIC a JPG preserva qualità visiva usando impostazioni alta qualità JPG (85-95). Dimensione file aumenterà 1.5-2x poiché compressione di JPG è meno efficiente di HEVC. Usa qualità 85-90 per uso generale, 90-95 per foto importanti. Perdita qualità è minima e impercettibile per maggior parte usi. Compromesso è compatibilità universale vs dimensione file."
+      },
+      {
+        "question": "Perché non posso aprire file HEIC su Windows o Android?",
+        "answer": "HEIC richiede codec HEVC (H.265) che non è nativamente supportato su Windows (richiede pacchetto codec) o Android. Apple usa HEIC per migliore compressione ma è proprietario ecosistema Apple. Convertire a JPG assicura compatibilità universale. JPG funziona su tutti i dispositivi senza software aggiuntivo. Questo è perché conversione HEIC a JPG è essenziale per condivisione foto cross-platform."
+      },
+      {
+        "question": "Come converto foto iPhone a JPG automaticamente?",
+        "answer": "Impostazioni iPhone → Fotocamera → Formati → Scegli 'Più Compatibile' per salvare foto come JPG invece di HEIC. Per foto HEIC esistenti, usa nostro convertitore per conversione batch a JPG. Alternativamente, abilita impostazione trasferimento 'Automatico' che converte HEIC a JPG quando condividi con dispositivi non-Apple. Per massima compatibilità, scatta in modalità JPG o converti batch librerie HEIC."
+      },
+      {
+        "question": "Posso convertire HEIC indietro a qualità originale?",
+        "answer": "No, convertire HEIC a JPG e indietro non ripristinerà qualità originale. Ogni conversione tra formati lossy causa perdita qualità cumulativa. Mantieni sempre file HEIC originali come backup se rimani in ecosistema Apple. Se devi condividere foto, converti HEIC a JPG una volta ad alta qualità (90-95) e mantieni entrambe versioni. Non convertire avanti e indietro."
+      },
+      {
+        "question": "La conversione HEIC a JPG è gratuita e sicura?",
+        "answer": "Sì, nostro convertitore HEIC a JPG è completamente gratuito senza registrazione, watermark o pagamento richiesto. Tutta conversione avviene localmente nel tuo browser usando WebAssembly - le tue foto non lasciano mai il tuo dispositivo. Questo assicura 100% privacy e sicurezza, senza upload server, raccolta dati o accesso terze parti. Decodifica HEIC e codifica JPG sono eseguite interamente lato client."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Strumenti Correlati",
+    "description": "Esplora più strumenti di conversione e compressione immagini",
+    "items": [
+      {
+        "title": "Convertitore JPG a PNG",
+        "description": "Converti JPG in formato PNG",
+        "url": "/converter/convert-jpg-to-png"
+      },
+      {
+        "title": "Comprimi JPG",
+        "description": "Ottimizza file JPG per dimensioni minori",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Convertitore JPG a WebP",
+        "description": "Converti JPG in formato WebP moderno",
+        "url": "/converter/convert-jpg-to-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Trascina file HEIC qui o clicca per selezionare",
+      "subtitle": "Supporta formato HEIC/HEIF, fino a {maxFiles} file, max 10MB ciascuno",
+      "selectFiles": "Seleziona File HEIC"
+    },
+    "errors": {
+      "maxFiles": "Massimo {maxFiles} file consentiti",
+      "fileTooLarge": "File {fileName} troppo grande, seleziona file minori di 10MB",
+      "unsupportedFormat": "Formato file non supportato: {fileName}. Solo file HEIC/HEIF sono supportati.",
+      "uploadFailed": "Upload file fallito",
+      "conversionFailed": "Conversione fallita. Riprova."
+    },
+    "files": {
+      "title": "File HEIC Selezionati",
+      "count": "{count} file selezionati",
+      "reset": "Resetta Tutto",
+      "remove": "Rimuovi",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Converti a JPG",
+      "simpleStart": "Conversione Rapida HEIC a JPG",
+      "advancedStart": "Converti HEIC a JPG (Avanzato)",
+      "processing": "Conversione a JPG... {progress}%"
+    },
+    "progress": {
+      "label": "Progresso Conversione",
+      "status": "Conversione HEIC a JPG... {progress}% completato"
+    },
+    "settings": {
+      "title": "Impostazioni Conversione JPG",
+      "simple": "Semplice",
+      "advanced": "Avanzato",
+      "simpleTitle": "Impostazioni Rapide",
+      "advancedTitle": "Impostazioni JPG Avanzate",
+      "quality": "Qualità",
+      "qualityHighest": "Massima (95)",
+      "qualityHigh": "Alta (90)",
+      "qualityMedium": "Bilanciata (85)",
+      "qualityLow": "Dimensione Piccola (80)",
+      "qualityLowest": "Minima (75)",
+      "progressive": "JPG Progressivo",
+      "metadata": "Preserva Metadata",
+      "optimize": "Ottimizza per Web",
+      "presetSharing": "Condivisione Foto",
+      "presetSharingDesc": "Qualità 85, ottimizzato per condivisione",
+      "presetWeb": "Web",
+      "presetWebDesc": "Qualità 85, ottimizzato per web",
+      "presetPrint": "Stampa",
+      "presetPrintDesc": "Qualità 95, alta qualità per stampa"
+    },
+    "downloadAll": "Scarica Tutti File JPG",
+    "results": {
+      "title": "Risultati Conversione JPG",
+      "count": "{count} file HEIC convertiti a JPG",
+      "sizeInfo": "HEIC Originale: {original} MB → JPG: {converted} MB ({change}% aumento)",
+      "download": "Scarica JPG"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { ClientProviders } from '@/components/providers/ClientProviders';
 // import { ToastProvider } from '@/components/ui/Toast'; // 移除Toast，改用进度条
 
 const inter = Inter({ subsets: ['latin'] });
@@ -26,7 +27,12 @@ export const metadata: Metadata = {
       'es': 'https://tinycompressor.com/es',
       'de': 'https://tinycompressor.com/de',
       'fr': 'https://tinycompressor.com/fr',
-      'ar': 'https://tinycompressor.com/ar'
+      'ar': 'https://tinycompressor.com/ar',
+      'ja': 'https://tinycompressor.com/ja',
+      'ko': 'https://tinycompressor.com/ko',
+      'pt': 'https://tinycompressor.com/pt',
+      'ru': 'https://tinycompressor.com/ru',
+      'it': 'https://tinycompressor.com/it'
     }
   },
   openGraph: {
@@ -73,16 +79,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
         <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
-        {children}
+        <ClientProviders>
+          {children}
+        </ClientProviders>
       </body>
     </html>
   );

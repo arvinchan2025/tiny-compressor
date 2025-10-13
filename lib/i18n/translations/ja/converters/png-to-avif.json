@@ -1,0 +1,279 @@
+{
+  "seo": {
+    "title": "PNG to AVIF変換 - PNG画像をオンラインで変換",
+    "description": "PNG画像をオンラインでAVIF形式に変換します。無料、高速、使いやすいPNG to AVIF変換ツール。",
+    "keywords": "PNG to AVIF、PNG変換、画像変換ツール、オンラインツール"
+  },
+  "hero": {
+    "title": "PNG to AVIF変換",
+    "subtitle": "PNG画像をオンラインでAVIF形式に変換",
+    "description": "透明度サポートを維持しながら、次世代圧縮と卓越した品質のためにPNG画像をAVIF形式に変換します。"
+  },
+  "features": {
+    "title": "PNG to AVIF変換機能",
+    "description": "PNGを次世代AVIF形式に変換する理由",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "50%+優れた圧縮",
+        "description": "AVIFは優れた圧縮を提供し、PNGより50-70%小さいことが多い"
+      },
+      {
+        "icon": "✨",
+        "title": "卓越した品質",
+        "description": "高度なAV1コーデック技術でより小さいサイズでより良い品質"
+      },
+      {
+        "icon": "🎨",
+        "title": "HDRとワイドカラーガマット",
+        "description": "HDRおよび10ビット/12ビット色深度のサポート"
+      },
+      {
+        "icon": "💎",
+        "title": "高度なアルファチャネル",
+        "description": "PNGよりも効率的な透明度圧縮"
+      },
+      {
+        "icon": "⚡",
+        "title": "バッチ変換",
+        "description": "複数のPNGファイルを一度にAVIFに変換"
+      },
+      {
+        "icon": "🔐",
+        "title": "100%安全",
+        "description": "すべての変換はブラウザ内でローカルに行われます"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs AVIF形式比較",
+    "subtitle": "PNGとAVIF形式の違いを理解する",
+    "png": {
+      "description": "PNG (Portable Network Graphics) は、ロスレスデータ圧縮と透明度をサポートするラスターグラフィックスファイル形式です。",
+      "features": [
+        "ロスレス圧縮",
+        "透明度サポート",
+        "グラフィックとロゴに最適",
+        "より大きいファイルサイズ"
+      ]
+    },
+    "avif": {
+      "description": "AVIFは、AV1ビデオコーデックに基づく次世代画像形式で、優れた圧縮効率を提供します。",
+      "features": [
+        "次世代圧縮",
+        "卓越した品質",
+        "透明度サポート",
+        "HDRとワイドカラーガマット"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "PNG to AVIF変換の仕組み",
+    "description": "次世代AVIFの技術的利点を理解する",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "AV1ビデオコーデック技術",
+        "description": "AVIFはAV1ビデオコーデックのイントラフレーム圧縮を活用し、品質を維持または改善しながらPNGより50-70%優れた圧縮を実現します。",
+        "benefits": [
+          "AV1イントラフレーム圧縮",
+          "PNGより50-70%小さい",
+          "知覚最適化",
+          "ロイヤリティフリーコーデック"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "高度な色とビット深度",
+        "description": "AVIFはHDR、ワイドカラーガマット (BT.2020)、最大12ビット色深度をサポートし、PNGの8ビット制限を大幅に上回る優れた色再現を実現します。",
+        "benefits": [
+          "HDRサポート (HLG、PQ)",
+          "10ビットおよび12ビット色",
+          "ワイドカラーガマット (BT.2020)",
+          "より良いグラデーション、バンディングなし"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "効率的なアルファ圧縮",
+        "description": "AVIFは高度な予測でアルファチャネルを個別に圧縮し、PNGの単純なDEFLATEよりも大幅に優れた透明度圧縮を実現します。",
+        "benefits": [
+          "個別のアルファ圧縮",
+          "アルファデータが30-50%小さい",
+          "予測ベースのエンコーディング",
+          "柔らかい影に最適"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "柔軟な品質制御",
+        "description": "AVIFはロスレスおよびロッシーモードできめ細かい品質制御を提供し、Web配信用に完璧に最適化されています。",
+        "benefits": [
+          "ロスレスまたはロッシー",
+          "品質範囲0-63",
+          "速度対品質のトレードオフ",
+          "Web用に最適化"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "PNGをAVIFに変換する時期と方法",
+    "description": "PNG to AVIF変換の一般的なシナリオとベストプラクティス",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "次世代Web最適化",
+        "description": "未来志向のサイトのための最先端Webパフォーマンス。",
+        "content": "同じまたはより良い品質で50-70%小さいファイルのためにPNGグラフィックをAVIFに変換します。透明度を持つUI要素、ロゴ、グラフィックに最適です。完璧な品質と40-60%のサイズ削減のためにAVIFロスレスを使用してください。AVIFプライマリ、WebP/PNGフォールバックで<picture>要素を実装して最大カバレッジを実現します。"
+      },
+      {
+        "icon": "🎨",
+        "title": "ロゴとUIグラフィック",
+        "description": "大幅に削減されたファイルサイズで完璧な品質。",
+        "content": "AVIFは透明度を持つロゴとUIグラフィックで優れています。PNGと比較して40-60%のサイズ削減で完璧な品質のためにAVIFロスレスに変換します。品質55-60のAVIFロッシーは、ほぼ同一の視覚的品質で70-80%の削減を提供します。アプリアイコン、Web UI要素、ブランド資産に最適です。"
+      },
+      {
+        "icon": "💎",
+        "title": "高品質製品画像",
+        "description": "最小限の帯域幅で透明度を持つeコマース画像。",
+        "content": "透明度と品質を維持しながら60-70%のサイズ削減のために製品PNGをAVIFに変換します。品質50-55のAVIFロッシーは、大幅に小さいサイズでPNG品質に匹敵します。高速読み込み時間ときれいな透明度が必要なカットアウト製品写真に最適です。"
+      },
+      {
+        "icon": "💾",
+        "title": "CDNとストレージの節約",
+        "description": "ストレージと帯域幅コストを50-70%削減します。",
+        "content": "PNGをAVIFに変換すると、CDNとストレージコストが50-70%削減されます - グラフィックの多いサイトにとって膨大な節約です。グラフィックライブラリ全体をバッチ変換します。ブラウザサポート (92%+) を監視し、モダンブラウザにはAVIFを提供します。高トラフィックサイトのROIは即座です。"
+      },
+      {
+        "icon": "🎮",
+        "title": "ゲームとUI資産",
+        "description": "完璧な透明度を持つスプライトとUI要素。",
+        "content": "AVIFは透明度を持つゲームスプライトとUI資産に最適です。PNGスプライトを品質損失なしで40-60%のサイズ削減のためにAVIFロスレスに変換します。AVIFロッシーは非クリティカル資産で70-80%の削減を提供します。より速い読み込み時間はユーザー体験を劇的に改善します。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "PNGを保持する場合",
+        "description": "PNGが依然として最良の選択であるシナリオ。",
+        "content": "次の場合はPNGを保持してください：1) Safari <16またはChrome <85のサポートが必要 (アナリティクスを確認)、2) メール互換性が重要、3) レガシーツールでの作業、4) 即座の復号化速度が必要。PNGはユニバーサルに互換性があります。92%+のブラウザサポートでモダンWebアプリにはAVIFを使用してください。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "PNG to AVIF変換に関する一般的な質問",
+    "items": [
+      {
+        "question": "PNGから変換する際、AVIFは透明度を保持しますか？",
+        "answer": "はい！AVIFは透明度を完全にサポートし、PNGよりも効率的に圧縮することがよくあります。PNGのアルファチャネルは30-50%優れた圧縮でAVIFのアルファチャネルに変換されます。透明な背景を持つロゴ、UIグラフィック、製品画像に最適です。AVIFロスレスは完璧な透明度品質を保持します。"
+      },
+      {
+        "question": "PNGと比較してAVIFファイルはどのくらい小さいですか？",
+        "answer": "AVIFは同等の品質で通常PNGより50-70%小さいです。AVIFロスレスはゼロ品質損失で40-60%のサイズ削減を実現します。品質50-60のAVIFロッシーは最小限の視覚的差で60-80%の削減を提供します。実際の節約は画像コンテンツによって異なります - 透明度を持つグラフィックは優れた圧縮を実現します。"
+      },
+      {
+        "question": "どのブラウザがAVIF形式をサポートしていますか？",
+        "answer": "AVIFは2024年時点で92%+のブラウザサポートがあります。Chrome 85+ (2020)、Firefox 93+ (2021)、Safari 16+ (2022)、Edge 121+ (2024)、Opera 71+ (2020) でサポートされています。モバイルサポートには、Chrome Android、Safari iOS 16+、Samsung Internet 14+が含まれます。古いブラウザの場合、AVIFプライマリ、WebP/PNGフォールバックで<picture>要素を実装します。"
+      },
+      {
+        "question": "AVIFロスレスまたはロッシーを使用すべきですか？",
+        "answer": "完璧な品質を必要とするロゴとグラフィックには、AVIFロスレスを使用してください (PNGより40-60%小さい、ゼロ品質損失)。写真とあまり重要でないグラフィックには、品質50-60のAVIFロッシーを使用してください (60-80%小さい、最小限の視覚的差)。デプロイメント前に視覚的に比較してください。AVIFロスレスはPNGよりまだ大幅に小さいです。"
+      },
+      {
+        "question": "すべてのPNGグラフィックをAVIFに変換できますか？",
+        "answer": "モダンWebサイトの場合、はい - AVIFは92%+のブラウザサポートで劇的なサイズ削減を提供します。プログレッシブエンハンスメントを実装してください：AVIFフォールバック → WebP → PNGでユニバーサル互換性を実現します。最大の影響のために大きいPNG (>50KB) を優先してください。オーディエンスのブラウザアナリティクスを監視してください。AVIFは透明度を持つWebグラフィックの未来です。"
+      },
+      {
+        "question": "PNG to AVIF変換は無料で安全ですか？",
+        "answer": "はい、当社のPNG to AVIFコンバーターは完全無料で、登録、ウォーターマーク、支払いは不要です。すべての変換はWebAssemblyを使用してブラウザ内でローカルに行われます - 画像はデバイスを離れることはありません。これにより、サーバーアップロード、データ収集、サードパーティアクセスなしで100%のプライバシーとセキュリティが保証されます。AVIFエンコーディングは完全にクライアント側で実行されます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "関連ツール",
+    "description": "その他の画像変換および圧縮ツールを探索",
+    "items": [
+      {
+        "title": "AVIF to PNG変換",
+        "description": "AVIF画像をPNG形式に戻す",
+        "url": "/converter/convert-avif-to-png"
+      },
+      {
+        "title": "PNG圧縮",
+        "description": "PNGファイルをさらに最適化",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "AVIF圧縮",
+        "description": "AVIFファイルをさらに小さいサイズに最適化",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "PNGファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "PNG形式をサポート、最大{maxFiles}ファイル、各最大10MB",
+      "selectFiles": "PNGファイルを選択"
+    },
+    "errors": {
+      "maxFiles": "最大{maxFiles}ファイルまで許可",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "unsupportedFormat": "サポートされていないファイル形式: {fileName}。PNGファイルのみサポートされています。",
+      "uploadFailed": "ファイルのアップロードに失敗しました",
+      "conversionFailed": "変換に失敗しました。もう一度お試しください。"
+    },
+    "files": {
+      "title": "選択されたPNGファイル",
+      "count": "{count}ファイル選択済み",
+      "reset": "すべてリセット",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "AVIFに変換",
+      "simpleStart": "クイックPNG to AVIF変換",
+      "advancedStart": "PNG to AVIF変換 (詳細)",
+      "processing": "AVIFに変換中... {progress}%"
+    },
+    "progress": {
+      "label": "変換進行状況",
+      "status": "PNG to AVIF変換中... {progress}%完了"
+    },
+    "settings": {
+      "title": "AVIF変換設定",
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "simpleTitle": "クイック設定",
+      "advancedTitle": "AVIF詳細設定",
+      "quality": "品質",
+      "qualityHighest": "最高 (品質60)",
+      "qualityHigh": "高 (品質55)",
+      "qualityMedium": "バランス (品質50)",
+      "qualityLow": "小サイズ (品質45)",
+      "qualityLowest": "最小 (品質40)",
+      "compressionMode": "圧縮モード",
+      "compressionLossless": "ロスレス (完璧な品質)",
+      "compressionLossy": "ロッシー (より小さいファイル)",
+      "speed": "エンコード速度",
+      "speedFastest": "最速 (速度8)",
+      "speedBalanced": "バランス (速度6)",
+      "speedBest": "最高品質 (速度4)",
+      "metadata": "メタデータを保持",
+      "optimize": "Web用に最適化",
+      "presetLossless": "ロスレス",
+      "presetLosslessDesc": "完璧な品質、40-60%小さい",
+      "presetBalanced": "バランス",
+      "presetBalancedDesc": "品質55、60-70%小さい",
+      "presetSmall": "最大圧縮",
+      "presetSmallDesc": "品質45、70-80%小さい"
+    },
+    "downloadAll": "すべてのAVIFファイルをダウンロード",
+    "results": {
+      "title": "AVIF変換結果",
+      "count": "{count}個のPNGファイルがAVIFに変換されました",
+      "sizeInfo": "元のPNG: {original} MB → AVIF: {converted} MB ({change}%削減)",
+      "download": "AVIFをダウンロード"
+    }
+  }
+}

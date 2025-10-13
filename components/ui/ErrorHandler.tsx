@@ -11,7 +11,7 @@ interface ErrorInfo {
   title: string;
   message: string;
   suggestion: string;
-  action?: {
+  action: {
     label: string;
     onClick: () => void;
   };
@@ -20,17 +20,42 @@ interface ErrorInfo {
 
 interface ErrorHandlerProps {
   error: ErrorInfo | null;
-  onDismiss?: () => void;
-  onRetry?: () => void;
-  className?: string;
+  onDismiss: () => void;
+  onRetry: () => void;
+  className: string;
+  translations: {
+    error: {
+      title: string;
+      retry: string;
+      dismiss: string;
+      details: string;
+    };
+  };
 }
 
 export default function ErrorHandler({
   error,
   onDismiss,
   onRetry,
-  className = ''
+  className = '',
+  translations
 }: ErrorHandlerProps) {
+  // 浣跨敤浼犲叆鐨勭炕璇戞垨榛樿缈昏瘧
+  const t = (key: string, fallback: string) => {
+    if (translations.error) {
+      const keys = key.split('.');
+      let value: any = translations.error;
+      for (const k of keys) {
+        if (value && typeof value === 'object' && k in value) {
+          value = value[k];
+        } else {
+          return fallback;
+        }
+      }
+      return value || fallback;
+    }
+    return fallback;
+  };
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (!error) return null;
@@ -79,7 +104,7 @@ export default function ErrorHandler({
         className={`border ${getSeverityStyles()}`}
       >
         <div className="flex items-start space-x-3">
-          {/* 错误图标 */}
+          {/* 错误鍥炬爣 */}
           <div className="flex-shrink-0 mt-0.5">
             <StandardIcon 
               name={getSeverityIcon() as any} 
@@ -88,18 +113,18 @@ export default function ErrorHandler({
             />
           </div>
 
-          {/* 错误内容 */}
+          {/* 错误鍐呭 */}
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between">
               <h3 className="text-sm font-semibold">
                 {error.title}
               </h3>
               <div className="flex items-center space-x-2">
-                {/* 错误代码 */}
+                {/* 错误浠ｇ爜 */}
                 <span className="text-xs opacity-75 font-mono">
                   {error.code}
                 </span>
-                {/* 关闭按钮 */}
+                {/* 鍏抽棴鎸夐挳 */}
                 {onDismiss && (
                   <button
                     onClick={onDismiss}
@@ -111,20 +136,20 @@ export default function ErrorHandler({
               </div>
             </div>
 
-            {/* 错误消息 */}
+            {/* 错误娑堟伅 */}
             <p className="text-sm mt-1">
               {error.message}
             </p>
 
-            {/* 建议和操作 */}
+            {/* 寤鸿鍜屾搷*/}
             <div className="mt-3 space-y-3">
-              {/* 建议 */}
+              {/* 寤鸿 */}
               <div className="p-3 bg-white bg-opacity-50 rounded-lg">
                 <div className="flex items-start space-x-2">
                   <StandardIcon name="info" size="sm" className="text-blue-500 mt-0.5" />
                   <div>
                     <div className="text-xs font-medium text-gray-700 mb-1">
-                      建议
+                      {t('error.suggestion', 'Suggestion')}
                     </div>
                     <div className="text-sm text-gray-600">
                       {error.suggestion}
@@ -133,7 +158,7 @@ export default function ErrorHandler({
                 </div>
               </div>
 
-              {/* 操作按钮 */}
+              {/* 鎿嶄綔鎸夐挳 */}
               <div className="flex items-center space-x-3">
                 {onRetry && (
                   <StandardButton
@@ -141,7 +166,7 @@ export default function ErrorHandler({
                     size="sm"
                     onClick={onRetry}
                   >
-                    重试
+                    {t('button.retry', 'Retry')}
                   </StandardButton>
                 )}
                 {error.action && (
@@ -157,11 +182,11 @@ export default function ErrorHandler({
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="text-sm font-medium underline hover:no-underline transition-all duration-200"
                 >
-                  {isExpanded ? '收起详情' : '查看详情'}
+                  {isExpanded ? t('button.collapseDetails', 'Collapse Details') : t('button.viewDetails', 'View Details')}
                 </button>
               </div>
 
-              {/* 展开的详细信息 */}
+              {/* 灞曞紑鐨勮缁嗕俊*/}
               <AnimatePresence>
                 {isExpanded && (
                   <motion.div
@@ -173,15 +198,15 @@ export default function ErrorHandler({
                   >
                     <div className="space-y-2 text-xs">
                       <div>
-                        <span className="font-medium">错误代码：</span>
+                        <span className="font-medium">{t('error.errorCode', 'Error Code')}:</span>
                         <span className="font-mono">{error.code}</span>
                       </div>
                       <div>
-                        <span className="font-medium">严重程度：</span>
+                        <span className="font-medium">{t('error.severity', 'Severity')}:</span>
                         <span className="capitalize">{error.severity}</span>
                       </div>
                       <div>
-                        <span className="font-medium">时间：</span>
+                        <span className="font-medium">{t('error.time', 'Time')}:</span>
                         <span>{new Date().toLocaleString()}</span>
                       </div>
                     </div>

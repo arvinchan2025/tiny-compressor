@@ -1,0 +1,289 @@
+{
+  "seo": {
+    "title": "AVIF圧縮 - AVIF画像をオンラインで無料圧縮",
+    "description": "無料のAVIF圧縮ツールでAVIF画像をオンラインで圧縮します。品質を維持しながらAVIFファイルサイズを削減します。高速、安全、使いやすい。",
+    "keywords": "AVIF圧縮、AVIF圧縮、AVIF最適化、AVIFサイズ削減、オンラインAVIF圧縮、無料AVIF圧縮"
+  },
+  "hero": {
+    "title": "AVIF画像圧縮",
+    "description": "高度な圧縮技術でAVIF画像をオンラインで圧縮します。優れた品質とモダン機能を維持しながらファイルサイズを削減します。",
+    "subtitle": "高度な圧縮技術でAVIF画像をオンラインで圧縮します。優れた品質とモダン機能を維持しながらファイルサイズを削減します。",
+    "badge": "圧縮"
+  },
+  "formatInfo": {
+    "description": "AVIF (AV1 Image File Format) は、AV1ビデオコーデックに基づくモダン画像形式で、優れた圧縮効率とHDRサポートなどの高度な機能を提供します。"
+  },
+  "features": {
+    "title": "AVIF形式の特徴",
+    "description": "AVIFが次世代画像形式である理由",
+    "items": [
+      {
+        "icon": "🏆",
+        "title": "クラス最高の圧縮",
+        "description": "同じ品質でWebPより30-50%小さい、JPEGより50-70%小さい"
+      },
+      {
+        "icon": "🎬",
+        "title": "AV1コーデック技術",
+        "description": "ロイヤリティフリーAV1ビデオコーデックに基づく - 最先端圧縮アルゴリズム"
+      },
+      {
+        "icon": "🌈",
+        "title": "HDRとワイドカラーガマット",
+        "description": "プロフェッショナル写真のためのHDRサポート付き10ビットおよび12ビット色深度"
+      },
+      {
+        "icon": "🎯",
+        "title": "知覚最適化",
+        "description": "高度な知覚チューニングにより低設定で優れた品質を維持"
+      },
+      {
+        "icon": "✨",
+        "title": "高度なアルファ圧縮",
+        "description": "優れた透明度圧縮 - PNGまたはWebPより優れる"
+      },
+      {
+        "icon": "🎞️",
+        "title": "フィルムグレイン合成",
+        "description": "ファイルサイズを削減しながら自然なフィルムグレインを保持"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "AVIF圧縮の仕組み",
+    "description": "AVIF圧縮の背後にある技術的原理を理解することは、画像について情報に基づいた決定を下すのに役立ちます。",
+    "items": [
+      {
+        "title": "AV1コーデック技術",
+        "description": "AVIFは画像に適合されたロイヤリティフリーAV1ビデオコーデック技術を使用し、優れた圧縮効率を提供します。",
+        "icon": "🎬",
+        "benefits": [
+          "より良い圧縮率",
+          "ロイヤリティフリー技術",
+          "オープンスタンダード",
+          "将来性のある形式"
+        ]
+      },
+      {
+        "title": "高度な色科学",
+        "description": "AVIFはワイドカラーガマット、HDR、高ビット深度をサポートし、プロフェッショナルグレードの画質を実現します。",
+        "icon": "🎨",
+        "benefits": [
+          "10ビットおよび12ビット色",
+          "HDRサポート",
+          "ワイドカラーガマット",
+          "プロフェッショナル品質"
+        ]
+      },
+      {
+        "title": "インテリジェント最適化",
+        "description": "AVIFは知覚最適化を使用して、最大圧縮を達成しながら視覚的品質を維持します。",
+        "icon": "🧠",
+        "benefits": [
+          "知覚品質最適化",
+          "コンテンツ認識圧縮",
+          "適応エンコーディング戦略",
+          "人間の視覚用に最適化"
+        ]
+      },
+      {
+        "title": "効率的なアルファ圧縮",
+        "description": "AVIFは透明度データを効率的に圧縮するために高度なアルゴリズムを使用し、アルファチャネルを持つ画像でPNGまたはWebPより優れた結果を実現します。",
+        "icon": "✨",
+        "benefits": [
+          "優れたアルファ圧縮",
+          "透明度を持つより小さいファイル",
+          "完全なアルファチャネルサポート",
+          "Webグラフィックに最適"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "AVIF圧縮を使用する場合",
+    "description": "AVIF圧縮は、優れた品質で最良の圧縮を必要とするモダンアプリケーションに最適です。",
+    "items": [
+      {
+        "title": "次世代Webアプリ",
+        "description": "パフォーマンスと品質を優先するモダンWebアプリケーションに最適です。",
+        "content": "AVIFはWeb画像の未来であり、帯域幅を意識するアプリケーションのために比類のない圧縮効率を提供します。",
+        "icon": "🚀"
+      },
+      {
+        "title": "高品質写真",
+        "description": "効率的なストレージで最大品質を必要とするプロフェッショナル写真に最適です。",
+        "content": "AVIFのHDRサポートと高ビット深度は、プロフェッショナル写真ワークフローに最適です。",
+        "icon": "📸"
+      },
+      {
+        "title": "ストリーミングサービス",
+        "description": "ビデオストリーミングプラットフォームとメディアサービスに優れています。",
+        "content": "AVIFの効率的な圧縮は、優れた視覚的品質を維持しながら帯域幅コストを削減します。",
+        "icon": "🎥"
+      },
+      {
+        "title": "モバイルファーストデザイン",
+        "description": "帯域幅が限られているモバイルファーストアプリケーションに不可欠です。",
+        "content": "AVIFはデータ使用量を大幅に削減し、モバイルユーザー体験を改善しコストを削減します。",
+        "icon": "📱"
+      },
+      {
+        "title": "プレミアムコンテンツ",
+        "description": "最高品質を必要とするプレミアムコンテンツプラットフォームに最適です。",
+        "content": "AVIFは効率的な帯域幅使用でプレミアム品質のコンテンツ配信を可能にします。",
+        "icon": "⭐"
+      },
+      {
+        "title": "eコマース製品画像",
+        "description": "最小限のファイルサイズで高品質の製品写真を必要とするオンラインストアに最適です。",
+        "content": "AVIFにより、eコマースサイトは高速読み込み時間で詳細な製品画像を表示でき、コンバージョン率とユーザー体験を改善しながらJPEGと比較してCDNコストを40-60%削減します。",
+        "icon": "🛒"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "AVIF圧縮のベストプラクティス",
+    "description": "AVIF圧縮から最良の結果を得るために、これらの専門家のヒントに従ってください。",
+    "tips": [
+      {
+        "icon": "🚀",
+        "title": "次世代圧縮を活用",
+        "content": "AVIFはWebPより30-50%、JPEGより50-70%優れた圧縮を提供します。Web画像には品質75-85を使用してください—AVIFは高度な知覚最適化により低設定で優れた品質を維持します。ハイエンド写真またはHDRコンテンツの場合、AVIFの10ビットおよび12ビット色深度機能を完全に活用するために品質85-95を使用してください。"
+      },
+      {
+        "icon": "🎨",
+        "title": "モダンブラウザ用に最適化",
+        "content": "AVIFは90%+のユーザーによってサポートされています (Chrome、Edge、Firefox、Safari 16+)。AVIFプライマリ、WebPおよびJPEG/PNGフォールバックで<picture>要素を使用して最大互換性を実現します。AVIFエンコーディングはJPEG/WebPより遅いため、オンザフライではなくビルド時に画像を事前生成してください。"
+      },
+      {
+        "icon": "⚡",
+        "title": "品質対サイズ比を最大化",
+        "content": "AVIFは小さいファイルサイズで高品質画像に優れています。品質が重要なヒーロー画像、製品写真、高解像度ディスプレイに使用してください。写真コンテンツのために適応量子化とフィルムグレイン合成を有効にします。単純なグラフィックまたはアニメーションの場合、より大きいファイルサイズにもかかわらずWebPまたはPNGがより効率的である可能性があります。"
+      },
+      {
+        "icon": "📦",
+        "title": "戦略的実装",
+        "content": "高影響画像 (ヒーローセクション、製品写真、フィーチャーコンテンツ) から開始します。エンコード時間とサーバー負荷を監視してください—AVIFエンコーディングはJPEGより5-10倍遅くなる可能性があります。開発には高速エンコード速度 (6-8)、本番には低速度 (2-4) を使用して品質と処理時間のバランスを取ります。AVIF配信のためのCDNサポートを検討してください。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "AVIF圧縮と当社のAVIF圧縮ツールに関する一般的な質問。",
+    "items": [
+      {
+        "question": "AVIF形式とは何ですか？",
+        "answer": "AVIFは、AV1ビデオコーデックに基づく次世代画像形式で、優れた圧縮効率とHDRサポートやワイドカラーガマットなどの高度な機能を提供します。"
+      },
+      {
+        "question": "AVIFはJPEGおよびWebPとどのように比較されますか？",
+        "answer": "AVIFは通常、優れた画質を維持しながらJPEGより50%、WebPより20-30%優れた圧縮を提供します。"
+      },
+      {
+        "question": "すべてのブラウザがAVIFをサポートしていますか？",
+        "answer": "Chrome、Firefox、SafariなどのモダンブラウザはAVIFをサポートしていますが、古いブラウザはサポートしていない可能性があります。フォールバック形式を提供することをお勧めします。"
+      },
+      {
+        "question": "AVIFは透明度をサポートしていますか？",
+        "answer": "はい、AVIFはPNGおよびWebPと同様にアルファチャネルで透明度を完全にサポートします。"
+      },
+      {
+        "question": "AVIFのHDRサポートとは何ですか？",
+        "answer": "AVIFは10ビットおよび12ビット色深度でハイダイナミックレンジ (HDR) イメージングをサポートし、互換性のあるディスプレイのために見事な画質を可能にします。"
+      },
+      {
+        "question": "AVIFをいつ使用すべきですか？",
+        "answer": "AVIFは、最大圧縮効率と品質が優先事項であるモダンWebアプリケーション、モバイルアプリ、およびシナリオに最適です。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "その他のツールを探索",
+    "items": [
+      {
+        "title": "WebP圧縮",
+        "description": "WebP画像を圧縮",
+        "path": "/compressor/compress-webp"
+      },
+      {
+        "title": "JPEG変換",
+        "description": "JPEG形式に変換",
+        "path": "/converter/convert-avif-to-jpeg"
+      },
+      {
+        "title": "画像変換",
+        "description": "異なる画像形式間で変換",
+        "path": "/converter"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "{format}形式をサポート、最大50MB",
+      "selectFiles": "ファイルを選択"
+    },
+    "files": {
+      "title": "選択されたファイル",
+      "count": "{count}ファイル",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "{format}を圧縮",
+      "processing": "圧縮中... {progress}%"
+    },
+    "progress": {
+      "label": "処理中...",
+      "compressing": "{format}画像を圧縮中..."
+    },
+    "results": {
+      "title": "圧縮完了！🎉",
+      "subtitle": "画像が正常に最適化されました",
+      "original": "元",
+      "compressed": "圧縮済み",
+      "saved": "節約",
+      "time": "時間",
+      "format": "形式",
+      "compressionRatio": "圧縮率",
+      "sizeReduction": "サイズ削減",
+      "sizeIncrease": "サイズ増加",
+      "greatJob": "素晴らしい仕事！",
+      "considerAdjusting": "設定の調整を検討してください",
+      "savedSpace": "{amount} MB節約",
+      "successMessage": "素晴らしい圧縮！",
+      "successDescription": "画像は優れた品質を維持しながら{ratio}%小さくなりました。Web使用用に最適化されました！",
+      "download": "ダウンロード",
+      "compressMore": "もっと圧縮",
+      "reset": "リセット",
+      "sizeInfo": "元: {original} MB → 圧縮済み: {compressed} MB ({ratio}%削減)"
+    },
+    "settings": {
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "advancedTitle": "詳細設定",
+      "quality": "品質",
+      "qualityLow": "低",
+      "qualityMedium": "中",
+      "qualityHigh": "高",
+      "metadata": "メタデータを保持",
+      "metadataDesc": "EXIF、GPS、カメラ情報"
+    },
+    "actions": {
+      "downloadAll": "すべてダウンロード",
+      "reset": "リセット"
+    },
+    "error": {
+      "title": "エラー",
+      "tip": "💡ヒント: ファイルが有効な画像 (PNG、JPEG、WebP、AVIF、GIF) で50MB未満であることを確認してください",
+      "unknownError": "不明なエラー",
+      "processingFailed": "{fileName}の処理に失敗しました",
+      "compressionFailed": "圧縮に失敗しました"
+    },
+    "status": {
+      "starting": "圧縮を開始中...",
+      "processing": "圧縮中... {progress}%",
+      "completed": "圧縮完了！"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "Herramientas de Imagen Online Gratuitas",
+    "description": "Herramientas avanzadas de compresión y conversión de imágenes impulsadas por algoritmos de vanguardia. Reduce el tamaño de archivo hasta un 90% manteniendo la calidad perfecta. Ultrarrápido, completamente seguro y 100% gratuito para siempre.",
+    "getStarted": "Empezar a Comprimir",
+    "learnMore": "Probar Convertidor",
+    "stats": {
+      "sizeReduction": "Hasta 90% de Reducción",
+      "supportedFormats": "16+ Formatos Soportados",
+      "freeSecure": "100% Gratis y Seguro",
+      "processingSpeed": "Procesamiento Subsegundo",
+      "privacy": "Procesamiento Local",
+      "reliability": "99.9% Disponibilidad"
+    }
+  },
+  "features": {
+    "title": "¿Por Qué Elegir TinyCompressor?",
+    "subtitle": "Tecnología avanzada de procesamiento de imágenes con características fáciles de usar",
+    "free": {
+      "title": "100% Gratis Para Siempre",
+      "description": "Sin costos ocultos, sin suscripciones, sin límites - completamente gratis para siempre"
+    },
+    "secure": {
+      "title": "Privacidad Primero",
+      "description": "Todo el procesamiento ocurre localmente en tu navegador - tus archivos nunca salen de tu dispositivo"
+    },
+    "fast": {
+      "title": "Ultrarrápido",
+      "description": "Algoritmos optimizados potenciados por WebAssembly para las velocidades de procesamiento más rápidas"
+    },
+    "quality": {
+      "title": "Calidad Profesional",
+      "description": "Algoritmos avanzados garantizan resultados óptimos tanto para usuarios ocasionales como profesionales"
+    },
+    "global": {
+      "title": "Accesibilidad Global",
+      "description": "Disponible en 11 idiomas con diseño responsivo para todos los dispositivos"
+    },
+    "mobile": {
+      "title": "Optimizado para Móviles",
+      "description": "Experiencia perfecta en todos los dispositivos con interfaz táctil"
+    }
+  },
+  "tools": {
+    "title": "Elige Tu Herramienta",
+    "subtitle": "Herramientas de grado profesional para todas tus necesidades de procesamiento de imágenes",
+    "statsLabels": {
+      "compression": "Compresión",
+      "formats": "Formatos",
+      "processing": "Procesamiento",
+      "quality": "Calidad",
+      "speed": "Velocidad"
+    },
+    "compressor": {
+      "title": "Compresor de Imágenes",
+      "description": "Reduce el tamaño de archivo manteniendo la calidad con nuestros algoritmos avanzados de compresión",
+      "button": "Empezar a Comprimir",
+      "features": [
+        "Soporte para PNG, JPG, WebP, AVIF, GIF, BMP",
+        "Procesamiento por lotes para múltiples archivos",
+        "Control de calidad avanzado con vista previa en tiempo real",
+        "Opciones de compresión con y sin pérdida",
+        "Preservación y eliminación de metadatos",
+        "Configuraciones de compresión personalizadas"
+      ],
+      "stats": {
+        "compression": "Hasta 90%",
+        "formats": "6+ formatos",
+        "processing": "< 3 segundos"
+      }
+    },
+    "converter": {
+      "title": "Convertidor de Imágenes",
+      "description": "Convierte entre diferentes formatos de imagen con precisión y velocidad usando algoritmos profesionales",
+      "button": "Empezar a Convertir",
+      "features": [
+        "Conversión de formato entre 10+ formatos",
+        "Algoritmos de preservación de calidad",
+        "Capacidades de procesamiento por lotes",
+        "Múltiples opciones de formato de salida",
+        "Conversión de espacio de color",
+        "Manejo de transparencia"
+      ],
+      "stats": {
+        "formats": "10+ formatos",
+        "quality": "Sin pérdida",
+        "speed": "Instantáneo"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "subtitle": "Procesamiento de imágenes simple, rápido y seguro en tres pasos fáciles",
+    "steps": [
+      {
+        "title": "Subir Imágenes",
+        "description": "Arrastra y suelta o haz clic para subir tus imágenes. Soporte para subidas por lotes.",
+        "details": "Soporta todos los formatos principales con vista previa instantánea"
+      },
+      {
+        "title": "Elegir Configuración",
+        "description": "Selecciona nivel de compresión, calidad o formato objetivo con vista previa en tiempo real.",
+        "details": "Opciones avanzadas para resultados profesionales"
+      },
+      {
+        "title": "Procesar y Descargar",
+        "description": "Obtén imágenes optimizadas al instante con estadísticas detalladas de compresión.",
+        "details": "Descarga por lotes con estructura de archivos organizada"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Perfecto para Cada Caso de Uso",
+    "subtitle": "Desde desarrollo web hasta redes sociales, optimiza imágenes para cualquier propósito",
+    "categories": [
+      {
+        "title": "Desarrollo Web",
+        "description": "Optimiza imágenes para carga más rápida del sitio web y mejor experiencia del usuario",
+        "icon": "🌐"
+      },
+      {
+        "title": "Aplicaciones Móviles",
+        "description": "Optimiza recursos de imagen para aplicaciones iOS y Android",
+        "icon": "📱"
+      },
+      {
+        "title": "Comercio Electrónico",
+        "description": "Comprime imágenes de productos para mejorar el rendimiento de la tienda online",
+        "icon": "🛒"
+      },
+      {
+        "title": "Redes Sociales",
+        "description": "Optimiza imágenes para varias plataformas sociales",
+        "icon": "📢"
+      },
+      {
+        "title": "Trabajo de Diseño",
+        "description": "Optimiza el flujo de trabajo para diseñadores y profesionales creativos",
+        "icon": "🎨"
+      },
+      {
+        "title": "Creación de Contenido",
+        "description": "Optimiza imágenes para blogs, noticias y plataformas de contenido",
+        "icon": "📝"
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para Optimizar Tus Imágenes?",
+    "description": "Únete a millones de usuarios que confían en TinyCompressor para sus necesidades de procesamiento de imágenes. ¡Comienza a optimizar tus imágenes hoy y experimenta la diferencia!",
+    "getStarted": "Empezar Ahora",
+    "learnMore": "Saber Más"
+  }
+}

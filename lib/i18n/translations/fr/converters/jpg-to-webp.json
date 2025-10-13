@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "Convertisseur JPG vers WebP - Convertir des Images JPG en Ligne",
+    "description": "Convertissez des images JPG en format WebP en ligne. Convertisseur JPG vers WebP gratuit, rapide et facile à utiliser.",
+    "keywords": "JPG vers WebP, convertir JPG, convertisseur d'images, outil en ligne"
+  },
+  "hero": {
+    "title": "Convertisseur JPG vers WebP",
+    "subtitle": "Convertissez des images JPG en format WebP en ligne",
+    "description": "Convertissez des images JPG en format WebP pour une meilleure compression et une performance web moderne tout en maintenant une excellente qualité."
+  },
+  "features": {
+    "title": "Fonctionnalités de Conversion JPG vers WebP",
+    "description": "Pourquoi convertir JPG en WebP pour une meilleure performance web",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "Fichiers 25-35% Plus Petits",
+        "description": "WebP offre une meilleure compression que JPG à même qualité"
+      },
+      {
+        "icon": "✨",
+        "title": "Meilleure Qualité",
+        "description": "Qualité d'image supérieure à tailles de fichier équivalentes"
+      },
+      {
+        "icon": "🎨",
+        "title": "Support de Transparence",
+        "description": "WebP supporte le canal alpha, JPG non"
+      },
+      {
+        "icon": "🌐",
+        "title": "Support Navigateur 95%+",
+        "description": "Supporté par tous les navigateurs modernes depuis 2020"
+      },
+      {
+        "icon": "⚡",
+        "title": "Conversion par Lots",
+        "description": "Convertissez plusieurs fichiers JPG en WebP simultanément"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Sécurisé",
+        "description": "Toute conversion se fait localement dans votre navigateur"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Comparaison des Formats JPG vs WebP",
+    "subtitle": "Comprendre les différences entre les formats JPG et WebP",
+    "jpg": {
+      "description": "JPG (JPEG) est un format de compression avec perte largement utilisé pour les photographies numériques.",
+      "features": [
+        "Compression avec perte",
+        "Compatibilité universelle",
+        "Idéal pour les photos",
+        "Pas de support de transparence"
+      ]
+    },
+    "webp": {
+      "description": "WebP est un format d'image moderne qui offre une compression supérieure par rapport à JPG.",
+      "features": [
+        "Meilleure compression",
+        "Support de transparence",
+        "Modes avec et sans perte",
+        "Support navigateur moderne"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Comment Fonctionne la Conversion JPG vers WebP",
+    "description": "Comprendre les avantages techniques de WebP par rapport à JPG",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "Technologie de Compression Avancée",
+        "description": "WebP utilise le codage prédictif VP8/VP9 au lieu du DCT de JPG, atteignant une compression 25-35% meilleure à même qualité grâce à la prédiction de blocs avancée et au codage d'entropie.",
+        "benefits": [
+          "Compression VP8/VP9 vs DCT",
+          "25-35% plus petit à même qualité",
+          "Meilleure prédiction de blocs",
+          "Codage d'entropie efficace"
+        ]
+      },
+      {
+        "icon": "🎯",
+        "title": "Préservation de la Qualité",
+        "description": "Convertir JPG en WebP peut maintenir ou améliorer la qualité perçue. Les algorithmes avancés de WebP gèrent mieux les artefacts de compression, en particulier dans les dégradés et textures.",
+        "benefits": [
+          "Qualité maintenue ou améliorée",
+          "Meilleur traitement des dégradés",
+          "Artefacts de blocs réduits",
+          "Textures plus lisses"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "Ajout de Transparence",
+        "description": "Contrairement à JPG, WebP supporte la transparence du canal alpha. Bien que la conversion n'ajoute pas automatiquement de transparence, le format permet une édition future avec support de transparence.",
+        "benefits": [
+          "Support du canal alpha",
+          "Transparence 8 bits (256 niveaux)",
+          "Prêt pour l'édition de transparence",
+          "Plus petit que PNG avec alpha"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Contrôle de Qualité Flexible",
+        "description": "WebP offre un contrôle de qualité fin (0-100) avec un meilleur ratio qualité-taille que JPG. Même qualité que JPG à taille 25-35% plus petite, ou meilleure qualité à même taille.",
+        "benefits": [
+          "Plage de qualité 0-100",
+          "Meilleur ratio qualité/taille",
+          "Mode sans perte disponible",
+          "Optimisé pour la livraison web"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quand et Comment Convertir JPG vers WebP",
+    "description": "Scénarios courants et meilleures pratiques pour la conversion JPG vers WebP",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Optimisation de Performance du Site Web",
+        "description": "Modernisez votre site web avec une meilleure compression d'image.",
+        "content": "Convertissez les photos JPG en WebP pour des fichiers 25-35% plus petits à même qualité. Essentiel pour les sites riches en images, blogs et portfolios. Utilisez qualité 80-85 pour les photos (correspond à qualité JPG 85-90). Implémentez l'élément <picture> avec WebP primaire, fallback JPG pour support navigateur 95%+. Priorisez les images hero, photos de produits et contenu au-dessus de la ligne de flottaison pour un impact maximum."
+      },
+      {
+        "icon": "📱",
+        "title": "Mobile et E-commerce",
+        "description": "Améliorez l'expérience mobile et les taux de conversion.",
+        "content": "La réduction de taille de 25-35% de WebP améliore considérablement les temps de chargement mobile. Critique pour le e-commerce où 1 seconde de délai = 7% de perte de conversion. Convertissez les photos de produits en WebP (qualité 80-85). Utilisez WebP avec perte pour les images de catalogue, sans perte pour les produits phares. Testez sur de vrais appareils mobiles - le décodage WebP est accéléré par matériel sur les smartphones modernes."
+      },
+      {
+        "icon": "📸",
+        "title": "Sites de Photographie et Portfolio",
+        "description": "Affichez des photos avec une meilleure qualité et des tailles plus petites.",
+        "content": "WebP préserve la qualité photographique tout en réduisant la bande passante. Utilisez qualité 85-90 pour les photos de portfolio (mieux que JPG 90-95 en plus petit). Convertissez les images de galerie en WebP pour une navigation plus rapide. Fournissez des téléchargements JPG pour les clients nécessitant une compatibilité universelle. Le meilleur traitement des dégradés de WebP réduit les bandes dans les ciels et surfaces lisses."
+      },
+      {
+        "icon": "💾",
+        "title": "Stockage Cloud et CDN",
+        "description": "Réduisez les coûts de stockage et bande passante.",
+        "content": "Convertir JPG en WebP réduit les coûts de stockage cloud et CDN de 25-35%. Convertissez par lots des bibliothèques photo entières pour des économies immédiates. Utilisez qualité 80-85 pour le contenu général, 85-90 pour le contenu premium. Surveillez le support navigateur (95%+) et servez WebP aux navigateurs supportés, JPG aux anciens. Le ROI est significatif pour les sites à fort trafic."
+      },
+      {
+        "icon": "📰",
+        "title": "Sites d'Actualités et de Contenu",
+        "description": "Améliorez la vitesse de chargement de page et l'engagement utilisateur.",
+        "content": "WebP réduit les tailles d'images d'articles de 25-35%, améliorant la vitesse de chargement de page et les classements SEO. Convertissez les images vedettes et photos en ligne en WebP (qualité 80-85). Utilisez le chargement différé avec WebP pour les images sous la ligne de flottaison. Temps de chargement plus rapides = meilleur engagement et taux de rebond plus bas. Essentiel pour les sites soutenus par la publicité où la vitesse affecte les revenus."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Quand Garder JPG",
+        "description": "Scénarios où JPG est toujours le meilleur choix.",
+        "content": "Gardez JPG si : 1) Besoin de compatibilité universelle (emails, systèmes anciens), 2) Ciblant utilisateurs Safari <14 ou Chrome <85 (vérifiez analytics), 3) Travaillant avec flux de travail d'impression, 4) Les livrables clients nécessitent format JPG. WebP excelle pour les applications web modernes avec support navigateur 95%+. Utilisez amélioration progressive : fallback WebP → JPG."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "description": "Questions courantes sur la conversion JPG vers WebP",
+    "items": [
+      {
+        "question": "La conversion JPG vers WebP améliore-t-elle la qualité de l'image ?",
+        "answer": "Convertir JPG en WebP ne restaure pas la qualité perdue lors de la compression JPG d'origine, mais les algorithmes avancés de WebP peuvent maintenir ou améliorer la qualité perçue. À même taille de fichier, WebP paraît souvent mieux que JPG grâce à une technologie de compression supérieure. Pour de meilleurs résultats, convertissez à partir du JPG de plus haute qualité disponible. Le meilleur traitement des dégradés de WebP réduit les bandes et artefacts de blocs."
+      },
+      {
+        "question": "De combien les fichiers WebP sont-ils plus petits que JPG ?",
+        "answer": "WebP offre une compression 25-35% meilleure que JPG à qualité équivalente. Par exemple, une photo JPG de 1MB peut devenir un WebP de 650-750KB avec même qualité visuelle. Les économies réelles dépendent du contenu de l'image - les photos avec dégradés et textures voient une meilleure compression. Vous pouvez aussi choisir une meilleure qualité à même taille, ou même qualité à taille plus petite."
+      },
+      {
+        "question": "Quels navigateurs supportent le format WebP ?",
+        "answer": "WebP a un support navigateur de 95%+ dès 2024. Supporté par Chrome 23+ (2012), Firefox 65+ (2019), Edge 18+ (2018), Safari 14+ (2020) et Opera 12.1+ (2012). Le support mobile inclut Chrome Android, Safari iOS 14+ et Samsung Internet 4+. Pour les navigateurs anciens, implémentez l'élément <picture> avec WebP primaire et fallback JPG."
+      },
+      {
+        "question": "Puis-je convertir JPG en WebP sans perte de qualité ?",
+        "answer": "Puisque JPG est déjà avec perte, convertir en WebP préserve la qualité actuelle mais ne peut pas restaurer les données perdues lors de la compression JPG d'origine. Pour de meilleurs résultats : 1) Convertissez à partir du JPG de plus haute qualité, 2) Utilisez qualité WebP 80-90 pour égaler ou dépasser la qualité JPG, 3) Comparez visuellement avant déploiement. Le mode sans perte de WebP est disponible mais résulte en fichiers plus grands que WebP avec perte."
+      },
+      {
+        "question": "Dois-je convertir toutes les images JPG en WebP ?",
+        "answer": "Pour les sites web modernes, oui - WebP fournit des avantages significatifs de performance avec support navigateur 95%+. Cependant : 1) Implémentez amélioration progressive (fallback WebP → JPG), 2) Gardez JPG pour les emails et compatibilité universelle, 3) Surveillez le support navigateur de votre audience, 4) Utilisez qualité 80-85 pour contenu général. WebP est idéal pour les sites priorisant la performance et le support navigateur moderne."
+      },
+      {
+        "question": "La conversion JPG vers WebP est-elle gratuite et sécurisée ?",
+        "answer": "Oui, notre convertisseur JPG vers WebP est entièrement gratuit sans inscription, filigranes ou paiement requis. Toute conversion se fait localement dans votre navigateur en utilisant WebAssembly - vos images ne quittent jamais votre appareil. Cela garantit 100% de confidentialité et sécurité, sans téléchargements serveur, collecte de données ou accès tiers. L'encodage WebP est effectué entièrement côté client."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Outils Connexes",
+    "description": "Explorez plus d'outils de conversion et compression d'images",
+    "items": [
+      {
+        "title": "Convertisseur WebP vers JPG",
+        "description": "Convertir des images WebP en format JPG",
+        "url": "/converter/convert-webp-to-jpg"
+      },
+      {
+        "title": "Compression JPG",
+        "description": "Optimiser davantage les fichiers JPG",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Compression WebP",
+        "description": "Optimiser les fichiers WebP pour des tailles encore plus petites",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Glissez-déposez des fichiers JPG ici ou cliquez pour sélectionner",
+      "subtitle": "Supporte le format JPG/JPEG, jusqu'à {maxFiles} fichiers, maximum 10MB chacun",
+      "selectFiles": "Sélectionner des Fichiers JPG"
+    },
+    "errors": {
+      "maxFiles": "Maximum {maxFiles} fichiers autorisés",
+      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Sélectionnez des fichiers de moins de 10MB",
+      "unsupportedFormat": "Format de fichier non supporté : {fileName}. Seuls les fichiers JPG/JPEG sont supportés.",
+      "uploadFailed": "Échec du téléchargement du fichier",
+      "conversionFailed": "La conversion a échoué. Veuillez réessayer."
+    },
+    "files": {
+      "title": "Fichiers JPG Sélectionnés",
+      "count": "{count} fichiers sélectionnés",
+      "reset": "Réinitialiser Tout",
+      "remove": "Supprimer",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Convertir en WebP",
+      "simpleStart": "Conversion Rapide JPG vers WebP",
+      "advancedStart": "Convertir JPG vers WebP (Avancé)",
+      "processing": "Conversion en WebP... {progress}%"
+    },
+    "progress": {
+      "label": "Progression de la Conversion",
+      "status": "Conversion JPG vers WebP... {progress}% terminé"
+    },
+    "settings": {
+      "title": "Paramètres de Conversion WebP",
+      "simple": "Simple",
+      "advanced": "Avancé",
+      "simpleTitle": "Paramètres Rapides",
+      "advancedTitle": "Paramètres WebP Avancés",
+      "quality": "Qualité",
+      "qualityHighest": "Maximale (95)",
+      "qualityHigh": "Élevée (90)",
+      "qualityMedium": "Équilibrée (85)",
+      "qualityLow": "Petite Taille (80)",
+      "qualityLowest": "Minimale (75)",
+      "compressionMode": "Mode de Compression",
+      "compressionLossy": "Avec Perte (Recommandé)",
+      "compressionLossless": "Sans Perte (Fichiers plus grands)",
+      "sharpness": "Netteté",
+      "sharpnessAuto": "Automatique",
+      "sharpnessSharp": "Nette (7)",
+      "sharpnessMedium": "Moyenne (4)",
+      "sharpnessSoft": "Douce (0)",
+      "metadata": "Préserver les Métadonnées",
+      "optimize": "Optimiser pour le Web",
+      "presetBalanced": "Équilibré",
+      "presetBalancedDesc": "Qualité 85, bonne compression",
+      "presetQuality": "Haute Qualité",
+      "presetQualityDesc": "Qualité 90, fichiers plus grands",
+      "presetSmall": "Compression Maximale",
+      "presetSmallDesc": "Qualité 80, fichiers plus petits"
+    },
+    "downloadAll": "Télécharger Tous les Fichiers WebP",
+    "results": {
+      "title": "Résultats de Conversion WebP",
+      "count": "{count} fichiers JPG convertis en WebP",
+      "sizeInfo": "JPG Original : {original} MB → WebP : {converted} MB (réduction de {change}%)",
+      "download": "Télécharger WebP"
+    }
+  }
+}

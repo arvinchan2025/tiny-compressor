@@ -1,0 +1,284 @@
+{
+  "seo": {
+    "title": "GIF Compressor - Compress Animated GIFs and Images Online",
+    "description": "Compress GIF images online with advanced optimization. Reduce file size while preserving animation quality and visual fidelity.",
+    "keywords": [
+      "GIF compressor",
+      "animated GIF",
+      "GIF optimization",
+      "image compression",
+      "online tool"
+    ]
+  },
+  "hero": {
+    "title": "GIF Compressor",
+    "subtitle": "Compress animated GIFs and static images with advanced optimization",
+    "description": "Compress GIF images online with intelligent optimization that reduces file size while preserving animation quality and visual fidelity.",
+    "badge": "Compressor"
+  },
+  "features": {
+    "title": "GIF Format Features",
+    "description": "Why GIF remains essential for animations and compatibility",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "Native Animation Support",
+        "description": "Frame-based animation built into the format - no video codec needed"
+      },
+      {
+        "icon": "🌍",
+        "title": "Universal Compatibility",
+        "description": "100% support across all browsers, devices, and email clients - even legacy systems"
+      },
+      {
+        "icon": "🎨",
+        "title": "256 Color Palette",
+        "description": "Efficient for graphics with limited colors - perfect for logos and simple animations"
+      },
+      {
+        "icon": "🔄",
+        "title": "LZW Lossless Compression",
+        "description": "Lossless compression algorithm preserves every pixel perfectly"
+      },
+      {
+        "icon": "✨",
+        "title": "Single-Color Transparency",
+        "description": "Index-based transparency for clean edges on any background"
+      },
+      {
+        "icon": "📧",
+        "title": "Email-Safe Format",
+        "description": "Only animated format with universal email client support"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "How GIF Compression Works",
+    "description": "Understanding the technical principles behind GIF compression helps you make informed decisions about your animations.",
+    "items": [
+      {
+        "title": "LZW Compression Algorithm",
+        "description": "GIF uses the LZW (Lempel-Ziv-Welch) lossless compression algorithm to identify and compress repeated patterns in image data.",
+        "icon": "🔄",
+        "benefits": [
+          "Lossless compression",
+          "Pattern-based efficiency",
+          "Universal support",
+          "Fast processing"
+        ]
+      },
+      {
+        "title": "Color Palette Optimization",
+        "description": "GIF supports up to 256 colors (8-bit) per frame. Intelligent palette reduction minimizes file size while preserving visual quality.",
+        "icon": "🎨",
+        "benefits": [
+          "Adaptive palette selection",
+          "Per-frame optimization",
+          "Dithering support",
+          "Color quantization"
+        ]
+      },
+      {
+        "title": "Frame Delta Compression",
+        "description": "Animated GIFs store only the differences between frames, significantly reducing file size for animations with minimal changes.",
+        "icon": "🎬",
+        "benefits": [
+          "Efficient animation storage",
+          "Frame-to-frame optimization",
+          "Disposal method control",
+          "Reduced redundancy"
+        ]
+      },
+      {
+        "title": "Transparency Handling",
+        "description": "GIF supports single-color transparency, allowing one color in the palette to be designated as transparent.",
+        "icon": "✨",
+        "benefits": [
+          "Index-based transparency",
+          "No alpha channel overhead",
+          "Efficient compression",
+          "Universal compatibility"
+        ]
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Drag and drop your file here or click to select",
+      "subtitle": "Support {format} format, max 50MB",
+      "selectFiles": "Select File"
+    },
+    "files": {
+      "title": "Selected Files",
+      "count": "{count} files",
+      "remove": "Remove",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "Compress {format}",
+      "processing": "Compressing... {progress}%"
+    },
+    "progress": {
+      "label": "Processing...",
+      "compressing": "Compressing your {format} image..."
+    },
+    "results": {
+      "title": "Compression Complete! 🎉",
+      "subtitle": "Your image has been successfully optimized",
+      "original": "Original",
+      "compressed": "Compressed",
+      "saved": "Saved",
+      "time": "Time",
+      "format": "Format",
+      "compressionRatio": "Compression Ratio",
+      "sizeReduction": "Size Reduction",
+      "sizeIncrease": "Size Increase",
+      "greatJob": "Great job!",
+      "considerAdjusting": "Consider adjusting settings",
+      "savedSpace": "Saved {amount} MB",
+      "successMessage": "Great compression!",
+      "successDescription": "Your image is now {ratio}% smaller while maintaining excellent quality. Optimized for web use!",
+      "download": "Download",
+      "compressMore": "Compress More",
+      "reset": "Reset",
+      "sizeInfo": "Original: {original} MB → Compressed: {compressed} MB ({ratio}% reduction)"
+    },
+    "settings": {
+      "simple": "Simple",
+      "advanced": "Advanced",
+      "advancedTitle": "Advanced Settings",
+      "quality": "Quality",
+      "qualityLow": "Low",
+      "qualityMedium": "Medium",
+      "qualityHigh": "High",
+      "metadata": "Keep Metadata",
+      "metadataDesc": "EXIF, GPS, camera info"
+    },
+    "actions": {
+      "downloadAll": "Download All",
+      "reset": "Reset"
+    },
+    "error": {
+      "title": "Error",
+      "tip": "💡 Tip: Make sure your file is a valid image (PNG, JPEG, WebP, AVIF, GIF) and under 50MB",
+      "unknownError": "Unknown error",
+      "processingFailed": "Failed to process {fileName}",
+      "compressionFailed": "Compression failed"
+    },
+    "status": {
+      "starting": "Starting compression...",
+      "processing": "Compressing... {progress}%",
+      "completed": "Compression completed!"
+    }
+  },
+  "useCases": {
+    "title": "When to Use GIF Compression",
+    "description": "GIF compression is ideal for animations and graphics with limited colors.",
+    "items": [
+      {
+        "title": "Animated Graphics",
+        "description": "Perfect for simple animations, loading indicators, and decorative elements.",
+        "content": "GIF's frame-based animation support makes it ideal for creating engaging visual elements like loading spinners, animated icons, and decorative website features.",
+        "icon": "🎬"
+      },
+      {
+        "title": "Logos & Icons",
+        "description": "Ideal for logos, icons, and simple graphics with limited colors.",
+        "content": "GIF's efficient compression of flat-color images makes it perfect for logos and icons, especially when animation is needed.",
+        "icon": "🎨"
+      },
+      {
+        "title": "Simple Illustrations",
+        "description": "Great for line art, diagrams, and illustrations with flat colors.",
+        "content": "GIF excels at compressing illustrations with solid colors and clean lines, making it ideal for infographics and diagrams.",
+        "icon": "✏️"
+      },
+      {
+        "title": "Web Graphics & UI Elements",
+        "description": "Excellent for web graphics, buttons, and user interface components.",
+        "content": "GIF's universal browser support and efficient compression make it perfect for web UI elements and interactive graphics.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Social Media Content",
+        "description": "Popular format for sharing animated content on social platforms.",
+        "content": "GIF animations are widely supported across social media platforms, making them perfect for creating shareable content.",
+        "icon": "📱"
+      },
+      {
+        "title": "Email Marketing",
+        "description": "Safe format for animated content in email campaigns with universal client support.",
+        "content": "GIF is the only animated image format with near-universal email client support. Perfect for animated banners, product showcases, and call-to-action elements in email marketing campaigns where modern formats like WebP or video aren't supported.",
+        "icon": "📧"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "GIF Compression Best Practices",
+    "description": "Follow these expert tips to get the best results from GIF compression.",
+    "tips": [
+      {
+        "icon": "🎨",
+        "title": "Optimize Color Palette",
+        "content": "GIF is limited to 256 colors per frame. Reduce colors strategically—32-64 colors often suffices for simple animations. Use dithering for gradients, but disable it for flat-color graphics to reduce file size. Perceptual color quantization preserves visual quality better than uniform quantization."
+      },
+      {
+        "icon": "🎬",
+        "title": "Master Frame Optimization",
+        "content": "Remove duplicate or unnecessary frames—each frame adds to file size. Use frame disposal methods efficiently: 'Restore to Background' for animations with transparent areas, 'Do Not Dispose' for opaque animations. Optimize frame rate: 10-15 FPS is sufficient for most web animations, compared to video's 24-30 FPS."
+      },
+      {
+        "icon": "📦",
+        "title": "Know GIF's Modern Alternatives",
+        "content": "Use GIF only for simple, short animations (2-5 seconds) with limited colors. For complex animations, convert to MP4 video (90% smaller) or animated WebP (30-50% smaller with better quality). For static graphics, PNG provides better lossless compression. GIF's main advantage is universal compatibility—all browsers and platforms support it."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about GIF compression",
+    "items": [
+      {
+        "question": "What's the difference between GIF and other formats?",
+        "answer": "GIF supports animation and transparency, making it ideal for simple graphics with limited colors and animated content. Unlike JPEG, it uses lossless compression for solid colors, and unlike PNG, it supports frame-based animation."
+      },
+      {
+        "question": "How much can GIF files be compressed?",
+        "answer": "GIF compression depends on image complexity. Simple graphics with limited colors can achieve 50-80% size reduction, while complex images or photographs may only see 20-40% reduction due to the 256-color limitation."
+      },
+      {
+        "question": "Should I use GIF for photos?",
+        "answer": "GIF is not ideal for photos due to its 256-color limit, which can result in significant quality loss and color banding. Use JPEG for photographs or modern formats like WebP/AVIF for better compression with full color support."
+      },
+      {
+        "question": "How do I optimize GIF animations?",
+        "answer": "Optimize GIF animations by reducing the color palette, adjusting frame rate, removing unnecessary frames, using frame disposal methods efficiently, and considering the animation's purpose and duration. Keep animations short and simple for best results."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Related Tools",
+    "description": "Explore more image compression and conversion tools",
+    "items": [
+      {
+        "title": "PNG Compressor",
+        "description": "Compress PNG images",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPEG Compressor",
+        "description": "Compress JPEG images",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP Compressor",
+        "description": "Compress WebP images",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  }
+}
+
+
+
+

@@ -8,12 +8,12 @@ import StandardIcon from './StandardIcon';
 
 interface AccessibleFormFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
-  error?: string;
-  helperText?: string;
-  required?: boolean;
-  leftIcon?: React.ReactNode;
-  rightIcon?: React.ReactNode;
-  variant?: 'default' | 'error' | 'success';
+  error: string;
+  helperText: string;
+  required: boolean;
+  leftIcon: React.ReactNode;
+  rightIcon: React.ReactNode;
+  variant: 'default' | 'error' | 'success';
 }
 
 const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProps>(
@@ -52,7 +52,7 @@ const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProp
     const leftIconStyles = 'left-0 pl-3';
     const rightIconStyles = 'right-0 pr-3';
     
-    // 输入框样式
+    // 输入框样
     const inputStyles = leftIcon ? 'pl-10' : rightIcon ? 'pr-10' : '';
     
     const inputClasses = `
@@ -62,12 +62,12 @@ const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProp
       ${className}
     `.trim().replace(/\s+/g, ' ');
 
-    // ARIA属性
+    // ARIA属
     const describedBy = error ? errorId : helperText ? helperId : undefined;
     const formControlState: {
-      required?: boolean;
-      invalid?: boolean;
-      describedBy?: string;
+      required: boolean;
+      invalid: boolean;
+      describedBy: string;
     } = {
       required,
       invalid: !!error
@@ -86,7 +86,7 @@ const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProp
       });
     };
 
-    // 处理值变化
+    // 处理值变
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       setHasValue(event.target.value.length > 0);
       props.onChange?.(event);
@@ -118,7 +118,7 @@ const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProp
           )}
         </label>
 
-        {/* 输入框容器 */}
+        {/* 输入框容*/}
         <div className="relative">
           {/* 左侧图标 */}
           {leftIcon && (
@@ -127,7 +127,7 @@ const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProp
             </div>
           )}
 
-          {/* 输入框 */}
+          {/* 输入*/}
           <motion.input
             ref={ref}
             id={fieldId}
@@ -150,7 +150,7 @@ const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProp
             </div>
           )}
 
-          {/* 焦点指示器 */}
+          {/* 焦点指示*/}
           <motion.div
             className="absolute inset-0 rounded-lg border-2 border-blue-500 pointer-events-none"
             initial={{ opacity: 0 }}
@@ -188,7 +188,7 @@ const AccessibleFormField = forwardRef<HTMLInputElement, AccessibleFormFieldProp
           </motion.div>
         )}
 
-        {/* 屏幕阅读器文本 */}
+        {/* 屏幕阅读器文*/}
         <span className={screenReader.hiddenTextClass}>
           {`${label}${required ? ' required' : ''}${error ? ` error: ${error}` : ''}${helperText ? ` ${helperText}` : ''}`}
         </span>

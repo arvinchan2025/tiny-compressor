@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "submit": "Отправить",
+    "download": "Скачать",
+    "upload": "Загрузить",
+    "remove": "Удалить",
+    "clear": "Очистить",
+    "reset": "Сбросить",
+    "apply": "Применить",
+    "close": "Закрыть",
+    "back": "Назад",
+    "next": "Далее",
+    "previous": "Предыдущий",
+    "retry": "Повторить",
+    "selectAll": "Выбрать все",
+    "deselectAll": "Снять все",
+    "removeSelected": "Удалить выбранные"
+  },
+  "labels": {
+    "quality": "Качество",
+    "size": "Размер",
+    "format": "Формат",
+    "filename": "Имя файла",
+    "dimensions": "Размеры",
+    "fileSize": "Размер файла",
+    "compressionRatio": "Коэффициент сжатия",
+    "processingTime": "Время обработки"
+  },
+  "placeholders": {
+    "search": "Поиск...",
+    "enterFilename": "Введите имя файла",
+    "selectFormat": "Выберите формат",
+    "selectQuality": "Выберите качество"
+  },
+  "tooltips": {
+    "download": "Скачать файл",
+    "remove": "Удалить файл",
+    "preview": "Предпросмотр изображения",
+    "settings": "Открыть настройки",
+    "help": "Показать помощь"
+  },
+  "modals": {
+    "confirm": {
+      "title": "Подтвердите действие",
+      "message": "Вы уверены, что хотите продолжить?",
+      "yes": "Да",
+      "no": "Нет"
+    },
+    "error": {
+      "title": "Ошибка",
+      "message": "Произошла ошибка. Попробуйте снова."
+    },
+    "success": {
+      "title": "Успех",
+      "message": "Операция успешно завершена."
+    }
+  },
+  "fileUploader": {
+    "dragActive": "Отпустите файлы здесь",
+    "dragInactive": "Перетащите файлы сюда",
+    "dragReject": "Некоторые файлы не могут быть загружены",
+    "clickToUpload": "или нажмите для выбора файлов",
+    "supportedFormats": "Поддерживаемые форматы",
+    "maxSize": "Макс размер",
+    "maxFiles": "Макс файлов",
+    "errors": {
+      "fileTooLarge": "Файл {fileName} слишком большой. Максимальный размер: {maxSize}.",
+      "fileInvalidType": "Файл {fileName} имеет неверный тип. Поддерживаемые форматы: {formats}.",
+      "tooManyFiles": "Слишком много файлов. Максимально разрешено: {maxFiles}.",
+      "fileRejected": "Файл {fileName} был отклонен: {errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "{count} файл{plural} успешно загружен!"
+    }
+  },
+  "tabs": {
+    "simple": "Простые",
+    "advanced": "Расширенные"
+  },
+  "forms": {
+    "required": "Это поле обязательно",
+    "optional": "Необязательно",
+    "invalidFormat": "Неверный формат",
+    "invalidValue": "Неверное значение"
+  }
+}

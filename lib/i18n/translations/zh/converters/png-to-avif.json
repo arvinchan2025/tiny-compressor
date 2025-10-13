@@ -1,0 +1,283 @@
+{
+  "seo": {
+    "title": "PNG 转 AVIF - 在线转换 PNG 图片",
+    "description": "在线将 PNG 图片转换为 AVIF 格式。免费、快速且易于使用的 PNG 转 AVIF 转换器。",
+    "keywords": "PNG 转 AVIF, 转换 PNG, 图片转换器, 在线工具"
+  },
+  "hero": {
+    "title": "PNG 转 AVIF 转换器",
+    "subtitle": "在线将 PNG 图片转换为 AVIF 格式",
+    "description": "将 PNG 图片转换为 AVIF 格式，以获得下一代压缩和卓越质量，同时保持透明度支持。"
+  },
+  "features": {
+    "title": "PNG 转 AVIF 转换功能",
+    "description": "为什么要将 PNG 转换为下一代 AVIF 格式",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "压缩提升 50% 以上",
+        "description": "AVIF 提供出色的压缩，通常比 PNG 小 50-70%"
+      },
+      {
+        "icon": "✨",
+        "title": "卓越质量",
+        "description": "凭借先进的 AV1 编解码器技术，在更小的大小下提供更好的质量"
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR 和广色域",
+        "description": "支持 HDR 和 10 位/12 位色深"
+      },
+      {
+        "icon": "💎",
+        "title": "高级 Alpha 通道",
+        "description": "比 PNG 更高效的透明度压缩"
+      },
+      {
+        "icon": "⚡",
+        "title": "批量转换",
+        "description": "同时将多个 PNG 文件转换为 AVIF"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 安全",
+        "description": "所有转换均在您的浏览器本地进行"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs AVIF 格式对比",
+    "subtitle": "了解 PNG 和 AVIF 格式之间的差异",
+    "png": {
+      "description": "PNG（Portable Network Graphics）是一种支持无损数据压缩和透明度的光栅图形文件格式。",
+      "features": [
+        "无损压缩",
+        "透明度支持",
+        "非常适合图形和徽标",
+        "文件大小更大"
+      ]
+    },
+    "avif": {
+      "description": "AVIF 是基于 AV1 视频编解码器的下一代图像格式，提供出色的压缩效率。",
+      "features": [
+        "下一代压缩",
+        "卓越质量",
+        "透明度支持",
+        "HDR 和广色域"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "PNG 转 AVIF 转换原理",
+    "description": "了解下一代 AVIF 的技术优势",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "AV1 视频编解码器技术",
+        "description": "AVIF 利用 AV1 视频编解码器的帧内压缩，在保持或改善质量的同时实现比 PNG 高 50-70% 的压缩。",
+        "benefits": [
+          "AV1 帧内压缩",
+          "比 PNG 小 50-70%",
+          "感知优化",
+          "免版税编解码器"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "高级色彩和位深度",
+        "description": "AVIF 支持 HDR、广色域（BT.2020）和高达 12 位的色深，远远超过 PNG 的 8 位限制，可实现卓越的色彩再现。",
+        "benefits": [
+          "HDR 支持（HLG、PQ）",
+          "10 位和 12 位色深",
+          "广色域（BT.2020）",
+          "更好的渐变，无色带"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "高效的 Alpha 压缩",
+        "description": "AVIF 通过高级预测单独压缩 Alpha 通道，实现了比 PNG 简单的 DEFLATE 明显更好的透明度压缩。",
+        "benefits": [
+          "单独的 Alpha 压缩",
+          "高级预测模式",
+          "Alpha 数据小 50-60%",
+          "保持透明度质量"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "灵活的压缩模式",
+        "description": "AVIF 提供无损（完美质量，比 PNG 小 30-50%）和有损模式（小 70-80%，出色质量），具有精细控制。",
+        "benefits": [
+          "无损：比 PNG 小 30-50%",
+          "有损：小 70-80%，质量出色",
+          "质量范围 0-63",
+          "速度与质量权衡"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时以及如何将 PNG 转换为 AVIF",
+    "description": "PNG 转 AVIF 转换的常见场景和最佳实践",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "现代 Web 性能",
+        "description": "适用于尖端网站的下一代 Web 优化。",
+        "content": "将 PNG 转换为 AVIF，在相同或更好的质量下获得 50-70% 更小的文件。对于优先考虑性能的现代 Web 应用至关重要。对图形/徽标使用无损 AVIF（比 PNG 小 30-50%），对带透明度的照片使用有损 AVIF（质量 50-60，小 70-80%）。使用 <picture> 元素实现 AVIF 优先、WebP 后备、PNG 最终。截至 2024 年，92% 以上的浏览器支持（Chrome 85+、Firefox 93+、Safari 16+）。"
+      },
+      {
+        "icon": "📱",
+        "title": "移动端和 PWA 优化",
+        "description": "减少应用大小并改善移动性能。",
+        "content": "AVIF 非常适合每 KB 都很重要的移动应用和 PWA。小 50-70% 的文件意味着在蜂窝网络上加载更快。对 UI 资产使用无损，对内容图像使用有损（质量 50-55）。现代移动设备上的硬件解码支持可确保快速渲染。对于带宽有限的新兴市场至关重要。"
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR 和高质量图形",
+        "description": "保留 HDR 和广色域内容。",
+        "content": "AVIF 是唯一支持 HDR 和 10 位/12 位色深的 Web 格式。将 PNG 转换为 AVIF 以保留广色域（BT.2020）和 HDR 内容（HLG、PQ）。对于摄影作品集、设计展示和高级内容至关重要。消除 PNG 的 8 位限制导致的渐变中的色带。为 HDR 显示器提供面向未来的支持。"
+      },
+      {
+        "icon": "💾",
+        "title": "云存储和 CDN",
+        "description": "大幅降低存储和带宽成本。",
+        "content": "AVIF 的 50-70% 大小减少转化为云存储和 CDN 成本的巨大节省。将整个 PNG 库转换为 AVIF 以立即降低成本。对存档质量使用无损，对传输使用有损。监控浏览器支持并向支持的浏览器提供 AVIF，向旧版提供 PNG。对于高流量网站，ROI 是显著的。"
+      },
+      {
+        "icon": "🎮",
+        "title": "游戏资产和 UI",
+        "description": "优化游戏纹理和 UI 元素。",
+        "content": "AVIF 将游戏资产大小减少 50-70%，这对于 Web 游戏和可下载内容至关重要。对需要完美质量的 UI 元素和精灵使用无损。对纹理和背景使用有损（质量 55-60）。AVIF 的 HDR 支持可在现代游戏中实现逼真的照明。更快的下载意味着更好的用户留存率。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "何时保留 PNG",
+        "description": "PNG 仍然是更好选择的场景。",
+        "content": "如果以下情况，请保留 PNG：1）需要通用兼容性（电子邮件、旧系统），2）使用缺少 AVIF 支持的设计工具，3）针对 Safari <16 或 Chrome <85 用户，4）文件已经很小（<50KB）且转换节省很少。AVIF 在具有 92% 以上浏览器支持的现代 Web 应用中表现出色。使用渐进式增强：AVIF → WebP → PNG。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 PNG 转 AVIF 转换的常见问题",
+    "items": [
+      {
+        "question": "什么是 AVIF，为什么它比 PNG 更好？",
+        "answer": "AVIF（AV1 Image File Format）是基于 AV1 视频编解码器的下一代图像格式。它在保持或改善质量的同时提供比 PNG 高 50-70% 的压缩。AVIF 支持 HDR、广色域（10 位/12 位）和更高效的 Alpha 通道压缩。它是免版税的，专为现代 Web 性能而设计。"
+      },
+      {
+        "question": "哪些浏览器支持 AVIF 格式？",
+        "answer": "截至 2024 年，AVIF 拥有 92% 以上的浏览器支持。Chrome 85+（2020）、Firefox 93+（2021）、Safari 16+（2022）、Edge 121+（2024）和 Opera 71+（2020）均支持。移动端支持包括 Chrome Android、Safari iOS 16+ 和 Samsung Internet 14+。对于旧版浏览器，使用 <picture> 元素实现渐进式增强：AVIF → WebP → PNG 后备。"
+      },
+      {
+        "question": "与 PNG 相比，AVIF 文件有多小？",
+        "answer": "AVIF 平均提供比 PNG 高 50-70% 的压缩。无损 AVIF 在相同质量下比 PNG 小 30-50%。有损 AVIF（质量 50-60）可以小 70-80%，同时保持出色的视觉质量。例如，1MB 的 PNG 可能在无损 AVIF 中变成 300-500KB，或在有损 AVIF 中变成 200-300KB。实际节省取决于图像内容和复杂性。"
+      },
+      {
+        "question": "AVIF 像 PNG 一样支持透明度吗？",
+        "answer": "是的，AVIF 完全支持具有无损和有损模式的 Alpha 通道透明度。AVIF 的 Alpha 压缩实际上比 PNG 更高效，实现了 50-60% 更小的 Alpha 数据。它像 PNG 一样支持 8 位 Alpha（256 级），加上用于更好压缩的高级预测模式。与 PNG 相比，透明度质量得到保持或改善。"
+      },
+      {
+        "question": "我应该将所有 PNG 图像转换为 AVIF 吗？",
+        "answer": "对于现代 Web 应用程序，是的 - AVIF 提供了显着的性能优势。但是，请考虑：1）为旧版浏览器实施渐进式增强（AVIF → WebP → PNG），2）对于电子邮件和通用兼容性需求保留 PNG，3）对图形/徽标使用无损 AVIF，对照片使用有损，4）监控受众的浏览器支持。AVIF 非常适合优先考虑性能的网站，拥有 92% 以上的浏览器支持。"
+      },
+      {
+        "question": "PNG 转 AVIF 转换是否免费且安全？",
+        "answer": "是的，我们的 PNG 转 AVIF 转换器完全免费，无需注册、无水印、无付款。所有转换都使用 WebAssembly 在您的浏览器中本地进行 - 图像不会离开您的设备。这可确保 100% 的隐私和安全，没有服务器上传、数据收集或第三方访问。AVIF 编码完全在客户端执行。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像转换和压缩工具",
+    "items": [
+      {
+        "title": "AVIF 转 PNG",
+        "description": "将 AVIF 图片转换回 PNG 格式",
+        "url": "/converter/convert-avif-to-png"
+      },
+      {
+        "title": "AVIF 压缩",
+        "description": "进一步优化 AVIF 文件",
+        "url": "/compressor/compress-avif"
+      },
+      {
+        "title": "PNG 转 WebP",
+        "description": "将 PNG 转换为 WebP 格式",
+        "url": "/converter/convert-png-to-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将 PNG 文件拖放到此处或点击选择",
+      "subtitle": "支持 PNG 格式，最多 {maxFiles} 个文件，每个最大 10MB",
+      "selectFiles": "选择 PNG 文件"
+    },
+    "errors": {
+      "maxFiles": "最多允许 {maxFiles} 个文件",
+      "fileTooLarge": "文件 {fileName} 太大，请选择小于 10MB 的文件",
+      "unsupportedFormat": "不支持的文件格式：{fileName}。仅支持 PNG 文件。",
+      "uploadFailed": "文件上传失败",
+      "conversionFailed": "转换失败。请重试。"
+    },
+    "files": {
+      "title": "已选择的 PNG 文件",
+      "count": "已选择 {count} 个文件",
+      "reset": "全部重置",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "转换为 AVIF",
+      "simpleStart": "快速 PNG 转 AVIF 转换",
+      "advancedStart": "PNG 转 AVIF 转换（高级）",
+      "processing": "正在转换为 AVIF... {progress}%"
+    },
+    "progress": {
+      "label": "转换进度",
+      "status": "正在将 PNG 转换为 AVIF... {progress}% 完成"
+    },
+    "settings": {
+      "title": "AVIF 转换设置",
+      "simple": "简单",
+      "advanced": "高级",
+      "simpleTitle": "快速设置",
+      "advancedTitle": "AVIF 高级设置",
+      "quality": "质量",
+      "qualityLossless": "无损（完美质量）",
+      "qualityHighest": "最高（质量 63）",
+      "qualityHigh": "高（质量 55）",
+      "qualityMedium": "平衡（质量 50）",
+      "qualityLow": "较小文件（质量 45）",
+      "compressionMode": "压缩模式",
+      "compressionLossless": "无损（小 30-50%）",
+      "compressionLossy": "有损（小 70-80%）",
+      "speed": "编码速度",
+      "speedFastest": "最快（速度 8）",
+      "speedBalanced": "平衡（速度 6）",
+      "speedBest": "最高质量（速度 4）",
+      "colorDepth": "色深",
+      "colorDepth8": "8 位（标准）",
+      "colorDepth10": "10 位（HDR）",
+      "colorDepth12": "12 位（专业）",
+      "metadata": "保留元数据",
+      "optimize": "为 Web 优化",
+      "presetLossless": "无损",
+      "presetLosslessDesc": "完美质量，比 PNG 小 30-50%",
+      "presetBalanced": "平衡",
+      "presetBalancedDesc": "出色质量，小 60-70%",
+      "presetSmall": "最大压缩",
+      "presetSmallDesc": "良好质量，小 70-80%"
+    },
+    "downloadAll": "下载所有 AVIF 文件",
+    "results": {
+      "title": "AVIF 转换结果",
+      "count": "{count} 个 PNG 文件已转换为 AVIF",
+      "sizeInfo": "原始 PNG：{original} MB → AVIF：{converted} MB（{change}% 减少）",
+      "download": "下载 AVIF"
+    }
+  }
+}

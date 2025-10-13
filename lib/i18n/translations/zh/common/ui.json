@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "保存",
+    "cancel": "取消",
+    "submit": "提交",
+    "download": "下载",
+    "upload": "上传",
+    "remove": "移除",
+    "clear": "清除",
+    "reset": "重置",
+    "apply": "应用",
+    "close": "关闭",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "retry": "重试",
+    "selectAll": "全选",
+    "deselectAll": "取消全选",
+    "removeSelected": "移除选中项"
+  },
+  "labels": {
+    "quality": "质量",
+    "size": "大小",
+    "format": "格式",
+    "filename": "文件名",
+    "dimensions": "尺寸",
+    "fileSize": "文件大小",
+    "compressionRatio": "压缩比",
+    "processingTime": "处理时间"
+  },
+  "placeholders": {
+    "search": "搜索...",
+    "enterFilename": "输入文件名",
+    "selectFormat": "选择格式",
+    "selectQuality": "选择质量"
+  },
+  "tooltips": {
+    "download": "下载文件",
+    "remove": "移除文件",
+    "preview": "预览图像",
+    "settings": "打开设置",
+    "help": "显示帮助"
+  },
+  "modals": {
+    "confirm": {
+      "title": "确认操作",
+      "message": "您确定要继续吗？",
+      "yes": "是",
+      "no": "否"
+    },
+    "error": {
+      "title": "错误",
+      "message": "发生错误。请重试。"
+    },
+    "success": {
+      "title": "成功",
+      "message": "操作已成功完成。"
+    }
+  },
+  "fileUploader": {
+    "dragActive": "将文件放在这里",
+    "dragInactive": "将文件拖放到此处",
+    "dragReject": "某些文件无法上传",
+    "clickToUpload": "或点击选择文件",
+    "supportedFormats": "支持的格式",
+    "maxSize": "最大大小",
+    "maxFiles": "最大文件数",
+    "errors": {
+      "fileTooLarge": "文件 {fileName} 太大。最大大小为 {maxSize}。",
+      "fileInvalidType": "文件 {fileName} 的类型无效。支持的格式：{formats}。",
+      "tooManyFiles": "文件太多。最多允许：{maxFiles}。",
+      "fileRejected": "文件 {fileName} 被拒绝：{errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "{count} 个文件上传成功！"
+    }
+  },
+  "tabs": {
+    "simple": "简单",
+    "advanced": "高级"
+  },
+  "forms": {
+    "required": "此字段为必填项",
+    "optional": "可选",
+    "invalidFormat": "格式无效",
+    "invalidValue": "值无效"
+  }
+}

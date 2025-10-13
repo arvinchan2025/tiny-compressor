@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "Ferramentas de Imagem Online Gratuitas",
+    "description": "Ferramentas avançadas de compressão e conversão de imagens alimentadas por algoritmos de ponta. Reduza o tamanho do arquivo em até 90% mantendo qualidade perfeita. Ultra-rápido, completamente seguro e 100% gratuito para sempre.",
+    "getStarted": "Começar a Comprimir",
+    "learnMore": "Experimentar Conversor",
+    "stats": {
+      "sizeReduction": "Até 90% de Redução",
+      "supportedFormats": "16+ Formatos Suportados",
+      "freeSecure": "100% Grátis e Seguro",
+      "processingSpeed": "Processamento Subsegundo",
+      "privacy": "Processamento Local",
+      "reliability": "99,9% Disponibilidade"
+    }
+  },
+  "features": {
+    "title": "Por Que Escolher TinyCompressor?",
+    "subtitle": "Tecnologia avançada de processamento de imagens com recursos fáceis de usar",
+    "free": {
+      "title": "100% Grátis Para Sempre",
+      "description": "Sem custos ocultos, sem assinaturas, sem limites - completamente grátis para sempre"
+    },
+    "secure": {
+      "title": "Privacidade em Primeiro",
+      "description": "Todo processamento ocorre localmente no seu navegador - seus arquivos nunca saem do seu dispositivo"
+    },
+    "fast": {
+      "title": "Ultra-Rápido",
+      "description": "Algoritmos otimizados alimentados por WebAssembly para as velocidades de processamento mais rápidas"
+    },
+    "quality": {
+      "title": "Qualidade Profissional",
+      "description": "Algoritmos avançados garantem resultados ótimos para usuários casuais e profissionais"
+    },
+    "global": {
+      "title": "Acessibilidade Global",
+      "description": "Disponível em 11 idiomas com design responsivo para todos os dispositivos"
+    },
+    "mobile": {
+      "title": "Otimizado para Móvel",
+      "description": "Experiência perfeita em todos os dispositivos com interface amigável ao toque"
+    }
+  },
+  "tools": {
+    "title": "Escolha Sua Ferramenta",
+    "subtitle": "Ferramentas de nível profissional para todas as suas necessidades de processamento de imagens",
+    "statsLabels": {
+      "compression": "Compressão",
+      "formats": "Formatos",
+      "processing": "Processamento",
+      "quality": "Qualidade",
+      "speed": "Velocidade"
+    },
+    "compressor": {
+      "title": "Compressor de Imagens",
+      "description": "Reduza o tamanho do arquivo mantendo a qualidade com nossos algoritmos avançados de compressão",
+      "button": "Começar a Comprimir",
+      "features": [
+        "Suporte para PNG, JPG, WebP, AVIF, GIF, BMP",
+        "Processamento em lote para múltiplos arquivos",
+        "Controle de qualidade avançado com visualização em tempo real",
+        "Opções de compressão com e sem perda",
+        "Preservação e remoção de metadados",
+        "Configurações de compressão personalizadas"
+      ],
+      "stats": {
+        "compression": "Até 90%",
+        "formats": "6+ formatos",
+        "processing": "< 3 segundos"
+      }
+    },
+    "converter": {
+      "title": "Conversor de Imagens",
+      "description": "Converta entre diferentes formatos de imagem com precisão e velocidade",
+      "button": "Começar a Converter",
+      "features": [
+        "Conversão de formato entre 10+ formatos",
+        "Algoritmos de preservação de qualidade",
+        "Capacidades de processamento em lote",
+        "Múltiplas opções de formato de saída",
+        "Conversão de espaço de cor",
+        "Tratamento de transparência"
+      ],
+      "stats": {
+        "formats": "10+ formatos",
+        "quality": "Sem perda",
+        "speed": "Instantâneo"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "Processamento de imagens simples, rápido e seguro em três passos fáceis",
+    "steps": [
+      {
+        "title": "Carregar Imagens",
+        "description": "Arraste e solte ou clique para carregar suas imagens. Suporte para uploads em lote.",
+        "details": "Suporta todos os formatos principais com visualização instantânea"
+      },
+      {
+        "title": "Escolher Configurações",
+        "description": "Selecione nível de compressão, qualidade ou formato alvo com visualização em tempo real.",
+        "details": "Opções avançadas para resultados profissionais"
+      },
+      {
+        "title": "Processar e Baixar",
+        "description": "Obtenha imagens otimizadas instantaneamente com estatísticas detalhadas de compressão.",
+        "details": "Download em lote com estrutura de arquivos organizada"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Perfeito para Cada Caso de Uso",
+    "subtitle": "Do desenvolvimento web às mídias sociais, otimize imagens para qualquer propósito",
+    "categories": [
+      {
+        "title": "Desenvolvimento Web",
+        "description": "Otimize imagens do site para carregamento mais rápido e melhor experiência do usuário",
+        "icon": "🌐"
+      },
+      {
+        "title": "Apps Móveis",
+        "description": "Otimize recursos de imagem para aplicações iOS e Android",
+        "icon": "📱"
+      },
+      {
+        "title": "E-commerce",
+        "description": "Comprima imagens de produtos para melhorar o desempenho da loja online",
+        "icon": "🛒"
+      },
+      {
+        "title": "Mídias Sociais",
+        "description": "Otimize imagens para várias plataformas sociais",
+        "icon": "📢"
+      },
+      {
+        "title": "Trabalho de Design",
+        "description": "Otimize o fluxo de trabalho para designers e profissionais criativos",
+        "icon": "🎨"
+      },
+      {
+        "title": "Criação de Conteúdo",
+        "description": "Otimize imagens para blogs, notícias e plataformas de conteúdo",
+        "icon": "📝"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronto para Otimizar Suas Imagens?",
+    "description": "Junte-se a milhões de usuários que confiam no TinyCompressor para suas necessidades de processamento de imagens. Comece a otimizar suas imagens hoje e experimente a diferença!",
+    "getStarted": "Começar Agora",
+    "learnMore": "Saber Mais"
+  }
+}

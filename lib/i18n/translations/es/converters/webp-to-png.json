@@ -1,0 +1,296 @@
+{
+  "seo": {
+    "title": "WebP to PNG Converter - Convert WebP Images Online",
+    "description": "Convierte imágenes WebP a formato PNG online. Convertidor WebP a PNG gratuito, rápido y fácil de usar.",
+    "keywords": "WebP a PNG, convertir WebP, convertidor de imágenes, herramienta online"
+  },
+  "hero": {
+    "title": "WebP to PNG Converter",
+    "subtitle": "Convert WebP images to PNG format online",
+    "description": "Convierte imágenes WebP a formato PNG para mayor compatibilidad y calidad sin pérdida.",
+    "badge": "Convertidor"
+  },
+  "features": {
+    "title": "Características de Conversión WebP a PNG",
+    "description": "Por qué convertir WebP a PNG para compatibilidad universal",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "Compatibilidad Universal",
+        "description": "100% soporte en todos los navegadores, clientes de correo y herramientas de diseño"
+      },
+      {
+        "icon": "🔒",
+        "title": "Calidad Sin Pérdida",
+        "description": "PNG preserva calidad actual y previene degradación adicional"
+      },
+      {
+        "icon": "📧",
+        "title": "Soporte de Transparencia",
+        "description": "Preserva completamente transparencia de canal alfa de WebP"
+      },
+      {
+        "icon": "🖨️",
+        "title": "Compatibilidad con Correo",
+        "description": "Esencial para marketing por correo y boletines - muchos clientes no soportan WebP"
+      },
+      {
+        "icon": "⚡",
+        "title": "Herramientas de Diseño",
+        "description": "Compatible con todas las herramientas de diseño, plugins y flujos de trabajo"
+      },
+      {
+        "icon": "🔐",
+        "title": "Preparación para Impresión",
+        "description": "Formato preferido para flujos de trabajo de impresión profesional"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "WebP vs PNG Format Comparison",
+    "subtitle": "Understanding the differences between WebP and PNG formats",
+    "webp": {
+      "description": "WebP is a modern image format developed by Google that provides superior compresión compared to PNG and JPEG.",
+      "features": [
+        "Superior compression",
+        "Transparency support",
+        "Both lossy and lossless modes",
+        "Smaller file sizes"
+      ]
+    },
+    "png": {
+      "description": "PNG (Portable Network Graphics) is a raster graphics file format that supports lossless data compresión and transparency.",
+      "features": [
+        "Lossless compression",
+        "Transparency support",
+        "Perfect for graphics and logos",
+        "Universal compatibility"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Cómo Funciona la Conversión WebP a PNG",
+    "description": "Comprender los principios técnicos detrás de la conversión WebP a PNG.",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "Conversión de Formato",
+        "description": "Convierte formato WebP a formato PNG sin pérdida para compatibilidad universal.",
+        "benefits": [
+          "Compatibilidad universal",
+          "Preserva calidad actual",
+          "100% soporte de navegadores",
+          "Ideal para correo y sistemas heredados"
+        ]
+      },
+      {
+        "icon": "🔒",
+        "title": "Preservación de Transparencia",
+        "description": "PNG preserva completamente transparencia de canal alfa de WebP.",
+        "benefits": [
+          "Preserva transparencia perfectamente",
+          "256 niveles de transparencia",
+          "Compatible con todas las herramientas",
+          "Ideal para edición"
+        ]
+      },
+      {
+        "icon": "📧",
+        "title": "Preservación de Calidad",
+        "description": "La conversión preserva la calidad actual del WebP pero no puede restaurar datos ya perdidos si era WebP con pérdida.",
+        "benefits": [
+          "Preserva calidad actual",
+          "WebP sin pérdida → PNG perfecto",
+          "WebP con pérdida → PNG preserva estado",
+          "Previene degradación futura"
+        ]
+      },
+      {
+        "icon": "🖨️",
+        "title": "Compatibilidad Universal",
+        "description": "PNG es soportado por 100% de navegadores, clientes de correo y software.",
+        "benefits": [
+          "100% soporte de navegadores",
+          "Todos los clientes de correo",
+          "Todo el software de diseño",
+          "Sistemas heredados"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Cuándo y Cómo Convertir WebP a PNG",
+    "description": "Escenarios comunes y mejores prácticas",
+    "items": [
+      {
+        "icon": "📧",
+        "title": "Campañas de Correo",
+        "description": "Asegura que las imágenes se muestren correctamente en todos los clientes de correo.",
+        "content": "Convierte WebP a PNG para marketing por correo y boletines. Muchos clientes de correo (Outlook, Apple Mail) no soportan WebP. PNG asegura visualización universal en todos los clientes de correo y dispositivos. Espera archivos 2-4 veces más grandes pero con compatibilidad garantizada. Esencial para correos transaccionales, boletines y firmas de correo donde la confiabilidad es más importante que el tamaño de archivo."
+      },
+      {
+        "icon": "🖥️",
+        "title": "Compatibilidad con Navegadores Antiguos",
+        "description": "Compatibilidad con navegadores antiguos y software.",
+        "content": "Convierte WebP a PNG para sistemas que ejecutan navegadores antiguos (IE11, Safari <14, Chrome <85). Esencial para entornos empresariales con sistemas heredados, sitios web gubernamentales con amplios requisitos de compatibilidad y aplicaciones dirigidas a dispositivos antiguos. PNG tiene soporte de navegadores 100% desde 2001. Verifica análisis - si 5%+ de usuarios usan navegadores antiguos, proporciona respaldo PNG."
+      },
+      {
+        "icon": "🎨",
+        "title": "Herramientas de Diseño",
+        "description": "Asegura compatibilidad con todas las herramientas de diseño.",
+        "content": "Convierte WebP a PNG antes de editar en software de diseño. Aunque las herramientas principales (Photoshop 23.2+, GIMP 2.10+) soportan WebP, muchos plugins, filtros y versiones antiguas no. PNG asegura compatibilidad universal con todas las herramientas de diseño, plugins y flujos de trabajo. Esencial para proyectos de diseño colaborativo donde los miembros del equipo usan diferentes versiones de software."
+      },
+      {
+        "icon": "🖨️",
+        "title": "Impresión",
+        "description": "Prepara imágenes para impresión y aplicaciones profesionales.",
+        "content": "Convierte WebP a PNG para flujos de trabajo de impresión. La mayoría del software de impresión y aplicaciones profesionales esperan PNG, TIFF o JPEG. La compresión sin pérdida de PNG asegura sin pérdida de calidad adicional durante preparación de impresión. Esencial para folletos, tarjetas de presentación, pósters e impresión profesional. Si el WebP original era con pérdida, comienza con la mayor calidad disponible."
+      },
+      {
+        "icon": "📱",
+        "title": "Compatibilidad Universal",
+        "description": "Asegura que las imágenes funcionen en todos los entornos.",
+        "content": "Convierte WebP a PNG para distribución de software, tiendas de aplicaciones y documentación. Muchas plataformas y herramientas esperan PNG para iconos, capturas de pantalla y activos. PNG asegura compatibilidad en Windows, macOS, Linux, iOS, Android sin bibliotecas WebP. Esencial para máximo alcance y cero problemas de compatibilidad."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Cuándo Mantener WebP",
+        "description": "Escenarios donde WebP es mejor opción.",
+        "content": "Mantén WebP cuando: 1) solo apuntas a navegadores modernos (soporte 95%+), 2) rendimiento web es crítico (25-35% más pequeño que PNG), 3) usuarios están en móvil/redes celulares, 4) usas mejora progresiva (WebP → respaldo PNG). WebP es excelente para aplicaciones web modernas. Usa PNG para correo, sistemas heredados, impresión y necesidades de compatibilidad universal."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Preguntas comunes sobre conversión WebP a PNG.",
+    "items": [
+      {
+        "question": "¿Por qué convertir WebP a PNG?",
+        "answer": "Convierte WebP a PNG para compatibilidad universal. Aunque WebP tiene soporte de navegadores 95%+, PNG tiene soporte 100% en todos los navegadores, clientes de correo, herramientas de diseño y sistemas heredados. PNG es esencial para correo, flujos de trabajo de impresión, navegadores antiguos (IE11, Safari <14) y entornos empresariales con sistemas heredados. Elige PNG cuando la compatibilidad es más importante que el tamaño de archivo."
+      },
+      {
+        "question": "¿Convertir WebP a PNG afecta la calidad de imagen?",
+        "answer": "La calidad depende del WebP original: 1) WebP sin pérdida → PNG: preservación de calidad perfecta, sin pérdida de datos. 2) WebP con pérdida → PNG: la calidad actual se preserva pero los datos perdidos en compresión WebP original no pueden restaurarse. Convertir a PNG previene pérdida de calidad adicional y asegura compatibilidad. El tamaño de archivo aumentará 2-4 veces debido a la compresión menos eficiente de PNG."
+      },
+      {
+        "question": "¿Qué tan más grandes serán los archivos PNG comparados con WebP?",
+        "answer": "Los archivos PNG típicamente son 2-4 veces más grandes que WebP. Por ejemplo, un WebP de 500KB puede convertirse en 1-2MB como PNG. WebP sin pérdida convierte a PNG de tamaño similar, pero WebP con pérdida produce PNG más grandes. Este aumento de tamaño es el compromiso por compatibilidad universal. El tamaño más grande de PNG es aceptable para correo, impresión y escenarios donde la compatibilidad es crítica."
+      },
+      {
+        "question": "¿Qué navegadores y software soportan formato PNG?",
+        "answer": "PNG tiene soporte universal 100%. Soportado por todos los navegadores desde IE6 (2001), todos los clientes de correo, todo el software de diseño (Photoshop, GIMP, Figma, Sketch), todos los sistemas operativos, todos los visores de imágenes. PNG es el formato de imagen más compatible para web, impresión y software. Elección segura cuando necesitas compatibilidad garantizada en todas las plataformas y dispositivos."
+      },
+      {
+        "question": "¿Puedo convertir WebP con pérdida a PNG sin pérdida de calidad?",
+        "answer": "Convertir WebP con pérdida a PNG preserva la calidad actual pero no puede restaurar datos perdidos durante compresión WebP original. Piénsalo como 'congelar' el estado actual - no perderás más calidad pero no puedes recuperar lo ya perdido. Para mejores resultados, siempre guarda imágenes originales sin comprimir. Si solo tienes WebP con pérdida, convertir a PNG previene degradación adicional."
+      },
+      {
+        "question": "¿Es gratuito usar este convertidor WebP a PNG?",
+        "answer": "Sí, nuestro convertidor WebP a PNG es completamente gratuito sin registro, marcas de agua ni pago. Toda conversión se ejecuta localmente en tu navegador usando WebAssembly - las imágenes nunca dejan tu dispositivo. Esto garantiza 100% de privacidad y seguridad sin subidas a servidor, recopilación de datos o acceso de terceros. La decodificación WebP y codificación PNG son completamente del lado del cliente."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Herramientas Relacionadas",
+    "description": "Explora más herramientas de conversión y compresión de imágenes",
+    "items": [
+      {
+        "title": "Convertidor PNG a WebP",
+        "description": "Convierte PNG a WebP para archivos más pequeños",
+        "url": "/converter/convert-png-to-webp"
+      },
+      {
+        "title": "Compresor PNG",
+        "description": "Optimiza archivos PNG para tamaños más pequeños",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "Compresor WebP",
+        "description": "Optimiza archivos WebP",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+      "subtitle": "Soporta formato {format}, máx 50MB",
+      "selectFiles": "Seleccionar Archivo"
+    },
+    "errors": {
+      "maxFiles": "Maximum {maxFiles} files allowed",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "unsupportedFormat": "Unsupported file format: {fileName}. Only WebP files are supported.",
+      "uploadFailed": "File upload failed",
+      "conversionFailed": "Conversion failed. Please try again."
+    },
+    "files": {
+      "title": "Archivos Seleccionados",
+      "count": "{count} archivos",
+      "reset": "Reset All",
+      "remove": "Eliminar",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Convertir a {format}",
+      "simpleStart": "Quick Convert WebP to PNG",
+      "advancedStart": "Convert WebP to PNG (Advanced)",
+      "processing": "Convirtiendo... {progress}%"
+    },
+    "progress": {
+      "label": "Procesando...",
+      "status": "Converting WebP to PNG... {progress}% complete",
+      "converting": "Convirtiendo tu imagen..."
+    },
+    "settings": {
+      "title": "PNG Conversion Settings",
+      "simple": "Simple",
+      "advanced": "Avanzado",
+      "simpleTitle": "Quick Settings",
+      "advancedTitle": "Configuraciones Avanzadas",
+      "compressionLevel": "Compression Level",
+      "compressionFastest": "Fastest (Level 1)",
+      "compressionBalanced": "Balanced (Level 6)",
+      "compressionBest": "Best Compression (Level 9)",
+      "colorDepth": "Color Depth",
+      "colorDepth24": "24-bit RGB",
+      "colorDepth32": "32-bit RGBA (with alpha)",
+      "interlace": "Interlaced PNG",
+      "metadata": "Mantener Metadatos",
+      "optimize": "Optimize for Web",
+      "presetFast": "Fast Conversion",
+      "presetFastDesc": "Quick conversión, larger files",
+      "presetBalanced": "Balanced",
+      "presetBalancedDesc": "Good compresión, reasonable speed",
+      "presetOptimal": "Maximum Compression",
+      "presetOptimalDesc": "Smallest PNG files, slower conversión",
+      "quality": "Calidad",
+      "qualityLow": "Baja",
+      "qualityMedium": "Media",
+      "qualityHigh": "Alta",
+      "metadataDesc": "EXIF, GPS, info de cámara"
+    },
+    "downloadAll": "Download All PNG Files",
+    "results": {
+      "title": "¡Conversión completada! 🎉",
+      "count": "{count} WebP files converted to PNG",
+      "sizeInfo": "Original: {original} MB → Convertido: {converted} MB",
+      "download": "Descargar",
+      "subtitle": "Tu imagen ha sido convertida exitosamente",
+      "original": "Original",
+      "converted": "Convertido",
+      "saved": "Ahorrado",
+      "time": "Tiempo",
+      "format": "Formato",
+      "sizeReduction": "Reducción de Tamaño",
+      "sizeIncrease": "Aumento de Tamaño",
+      "greatJob": "¡Excelente!",
+      "considerAdjusting": "Considera ajustar configuraciones",
+      "savedSpace": "Ahorrado {amount} MB",
+      "successMessage": "¡Conversión exitosa!",
+      "successDescription": "Tu imagen ha sido convertida a formato {format} exitosamente.",
+      "convertMore": "Convertir Más",
+      "reset": "Reiniciar"
+    }
+  }
+}

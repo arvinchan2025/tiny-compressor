@@ -1,8 +1,12 @@
 import { notFound } from 'next/navigation';
 import { SupportedLanguage } from '@/types/i18n';
+import { Inter } from 'next/font/google';
+// import TranslationPreloader from '@/components/providers/TranslationPreloader';
+
+const inter = Inter({ subsets: ['latin'] });
 
 // 支持的语言列表
-const locales = ['en', 'zh', 'es', 'de', 'fr', 'ar'];
+const locales = ['en', 'zh', 'es', 'de', 'fr', 'ar', 'ja', 'ko', 'pt', 'ru', 'it'];
 
 // 语言信息
 const languageInfo = {
@@ -11,7 +15,12 @@ const languageInfo = {
   es: { name: 'Spanish', nativeName: 'Español', flag: '🇪🇸', direction: 'ltr', locale: 'es_ES' },
   de: { name: 'German', nativeName: 'Deutsch', flag: '🇩🇪', direction: 'ltr', locale: 'de_DE' },
   fr: { name: 'French', nativeName: 'Français', flag: '🇫🇷', direction: 'ltr', locale: 'fr_FR' },
-  ar: { name: 'Arabic', nativeName: 'العربية', flag: '🇸🇦', direction: 'rtl', locale: 'ar_SA' }
+  ar: { name: 'Arabic', nativeName: 'العربية', flag: '🇸🇦', direction: 'rtl', locale: 'ar_SA' },
+  ja: { name: 'Japanese', nativeName: '日本語', flag: '🇯🇵', direction: 'ltr', locale: 'ja_JP' },
+  ko: { name: 'Korean', nativeName: '한국어', flag: '🇰🇷', direction: 'ltr', locale: 'ko_KR' },
+  pt: { name: 'Portuguese', nativeName: 'Português', flag: '🇵🇹', direction: 'ltr', locale: 'pt_PT' },
+  ru: { name: 'Russian', nativeName: 'Русский', flag: '🇷🇺', direction: 'ltr', locale: 'ru_RU' },
+  it: { name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹', direction: 'ltr', locale: 'it_IT' }
 } as const;
 
 interface LocaleLayoutProps {
@@ -75,7 +84,12 @@ export async function generateMetadata({
         'es': 'https://tinycompressor.com/es',
         'de': 'https://tinycompressor.com/de',
         'fr': 'https://tinycompressor.com/fr',
-        'ar': 'https://tinycompressor.com/ar'
+        'ar': 'https://tinycompressor.com/ar',
+        'ja': 'https://tinycompressor.com/ja',
+        'ko': 'https://tinycompressor.com/ko',
+        'pt': 'https://tinycompressor.com/pt',
+        'ru': 'https://tinycompressor.com/ru',
+        'it': 'https://tinycompressor.com/it'
       }
     }
   };
@@ -98,10 +112,9 @@ export default async function LocaleLayout({
   const isRTL = langInfo.direction === 'rtl';
 
   return (
-    <html lang={validLocale} dir={isRTL ? 'rtl' : 'ltr'}>
-      <body>
-        {children}
-      </body>
-    </html>
+    <div lang={validLocale} dir={isRTL ? 'rtl' : 'ltr'}>
+      {/* <TranslationPreloader locale={validLocale} /> */}
+      {children}
+    </div>
   );
 }

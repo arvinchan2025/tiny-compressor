@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "Convertitore JPG a AVIF - Converti Immagini JPG Online",
+    "description": "Converti immagini JPG in formato AVIF online. Convertitore JPG a AVIF gratuito, veloce e facile da usare.",
+    "keywords": "JPG a AVIF, converti JPG, convertitore di immagini, strumento online"
+  },
+  "hero": {
+    "title": "Convertitore JPG a AVIF",
+    "subtitle": "Converti immagini JPG in formato AVIF online",
+    "description": "Converti immagini JPG in formato AVIF di prossima generazione per compressione eccezionale e qualità superiore con supporto browser moderno."
+  },
+  "features": {
+    "title": "Funzionalità di Conversione JPG a AVIF",
+    "description": "Perché convertire JPG in formato AVIF di prossima generazione",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "File 50-60% Più Piccoli",
+        "description": "AVIF fornisce compressione eccezionale rispetto a JPG"
+      },
+      {
+        "icon": "✨",
+        "title": "Qualità Superiore",
+        "description": "Migliore qualità immagine a dimensioni file equivalenti"
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR & Colore Ampio",
+        "description": "Supporto per HDR e profondità colore 10-bit/12-bit"
+      },
+      {
+        "icon": "🌐",
+        "title": "92%+ Supporto Browser",
+        "description": "Supportato da tutti i browser moderni dal 2024"
+      },
+      {
+        "icon": "⚡",
+        "title": "Conversione Batch",
+        "description": "Converti più file JPG in AVIF simultaneamente"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Sicuro",
+        "description": "Tutta la conversione avviene localmente nel tuo browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Confronto Formato JPG vs AVIF",
+    "subtitle": "Comprendere le differenze tra formati JPG e AVIF",
+    "jpg": {
+      "description": "JPG (JPEG) è un formato di compressione lossy ampiamente usato per fotografie digitali.",
+      "features": [
+        "Compressione lossy",
+        "Compatibilità universale",
+        "Profondità colore 8-bit",
+        "Nessun supporto trasparenza"
+      ]
+    },
+    "avif": {
+      "description": "AVIF è un formato immagine di prossima generazione basato su codec video AV1 con compressione eccezionale.",
+      "features": [
+        "Compressione best-in-class",
+        "HDR & gamma cromatica ampia",
+        "Profondità colore 10-bit/12-bit",
+        "Supporto trasparenza"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Come Funziona la Conversione JPG a AVIF",
+    "description": "Comprendere i vantaggi tecnici di AVIF rispetto a JPG",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "Compressione AV1 vs DCT",
+        "description": "AVIF usa compressione intra-frame del codec video AV1 invece di DCT di JPG, raggiungendo compressione 50-60% migliore attraverso predizione avanzata e tecniche di codifica moderne.",
+        "benefits": [
+          "AV1 intra-frame vs DCT",
+          "50-60% più piccolo di JPG",
+          "Migliore qualità a stessa dimensione",
+          "Ottimizzazione percettuale"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "Colore & Profondità Bit Migliorati",
+        "description": "AVIF supporta HDR, gamma cromatica ampia (BT.2020) e fino a profondità colore 12-bit, superando di gran lunga limitazione 8-bit di JPG per riproduzione colore superiore e gradienti.",
+        "benefits": [
+          "Supporto HDR (HLG, PQ)",
+          "Colore 10-bit & 12-bit",
+          "Gamma cromatica ampia (BT.2020)",
+          "Nessun banding nei gradienti"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "Considerazioni sulla Qualità",
+        "description": "Convertire JPG a AVIF preserva qualità attuale ma non può ripristinare dati persi in compressione JPG originale. AVIF può eguagliare qualità JPG a dimensione 50-60% minore o fornire migliore qualità a stessa dimensione.",
+        "benefits": [
+          "Dati JPG persi sono permanenti",
+          "Qualità preservata o migliorata",
+          "Migliore qualità percettuale",
+          "Ideale per ri-ottimizzazione"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Opzioni di Codifica Flessibili",
+        "description": "AVIF offre modalità lossless e lossy con controllo qualità fine-grained (0-63). Modalità lossy fornisce file 50-60% più piccoli di JPG a stessa qualità, ideale per ottimizzazione web.",
+        "benefits": [
+          "Lossy: 50-60% più piccolo di JPG",
+          "Modalità lossless disponibile",
+          "Range qualità 0-63",
+          "Trade-off velocità vs qualità"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quando & Come Convertire JPG a AVIF",
+    "description": "Scenari comuni e best practice per conversione JPG a AVIF",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Performance Web Moderna",
+        "description": "Ottimizzazione web next-generation per siti all'avanguardia.",
+        "content": "Converti JPG a AVIF per file 50-60% più piccoli con stessa o migliore qualità. Essenziale per siti web image-heavy che prioritizzano performance. Usa qualità 50-55 per foto (corrisponde a JPG 80-85). Implementa elemento <picture> con AVIF primario, fallback WebP/JPG per supporto browser 92%+. Prioritizza immagini hero, foto prodotti e pagine ad alto traffico per massimo impatto."
+      },
+      {
+        "icon": "📱",
+        "title": "Ottimizzazione Mobile & E-commerce",
+        "description": "Migliora drasticamente tempi caricamento mobile e conversioni.",
+        "content": "Riduzione dimensione 50-60% di AVIF è rivoluzionaria per e-commerce mobile. Critico dove ritardo 1 secondo = perdita conversione 7%. Converti foto prodotti a AVIF (qualità 50-55). Usa AVIF lossy per catalogo, qualità superiore (55-60) per prodotti hero. Testa su dispositivi mobile reali - decodifica AVIF è hardware-accelerata su phone moderni. ROI è immediato per siti mobile ad alto traffico."
+      },
+      {
+        "icon": "📸",
+        "title": "Siti Fotografia & Portfolio",
+        "description": "Mostra foto con qualità eccezionale e banda minima.",
+        "content": "AVIF mantiene o migliora qualità foto riducendo drasticamente banda. Usa qualità 55-60 per foto portfolio (meglio di JPG 85-90 a 50% più piccolo). Converti immagini galleria a AVIF per navigazione più veloce. Fornisci download JPG per clienti che necessitano compatibilità universale. Supporto HDR e profondità colore 10-bit di AVIF abilitano qualità visiva straordinaria."
+      },
+      {
+        "icon": "💾",
+        "title": "Risparmio Costi Storage Cloud & CDN",
+        "description": "Riduci costi storage e banda 50-60%.",
+        "content": "Convertire JPG a AVIF riduce costi cloud storage e CDN 50-60% - risparmi massivi per siti ad alto traffico. Converti batch intere librerie foto per riduzione costo immediata. Usa qualità 50-55 per contenuto generale, 55-60 per contenuto premium. Monitora supporto browser (92%+) e servi AVIF a browser supportati, JPG a legacy. ROI è significativo e immediato."
+      },
+      {
+        "icon": "📰",
+        "title": "Piattaforme News & Contenuti",
+        "description": "Migliora drasticamente velocità pagina e engagement utente.",
+        "content": "AVIF riduce dimensioni immagini articoli 50-60%, migliorando drasticamente velocità caricamento pagina e ranking SEO. Converti immagini featured e foto inline a AVIF (qualità 50-55). Usa lazy loading con AVIF per immagini below-the-fold. Tempi caricamento più veloci = migliore engagement, tassi rimbalzo inferiori e maggiori entrate pubblicitarie. Essenziale per siti supportati da pubblicità dove velocità influenza direttamente entrate."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Quando Mantenere JPG",
+        "description": "Scenari dove JPG è ancora la scelta migliore.",
+        "content": "Mantieni JPG se: 1) Necessiti compatibilità universale (email, sistemi vecchi), 2) Miri a utenti Safari <16 o Chrome <85 (controlla analytics), 3) Lavori con workflow stampa, 4) Deliverable clienti richiedono formato JPG. AVIF eccelle per app web moderne con supporto browser 92%+. Usa progressive enhancement: fallback AVIF → WebP → JPG per massima copertura."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "description": "Domande comuni sulla conversione JPG a AVIF",
+    "items": [
+      {
+        "question": "Convertire JPG a AVIF migliorerà la qualità dell'immagine?",
+        "answer": "Convertire JPG a AVIF non ripristinerà qualità persa in compressione JPG originale, ma algoritmi avanzati di AVIF possono mantenere o migliorare qualità percepita. A stessa dimensione file, AVIF spesso appare significativamente meglio di JPG. A dimensione 50-60% minore, AVIF può eguagliare qualità JPG. Per migliori risultati, converti da JPG qualità più alta disponibile. Tecnologia compressione superiore di AVIF riduce artefatti e banding."
+      },
+      {
+        "question": "Quanto più piccoli sono file AVIF rispetto a JPG?",
+        "answer": "AVIF fornisce compressione 50-60% migliore di JPG a qualità equivalente. Per esempio, foto JPG 1MB potrebbe diventare 400-500KB come AVIF con stessa o migliore qualità visiva. Risparmi effettivi dipendono da contenuto immagine - foto con gradienti e texture vedono compressione eccellente. Puoi scegliere migliore qualità a stessa dimensione, o stessa qualità a dimensione drasticamente minore. AVIF è formato immagine con migliore compressione disponibile."
+      },
+      {
+        "question": "Quali browser supportano formato AVIF?",
+        "answer": "AVIF ha supporto browser 92%+ dal 2024. Supportato da Chrome 85+ (2020), Firefox 93+ (2021), Safari 16+ (2022), Edge 121+ (2024) e Opera 71+ (2020). Supporto mobile include Chrome Android, Safari iOS 16+ e Samsung Internet 14+. Per browser vecchi, implementa elemento <picture> con AVIF primario, fallback WebP/JPG per compatibilità universale."
+      },
+      {
+        "question": "Posso convertire JPG a AVIF senza perdita qualità?",
+        "answer": "Poiché JPG è già lossy, convertire a AVIF preserva qualità attuale ma non può ripristinare dati persi. Per migliori risultati: 1) Converti da JPG qualità più alta, 2) Usa qualità AVIF 50-60 per eguagliare o superare qualità JPG, 3) Confronta visivamente prima del deployment. Modalità lossless di AVIF è disponibile ma risulta in file più grandi. Per foto, AVIF lossy a qualità 50-60 fornisce risultati eccellenti a dimensione 50-60% minore."
+      },
+      {
+        "question": "Dovrei convertire tutte le immagini JPG a AVIF?",
+        "answer": "Per siti web moderni, sì - AVIF fornisce benefici performance eccezionali con supporto browser 92%+. Tuttavia: 1) Implementa progressive enhancement (fallback AVIF → WebP → JPG), 2) Mantieni JPG per email e compatibilità universale, 3) Monitora supporto browser del tuo pubblico, 4) Usa qualità 50-55 per contenuto generale, 55-60 per premium. AVIF è ideale per siti che prioritizzano performance con supporto browser moderno."
+      },
+      {
+        "question": "La conversione JPG a AVIF è gratuita e sicura?",
+        "answer": "Sì, nostro convertitore JPG a AVIF è completamente gratuito senza registrazione, watermark o pagamento richiesto. Tutta conversione avviene localmente nel tuo browser usando WebAssembly - le tue immagini non lasciano mai il tuo dispositivo. Questo assicura 100% privacy e sicurezza, senza upload server, raccolta dati o accesso terze parti. Codifica AVIF è eseguita interamente lato client usando algoritmi compressione avanzati."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Strumenti Correlati",
+    "description": "Esplora più strumenti di conversione e compressione immagini",
+    "items": [
+      {
+        "title": "Convertitore AVIF a JPG",
+        "description": "Converti immagini AVIF indietro in formato JPG",
+        "url": "/converter/convert-avif-to-jpg"
+      },
+      {
+        "title": "Comprimi JPG",
+        "description": "Ottimizza file JPG per dimensioni minori",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Comprimi AVIF",
+        "description": "Ottimizza ulteriormente file AVIF",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Trascina file JPG qui o clicca per selezionare",
+      "subtitle": "Supporta formato JPG/JPEG, fino a {maxFiles} file, max 10MB ciascuno",
+      "selectFiles": "Seleziona File JPG"
+    },
+    "errors": {
+      "maxFiles": "Massimo {maxFiles} file consentiti",
+      "fileTooLarge": "File {fileName} troppo grande, seleziona file minori di 10MB",
+      "unsupportedFormat": "Formato file non supportato: {fileName}. Solo file JPG/JPEG sono supportati.",
+      "uploadFailed": "Upload file fallito",
+      "conversionFailed": "Conversione fallita. Riprova."
+    },
+    "files": {
+      "title": "File JPG Selezionati",
+      "count": "{count} file selezionati",
+      "reset": "Resetta Tutto",
+      "remove": "Rimuovi",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Converti a AVIF",
+      "simpleStart": "Conversione Rapida JPG a AVIF",
+      "advancedStart": "Converti JPG a AVIF (Avanzato)",
+      "processing": "Conversione a AVIF... {progress}%"
+    },
+    "progress": {
+      "label": "Progresso Conversione",
+      "status": "Conversione JPG a AVIF... {progress}% completato"
+    },
+    "settings": {
+      "title": "Impostazioni Conversione AVIF",
+      "simple": "Semplice",
+      "advanced": "Avanzato",
+      "simpleTitle": "Impostazioni Rapide",
+      "advancedTitle": "Impostazioni AVIF Avanzate",
+      "quality": "Qualità",
+      "qualityHighest": "Massima (Qualità 60)",
+      "qualityHigh": "Alta (Qualità 55)",
+      "qualityMedium": "Bilanciata (Qualità 50)",
+      "qualityLow": "Dimensione Piccola (Qualità 45)",
+      "qualityLowest": "Minima (Qualità 40)",
+      "speed": "Velocità Codifica",
+      "speedFastest": "Più Veloce (Velocità 8)",
+      "speedBalanced": "Bilanciata (Velocità 6)",
+      "speedBest": "Migliore Qualità (Velocità 4)",
+      "colorDepth": "Profondità Colore",
+      "colorDepth8": "8-bit (Standard)",
+      "colorDepth10": "10-bit (HDR)",
+      "colorDepth12": "12-bit (Professionale)",
+      "metadata": "Preserva Metadata",
+      "optimize": "Ottimizza per Web",
+      "presetWeb": "Ottimizzato Web",
+      "presetWebDesc": "Qualità 50, 50-60% più piccolo",
+      "presetBalanced": "Bilanciato",
+      "presetBalancedDesc": "Qualità 55, qualità eccellente",
+      "presetQuality": "Alta Qualità",
+      "presetQualityDesc": "Qualità 60, migliore qualità"
+    },
+    "downloadAll": "Scarica Tutti File AVIF",
+    "results": {
+      "title": "Risultati Conversione AVIF",
+      "count": "{count} file JPG convertiti a AVIF",
+      "sizeInfo": "JPG Originale: {original} MB → AVIF: {converted} MB ({change}% riduzione)",
+      "download": "Scarica AVIF"
+    }
+  }
+}

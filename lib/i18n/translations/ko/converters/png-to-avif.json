@@ -1,0 +1,279 @@
+{
+  "seo": {
+    "title": "PNG to AVIF 변환 - PNG 이미지 온라인 변환",
+    "description": "PNG 이미지를 온라인으로 AVIF 형식으로 변환하세요. 무료, 빠르고 사용하기 쉬운 PNG to AVIF 변환 도구.",
+    "keywords": "PNG to AVIF, PNG 변환, 이미지 변환 도구, 온라인 도구"
+  },
+  "hero": {
+    "title": "PNG to AVIF 변환",
+    "subtitle": "PNG 이미지를 온라인으로 AVIF 형식으로 변환",
+    "description": "투명도 지원을 유지하면서 차세대 압축 및 우수한 품질을 위해 PNG 이미지를 AVIF 형식으로 변환하세요."
+  },
+  "features": {
+    "title": "PNG to AVIF 변환 기능",
+    "description": "PNG를 차세대 AVIF 형식으로 변환하는 이유",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "50%+ 우수한 압축",
+        "description": "AVIF는 뛰어난 압축을 제공하며 종종 PNG보다 50-70% 작음"
+      },
+      {
+        "icon": "✨",
+        "title": "우수한 품질",
+        "description": "고급 AV1 코덱 기술로 더 작은 크기에서 더 나은 품질"
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR 및 와이드 컬러 색역",
+        "description": "HDR 및 10비트/12비트 색 심도 지원"
+      },
+      {
+        "icon": "💎",
+        "title": "고급 알파 채널",
+        "description": "PNG보다 효율적인 투명도 압축"
+      },
+      {
+        "icon": "⚡",
+        "title": "일괄 변환",
+        "description": "여러 PNG 파일을 한 번에 AVIF로 변환"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 안전",
+        "description": "모든 변환은 브라우저 내에서 로컬로 발생"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs AVIF 형식 비교",
+    "subtitle": "PNG 및 AVIF 형식의 차이점 이해",
+    "png": {
+      "description": "PNG (Portable Network Graphics)는 무손실 데이터 압축 및 투명도를 지원하는 래스터 그래픽 파일 형식입니다.",
+      "features": [
+        "무손실 압축",
+        "투명도 지원",
+        "그래픽 및 로고에 완벽",
+        "더 큰 파일 크기"
+      ]
+    },
+    "avif": {
+      "description": "AVIF는 뛰어난 압축 효율성을 제공하는 AV1 비디오 코덱 기반 차세대 이미지 형식입니다.",
+      "features": [
+        "차세대 압축",
+        "우수한 품질",
+        "투명도 지원",
+        "HDR 및 와이드 컬러 색역"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "PNG to AVIF 변환 작동 방식",
+    "description": "차세대 AVIF의 기술적 이점 이해",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "AV1 비디오 코덱 기술",
+        "description": "AVIF는 AV1 비디오 코덱의 인트라프레임 압축을 활용하여 품질을 유지하거나 개선하면서 PNG보다 50-70% 우수한 압축을 달성합니다.",
+        "benefits": [
+          "AV1 인트라프레임 압축",
+          "PNG보다 50-70% 작음",
+          "지각 최적화",
+          "로열티 프리 코덱"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "고급 색상 및 비트 심도",
+        "description": "AVIF는 HDR, 와이드 컬러 색역 (BT.2020) 및 최대 12비트 색 심도를 지원하여 PNG의 8비트 제한을 훨씬 능가하는 우수한 색상 재현을 제공합니다.",
+        "benefits": [
+          "HDR 지원 (HLG, PQ)",
+          "10비트 및 12비트 색상",
+          "와이드 컬러 색역 (BT.2020)",
+          "더 나은 그라데이션, 밴딩 없음"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "효율적인 알파 압축",
+        "description": "AVIF는 고급 예측으로 알파 채널을 별도로 압축하여 PNG의 간단한 DEFLATE보다 훨씬 우수한 투명도 압축을 달성합니다.",
+        "benefits": [
+          "별도 알파 압축",
+          "알파 데이터 30-50% 작음",
+          "예측 기반 인코딩",
+          "부드러운 그림자에 이상적"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "유연한 품질 제어",
+        "description": "AVIF는 무손실 및 손실 모드로 세밀한 품질 제어를 제공하며 웹 전달에 완벽하게 최적화되어 있습니다.",
+        "benefits": [
+          "무손실 또는 손실",
+          "품질 범위 0-63",
+          "속도 대 품질 트레이드오프",
+          "웹용 최적화"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "PNG를 AVIF로 변환하는 시기 및 방법",
+    "description": "PNG to AVIF 변환의 일반적인 시나리오 및 모범 사례",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "차세대 웹 최적화",
+        "description": "미래 지향적인 사이트를 위한 최첨단 웹 성능.",
+        "content": "동일하거나 더 나은 품질로 50-70% 작은 파일을 위해 PNG 그래픽을 AVIF로 변환하세요. 투명도가 있는 UI 요소, 로고 및 그래픽에 이상적입니다. 40-60% 크기 감소로 완벽한 품질을 위해 AVIF 무손실을 사용하세요. AVIF 기본, WebP/PNG 폴백으로 <picture> 요소를 구현하여 최대 적용 범위를 달성하세요."
+      },
+      {
+        "icon": "🎨",
+        "title": "로고 및 UI 그래픽",
+        "description": "크게 감소된 파일 크기로 완벽한 품질.",
+        "content": "AVIF는 투명도가 있는 로고 및 UI 그래픽에서 뛰어납니다. PNG와 비교하여 40-60% 크기 감소로 완벽한 품질을 위해 AVIF 무손실로 변환하세요. 품질 55-60의 AVIF 손실은 거의 동일한 시각적 품질로 70-80% 감소를 제공합니다. 앱 아이콘, 웹 UI 요소 및 브랜드 자산에 이상적입니다."
+      },
+      {
+        "icon": "💎",
+        "title": "고품질 제품 이미지",
+        "description": "투명도 및 최소 대역폭으로 전자상거래 이미지.",
+        "content": "투명도 및 품질을 유지하면서 60-70% 크기 감소를 위해 제품 PNG를 AVIF로 변환하세요. 품질 50-55의 AVIF 손실은 크게 작은 크기에서 PNG 품질과 일치합니다. 빠른 로딩 시간과 깨끗한 투명도가 필요한 컷아웃 제품 사진에 완벽합니다."
+      },
+      {
+        "icon": "💾",
+        "title": "CDN 및 스토리지 절감",
+        "description": "스토리지 및 대역폭 비용을 50-70% 절감하세요.",
+        "content": "PNG를 AVIF로 변환하면 CDN 및 스토리지 비용이 50-70% 절감됩니다 - 그래픽이 많은 사이트에 막대한 절감. 전체 그래픽 라이브러리를 일괄 변환하세요. 브라우저 지원 (92%+)을 모니터링하고 최신 브라우저에 AVIF를 제공하세요. 높은 트래픽 사이트의 ROI는 즉각적입니다."
+      },
+      {
+        "icon": "🎮",
+        "title": "게임 및 UI 자산",
+        "description": "완벽한 투명도로 스프라이트 및 UI 요소.",
+        "content": "AVIF는 투명도가 있는 게임 스프라이트 및 UI 자산에 이상적입니다. 품질 손실 없이 40-60% 크기 감소를 위해 PNG 스프라이트를 AVIF 무손실로 변환하세요. AVIF 손실은 중요하지 않은 자산에 대해 70-80% 감소를 제공합니다. 더 빠른 로딩 시간은 사용자 경험을 크게 개선합니다."
+      },
+      {
+        "icon": "⚠️",
+        "title": "PNG를 유지하는 경우",
+        "description": "PNG가 여전히 최선의 선택인 시나리오.",
+        "content": "다음 경우 PNG를 유지하세요: 1) Safari <16 또는 Chrome <85 지원 필요 (분석 확인), 2) 이메일 호환성 중요, 3) 레거시 도구 작업, 4) 즉각적인 디코딩 속도 필요. PNG는 보편적으로 호환됩니다. 92%+ 브라우저 지원으로 최신 웹 앱에는 AVIF를 사용하세요."
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "description": "PNG to AVIF 변환에 대한 일반적인 질문",
+    "items": [
+      {
+        "question": "PNG에서 변환할 때 AVIF는 투명도를 유지합니까?",
+        "answer": "네! AVIF는 투명도를 완전히 지원하며 종종 PNG보다 더 효율적으로 압축합니다. PNG의 알파 채널은 30-50% 우수한 압축으로 AVIF의 알파 채널로 변환됩니다. 투명한 배경이 있는 로고, UI 그래픽 및 제품 이미지에 완벽합니다. AVIF 무손실은 완벽한 투명도 품질을 유지합니다."
+      },
+      {
+        "question": "PNG와 비교하여 AVIF 파일은 얼마나 작습니까?",
+        "answer": "AVIF는 동등한 품질에서 일반적으로 PNG보다 50-70% 작습니다. AVIF 무손실은 품질 손실 없이 40-60% 크기 감소를 달성합니다. 품질 50-60의 AVIF 손실은 최소한의 시각적 차이로 60-80% 감소를 제공합니다. 실제 절감은 이미지 콘텐츠에 따라 다릅니다 - 투명도가 있는 그래픽은 뛰어난 압축을 달성합니다."
+      },
+      {
+        "question": "어떤 브라우저가 AVIF 형식을 지원합니까?",
+        "answer": "AVIF는 2024년 기준 92%+ 브라우저 지원이 있습니다. Chrome 85+ (2020), Firefox 93+ (2021), Safari 16+ (2022), Edge 121+ (2024), Opera 71+ (2020)에서 지원됩니다. 모바일 지원에는 Chrome Android, Safari iOS 16+, Samsung Internet 14+가 포함됩니다. 이전 브라우저의 경우 AVIF 기본, WebP/PNG 폴백으로 <picture> 요소를 구현하세요."
+      },
+      {
+        "question": "AVIF 무손실 또는 손실을 사용해야 합니까?",
+        "answer": "완벽한 품질이 필요한 로고 및 그래픽의 경우 AVIF 무손실을 사용하세요 (PNG보다 40-60% 작음, 품질 손실 없음). 사진 및 덜 중요한 그래픽의 경우 품질 50-60의 AVIF 손실을 사용하세요 (60-80% 작음, 최소한의 시각적 차이). 배포 전에 시각적으로 비교하세요. AVIF 무손실은 여전히 PNG보다 훨씬 작습니다."
+      },
+      {
+        "question": "모든 PNG 그래픽을 AVIF로 변환할 수 있습니까?",
+        "answer": "최신 웹사이트의 경우, 예 - AVIF는 92%+ 브라우저 지원으로 극적인 크기 감소를 제공합니다. 프로그레시브 향상을 구현하세요: AVIF 폴백 → WebP → PNG로 보편적 호환성을 달성합니다. 최대 효과를 위해 큰 PNG (>50KB)를 우선순위에 두세요. 청중의 브라우저 분석을 모니터링하세요. AVIF는 투명도가 있는 웹 그래픽의 미래입니다."
+      },
+      {
+        "question": "PNG to AVIF 변환이 무료이고 안전합니까?",
+        "answer": "네, 당사의 PNG to AVIF 변환기는 등록, 워터마크, 결제 없이 완전 무료입니다. 모든 변환은 WebAssembly를 사용하여 브라우저 내에서 로컬로 발생하며 - 이미지는 장치를 떠나지 않습니다. 이는 서버 업로드, 데이터 수집, 제3자 액세스 없이 100% 개인 정보 보호 및 보안을 보장합니다. AVIF 인코딩은 완전히 클라이언트 측에서 실행됩니다."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "관련 도구",
+    "description": "더 많은 이미지 변환 및 압축 도구 탐색",
+    "items": [
+      {
+        "title": "AVIF to PNG 변환",
+        "description": "AVIF 이미지를 PNG 형식으로 되돌리기",
+        "url": "/converter/convert-avif-to-png"
+      },
+      {
+        "title": "PNG 압축",
+        "description": "PNG 파일을 더욱 최적화",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "AVIF 압축",
+        "description": "더 작은 크기로 AVIF 파일 최적화",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "PNG 파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+      "subtitle": "PNG 형식 지원, 최대 {maxFiles}개 파일, 각각 최대 10MB",
+      "selectFiles": "PNG 파일 선택"
+    },
+    "errors": {
+      "maxFiles": "최대 {maxFiles}개 파일 허용",
+      "fileTooLarge": "파일 {fileName}이(가) 너무 큽니다. 10MB 미만의 파일을 선택하세요",
+      "unsupportedFormat": "지원되지 않는 파일 형식: {fileName}. PNG 파일만 지원됩니다.",
+      "uploadFailed": "파일 업로드 실패",
+      "conversionFailed": "변환 실패. 다시 시도하세요."
+    },
+    "files": {
+      "title": "선택된 PNG 파일",
+      "count": "{count}개 파일 선택됨",
+      "reset": "모두 재설정",
+      "remove": "제거",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "AVIF로 변환",
+      "simpleStart": "빠른 PNG to AVIF 변환",
+      "advancedStart": "PNG to AVIF 변환 (고급)",
+      "processing": "AVIF로 변환 중... {progress}%"
+    },
+    "progress": {
+      "label": "변환 진행률",
+      "status": "PNG to AVIF 변환 중... {progress}% 완료"
+    },
+    "settings": {
+      "title": "AVIF 변환 설정",
+      "simple": "간단",
+      "advanced": "고급",
+      "simpleTitle": "빠른 설정",
+      "advancedTitle": "AVIF 고급 설정",
+      "quality": "품질",
+      "qualityHighest": "최고 (품질 60)",
+      "qualityHigh": "높음 (품질 55)",
+      "qualityMedium": "균형 (품질 50)",
+      "qualityLow": "작은 크기 (품질 45)",
+      "qualityLowest": "최소 (품질 40)",
+      "compressionMode": "압축 모드",
+      "compressionLossless": "무손실 (완벽한 품질)",
+      "compressionLossy": "손실 (더 작은 파일)",
+      "speed": "인코딩 속도",
+      "speedFastest": "최고 속도 (속도 8)",
+      "speedBalanced": "균형 (속도 6)",
+      "speedBest": "최고 품질 (속도 4)",
+      "metadata": "메타데이터 유지",
+      "optimize": "웹용 최적화",
+      "presetLossless": "무손실",
+      "presetLosslessDesc": "완벽한 품질, 40-60% 작음",
+      "presetBalanced": "균형",
+      "presetBalancedDesc": "품질 55, 60-70% 작음",
+      "presetSmall": "최대 압축",
+      "presetSmallDesc": "품질 45, 70-80% 작음"
+    },
+    "downloadAll": "모든 AVIF 파일 다운로드",
+    "results": {
+      "title": "AVIF 변환 결과",
+      "count": "{count}개의 PNG 파일이 AVIF로 변환되었습니다",
+      "sizeInfo": "원본 PNG: {original} MB → AVIF: {converted} MB ({change}% 감소)",
+      "download": "AVIF 다운로드"
+    }
+  }
+}

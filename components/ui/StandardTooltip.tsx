@@ -7,9 +7,9 @@ import { tooltipAnimations, transitions } from '@/lib/micro-interactions';
 interface StandardTooltipProps {
   content: string;
   children: React.ReactNode;
-  position?: 'top' | 'bottom' | 'left' | 'right';
-  delay?: number;
-  className?: string;
+  position: 'top' | 'bottom' | 'left' | 'right';
+  delay: number;
+  className: string;
 }
 
 export default function StandardTooltip({

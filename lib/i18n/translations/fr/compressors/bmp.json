@@ -1,0 +1,260 @@
+{
+  "seo": {
+    "title": "Compresseur BMP - Compresser des Images Bitmap BMP en Ligne",
+    "description": "Compressez des images BMP en ligne avec optimisation avancée. Réduisez la taille de fichier tout en préservant la qualité et en supportant diverses profondeurs de couleur.",
+    "keywords": [
+      "compresseur BMP",
+      "compression bitmap",
+      "optimisation BMP",
+      "compression d'image",
+      "outil en ligne"
+    ]
+  },
+  "hero": {
+    "title": "Compresseur BMP",
+    "subtitle": "Compressez des images bitmap BMP avec optimisation avancée",
+    "description": "Compressez des images BMP en ligne avec optimisation intelligente qui réduit la taille de fichier tout en préservant la qualité d'image et en supportant diverses profondeurs de couleur.",
+    "badge": "Compresseur"
+  },
+  "features": {
+    "title": "Fonctionnalités du Format BMP",
+    "description": "Pourquoi BMP est essentiel pour Windows et les systèmes hérités",
+    "items": [
+      {
+        "icon": "💻",
+        "title": "Format Natif Windows",
+        "description": "Format bitmap natif Windows - intégration directe GDI/GDI+/DirectX"
+      },
+      {
+        "icon": "💾",
+        "title": "Non Compressé ou RLE",
+        "description": "Stockage simple non compressé ou compression RLE sans perte pour images 4/8 bits"
+      },
+      {
+        "icon": "🔧",
+        "title": "Support Système Hérité",
+        "description": "Essentiel pour logiciels et matériels anciens nécessitant compatibilité BMP"
+      },
+      {
+        "icon": "🎨",
+        "title": "Profondeur de Couleur Flexible",
+        "description": "Supporte profondeur de couleur 1 à 32 bits (2 à 16.7M couleurs + alpha)"
+      },
+      {
+        "icon": "📄",
+        "title": "Structure de Fichier Simple",
+        "description": "Format simple - facile à lire/écrire programmatiquement"
+      },
+      {
+        "icon": "🔄",
+        "title": "Source de Conversion de Format",
+        "description": "Source idéale pour conversion vers formats modernes (PNG/WebP) pour réduction de taille de 50-90%"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Comment Fonctionne la Compression BMP",
+    "description": "Comprendre les principes techniques derrière l'optimisation BMP vous aide à prendre des décisions éclairées sur vos images.",
+    "items": [
+      {
+        "title": "Compression RLE",
+        "description": "BMP supporte l'encodage par longueur de séquence (RLE) pour images 4 et 8 bits, compressant efficacement les séquences de pixels identiques.",
+        "icon": "🔄",
+        "benefits": [
+          "Compression sans perte",
+          "Encodage/décodage rapide",
+          "Support natif BMP",
+          "Idéal pour graphiques simples"
+        ]
+      },
+      {
+        "title": "Optimisation de Profondeur de Couleur",
+        "description": "BMP supporte diverses profondeurs de couleur de 1 à 32 bits. L'optimisation de la profondeur de couleur peut réduire significativement la taille de fichier pour images avec couleurs limitées.",
+        "icon": "🎨",
+        "benefits": [
+          "Options de couleur flexibles",
+          "Profondeur de bits adaptive",
+          "Optimisation de palette",
+          "Stockage efficace"
+        ]
+      },
+      {
+        "title": "Conversion de Format",
+        "description": "Convertir BMP vers formats modernes comme PNG ou WebP peut atteindre 50-90% de réduction de taille tout en maintenant ou améliorant la qualité.",
+        "icon": "🔄",
+        "benefits": [
+          "Réduction de taille dramatique",
+          "Meilleure compression",
+          "Support de format moderne",
+          "Qualité préservée ou améliorée"
+        ]
+      },
+      {
+        "title": "Gestion des Métadonnées",
+        "description": "Les fichiers BMP peuvent contenir métadonnées et en-têtes. Supprimer les données inutiles réduit la taille de fichier sans affecter la qualité visuelle.",
+        "icon": "✨",
+        "benefits": [
+          "Overhead réduit",
+          "Fichiers plus propres",
+          "Chargement plus rapide",
+          "Protection de la vie privée"
+        ]
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Glissez-déposez les fichiers ici ou cliquez pour sélectionner",
+      "subtitle": "Supporte le format {format}, jusqu'à {maxFiles} fichiers, max 10MB chacun",
+      "selectFiles": "Sélectionner des Fichiers"
+    },
+    "files": {
+      "title": "Fichiers Sélectionnés",
+      "count": "{count} fichiers",
+      "remove": "Supprimer",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "Compresser {format}",
+      "processing": "Compression... {progress}%"
+    },
+    "progress": {
+      "label": "Traitement..."
+    },
+    "results": {
+      "title": "Résultats de Compression",
+      "sizeInfo": "Original : {original} MB → Compressé : {compressed} MB (réduction de {ratio}%)",
+      "download": "Télécharger"
+    },
+    "settings": {
+      "simple": "Simple",
+      "advanced": "Avancé",
+      "advancedTitle": "Paramètres Avancés",
+      "quality": "Qualité",
+      "metadata": "Conserver les Métadonnées"
+    },
+    "actions": {
+      "downloadAll": "Télécharger Tout",
+      "reset": "Réinitialiser"
+    },
+    "error": {
+      "title": "Erreur"
+    },
+    "status": {
+      "starting": "Démarrage de la compression...",
+      "processing": "Compression... {progress}%",
+      "completed": "Compression terminée !"
+    }
+  },
+  "useCases": {
+    "title": "Quand Utiliser la Compression BMP",
+    "description": "La compression et conversion BMP est idéale pour des scénarios spécifiques de compatibilité et systèmes hérités.",
+    "items": [
+      {
+        "title": "Compatibilité Système Hérité",
+        "description": "Essentiel pour applications et systèmes nécessitant compatibilité format BMP.",
+        "content": "BMP est universellement supporté à travers toutes les applications Windows et systèmes hérités, le rendant nécessaire pour compatibilité logiciel et matériel ancien.",
+        "icon": "💾"
+      },
+      {
+        "title": "Graphiques et Icônes Simples",
+        "description": "Parfait pour graphiques simples, icônes et illustrations avec couleurs limitées.",
+        "content": "BMP avec compression RLE stocke efficacement graphiques simples, icônes et logos avec couleurs solides et bords nets.",
+        "icon": "🎨"
+      },
+      {
+        "title": "Documents Scannés",
+        "description": "Idéal pour documents scannés où représentation exacte des pixels est requise.",
+        "content": "Le format non compressé ou compressé RLE de BMP assure préservation parfaite des données de document scanné sans artefacts de compression.",
+        "icon": "📄"
+      },
+      {
+        "title": "Édition Graphique Professionnelle",
+        "description": "Utilisé dans applications graphiques professionnelles pour stockage de fichiers intermédiaires.",
+        "content": "BMP fournit un format simple et fiable pour stockage temporaire durant flux de travail d'édition graphique avant export final.",
+        "icon": "🖼️"
+      },
+      {
+        "title": "Source de Conversion de Format",
+        "description": "Convertir BMP vers formats modernes pour réduction de taille significative.",
+        "content": "Utilisez BMP comme format source pour conversion vers PNG, WebP ou AVIF pour atteindre 50-90% de réduction de taille de fichier tout en maintenant ou améliorant la qualité.",
+        "icon": "🔄"
+      },
+      {
+        "title": "Intégration Système Windows",
+        "description": "Format natif pour graphiques et icônes au niveau système Windows.",
+        "content": "BMP est le format bitmap natif Windows, utilisé pour icônes système, curseurs, fonds d'écran et écrans de démarrage. Aucune conversion nécessaire pour intégration API Windows, assurant compatibilité parfaite avec applications GDI, GDI+ et DirectX. Essentiel pour développement de pilotes Windows et programmation graphique au niveau système.",
+        "icon": "💻"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "Meilleures Pratiques de Compression BMP",
+    "description": "Suivez ces conseils d'experts pour obtenir les meilleurs résultats en travaillant avec des fichiers BMP.",
+    "tips": [
+      {
+        "icon": "💾",
+        "title": "Comprendre le Rôle Hérité de BMP",
+        "content": "BMP est un format non compressé ou minimalement compressé (RLE) de l'ère Windows. Il produit de gros fichiers (2-10x plus grands que PNG, 5-20x plus grands que JPEG) mais offre compatibilité universelle avec systèmes hérités. Utilisez BMP uniquement quand spécifiquement requis par logiciel ancien, matériel ou exigences système."
+      },
+      {
+        "icon": "🔄",
+        "title": "Convertir vers Formats Modernes",
+        "content": "Pour 99% des cas d'usage, convertissez BMP vers formats modernes : PNG pour compression sans perte (50-70% plus petit, parfait pour captures d'écran et graphiques), JPEG pour photos (80-95% plus petit), ou WebP pour meilleure compression globale (70-90% plus petit). Cela réduit dramatiquement les exigences de stockage et bande passante tout en maintenant ou améliorant la qualité."
+      },
+      {
+        "icon": "🎨",
+        "title": "Optimiser la Profondeur de Couleur Si Reste BMP",
+        "content": "Si format BMP est obligatoire, réduisez profondeur de couleur selon contenu : utilisez 8 bits (256 couleurs) pour graphiques simples, 4 bits (16 couleurs) pour images très simples, ou 1 bit pour noir et blanc. Activez compression RLE pour images 4 et 8 bits avec grandes zones de couleur solide—peut atteindre 30-60% de réduction de taille pour images appropriées."
+      },
+      {
+        "icon": "📦",
+        "title": "Conversion par Lots Stratégique",
+        "content": "Lors de migration depuis systèmes basés BMP hérités, convertissez par lots vers formats appropriés : PNG pour graphiques UI et captures d'écran, JPEG qualité 85-90 pour photos, WebP pour applications web modernes. Testez minutieusement fichiers convertis avec applications cibles avant de remplacer originaux. Maintenez sauvegardes BMP uniquement si absolument nécessaire pour compatibilité héritée."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "description": "Questions courantes sur la compression BMP",
+    "items": [
+      {
+        "question": "À quoi sert le format BMP ?",
+        "answer": "BMP (Bitmap) est principalement utilisé pour compatibilité système hérité, stockage de graphiques simples et applications nécessitant données bitmap non compressées. Il est largement supporté à travers toutes les applications Windows mais produit de grandes tailles de fichier comparé aux formats modernes."
+      },
+      {
+        "question": "De combien les fichiers BMP peuvent-ils être compressés ?",
+        "answer": "La compression native BMP (RLE) atteint typiquement 20-50% de réduction de taille pour graphiques simples. Cependant, convertir BMP vers formats modernes comme PNG peut atteindre 50-70% de réduction, tandis que conversion vers WebP peut atteindre 70-90% de réduction."
+      },
+      {
+        "question": "Dois-je utiliser BMP pour photos ou images web ?",
+        "answer": "Non. BMP produit de très grandes tailles de fichier et est inadapté pour usage web ou stockage photo. Utilisez JPEG pour photos, PNG pour graphiques avec transparence, ou WebP pour meilleure compression avec excellente qualité."
+      },
+      {
+        "question": "Quelle est la différence entre BMP et PNG ?",
+        "answer": "PNG offre compression bien supérieure (typiquement 50-70% plus petit) tout en étant complètement sans perte comme BMP. PNG supporte aussi transparence, a meilleure gestion des couleurs et est optimisé pour usage web. L'avantage principal de BMP est compatibilité héritée universelle."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Outils Connexes",
+    "description": "Explorez plus d'outils de compression et conversion d'images",
+    "items": [
+      {
+        "title": "Compresseur PNG",
+        "description": "Compresser des images PNG avec meilleure compression que BMP",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "Compresseur JPEG",
+        "description": "Compresser des photos JPEG efficacement",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Compresseur WebP",
+        "description": "Format moderne avec compression supérieure",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  }
+}

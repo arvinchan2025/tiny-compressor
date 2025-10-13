@@ -4,9 +4,9 @@ import { forwardRef } from 'react';
 import { SpacingScale } from '@/lib/spacing-utils';
 
 interface StandardSpacerProps extends React.HTMLAttributes<HTMLDivElement> {
-  size?: SpacingScale;
-  axis?: 'x' | 'y' | 'both';
-  children?: React.ReactNode;
+  size: SpacingScale;
+  axis: 'x' | 'y' | 'both';
+  children: React.ReactNode;
 }
 
 const StandardSpacer = forwardRef<HTMLDivElement, StandardSpacerProps>(
@@ -20,7 +20,7 @@ const StandardSpacer = forwardRef<HTMLDivElement, StandardSpacerProps>(
     // 基础样式
     const baseStyles = 'block';
     
-    // 轴样式
+    // 轴样
     const axisStyles = {
       x: `w-${size}`,
       y: `h-${size}`,

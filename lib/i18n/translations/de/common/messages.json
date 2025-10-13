@@ -1,0 +1,68 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "Bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "pixels": "px",
+    "percent": "%",
+    "seconds": "Sek",
+    "minutes": "Min",
+    "hours": "Std"
+  },
+  "time": {
+    "seconds": "Sekunden",
+    "minutes": "Minuten",
+    "hours": "Stunden",
+    "days": "Tage",
+    "justNow": "gerade eben",
+    "ago": "vor",
+    "inProgress": "in Bearbeitung",
+    "estimated": "geschätzt"
+  },
+  "fileOperations": {
+    "uploading": "Hochladen...",
+    "processing": "Verarbeitung...",
+    "downloading": "Herunterladen...",
+    "uploaded": "Hochgeladen",
+    "processed": "Verarbeitet",
+    "downloaded": "Heruntergeladen",
+    "failed": "Fehlgeschlagen",
+    "cancelled": "Abgebrochen",
+    "paused": "Pausiert",
+    "resumed": "Fortgesetzt"
+  },
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "invalidFormat": "Ungültiges Format",
+    "fileTooLarge": "Datei ist zu groß",
+    "fileTooSmall": "Datei ist zu klein",
+    "unsupportedFormat": "Nicht unterstütztes Dateiformat",
+    "maxFilesExceeded": "Maximale Anzahl Dateien überschritten",
+    "invalidUrl": "Ungültige URL",
+    "networkError": "Netzwerkfehler aufgetreten"
+  },
+  "status": {
+    "ready": "Bereit",
+    "processing": "Verarbeitung",
+    "completed": "Abgeschlossen",
+    "error": "Fehler",
+    "warning": "Warnung",
+    "info": "Information",
+    "success": "Erfolg",
+    "failed": "Fehlgeschlagen",
+    "cancelled": "Abgebrochen",
+    "paused": "Pausiert"
+  }
+}

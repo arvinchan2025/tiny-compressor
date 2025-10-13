@@ -7,11 +7,11 @@ import { progressAnimations, transitions } from '@/lib/micro-interactions';
 interface AccessibleProgressBarProps {
   progress: number; // 0-100
   label: string;
-  size?: 'sm' | 'md' | 'lg';
-  variant?: 'primary' | 'success' | 'warning' | 'error';
-  animated?: boolean;
-  showPercentage?: boolean;
-  className?: string;
+  size: 'sm' | 'md' | 'lg';
+  variant: 'primary' | 'success' | 'warning' | 'error';
+  animated: boolean;
+  showPercentage: boolean;
+  className: string;
 }
 
 export default function AccessibleProgressBar({
@@ -53,7 +53,7 @@ export default function AccessibleProgressBar({
 
   const clampedProgress = Math.min(100, Math.max(0, progress));
 
-  // ARIA属性
+  // ARIA属
   const ariaAttributes = ariaLabels.progress(label, clampedProgress, 100);
 
   return (
@@ -70,7 +70,7 @@ export default function AccessibleProgressBar({
         )}
       </div>
 
-      {/* 进度条 */}
+      {/* 进度*/}
       <div 
         className={`w-full bg-gray-200 rounded-full ${getSizeStyles()}`}
         role="progressbar"
@@ -88,7 +88,7 @@ export default function AccessibleProgressBar({
         />
       </div>
 
-      {/* 屏幕阅读器文本 */}
+      {/* 屏幕阅读器文*/}
       <div className="sr-only" aria-live="polite">
         {clampedProgress === 100 
           ? `${label} completed` 

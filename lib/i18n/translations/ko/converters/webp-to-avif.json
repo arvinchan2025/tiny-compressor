@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "WebP to AVIF 변환 - WebP 이미지 온라인 변환",
+    "description": "WebP 이미지를 온라인으로 AVIF 형식으로 변환하세요. 무료, 빠르고 사용하기 쉬운 WebP to AVIF 변환 도구.",
+    "keywords": "WebP to AVIF, WebP 변환, 이미지 변환 도구, 온라인 도구"
+  },
+  "hero": {
+    "title": "WebP to AVIF 변환",
+    "subtitle": "WebP 이미지를 온라인으로 AVIF 형식으로 변환",
+    "description": "최신 브라우저 지원과 함께 훨씬 더 나은 압축 및 우수한 품질을 위해 WebP 이미지를 차세대 AVIF 형식으로 변환하세요."
+  },
+  "features": {
+    "title": "WebP to AVIF 변환 기능",
+    "description": "WebP에서 차세대 AVIF로 업그레이드하는 이유",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "20-30% 우수한 압축",
+        "description": "AVIF는 WebP와 비교하여 우수한 압축 제공"
+      },
+      {
+        "icon": "✨",
+        "title": "개선된 품질",
+        "description": "고급 AV1 코덱으로 더 나은 지각 품질"
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR 및 10비트 색상",
+        "description": "WebP보다 넓은 HDR 및 색상 색역 지원"
+      },
+      {
+        "icon": "💎",
+        "title": "고급 기능",
+        "description": "필름 그레인 합성 및 지각 최적화"
+      },
+      {
+        "icon": "⚡",
+        "title": "일괄 변환",
+        "description": "여러 WebP 파일을 한 번에 AVIF로 변환"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 안전",
+        "description": "모든 변환은 브라우저 내에서 로컬로 발생"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "WebP vs AVIF 형식 비교",
+    "subtitle": "WebP 및 AVIF 형식의 차이점 이해",
+    "webp": {
+      "description": "WebP는 JPG 및 PNG와 비교하여 우수한 압축을 제공하는 최신 이미지 형식입니다.",
+      "features": [
+        "VP8/VP9 압축",
+        "PNG/JPG보다 25-35% 우수",
+        "95%+ 브라우저 지원",
+        "투명도 지원"
+      ]
+    },
+    "avif": {
+      "description": "AVIF는 뛰어난 압축을 제공하는 AV1 비디오 코덱 기반 차세대 이미지 형식입니다.",
+      "features": [
+        "AV1 압축",
+        "WebP보다 20-30% 우수",
+        "92%+ 브라우저 지원",
+        "HDR 및 와이드 컬러 색역"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "WebP to AVIF 변환 작동 방식",
+    "description": "WebP에 대한 AVIF의 기술적 이점 이해",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "AV1 vs VP8/VP9 압축",
+        "description": "AVIF는 WebP의 VP8/VP9보다 20-30% 효율적인 AV1 코덱을 사용하여 고급 예측 및 최신 인코딩 기술을 통해 우수한 압축을 달성합니다.",
+        "benefits": [
+          "AV1 vs VP8/VP9",
+          "20-30% 우수한 압축",
+          "뛰어난 지각 품질",
+          "차세대 코덱"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "개선된 색상 기능",
+        "description": "AVIF는 HDR, 와이드 컬러 색역 (BT.2020) 및 최대 12비트 색 심도를 지원하여 WebP의 8비트 제한을 훨씬 능가하는 우수한 색상 재현을 제공합니다.",
+        "benefits": [
+          "HDR 지원 (HLG, PQ)",
+          "10비트 및 12비트 색상",
+          "와이드 컬러 색역 (BT.2020)",
+          "WebP의 8비트보다 우수"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "고급 알파 압축",
+        "description": "AVIF의 알파 채널 압축은 WebP보다 효율적이며 품질을 유지하면서 15-25% 우수한 투명도 압축을 달성합니다.",
+        "benefits": [
+          "15-25% 우수한 알파 압축",
+          "효율적인 투명도 처리",
+          "품질 유지",
+          "웹 그래픽용 최적화"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "유연한 인코딩 옵션",
+        "description": "AVIF는 세밀한 품질 제어로 무손실 및 손실 모드를 제공하며 최신 웹 전달에 완벽하게 최적화되어 있습니다.",
+        "benefits": [
+          "무손실 또는 손실",
+          "품질 범위 0-63",
+          "속도 대 품질 트레이드오프",
+          "웹용 최적화"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "WebP를 AVIF로 변환하는 시기 및 방법",
+    "description": "WebP to AVIF 변환의 일반적인 시나리오 및 모범 사례",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "최첨단 웹 성능",
+        "description": "성능 중심 사이트를 위한 최대 압축.",
+        "content": "추가 20-30% 크기 감소를 위해 WebP를 AVIF로 변환하세요. 성능 중심 웹사이트 및 이미지가 많은 애플리케이션에 이상적입니다. 사진에는 품질 50-55를 사용하세요 (더 작은 크기에서 WebP 품질 80-85와 일치). AVIF 기본, WebP 폴백으로 <picture> 요소를 구현하여 최적 성능으로 최대 적용 범위를 달성하세요."
+      },
+      {
+        "icon": "🎨",
+        "title": "HDR 및 고품질 사진",
+        "description": "AVIF의 고급 색상 기능을 활용하세요.",
+        "content": "AVIF는 HDR 지원 및 10비트/12비트 색 심도로 고품질 사진에서 뛰어납니다. 20-30% 작은 크기에서 놀라운 품질을 위해 WebP 사진을 품질 55-60의 AVIF로 변환하세요. 품질이 중요한 포트폴리오 사이트, 사진 갤러리 및 프리미엄 콘텐츠에 완벽합니다."
+      },
+      {
+        "icon": "💾",
+        "title": "최대 CDN 및 스토리지 절감",
+        "description": "대역폭 및 스토리지 비용을 더욱 절감하세요.",
+        "content": "WebP를 AVIF로 변환하면 추가 20-30%의 CDN 및 스토리지 비용이 절감됩니다. 원래 PNG/JPG에서 WebP로의 변환과 결합하면 총 60-80% 절감을 달성합니다. WebP 라이브러리를 일괄 변환하세요. 브라우저 지원 (92%+)을 모니터링하고 최신 브라우저에 AVIF를 제공하세요."
+      },
+      {
+        "icon": "📱",
+        "title": "모바일 우선 앱",
+        "description": "모바일 사용자를 위한 최적의 성능.",
+        "content": "AVIF의 우수한 압축은 느린 연결에서 모바일 사용자에게 중요합니다. 20-30% 작은 파일을 위해 WebP를 AVIF로 변환하면 더 빠른 로딩 시간 및 감소된 데이터 사용을 의미합니다. 프로그레시브 웹 앱 및 모바일 우선 사이트에 특히 효과적입니다. 최신 모바일 브라우저는 뛰어난 AVIF 지원이 있습니다."
+      },
+      {
+        "icon": "🎮",
+        "title": "게임 및 대화형 미디어",
+        "description": "더 빠른 자산 로딩 시간.",
+        "content": "20-30% 작은 크기를 위해 WebP 게임 자산을 AVIF로 변환하세요. 더 빠른 자산 로딩 시간은 사용자 경험을 개선하고 초기 로딩 시간을 줄입니다. AVIF는 게임 텍스처, UI 자산 및 배경 이미지에 이상적입니다. 최적 성능을 위해 지연 로딩과 결합하세요."
+      },
+      {
+        "icon": "⚠️",
+        "title": "WebP를 유지하는 경우",
+        "description": "WebP가 여전히 최선의 선택인 시나리오.",
+        "content": "다음 경우 WebP를 유지하세요: 1) Safari <16 또는 Chrome <85 지원 필요 (분석 확인), 2) AVIF 인코딩 시간 중요 (AVIF가 느림), 3) AVIF를 지원하지 않는 도구 작업, 4) WebP가 이미 좋은 결과 제공. WebP는 더 넓은 지원 (95%+)이 있습니다. AVIF는 최신 브라우저 (92%+) 및 성능 중심 시나리오에서 뛰어납니다."
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "description": "WebP to AVIF 변환에 대한 일반적인 질문",
+    "items": [
+      {
+        "question": "WebP가 이미 좋은데 왜 WebP를 AVIF로 변환합니까?",
+        "answer": "AVIF는 동일하거나 더 나은 품질로 WebP보다 추가 20-30% 압축을 제공합니다. 성능 중심 사이트의 경우 이는 상당한 대역폭 절감 및 CDN 비용 절감으로 축적됩니다. AVIF는 또한 WebP에 없는 HDR, 10비트/12비트 색상 및 고급 기능을 지원합니다. 92%+ 브라우저 지원으로 AVIF는 주류 사용 준비가 되었습니다."
+      },
+      {
+        "question": "WebP를 AVIF로 변환하면 이미지 품질이 향상됩니까?",
+        "answer": "변환은 원래 WebP 압축에서 손실된 품질을 복원할 수 없지만 AVIF의 고급 알고리즘은 동일하거나 더 작은 크기에서 지각 품질을 유지하거나 개선할 수 있습니다. 동일한 파일 크기에서 AVIF는 종종 WebP보다 더 나아 보입니다. 20-30% 작은 크기에서 AVIF는 WebP 품질과 일치할 수 있습니다. 최상의 결과를 얻으려면 사용 가능한 최고 품질 WebP에서 변환하세요."
+      },
+      {
+        "question": "WebP와 비교하여 AVIF 파일은 얼마나 작습니까?",
+        "answer": "AVIF는 동등한 품질에서 WebP보다 20-30% 우수한 압축을 제공합니다. 예를 들어, 500KB WebP 사진은 동일한 시각적 품질로 350-400KB AVIF가 될 수 있습니다. 실제 절감은 이미지 콘텐츠에 따라 다릅니다 - 그라데이션과 텍스처가 있는 사진은 더 나은 압축을 달성합니다. AVIF는 현재 사용 가능한 가장 압축된 이미지 형식입니다."
+      },
+      {
+        "question": "어떤 브라우저가 AVIF 형식을 지원합니까?",
+        "answer": "AVIF는 2024년 기준 92%+ 브라우저 지원이 있습니다. Chrome 85+ (2020), Firefox 93+ (2021), Safari 16+ (2022), Edge 121+ (2024), Opera 71+ (2020)에서 지원됩니다. 모바일 지원에는 Chrome Android, Safari iOS 16+, Samsung Internet 14+가 포함됩니다. 이전 브라우저의 경우 AVIF 기본, WebP 폴백으로 <picture> 요소를 구현하여 보편적 호환성을 달성하세요."
+      },
+      {
+        "question": "모든 WebP 이미지를 AVIF로 변환해야 합니까?",
+        "answer": "최신 성능 중심 웹사이트의 경우, 예 - AVIF는 92%+ 브라우저 지원으로 추가 20-30% 크기 감소를 제공합니다. 프로그레시브 향상을 구현하세요: AVIF 폴백 → WebP → JPG/PNG. 최대 효과를 위해 큰 이미지 (>100KB)를 우선순위에 두세요. 청중의 브라우저 분석을 모니터링하세요. AVIF는 성능을 우선시하는 최신 웹 앱에 이상적입니다."
+      },
+      {
+        "question": "WebP to AVIF 변환이 무료이고 안전합니까?",
+        "answer": "네, 당사의 WebP to AVIF 변환기는 등록, 워터마크, 결제 없이 완전 무료입니다. 모든 변환은 WebAssembly를 사용하여 브라우저 내에서 로컬로 발생하며 - 이미지는 장치를 떠나지 않습니다. 이는 서버 업로드, 데이터 수집, 제3자 액세스 없이 100% 개인 정보 보호 및 보안을 보장합니다. AVIF 인코딩은 고급 압축 알고리즘을 사용하여 완전히 클라이언트 측에서 실행됩니다."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "관련 도구",
+    "description": "더 많은 이미지 변환 및 압축 도구 탐색",
+    "items": [
+      {
+        "title": "AVIF to WebP 변환",
+        "description": "AVIF 이미지를 WebP 형식으로 되돌리기",
+        "url": "/converter/convert-avif-to-webp"
+      },
+      {
+        "title": "WebP 압축",
+        "description": "WebP 파일을 더욱 최적화",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "AVIF 압축",
+        "description": "더 작은 크기로 AVIF 파일 최적화",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "WebP 파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+      "subtitle": "WebP 형식 지원, 최대 {maxFiles}개 파일, 각각 최대 10MB",
+      "selectFiles": "WebP 파일 선택"
+    },
+    "errors": {
+      "maxFiles": "최대 {maxFiles}개 파일 허용",
+      "fileTooLarge": "파일 {fileName}이(가) 너무 큽니다. 10MB 미만의 파일을 선택하세요",
+      "unsupportedFormat": "지원되지 않는 파일 형식: {fileName}. WebP 파일만 지원됩니다.",
+      "uploadFailed": "파일 업로드 실패",
+      "conversionFailed": "변환 실패. 다시 시도하세요."
+    },
+    "files": {
+      "title": "선택된 WebP 파일",
+      "count": "{count}개 파일 선택됨",
+      "reset": "모두 재설정",
+      "remove": "제거",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "AVIF로 변환",
+      "simpleStart": "빠른 WebP to AVIF 변환",
+      "advancedStart": "WebP to AVIF 변환 (고급)",
+      "processing": "AVIF로 변환 중... {progress}%"
+    },
+    "progress": {
+      "label": "변환 진행률",
+      "status": "WebP to AVIF 변환 중... {progress}% 완료"
+    },
+    "settings": {
+      "title": "AVIF 변환 설정",
+      "simple": "간단",
+      "advanced": "고급",
+      "simpleTitle": "빠른 설정",
+      "advancedTitle": "AVIF 고급 설정",
+      "quality": "품질",
+      "qualityHighest": "최고 (품질 60)",
+      "qualityHigh": "높음 (품질 55)",
+      "qualityMedium": "균형 (품질 50)",
+      "qualityLow": "작은 크기 (품질 45)",
+      "qualityLowest": "최소 (품질 40)",
+      "speed": "인코딩 속도",
+      "speedFastest": "최고 속도 (속도 8)",
+      "speedBalanced": "균형 (속도 6)",
+      "speedBest": "최고 품질 (속도 4)",
+      "colorDepth": "색 심도",
+      "colorDepth8": "8비트 (표준)",
+      "colorDepth10": "10비트 (HDR)",
+      "colorDepth12": "12비트 (전문가)",
+      "metadata": "메타데이터 유지",
+      "optimize": "웹용 최적화",
+      "presetWeb": "웹 최적화",
+      "presetWebDesc": "품질 50, 20-30% 작음",
+      "presetBalanced": "균형",
+      "presetBalancedDesc": "품질 55, 뛰어난 품질",
+      "presetQuality": "고품질",
+      "presetQualityDesc": "품질 60, 최고 품질"
+    },
+    "downloadAll": "모든 AVIF 파일 다운로드",
+    "results": {
+      "title": "AVIF 변환 결과",
+      "count": "{count}개의 WebP 파일이 AVIF로 변환되었습니다",
+      "sizeInfo": "원본 WebP: {original} MB → AVIF: {converted} MB ({change}% 감소)",
+      "download": "AVIF 다운로드"
+    }
+  }
+}

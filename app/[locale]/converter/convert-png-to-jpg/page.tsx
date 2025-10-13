@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import ConverterPageLayout from '@/components/layout/ConverterPageLayout';
+import ConvertPngToJpgClient from './ConvertPngToJpgClient';
 
 interface ConvertPngToJpgPageProps {
   params: {
@@ -12,25 +12,12 @@ export async function generateMetadata({ params }: ConvertPngToJpgPageProps): Pr
   const { locale } = params;
   
   return {
-    title: 'PNG to JPG Converter - Convert PNG Images to JPG Online',
-    description: 'Free online PNG to JPG converter. Convert PNG images to JPG format with high quality. No registration required.',
-    keywords: 'PNG to JPG, convert PNG, PNG converter, JPG converter',
-    openGraph: {
-      title: 'PNG to JPG Converter - Convert PNG Images to JPG Online',
-      description: 'Free online PNG to JPG converter. Convert PNG images to JPG format with high quality.',
-      type: 'website',
-    },
+    title: 'PNG to JPG Converter - Free Online Image Format Converter',
+    description: 'Convert PNG to JPG online for free! Optimized compression and universal compatibility. Fast, secure, and completely private conversion.',
+    keywords: 'PNG to JPG, convert PNG, image converter, free online converter, JPG converter'
   };
 }
 
 export default function ConvertPngToJpgPage({ params }: ConvertPngToJpgPageProps) {
-  const { locale } = params;
-  
-  return (
-    <ConverterPageLayout
-      locale={locale}
-      sourceFormat="png"
-      targetFormat="jpg"
-    />
-  );
+  return <ConvertPngToJpgClient locale={params.locale} />;
 }

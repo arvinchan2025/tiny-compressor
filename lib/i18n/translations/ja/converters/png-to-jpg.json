@@ -1,0 +1,298 @@
+{
+  "seo": {
+    "title": "PNG to JPG変換 - PNG画像をオンラインで変換",
+    "description": "PNG画像をオンラインでJPG形式に変換します。無料、高速、使いやすいPNG to JPG変換ツール。",
+    "keywords": "PNG to JPG、PNG変換、画像変換ツール、オンラインツール"
+  },
+  "hero": {
+    "title": "PNG to JPG変換",
+    "subtitle": "PNG画像をオンラインでJPG形式に変換",
+    "description": "良好な品質を維持しながらPNG画像をJPG形式に変換します。写真とWeb画像に最適です。"
+  },
+  "features": {
+    "title": "PNG to JPG変換機能",
+    "description": "より良いWebパフォーマンスのためにPNGをJPGに変換する理由",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "50-80%サイズ削減",
+        "description": "ロスレスPNGを効率的なJPGに変換してファイルサイズを劇的に削減"
+      },
+      {
+        "icon": "🌐",
+        "title": "Webパフォーマンスブースト",
+        "description": "より速いページ読み込みと削減された帯域幅 - サイトとブログに最適"
+      },
+      {
+        "icon": "🎛️",
+        "title": "品質制御",
+        "description": "サイズと視覚的忠実度のバランスを取るための調整可能なJPG品質 (60-95%)"
+      },
+      {
+        "icon": "📱",
+        "title": "ユニバーサル互換性",
+        "description": "JPGはどこでも動作 - すべてのデバイス、ブラウザ、プラットフォーム"
+      },
+      {
+        "icon": "⚡",
+        "title": "バッチ変換",
+        "description": "複数のPNGファイルを一度にJPGに変換"
+      },
+      {
+        "icon": "🔐",
+        "title": "100%安全",
+        "description": "すべての変換はブラウザ内でローカルに行われます"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs JPG形式比較",
+    "subtitle": "PNGとJPG形式の違いを理解する",
+    "png": {
+      "description": "PNG (Portable Network Graphics) は、ロスレスデータ圧縮と透明度をサポートするラスターグラフィックスファイル形式です。",
+      "features": [
+        "ロスレス圧縮",
+        "透明度サポート",
+        "グラフィックとロゴに最適",
+        "より大きいファイルサイズ"
+      ]
+    },
+    "jpg": {
+      "description": "JPG (JPEG) は、デジタル画像、特にデジタル写真で一般的に使用されるロッシー圧縮方法です。",
+      "features": [
+        "ロッシー圧縮",
+        "より小さいファイルサイズ",
+        "写真に最適",
+        "透明度サポートなし"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "PNG to JPG変換の仕組み",
+    "description": "形式変換の背後にある技術的プロセスとアルゴリズムを理解する",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "透明度削除と背景塗りつぶし",
+        "description": "JPGは透明度をサポートしていないため、PNGのアルファチャネルが削除されます。透明なピクセルは単色の背景 (通常は白、他の色に構成可能) に置き換えられます。",
+        "benefits": [
+          "アルファチャネルデータが除去",
+          "透明領域が単色で塗りつぶされる",
+          "ファイルの複雑さが軽減",
+          "JPGエンコーディングのために画像を準備"
+        ]
+      },
+      {
+        "icon": "📐",
+        "title": "圧縮アルゴリズム変換",
+        "description": "PNGのロスレスDEFLATE圧縮からJPGのロッシーDCT (Discrete Cosine Transform) 圧縮に切り替え、50-80%のファイルサイズ削減を実現します。",
+        "benefits": [
+          "DEFLATE (ロスレス) → DCT (ロッシー)",
+          "典型的な50-80%ファイルサイズ削減",
+          "写真コンテンツ用に最適化",
+          "調整可能な品質トレードオフ (1-100%)"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "色空間とクロマサブサンプリング",
+        "description": "RGB色データをYCbCr色空間に変換し、クロマサブサンプリング (4:2:0) を適用して、知覚された輝度を維持しながら色情報を削減します。",
+        "benefits": [
+          "RGB → YCbCr色空間変換",
+          "クロマサブサンプリング (4:2:0)",
+          "追加の30%圧縮",
+          "最小限の知覚品質損失"
+        ]
+      },
+      {
+        "icon": "📦",
+        "title": "メタデータとEXIF処理",
+        "description": "オプションでEXIFデータ (カメラ設定、日付、位置) とカラープロファイルをPNGからJPGに転送するか、5-15%のファイルサイズ削減のために削除します。",
+        "benefits": [
+          "選択的メタデータ保持",
+          "EXIFデータ転送 (カメラ情報、GPS)",
+          "ICCカラープロファイル埋め込み",
+          "削除された場合5-15%サイズ節約"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "PNGをJPGに変換する時期と方法",
+    "description": "PNG to JPG変換の一般的なシナリオとベストプラクティス",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Webサイトパフォーマンス最適化",
+        "description": "ページ読み込み時間を削減しSEOランキングを改善します。",
+        "content": "50-80%のファイルサイズ削減のためにPNG写真をJPG (品質85-90) に変換します。ブログ、ポートフォリオ、コンテンツリッチサイトに不可欠です。一般的なWeb画像には品質85、ヒーロー画像には90を使用してください。ロゴやテキストを含むグラフィックの変換は避ける - それらはPNGのままにしてください。"
+      },
+      {
+        "icon": "📱",
+        "title": "ソーシャルメディアとモバイル共有",
+        "description": "より速いアップロードとより良いモバイル体験。",
+        "content": "ソーシャルプラットフォームはとにかく画像を再圧縮するため、制御とより速いアップロードのために最初にPNGをJPG (品質80-85) に変換します。モバイル接続で特に重要です。最初に透明度を確認してください - 存在し必要な場合、PNGを使用するか、代わりにWebPに変換してください。"
+      },
+      {
+        "icon": "💾",
+        "title": "クラウドストレージとバックアップ",
+        "description": "ストレージスペースを節約しコストを削減します。",
+        "content": "60-85%のクラウドストレージ削減のためにPNG写真をJPG (品質85-90) に変換します。誤ってPNGとして保存されたスクリーンショットに特に効果的です。後でロスレス品質が必要になる可能性がある場合は元を保持してください - JPG変換は可逆的ではありません。"
+      },
+      {
+        "icon": "📧",
+        "title": "メール添付ファイル",
+        "description": "品質を維持しながらサイズ制限内に留まります。",
+        "content": "メールサービスは添付ファイルを10-25MBに制限します。メールあたりより多くの画像を共有するためにPNGをJPG品質85に変換します。最適な結果とより小さいファイルのために変換前に表示サイズ (例: 1920px幅) にリサイズします。"
+      },
+      {
+        "icon": "📸",
+        "title": "写真ワークフロー",
+        "description": "プロフェッショナル納品とクライアント共有。",
+        "content": "PNGをエクスポートするソフトウェアで編集した後、納品用にJPGに変換します。クライアント作業には品質90-95、Web公開には85-90を使用してください。不要なピクセルでの品質の無駄を避けるために、変換前に常に最終サイズにリサイズしてください。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "変換しない場合",
+        "description": "品質問題を避けるために制限を知ってください。",
+        "content": "次の場合は変換しないでください：1) 画像に必要な透明度がある (ロゴ、グラフィック)、2) テキストまたはシャープエッジを含む (スクリーンショット、図)、3) すでに小さい (<50KB)、4) ピクセルパーフェクトな品質が必要。これらの場合、PNGを保持するか、ロスレス/透明度サポートでより良い圧縮のためにWebPを使用してください。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "PNG to JPG変換に関する一般的な質問",
+    "items": [
+      {
+        "question": "PNGをJPGに変換すると画質は低下しますか？",
+        "answer": "JPGはロッシー圧縮を使用するため、いくらかの品質損失が発生します。ただし、品質85-90では、ほとんどの視聴者にとって違いは知覚できません。PNG to JPG変換は写真と自然画像に最適です。テキスト、ロゴ、シャープエッジを持つグラフィックの変換は避けてください。これらはJPGで目に見える圧縮アーティファクトを示します。"
+      },
+      {
+        "question": "PNGをJPGに変換すると透明度はどうなりますか？",
+        "answer": "JPGは透明度をサポートしていません。透明なピクセルは自動的に単色の背景色 (通常は白) で塗りつぶされます。透明度が必要な場合は、透明度とPNGより優れた圧縮の両方をサポートするWebPへの変換を検討してください。"
+      },
+      {
+        "question": "PNG to JPG変換にはどの品質設定を使用すべきですか？",
+        "answer": "品質85はWeb使用のスイートスポットです - 60-70%のファイルサイズ削減と最小限の目に見える品質損失を提供します。プロフェッショナル写真またはクライアント作業には90-95を使用してください。一般的なWebコンテンツには80を使用してください。圧縮アーティファクトが顕著になるため、75未満にすることは避けてください。"
+      },
+      {
+        "question": "PNGスクリーンショットをJPGに変換できますか？",
+        "answer": "技術的には可能ですが、推奨されません。PNGは、アーティファクトなしでテキストの明瞭性とシャープエッジを保持するため、スクリーンショットに優れています。JPGのロッシー圧縮はテキストの周りに目に見えるぼかしを作成します。スクリーンショットはPNGのままにするか、より良い結果のためにWebPロスレスに変換してください。"
+      },
+      {
+        "question": "PNG to JPG変換は可逆的ですか？",
+        "answer": "いいえ。JPG圧縮はロッシーです - 一度変換すると、破棄されたデータは回復できません。JPGをPNGに戻しても失われた品質は復元されず、コンテナ形式が変更されるだけです。後で元の品質が必要になる可能性がある場合は、常に元のPNGファイルを保持してください。"
+      },
+      {
+        "question": "PNGをJPGに変換した後、ファイルはどのくらい小さくなりますか？",
+        "answer": "ファイルサイズ削減はコンテンツによって異なります: 写真は通常60-80%削減、複雑なグラフィックは40-60%、単純なグラフィックは30-50%を見ます。正確な削減は、画像の複雑さ、色数、選択した品質設定によって異なります。より複雑な画像はJPGでより良く圧縮されます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "関連ツール",
+    "description": "その他の画像変換ツールを探索",
+    "items": [
+      {
+        "title": "PNG to WebP変換",
+        "description": "透明度サポートでより良い圧縮",
+        "url": "/converter/convert-png-to-webp"
+      },
+      {
+        "title": "JPG to PNG変換",
+        "description": "JPGをPNG形式に戻す",
+        "url": "/converter/convert-jpg-to-png"
+      },
+      {
+        "title": "JPEG圧縮",
+        "description": "JPGファイルをさらに圧縮",
+        "url": "/compressor/compress-jpeg"
+      }
+    ]
+  },
+  "operation": {
+    "modes": {
+      "simple": "シンプル",
+      "advanced": "詳細"
+    },
+    "upload": {
+      "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "{sourceFormat}形式をサポート、最大50MB",
+      "selectFiles": "ファイルを選択"
+    },
+    "errors": {
+      "maxFiles": "最大{maxFiles}ファイルまで許可",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。50MB未満のファイルを選択してください",
+      "unsupportedFormat": "サポートされていないファイル形式: {fileName}",
+      "uploadFailed": "ファイルのアップロードに失敗しました",
+      "conversionFailed": "変換に失敗しました",
+      "unknownError": "不明なエラー",
+      "processingFailed": "{fileName}の処理に失敗しました"
+    },
+    "files": {
+      "title": "選択されたファイル",
+      "count": "{count}ファイル選択済み",
+      "reset": "リセット",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "{targetFormat}に変換",
+      "simpleStart": "クイック{sourceFormat} to {targetFormat}変換",
+      "advancedStart": "{sourceFormat} to {targetFormat}変換 (詳細)",
+      "processing": "変換中... {progress}%"
+    },
+    "progress": {
+      "label": "変換進行状況",
+      "status": "処理中... {progress}%完了"
+    },
+    "settings": {
+      "title": "変換設定",
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "simpleTitle": "クイック設定",
+      "advancedTitle": "詳細設定",
+      "quality": "品質",
+      "qualityLow": "低 (60)",
+      "qualityMedium": "中 (80)",
+      "qualityHigh": "高 (100)",
+      "colorSpace": "色空間",
+      "colorSpaceAuto": "自動",
+      "colorSpaceSrgb": "sRGB",
+      "colorSpaceAdobe": "Adobe RGB",
+      "progressive": "プログレッシブJPEG",
+      "progressiveDesc": "Webに最適",
+      "optimize": "Web用に最適化",
+      "optimizeForWeb": "Web用に最適化",
+      "optimizeDesc": "より小さいファイルサイズ",
+      "metadata": "メタデータを保持",
+      "metadataDesc": "EXIF、GPS、カメラ情報",
+      "presetHigh": "高品質",
+      "presetHighDesc": "最高品質、大きいファイル",
+      "presetBalanced": "バランス",
+      "presetBalancedDesc": "良好な品質、小さいファイル",
+      "presetSmall": "小ファイル",
+      "presetSmallDesc": "最小ファイル、低品質"
+    },
+    "downloadAll": "すべてダウンロード",
+    "results": {
+      "title": "変換完了！🎉",
+      "subtitle": "画像が正常に最適化されました",
+      "count": "{count}ファイル変換済み",
+      "original": "元",
+      "originalFormat": "{format}形式",
+      "converted": "変換済み",
+      "convertedFormat": "{format}形式",
+      "sizeChange": "サイズ変更",
+      "time": "時間",
+      "format": "形式",
+      "smaller": "小さい",
+      "larger": "大きい",
+      "successMessage": "変換成功！",
+      "successDescription": "画像が変換され最適化されました。ダウンロード準備完了！",
+      "download": "ダウンロード",
+      "reset": "もっと変換",
+      "sizeInfo": "元: {original} MB → 変換済み: {converted} MB ({change}% {changeType})"
+    }
+  }
+}

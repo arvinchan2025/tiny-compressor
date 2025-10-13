@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import ConverterPageLayout from '@/components/layout/ConverterPageLayout';
+import ConvertPngToAvifClient from './ConvertPngToAvifClient';
 
 interface ConvertPngToAvifPageProps {
   params: {
@@ -12,25 +12,14 @@ export async function generateMetadata({ params }: ConvertPngToAvifPageProps): P
   const { locale } = params;
   
   return {
-    title: 'PNG to AVIF Converter - Convert PNG Images to AVIF Online',
-    description: 'Free online PNG to AVIF converter. Convert PNG images to AVIF format with high quality. No registration required.',
-    keywords: 'PNG to AVIF, convert PNG, PNG converter, AVIF converter',
-    openGraph: {
-      title: 'PNG to AVIF Converter - Convert PNG Images to AVIF Online',
-      description: 'Free online PNG to AVIF converter. Convert PNG images to AVIF format with high quality.',
-      type: 'website',
-    },
+    title: 'PNG to AVIF Converter - Free Online Image Format Converter',
+    description: 'Convert PNG to AVIF online for free! Next-generation compression technology with superior quality. Fast, secure, and completely private conversion.',
+    keywords: 'PNG to AVIF, convert PNG, image converter, free online converter, AVIF converter'
   };
 }
 
 export default function ConvertPngToAvifPage({ params }: ConvertPngToAvifPageProps) {
-  const { locale } = params;
-  
   return (
-    <ConverterPageLayout
-      locale={locale}
-      sourceFormat="png"
-      targetFormat="avif"
-    />
+    <ConvertPngToAvifClient locale={params.locale} />
   );
 }

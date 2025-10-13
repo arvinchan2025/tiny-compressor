@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "Outils d'Image en Ligne Gratuits",
+    "description": "Outils avancés de compression et conversion d'images alimentés par des algorithmes de pointe. Réduisez la taille des fichiers jusqu'à 90% tout en maintenant une qualité parfaite. Ultra-rapide, totalement sécurisé et 100% gratuit pour toujours.",
+    "getStarted": "Commencer la Compression",
+    "learnMore": "Essayer le Convertisseur",
+    "stats": {
+      "sizeReduction": "Jusqu'à 90% de Réduction",
+      "supportedFormats": "16+ Formats Supportés",
+      "freeSecure": "100% Gratuit et Sécurisé",
+      "processingSpeed": "Traitement Subseconde",
+      "privacy": "Traitement Côté Client",
+      "reliability": "99,9% de Disponibilité"
+    }
+  },
+  "features": {
+    "title": "Pourquoi Choisir TinyCompressor?",
+    "subtitle": "Technologie avancée de traitement d'images avec des fonctionnalités conviviales",
+    "free": {
+      "title": "100% Gratuit Pour Toujours",
+      "description": "Pas de coûts cachés, pas d'abonnements, pas de limites - entièrement gratuit pour toujours"
+    },
+    "secure": {
+      "title": "Confidentialité d'Abord",
+      "description": "Tout le traitement se fait localement dans votre navigateur - vos fichiers ne quittent jamais votre appareil"
+    },
+    "fast": {
+      "title": "Ultra-Rapide",
+      "description": "Algorithmes optimisés alimentés par WebAssembly pour les vitesses de traitement les plus rapides"
+    },
+    "quality": {
+      "title": "Qualité Professionnelle",
+      "description": "Les algorithmes avancés garantissent des résultats optimaux pour les utilisateurs occasionnels et professionnels"
+    },
+    "global": {
+      "title": "Accessibilité Mondiale",
+      "description": "Disponible en 11 langues avec un design réactif pour tous les appareils"
+    },
+    "mobile": {
+      "title": "Optimisé pour Mobile",
+      "description": "Expérience parfaite sur tous les appareils avec interface tactile"
+    }
+  },
+  "tools": {
+    "title": "Choisissez Votre Outil",
+    "subtitle": "Outils de qualité professionnelle pour tous vos besoins de traitement d'images",
+    "statsLabels": {
+      "compression": "Compression",
+      "formats": "Formats",
+      "processing": "Traitement",
+      "quality": "Qualité",
+      "speed": "Vitesse"
+    },
+    "compressor": {
+      "title": "Compresseur d'Images",
+      "description": "Réduisez la taille des fichiers tout en maintenant la qualité avec nos algorithmes de compression avancés",
+      "button": "Commencer la Compression",
+      "features": [
+        "Support PNG, JPG, WebP, AVIF, GIF, BMP",
+        "Traitement par lots pour plusieurs fichiers",
+        "Contrôle de qualité avancé avec aperçu en temps réel",
+        "Options de compression avec et sans perte",
+        "Préservation et suppression des métadonnées",
+        "Paramètres de compression personnalisés"
+      ],
+      "stats": {
+        "compression": "Jusqu'à 90%",
+        "formats": "6+ formats",
+        "processing": "< 3 secondes"
+      }
+    },
+    "converter": {
+      "title": "Convertisseur d'Images",
+      "description": "Convertissez entre différents formats d'image avec précision et rapidité",
+      "button": "Commencer la Conversion",
+      "features": [
+        "Conversion de format entre 10+ formats",
+        "Algorithmes de préservation de la qualité",
+        "Capacités de traitement par lots",
+        "Plusieurs options de format de sortie",
+        "Conversion de l'espace colorimétrique",
+        "Gestion de la transparence"
+      ],
+      "stats": {
+        "formats": "10+ formats",
+        "quality": "Sans perte",
+        "speed": "Instantané"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Comment Ça Marche",
+    "subtitle": "Traitement d'images simple, rapide et sécurisé en trois étapes faciles",
+    "steps": [
+      {
+        "title": "Télécharger des Images",
+        "description": "Glissez-déposez ou cliquez pour télécharger vos images. Support pour les téléchargements par lots.",
+        "details": "Supporte tous les formats principaux avec aperçu instantané"
+      },
+      {
+        "title": "Choisir les Paramètres",
+        "description": "Sélectionnez le niveau de compression, la qualité ou le format cible avec aperçu en temps réel.",
+        "details": "Options avancées pour des résultats professionnels"
+      },
+      {
+        "title": "Traiter et Télécharger",
+        "description": "Obtenez des images optimisées instantanément avec des statistiques de compression détaillées.",
+        "details": "Téléchargement par lots avec structure de fichiers organisée"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Parfait pour Chaque Cas d'Usage",
+    "subtitle": "Du développement web aux médias sociaux, optimisez les images pour tout usage",
+    "categories": [
+      {
+        "title": "Développement Web",
+        "description": "Optimisez les images pour un chargement plus rapide du site et une meilleure expérience utilisateur",
+        "icon": "🌐"
+      },
+      {
+        "title": "Applications Mobiles",
+        "description": "Optimisez les ressources d'image pour les applications iOS et Android",
+        "icon": "📱"
+      },
+      {
+        "title": "E-commerce",
+        "description": "Compressez les images de produits pour améliorer les performances de la boutique en ligne",
+        "icon": "🛒"
+      },
+      {
+        "title": "Médias Sociaux",
+        "description": "Optimisez les images pour diverses plateformes sociales",
+        "icon": "📢"
+      },
+      {
+        "title": "Travail de Design",
+        "description": "Optimisez le flux de travail pour les designers et créatifs professionnels",
+        "icon": "🎨"
+      },
+      {
+        "title": "Création de Contenu",
+        "description": "Optimisez les images pour les blogs, actualités et plateformes de contenu",
+        "icon": "📝"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Prêt à Optimiser Vos Images?",
+    "description": "Rejoignez des millions d'utilisateurs qui font confiance à TinyCompressor pour leurs besoins de traitement d'images. Commencez à optimiser vos images aujourd'hui et découvrez la différence!",
+    "getStarted": "Commencer Maintenant",
+    "learnMore": "En Savoir Plus"
+  }
+}

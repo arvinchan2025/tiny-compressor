@@ -1,0 +1,276 @@
+{
+  "seo": {
+    "title": "HEIC 转 JPG - 在线转换 HEIC 图片",
+    "description": "在线将 HEIC 图片转换为 JPG 格式。免费、快速且易于使用的 HEIC 转 JPG 转换器。",
+    "keywords": "HEIC 转 JPG, 转换 HEIC, 图片转换器, 在线工具"
+  },
+  "hero": {
+    "title": "HEIC 转 JPG 转换器",
+    "subtitle": "在线将 HEIC 图片转换为 JPG 格式",
+    "description": "将 Apple HEIC/HEIF 图片转换为 JPG 格式，实现跨所有设备和平台的通用兼容性。"
+  },
+  "features": {
+    "title": "HEIC 转 JPG 转换功能",
+    "description": "为什么要将 Apple HEIC 转换为通用 JPG 格式",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "通用兼容性",
+        "description": "JPG 可在任何地方使用，HEIC 仅限 Apple 设备"
+      },
+      {
+        "icon": "📱",
+        "title": "跨平台分享",
+        "description": "与 Android 和 Windows 用户分享 Apple 照片"
+      },
+      {
+        "icon": "🖥️",
+        "title": "软件兼容性",
+        "description": "适用于所有图像编辑和查看软件"
+      },
+      {
+        "icon": "📧",
+        "title": "电子邮件和社交媒体",
+        "description": "非常适合电子邮件和社交媒体上传"
+      },
+      {
+        "icon": "⚡",
+        "title": "批量转换",
+        "description": "同时将多个 HEIC 文件转换为 JPG"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 安全",
+        "description": "所有转换均在您的浏览器本地进行"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "HEIC vs JPG 格式对比",
+    "subtitle": "了解 HEIC 和 JPG 格式之间的差异",
+    "heic": {
+      "description": "HEIC（高效率图像容器）是 Apple 基于 HEVC 压缩的默认照片格式。",
+      "features": [
+        "HEVC 压缩",
+        "比 JPG 压缩更好",
+        "Apple 生态系统",
+        "兼容性有限"
+      ]
+    },
+    "jpg": {
+      "description": "JPG（JPEG）是使用最广泛的图像格式，具有通用兼容性。",
+      "features": [
+        "通用兼容性",
+        "100% 浏览器支持",
+        "所有平台支持",
+        "行业标准"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "HEIC 转 JPG 转换原理",
+    "description": "了解将 Apple 格式转换为通用 JPG 的技术过程",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "HEVC 解压和 JPG 重新编码",
+        "description": "HEIC 的 HEVC（H.265）压缩数据被完全解压，然后使用 JPG 的 DCT 压缩重新编码，以实现跨所有平台的通用兼容性。",
+        "benefits": [
+          "HEVC 解压",
+          "JPG DCT 重新编码",
+          "保持质量",
+          "通用兼容性"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "质量注意事项",
+        "description": "HEIC 使用先进的 HEVC 压缩。转换为 JPG 会保留当前质量，但文件大小可能会增加 1.5-2 倍，因为 JPG 的压缩效率不如 HEVC。",
+        "benefits": [
+          "保持质量",
+          "文件大小增加 1.5-2 倍",
+          "无额外质量损失",
+          "可调整 JPG 质量"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "色彩空间转换",
+        "description": "HEIC 通常使用广色域。转换为 JPG 会转换为标准 sRGB 色彩空间，这可能会导致广色域显示器上的轻微色彩偏移。",
+        "benefits": [
+          "sRGB 兼容性",
+          "标准色彩空间",
+          "通用显示支持",
+          "保持色彩保真度"
+        ]
+      },
+      {
+        "icon": "📦",
+        "title": "元数据保留",
+        "description": "转换保留 EXIF 元数据（相机设置、日期、位置），确保照片信息在格式转换后保持完整。",
+        "benefits": [
+          "EXIF 数据保留",
+          "日期和时间保留",
+          "GPS 位置保留",
+          "相机设置保留"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时以及如何将 HEIC 转换为 JPG",
+    "description": "HEIC 转 JPG 转换的常见场景和最佳实践",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "网站和博客使用",
+        "description": "JPG 可在任何地方使用，HEIC 在网络上的支持有限。",
+        "content": "将 Apple Photos 的 HEIC 图片转换为 JPG 以便在网站、博客和 CMS 平台上使用。虽然现代浏览器（Chrome 109+，Edge 121+）支持 HEIC，但广泛兼容性需要 JPG。为 Web 使用质量 85-90 的 JPG 设置以平衡质量和文件大小。"
+      },
+      {
+        "icon": "💼",
+        "title": "工作和专业文档",
+        "description": "确保与同事和客户端的兼容性。",
+        "content": "将 HEIC 转换为 JPG 以在报告、演示文稿和专业文档中使用。大多数企业软件期望标准格式。JPG 可确保在 Microsoft Office、Google Workspace 和 Adobe Creative Cloud 中无缝兼容性。"
+      },
+      {
+        "icon": "📱",
+        "title": "跨平台照片分享",
+        "description": "与非 Apple 用户分享 Apple 照片。",
+        "content": "将 iPhone/iPad 照片（HEIC）转换为 JPG，以便与 Android 和 Windows 用户分享。社交媒体平台接受 JPG，但 HEIC 支持不一致。转换后的 JPG 可在任何设备、电子邮件客户端和消息应用程序上查看。"
+      },
+      {
+        "icon": "🖨️",
+        "title": "打印和照片服务",
+        "description": "为专业打印准备图像。",
+        "content": "大多数打印服务需要 JPG 或 TIFF。将 Apple 照片转换为 JPG 以进行在线照片打印、明信片、相册和专业打印服务。使用质量 90-95 的 JPG 进行打印以保持照片质量。"
+      },
+      {
+        "icon": "💾",
+        "title": "存档和备份",
+        "description": "确保长期可访问性。",
+        "content": "将 HEIC 转换为 JPG 以进行长期照片存档。JPG 是一种成熟的开放格式，具有保证的未来兼容性。HEIC 是较新的格式，在非 Apple 生态系统中的长期支持不确定。JPG 可确保照片在未来几十年内保持可访问性。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "何时保留 HEIC",
+        "description": "HEIC 是更好选择的场景。",
+        "content": "如果以下情况，请保留 HEIC：1）仅在 Apple 设备上使用（iOS 11+，macOS 10.13+），2）需要更小的文件大小（HEIC 比 JPG 小 40-50%），3）需要 HDR 或 16 位色彩（HEIC 支持，JPG 不支持），4）使用 iCloud 照片库（原生 HEIC 支持）。对于跨平台使用，转换为 JPG 是必需的。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 HEIC 转 JPG 转换的常见问题",
+    "items": [
+      {
+        "question": "为什么我的 iPhone 照片是 HEIC 而不是 JPG？",
+        "answer": "从 iOS 11（2017）开始，Apple 将 HEIC 作为默认照片格式，因为它提供了比 JPG 更好的压缩（40-50% 更小）和更高级的功能，如 HDR 和 16 位色彩。HEIC 使用先进的 HEVC（H.265）压缩，在更小的文件大小下提供卓越的质量。"
+      },
+      {
+        "question": "将 HEIC 转换为 JPG 会降低图像质量吗？",
+        "answer": "转换本身不会额外降低质量——JPG 将保留原始 HEIC 的当前质量水平。但是，JPG 文件可能会更大（1.5-2 倍），因为 JPG 的压缩效率不如 HEIC 的 HEVC。转换为 JPG 后，进一步编辑将引入 JPG 的有损压缩。"
+      },
+      {
+        "question": "HEIC 与 HEIF 相同吗？",
+        "answer": "HEIF（高效率图像格式）是容器格式，而 HEIC（高效率图像容器）是 Apple 使用 HEIF 容器和 HEVC 压缩的实现。这些术语在实践中通常可互换使用。两者都使用相同的 .heic 文件扩展名。"
+      },
+      {
+        "question": "哪些设备和浏览器支持 HEIC？",
+        "answer": "HEIC 在 Apple 设备上得到原生支持（iOS 11+，macOS 10.13+）。浏览器支持有限：Chrome 109+（2023），Edge 121+（2024），Safari（Mac）。大多数 Android 设备、Windows 10/11 和 Linux 需要额外的编解码器或软件。对于通用兼容性，JPG 仍然是最安全的选择（100% 支持）。"
+      },
+      {
+        "question": "我应该将所有 HEIC 照片转换为 JPG 吗？",
+        "answer": "这取决于您的使用情况。如果您仅在 Apple 生态系统中使用，请保留 HEIC 以获得更小的文件大小和高级功能。如果您与非 Apple 用户分享、上传到网站、使用非 Apple 软件或需要打印服务，请转换为 JPG。对于跨平台兼容性，JPG 是最安全的选择。"
+      },
+      {
+        "question": "HEIC 转 JPG 转换是否免费且安全？",
+        "answer": "是的，我们的 HEIC 转 JPG 转换器完全免费，无需注册、无水印、无付款。所有转换都使用 WebAssembly 在您的浏览器中本地进行——图像不会离开您的设备。这可确保 100% 的隐私和安全，没有服务器上传、数据收集或第三方访问。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像转换和压缩工具",
+    "items": [
+      {
+        "title": "JPG 转 HEIC",
+        "description": "将 JPG 图片转换回 HEIC 格式",
+        "url": "/converter/convert-jpg-to-heic"
+      },
+      {
+        "title": "JPG 压缩器",
+        "description": "进一步优化 JPG 文件",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "批量图片转换器",
+        "description": "一次转换多个图片",
+        "url": "/converter"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将 HEIC 文件拖放到此处或点击选择",
+      "subtitle": "支持 HEIC 格式，最多 {maxFiles} 个文件，每个最大 10MB",
+      "selectFiles": "选择 HEIC 文件"
+    },
+    "errors": {
+      "maxFiles": "最多允许 {maxFiles} 个文件",
+      "fileTooLarge": "文件 {fileName} 太大。请选择小于 10MB 的文件",
+      "unsupportedFormat": "不支持的文件格式：{fileName}。仅支持 HEIC 文件。",
+      "uploadFailed": "文件上传失败",
+      "conversionFailed": "转换失败。请重试。"
+    },
+    "files": {
+      "title": "已选择的 HEIC 文件",
+      "count": "已选择 {count} 个文件",
+      "reset": "全部重置",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "转换为 JPG",
+      "simpleStart": "快速 HEIC 转 JPG 转换",
+      "advancedStart": "HEIC 转 JPG 转换（高级）",
+      "processing": "正在转换为 JPG... {progress}%"
+    },
+    "progress": {
+      "label": "转换进度",
+      "status": "正在将 HEIC 转换为 JPG... {progress}% 完成"
+    },
+    "settings": {
+      "title": "JPG 转换设置",
+      "simple": "简单",
+      "advanced": "高级",
+      "simpleTitle": "快速设置",
+      "advancedTitle": "JPG 高级设置",
+      "quality": "质量",
+      "qualityHighest": "最高（质量 95）",
+      "qualityHigh": "高（质量 90）",
+      "qualityMedium": "平衡（质量 85）",
+      "qualityLow": "较小文件（质量 80）",
+      "qualityLowest": "最小（质量 75）",
+      "chroma": "色度子采样",
+      "chroma444": "4:4:4（最高质量）",
+      "chroma422": "4:2:2（平衡）",
+      "chroma420": "4:2:0（较小文件）",
+      "metadata": "保留元数据",
+      "optimize": "为 Web 优化",
+      "presetWeb": "Web 优化",
+      "presetWebDesc": "质量 85，较小文件",
+      "presetBalanced": "平衡",
+      "presetBalancedDesc": "质量 90，出色质量",
+      "presetPrint": "打印质量",
+      "presetPrintDesc": "质量 95，最高质量"
+    },
+    "downloadAll": "下载所有 JPG 文件",
+    "results": {
+      "title": "JPG 转换结果",
+      "count": "{count} 个 HEIC 文件已转换为 JPG",
+      "sizeInfo": "原始 HEIC：{original} MB → JPG：{converted} MB（{change}% 增加）",
+      "download": "下载 JPG"
+    }
+  }
+}

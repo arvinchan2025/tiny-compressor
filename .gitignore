@@ -35,3 +35,24 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# documentation
+*.md
+docs/
+README.md
+
+# test fixtures - images
+e2e/fixtures/*.png
+e2e/fixtures/*.jpg
+e2e/fixtures/*.jpeg
+e2e/fixtures/*.webp
+e2e/fixtures/*.gif
+e2e/fixtures/*.bmp
+e2e/fixtures/*.avif
+e2e/fixtures/*.heic
+!e2e/fixtures/README.md
+
+# playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+

@@ -1,0 +1,301 @@
+{
+  "seo": {
+    "title": "PNG to AVIF Converter - Convert PNG Images Online",
+    "description": "Convierte imágenes PNG a formato AVIF online. Convertidor PNG a AVIF gratuito, rápido y fácil de usar.",
+    "keywords": "PNG a AVIF, convertir PNG, convertidor de imágenes, herramienta online"
+  },
+  "hero": {
+    "title": "PNG to AVIF Converter",
+    "subtitle": "Convert PNG images to AVIF format online",
+    "description": "Convierte imágenes PNG a formato AVIF para compresión de próxima generación y calidad superior.",
+    "badge": "Convertidor"
+  },
+  "features": {
+    "title": "Características de Conversión PNG a AVIF",
+    "description": "Por qué convertir PNG a formato AVIF de próxima generación",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "Compresión Excepcional",
+        "description": "50-70% archivos más pequeños que PNG con misma o mejor calidad"
+      },
+      {
+        "icon": "✨",
+        "title": "Soporte HDR",
+        "description": "Profundidad de color de 10-bit/12-bit, amplia gama de colores (BT.2020) para imágenes premium"
+      },
+      {
+        "icon": "🎨",
+        "title": "Transparencia Alfa",
+        "description": "Compresión de canal alfa más eficiente - 50-60% más pequeño que PNG con transparencia"
+      },
+      {
+        "icon": "💎",
+        "title": "Modos Duales",
+        "description": "Sin pérdida (calidad perfecta, 30-50% más pequeño) y con pérdida (70-85% más pequeño)"
+      },
+      {
+        "icon": "⚡",
+        "title": "Soporte Moderno de Navegadores",
+        "description": "92%+ soporte (Chrome 85+, Firefox 93+, Safari 16+, Edge 121+)"
+      },
+      {
+        "icon": "🔐",
+        "title": "Libre de Regalías",
+        "description": "Estándar abierto sin tarifas de licencia - ideal para uso comercial"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs AVIF Format Comparison",
+    "subtitle": "Understanding the differences between PNG and AVIF formats",
+    "png": {
+      "description": "PNG (Portable Network Graphics) is a raster graphics file format that supports lossless data compresión and transparency.",
+      "features": [
+        "Lossless compression",
+        "Transparency support",
+        "Perfect for graphics and logos",
+        "Larger file sizes"
+      ]
+    },
+    "avif": {
+      "description": "AVIF is a next-generation image format based on AV1 video codec that provides exceptional compresión efficiency.",
+      "features": [
+        "Next-generation compression",
+        "Superior quality",
+        "Transparency support",
+        "HDR and wide color gamut"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Cómo Funciona la Conversión PNG a AVIF",
+    "description": "Comprender los principios técnicos detrás de la conversión PNG a AVIF.",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "Compresión de Próxima Generación",
+        "description": "AVIF usa códec AV1 para lograr compresión 50-70% mejor que PNG con misma o mejor calidad.",
+        "benefits": [
+          "50-70% más pequeño que PNG",
+          "Mantiene o mejora calidad",
+          "Tecnología de próxima generación",
+          "Libre de regalías"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "Soporte HDR y Amplia Gama de Colores",
+        "description": "AVIF soporta HDR, amplia gama de colores (BT.2020) y profundidad de color de hasta 12 bits, muy superior al RGB de 8 bits de PNG.",
+        "benefits": [
+          "Profundidad de color de 10-bit/12-bit",
+          "Amplia gama de colores (BT.2020)",
+          "Capacidades HDR",
+          "Superior a PNG/WebP"
+        ]
+      },
+      {
+        "icon": "🌈",
+        "title": "Compresión Eficiente de Canal Alfa",
+        "description": "AVIF comprime canal alfa por separado con predicción avanzada, logrando archivos significativamente más pequeños que PNG.",
+        "benefits": [
+          "50-60% más pequeño que PNG con alfa",
+          "Predicción avanzada de alfa",
+          "Mantiene calidad de transparencia",
+          "Mejor que PNG/WebP"
+        ]
+      },
+      {
+        "icon": "⚡",
+        "title": "Modos Duales",
+        "description": "AVIF ofrece modo sin pérdida (calidad perfecta, 30-50% más pequeño que PNG) y modo con pérdida (70-85% más pequeño, excelente calidad).",
+        "benefits": [
+          "Sin pérdida: 30-50% más pequeño",
+          "Con pérdida: 70-85% más pequeño",
+          "Flexible para diferentes casos",
+          "Mejor compresión que todos"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Cuándo y Cómo Convertir PNG a AVIF",
+    "description": "Escenarios comunes y mejores prácticas",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Aplicaciones Web Modernas",
+        "description": "Optimización web de próxima generación para sitios de vanguardia.",
+        "content": "Convierte PNG a AVIF para archivos 50-70% más pequeños con misma o mejor calidad. Esencial para aplicaciones web modernas que priorizan rendimiento. Usa AVIF sin pérdida para gráficos/logos (30-50% más pequeño que PNG), AVIF con pérdida (calidad 50-60) para fotos con transparencia (70-80% más pequeño). Implementa elemento <picture> con AVIF primero, WebP como respaldo. Soporte de navegadores 92%+ a partir de 2024 (Chrome 85+, Firefox 93+, Safari 16+)."
+      },
+      {
+        "icon": "📱",
+        "title": "Aplicaciones Móviles",
+        "description": "Reduce tamaño de aplicación y mejora rendimiento móvil.",
+        "content": "AVIF reduce tamaño de aplicaciones móviles en 20-30% adicional comparado con WebP. Significa carga más rápida y menos uso de datos en redes celulares. Usa sin pérdida para activos UI, con pérdida (calidad 50-55) para imágenes de contenido. Soporte de decodificación por hardware en dispositivos móviles modernos asegura renderizado rápido."
+      },
+      {
+        "icon": "🎨",
+        "title": "Contenido HDR",
+        "description": "Preserva contenido HDR y amplia gama de colores.",
+        "content": "AVIF es el único formato web que soporta HDR y profundidad de color de 10-bit/12-bit. Convierte PNG a AVIF para preservar contenido de amplia gama de colores (BT.2020) y HDR (HLG, PQ). Esencial para portafolios de fotografía, exhibiciones de diseño y contenido premium. Elimina bandas de gradiente causadas por limitación de 8 bits de PNG. Elección a prueba de futuro para pantallas HDR."
+      },
+      {
+        "icon": "💾",
+        "title": "Reducir Costos",
+        "description": "Reduce dramáticamente costos de almacenamiento y ancho de banda.",
+        "content": "La reducción de tamaño del 50-70% de AVIF se traduce en ahorros significativos en costos de almacenamiento en la nube y CDN. Convierte toda tu biblioteca PNG a AVIF para reducción inmediata de costos. Usa sin pérdida para calidad de archivo, con pérdida para entrega. Monitorea soporte de navegadores y sirve AVIF a navegadores soportados, PNG a heredados."
+      },
+      {
+        "icon": "🎮",
+        "title": "Desarrollo de Juegos",
+        "description": "Optimiza texturas de juegos y elementos UI.",
+        "content": "AVIF reduce tamaño de activos de juegos en 50-70%, crítico para juegos web y contenido descargable. Usa sin pérdida para elementos UI y sprites que necesitan calidad perfecta. Usa con pérdida (calidad 55-60) para texturas y fondos. El soporte HDR de AVIF permite iluminación realista en juegos modernos."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Cuándo Mantener PNG o WebP",
+        "description": "Escenarios donde PNG o WebP siguen siendo mejor opción.",
+        "content": "Mantén PNG/WebP cuando: 1) necesitas compatibilidad universal (correo, sistemas antiguos), 2) trabajas con herramientas que carecen de soporte AVIF, 3) apuntas a usuarios Safari <16 o Chrome <85. AVIF es excelente para aplicaciones web modernas con soporte de navegadores 92%+. Usa mejora progresiva: AVIF → WebP → PNG."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Preguntas comunes sobre conversión PNG a AVIF.",
+    "items": [
+      {
+        "question": "¿Qué es AVIF y por qué es mejor que PNG?",
+        "answer": "AVIF (AV1 Image File Format) es un formato de imagen de próxima generación basado en el códec de video AV1. Proporciona compresión 50-70% mejor que PNG con misma o mejor calidad. AVIF soporta HDR, amplia gama de colores y compresión alfa más eficiente. Es libre de regalías y diseñado para rendimiento web moderno."
+      },
+      {
+        "question": "¿Qué navegadores soportan AVIF?",
+        "answer": "AVIF tiene soporte de navegadores 92%+ a partir de 2024. Soportado por Chrome 85+ (2020), Firefox 93+ (2021), Safari 16+ (2022), Edge 121+ (2024), Opera 71+ (2020). El soporte móvil incluye Chrome Android, Safari iOS 16+, Samsung Internet 14+. Para navegadores antiguos, implementa mejora progresiva con elemento <picture>: AVIF → WebP → respaldo PNG."
+      },
+      {
+        "question": "¿Qué tan más pequeños son los archivos AVIF comparados con PNG?",
+        "answer": "AVIF proporciona compresión 50-70% mejor que PNG en promedio. AVIF sin pérdida es 30-50% más pequeño que PNG con misma calidad. AVIF con pérdida (calidad 50-60) es 70-80% más pequeño mientras mantiene excelente calidad visual. Por ejemplo, un PNG de 1MB puede convertirse en 300-500KB como AVIF sin pérdida, o 200-300KB como AVIF con pérdida. Los ahorros reales dependen del contenido y complejidad de imagen."
+      },
+      {
+        "question": "¿AVIF soporta transparencia?",
+        "answer": "Sí, AVIF soporta completamente transparencia de canal alfa en modos con y sin pérdida. La compresión alfa de AVIF es realmente más eficiente que PNG, logrando datos alfa 50-60% más pequeños. Soporta alfa de 8 bits (256 niveles) como PNG, más modos de predicción avanzados para mejor compresión. La calidad de transparencia se mantiene o mejora comparada con PNG."
+      },
+      {
+        "question": "¿Debo usar AVIF para todas las imágenes?",
+        "answer": "Para aplicaciones web modernas, sí - AVIF ofrece ventajas significativas de rendimiento. Sin embargo, considera: 1) implementar mejora progresiva (AVIF → WebP → PNG) para navegadores antiguos, 2) mantener PNG para correo y necesidades de compatibilidad universal, 3) usar AVIF sin pérdida para gráficos/logos, con pérdida para fotos, 4) monitorear soporte de navegadores de tu audiencia. AVIF es ideal para sitios que priorizan rendimiento con soporte de navegadores 92%+."
+      },
+      {
+        "question": "¿Es gratuito usar este convertidor PNG a AVIF?",
+        "answer": "Sí, nuestro convertidor PNG a AVIF es completamente gratuito sin registro, marcas de agua ni pago. Toda conversión se ejecuta localmente en tu navegador usando WebAssembly - las imágenes nunca dejan tu dispositivo. Esto garantiza 100% de privacidad y seguridad sin subidas a servidor, recopilación de datos o acceso de terceros a tus archivos. La codificación AVIF es completamente del lado del cliente."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Herramientas Relacionadas",
+    "description": "Explora más herramientas de conversión y compresión de imágenes",
+    "items": [
+      {
+        "title": "Convertidor PNG a WebP",
+        "description": "Convierte PNG a WebP",
+        "url": "/converter/convert-avif-to-png"
+      },
+      {
+        "title": "Compresor AVIF",
+        "description": "Optimiza archivos AVIF",
+        "url": "/compressor/compress-avif"
+      },
+      {
+        "title": "Compresor PNG",
+        "description": "Optimiza archivos PNG",
+        "url": "/converter/convert-png-to-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+      "subtitle": "Soporta formato {format}, máx 50MB",
+      "selectFiles": "Seleccionar Archivo"
+    },
+    "errors": {
+      "maxFiles": "Maximum {maxFiles} files allowed",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "unsupportedFormat": "Unsupported file format: {fileName}. Only PNG files are supported.",
+      "uploadFailed": "File upload failed",
+      "conversionFailed": "Conversion failed. Please try again."
+    },
+    "files": {
+      "title": "Archivos Seleccionados",
+      "count": "{count} archivos",
+      "reset": "Reset All",
+      "remove": "Eliminar",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Convertir a {format}",
+      "simpleStart": "Quick Convert PNG to AVIF",
+      "advancedStart": "Convert PNG to AVIF (Advanced)",
+      "processing": "Convirtiendo... {progress}%"
+    },
+    "progress": {
+      "label": "Procesando...",
+      "status": "Converting PNG to AVIF... {progress}% complete",
+      "converting": "Convirtiendo tu imagen..."
+    },
+    "settings": {
+      "title": "AVIF Conversion Settings",
+      "simple": "Simple",
+      "advanced": "Avanzado",
+      "simpleTitle": "Quick Settings",
+      "advancedTitle": "Configuraciones Avanzadas",
+      "quality": "Calidad",
+      "qualityLossless": "Lossless (Perfect Quality)",
+      "qualityHighest": "Highest (Quality 63)",
+      "qualityHigh": "Alta",
+      "qualityMedium": "Media",
+      "qualityLow": "Baja",
+      "compressionMode": "Compression Mode",
+      "compressionLossless": "Lossless (30-50% smaller)",
+      "compressionLossy": "Lossy (70-80% smaller)",
+      "speed": "Encoding Speed",
+      "speedFastest": "Fastest (Speed 8)",
+      "speedBalanced": "Balanced (Speed 6)",
+      "speedBest": "Best Quality (Speed 4)",
+      "colorDepth": "Color Depth",
+      "colorDepth8": "8-bit (Standard)",
+      "colorDepth10": "10-bit (HDR)",
+      "colorDepth12": "12-bit (Professional)",
+      "metadata": "Mantener Metadatos",
+      "optimize": "Optimize for Web",
+      "presetLossless": "Lossless",
+      "presetLosslessDesc": "Perfect quality, 30-50% smaller than PNG",
+      "presetBalanced": "Balanced",
+      "presetBalancedDesc": "Excellent quality, 60-70% smaller",
+      "presetSmall": "Maximum Compression",
+      "presetSmallDesc": "Good quality, 70-80% smaller",
+      "metadataDesc": "EXIF, GPS, info de cámara"
+    },
+    "downloadAll": "Download All AVIF Files",
+    "results": {
+      "title": "¡Conversión completada! 🎉",
+      "count": "{count} PNG files converted to AVIF",
+      "sizeInfo": "Original: {original} MB → Convertido: {converted} MB",
+      "download": "Descargar",
+      "subtitle": "Tu imagen ha sido convertida exitosamente",
+      "original": "Original",
+      "converted": "Convertido",
+      "saved": "Ahorrado",
+      "time": "Tiempo",
+      "format": "Formato",
+      "sizeReduction": "Reducción de Tamaño",
+      "sizeIncrease": "Aumento de Tamaño",
+      "greatJob": "¡Excelente!",
+      "considerAdjusting": "Considera ajustar configuraciones",
+      "savedSpace": "Ahorrado {amount} MB",
+      "successMessage": "¡Conversión exitosa!",
+      "successDescription": "Tu imagen ha sido convertida a formato {format} exitosamente.",
+      "convertMore": "Convertir Más",
+      "reset": "Reiniciar"
+    }
+  }
+}

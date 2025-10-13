@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import PngCompressorNew from './PngCompressorNew';
+import CompressPngClient from './CompressPngClient';
 
 interface CompressPngPageProps {
   params: {
@@ -13,18 +13,24 @@ export async function generateMetadata({ params }: CompressPngPageProps): Promis
   
   return {
     title: 'PNG Compressor - Compress PNG Images Online',
-    description: 'Free online PNG image compressor. Reduce PNG file size while maintaining quality. No registration required.',
-    keywords: 'PNG compressor, compress PNG, reduce PNG size, PNG optimization',
+    description: 'Compress PNG images online with our free PNG compressor. Reduce PNG file size while maintaining quality. Fast, secure, and easy to use.',
+    keywords: 'PNG compressor, compress PNG, PNG optimization, reduce PNG size, PNG compressor online, free PNG compressor',
     openGraph: {
       title: 'PNG Compressor - Compress PNG Images Online',
-      description: 'Free online PNG image compressor. Reduce PNG file size while maintaining quality.',
+      description: 'Compress PNG images online with our free PNG compressor. Reduce PNG file size while maintaining quality. Fast, secure, and easy to use.',
       type: 'website',
+      locale: locale,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'PNG Compressor - Compress PNG Images Online',
+      description: 'Compress PNG images online with our free PNG compressor. Reduce PNG file size while maintaining quality. Fast, secure, and easy to use.',
     },
   };
 }
 
 export default function CompressPngPage({ params }: CompressPngPageProps) {
-  const { locale } = params;
-  
-  return <PngCompressorNew locale={locale} />;
+  return (
+    <CompressPngClient locale={params.locale} />
+  );
 }

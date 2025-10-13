@@ -1,0 +1,298 @@
+{
+  "seo": {
+    "title": "PNG 转 JPG - 在线转换 PNG 图片",
+    "description": "在线将 PNG 图片转换为 JPG 格式。免费、快速且易于使用的 PNG 转 JPG 转换器。",
+    "keywords": "PNG 转 JPG, 转换 PNG, 图片转换器, 在线工具"
+  },
+  "hero": {
+    "title": "PNG 转 JPG 转换器",
+    "subtitle": "在线将 PNG 图片转换为 JPG 格式",
+    "description": "将 PNG 图片转换为 JPG 格式，同时保持良好的质量。非常适合照片和网页图片。"
+  },
+  "features": {
+    "title": "PNG 转 JPG 转换功能",
+    "description": "为什么要将 PNG 转换为 JPG 以获得更好的 Web 性能",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "文件大小减少 50-80%",
+        "description": "通过将无损 PNG 转换为高效 JPG 显著减少文件大小"
+      },
+      {
+        "icon": "🌐",
+        "title": "提升 Web 性能",
+        "description": "更快的页面加载和减少的带宽 - 非常适合网站和博客"
+      },
+      {
+        "icon": "🎛️",
+        "title": "质量控制",
+        "description": "可调节的 JPG 质量（60-95%）以平衡大小和视觉保真度"
+      },
+      {
+        "icon": "📱",
+        "title": "通用兼容性",
+        "description": "JPG 可在任何地方使用 - 所有设备、浏览器和平台"
+      },
+      {
+        "icon": "⚡",
+        "title": "批量转换",
+        "description": "同时将多个 PNG 文件转换为 JPG"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 安全",
+        "description": "所有转换均在您的浏览器本地进行"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs JPG 格式对比",
+    "subtitle": "了解 PNG 和 JPG 格式之间的差异",
+    "png": {
+      "description": "PNG（Portable Network Graphics）是一种支持无损数据压缩和透明度的光栅图形文件格式。",
+      "features": [
+        "无损压缩",
+        "透明度支持",
+        "非常适合图形和徽标",
+        "文件大小更大"
+      ]
+    },
+    "jpg": {
+      "description": "JPG（JPEG）是数字图像（尤其是数字照片）中常用的有损压缩方法。",
+      "features": [
+        "有损压缩",
+        "文件大小更小",
+        "非常适合照片",
+        "不支持透明度"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "PNG 转 JPG 转换原理",
+    "description": "了解格式转换背后的技术过程和算法",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "透明度移除和背景填充",
+        "description": "PNG 的 Alpha 通道被移除，因为 JPG 不支持透明度。透明像素被替换为纯色背景（通常为白色，可配置为其他颜色）。",
+        "benefits": [
+          "Alpha 通道数据被消除",
+          "透明区域填充纯色",
+          "文件复杂性降低",
+          "为 JPG 编码准备图像"
+        ]
+      },
+      {
+        "icon": "📐",
+        "title": "压缩算法转换",
+        "description": "从 PNG 的无损 DEFLATE 压缩切换到 JPG 的有损 DCT（离散余弦变换）压缩，实现 50-80% 的文件大小减少。",
+        "benefits": [
+          "DEFLATE（无损）→ DCT（有损）",
+          "通常减少 50-80% 文件大小",
+          "为摄影内容优化",
+          "可调节的质量权衡（1-100%）"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "色彩空间和色度子采样",
+        "description": "将 RGB 色彩数据转换为 YCbCr 色彩空间并应用色度子采样（4:2:0），在保持感知亮度的同时减少色彩信息。",
+        "benefits": [
+          "RGB → YCbCr 色彩空间转换",
+          "色度子采样（4:2:0）",
+          "额外 30% 压缩",
+          "最小的感知质量损失"
+        ]
+      },
+      {
+        "icon": "📦",
+        "title": "元数据和 EXIF 处理",
+        "description": "可选择性地将 EXIF 数据（相机设置、日期、位置）和色彩配置文件从 PNG 传输到 JPG，或删除它们以将文件大小减少 5-15%。",
+        "benefits": [
+          "选择性元数据保留",
+          "EXIF 数据传输（相机信息、GPS）",
+          "ICC 色彩配置文件嵌入",
+          "如果移除可节省 5-15% 大小"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时以及如何将 PNG 转换为 JPG",
+    "description": "PNG 转 JPG 转换的常见场景和最佳实践",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "网站性能优化",
+        "description": "减少页面加载时间并改善 SEO 排名。",
+        "content": "将 PNG 照片转换为 JPG（质量 85-90）以减少 50-80% 的文件大小。对博客、作品集和内容丰富的网站至关重要。对一般网页图像使用质量 85，对英雄图像使用 90。避免转换带有文本的徽标或图形 - 将它们保留为 PNG。"
+      },
+      {
+        "icon": "📱",
+        "title": "社交媒体和移动分享",
+        "description": "更快的上传和更好的移动体验。",
+        "content": "社交平台无论如何都会重新压缩图像，因此首先将 PNG 转换为 JPG（质量 80-85）以进行控制并加快上传速度。在移动连接上尤其重要。首先检查透明度 - 如果存在并且需要，请使用 PNG 或改为转换为 WebP。"
+      },
+      {
+        "icon": "💾",
+        "title": "云存储和备份",
+        "description": "节省存储空间并降低成本。",
+        "content": "将 PNG 照片转换为 JPG（质量 85-90）以减少 60-85% 的云存储。对于错误保存为 PNG 的屏幕截图特别有效。如果以后可能需要无损质量，请保留原件 - JPG 转换是不可逆的。"
+      },
+      {
+        "icon": "📧",
+        "title": "电子邮件附件",
+        "description": "在保持质量的同时保持在大小限制内。",
+        "content": "电子邮件服务将附件限制为 10-25MB。将 PNG 转换为质量 85 的 JPG 以在每封电子邮件中共享更多图像。首先调整到显示尺寸（例如 1920px 宽度），然后再进行转换以获得最佳结果和最小文件。"
+      },
+      {
+        "icon": "📸",
+        "title": "摄影工作流程",
+        "description": "专业交付和客户共享。",
+        "content": "在导出 PNG 的软件中编辑后，转换为 JPG 进行交付。对客户工作使用质量 90-95，对网页发布使用 85-90。在转换之前始终调整到最终尺寸，以避免在不必要的像素上浪费质量。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "何时不转换",
+        "description": "了解限制以避免质量问题。",
+        "content": "如果以下情况，请不要转换：1）图像具有您需要的透明度（徽标、图形），2）包含文本或清晰边缘（屏幕截图、图表），3）已经很小（<50KB），4）需要像素完美的质量。对于这些情况，保留 PNG 或使用 WebP 以获得具有无损/透明度支持的更好压缩。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 PNG 转 JPG 转换的常见问题",
+    "items": [
+      {
+        "question": "将 PNG 转换为 JPG 会降低图像质量吗？",
+        "answer": "JPG 使用有损压缩，因此会发生一些质量损失。但是，在质量 85-90 时，大多数观众看不出差异。PNG 转 JPG 转换最适合照片和自然图像。避免转换带有文本、徽标或清晰边缘的图形，因为这些在 JPG 中会显示可见的压缩伪影。"
+      },
+      {
+        "question": "将 PNG 转换为 JPG 时透明度会怎样？",
+        "answer": "JPG 不支持透明度。透明像素会自动填充为纯色背景（通常为白色）。如果您需要透明度，请考虑改为转换为 WebP，它支持透明度和比 PNG 更好的压缩。"
+      },
+      {
+        "question": "PNG 转 JPG 转换应该使用什么质量设置？",
+        "answer": "质量 85 是 Web 使用的最佳点 - 以最小的可见质量损失提供 60-70% 的文件大小减少。对专业摄影或客户工作使用 90-95。对一般网页内容使用 80。避免低于 75，因为压缩伪影会变得明显。"
+      },
+      {
+        "question": "我可以将 PNG 屏幕截图转换为 JPG 吗？",
+        "answer": "虽然技术上可行，但不建议这样做。PNG 对于屏幕截图来说更优越，因为它可以在没有伪影的情况下保持文本清晰度和清晰边缘。JPG 的有损压缩会在文本周围产生可见的模糊。将屏幕截图保留为 PNG 或转换为 WebP 无损以获得更好的结果。"
+      },
+      {
+        "question": "PNG 转 JPG 转换是可逆的吗？",
+        "answer": "不可逆。JPG 压缩是有损的 - 一旦转换，丢弃的数据就无法恢复。将 JPG 转换回 PNG 不会恢复丢失的质量，它只是改变容器格式。如果以后可能需要原始质量，请始终保留原始 PNG 文件。"
+      },
+      {
+        "question": "将 PNG 转换为 JPG 后，我的文件会小多少？",
+        "answer": "文件大小减少因内容而异：照片通常会减少 60-80%，复杂图形减少 40-60%，简单图形减少 30-50%。确切的减少取决于图像复杂性、颜色数量和选择的质量设置。更复杂的图像在 JPG 中压缩效果更好。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像转换工具",
+    "items": [
+      {
+        "title": "PNG 转 WebP",
+        "description": "具有透明度支持的更好压缩",
+        "url": "/converter/convert-png-to-webp"
+      },
+      {
+        "title": "JPG 转 PNG",
+        "description": "将 JPG 转换回 PNG 格式",
+        "url": "/converter/convert-jpg-to-png"
+      },
+      {
+        "title": "JPEG 压缩",
+        "description": "进一步压缩 JPG 文件",
+        "url": "/compressor/compress-jpeg"
+      }
+    ]
+  },
+  "operation": {
+    "modes": {
+      "simple": "简单",
+      "advanced": "高级"
+    },
+    "upload": {
+      "title": "将文件拖放到此处或点击选择",
+      "subtitle": "支持 {sourceFormat} 格式，最大 50MB",
+      "selectFiles": "选择文件"
+    },
+    "errors": {
+      "maxFiles": "最多允许 {maxFiles} 个文件",
+      "fileTooLarge": "文件 {fileName} 太大。请选择小于 50MB 的文件",
+      "unsupportedFormat": "不支持的文件格式：{fileName}",
+      "uploadFailed": "文件上传失败",
+      "conversionFailed": "转换失败",
+      "unknownError": "未知错误",
+      "processingFailed": "处理 {fileName} 失败"
+    },
+    "files": {
+      "title": "已选择的文件",
+      "count": "已选择 {count} 个文件",
+      "reset": "重置",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "转换为 {targetFormat}",
+      "simpleStart": "快速转换 {sourceFormat} 为 {targetFormat}",
+      "advancedStart": "转换 {sourceFormat} 为 {targetFormat}（高级）",
+      "processing": "正在转换... {progress}%"
+    },
+    "progress": {
+      "label": "转换进度",
+      "status": "处理中... {progress}% 完成"
+    },
+    "settings": {
+      "title": "转换设置",
+      "simple": "简单",
+      "advanced": "高级",
+      "simpleTitle": "快速设置",
+      "advancedTitle": "高级设置",
+      "quality": "质量",
+      "qualityLow": "低（60）",
+      "qualityMedium": "中（80）",
+      "qualityHigh": "高（100）",
+      "colorSpace": "色彩空间",
+      "colorSpaceAuto": "自动",
+      "colorSpaceSrgb": "sRGB",
+      "colorSpaceAdobe": "Adobe RGB",
+      "progressive": "渐进式 JPEG",
+      "progressiveDesc": "更适合网页",
+      "optimize": "为 Web 优化",
+      "optimizeForWeb": "为 Web 优化",
+      "optimizeDesc": "更小的文件大小",
+      "metadata": "保留元数据",
+      "metadataDesc": "EXIF、GPS、相机信息",
+      "presetHigh": "高质量",
+      "presetHighDesc": "最佳质量，文件较大",
+      "presetBalanced": "平衡",
+      "presetBalancedDesc": "良好质量，文件较小",
+      "presetSmall": "小文件",
+      "presetSmallDesc": "文件较小，质量较低"
+    },
+    "downloadAll": "全部下载",
+    "results": {
+      "title": "转换完成！🎉",
+      "subtitle": "您的图像已成功优化",
+      "count": "{count} 个文件已转换",
+      "original": "原始",
+      "originalFormat": "{format} 格式",
+      "converted": "已转换",
+      "convertedFormat": "{format} 格式",
+      "sizeChange": "大小变化",
+      "time": "时间",
+      "format": "格式",
+      "smaller": "更小",
+      "larger": "更大",
+      "successMessage": "转换成功！",
+      "successDescription": "您的图像已转换并优化。准备下载！",
+      "download": "下载",
+      "reset": "转换更多",
+      "sizeInfo": "原始：{original} MB → 已转换：{converted} MB（{change}% {changeType}）"
+    }
+  }
+}

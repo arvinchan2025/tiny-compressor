@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "JPG 转 WebP - 在线转换 JPG 图片",
+    "description": "在线将 JPG 图片转换为 WebP 格式。免费、快速且易于使用的 JPG 转 WebP 转换器。",
+    "keywords": "JPG 转 WebP, JPG 转换, 图片转换器, 在线工具"
+  },
+  "hero": {
+    "title": "JPG 转 WebP 转换器",
+    "subtitle": "在线将 JPG 图片转换为 WebP 格式",
+    "description": "将 JPG 图片转换为 WebP 格式，以获得更好的压缩和现代 Web 性能，同时保持卓越的质量。"
+  },
+  "features": {
+    "title": "JPG 转 WebP 转换功能",
+    "description": "为什么要将 JPG 转换为 WebP 以获得更好的 Web 性能",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "文件小 25-35%",
+        "description": "WebP 在相同质量下提供比 JPG 更好的压缩"
+      },
+      {
+        "icon": "✨",
+        "title": "更好的质量",
+        "description": "在同等文件大小下提供卓越的图像质量"
+      },
+      {
+        "icon": "🎨",
+        "title": "透明度支持",
+        "description": "WebP 支持 Alpha 通道，JPG 不支持"
+      },
+      {
+        "icon": "🌐",
+        "title": "95% 以上浏览器支持",
+        "description": "2020 年以来所有现代浏览器都支持"
+      },
+      {
+        "icon": "⚡",
+        "title": "批量转换",
+        "description": "同时将多个 JPG 文件转换为 WebP"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 安全",
+        "description": "所有转换均在您的浏览器本地进行"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "JPG vs WebP 格式对比",
+    "subtitle": "了解 JPG 和 WebP 格式之间的差异",
+    "jpg": {
+      "description": "JPG（JPEG）是数字摄影中广泛使用的有损压缩格式。",
+      "features": [
+        "有损压缩",
+        "通用兼容性",
+        "适合照片",
+        "不支持透明度"
+      ]
+    },
+    "webp": {
+      "description": "WebP 是一种现代图像格式，与 JPG 相比提供了更好的压缩。",
+      "features": [
+        "更好的压缩",
+        "透明度支持",
+        "有损和无损模式",
+        "现代浏览器支持"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "JPG 转 WebP 转换原理",
+    "description": "了解 WebP 相对于 JPG 的技术优势",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "高级压缩技术",
+        "description": "WebP 使用 VP8/VP9 预测编码而不是 JPG 的 DCT，通过高级块预测和熵编码在相同质量下实现 25-35% 的优越压缩。",
+        "benefits": [
+          "VP8/VP9 压缩 vs DCT",
+          "相同质量下小 25-35%",
+          "更好的块预测",
+          "高效的熵编码"
+        ]
+      },
+      {
+        "icon": "🎯",
+        "title": "质量保留",
+        "description": "将 JPG 转换为 WebP 可以保持或改善感知质量。WebP 的高级算法更好地处理压缩伪影，特别是在渐变和纹理中。",
+        "benefits": [
+          "保持或改善质量",
+          "更好的渐变处理",
+          "减少块状伪影",
+          "更平滑的纹理"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "透明度添加",
+        "description": "与 JPG 不同，WebP 支持 Alpha 通道透明度。转换不会自动添加透明度，但格式通过透明度支持实现未来编辑。",
+        "benefits": [
+          "Alpha 通道支持",
+          "8 位透明度（256 级）",
+          "准备好编辑透明度",
+          "比带 Alpha 的 PNG 小"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "灵活的质量控制",
+        "description": "WebP 提供精细的质量控制（0-100），质量与大小的比率优于 JPG。在小 25-35% 的大小下获得相同的 JPG 质量，或在相同大小下获得更好的质量。",
+        "benefits": [
+          "质量范围 0-100",
+          "更好的质量/大小比率",
+          "无损模式可用",
+          "为 Web 传输优化"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时以及如何将 JPG 转换为 WebP",
+    "description": "JPG 转 WebP 转换的常见场景和最佳实践",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "网站性能优化",
+        "description": "通过更好的图像压缩使您的网站现代化。",
+        "content": "将 JPG 照片转换为 WebP，在相同质量下获得 25-35% 更小的文件。对于图像密集型网站、博客和作品集至关重要。对于照片使用质量 80-85（匹配 JPG 质量 85-90）。使用 <picture> 元素实现 WebP 优先、JPG 后备，以实现 95% 以上的浏览器支持。优先处理英雄图像、产品照片和首屏内容以获得最大效果。"
+      },
+      {
+        "icon": "📱",
+        "title": "移动端和电子商务",
+        "description": "改善移动体验和转化率。",
+        "content": "WebP 的 25-35% 大小减少显著改善了移动端加载时间。对于电子商务来说至关重要，因为 1 秒延迟 = 7% 转化损失。将产品照片转换为 WebP（质量 80-85）。对目录图像使用有损 WebP，对英雄产品使用无损。在真实移动设备上进行测试 - WebP 解码在现代智能手机上是硬件加速的。"
+      },
+      {
+        "icon": "📸",
+        "title": "摄影和作品集网站",
+        "description": "以更好的质量和更小的大小展示照片。",
+        "content": "WebP 在降低带宽的同时保持照片质量。对作品集照片使用质量 85-90（在更小的大小下优于 JPG 90-95）。将画廊图像转换为 WebP 以实现更快的浏览。为需要通用兼容性的客户提供 JPG 下载。WebP 更好的渐变处理减少了天空和平滑表面中的色带。"
+      },
+      {
+        "icon": "💾",
+        "title": "云存储和 CDN",
+        "description": "节省存储和带宽成本。",
+        "content": "将 JPG 转换为 WebP 可节省 25-35% 的云存储和 CDN 成本。批量转换整个照片库以立即节省。对常规内容使用质量 80-85，对高级内容使用 85-90。监控浏览器支持（95% 以上）并向支持的浏览器提供 WebP，向旧版提供 JPG。高流量网站的 ROI 很大。"
+      },
+      {
+        "icon": "📰",
+        "title": "新闻和内容网站",
+        "description": "改善页面加载速度和用户参与度。",
+        "content": "WebP 将文章图像大小减少 25-35%，改善页面加载速度和 SEO 排名。将特色图像和内联照片转换为 WebP（质量 80-85）。对折叠以下的图像使用 WebP 延迟加载。更快的加载时间 = 更好的参与度和更低的跳出率。对于速度影响收入的广告支持网站至关重要。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "何时保留 JPG",
+        "description": "JPG 仍然是最佳选择的场景。",
+        "content": "如果以下情况，请保留 JPG：1）需要通用兼容性（电子邮件、旧系统），2）针对 Safari <14 或 Chrome <85 用户（检查分析），3）使用打印工作流程，4）客户交付需要 JPG 格式。WebP 在具有 95% 以上浏览器支持的现代 Web 应用中表现出色。使用渐进式增强：WebP 后备 → JPG。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 JPG 转 WebP 转换的常见问题",
+    "items": [
+      {
+        "question": "将 JPG 转换为 WebP 会提高图像质量吗？",
+        "answer": "将 JPG 转换为 WebP 不会恢复原始 JPG 压缩中丢失的质量，但 WebP 的高级算法可以保持或改善感知质量。在相同的文件大小下，WebP 由于其卓越的压缩技术，通常看起来比 JPG 更好。为获得最佳结果，从可用的最高质量 JPG 进行转换。WebP 更好的渐变处理减少了色带和块状伪影。"
+      },
+      {
+        "question": "与 JPG 相比，WebP 文件有多小？",
+        "answer": "WebP 在同等质量下提供比 JPG 高 25-35% 的压缩。例如，1MB 的 JPG 照片可以在相同的视觉质量下成为 650-750KB 的 WebP。实际节省取决于图像内容 - 具有渐变和纹理的照片可实现更好的压缩。您还可以选择在相同大小下获得更好的质量，或在更小的大小下获得相同的质量。"
+      },
+      {
+        "question": "哪些浏览器支持 WebP 格式？",
+        "answer": "截至 2024 年，WebP 拥有 95% 以上的浏览器支持。Chrome 23+（2012）、Firefox 65+（2019）、Edge 18+（2018）、Safari 14+（2020）、Opera 12.1+（2012）均支持。移动端支持包括 Chrome Android、Safari iOS 14+、Samsung Internet 4+。对于旧版浏览器，使用 <picture> 元素实现 WebP 优先和 JPG 后备。"
+      },
+      {
+        "question": "我可以在不损失质量的情况下将 JPG 转换为 WebP 吗？",
+        "answer": "JPG 已经是有损的，因此转换为 WebP 会保持当前质量但无法恢复原始 JPG 压缩中丢失的数据。为获得最佳结果：1）从最高质量的 JPG 转换，2）使用 WebP 质量 80-90 来匹配或超过 JPG 质量，3）在发布前进行视觉比较。WebP 无损模式可用，但文件比 WebP 有损大。"
+      },
+      {
+        "question": "我应该将所有 JPG 图像转换为 WebP 吗？",
+        "answer": "对于现代网站，是的 - WebP 提供了显着的性能优势，拥有 95% 以上的浏览器支持。但是：1）实施渐进式增强（WebP 后备 → JPG），2）对于电子邮件和通用兼容性保留 JPG，3）监控受众的浏览器支持，4）对常规内容使用质量 80-85。WebP 非常适合优先考虑性能和现代浏览器支持的网站。"
+      },
+      {
+        "question": "JPG 转 WebP 转换是否免费且安全？",
+        "answer": "是的，我们的 JPG 转 WebP 转换器完全免费，无需注册、无水印、无付款。所有转换都使用 WebAssembly 在您的浏览器中本地进行 - 图像不会离开您的设备。这可确保 100% 的隐私和安全，没有服务器上传、数据收集或第三方访问。WebP 编码完全在客户端运行。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像转换和压缩工具",
+    "items": [
+      {
+        "title": "WebP 转 JPG",
+        "description": "将 WebP 图片转换回 JPG 格式",
+        "url": "/converter/convert-webp-to-jpg"
+      },
+      {
+        "title": "JPG 压缩",
+        "description": "进一步优化 JPG 文件",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP 压缩",
+        "description": "进一步优化 WebP 文件",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将 JPG 文件拖放到此处或点击选择",
+      "subtitle": "支持 JPG/JPEG 格式，最多 {maxFiles} 个文件，每个最大 10MB",
+      "selectFiles": "选择 JPG 文件"
+    },
+    "errors": {
+      "maxFiles": "最多允许 {maxFiles} 个文件",
+      "fileTooLarge": "文件 {fileName} 太大。请选择小于 10MB 的文件",
+      "unsupportedFormat": "不支持的文件格式：{fileName}。仅支持 JPG/JPEG 文件。",
+      "uploadFailed": "文件上传失败",
+      "conversionFailed": "转换失败。请重试。"
+    },
+    "files": {
+      "title": "已选择的 JPG 文件",
+      "count": "已选择 {count} 个文件",
+      "reset": "全部重置",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "转换为 WebP",
+      "simpleStart": "快速 JPG 转 WebP 转换",
+      "advancedStart": "JPG 转 WebP 转换（高级）",
+      "processing": "正在转换为 WebP... {progress}%"
+    },
+    "progress": {
+      "label": "转换进度",
+      "status": "正在将 JPG 转换为 WebP... {progress}% 完成"
+    },
+    "settings": {
+      "title": "WebP 转换设置",
+      "simple": "简单",
+      "advanced": "高级",
+      "simpleTitle": "快速设置",
+      "advancedTitle": "WebP 高级设置",
+      "quality": "质量",
+      "qualityHighest": "最高（95）",
+      "qualityHigh": "高（90）",
+      "qualityMedium": "平衡（85）",
+      "qualityLow": "较小文件（80）",
+      "qualityLowest": "最小（75）",
+      "compressionMode": "压缩模式",
+      "compressionLossy": "有损（推荐）",
+      "compressionLossless": "无损（文件较大）",
+      "sharpness": "锐度",
+      "sharpnessAuto": "自动",
+      "sharpnessSharp": "锐利（7）",
+      "sharpnessMedium": "中等（4）",
+      "sharpnessSoft": "柔和（0）",
+      "metadata": "保留元数据",
+      "optimize": "为 Web 优化",
+      "presetBalanced": "平衡",
+      "presetBalancedDesc": "质量 85，良好压缩",
+      "presetQuality": "高质量",
+      "presetQualityDesc": "质量 90，文件较大",
+      "presetSmall": "最大压缩",
+      "presetSmallDesc": "质量 80，最小文件"
+    },
+    "downloadAll": "下载所有 WebP 文件",
+    "results": {
+      "title": "WebP 转换结果",
+      "count": "{count} 个 JPG 文件已转换为 WebP",
+      "sizeInfo": "原始 JPG：{original} MB → WebP：{converted} MB（{change}% 减少）",
+      "download": "下载 WebP"
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "JPEG 压缩 - 在线免费压缩 JPEG 图片",
+    "description": "使用我们的免费 JPEG 压缩器在线压缩 JPEG 图片。在保持质量的同时减少 JPEG 文件大小。快速、安全且易于使用。",
+    "keywords": "JPEG 压缩器, 压缩 JPEG, JPEG 优化, 减少 JPEG 大小, 在线 JPEG 压缩器, 免费 JPEG 压缩器"
+  },
+  "hero": {
+    "title": "JPEG 图片压缩器",
+    "description": "使用我们的先进压缩技术在线压缩 JPEG 图片。在保持质量和兼容性的同时减少文件大小。",
+    "subtitle": "使用我们的先进压缩技术在线压缩 JPEG 图片。在保持质量和兼容性的同时减少文件大小。",
+    "badge": "压缩器"
+  },
+  "formatInfo": {
+    "description": "JPEG（联合摄影专家组）是数字图像（特别是由数字摄影产生的图像）中常用的有损压缩方法。"
+  },
+  "features": {
+    "title": "JPEG 格式功能",
+    "description": "为什么 JPEG 是数字摄影的通用标准",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "高压缩",
+        "description": "使用 DCT 和量化算法实现 50-90% 的文件大小减少"
+      },
+      {
+        "icon": "📸",
+        "title": "照片优化",
+        "description": "专为照片设计 - 在自然场景和复杂渐变方面表现出色"
+      },
+      {
+        "icon": "🌍",
+        "title": "通用兼容性",
+        "description": "全球每个设备、浏览器、相机和图像查看器都支持"
+      },
+      {
+        "icon": "🎛️",
+        "title": "可调质量",
+        "description": "微调 1-100% 的压缩以平衡文件大小和视觉保真度"
+      },
+      {
+        "icon": "⚡",
+        "title": "渐进式加载",
+        "description": "首先显示低分辨率预览，然后逐渐增强以获得更好的 UX"
+      },
+      {
+        "icon": "🎨",
+        "title": "色度子采样",
+        "description": "减少色彩数据（4:2:0），同时保持完整的亮度细节"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "JPEG 压缩原理",
+    "description": "了解 JPEG 压缩背后的技术原理可帮助您对图像做出明智的决策。",
+    "items": [
+      {
+        "title": "有损压缩算法",
+        "description": "JPEG 使用复杂的有损压缩算法，战略性地删除难以察觉的视觉细节以实现高压缩比。该算法分析图像并丢弃人眼无法轻易检测到的信息，平衡文件大小和视觉质量。",
+        "icon": "📉",
+        "benefits": [
+          "文件大小减少 50-90%",
+          "保持感知质量",
+          "非常适合照片和复杂图像",
+          "可配置的压缩级别"
+        ]
+      },
+      {
+        "title": "DCT（离散余弦变换）",
+        "description": "JPEG 压缩采用离散余弦变换将图像数据从空间域转换为频率域。这种数学变换允许算法更有效地识别和压缩冗余信息，特别是在具有细微颜色变化的区域。",
+        "icon": "⚡",
+        "benefits": [
+          "高效的数据转换",
+          "分离重要数据和冗余数据",
+          "行业标准算法",
+          "为自然图像优化"
+        ]
+      },
+      {
+        "title": "量化和质量控制",
+        "description": "DCT 变换后，应用量化以降低不太重要的频率分量的精度。质量设置（1-100%）直接控制此量化过程，允许用户微调压缩比和视觉保真度之间的平衡。",
+        "icon": "🎛️",
+        "benefits": [
+          "可调节的质量级别从 1-100%",
+          "可预测的文件大小控制",
+          "用户可自定义压缩",
+          "大小和质量之间的平衡"
+        ]
+      },
+      {
+        "title": "色度子采样",
+        "description": "JPEG 利用人眼对色彩信息的敏感度低于亮度的特点。色度子采样在保持全亮度细节的同时降低色彩分辨率，在大多数图像中实现额外压缩而不会出现明显的质量损失。",
+        "icon": "🎨",
+        "benefits": [
+          "显著的文件大小减少",
+          "最小的感知影响",
+          "为人类视觉优化",
+          "专业摄影的标准"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时使用 JPEG 压缩",
+    "description": "JPEG 压缩非常适合文件大小比完美质量更重要的特定类型的图像和用例。",
+    "items": [
+      {
+        "title": "数字摄影",
+        "description": "数字相机和专业摄影工作流程的黄金标准。",
+        "content": "JPEG 是数字摄影的通用格式，在图像质量和文件大小之间提供了出色的平衡。非常适合具有自然色彩、逼真场景和复杂渐变的照片。全球专业摄影师和相机使用。",
+        "icon": "📸"
+      },
+      {
+        "title": "Web 图像和博客",
+        "description": "非常适合加载速度直接影响用户体验的网站图像。",
+        "content": "JPEG 压缩对 Web 性能至关重要，在保持视觉吸引力的同时减少页面加载时间。非常适合博客文章图像、产品照片、横幅图像以及快速加载对 SEO 和用户参与至关重要的任何 Web 内容。",
+        "icon": "🌐"
+      },
+      {
+        "title": "社交媒体分享",
+        "description": "优化用于在 Instagram、Facebook、Twitter 和其他平台上分享照片。",
+        "content": "JPEG 受到所有社交媒体平台的普遍支持，为社交分享提供了完美的平衡。该格式的高效压缩可确保快速上传和下载，同时保持个人资料图片、帖子和故事的良好质量。",
+        "icon": "📱"
+      },
+      {
+        "title": "移动应用",
+        "description": "对于存储空间和带宽有限的移动应用至关重要。",
+        "content": "JPEG 压缩是移动应用开发的基础，有助于减少应用大小、减少数据使用并提高性能。对于照片库、用户个人资料、内容源以及显示图像的任何移动功能至关重要。",
+        "icon": "📱"
+      },
+      {
+        "title": "电子商务产品图片",
+        "description": "平衡图像质量与加载速度以获得更好的转化率。",
+        "content": "JPEG 非常适合电子商务产品照片，在确保快速页面加载的同时提供清晰的产品表示。研究表明，更快加载的产品图像可提高转化率并减少购物车放弃。",
+        "icon": "🛒"
+      },
+      {
+        "title": "照片归档",
+        "description": "在保持可接受质量的同时有效存储大型照片集。",
+        "content": "JPEG 允许摄影师和个人在可管理的存储空间中归档数千张照片。使用适当的质量设置（85-95%），您可以在保持备份和长期归档的存储要求合理的同时保留记忆。",
+        "icon": "💾"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 JPEG 压缩和我们的 JPEG 压缩器工具的常见问题。",
+    "items": [
+      {
+        "question": "什么是 JPEG 压缩，它是如何工作的？",
+        "answer": "JPEG 压缩是一种有损压缩方法，通过删除视觉上难以察觉的细节来减少文件大小。它使用离散余弦变换（DCT）和量化在保持照片良好视觉质量的同时实现 50-90% 的文件大小减少。"
+      },
+      {
+        "question": "JPEG 压缩应该使用什么质量设置？",
+        "answer": "对于 Web 图像，使用 80-90% 的质量以获得最佳平衡。对于打印材料，使用 90-95%。对于缩略图或预览，60-80% 就足够了。质量越高意味着文件越大，但视觉保真度越好。"
+      },
+      {
+        "question": "JPEG 压缩是无损还是有损？",
+        "answer": "标准 JPEG 使用有损压缩，这意味着一些图像数据被永久丢弃以减少文件大小。虽然存在无损 JPEG 变体，但它们很少使用，因为它们与 PNG 相比没有提供显著的压缩优势。"
+      },
+      {
+        "question": "我应该何时使用 JPEG 而不是 PNG？",
+        "answer": "对照片、逼真图像和具有许多颜色的复杂场景使用 JPEG。对图形、徽标、屏幕截图以及需要透明度或完美像素级精度的图像使用 PNG。JPEG 通常为照片提供 10 倍更好的压缩。"
+      },
+      {
+        "question": "什么是渐进式 JPEG，我应该使用它吗？",
+        "answer": "渐进式 JPEG 以多次传递加载图像，首先显示低分辨率版本，然后逐渐改善。这在较慢的连接上提供了更好的感知加载速度，建议用于大于 10KB 的 Web 图像。"
+      },
+      {
+        "question": "JPEG 支持透明度吗？",
+        "answer": "不支持，JPEG 不支持透明度或 Alpha 通道。如果您需要透明度，请使用 PNG 进行无损或使用 WebP 进行具有透明度支持的有损压缩。"
+      },
+      {
+        "question": "在不损失质量的情况下，我可以压缩 JPEG 多少？",
+        "answer": "您通常可以使用 85-90% 的质量设置以最小的可见质量损失将 JPEG 压缩 50-70%。超过这个范围，伪影可能会变得明显，具体取决于图像内容和查看条件。"
+      },
+      {
+        "question": "压缩已经压缩过的 JPEG 会进一步降低质量吗？",
+        "answer": "是的，每次压缩已经压缩过的 JPEG 时，都会引入额外的质量损失（代际损失）。尽可能始终从原始未压缩图像开始以保持最佳质量。"
+      },
+      {
+        "question": "我可以批量压缩多个 JPEG 文件吗？",
+        "answer": "是的，我们的工具支持同时批量处理多个 JPEG 文件。您可以一次压缩最多 10 个文件，并使用一致的质量设置，在保持统一结果的同时节省时间。"
+      },
+      {
+        "question": "使用此在线压缩器时我的数据安全吗？",
+        "answer": "绝对安全！所有压缩都使用 JavaScript 在您的浏览器中本地进行。您的图像永远不会离开您的设备或上传到我们的服务器，确保完全的隐私和安全。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像压缩和转换工具",
+    "items": [
+      {
+        "title": "PNG 压缩器",
+        "description": "压缩 PNG 图片",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "WebP 压缩器",
+        "description": "压缩 WebP 图片",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "AVIF 压缩器",
+        "description": "压缩 AVIF 图片",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将文件拖放到此处或点击选择",
+      "subtitle": "支持 {format} 格式，最大 50MB",
+      "selectFiles": "选择文件"
+    },
+    "files": {
+      "title": "已选择的文件",
+      "count": "{count} 个文件",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "压缩 {format}",
+      "processing": "正在压缩... {progress}%"
+    },
+    "progress": {
+      "label": "处理中...",
+      "compressing": "正在压缩您的 {format} 图像..."
+    },
+    "results": {
+      "title": "压缩完成！🎉",
+      "subtitle": "您的图像已成功优化",
+      "original": "原始",
+      "compressed": "已压缩",
+      "saved": "已节省",
+      "time": "时间",
+      "format": "格式",
+      "compressionRatio": "压缩比",
+      "sizeReduction": "大小减少",
+      "sizeIncrease": "大小增加",
+      "greatJob": "做得好！",
+      "considerAdjusting": "考虑调整设置",
+      "savedSpace": "已节省 {amount} MB",
+      "successMessage": "压缩效果很好！",
+      "successDescription": "您的图像现在小了 {ratio}%，同时保持出色的质量。已为 Web 使用优化！",
+      "download": "下载",
+      "compressMore": "压缩更多",
+      "reset": "重置",
+      "sizeInfo": "原始：{original} MB → 已压缩：{compressed} MB（{ratio}% 减少）"
+    },
+    "settings": {
+      "simple": "简单",
+      "advanced": "高级",
+      "advancedTitle": "高级设置",
+      "quality": "质量",
+      "qualityLow": "低",
+      "qualityMedium": "中",
+      "qualityHigh": "高",
+      "metadata": "保留元数据",
+      "metadataDesc": "EXIF、GPS、相机信息"
+    },
+    "actions": {
+      "downloadAll": "全部下载",
+      "reset": "重置"
+    },
+    "error": {
+      "title": "错误",
+      "tip": "💡 提示：确保您的文件是有效的图像（PNG、JPEG、WebP、AVIF、GIF）且小于 50MB",
+      "unknownError": "未知错误",
+      "processingFailed": "处理 {fileName} 失败",
+      "compressionFailed": "压缩失败"
+    },
+    "status": {
+      "starting": "开始压缩...",
+      "processing": "压缩中... {progress}%",
+      "completed": "压缩完成！"
+    }
+  }
+}

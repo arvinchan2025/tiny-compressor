@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "Free Online Image Tools",
+    "description": "Advanced image compression and conversion tools powered by cutting-edge algorithms. Reduce file sizes by up to 90% while maintaining perfect quality. Lightning-fast, completely secure, and 100% free forever.",
+    "getStarted": "Start Compressing",
+    "learnMore": "Try Converter",
+    "stats": {
+      "sizeReduction": "Up to 90% Size Reduction",
+      "supportedFormats": "16+ Supported Formats",
+      "freeSecure": "100% Free & Secure",
+      "processingSpeed": "Sub-second Processing",
+      "privacy": "Client-side Processing",
+      "reliability": "99.9% Uptime"
+    }
+  },
+  "features": {
+    "title": "Why Choose TinyCompressor?",
+    "subtitle": "Advanced image processing technology with user-friendly features",
+    "free": {
+      "title": "100% Free Forever",
+      "description": "No hidden costs, no subscriptions, no limits - completely free forever"
+    },
+    "secure": {
+      "title": "Privacy First",
+      "description": "All processing happens locally in your browser - your files never leave your device"
+    },
+    "fast": {
+      "title": "Lightning Fast",
+      "description": "Optimized algorithms powered by WebAssembly for the fastest processing speeds"
+    },
+    "quality": {
+      "title": "Professional Quality",
+      "description": "Advanced algorithms ensure optimal results for both casual users and professionals"
+    },
+    "global": {
+      "title": "Global Accessibility",
+      "description": "Available in 11 languages with responsive design for all devices"
+    },
+    "mobile": {
+      "title": "Mobile Optimized",
+      "description": "Perfect experience across all devices with touch-friendly interface"
+    }
+  },
+  "tools": {
+    "title": "Choose Your Tool",
+    "subtitle": "Professional-grade tools for all your image processing needs",
+    "statsLabels": {
+      "compression": "Compression",
+      "formats": "Formats",
+      "processing": "Processing",
+      "quality": "Quality",
+      "speed": "Speed"
+    },
+    "compressor": {
+      "title": "Image Compressor",
+      "description": "Reduce file sizes while maintaining quality with our advanced compression algorithms powered by cutting-edge technology",
+      "button": "Start Compressing",
+      "features": [
+        "PNG, JPG, WebP, AVIF, GIF, BMP support",
+        "Batch processing for multiple files",
+        "Advanced quality control with real-time preview",
+        "Lossless and lossy compression options",
+        "Metadata preservation and removal",
+        "Custom compression settings"
+      ],
+      "stats": {
+        "compression": "Up to 90%",
+        "formats": "6+ formats",
+        "processing": "< 3 seconds"
+      }
+    },
+    "converter": {
+      "title": "Image Converter",
+      "description": "Convert between different image formats with precision and speed using professional-grade algorithms",
+      "button": "Start Converting",
+      "features": [
+        "Format conversion between 10+ formats",
+        "Quality preservation algorithms",
+        "Batch processing capabilities",
+        "Multiple output format options",
+        "Color space conversion",
+        "Transparency handling"
+      ],
+      "stats": {
+        "formats": "10+ formats",
+        "quality": "Lossless",
+        "speed": "Instant"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Simple, fast, and secure image processing in three easy steps",
+    "steps": [
+      {
+        "title": "Upload Images",
+        "description": "Drag & drop or click to upload your images. Support for batch uploads.",
+        "details": "Supports all major formats with instant preview"
+      },
+      {
+        "title": "Choose Settings",
+        "description": "Select compression level, quality, or target format with real-time preview.",
+        "details": "Advanced options for professional results"
+      },
+      {
+        "title": "Process & Download",
+        "description": "Get optimized images instantly with detailed compression statistics.",
+        "details": "Batch download with organized file structure"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Images?",
+    "description": "Join millions of users who trust TinyCompressor for their image processing needs. Start optimizing your images today and experience the difference!",
+    "getStarted": "Start Compressing",
+    "learnMore": "Try Converter"
+  },
+  "useCases": {
+    "title": "Perfect for Every Use Case",
+    "subtitle": "From web development to social media, optimize images for any purpose",
+    "categories": [
+      {
+        "title": "Web Development",
+        "description": "Optimize images for faster website loading and improved user experience",
+        "icon": "🌐"
+      },
+      {
+        "title": "Mobile Apps",
+        "description": "Optimize image resources for iOS and Android applications",
+        "icon": "📱"
+      },
+      {
+        "title": "E-commerce",
+        "description": "Compress product images to improve online store performance",
+        "icon": "🛒"
+      },
+      {
+        "title": "Social Media",
+        "description": "Optimize social media images for various platforms",
+        "icon": "📢"
+      },
+      {
+        "title": "Design Work",
+        "description": "Optimize workflow for designers and creative professionals",
+        "icon": "🎨"
+      },
+      {
+        "title": "Content Creation",
+        "description": "Optimize images for blogs, news, and content platforms",
+        "icon": "📝"
+      }
+    ]
+  }
+}

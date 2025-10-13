@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import GifCompressorNew from './GifCompressorNew';
+import CompressGifClient from './CompressGifClient';
 
 interface CompressGifPageProps {
   params: {
@@ -12,13 +12,12 @@ export async function generateMetadata({ params }: CompressGifPageProps): Promis
   const { locale } = params;
   
   return {
-    title: 'GIF Compressor - Compress GIF Images Online',
-    description: 'Free online GIF image compressor. Reduce GIF file size while maintaining quality. No registration required.',
-    keywords: 'GIF compressor, compress GIF, reduce GIF size, GIF optimization',
-    openGraph: {
-      title: 'GIF Compressor - Compress GIF Images Online',
-      description: 'Free online GIF image compressor. Reduce GIF file size while maintaining quality.',
-      type: 'website',
+    title: 'GIF Compressor - Free Online Image Compressor',
+    description: 'Compress GIF images and animations online for free! Advanced optimization for smaller file sizes.',
+    keywords: 'GIF compressor, compress GIF, image compressor, free online compressor, GIF optimizer',
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
@@ -26,5 +25,6 @@ export async function generateMetadata({ params }: CompressGifPageProps): Promis
 export default function CompressGifPage({ params }: CompressGifPageProps) {
   const { locale } = params;
   
-  return <GifCompressorNew locale={locale} />;
+  return <CompressGifClient locale={locale} />;
 }
+

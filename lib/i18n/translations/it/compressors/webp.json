@@ -1,0 +1,279 @@
+{
+  "seo": {
+    "title": "Compressore WebP - Comprimi Immagini WebP Online Gratis",
+    "description": "Comprimi immagini WebP online con nostro compressore WebP gratuito. Riduci dimensione file WebP mantenendo qualità. Veloce, sicuro e facile da usare.",
+    "keywords": "compressore WebP, comprimi WebP, ottimizzazione WebP, riduci dimensione WebP, compressore WebP online, compressore WebP gratuito"
+  },
+  "hero": {
+    "title": "Compressore Immagini WebP",
+    "description": "Comprimi immagini WebP online con nostra tecnologia compressione avanzata. Riduci dimensione file mantenendo qualità e trasparenza.",
+    "subtitle": "Comprimi immagini WebP online con nostra tecnologia compressione avanzata. Riduci dimensione file mantenendo qualità e trasparenza.",
+    "badge": "Compressore"
+  },
+  "formatInfo": {
+    "description": "WebP è formato immagine moderno sviluppato da Google che fornisce efficienza compressione superiore rispetto a JPEG e PNG, con supporto per compressione lossy e lossless."
+  },
+  "features": {
+    "title": "Funzionalità Formato WebP",
+    "description": "Perché WebP è scelta moderna per performance web",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "Compressione Superiore",
+        "description": "25-35% più piccolo di JPEG, 25% più piccolo di PNG a stessa qualità"
+      },
+      {
+        "icon": "🔄",
+        "title": "Modalità Compressione Duali",
+        "description": "Sia lossy (per foto) che lossless (per grafica) in un formato"
+      },
+      {
+        "icon": "✨",
+        "title": "Canale Alfa Efficiente",
+        "description": "Compressione trasparenza di gran lunga superiore a PNG - specialmente per alfa graduale"
+      },
+      {
+        "icon": "🎬",
+        "title": "Supporto Animazione",
+        "description": "File WebP animati 30-50% più piccoli di GIF con migliore qualità"
+      },
+      {
+        "icon": "🌐",
+        "title": "95%+ Supporto Browser",
+        "description": "Supportato da Chrome, Firefox, Safari, Edge - tutti browser moderni dal 2020"
+      },
+      {
+        "icon": "🎯",
+        "title": "Controllo Nitidezza",
+        "description": "Parametro nitidezza integrato (0-7) per mantenere qualità percepita a dimensioni inferiori"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Come Funziona la Compressione WebP",
+    "description": "Comprendere i principi tecnici dietro compressione WebP ti aiuta a prendere decisioni informate sulle tue immagini.",
+    "items": [
+      {
+        "title": "Codec VP8/VP9",
+        "description": "WebP usa tecnologia codec video VP8/VP9 di Google adattata per immagini, fornendo compressione superiore.",
+        "icon": "🎥",
+        "benefits": [
+          "Algoritmi avanzati",
+          "Compressione migliore",
+          "Tecnologia a prova di futuro"
+        ]
+      },
+      {
+        "title": "Codifica Predittiva",
+        "description": "WebP usa codifica predittiva per ridurre ridondanza e raggiungere rapporti compressione superiori.",
+        "icon": "🔮",
+        "benefits": [
+          "Compressione efficiente",
+          "Preservazione qualità",
+          "Predizione intelligente"
+        ]
+      },
+      {
+        "title": "Modalità Lossless & Lossy",
+        "description": "WebP supporta modalità compressione lossless e lossy per casi uso diversi.",
+        "icon": "🔄",
+        "benefits": [
+          "Opzioni compressione flessibili",
+          "Lossless per grafica",
+          "Lossy per foto",
+          "Meglio di entrambi mondi"
+        ]
+      },
+      {
+        "title": "Compressione Canale Alfa",
+        "description": "WebP comprime efficientemente informazione trasparenza insieme a dati immagine, fornendo dimensioni file minori di PNG per immagini con canali alfa.",
+        "icon": "✨",
+        "benefits": [
+          "Compressione trasparenza efficiente",
+          "Più piccolo di PNG con alfa",
+          "Supporto trasparenza completo",
+          "Ottimizzato per grafica web"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quando Usare Compressione WebP",
+    "description": "Compressione WebP è ideale per applicazioni web moderne e scenari dove compressione superiore è necessaria.",
+    "items": [
+      {
+        "title": "Siti Web Moderni",
+        "description": "Perfetto per siti che necessitano tempi caricamento più veloci e migliore performance.",
+        "content": "WebP fornisce compressione eccellente per immagini web mantenendo buona qualità visiva e supportando trasparenza.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Applicazioni Mobile",
+        "description": "Ideale per app mobile dove banda e storage sono limitati.",
+        "content": "Compressione superiore di WebP aiuta a ridurre dimensione app e migliorare performance caricamento su dispositivi mobile.",
+        "icon": "📱"
+      },
+      {
+        "title": "E-commerce",
+        "description": "Ottimo per immagini prodotti che necessitano caricare velocemente e apparire bene.",
+        "content": "Compressione WebP assicura caricamento immagini prodotti veloce mantenendo qualità per migliore esperienza utente.",
+        "icon": "🛒"
+      },
+      {
+        "title": "Social Media",
+        "description": "Eccellente per piattaforme social media che gestiscono grandi volumi immagini.",
+        "content": "WebP aiuta a ridurre costi banda e migliorare esperienza utente su piattaforme social media.",
+        "icon": "📢"
+      },
+      {
+        "title": "Progressive Web App",
+        "description": "Perfetto per PWA che necessitano funzionare efficientemente su dispositivi diversi.",
+        "content": "Funzionalità moderne ed efficienza compressione di WebP lo rendono ideale per applicazioni web progressive.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Content Delivery Network",
+        "description": "Ideale per delivery contenuto ottimizzato CDN che richiede uso banda minimo.",
+        "content": "WebP riduce costi CDN 25-35% rispetto a JPEG/PNG mantenendo qualità visiva. Suo supporto browser diffuso (95%+) lo rende perfetto per delivery contenuto globale con negoziazione formato automatica.",
+        "icon": "🌍"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "Best Practice Compressione WebP",
+    "description": "Segui questi consigli esperti per ottenere migliori risultati da compressione WebP.",
+    "tips": [
+      {
+        "icon": "🔄",
+        "title": "Sfrutta Modalità Compressione Duali",
+        "content": "Usa WebP lossless per grafica UI, loghi e screenshot—tipicamente 25% più piccolo di PNG. Usa WebP lossy per foto a qualità 80-90, raggiungendo compressione 25-35% migliore di JPEG con qualità uguale. Compressione trasparenza alfa di WebP è di gran lunga superiore a PNG, specialmente per immagini con trasparenza graduale."
+      },
+      {
+        "icon": "⚡",
+        "title": "Massimizza Guadagni Performance Web",
+        "content": "WebP può ridurre peso pagina totale 30-50% rispetto a JPEG/PNG. Prioritizza conversione per immagini grandi (>100KB), immagini hero e foto prodotti. Usa parametro nitidezza integrato di WebP (0-7) per mantenere qualità percepita a dimensioni file inferiori. Considera WebP per immagini responsive per ridurre significativamente uso dati mobile."
+      },
+      {
+        "icon": "🌐",
+        "title": "Implementa Progressive Enhancement",
+        "content": "WebP è supportato da 95%+ utenti (tutti browser moderni dal 2020). Usa elemento <picture> con WebP e fallback JPEG/PNG per compatibilità universale. Evita WebP per email (supporto client email limitato) e usa JPEG/PNG per miniature in condivisioni social media poiché piattaforme potrebbero non supportare WebP in tutti contesti."
+      },
+      {
+        "icon": "📦",
+        "title": "Conversione Batch Strategica",
+        "content": "Converti intere librerie immagini a WebP per miglioramenti performance consistenti. Usa qualità lossy 80-85 per immagini contenuto, 85-90 per immagini hero/in evidenza e lossless per asset marca. Monitora qualità visiva su dispositivi diversi—compressione di WebP può apparire diversa su vari schermi a causa sua ottimizzazione percettuale avanzata."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "description": "Domande comuni su compressione WebP e nostro strumento compressore WebP.",
+    "items": [
+      {
+        "question": "WebP è migliore di JPEG?",
+        "answer": "WebP fornisce tipicamente compressione 25-35% migliore di JPEG con qualità simile o migliore, più supporto trasparenza."
+      },
+      {
+        "question": "Tutti i browser supportano WebP?",
+        "answer": "Maggior parte browser moderni supportano WebP. Per browser vecchi, dovresti fornire formati fallback."
+      },
+      {
+        "question": "Dovrei usare WebP per tutte le immagini?",
+        "answer": "WebP è ottimo per uso web, ma considera supporto browser del tuo pubblico e fornisci fallback quando necessario."
+      },
+      {
+        "question": "È sicuro usare WebP?",
+        "answer": "Sì, compressione WebP avviene interamente nel tuo browser. Le tue immagini vengono elaborate localmente e mai caricate su alcun server, assicurando privacy e sicurezza complete."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Esplora Altri Strumenti",
+    "items": [
+      {
+        "title": "Compressore JPEG",
+        "description": "Comprimi immagini JPEG",
+        "path": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Convertitore PNG",
+        "description": "Converti in formato PNG",
+        "path": "/converter/convert-webp-to-png"
+      },
+      {
+        "title": "Convertitore Immagini",
+        "description": "Converti tra formati immagine diversi",
+        "path": "/converter"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Trascina il tuo file qui o clicca per selezionare",
+      "subtitle": "Supporta formato {format}, max 50MB",
+      "selectFiles": "Seleziona File"
+    },
+    "files": {
+      "title": "File Selezionati",
+      "count": "{count} file",
+      "remove": "Rimuovi",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "Comprimi {format}",
+      "processing": "Compressione... {progress}%"
+    },
+    "progress": {
+      "label": "Elaborazione...",
+      "compressing": "Comprimendo tua immagine {format}..."
+    },
+    "results": {
+      "title": "Compressione Completata! 🎉",
+      "subtitle": "La tua immagine è stata ottimizzata con successo",
+      "original": "Originale",
+      "compressed": "Compresso",
+      "saved": "Risparmiato",
+      "time": "Tempo",
+      "format": "Formato",
+      "compressionRatio": "Rapporto Compressione",
+      "sizeReduction": "Riduzione Dimensione",
+      "sizeIncrease": "Aumento Dimensione",
+      "greatJob": "Ottimo lavoro!",
+      "considerAdjusting": "Considera regolare impostazioni",
+      "savedSpace": "Risparmiato {amount} MB",
+      "successMessage": "Grande compressione!",
+      "successDescription": "La tua immagine è ora {ratio}% più piccola mantenendo qualità eccellente. Ottimizzata per uso web!",
+      "download": "Scarica",
+      "compressMore": "Comprimi Altro",
+      "reset": "Resetta",
+      "sizeInfo": "Originale: {original} MB → Compresso: {compressed} MB ({ratio}% riduzione)"
+    },
+    "settings": {
+      "simple": "Semplice",
+      "advanced": "Avanzato",
+      "advancedTitle": "Impostazioni Avanzate",
+      "quality": "Qualità",
+      "qualityLow": "Bassa",
+      "qualityMedium": "Media",
+      "qualityHigh": "Alta",
+      "metadata": "Mantieni Metadata",
+      "metadataDesc": "EXIF, GPS, info camera"
+    },
+    "actions": {
+      "downloadAll": "Scarica Tutto",
+      "reset": "Resetta"
+    },
+    "error": {
+      "title": "Errore",
+      "tip": "💡 Suggerimento: Assicurati che tuo file sia immagine valida (PNG, JPEG, WebP, AVIF, GIF) e sotto 50MB",
+      "unknownError": "Errore sconosciuto",
+      "processingFailed": "Elaborazione di {fileName} fallita",
+      "compressionFailed": "Compressione fallita"
+    },
+    "status": {
+      "starting": "Avvio compressione...",
+      "processing": "Compressione... {progress}%",
+      "completed": "Compressione completata!"
+    }
+  }
+}

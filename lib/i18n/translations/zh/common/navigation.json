@@ -1,0 +1,387 @@
+{
+  "brand": {
+    "name": "TinyCompressor"
+  },
+  "nav": {
+    "home": "首页",
+    "compressor": "压缩器",
+    "converter": "转换器",
+    "language": "语言",
+    "menu": "菜单",
+    "close": "关闭"
+  },
+  "breadcrumbs": {
+    "home": "首页",
+    "compressor": "压缩器",
+    "converter": "转换器"
+  },
+  "compressor": {
+    "title": "图像压缩器",
+    "subtitle": "在保持质量的同时将图像文件大小减少高达90%。快速、安全、完全免费。",
+    "description": "专业的图像压缩工具，帮助您优化图像用于网页、邮件和存储。支持所有主要图像格式，采用先进的压缩算法。",
+    "badge": "图像压缩",
+    "statsLabels": {
+      "compression": "压缩率",
+      "speed": "速度"
+    },
+    "tools": {
+      "png": {
+        "name": "PNG压缩器",
+        "description": "使用无损优化压缩PNG图像",
+        "features": [
+          "无损压缩",
+          "透明度支持",
+          "网络优化"
+        ],
+        "compression": "最多压缩80%"
+      },
+      "jpeg": {
+        "name": "JPEG压缩器",
+        "description": "使用智能压缩减少JPEG文件大小",
+        "features": [
+          "智能压缩",
+          "质量控制",
+          "元数据移除"
+        ],
+        "compression": "最多压缩90%"
+      },
+      "webp": {
+        "name": "WebP压缩器",
+        "description": "为网络传输优化WebP图像",
+        "features": [
+          "现代格式",
+          "卓越压缩",
+          "网络优化"
+        ],
+        "compression": "最多压缩85%"
+      },
+      "avif": {
+        "name": "AVIF压缩器",
+        "description": "使用下一代压缩技术压缩AVIF图像",
+        "features": [
+          "下一代格式",
+          "最大压缩",
+          "未来趋势"
+        ],
+        "compression": "最多压缩95%"
+      },
+      "gif": {
+        "name": "GIF压缩器",
+        "description": "在保持质量的同时减少GIF文件大小",
+        "features": [
+          "动画支持",
+          "颜色优化",
+          "帧数减少"
+        ],
+        "compression": "最多压缩70%"
+      },
+      "bmp": {
+        "name": "BMP压缩器",
+        "description": "使用先进优化技术压缩BMP位图图像",
+        "features": [
+          "位图优化",
+          "旧格式支持",
+          "无损转换"
+        ],
+        "compression": "最多压缩90%"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "闪电般快速",
+        "description": "使用我们的优化算法在几秒钟内处理多个图像",
+        "details": "同时处理多达100张图像"
+      },
+      "security": {
+        "title": "隐私优先",
+        "description": "您的图像在浏览器中本地处理 - 无需上传",
+        "details": "客户端处理确保完全隐私"
+      },
+      "quality": {
+        "title": "质量控制",
+        "description": "高级设置平衡文件大小和图像质量",
+        "details": "先进算法保持视觉质量"
+      },
+      "title": "为什么选择我们的图像压缩器？",
+      "items": [
+        {
+          "title": "闪电般快速",
+          "description": "使用我们的优化算法在几秒钟内处理多个图像"
+        },
+        {
+          "title": "隐私优先",
+          "description": "您的图像在浏览器中本地处理 - 无需上传"
+        },
+        {
+          "title": "多种格式",
+          "description": "支持PNG、JPEG、WebP、AVIF、GIF和BMP格式"
+        },
+        {
+          "title": "质量控制",
+          "description": "高级设置平衡文件大小和图像质量"
+        },
+        {
+          "title": "批量处理",
+          "description": "一次压缩多个图像以节省时间"
+        },
+        {
+          "title": "永远免费",
+          "description": "无注册、无水印、无隐藏费用"
+        }
+      ]
+    },
+    "stats": {
+      "processed": {
+        "number": "1500万+",
+        "label": "已压缩图像",
+        "description": "每月"
+      },
+      "reduction": {
+        "number": "90%",
+        "label": "平均减小",
+        "description": "文件大小"
+      },
+      "formats": {
+        "number": "6",
+        "label": "支持格式",
+        "description": "所有主要类型"
+      }
+    },
+    "whyChoose": {
+      "title": "为什么选择我们的图像压缩器？",
+      "items": [
+        {
+          "title": "闪电般快速",
+          "description": "使用优化算法在几秒钟内处理多张图像"
+        },
+        {
+          "title": "隐私优先",
+          "description": "您的图像在浏览器中本地处理 - 无需上传"
+        },
+        {
+          "title": "多种格式",
+          "description": "支持PNG、JPEG、WebP、AVIF、GIF和BMP格式"
+        },
+        {
+          "title": "质量控制",
+          "description": "高级设置可平衡文件大小和图像质量"
+        },
+        {
+          "title": "批量处理",
+          "description": "一次压缩多张图像以节省时间"
+        },
+        {
+          "title": "永久免费",
+          "description": "无需注册，无水印，无隐藏费用"
+        }
+      ]
+    }
+  },
+  "converter": {
+    "title": "图像转换器",
+    "subtitle": "高质量快速处理在不同格式之间转换图像。",
+    "description": "专业的图像转换工具，将您的图像转换为流行格式。支持PNG、JPEG、WebP、AVIF和HEIC格式，采用先进的转换技术。",
+    "badge": "格式转换",
+    "statsLabels": {
+      "compression": "压缩率",
+      "speed": "速度"
+    },
+    "tools": {
+      "pngToJpg": {
+        "name": "PNG转JPG",
+        "description": "将PNG图像转换为JPG格式",
+        "features": [
+          "背景处理",
+          "质量保持",
+          "网络优化"
+        ],
+        "conversion": "即时"
+      },
+      "pngToWebp": {
+        "name": "PNG转WebP",
+        "description": "将PNG图像转换为WebP格式",
+        "features": [
+          "现代格式",
+          "卓越质量",
+          "网络传输"
+        ],
+        "conversion": "即时"
+      },
+      "pngToAvif": {
+        "name": "PNG转AVIF",
+        "description": "将PNG图像转换为AVIF格式",
+        "features": [
+          "下一代格式",
+          "最大效率",
+          "未来趋势"
+        ],
+        "conversion": "即时"
+      },
+      "jpgToPng": {
+        "name": "JPG转PNG",
+        "description": "将JPEG图像转换为PNG格式",
+        "features": [
+          "透明度支持",
+          "无损转换",
+          "质量控制"
+        ],
+        "conversion": "即时"
+      },
+      "webpToPng": {
+        "name": "WebP转PNG",
+        "description": "将WebP图像转换为PNG格式",
+        "features": [
+          "通用兼容",
+          "无损转换",
+          "质量保持"
+        ],
+        "conversion": "即时"
+      },
+      "jpgToWebp": {
+        "name": "JPG转WebP",
+        "description": "将JPEG图像转换为WebP格式",
+        "features": [
+          "大小减少",
+          "质量提升",
+          "网络优化"
+        ],
+        "conversion": "即时"
+      },
+      "jpgToAvif": {
+        "name": "JPG转AVIF",
+        "description": "将JPEG图像转换为AVIF格式",
+        "features": [
+          "最大压缩",
+          "卓越质量",
+          "现代格式"
+        ],
+        "conversion": "即时"
+      },
+      "webpToJpg": {
+        "name": "WebP转JPG",
+        "description": "将WebP图像转换为JPEG格式",
+        "features": [
+          "旧格式支持",
+          "质量优化",
+          "通用兼容"
+        ],
+        "conversion": "即时"
+      },
+      "webpToAvif": {
+        "name": "WebP转AVIF",
+        "description": "将WebP图像转换为AVIF格式",
+        "features": [
+          "下一代升级",
+          "最大效率",
+          "未来趋势"
+        ],
+        "conversion": "即时"
+      },
+      "heicToJpg": {
+        "name": "HEIC转JPG",
+        "description": "将HEIC图像转换为JPEG格式",
+        "features": [
+          "iPhone兼容",
+          "跨平台",
+          "质量保持"
+        ],
+        "conversion": "即时"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "闪电般快速",
+        "description": "使用我们的优化算法在几秒钟内转换多个图像",
+        "details": "几秒内转换多个图像"
+      },
+      "security": {
+        "title": "隐私优先",
+        "description": "您的图像在浏览器中本地处理 - 无需上传",
+        "details": "客户端处理确保完全隐私"
+      },
+      "quality": {
+        "title": "质量控制",
+        "description": "高级设置在转换过程中保持图像质量",
+        "details": "先进算法保持图像质量"
+      }
+    },
+    "stats": {
+      "converted": {
+        "number": "1000万+",
+        "label": "已转换图像",
+        "description": "每月"
+      },
+      "formats": {
+        "number": "10+",
+        "label": "支持格式",
+        "description": "所有主要类型"
+      },
+      "quality": {
+        "number": "100%",
+        "label": "质量保留",
+        "description": "无损转换"
+      }
+    },
+    "whyChoose": {
+      "title": "为什么选择我们的图像转换器？",
+      "items": [
+        {
+          "title": "高质量转换",
+          "description": "使用先进算法在格式之间转换时保持图像质量"
+        },
+        {
+          "title": "本地处理",
+          "description": "所有转换在您的浏览器中本地进行 - 完全私密"
+        },
+        {
+          "title": "10+种格式",
+          "description": "支持PNG、JPG、WebP、AVIF、HEIC等主流格式"
+        },
+        {
+          "title": "批量转换",
+          "description": "同时转换多个文件以提高效率"
+        },
+        {
+          "title": "即时结果",
+          "description": "快速处理，立即获得转换后的图像"
+        },
+        {
+          "title": "完全免费",
+          "description": "无限制使用，无需注册或付费"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "company": "TinyCompressor",
+    "description": "免费在线图像压缩和转换工具",
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "about": "关于我们",
+      "contact": "联系我们"
+    },
+    "copyright": "© 2024 TinyCompressor. 保留所有权利。"
+  },
+  "language": {
+    "current": "当前语言",
+    "change": "更改语言",
+    "select": "选择语言"
+  },
+  "tools": {
+    "title": "选择您的工具",
+    "start": "立即开始"
+  },
+  "features": {
+    "title": "为什么选择我们的工具？",
+    "subtitle": "先进的技术与用户友好的功能",
+    "free": "100%免费",
+    "secure": "安全且私密",
+    "fast": "闪电般快速"
+  },
+  "cta": {
+    "title": "准备开始了吗？",
+    "description": "加入数千名信任我们图像处理工具的用户",
+    "backToHome": "返回首页"
+  }
+}

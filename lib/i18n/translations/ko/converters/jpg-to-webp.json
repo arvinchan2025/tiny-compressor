@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "JPG to WebP 변환 - JPG 이미지 온라인 변환",
+    "description": "JPG 이미지를 온라인으로 WebP 형식으로 변환하세요. 무료, 빠르고 사용하기 쉬운 JPG to WebP 변환 도구.",
+    "keywords": "JPG to WebP, JPG 변환, 이미지 변환 도구, 온라인 도구"
+  },
+  "hero": {
+    "title": "JPG to WebP 변환",
+    "subtitle": "JPG 이미지를 온라인으로 WebP 형식으로 변환",
+    "description": "뛰어난 품질을 유지하면서 더 나은 압축 및 최신 웹 성능을 위해 JPG 이미지를 WebP 형식으로 변환하세요."
+  },
+  "features": {
+    "title": "JPG to WebP 변환 기능",
+    "description": "더 나은 웹 성능을 위해 JPG를 WebP로 변환하는 이유",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "25-35% 더 작은 파일",
+        "description": "WebP는 동일한 품질로 JPG보다 우수한 압축 제공"
+      },
+      {
+        "icon": "✨",
+        "title": "더 나은 품질",
+        "description": "동등한 파일 크기에서 우수한 이미지 품질"
+      },
+      {
+        "icon": "🎨",
+        "title": "투명도 지원",
+        "description": "WebP는 알파 채널 지원, JPG는 불가"
+      },
+      {
+        "icon": "🌐",
+        "title": "95%+ 브라우저 지원",
+        "description": "2020년 이후 모든 최신 브라우저에서 지원"
+      },
+      {
+        "icon": "⚡",
+        "title": "일괄 변환",
+        "description": "여러 JPG 파일을 한 번에 WebP로 변환"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 안전",
+        "description": "모든 변환은 브라우저 내에서 로컬로 발생"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "JPG vs WebP 형식 비교",
+    "subtitle": "JPG 및 WebP 형식의 차이점 이해",
+    "jpg": {
+      "description": "JPG (JPEG)는 디지털 사진에 널리 사용되는 손실 압축 형식입니다.",
+      "features": [
+        "손실 압축",
+        "보편적 호환성",
+        "사진에 적합",
+        "투명도 지원 없음"
+      ]
+    },
+    "webp": {
+      "description": "WebP는 JPG와 비교하여 우수한 압축을 제공하는 최신 이미지 형식입니다.",
+      "features": [
+        "더 나은 압축",
+        "투명도 지원",
+        "손실 및 무손실 모드",
+        "최신 브라우저 지원"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "JPG to WebP 변환 작동 방식",
+    "description": "JPG에 대한 WebP의 기술적 이점 이해",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "고급 압축 기술",
+        "description": "WebP는 JPG의 DCT 대신 VP8/VP9 예측 인코딩을 사용하여 고급 블록 예측 및 엔트로피 인코딩을 통해 동일한 품질에서 25-35% 우수한 압축을 달성합니다.",
+        "benefits": [
+          "VP8/VP9 압축 vs DCT",
+          "동일한 품질에서 25-35% 작음",
+          "더 나은 블록 예측",
+          "효율적인 엔트로피 인코딩"
+        ]
+      },
+      {
+        "icon": "🎯",
+        "title": "품질 보존",
+        "description": "JPG를 WebP로 변환하면 지각 품질을 유지하거나 개선할 수 있습니다. WebP의 고급 알고리즘은 특히 그라데이션 및 텍스처에서 압축 아티팩트를 더 잘 처리합니다.",
+        "benefits": [
+          "품질 유지 또는 개선",
+          "더 나은 그라데이션 처리",
+          "블로킹 아티팩트 감소",
+          "더 부드러운 텍스처"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "투명도 추가",
+        "description": "JPG와 달리 WebP는 알파 채널 투명도를 지원합니다. 변환은 자동으로 투명도를 추가하지 않지만 형식은 투명도 지원으로 향후 편집을 가능하게 합니다.",
+        "benefits": [
+          "알파 채널 지원",
+          "8비트 투명도 (256 레벨)",
+          "투명도 편집 준비 완료",
+          "알파 포함 PNG보다 작음"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "유연한 품질 제어",
+        "description": "WebP는 JPG보다 우수한 품질 대 크기 비율로 세밀한 품질 제어 (0-100)를 제공합니다. 25-35% 작은 크기에서 동일한 JPG 품질 또는 동일한 크기에서 더 나은 품질.",
+        "benefits": [
+          "품질 범위 0-100",
+          "더 나은 품질/크기 비율",
+          "무손실 모드 사용 가능",
+          "웹 전달용 최적화"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "JPG를 WebP로 변환하는 시기 및 방법",
+    "description": "JPG to WebP 변환의 일반적인 시나리오 및 모범 사례",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "웹사이트 성능 최적화",
+        "description": "더 나은 이미지 압축으로 사이트를 현대화하세요.",
+        "content": "동일한 품질로 25-35% 작은 파일을 위해 JPG 사진을 WebP로 변환하세요. 이미지가 많은 웹사이트, 블로그 및 포트폴리오에 필수적입니다. 사진에는 품질 80-85를 사용하세요 (JPG 품질 85-90과 일치). WebP 기본, JPG 폴백으로 <picture> 요소를 구현하여 95%+ 브라우저 지원을 달성하세요. 최대 효과를 위해 히어로 이미지, 제품 사진 및 폴드 위 콘텐츠를 우선순위에 두세요."
+      },
+      {
+        "icon": "📱",
+        "title": "모바일 및 전자상거래",
+        "description": "모바일 경험 및 전환율을 개선하세요.",
+        "content": "WebP의 25-35% 크기 감소는 모바일 로딩 시간을 크게 개선합니다. 1초 지연 = 7% 전환 손실이 되는 전자상거래에 중요합니다. 제품 사진을 WebP (품질 80-85)로 변환하세요. 카탈로그 이미지에는 손실 WebP, 히어로 제품에는 무손실을 사용하세요. 실제 모바일 장치에서 테스트하세요 - WebP 디코딩은 최신 스마트폰에서 하드웨어 가속됩니다."
+      },
+      {
+        "icon": "📸",
+        "title": "사진 및 포트폴리오 사이트",
+        "description": "더 나은 품질과 더 작은 크기로 사진을 전시하세요.",
+        "content": "WebP는 대역폭을 줄이면서 사진 품질을 유지합니다. 포트폴리오 사진에는 품질 85-90을 사용하세요 (더 작은 크기에서 JPG 90-95보다 우수). 더 빠른 브라우징을 위해 갤러리 이미지를 WebP로 변환하세요. 보편적인 호환성이 필요한 고객을 위해 JPG 다운로드를 제공하세요. WebP의 더 나은 그라데이션 처리는 하늘과 매끄러운 표면에서 밴딩을 줄입니다."
+      },
+      {
+        "icon": "💾",
+        "title": "클라우드 스토리지 및 CDN",
+        "description": "스토리지 및 대역폭 비용을 절감하세요.",
+        "content": "JPG를 WebP로 변환하면 클라우드 스토리지 및 CDN 비용이 25-35% 절감됩니다. 즉각적인 절감을 위해 전체 사진 라이브러리를 일괄 변환하세요. 일반 콘텐츠에는 품질 80-85, 프리미엄 콘텐츠에는 85-90을 사용하세요. 브라우저 지원 (95%+)을 모니터링하고 지원되는 브라우저에는 WebP, 레거시에는 JPG를 제공하세요. 높은 트래픽 사이트의 ROI는 큽니다."
+      },
+      {
+        "icon": "📰",
+        "title": "뉴스 및 콘텐츠 사이트",
+        "description": "페이지 로딩 속도 및 사용자 참여를 개선하세요.",
+        "content": "WebP는 기사 이미지 크기를 25-35% 줄여 페이지 로딩 속도 및 SEO 순위를 개선합니다. 피처 이미지 및 인라인 사진을 WebP (품질 80-85)로 변환하세요. 폴드 아래 이미지에는 WebP로 지연 로딩을 사용하세요. 더 빠른 로딩 시간 = 더 나은 참여 및 더 낮은 이탈률. 속도가 수익에 영향을 미치는 광고 지원 사이트에 필수적입니다."
+      },
+      {
+        "icon": "⚠️",
+        "title": "JPG를 유지하는 경우",
+        "description": "JPG가 여전히 최선의 선택인 시나리오.",
+        "content": "다음 경우 JPG를 유지하세요: 1) 보편적 호환성 필요 (이메일, 레거시 시스템), 2) Safari <14 또는 Chrome <85 사용자 대상 (분석 확인), 3) 인쇄 워크플로 작업, 4) 클라이언트 납품물이 JPG 형식 요구. WebP는 95%+ 브라우저 지원으로 최신 웹 앱에서 뛰어납니다. 프로그레시브 향상을 사용하세요: WebP 폴백 → JPG."
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "description": "JPG to WebP 변환에 대한 일반적인 질문",
+    "items": [
+      {
+        "question": "JPG를 WebP로 변환하면 이미지 품질이 향상됩니까?",
+        "answer": "JPG를 WebP로 변환해도 원래 JPG 압축에서 손실된 품질은 복원되지 않지만 WebP의 고급 알고리즘은 지각 품질을 유지하거나 개선할 수 있습니다. 동일한 파일 크기에서 WebP는 우수한 압축 기술 덕분에 JPG보다 더 나아 보이는 경우가 많습니다. 최상의 결과를 얻으려면 사용 가능한 최고 품질 JPG에서 변환하세요. WebP의 더 나은 그라데이션 처리는 밴딩 및 블로킹 아티팩트를 줄입니다."
+      },
+      {
+        "question": "JPG와 비교하여 WebP 파일은 얼마나 작습니까?",
+        "answer": "WebP는 동등한 품질에서 JPG보다 25-35% 우수한 압축을 제공합니다. 예를 들어, 1MB JPG 사진은 동일한 시각적 품질로 650-750KB WebP가 될 수 있습니다. 실제 절감은 이미지 콘텐츠에 따라 다릅니다 - 그라데이션과 텍스처가 있는 사진은 더 나은 압축을 달성합니다. 동일한 크기에서 더 나은 품질 또는 더 작은 크기에서 동일한 품질을 선택할 수도 있습니다."
+      },
+      {
+        "question": "어떤 브라우저가 WebP 형식을 지원합니까?",
+        "answer": "WebP는 2024년 기준 95%+ 브라우저 지원이 있습니다. Chrome 23+ (2012), Firefox 65+ (2019), Edge 18+ (2018), Safari 14+ (2020), Opera 12.1+ (2012)에서 지원됩니다. 모바일 지원에는 Chrome Android, Safari iOS 14+, Samsung Internet 4+가 포함됩니다. 이전 브라우저의 경우 WebP 기본 및 JPG 폴백으로 <picture> 요소를 구현하세요."
+      },
+      {
+        "question": "품질 손실 없이 JPG를 WebP로 변환할 수 있습니까?",
+        "answer": "JPG는 이미 손실이므로 WebP로 변환하면 현재 품질이 유지되지만 원래 JPG 압축에서 손실된 데이터를 복원할 수 없습니다. 최상의 결과를 얻으려면: 1) 최고 품질 JPG에서 변환, 2) JPG 품질과 일치하거나 초과하기 위해 WebP 품질 80-90 사용, 3) 배포 전에 시각적으로 비교. WebP 무손실 모드는 사용 가능하지만 WebP 손실보다 큰 파일이 됩니다."
+      },
+      {
+        "question": "모든 JPG 이미지를 WebP로 변환해야 합니까?",
+        "answer": "최신 웹사이트의 경우, 예 - WebP는 95%+ 브라우저 지원으로 상당한 성능 이점을 제공합니다. 그러나: 1) 프로그레시브 향상 구현 (WebP 폴백 → JPG), 2) 이메일 및 보편적 호환성을 위해 JPG 유지, 3) 청중의 브라우저 지원 모니터링, 4) 일반 콘텐츠에는 품질 80-85 사용. WebP는 성능 및 최신 브라우저 지원을 우선시하는 사이트에 이상적입니다."
+      },
+      {
+        "question": "JPG to WebP 변환이 무료이고 안전합니까?",
+        "answer": "네, 당사의 JPG to WebP 변환기는 등록, 워터마크, 결제 없이 완전 무료입니다. 모든 변환은 WebAssembly를 사용하여 브라우저 내에서 로컬로 발생하며 - 이미지는 장치를 떠나지 않습니다. 이는 서버 업로드, 데이터 수집, 제3자 액세스 없이 100% 개인 정보 보호 및 보안을 보장합니다. WebP 인코딩은 완전히 클라이언트 측에서 실행됩니다."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "관련 도구",
+    "description": "더 많은 이미지 변환 및 압축 도구 탐색",
+    "items": [
+      {
+        "title": "WebP to JPG 변환",
+        "description": "WebP 이미지를 JPG 형식으로 되돌리기",
+        "url": "/converter/convert-webp-to-jpg"
+      },
+      {
+        "title": "JPG 압축",
+        "description": "JPG 파일을 더욱 최적화",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP 압축",
+        "description": "더 작은 크기로 WebP 파일 최적화",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "JPG 파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+      "subtitle": "JPG/JPEG 형식 지원, 최대 {maxFiles}개 파일, 각각 최대 10MB",
+      "selectFiles": "JPG 파일 선택"
+    },
+    "errors": {
+      "maxFiles": "최대 {maxFiles}개 파일 허용",
+      "fileTooLarge": "파일 {fileName}이(가) 너무 큽니다. 10MB 미만의 파일을 선택하세요",
+      "unsupportedFormat": "지원되지 않는 파일 형식: {fileName}. JPG/JPEG 파일만 지원됩니다.",
+      "uploadFailed": "파일 업로드 실패",
+      "conversionFailed": "변환 실패. 다시 시도하세요."
+    },
+    "files": {
+      "title": "선택된 JPG 파일",
+      "count": "{count}개 파일 선택됨",
+      "reset": "모두 재설정",
+      "remove": "제거",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "WebP로 변환",
+      "simpleStart": "빠른 JPG to WebP 변환",
+      "advancedStart": "JPG to WebP 변환 (고급)",
+      "processing": "WebP로 변환 중... {progress}%"
+    },
+    "progress": {
+      "label": "변환 진행률",
+      "status": "JPG to WebP 변환 중... {progress}% 완료"
+    },
+    "settings": {
+      "title": "WebP 변환 설정",
+      "simple": "간단",
+      "advanced": "고급",
+      "simpleTitle": "빠른 설정",
+      "advancedTitle": "WebP 고급 설정",
+      "quality": "품질",
+      "qualityHighest": "최고 (95)",
+      "qualityHigh": "높음 (90)",
+      "qualityMedium": "균형 (85)",
+      "qualityLow": "작은 크기 (80)",
+      "qualityLowest": "최소 (75)",
+      "compressionMode": "압축 모드",
+      "compressionLossy": "손실 (권장)",
+      "compressionLossless": "무손실 (큰 파일)",
+      "sharpness": "선명도",
+      "sharpnessAuto": "자동",
+      "sharpnessSharp": "선명 (7)",
+      "sharpnessMedium": "중간 (4)",
+      "sharpnessSoft": "부드러움 (0)",
+      "metadata": "메타데이터 유지",
+      "optimize": "웹용 최적화",
+      "presetBalanced": "균형",
+      "presetBalancedDesc": "품질 85, 좋은 압축",
+      "presetQuality": "고품질",
+      "presetQualityDesc": "품질 90, 큰 파일",
+      "presetSmall": "최대 압축",
+      "presetSmallDesc": "품질 80, 최소 파일"
+    },
+    "downloadAll": "모든 WebP 파일 다운로드",
+    "results": {
+      "title": "WebP 변환 결과",
+      "count": "{count}개의 JPG 파일이 WebP로 변환되었습니다",
+      "sizeInfo": "원본 JPG: {original} MB → WebP: {converted} MB ({change}% 감소)",
+      "download": "WebP 다운로드"
+    }
+  }
+}

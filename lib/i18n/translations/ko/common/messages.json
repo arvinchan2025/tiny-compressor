@@ -1,0 +1,68 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "바이트",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "pixels": "px",
+    "percent": "%",
+    "seconds": "초",
+    "minutes": "분",
+    "hours": "시간"
+  },
+  "time": {
+    "seconds": "초",
+    "minutes": "분",
+    "hours": "시간",
+    "days": "일",
+    "justNow": "방금",
+    "ago": "전",
+    "inProgress": "진행 중",
+    "estimated": "예상"
+  },
+  "fileOperations": {
+    "uploading": "업로드 중...",
+    "processing": "처리 중...",
+    "downloading": "다운로드 중...",
+    "uploaded": "업로드됨",
+    "processed": "처리됨",
+    "downloaded": "다운로드됨",
+    "failed": "실패",
+    "cancelled": "취소됨",
+    "paused": "일시 중지됨",
+    "resumed": "재개됨"
+  },
+  "validation": {
+    "required": "이 필드는 필수입니다",
+    "invalidFormat": "잘못된 형식",
+    "fileTooLarge": "파일이 너무 큽니다",
+    "fileTooSmall": "파일이 너무 작습니다",
+    "unsupportedFormat": "지원되지 않는 파일 형식",
+    "maxFilesExceeded": "최대 파일 수 초과",
+    "invalidUrl": "잘못된 URL",
+    "networkError": "네트워크 오류 발생"
+  },
+  "status": {
+    "ready": "준비",
+    "processing": "처리 중",
+    "completed": "완료",
+    "error": "오류",
+    "warning": "경고",
+    "info": "정보",
+    "success": "성공",
+    "failed": "실패",
+    "cancelled": "취소됨",
+    "paused": "일시 중지됨"
+  }
+}

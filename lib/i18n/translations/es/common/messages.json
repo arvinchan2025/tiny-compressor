@@ -1,0 +1,74 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "pixels": "px",
+    "percent": "%",
+    "seconds": "seg",
+    "minutes": "min",
+    "hours": "hr"
+  },
+  "time": {
+    "seconds": "segundos",
+    "minutes": "minutos",
+    "hours": "horas",
+    "days": "días",
+    "justNow": "ahora mismo",
+    "ago": "hace",
+    "inProgress": "en progreso",
+    "estimated": "estimado"
+  },
+  "fileOperations": {
+    "uploading": "Subiendo...",
+    "processing": "Procesando...",
+    "downloading": "Descargando...",
+    "uploaded": "Subido",
+    "processed": "Procesado",
+    "downloaded": "Descargado",
+    "failed": "Falló",
+    "cancelled": "Cancelado",
+    "paused": "Pausado",
+    "resumed": "Reanudado"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "invalidFormat": "Formato inválido",
+    "fileTooLarge": "El archivo es demasiado grande",
+    "fileTooSmall": "El archivo es demasiado pequeño",
+    "unsupportedFormat": "Formato de archivo no soportado",
+    "maxFilesExceeded": "Se excedió el número máximo de archivos",
+    "invalidUrl": "URL inválida",
+    "networkError": "Error de red"
+  },
+  "status": {
+    "ready": "Listo",
+    "processing": "Procesando",
+    "completed": "Completado",
+    "error": "Error",
+    "warning": "Advertencia",
+    "info": "Información",
+    "success": "Éxito",
+    "failed": "Falló",
+    "cancelled": "Cancelado",
+    "paused": "Pausado"
+  }
+}
+
+
+
+
+
+

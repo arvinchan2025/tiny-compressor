@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import ConverterPageLayout from '@/components/layout/ConverterPageLayout';
+import ConvertJpgToAvifClient from './ConvertJpgToAvifClient';
 
 interface ConvertJpgToAvifPageProps {
   params: {
@@ -12,25 +12,14 @@ export async function generateMetadata({ params }: ConvertJpgToAvifPageProps): P
   const { locale } = params;
   
   return {
-    title: 'JPG to AVIF Converter - Convert JPG Images to AVIF Online',
-    description: 'Free online JPG to AVIF converter. Convert JPG images to AVIF format with high quality. No registration required.',
-    keywords: 'JPG to AVIF, convert JPG, JPG converter, AVIF converter',
-    openGraph: {
-      title: 'JPG to AVIF Converter - Convert JPG Images to AVIF Online',
-      description: 'Free online JPG to AVIF converter. Convert JPG images to AVIF format with high quality.',
-      type: 'website',
-    },
+    title: 'JPG to AVIF Converter - Free Online Image Format Converter',
+    description: 'Convert JPG to AVIF online for free! Next-generation compression technology with superior quality. Fast, secure, and completely private conversion.',
+    keywords: 'JPG to AVIF, convert JPG, image converter, free online converter, AVIF converter'
   };
 }
 
 export default function ConvertJpgToAvifPage({ params }: ConvertJpgToAvifPageProps) {
-  const { locale } = params;
-  
   return (
-    <ConverterPageLayout
-      locale={locale}
-      sourceFormat="jpg"
-      targetFormat="avif"
-    />
+    <ConvertJpgToAvifClient locale={params.locale} />
   );
 }

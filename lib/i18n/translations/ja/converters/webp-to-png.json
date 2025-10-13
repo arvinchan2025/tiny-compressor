@@ -1,0 +1,271 @@
+{
+  "seo": {
+    "title": "WebP to PNG変換 - WebP画像をオンラインで変換",
+    "description": "WebP画像をオンラインでPNG形式に変換します。無料、高速、使いやすいWebP to PNG変換ツール。",
+    "keywords": "WebP to PNG、WebP変換、画像変換ツール、オンラインツール"
+  },
+  "hero": {
+    "title": "WebP to PNG変換",
+    "subtitle": "WebP画像をオンラインでPNG形式に変換",
+    "description": "より広い互換性とロスレス品質保持のためにWebP画像をPNG形式に変換します。"
+  },
+  "features": {
+    "title": "WebP to PNG変換機能",
+    "description": "ユニバーサル互換性のためにWebPをPNGに変換する理由",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "ユニバーサル互換性",
+        "description": "PNGはどこでも動作 - すべてのブラウザ、すべてのデバイス、すべてのソフトウェア"
+      },
+      {
+        "icon": "🔒",
+        "title": "品質保持",
+        "description": "ロスレス変換は画質と透明度を維持"
+      },
+      {
+        "icon": "📧",
+        "title": "メールとレガシーサポート",
+        "description": "メールとWebPをサポートしないシステムに最適"
+      },
+      {
+        "icon": "🎨",
+        "title": "デザインツール互換性",
+        "description": "すべての画像編集およびデザインソフトウェアで動作"
+      },
+      {
+        "icon": "⚡",
+        "title": "バッチ変換",
+        "description": "複数のWebPファイルを一度にPNGに変換"
+      },
+      {
+        "icon": "🔐",
+        "title": "100%安全",
+        "description": "すべての変換はブラウザ内でローカルに行われます"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "WebP vs PNG形式比較",
+    "subtitle": "WebPとPNG形式の違いを理解する",
+    "webp": {
+      "description": "WebPは、PNGと比較して優れた圧縮を提供するモダン画像形式です。",
+      "features": [
+        "より良い圧縮",
+        "透明度サポート",
+        "モダン形式",
+        "95%+ブラウザサポート"
+      ]
+    },
+    "png": {
+      "description": "PNG (Portable Network Graphics) は、ロスレスデータ圧縮と透明度をサポートするラスターグラフィックスファイル形式です。",
+      "features": [
+        "ロスレス圧縮",
+        "透明度サポート",
+        "ユニバーサル互換性",
+        "100%ブラウザサポート"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "WebP to PNG変換の仕組み",
+    "description": "ユニバーサルPNGへの変換の技術的プロセスを理解する",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "WebP解凍とPNG再エンコード",
+        "description": "WebPのVP8/VP9圧縮データを完全に解凍し、ユニバーサル互換性のためにPNGのロスレスDEFLATE圧縮アルゴリズムで再エンコードします。",
+        "benefits": [
+          "完全なWebP解凍",
+          "PNG DEFLATE再エンコード",
+          "ロスレス品質",
+          "ユニバーサル互換性"
+        ]
+      },
+      {
+        "icon": "🔒",
+        "title": "品質保持",
+        "description": "元のWebPがロスレスの場合、PNGは完璧な品質を保持します。元のWebPがロッシーの場合、PNGはさらなる損失なしで現在の品質レベルを保持します。",
+        "benefits": [
+          "ロスレスWebP → 完璧なPNG品質",
+          "ロッシーWebP → 品質が保持",
+          "追加の品質損失なし",
+          "透明度が完全に保持"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "透明度保持",
+        "description": "WebPのアルファチャネル透明度は品質損失なしでPNGのアルファチャネルに変換されます。両方の形式は滑らかなエッジのために256レベルのアルファをサポートします。",
+        "benefits": [
+          "透明度が完全に保持",
+          "256レベルのアルファ",
+          "品質劣化なし",
+          "さらなる編集の準備完了"
+        ]
+      },
+      {
+        "icon": "📦",
+        "title": "最大互換性",
+        "description": "PNGはすべてのブラウザ (1996年以降)、メールクライアント、デザインソフトウェア、オペレーティングシステムで100%ユニバーサルサポートがあります。保証された互換性のための最も安全な形式。",
+        "benefits": [
+          "100%ブラウザサポート",
+          "すべてのメールクライアント",
+          "すべてのデザインツール",
+          "ユニバーサルに認識"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "WebPをPNGに変換する時期と方法",
+    "description": "WebP to PNG変換の一般的なシナリオとベストプラクティス",
+    "items": [
+      {
+        "icon": "📧",
+        "title": "メール互換性",
+        "description": "すべてのメールクライアントで画像が表示されることを確認します。",
+        "content": "メール添付ファイルとニュースレター用にWebPをPNGに変換します。ほとんどのメールクライアント (Outlook、Apple Mail、Gmail) はWebPをサポートしていません。PNGはユニバーサル表示を保証します。メールマーケティング、トランザクションメール、メール署名に不可欠です。PNGは透明度を持つメール画像の唯一の安全な形式です。"
+      },
+      {
+        "icon": "🎨",
+        "title": "デザインツール互換性",
+        "description": "すべての編集およびデザインツールで動作します。",
+        "content": "すべてのデザインツールとの互換性のためにWebPをPNGに変換します。主要ツール (Photoshop 2021+) はWebPをサポートしていますが、多くのプラグイン、古いバージョン、専門ツールはサポートしていません。PNGはユニバーサル互換性を保証します。チームメンバーが異なるソフトウェアバージョンを使用する共同デザインプロジェクトに最適です。"
+      },
+      {
+        "icon": "🖨️",
+        "title": "印刷ワークフロー",
+        "description": "印刷とプロフェッショナル使用のために画像を準備します。",
+        "content": "印刷ワークフロー用にWebPをPNGに変換します。ほとんどの印刷ソフトウェアはPNG、TIFF、またはJPGを期待します。PNGはロスレスで透明度を持つグラフィックに最適です。パンフレット、名刺、ポスター、プロフェッショナル印刷に不可欠です。一部のモダンサービスはWebPをサポートしていますが、PNGはユニバーサル互換性を保証します。"
+      },
+      {
+        "icon": "💾",
+        "title": "アーカイブと長期ストレージ",
+        "description": "長期的なアクセス可能性を確保します。",
+        "content": "アーカイブ目的のためにWebPをPNGに変換します。PNGは、保証された長期サポートを持つ確立されたオープン形式です。WebPは一部のコンテキストで不確実な未来を持つ新しいものです。PNGは、画像が何十年も後にアクセス可能なままであることを保証します。歴史的アーカイブ、ドキュメンテーション、永続的記録に最適です。"
+      },
+      {
+        "icon": "🖥️",
+        "title": "レガシーシステムサポート",
+        "description": "古いシステムとソフトウェアとの互換性。",
+        "content": "古いブラウザを実行するレガシーシステム (IE11、Safari <14、Chrome <85) 用にWebPをPNGに変換します。エンタープライズ環境、政府サイト、広範な互換性を必要とするアプリケーションに不可欠です。PNGは1996年以降どこでも動作します。アナリティクスが>5%のレガシーユーザーを示す場合、WebPの代わりにPNGを使用してください。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "WebPを保持する場合",
+        "description": "WebPがより良い選択であるシナリオ。",
+        "content": "次の場合はWebPを保持してください：1) モダンブラウザのみをターゲット (95%+サポート)、2) ファイルサイズが重要 (WebPは25-70%小さい)、3) Webパフォーマンスを優先、4) メール/印刷互換性が不要。WebPはモダンWebアプリで優れています。メール、レガシーシステム、印刷、ユニバーサル互換性にはPNGを使用してください。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "WebP to PNG変換に関する一般的な質問",
+    "items": [
+      {
+        "question": "WebPをPNGに変換すると画質に影響しますか？",
+        "answer": "PNGへの変換は追加の損失なしで現在の品質を保持します。元のWebPがロスレスの場合、PNGは同一です。元のWebPがロッシーの場合、PNGはその品質レベルを保持しますが、元のWebP圧縮で失われたデータは復元されません。PNGはロスレスであるため、将来の編集はさらに品質を劣化させません。"
+      },
+      {
+        "question": "WebPから変換する際、PNGは透明度を保持しますか？",
+        "answer": "はい！PNGはWebPと同じようにアルファチャネル透明度を完全にサポートします。WebPの透明度は品質損失なしでPNGのアルファチャネルに変換されます。両方の形式は滑らかなエッジのために256レベルのアルファをサポートします。PNGは実際にWeb透明度の元の標準です。"
+      },
+      {
+        "question": "PNGファイルがWebPより大きいのはなぜですか？",
+        "answer": "PNGはロスレスDEFLATE圧縮を使用しますが、WebPはよりモダンなVP8/VP9アルゴリズムを使用します。PNGファイルは通常、コンテンツに応じてWebPより25-70%大きいです。このサイズ増加はユニバーサル互換性 (100%対95%ブラウザサポート) と保証された長期アクセス可能性のトレードオフです。"
+      },
+      {
+        "question": "どのブラウザとソフトウェアがPNG形式をサポートしていますか？",
+        "answer": "PNGは100%ユニバーサルサポートがあります。1996年以降すべてのブラウザ、すべてのメールクライアント、すべてのデザインソフトウェア、すべてのオペレーティングシステム、およびすべての画像ビューアでサポートされています。PNGはこれまでに作成された最も広くサポートされている画像形式の1つです。すべてのプラットフォームで保証された互換性が必要な場合の安全な選択です。"
+      },
+      {
+        "question": "すべてのWebP画像をPNGに変換すべきですか？",
+        "answer": "いいえ、モダンWeb使用にはWebPを保持してください。WebPのより小さいファイルサイズ (25-70%少ない) は、パフォーマンスとモダンブラウザサポートを優先するサイトに最適です。次の場合のみPNGに変換してください：1) メール互換性が必要、2) レガシーシステムサポートが必要、3) 印刷ワークフローでの作業、4) 互換性のないデザインツールでの作業。WebにはWebP、ユニバーサル互換性にはPNGを使用してください。"
+      },
+      {
+        "question": "WebP to PNG変換は無料で安全ですか？",
+        "answer": "はい、当社のWebP to PNGコンバーターは完全無料で、登録、ウォーターマーク、支払いは不要です。すべての変換はWebAssemblyを使用してブラウザ内でローカルに行われます - 画像はデバイスを離れることはありません。これにより、サーバーアップロード、データ収集、ファイルへのサードパーティアクセスなしで100%のプライバシーとセキュリティが保証されます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "関連ツール",
+    "description": "その他の画像変換および圧縮ツールを探索",
+    "items": [
+      {
+        "title": "PNG to WebP変換",
+        "description": "PNG画像をモダンなWebP形式に変換",
+        "url": "/converter/convert-png-to-webp"
+      },
+      {
+        "title": "PNG圧縮",
+        "description": "PNGファイルをより小さいサイズに最適化",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "WebP圧縮",
+        "description": "WebPファイルをさらに最適化",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "WebPファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "WebP形式をサポート、最大{maxFiles}ファイル、各最大10MB",
+      "selectFiles": "WebPファイルを選択"
+    },
+    "errors": {
+      "maxFiles": "最大{maxFiles}ファイルまで許可",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "unsupportedFormat": "サポートされていないファイル形式: {fileName}。WebPファイルのみサポートされています。",
+      "uploadFailed": "ファイルのアップロードに失敗しました",
+      "conversionFailed": "変換に失敗しました。もう一度お試しください。"
+    },
+    "files": {
+      "title": "選択されたWebPファイル",
+      "count": "{count}ファイル選択済み",
+      "reset": "すべてリセット",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "PNGに変換",
+      "simpleStart": "クイックWebP to PNG変換",
+      "advancedStart": "WebP to PNG変換 (詳細)",
+      "processing": "PNGに変換中... {progress}%"
+    },
+    "progress": {
+      "label": "変換進行状況",
+      "status": "WebP to PNG変換中... {progress}%完了"
+    },
+    "settings": {
+      "title": "PNG変換設定",
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "simpleTitle": "クイック設定",
+      "advancedTitle": "PNG詳細設定",
+      "compressionLevel": "圧縮レベル",
+      "compressionFastest": "最速 (レベル1)",
+      "compressionBalanced": "バランス (レベル6)",
+      "compressionBest": "最高圧縮 (レベル9)",
+      "interlace": "インターレースPNG",
+      "metadata": "メタデータを保持",
+      "optimize": "Web用に最適化",
+      "presetFast": "高速変換",
+      "presetFastDesc": "迅速な変換、大きいファイル",
+      "presetBalanced": "バランス",
+      "presetBalancedDesc": "良好な圧縮、妥当な速度",
+      "presetOptimal": "最大圧縮",
+      "presetOptimalDesc": "最小PNGファイル、遅い変換"
+    },
+    "downloadAll": "すべてのPNGファイルをダウンロード",
+    "results": {
+      "title": "PNG変換結果",
+      "count": "{count}個のWebPファイルがPNGに変換されました",
+      "sizeInfo": "元のWebP: {original} MB → PNG: {converted} MB ({change}%増加)",
+      "download": "PNGをダウンロード"
+    }
+  }
+}

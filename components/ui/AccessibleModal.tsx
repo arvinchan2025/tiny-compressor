@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { keyboardNavigation, ariaLabels } from '@/lib/accessibility';
 import { modalAnimations, transitions } from '@/lib/micro-interactions';
+import { useTranslation } from '@/hooks/useTranslation';
 import StandardButton from './StandardButton';
 import StandardIcon from './StandardIcon';
 
@@ -12,11 +13,11 @@ interface AccessibleModalProps {
   onClose: () => void;
   title: string;
   children: React.ReactNode;
-  size?: 'sm' | 'md' | 'lg' | 'xl';
-  showCloseButton?: boolean;
-  closeOnOverlayClick?: boolean;
-  closeOnEscape?: boolean;
-  className?: string;
+  size: 'sm' | 'md' | 'lg' | 'xl';
+  showCloseButton: boolean;
+  closeOnOverlayClick: boolean;
+  closeOnEscape: boolean;
+  className: string;
 }
 
 export default function AccessibleModal({
@@ -30,6 +31,7 @@ export default function AccessibleModal({
   closeOnEscape = true,
   className = ''
 }: AccessibleModalProps) {
+  const { t } = useTranslation('common');
   const modalRef = useRef<HTMLDivElement>(null);
   const previousActiveElement = useRef<HTMLElement | null>(null);
 
@@ -127,7 +129,7 @@ export default function AccessibleModal({
             aria-labelledby="modal-title"
             {...ariaLabels.dialog(title, { modal: true })}
           >
-            {/* 标题栏 */}
+            {/* 标题*/}
             <div className="flex items-center justify-between p-6 border-b border-gray-200">
               <h2
                 id="modal-title"
@@ -141,7 +143,7 @@ export default function AccessibleModal({
                   variant="ghost"
                   size="sm"
                   onClick={handleClose}
-                  aria-label="Close modal"
+                  aria-label={t('common.button.close', 'Close modal')}
                   className="p-2"
                 >
                   <StandardIcon name="close" size="sm" />

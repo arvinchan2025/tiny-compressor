@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import AvifCompressorNew from './AvifCompressorNew';
+import CompressAvifClient from './CompressAvifClient';
 
 interface CompressAvifPageProps {
   params: {
@@ -13,18 +13,24 @@ export async function generateMetadata({ params }: CompressAvifPageProps): Promi
   
   return {
     title: 'AVIF Compressor - Compress AVIF Images Online',
-    description: 'Free online AVIF image compressor. Reduce AVIF file size while maintaining quality. No registration required.',
-    keywords: 'AVIF compressor, compress AVIF, reduce AVIF size, AVIF optimization',
+    description: 'Compress AVIF images online with our free AVIF compressor. Next-generation compression technology with superior quality. Fast, secure, and easy to use.',
+    keywords: 'AVIF compressor, compress AVIF, AVIF optimization, reduce AVIF size, AVIF compressor online, free AVIF compressor',
     openGraph: {
       title: 'AVIF Compressor - Compress AVIF Images Online',
-      description: 'Free online AVIF image compressor. Reduce AVIF file size while maintaining quality.',
+      description: 'Compress AVIF images online with our free AVIF compressor. Next-generation compression technology with superior quality. Fast, secure, and easy to use.',
       type: 'website',
+      locale: locale,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'AVIF Compressor - Compress AVIF Images Online',
+      description: 'Compress AVIF images online with our free AVIF compressor. Next-generation compression technology with superior quality. Fast, secure, and easy to use.',
     },
   };
 }
 
 export default function CompressAvifPage({ params }: CompressAvifPageProps) {
-  const { locale } = params;
-  
-  return <AvifCompressorNew locale={locale} />;
+  return (
+    <CompressAvifClient locale={params.locale} />
+  );
 }

@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "compressor": "Compressor",
+    "converter": "Converter",
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "compressor": "Compressor",
+    "converter": "Converter"
+  },
+  "footer": {
+    "company": "TinyCompressor",
+    "description": "Free online image compression and conversion tools",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 TinyCompressor. All rights reserved."
+  },
+  "language": {
+    "current": "Current Language",
+    "change": "Change Language",
+    "select": "Select Language"
+  }
+}
+
+
+
+
+
+
+
+

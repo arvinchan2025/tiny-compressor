@@ -1,0 +1,306 @@
+{
+  "seo": {
+    "title": "Compresseur JPEG - Compresser des Images JPEG en Ligne Gratuitement",
+    "description": "Compressez des images JPEG en ligne avec notre compresseur JPEG gratuit. Réduisez la taille de fichier JPEG tout en maintenant la qualité. Rapide, sécurisé et facile à utiliser.",
+    "keywords": "compresseur JPEG, compresser JPEG, optimisation JPEG, réduire taille JPEG, compresseur JPEG en ligne, compresseur JPEG gratuit"
+  },
+  "hero": {
+    "title": "Compresseur d'Image JPEG",
+    "description": "Compressez des images JPEG en ligne avec notre technologie avancée de compression. Réduisez la taille de fichier tout en maintenant qualité et compatibilité.",
+    "subtitle": "Compressez des images JPEG en ligne avec notre technologie avancée de compression. Réduisez la taille de fichier tout en maintenant qualité et compatibilité.",
+    "badge": "Compresseur"
+  },
+  "formatInfo": {
+    "description": "JPEG (Joint Photographic Experts Group) est une méthode couramment utilisée de compression avec perte pour images numériques, particulièrement pour images produites par photographie numérique."
+  },
+  "features": {
+    "title": "Fonctionnalités du Format JPEG",
+    "description": "Pourquoi JPEG est le standard universel pour la photographie numérique",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "Haute Compression",
+        "description": "50-90% de réduction de taille de fichier utilisant algorithmes DCT et quantification"
+      },
+      {
+        "icon": "📸",
+        "title": "Optimisé pour Photo",
+        "description": "Conçu pour photographies - excelle pour scènes naturelles et dégradés complexes"
+      },
+      {
+        "icon": "🌍",
+        "title": "Compatibilité Universelle",
+        "description": "Supporté par tous appareils, navigateurs, caméras et visionneuses d'images mondialement"
+      },
+      {
+        "icon": "🎛️",
+        "title": "Qualité Ajustable",
+        "description": "Ajustez finement la compression de 1-100% pour équilibrer taille de fichier et fidélité visuelle"
+      },
+      {
+        "icon": "⚡",
+        "title": "Chargement Progressif",
+        "description": "Affiche aperçu basse résolution d'abord, puis améliore progressivement pour meilleure UX"
+      },
+      {
+        "icon": "🎨",
+        "title": "Sous-échantillonnage Chroma",
+        "description": "Réduit données de couleur (4:2:0) tout en maintenant détail de luminosité complet"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Comment Fonctionne la Compression JPEG",
+    "description": "Comprendre les principes techniques derrière la compression JPEG vous aide à prendre des décisions éclairées sur vos images.",
+    "items": [
+      {
+        "title": "Algorithme de Compression avec Perte",
+        "description": "JPEG utilise un algorithme sophistiqué de compression avec perte qui supprime stratégiquement des détails visuels imperceptibles pour atteindre des ratios de compression élevés. L'algorithme analyse l'image et rejette l'information que l'œil humain ne peut pas facilement détecter, équilibrant taille de fichier et qualité visuelle.",
+        "icon": "📉",
+        "benefits": [
+          "50-90% de réduction de taille de fichier",
+          "Maintient qualité perceptuelle",
+          "Idéal pour photographies et images complexes",
+          "Niveaux de compression configurables"
+        ]
+      },
+      {
+        "title": "DCT (Transformée Discrète en Cosinus)",
+        "description": "La compression JPEG emploie la Transformée Discrète en Cosinus pour convertir les données d'image du domaine spatial au domaine fréquentiel. Cette transformation mathématique permet à l'algorithme d'identifier et compresser l'information redondante plus efficacement, particulièrement dans zones avec variations subtiles de couleur.",
+        "icon": "⚡",
+        "benefits": [
+          "Transformation de données hautement efficace",
+          "Sépare données importantes de redondantes",
+          "Algorithme standard de l'industrie",
+          "Optimisé pour images naturelles"
+        ]
+      },
+      {
+        "title": "Quantification et Contrôle de Qualité",
+        "description": "Après transformation DCT, la quantification est appliquée pour réduire la précision des composants de fréquence moins importants. Le réglage de qualité (1-100%) contrôle directement ce processus de quantification, permettant aux utilisateurs d'ajuster finement l'équilibre entre ratio de compression et fidélité visuelle.",
+        "icon": "🎛️",
+        "benefits": [
+          "Niveaux de qualité ajustables de 1-100%",
+          "Contrôle de taille de fichier prévisible",
+          "Compression personnalisable par utilisateur",
+          "Équilibre entre taille et qualité"
+        ]
+      },
+      {
+        "title": "Sous-échantillonnage Chroma",
+        "description": "JPEG profite de la sensibilité plus faible de l'œil humain à l'information de couleur comparée à la luminosité. Le sous-échantillonnage chroma réduit la résolution de couleur tout en maintenant détail de luminance complet, atteignant compression supplémentaire sans perte de qualité notable dans la plupart des images.",
+        "icon": "🎨",
+        "benefits": [
+          "Réduction significative de taille de fichier",
+          "Impact perceptuel minimal",
+          "Optimisé pour vision humaine",
+          "Standard en photographie professionnelle"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quand Utiliser la Compression JPEG",
+    "description": "La compression JPEG est idéale pour types spécifiques d'images et cas d'usage où la taille de fichier compte plus que la qualité parfaite.",
+    "items": [
+      {
+        "title": "Photographie Numérique",
+        "description": "Le standard d'or pour caméras numériques et flux de travail de photographie professionnelle.",
+        "content": "JPEG est le format universel pour photographie numérique, fournissant excellent équilibre entre qualité d'image et taille de fichier. Parfait pour photos avec couleurs naturelles, scènes réalistes et dégradés complexes. Utilisé par photographes professionnels et caméras mondialement.",
+        "icon": "📸"
+      },
+      {
+        "title": "Images Web et Blogs",
+        "description": "Idéal pour images de site web où vitesse de chargement impacte directement l'expérience utilisateur.",
+        "content": "La compression JPEG est essentielle pour performance web, réduisant temps de chargement de page tout en maintenant attrait visuel. Parfait pour images de posts de blog, photos de produits, images de bannière et tout contenu web où chargement rapide est crucial pour SEO et engagement utilisateur.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Partage Réseaux Sociaux",
+        "description": "Optimisé pour partager photos à travers Instagram, Facebook, Twitter et autres plateformes.",
+        "content": "JPEG est universellement supporté par toutes plateformes de réseaux sociaux et fournit équilibre parfait pour partage social. La compression efficace du format assure téléchargements et téléversements rapides tout en maintenant bonne qualité pour photos de profil, posts et stories.",
+        "icon": "📱"
+      },
+      {
+        "title": "Applications Mobiles",
+        "description": "Critique pour applications mobiles où espace de stockage et bande passante sont ressources limitées.",
+        "content": "La compression JPEG est fondamentale pour développement d'applications mobiles, aidant à réduire taille d'app, diminuer usage de données et améliorer performance. Essentiel pour galeries photo, profils utilisateur, flux de contenu et toute fonctionnalité mobile affichant des images.",
+        "icon": "📱"
+      },
+      {
+        "title": "Images de Produits E-commerce",
+        "description": "Équilibrez qualité d'image avec vitesse de chargement pour meilleurs taux de conversion.",
+        "content": "JPEG est idéal pour photos de produits e-commerce, fournissant représentation claire de produit tout en assurant chargements de page rapides. Les études montrent que images de produits se chargeant plus vite améliorent taux de conversion et réduisent abandon de panier.",
+        "icon": "🛒"
+      },
+      {
+        "title": "Archivage Photo",
+        "description": "Stockez efficacement grandes collections de photos tout en maintenant qualité acceptable.",
+        "content": "JPEG permet aux photographes et individus d'archiver milliers de photos dans espace de stockage gérable. Avec réglages de qualité appropriés (85-95%), vous pouvez préserver souvenirs tout en gardant exigences de stockage raisonnables pour sauvegarde et archivage long terme.",
+        "icon": "💾"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "Meilleures Pratiques de Compression JPEG",
+    "description": "Suivez ces conseils d'experts pour obtenir les meilleurs résultats de la compression JPEG.",
+    "tips": [
+      {
+        "icon": "🎯",
+        "title": "Maîtriser le Compromis Qualité-Taille",
+        "content": "Qualité 85 est le point idéal pour photos web—presque identique à l'original mais 50-70% plus petit. Utilisez 90-95 pour portfolios de photographie professionnelle, 80-85 pour réseaux sociaux, et 60-75 pour miniatures ou aperçus. Évitez de recompresser fichiers JPEG pour prévenir perte de qualité générationnelle."
+      },
+      {
+        "icon": "🎨",
+        "title": "Optimiser le Sous-échantillonnage Chroma",
+        "content": "Utilisez sous-échantillonnage chroma 4:2:0 pour compression maximale (standard pour web). Utilisez 4:2:2 pour images avec texte ou fins détails de couleur, et 4:4:4 uniquement pour impression professionnelle. Un sous-échantillonnage approprié peut réduire taille de fichier de 30% sans perte de qualité notable dans photographies."
+      },
+      {
+        "icon": "📸",
+        "title": "Connaître Forces et Limites de JPEG",
+        "content": "JPEG excelle pour photographies, scènes naturelles et images avec dégradés. Évitez JPEG pour captures d'écran, texte, logos ou art au trait—ceux-ci montrent artefacts de compression visibles. N'utilisez jamais JPEG pour images nécessitant transparence. Pour applications web modernes, considérez WebP comme alternative JPEG avec 25-35% de meilleure compression."
+      },
+      {
+        "icon": "📦",
+        "title": "Stratégie de Compression par Lots Intelligente",
+        "content": "Groupez photos par cas d'usage : utilisez JPEG progressif pour images de plus de 50KB (meilleur chargement perçu), baseline pour images plus petites. Appliquez qualité supérieure (90+) aux images hero et portraits, qualité modérée (80-85) aux images de contenu, et qualité inférieure (60-75) aux images de fond ou miniatures."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "description": "Questions courantes sur la compression JPEG et notre outil de compresseur JPEG.",
+    "items": [
+      {
+        "question": "Qu'est-ce que la compression JPEG et comment fonctionne-t-elle ?",
+        "answer": "La compression JPEG est une méthode de compression avec perte qui réduit la taille de fichier en supprimant détails visuellement imperceptibles. Elle utilise Transformée Discrète en Cosinus (DCT) et quantification pour atteindre 50-90% de réduction de taille de fichier tout en maintenant bonne qualité visuelle pour photographies."
+      },
+      {
+        "question": "Quel réglage de qualité dois-je utiliser pour la compression JPEG ?",
+        "answer": "Pour images web, utilisez 80-90% de qualité pour équilibre optimal. Pour matériaux imprimés, utilisez 90-95%. Pour miniatures ou aperçus, 60-80% suffit. Qualité supérieure signifie fichiers plus grands mais meilleure fidélité visuelle."
+      },
+      {
+        "question": "La compression JPEG est-elle sans perte ou avec perte ?",
+        "answer": "Le JPEG standard utilise compression avec perte, signifiant que certaines données d'image sont définitivement rejetées pour réduire taille de fichier. Bien que variants JPEG sans perte existent, ils sont rarement utilisés car ils ne fournissent pas avantages de compression significatifs par rapport à PNG."
+      },
+      {
+        "question": "Quand dois-je utiliser JPEG au lieu de PNG ?",
+        "answer": "Utilisez JPEG pour photographies, images réalistes et scènes complexes avec nombreuses couleurs. Utilisez PNG pour graphiques, logos, captures d'écran et images nécessitant transparence ou précision parfaite au niveau pixel. JPEG fournit typiquement 10x meilleure compression pour photos."
+      },
+      {
+        "question": "Qu'est-ce que le JPEG progressif et dois-je l'utiliser ?",
+        "answer": "Le JPEG progressif charge images en plusieurs passes, montrant d'abord version basse résolution qui s'améliore graduellement. Cela fournit meilleure vitesse de chargement perçue sur connexions lentes et est recommandé pour images web de plus de 10KB."
+      },
+      {
+        "question": "Le JPEG supporte-t-il la transparence ?",
+        "answer": "Non, JPEG ne supporte pas transparence ou canaux alpha. Si vous avez besoin de transparence, utilisez PNG pour sans perte ou WebP pour compression avec perte avec support de transparence."
+      },
+      {
+        "question": "Combien puis-je compresser un JPEG sans perdre de qualité ?",
+        "answer": "Vous pouvez typiquement compresser JPEG de 50-70% avec perte de qualité visible minimale utilisant réglages de qualité 85-90%. Au-delà, artefacts peuvent devenir notables selon contenu d'image et conditions de visualisation."
+      },
+      {
+        "question": "Compresser un JPEG déjà compressé réduira-t-il davantage la qualité ?",
+        "answer": "Oui, chaque fois que vous compressez un JPEG déjà compressé, vous introduisez perte de qualité supplémentaire (perte générationnelle). Travaillez toujours depuis l'image originale non compressée quand possible pour maintenir meilleure qualité."
+      },
+      {
+        "question": "Puis-je compresser plusieurs fichiers JPEG par lots ?",
+        "answer": "Oui, notre outil supporte traitement par lots de plusieurs fichiers JPEG simultanément. Vous pouvez compresser jusqu'à 10 fichiers à la fois avec réglages de qualité cohérents, économisant temps tout en maintenant résultats uniformes."
+      },
+      {
+        "question": "Mes données sont-elles sûres lors de l'utilisation de ce compresseur en ligne ?",
+        "answer": "Absolument ! Toute compression se passe localement dans votre navigateur utilisant JavaScript. Vos images ne quittent jamais votre appareil ni ne sont téléchargées vers nos serveurs, assurant confidentialité et sécurité complètes."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Outils Connexes",
+    "description": "Explorez plus d'outils de compression et conversion d'images",
+    "items": [
+      {
+        "title": "Compresseur PNG",
+        "description": "Compresser des images PNG",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "Compresseur WebP",
+        "description": "Compresser des images WebP",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "Compresseur AVIF",
+        "description": "Compresser des images AVIF",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+      "subtitle": "Supporte le format {format}, max 50MB",
+      "selectFiles": "Sélectionner un Fichier"
+    },
+    "files": {
+      "title": "Fichiers Sélectionnés",
+      "count": "{count} fichiers",
+      "remove": "Supprimer",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "Compresser {format}",
+      "processing": "Compression... {progress}%"
+    },
+    "progress": {
+      "label": "Traitement...",
+      "compressing": "Compression de votre image {format}..."
+    },
+    "results": {
+      "title": "Compression Terminée ! 🎉",
+      "subtitle": "Votre image a été optimisée avec succès",
+      "original": "Original",
+      "compressed": "Compressé",
+      "saved": "Économisé",
+      "time": "Temps",
+      "format": "Format",
+      "compressionRatio": "Taux de Compression",
+      "sizeReduction": "Réduction de Taille",
+      "sizeIncrease": "Augmentation de Taille",
+      "greatJob": "Excellent travail !",
+      "considerAdjusting": "Envisagez d'ajuster les paramètres",
+      "savedSpace": "Économisé {amount} MB",
+      "successMessage": "Excellente compression !",
+      "successDescription": "Votre image est maintenant {ratio}% plus petite tout en maintenant une excellente qualité. Optimisée pour usage web !",
+      "download": "Télécharger",
+      "compressMore": "Compresser Plus",
+      "reset": "Réinitialiser",
+      "sizeInfo": "Original : {original} MB → Compressé : {compressed} MB (réduction de {ratio}%)"
+    },
+    "settings": {
+      "simple": "Simple",
+      "advanced": "Avancé",
+      "advancedTitle": "Paramètres Avancés",
+      "quality": "Qualité",
+      "qualityLow": "Basse",
+      "qualityMedium": "Moyenne",
+      "qualityHigh": "Élevée",
+      "metadata": "Conserver les Métadonnées",
+      "metadataDesc": "EXIF, GPS, info appareil"
+    },
+    "actions": {
+      "downloadAll": "Télécharger Tout",
+      "reset": "Réinitialiser"
+    },
+    "error": {
+      "title": "Erreur",
+      "tip": "💡 Astuce : Assurez-vous que votre fichier est une image valide (PNG, JPEG, WebP, AVIF, GIF) et fait moins de 50MB",
+      "unknownError": "Erreur inconnue",
+      "processingFailed": "Échec du traitement de {fileName}",
+      "compressionFailed": "La compression a échoué"
+    },
+    "status": {
+      "starting": "Démarrage de la compression...",
+      "processing": "Compression... {progress}%",
+      "completed": "Compression terminée !"
+    }
+  }
+}

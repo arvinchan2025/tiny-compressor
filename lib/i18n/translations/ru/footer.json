@@ -1,0 +1,36 @@
+{
+  "company": "TinyCompressor",
+  "description": "Профессиональные инструменты сжатия и конвертации изображений, быстрые, безопасные и полностью бесплатные.",
+  "links": {
+    "home": "Главная",
+    "compressor": "Сжатие",
+    "converter": "Конвертер"
+  },
+  "formats": {
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "png": "PNG"
+  },
+  "legal": {
+    "privacy": "Политика Конфиденциальности",
+    "terms": "Условия Использования"
+  },
+  "sections": {
+    "quickLinks": "Быстрые Ссылки",
+    "formats": "Поддерживаемые Форматы",
+    "legal": "Правовая Информация и Поддержка"
+  },
+  "brand": {
+    "name": "TinyCompressor",
+    "description": "Профессиональные инструменты сжатия и конвертации изображений"
+  },
+  "social": {
+    "twitter": "Подпишитесь на нас в Twitter",
+    "github": "Посмотрите наш GitHub"
+  },
+  "copyright": "© {year} TinyCompressor. Все права защищены.",
+  "madeWith": "Сделано с",
+  "by": "командой",
+  "author": "TinyCompressor"
+}

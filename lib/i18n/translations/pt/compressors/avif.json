@@ -1,0 +1,289 @@
+{
+  "seo": {
+    "title": "Compressor AVIF - Comprimir Imagens AVIF Online Grátis",
+    "description": "Comprima imagens AVIF online com nosso compressor AVIF gratuito. Reduza tamanho de arquivo AVIF mantendo qualidade. Rápido, seguro e fácil de usar.",
+    "keywords": "compressor AVIF, comprimir AVIF, otimização AVIF, reduzir tamanho AVIF, compressor AVIF online, compressor AVIF gratuito"
+  },
+  "hero": {
+    "title": "Compressor de Imagem AVIF",
+    "description": "Comprima imagens AVIF online com nossa tecnologia avançada de compressão. Reduza tamanho de arquivo mantendo qualidade excepcional e recursos modernos.",
+    "subtitle": "Comprima imagens AVIF online com nossa tecnologia avançada de compressão. Reduza tamanho de arquivo mantendo qualidade excepcional e recursos modernos.",
+    "badge": "Compressor"
+  },
+  "formatInfo": {
+    "description": "AVIF (AV1 Image File Format) é um formato de imagem moderno baseado no codec de vídeo AV1 que fornece eficiência de compressão superior e recursos avançados como suporte HDR."
+  },
+  "features": {
+    "title": "Recursos do Formato AVIF",
+    "description": "Por que AVIF é o formato de imagem de próxima geração",
+    "items": [
+      {
+        "icon": "🏆",
+        "title": "Compressão de Classe Superior",
+        "description": "30-50% menor que WebP, 50-70% menor que JPEG na mesma qualidade"
+      },
+      {
+        "icon": "🎬",
+        "title": "Tecnologia de Codec AV1",
+        "description": "Baseado em codec de vídeo AV1 livre de royalties - algoritmos de compressão de ponta"
+      },
+      {
+        "icon": "🌈",
+        "title": "HDR e Gama de Cores Ampla",
+        "description": "Profundidade de cor de 10 e 12 bits com suporte HDR para fotografia profissional"
+      },
+      {
+        "icon": "🎯",
+        "title": "Otimização Perceptual",
+        "description": "Mantém excelente qualidade em configurações mais baixas através de ajuste perceptual avançado"
+      },
+      {
+        "icon": "✨",
+        "title": "Compressão Avançada de Alfa",
+        "description": "Compressão de transparência superior - melhor que PNG ou WebP"
+      },
+      {
+        "icon": "🎞️",
+        "title": "Síntese de Grão de Filme",
+        "description": "Preserva grão de filme natural reduzindo tamanho de arquivo"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Como Funciona a Compressão AVIF",
+    "description": "Entender os princípios técnicos por trás da compressão AVIF ajuda você a tomar decisões informadas sobre suas imagens.",
+    "items": [
+      {
+        "title": "Tecnologia de Codec AV1",
+        "description": "AVIF usa a tecnologia de codec de vídeo AV1 livre de royalties adaptada para imagens, fornecendo eficiência de compressão excepcional.",
+        "icon": "🎬",
+        "benefits": [
+          "Melhores taxas de compressão",
+          "Tecnologia livre de royalties",
+          "Padrão aberto",
+          "Formato à prova de futuro"
+        ]
+      },
+      {
+        "title": "Ciência de Cores Avançada",
+        "description": "AVIF suporta gama de cores ampla, HDR e altas profundidades de bits para qualidade de imagem de nível profissional.",
+        "icon": "🎨",
+        "benefits": [
+          "Cor de 10 e 12 bits",
+          "Suporte HDR",
+          "Gama de cores ampla",
+          "Qualidade profissional"
+        ]
+      },
+      {
+        "title": "Otimização Inteligente",
+        "description": "AVIF usa otimização perceptual para manter qualidade visual alcançando compressão máxima.",
+        "icon": "🧠",
+        "benefits": [
+          "Otimização de qualidade perceptual",
+          "Compressão consciente de conteúdo",
+          "Estratégias de codificação adaptativas",
+          "Otimizado para visão humana"
+        ]
+      },
+      {
+        "title": "Compressão Eficiente de Alfa",
+        "description": "AVIF emprega algoritmos avançados para comprimir dados de transparência eficientemente, alcançando melhores resultados que PNG ou WebP para imagens com canais alfa.",
+        "icon": "✨",
+        "benefits": [
+          "Compressão de alfa superior",
+          "Arquivos menores com transparência",
+          "Suporte completo de canal alfa",
+          "Ideal para gráficos web"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quando Usar Compressão AVIF",
+    "description": "Compressão AVIF é ideal para aplicações modernas requerendo melhor compressão com qualidade excepcional.",
+    "items": [
+      {
+        "title": "Aplicativos Web de Próxima Geração",
+        "description": "Perfeito para aplicativos web modernos priorizando performance e qualidade.",
+        "content": "AVIF é o futuro das imagens web, oferecendo eficiência de compressão incomparável para aplicações conscientes de largura de banda.",
+        "icon": "🚀"
+      },
+      {
+        "title": "Fotografia de Alta Qualidade",
+        "description": "Ideal para fotografia profissional requerendo máxima qualidade com armazenamento eficiente.",
+        "content": "O suporte HDR e alta profundidade de bits do AVIF o tornam perfeito para fluxos de trabalho de fotografia profissional.",
+        "icon": "📸"
+      },
+      {
+        "title": "Serviços de Streaming",
+        "description": "Excelente para plataformas de streaming de vídeo e serviços de mídia.",
+        "content": "A compressão eficiente do AVIF reduz custos de largura de banda mantendo qualidade visual excepcional.",
+        "icon": "🎥"
+      },
+      {
+        "title": "Design Mobile-First",
+        "description": "Essencial para aplicações mobile-first com largura de banda limitada.",
+        "content": "AVIF reduz significativamente uso de dados, melhorando experiência de usuário mobile e reduzindo custos.",
+        "icon": "📱"
+      },
+      {
+        "title": "Conteúdo Premium",
+        "description": "Perfeito para plataformas de conteúdo premium requerendo melhor qualidade.",
+        "content": "AVIF habilita entrega de conteúdo de qualidade premium com utilização eficiente de largura de banda.",
+        "icon": "⭐"
+      },
+      {
+        "title": "Imagens de Produtos E-commerce",
+        "description": "Ótimo para lojas online requerendo fotografia de produto de alta qualidade em tamanhos mínimos.",
+        "content": "AVIF permite que sites de e-commerce exibam imagens detalhadas de produtos com tempos de carregamento rápidos, melhorando taxas de conversão e experiência do usuário reduzindo custos de CDN em 40-60% comparado ao JPEG.",
+        "icon": "🛒"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "Melhores Práticas de Compressão AVIF",
+    "description": "Siga estas dicas de especialistas para obter os melhores resultados da compressão AVIF.",
+    "tips": [
+      {
+        "icon": "🚀",
+        "title": "Aproveite Compressão de Próxima Geração",
+        "content": "AVIF oferece compressão 30-50% melhor que WebP e 50-70% melhor que JPEG. Use qualidade 75-85 para imagens web—AVIF mantém excelente qualidade em configurações mais baixas devido à otimização perceptual avançada. Para fotografia de alto nível ou conteúdo HDR, use qualidade 85-95 para utilizar totalmente as capacidades de profundidade de cor de 10 e 12 bits do AVIF."
+      },
+      {
+        "icon": "🎨",
+        "title": "Otimize para Navegadores Modernos",
+        "content": "AVIF é suportado por 90%+ dos usuários (Chrome, Edge, Firefox, Safari 16+). Use elemento <picture> com AVIF primário, fallback WebP e JPEG/PNG para máxima compatibilidade. Codificação AVIF é mais lenta que JPEG/WebP, então pré-gere imagens durante tempo de build ao invés de on-the-fly para sites de produção."
+      },
+      {
+        "icon": "⚡",
+        "title": "Maximize Relação Qualidade-Tamanho",
+        "content": "AVIF se destaca em imagens de alta qualidade em tamanhos pequenos. Use-o para imagens hero, fotografia de produtos e displays de alta resolução onde qualidade importa. Habilite quantização adaptativa e síntese de grão de filme para conteúdo fotográfico. Para gráficos simples ou animações, WebP ou PNG podem ser mais eficientes apesar de tamanhos maiores."
+      },
+      {
+        "icon": "📦",
+        "title": "Implementação Estratégica",
+        "content": "Comece com imagens de alto impacto (seções hero, fotos de produtos, conteúdo em destaque). Monitore tempo de codificação e carga de servidor—codificação AVIF pode ser 5-10x mais lenta que JPEG. Use velocidades de codificação mais rápidas (6-8) para desenvolvimento e velocidades mais lentas (2-4) para produção para equilibrar qualidade e tempo de processamento. Considere suporte CDN para entrega AVIF."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "description": "Perguntas comuns sobre compressão AVIF e nossa ferramenta de compressor AVIF.",
+    "items": [
+      {
+        "question": "O que é formato AVIF?",
+        "answer": "AVIF é um formato de imagem de próxima geração baseado no codec de vídeo AV1, oferecendo eficiência de compressão superior e recursos avançados como suporte HDR e gama de cores ampla."
+      },
+      {
+        "question": "Como AVIF se compara ao JPEG e WebP?",
+        "answer": "AVIF tipicamente fornece compressão 50% melhor que JPEG e 20-30% melhor que WebP mantendo qualidade excepcional de imagem."
+      },
+      {
+        "question": "Todos os navegadores suportam AVIF?",
+        "answer": "Navegadores modernos como Chrome, Firefox e Safari suportam AVIF, mas navegadores antigos podem não suportar. É recomendado fornecer formatos fallback."
+      },
+      {
+        "question": "AVIF suporta transparência?",
+        "answer": "Sim, AVIF suporta totalmente transparência com canal alfa, similar ao PNG e WebP."
+      },
+      {
+        "question": "O que é suporte HDR no AVIF?",
+        "answer": "AVIF suporta imagens de Alto Alcance Dinâmico (HDR) com profundidades de cor de 10 e 12 bits, habilitando qualidade de imagem impressionante para displays compatíveis."
+      },
+      {
+        "question": "Quando devo usar AVIF?",
+        "answer": "AVIF é melhor para aplicações web modernas, aplicativos mobile e cenários onde máxima eficiência de compressão e qualidade são prioridades."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Explorar Mais Ferramentas",
+    "items": [
+      {
+        "title": "Compressor WebP",
+        "description": "Comprimir imagens WebP",
+        "path": "/compressor/compress-webp"
+      },
+      {
+        "title": "Conversor JPEG",
+        "description": "Converter para formato JPEG",
+        "path": "/converter/convert-avif-to-jpeg"
+      },
+      {
+        "title": "Conversor de Imagem",
+        "description": "Converter entre diferentes formatos de imagem",
+        "path": "/converter"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Arraste seu arquivo aqui ou clique para selecionar",
+      "subtitle": "Suporta formato {format}, máximo 50MB",
+      "selectFiles": "Selecionar Arquivo"
+    },
+    "files": {
+      "title": "Arquivos Selecionados",
+      "count": "{count} arquivos",
+      "remove": "Remover",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "Comprimir {format}",
+      "processing": "Comprimindo... {progress}%"
+    },
+    "progress": {
+      "label": "Processando...",
+      "compressing": "Comprimindo sua imagem {format}..."
+    },
+    "results": {
+      "title": "Compressão Concluída! 🎉",
+      "subtitle": "Sua imagem foi otimizada com sucesso",
+      "original": "Original",
+      "compressed": "Comprimido",
+      "saved": "Economizado",
+      "time": "Tempo",
+      "format": "Formato",
+      "compressionRatio": "Taxa de Compressão",
+      "sizeReduction": "Redução de Tamanho",
+      "sizeIncrease": "Aumento de Tamanho",
+      "greatJob": "Ótimo trabalho!",
+      "considerAdjusting": "Considere ajustar configurações",
+      "savedSpace": "Economizou {amount} MB",
+      "successMessage": "Ótima compressão!",
+      "successDescription": "Sua imagem agora está {ratio}% menor mantendo excelente qualidade. Otimizada para uso web!",
+      "download": "Baixar",
+      "compressMore": "Comprimir Mais",
+      "reset": "Redefinir",
+      "sizeInfo": "Original: {original} MB → Comprimido: {compressed} MB (redução de {ratio}%)"
+    },
+    "settings": {
+      "simple": "Simples",
+      "advanced": "Avançado",
+      "advancedTitle": "Configurações Avançadas",
+      "quality": "Qualidade",
+      "qualityLow": "Baixa",
+      "qualityMedium": "Média",
+      "qualityHigh": "Alta",
+      "metadata": "Manter Metadados",
+      "metadataDesc": "EXIF, GPS, info câmera"
+    },
+    "actions": {
+      "downloadAll": "Baixar Todos",
+      "reset": "Redefinir"
+    },
+    "error": {
+      "title": "Erro",
+      "tip": "💡 Dica: Certifique-se que seu arquivo é uma imagem válida (PNG, JPEG, WebP, AVIF, GIF) e menor que 50MB",
+      "unknownError": "Erro desconhecido",
+      "processingFailed": "Falha ao processar {fileName}",
+      "compressionFailed": "Compressão falhou"
+    },
+    "status": {
+      "starting": "Iniciando compressão...",
+      "processing": "Comprimindo... {progress}%",
+      "completed": "Compressão concluída!"
+    }
+  }
+}

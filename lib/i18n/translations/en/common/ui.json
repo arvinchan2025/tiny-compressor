@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "download": "Download",
+    "upload": "Upload",
+    "remove": "Remove",
+    "clear": "Clear",
+    "reset": "Reset",
+    "apply": "Apply",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "retry": "Retry",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "removeSelected": "Remove Selected"
+  },
+  "labels": {
+    "quality": "Quality",
+    "size": "Size",
+    "format": "Format",
+    "filename": "Filename",
+    "dimensions": "Dimensions",
+    "fileSize": "File Size",
+    "compressionRatio": "Compression Ratio",
+    "processingTime": "Processing Time"
+  },
+  "placeholders": {
+    "search": "Search...",
+    "enterFilename": "Enter filename",
+    "selectFormat": "Select format",
+    "selectQuality": "Select quality"
+  },
+  "tooltips": {
+    "download": "Download file",
+    "remove": "Remove file",
+    "preview": "Preview image",
+    "settings": "Open settings",
+    "help": "Show help"
+  },
+  "modals": {
+    "confirm": {
+      "title": "Confirm Action",
+      "message": "Are you sure you want to continue?",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "error": {
+      "title": "Error",
+      "message": "An error occurred. Please try again."
+    },
+    "success": {
+      "title": "Success",
+      "message": "Operation completed successfully."
+    }
+  },
+  "fileUploader": {
+    "dragActive": "Drop files here",
+    "dragInactive": "Drag and drop files here",
+    "dragReject": "Some files cannot be uploaded",
+    "clickToUpload": "or click to select files",
+    "supportedFormats": "Supported formats",
+    "maxSize": "Max size",
+    "maxFiles": "Max files",
+    "errors": {
+      "fileTooLarge": "File {fileName} is too large. Maximum size is {maxSize}.",
+      "fileInvalidType": "File {fileName} has an invalid type. Supported formats: {formats}.",
+      "tooManyFiles": "Too many files. Maximum allowed: {maxFiles}.",
+      "fileRejected": "File {fileName} was rejected: {errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "{count} file{plural} uploaded successfully!"
+    }
+  },
+  "tabs": {
+    "simple": "Simple",
+    "advanced": "Advanced"
+  },
+  "forms": {
+    "required": "This field is required",
+    "optional": "Optional",
+    "invalidFormat": "Invalid format",
+    "invalidValue": "Invalid value"
+  }
+}

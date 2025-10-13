@@ -1,0 +1,36 @@
+{
+  "company": "TinyCompressor",
+  "description": "Outils professionnels de compression et de conversion d'images rapides, sécurisés et entièrement gratuits.",
+  "links": {
+    "home": "Accueil",
+    "compressor": "Compresseur",
+    "converter": "Convertisseur"
+  },
+  "formats": {
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "png": "PNG"
+  },
+  "legal": {
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "sections": {
+    "quickLinks": "Liens Rapides",
+    "formats": "Formats Supportés",
+    "legal": "Légal & Support"
+  },
+  "brand": {
+    "name": "TinyCompressor",
+    "description": "Outils professionnels de compression et de conversion d'images"
+  },
+  "social": {
+    "twitter": "Suivez-nous sur Twitter",
+    "github": "Voir notre GitHub"
+  },
+  "copyright": "© {year} TinyCompressor. Tous droits réservés.",
+  "madeWith": "Fait avec",
+  "by": "par",
+  "author": "Équipe TinyCompressor"
+}

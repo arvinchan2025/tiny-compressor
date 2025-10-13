@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { loadingAnimations, transitions } from '@/lib/micro-interactions';
 
 interface StandardLoadingSpinnerProps {
-  size?: 'sm' | 'md' | 'lg' | 'xl';
-  variant?: 'spin' | 'pulse' | 'bounce' | 'wave';
-  color?: 'primary' | 'secondary' | 'success' | 'warning' | 'error';
-  className?: string;
+  size: 'sm' | 'md' | 'lg' | 'xl';
+  variant: 'spin' | 'pulse' | 'bounce' | 'wave';
+  color: 'primary' | 'secondary' | 'success' | 'warning' | 'error';
+  className: string;
 }
 
 export default function StandardLoadingSpinner({

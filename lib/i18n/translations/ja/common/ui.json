@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "保存",
+    "cancel": "キャンセル",
+    "submit": "送信",
+    "download": "ダウンロード",
+    "upload": "アップロード",
+    "remove": "削除",
+    "clear": "クリア",
+    "reset": "リセット",
+    "apply": "適用",
+    "close": "閉じる",
+    "back": "戻る",
+    "next": "次へ",
+    "previous": "前へ",
+    "retry": "再試行",
+    "selectAll": "すべて選択",
+    "deselectAll": "すべて選択解除",
+    "removeSelected": "選択済みを削除"
+  },
+  "labels": {
+    "quality": "品質",
+    "size": "サイズ",
+    "format": "形式",
+    "filename": "ファイル名",
+    "dimensions": "寸法",
+    "fileSize": "ファイルサイズ",
+    "compressionRatio": "圧縮率",
+    "processingTime": "処理時間"
+  },
+  "placeholders": {
+    "search": "検索...",
+    "enterFilename": "ファイル名を入力",
+    "selectFormat": "形式を選択",
+    "selectQuality": "品質を選択"
+  },
+  "tooltips": {
+    "download": "ファイルをダウンロード",
+    "remove": "ファイルを削除",
+    "preview": "画像をプレビュー",
+    "settings": "設定を開く",
+    "help": "ヘルプを表示"
+  },
+  "modals": {
+    "confirm": {
+      "title": "アクションを確認",
+      "message": "続行してもよろしいですか？",
+      "yes": "はい",
+      "no": "いいえ"
+    },
+    "error": {
+      "title": "エラー",
+      "message": "エラーが発生しました。もう一度お試しください。"
+    },
+    "success": {
+      "title": "成功",
+      "message": "操作が正常に完了しました。"
+    }
+  },
+  "fileUploader": {
+    "dragActive": "ここにファイルをドロップ",
+    "dragInactive": "ファイルをドラッグ＆ドロップ",
+    "dragReject": "一部のファイルはアップロードできません",
+    "clickToUpload": "またはクリックしてファイルを選択",
+    "supportedFormats": "サポート形式",
+    "maxSize": "最大サイズ",
+    "maxFiles": "最大ファイル数",
+    "errors": {
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。最大サイズは{maxSize}です。",
+      "fileInvalidType": "ファイル{fileName}の種類が無効です。サポート形式: {formats}。",
+      "tooManyFiles": "ファイルが多すぎます。最大許可数: {maxFiles}。",
+      "fileRejected": "ファイル{fileName}が拒否されました: {errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "{count}ファイル{plural}が正常にアップロードされました！"
+    }
+  },
+  "tabs": {
+    "simple": "シンプル",
+    "advanced": "詳細"
+  },
+  "forms": {
+    "required": "このフィールドは必須です",
+    "optional": "オプション",
+    "invalidFormat": "無効な形式",
+    "invalidValue": "無効な値"
+  }
+}

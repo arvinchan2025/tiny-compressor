@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "PNG to WebP変換 - PNG画像をオンラインで変換",
+    "description": "PNG画像をオンラインでWebP形式に変換します。無料、高速、使いやすいPNG to WebP変換ツール。",
+    "keywords": "PNG to WebP、PNG変換、画像変換ツール、オンラインツール"
+  },
+  "hero": {
+    "title": "PNG to WebP変換",
+    "subtitle": "PNG画像をオンラインでWebP形式に変換",
+    "description": "品質と透明度サポートを維持しながら、より良い圧縮とより速い読み込み時間のためにPNG画像をWebP形式に変換します。"
+  },
+  "features": {
+    "title": "PNG to WebP変換機能",
+    "description": "モダンWebパフォーマンスのためにPNGをWebPに変換する理由",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "25-35%優れた圧縮",
+        "description": "WebPは品質を維持しながらPNGより優れた圧縮を提供"
+      },
+      {
+        "icon": "✨",
+        "title": "透明度が保持",
+        "description": "PNGより優れた圧縮で完全なアルファチャネルサポート"
+      },
+      {
+        "icon": "🔄",
+        "title": "ロスレスおよびロッシーモード",
+        "description": "完璧な品質または最大圧縮のいずれかを選択"
+      },
+      {
+        "icon": "🌐",
+        "title": "95%+ブラウザサポート",
+        "description": "2020年以降すべてのモダンブラウザでサポート"
+      },
+      {
+        "icon": "⚡",
+        "title": "バッチ変換",
+        "description": "複数のPNGファイルを一度にWebPに変換"
+      },
+      {
+        "icon": "🔐",
+        "title": "100%安全",
+        "description": "すべての変換はブラウザ内でローカルに行われます"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs WebP形式比較",
+    "subtitle": "PNGとWebP形式の違いを理解する",
+    "png": {
+      "description": "PNG (Portable Network Graphics) は、ロスレスデータ圧縮と透明度をサポートするラスターグラフィックスファイル形式です。",
+      "features": [
+        "ロスレス圧縮",
+        "透明度サポート",
+        "グラフィックとロゴに最適",
+        "より大きいファイルサイズ"
+      ]
+    },
+    "webp": {
+      "description": "WebPは、GoogleによってPNGとJPEGと比較して優れた圧縮を提供するために開発されたモダン画像形式です。",
+      "features": [
+        "優れた圧縮",
+        "透明度サポート",
+        "ロスレスおよびロッシーモード",
+        "より小さいファイルサイズ"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "PNG to WebP変換の仕組み",
+    "description": "PNGに対するWebPの技術的利点を理解する",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "高度な圧縮アルゴリズム",
+        "description": "WebPはPNGのDEFLATEの代わりにVP8/VP9予測エンコーディング (ビデオ圧縮から) を使用し、品質を維持しながら25-35%優れた圧縮を実現します。",
+        "benefits": [
+          "VP8/VP9予測エンコーディング",
+          "PNGより25-35%小さい",
+          "ロスレスまたはロッシーモード利用可能",
+          "Web配信用に最適化"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "優れたアルファチャネル圧縮",
+        "description": "WebPは、柔らかい影やグローなどの段階的なアルファ遷移を持つ画像に対して、PNGよりも効率的に透明度データを圧縮します。",
+        "benefits": [
+          "PNGよりも優れたアルファ圧縮",
+          "柔らかい影とグラデーションに最適",
+          "透明度品質を維持",
+          "ファイルサイズを30-40%削減"
+        ]
+      },
+      {
+        "icon": "🎯",
+        "title": "デュアル圧縮モード",
+        "description": "ニーズに基づいて、ロスレスモード (完璧な品質、PNGより25%小さい) またはロッシーモード (60-80%小さい、最小限の目に見える損失) を選択します。",
+        "benefits": [
+          "ロスレス: 完璧な品質、25%小さい",
+          "ロッシー: 60-80%小さい",
+          "画像ごとに選択可能",
+          "Web使用のためのより良い柔軟性"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "柔軟な品質制御",
+        "description": "WebPはPNGより優れた品質対サイズ比できめ細かい品質制御 (0-100) を提供し、Webパフォーマンス用に完璧に最適化されています。",
+        "benefits": [
+          "品質範囲0-100",
+          "より良い品質/サイズ比",
+          "最適化のためのシャープネスパラメータ",
+          "Web配信用に最適化"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "PNGをWebPに変換する時期と方法",
+    "description": "PNG to WebP変換の一般的なシナリオとベストプラクティス",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Webパフォーマンス最適化",
+        "description": "より良い画像圧縮でサイトをモダナイズします。",
+        "content": "25-35%小さいファイルのためにPNGグラフィックをWebPに変換します。ロゴとUI要素には完璧な品質で25%小さいWebPロスレスを使用してください。透明度を持つ写真には品質80-90のWebPロッシーを使用してください (60-80%小さい)。WebPプライマリ、PNGフォールバックで<picture>要素を実装して95%+のブラウザサポートを実現します。"
+      },
+      {
+        "icon": "🎨",
+        "title": "透明度を持つロゴとグラフィック",
+        "description": "より小さいサイズで完璧な品質。",
+        "content": "WebPは透明度を持つロゴとグラフィックで優れています。25%のサイズ削減で完璧な品質のためにWebPロスレスを使用してください。あまり重要でないグラフィックには、品質85-90のWebPロッシーがより小さいサイズでほぼ同一の品質を提供します。Web UI要素とブランド資産に最適です。"
+      },
+      {
+        "icon": "📸",
+        "title": "透明度を持つ写真",
+        "description": "製品画像とカットアウト写真。",
+        "content": "WebPは透明な背景を持つ製品写真に最適です。良好な品質を維持しながら60-70%のサイズ削減のために製品PNG画像を品質80-85のWebPロッシーに変換します。透明度を保持しながらPNGより大幅に小さい。eコマース製品カタログに最適です。"
+      },
+      {
+        "icon": "💾",
+        "title": "クラウドストレージとCDN",
+        "description": "ストレージと帯域幅コストを削減します。",
+        "content": "PNGをWebPに変換すると、モードに応じてクラウドストレージとCDNコストが25-70%削減されます。PNGライブラリをバッチ変換して即座に節約を実現します。クリティカル資産にはロスレス、一般的なコンテンツには品質80-85のロッシーを使用してください。多くのグラフィックを持つ高トラフィックサイトのROIは大きいです。"
+      },
+      {
+        "icon": "📱",
+        "title": "モバイルとプログレッシブWebアプリ",
+        "description": "モバイルパフォーマンス用に最適化します。",
+        "content": "WebPのより小さいファイルサイズは、モバイル読み込み時間を劇的に改善します。25-70%の削減のためにPNG資産をWebPに変換します。すべてのKBが重要なPWAにとって重要です。モバイルブラウザは優れたWebPサポートを持っています。最大圧縮にはロッシーWebP、品質クリティカル資産にはロスレスを使用してください。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "PNGを保持する場合",
+        "description": "PNGが依然として最良の選択であるシナリオ。",
+        "content": "次の場合はPNGを保持してください：1) Safari <14またはChrome <65のサポートが必要 (アナリティクスを確認)、2) メール互換性が重要 (多くのクライアントがWebPをサポートしていない)、3) レガシーツールでの作業、4) 最大ユニバーサル互換性が必要。WebPは95%+のブラウザサポートでモダンWebアプリで優れています。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "PNG to WebP変換に関する一般的な質問",
+    "items": [
+      {
+        "question": "PNGから変換する際、WebPは透明度を保持しますか？",
+        "answer": "はい！WebPはPNGと同様にアルファチャネル透明度を完全にサポートします。PNGの透明度は、多くの場合30-40%優れた圧縮でWebPのアルファチャネルに変換されます。WebPは透明な背景を持つグラフィック、ロゴ、製品画像に優れています。WebPロスレスは完璧な透明度品質を保持します。"
+      },
+      {
+        "question": "PNGと比較してWebPファイルはどのくらい小さいですか？",
+        "answer": "WebPはモードに応じて通常PNGより25-70%小さいです。WebPロスレスはゼロ品質損失で25-35%のサイズ削減を実現します。品質80-90のWebPロッシーは最小限の視覚的差で60-70%の削減を提供します。実際の節約は画像コンテンツによって異なります - 透明度を持つグラフィックは優れた圧縮を実現します。"
+      },
+      {
+        "question": "WebPロスレスまたはロッシーを使用すべきですか？",
+        "answer": "完璧な品質を必要とするロゴ、UIグラフィック、資産には、WebPロスレスを使用してください (PNGより25%小さい、ゼロ品質損失)。透明度を持つ写真とあまり重要でないグラフィックには、品質80-90のWebPロッシーを使用してください (60-70%小さい、最小限の視覚的差)。デプロイメント前に視覚的に比較してください。"
+      },
+      {
+        "question": "どのブラウザがWebP形式をサポートしていますか？",
+        "answer": "WebPは2024年時点で95%+のブラウザサポートがあります。Chrome 23+ (2012)、Firefox 65+ (2019)、Edge 18+ (2018)、Safari 14+ (2020)、Opera 12.1+ (2012) でサポートされています。モバイルサポートには、Chrome Android、Safari iOS 14+、Samsung Internet 4+が含まれます。古いブラウザの場合、WebPプライマリとPNGフォールバックで<picture>要素を実装します。"
+      },
+      {
+        "question": "すべてのPNGファイルをWebPに変換できますか？",
+        "answer": "モダンWebサイトの場合、はい - WebPは95%+のブラウザサポートで重要なパフォーマンス利点を提供します。プログレッシブエンハンスメントを実装してください：WebPフォールバック → PNGでユニバーサル互換性を実現します。最大の影響のために大きいPNG (>100KB) を優先してください。オーディエンスのブラウザアナリティクスを監視してください。メールにはWebPを避けてください (限定的なクライアントサポート)。"
+      },
+      {
+        "question": "PNG to WebP変換は無料で安全ですか？",
+        "answer": "はい、当社のPNG to WebPコンバーターは完全無料で、登録、ウォーターマーク、支払いは不要です。すべての変換はWebAssemblyを使用してブラウザ内でローカルに行われます - 画像はデバイスを離れることはありません。これにより、サーバーアップロード、データ収集、サードパーティアクセスなしで100%のプライバシーとセキュリティが保証されます。WebPエンコーディングは完全にクライアント側で実行されます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "関連ツール",
+    "description": "その他の画像変換および圧縮ツールを探索",
+    "items": [
+      {
+        "title": "WebP to PNG変換",
+        "description": "WebP画像をPNG形式に戻す",
+        "url": "/converter/convert-webp-to-png"
+      },
+      {
+        "title": "PNG圧縮",
+        "description": "PNGファイルをさらに最適化",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "WebP圧縮",
+        "description": "WebPファイルをより小さいサイズに最適化",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "PNGファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "PNG形式をサポート、最大{maxFiles}ファイル、各最大10MB",
+      "selectFiles": "PNGファイルを選択"
+    },
+    "errors": {
+      "maxFiles": "最大{maxFiles}ファイルまで許可",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "unsupportedFormat": "サポートされていないファイル形式: {fileName}。PNGファイルのみサポートされています。",
+      "uploadFailed": "ファイルのアップロードに失敗しました",
+      "conversionFailed": "変換に失敗しました。もう一度お試しください。"
+    },
+    "files": {
+      "title": "選択されたPNGファイル",
+      "count": "{count}ファイル選択済み",
+      "reset": "すべてリセット",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "WebPに変換",
+      "simpleStart": "クイックPNG to WebP変換",
+      "advancedStart": "PNG to WebP変換 (詳細)",
+      "processing": "WebPに変換中... {progress}%"
+    },
+    "progress": {
+      "label": "変換進行状況",
+      "status": "PNG to WebP変換中... {progress}%完了"
+    },
+    "settings": {
+      "title": "WebP変換設定",
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "simpleTitle": "クイック設定",
+      "advancedTitle": "WebP詳細設定",
+      "quality": "品質",
+      "qualityHighest": "最高 (95)",
+      "qualityHigh": "高 (90)",
+      "qualityMedium": "バランス (85)",
+      "qualityLow": "小サイズ (80)",
+      "qualityLowest": "最小 (75)",
+      "compressionMode": "圧縮モード",
+      "compressionLossless": "ロスレス (完璧な品質)",
+      "compressionLossy": "ロッシー (より小さいファイル)",
+      "sharpness": "シャープネス",
+      "sharpnessAuto": "自動",
+      "sharpnessSharp": "シャープ (7)",
+      "sharpnessMedium": "ミディアム (4)",
+      "sharpnessSoft": "ソフト (0)",
+      "metadata": "メタデータを保持",
+      "optimize": "Web用に最適化",
+      "presetLossless": "ロスレス",
+      "presetLosslessDesc": "完璧な品質、25%小さい",
+      "presetBalanced": "バランス",
+      "presetBalancedDesc": "品質85、40-60%小さい",
+      "presetSmall": "最大圧縮",
+      "presetSmallDesc": "品質75、60-70%小さい"
+    },
+    "downloadAll": "すべてのWebPファイルをダウンロード",
+    "results": {
+      "title": "WebP変換結果",
+      "count": "{count}個のPNGファイルがWebPに変換されました",
+      "sizeInfo": "元のPNG: {original} MB → WebP: {converted} MB ({change}%削減)",
+      "download": "WebPをダウンロード"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "submit": "إرسال",
+    "download": "تنزيل",
+    "upload": "تحميل",
+    "remove": "إزالة",
+    "clear": "مسح",
+    "reset": "إعادة تعيين",
+    "apply": "تطبيق",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "retry": "إعادة المحاولة",
+    "selectAll": "تحديد الكل",
+    "deselectAll": "إلغاء تحديد الكل",
+    "removeSelected": "إزالة المحدد"
+  },
+  "labels": {
+    "quality": "الجودة",
+    "size": "الحجم",
+    "format": "التنسيق",
+    "filename": "اسم الملف",
+    "dimensions": "الأبعاد",
+    "fileSize": "حجم الملف",
+    "compressionRatio": "نسبة الضغط",
+    "processingTime": "وقت المعالجة"
+  },
+  "placeholders": {
+    "search": "بحث...",
+    "enterFilename": "أدخل اسم الملف",
+    "selectFormat": "حدد التنسيق",
+    "selectQuality": "حدد الجودة"
+  },
+  "tooltips": {
+    "download": "تنزيل الملف",
+    "remove": "إزالة الملف",
+    "preview": "معاينة الصورة",
+    "settings": "فتح الإعدادات",
+    "help": "عرض المساعدة"
+  },
+  "modals": {
+    "confirm": {
+      "title": "تأكيد الإجراء",
+      "message": "هل أنت متأكد من أنك تريد المتابعة؟",
+      "yes": "نعم",
+      "no": "لا"
+    },
+    "error": {
+      "title": "خطأ",
+      "message": "حدث خطأ. يرجى المحاولة مرة أخرى."
+    },
+    "success": {
+      "title": "نجح",
+      "message": "تمت العملية بنجاح."
+    }
+  },
+  "fileUploader": {
+    "dragActive": "أفلت الملفات هنا",
+    "dragInactive": "اسحب وأفلت الملفات هنا",
+    "dragReject": "لا يمكن تحميل بعض الملفات",
+    "clickToUpload": "أو انقر لتحديد الملفات",
+    "supportedFormats": "التنسيقات المدعومة",
+    "maxSize": "الحد الأقصى للحجم",
+    "maxFiles": "الحد الأقصى للملفات",
+    "errors": {
+      "fileTooLarge": "الملف {fileName} كبير جدًا. الحجم الأقصى هو {maxSize}.",
+      "fileInvalidType": "الملف {fileName} له نوع غير صالح. التنسيقات المدعومة: {formats}.",
+      "tooManyFiles": "ملفات كثيرة جدًا. الحد الأقصى المسموح: {maxFiles}.",
+      "fileRejected": "تم رفض الملف {fileName}: {errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "تم تحميل {count} ملف{plural} بنجاح!"
+    }
+  },
+  "tabs": {
+    "simple": "بسيط",
+    "advanced": "متقدم"
+  },
+  "forms": {
+    "required": "هذا الحقل مطلوب",
+    "optional": "اختياري",
+    "invalidFormat": "تنسيق غير صالح",
+    "invalidValue": "قيمة غير صالحة"
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "brand": {
+    "name": "TinyCompressor"
+  },
+  "nav": {
+    "home": "Inicio",
+    "compressor": "Compresor",
+    "converter": "Convertidor",
+    "language": "Idioma",
+    "menu": "Menú",
+    "close": "Cerrar"
+  },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "compressor": "Compresor",
+    "converter": "Convertidor"
+  },
+  "compressor": {
+    "title": "Compresor de imágenes",
+    "subtitle": "Reduce el tamaño de los archivos de imagen hasta un 90% manteniendo la calidad. Rápido, seguro y completamente gratuito.",
+    "description": "Herramientas profesionales de compresión de imágenes que te ayudan a optimizar tus imágenes para web, correo y almacenamiento. Soporte para todos los formatos de imagen principales con algoritmos de compresión avanzados.",
+    "badge": "Compresión de imágenes",
+    "statsLabels": {
+      "compression": "Compresión",
+      "speed": "Velocidad"
+    },
+    "tools": {
+      "png": {
+        "name": "Compresor PNG",
+        "description": "Comprime imágenes PNG con optimización sin pérdida",
+        "features": [
+          "Compresión sin pérdida",
+          "Soporte de transparencia",
+          "Optimización web"
+        ],
+        "compression": "Hasta 80%"
+      },
+      "jpeg": {
+        "name": "Compresor JPEG",
+        "description": "Reduce el tamaño de archivo JPEG con compresión inteligente",
+        "features": [
+          "Compresión inteligente",
+          "Control de calidad",
+          "Eliminación de metadatos"
+        ],
+        "compression": "Hasta 90%"
+      },
+      "webp": {
+        "name": "Compresor WebP",
+        "description": "Optimiza imágenes WebP para entrega web",
+        "features": [
+          "Formato moderno",
+          "Compresión superior",
+          "Optimizado para web"
+        ],
+        "compression": "Hasta 85%"
+      },
+      "avif": {
+        "name": "Compresor AVIF",
+        "description": "Comprime imágenes AVIF con compresión de próxima generación",
+        "features": [
+          "Formato de próxima generación",
+          "Máxima compresión",
+          "A prueba de futuro"
+        ],
+        "compression": "Hasta 95%"
+      },
+      "gif": {
+        "name": "Compresor GIF",
+        "description": "Reduce el tamaño de archivo GIF manteniendo la calidad",
+        "features": [
+          "Soporte de animación",
+          "Optimización de color",
+          "Reducción de fotogramas"
+        ],
+        "compression": "Hasta 70%"
+      },
+      "bmp": {
+        "name": "Compresor BMP",
+        "description": "Comprime imágenes bitmap BMP con optimización avanzada",
+        "features": [
+          "Conversión a formatos eficientes",
+          "Reducción masiva de tamaño",
+          "Optimización de paleta"
+        ],
+        "compression": "Hasta 90%"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "Ultra rápido",
+        "description": "Procesa múltiples imágenes en segundos con nuestros algoritmos optimizados",
+        "details": "Procesa hasta 100 imágenes simultáneamente"
+      },
+      "security": {
+        "title": "Privacidad primero",
+        "description": "Tus imágenes se procesan localmente en tu navegador - sin cargas necesarias",
+        "details": "El procesamiento del lado del cliente garantiza privacidad completa"
+      },
+      "quality": {
+        "title": "Control de calidad",
+        "description": "Configuraciones avanzadas para equilibrar tamaño de archivo y calidad de imagen",
+        "details": "Algoritmos avanzados mantienen la calidad visual"
+      },
+      "title": "¿Por qué elegir nuestro compresor de imágenes?",
+      "items": [
+        {
+          "title": "Ultra rápido",
+          "description": "Procesa múltiples imágenes en segundos con nuestros algoritmos optimizados"
+        },
+        {
+          "title": "Privacidad primero",
+          "description": "Tus imágenes se procesan localmente en tu navegador - sin cargas necesarias"
+        },
+        {
+          "title": "Múltiples formatos",
+          "description": "Soporte para formatos PNG, JPEG, WebP, AVIF, GIF y BMP"
+        },
+        {
+          "title": "Control de calidad",
+          "description": "Configuraciones avanzadas para equilibrar tamaño de archivo y calidad de imagen"
+        },
+        {
+          "title": "Procesamiento por lotes",
+          "description": "Comprime múltiples imágenes a la vez para ahorrar tiempo"
+        },
+        {
+          "title": "Gratuito para siempre",
+          "description": "Sin registro, sin marcas de agua, sin tarifas ocultas"
+        }
+      ]
+    },
+    "stats": {
+      "processed": {
+        "number": "15M+",
+        "label": "Imágenes Comprimidas",
+        "description": "Mensual"
+      },
+      "reduction": {
+        "number": "90%",
+        "label": "Reducción Promedio",
+        "description": "Tamaño de archivo"
+      },
+      "formats": {
+        "number": "6",
+        "label": "Formatos Soportados",
+        "description": "Todos los tipos principales"
+      }
+    },
+    "whyChoose": {
+      "title": "¿Por Qué Elegir Nuestro Compresor de Imágenes?",
+      "items": [
+        {
+          "title": "Ultrarrápido",
+          "description": "Procesa múltiples imágenes en segundos con nuestros algoritmos optimizados"
+        },
+        {
+          "title": "Privacidad Primero",
+          "description": "Tus imágenes se procesan localmente en tu navegador - no se requieren cargas"
+        },
+        {
+          "title": "Múltiples Formatos",
+          "description": "Soporte para formatos PNG, JPEG, WebP, AVIF, GIF y BMP"
+        },
+        {
+          "title": "Control de Calidad",
+          "description": "Configuraciones avanzadas para equilibrar tamaño de archivo y calidad de imagen"
+        },
+        {
+          "title": "Procesamiento por Lotes",
+          "description": "Comprime múltiples imágenes a la vez para ahorrar tiempo"
+        },
+        {
+          "title": "Gratis Para Siempre",
+          "description": "Sin registro, sin marcas de agua, sin costos ocultos"
+        }
+      ]
+    }
+  },
+  "converter": {
+    "title": "Convertidor de imágenes",
+    "subtitle": "Convierte imágenes entre diferentes formatos con alta calidad y procesamiento rápido.",
+    "description": "Herramientas profesionales de conversión de imágenes que transforman tus imágenes entre formatos populares. Soporte para PNG, JPEG, WebP, AVIF y HEIC con tecnología de conversión avanzada.",
+    "badge": "Conversión de formatos",
+    "statsLabels": {
+      "compression": "Compresión",
+      "speed": "Velocidad"
+    },
+    "tools": {
+      "pngToJpg": {
+        "name": "PNG a JPG",
+        "description": "Convierte imágenes PNG a formato JPG",
+        "features": [
+          "Manejo de fondo",
+          "Preservación de calidad",
+          "Optimización web"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "pngToWebp": {
+        "name": "PNG a WebP",
+        "description": "Convierte PNG a formato WebP moderno",
+        "features": [
+          "Mejor compresión",
+          "Transparencia preservada",
+          "Optimizado para web"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "pngToAvif": {
+        "name": "PNG a AVIF",
+        "description": "Convierte PNG a formato AVIF de próxima generación",
+        "features": [
+          "Máxima compresión",
+          "Calidad superior",
+          "Soporte HDR"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "jpgToPng": {
+        "name": "JPEG a PNG",
+        "description": "Convierte imágenes JPEG a formato PNG",
+        "features": [
+          "Soporte de transparencia",
+          "Preservación de calidad",
+          "Edición sin pérdida"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "webpToPng": {
+        "name": "WebP a PNG",
+        "description": "Convierte WebP a formato PNG universal",
+        "features": [
+          "Compatibilidad universal",
+          "Calidad sin pérdida",
+          "Soporte de correo"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "jpgToWebp": {
+        "name": "JPEG a WebP",
+        "description": "Convierte JPEG a formato WebP eficiente",
+        "features": [
+          "Archivos más pequeños",
+          "Calidad preservada",
+          "Web moderno"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "jpgToAvif": {
+        "name": "JPEG a AVIF",
+        "description": "Convierte JPEG a formato AVIF de próxima generación",
+        "features": [
+          "Mejor compresión",
+          "Calidad superior",
+          "Características modernas"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "webpToJpg": {
+        "name": "WebP a JPEG",
+        "description": "Convierte WebP a formato JPEG universal",
+        "features": [
+          "Compatibilidad máxima",
+          "Archivos más pequeños",
+          "Soporte universal"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "webpToAvif": {
+        "name": "WebP a AVIF",
+        "description": "Actualiza WebP a formato AVIF",
+        "features": [
+          "Mejor compresión",
+          "Calidad mejorada",
+          "Características avanzadas"
+        ],
+        "conversion": "Instantáneo"
+      },
+      "heicToJpg": {
+        "name": "HEIC a JPEG",
+        "description": "Convierte fotos HEIC de iPhone a formato JPEG",
+        "features": [
+          "Compatibilidad universal",
+          "Preservación de calidad",
+          "Manejo de metadatos"
+        ],
+        "conversion": "Instantáneo"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "Ultra rápido",
+        "description": "Convierte múltiples imágenes en segundos con nuestros algoritmos optimizados",
+        "details": "Convierte múltiples imágenes en segundos"
+      },
+      "security": {
+        "title": "Privacidad primero",
+        "description": "Tus imágenes se procesan localmente en tu navegador - sin cargas necesarias",
+        "details": "El procesamiento del lado del cliente garantiza privacidad completa"
+      },
+      "quality": {
+        "title": "Control de calidad",
+        "description": "Configuraciones avanzadas para mantener la calidad de imagen durante la conversión",
+        "details": "Algoritmos avanzados mantienen la calidad de imagen"
+      }
+    },
+    "stats": {
+      "converted": {
+        "number": "10M+",
+        "label": "Imágenes Convertidas",
+        "description": "Mensual"
+      },
+      "formats": {
+        "number": "10+",
+        "label": "Formatos Soportados",
+        "description": "Todos los tipos principales"
+      },
+      "quality": {
+        "number": "100%",
+        "label": "Preservación de Calidad",
+        "description": "Conversión sin pérdida"
+      }
+    },
+    "whyChoose": {
+      "title": "¿Por Qué Elegir Nuestro Convertidor de Imágenes?",
+      "items": [
+        {
+          "title": "Conversión de Alta Calidad",
+          "description": "Mantiene la calidad de imagen al convertir entre formatos con algoritmos avanzados"
+        },
+        {
+          "title": "Procesamiento Local",
+          "description": "Todas las conversiones ocurren localmente en tu navegador - completamente privado"
+        },
+        {
+          "title": "10+ Formatos",
+          "description": "Soporta formatos principales como PNG, JPG, WebP, AVIF, HEIC"
+        },
+        {
+          "title": "Conversión por Lotes",
+          "description": "Convierte múltiples archivos simultáneamente para mayor eficiencia"
+        },
+        {
+          "title": "Resultados Instantáneos",
+          "description": "Procesamiento rápido para obtener imágenes convertidas al instante"
+        },
+        {
+          "title": "Completamente Gratis",
+          "description": "Uso ilimitado, sin registro ni pago requerido"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "company": "TinyCompressor",
+    "description": "Herramientas gratuitas de compresión y conversión de imágenes en línea",
+    "links": {
+      "privacy": "Política de privacidad",
+      "terms": "Términos de servicio",
+      "about": "Acerca de",
+      "contact": "Contacto"
+    },
+    "copyright": "© 2024 TinyCompressor. Todos los derechos reservados."
+  },
+  "language": {
+    "current": "Idioma actual",
+    "change": "Cambiar idioma",
+    "select": "Seleccionar idioma"
+  },
+  "tools": {
+    "title": "Elige tu herramienta",
+    "start": "Comenzar ahora"
+  },
+  "features": {
+    "title": "¿Por qué elegir nuestras herramientas?",
+    "subtitle": "Tecnología avanzada con características amigables para el usuario",
+    "free": "100% gratuito",
+    "secure": "Seguro y privado",
+    "fast": "Ultra rápido"
+  },
+  "cta": {
+    "title": "¿Listo para comenzar?",
+    "description": "Únete a miles de usuarios que confían en nuestras herramientas de procesamiento de imágenes",
+    "backToHome": "Volver al inicio"
+  }
+}

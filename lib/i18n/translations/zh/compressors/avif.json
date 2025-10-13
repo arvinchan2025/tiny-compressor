@@ -1,0 +1,289 @@
+{
+  "seo": {
+    "title": "AVIF 压缩 - 在线免费压缩 AVIF 图片",
+    "description": "使用我们的免费 AVIF 压缩器在线压缩 AVIF 图片。在保持质量的同时减少 AVIF 文件大小。快速、安全且易于使用。",
+    "keywords": "AVIF 压缩器, 压缩 AVIF, AVIF 优化, 减少 AVIF 大小, 在线 AVIF 压缩器, 免费 AVIF 压缩器"
+  },
+  "hero": {
+    "title": "AVIF 图片压缩器",
+    "description": "使用我们的先进压缩技术在线压缩 AVIF 图片。在保持卓越质量和现代功能的同时减少文件大小。",
+    "subtitle": "使用我们的先进压缩技术在线压缩 AVIF 图片。在保持卓越质量和现代功能的同时减少文件大小。",
+    "badge": "压缩器"
+  },
+  "formatInfo": {
+    "description": "AVIF（AV1 图像文件格式）是基于 AV1 视频编解码器的现代图像格式，提供卓越的压缩效率和 HDR 支持等高级功能。"
+  },
+  "features": {
+    "title": "AVIF 格式功能",
+    "description": "为什么 AVIF 是下一代图像格式",
+    "items": [
+      {
+        "icon": "🏆",
+        "title": "一流的压缩",
+        "description": "在相同质量下比 WebP 小 30-50%，比 JPEG 小 50-70%"
+      },
+      {
+        "icon": "🎬",
+        "title": "AV1 编解码器技术",
+        "description": "基于免版税的 AV1 视频编解码器 - 尖端压缩算法"
+      },
+      {
+        "icon": "🌈",
+        "title": "HDR 和广色域",
+        "description": "专业摄影的 HDR 支持和 10 位和 12 位色深"
+      },
+      {
+        "icon": "🎯",
+        "title": "感知优化",
+        "description": "通过高级感知调整在较低设置下保持出色的质量"
+      },
+      {
+        "icon": "✨",
+        "title": "高级 Alpha 压缩",
+        "description": "卓越的透明度压缩 - 优于 PNG 或 WebP"
+      },
+      {
+        "icon": "🎞️",
+        "title": "胶片颗粒合成",
+        "description": "在减少文件大小的同时保留自然胶片颗粒"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "AVIF 压缩原理",
+    "description": "了解 AVIF 压缩背后的技术原理可帮助您对图像做出明智的决策。",
+    "items": [
+      {
+        "title": "AV1 编解码器技术",
+        "description": "AVIF 使用适用于图像的免版税 AV1 视频编解码器技术，提供出色的压缩效率。",
+        "icon": "🎬",
+        "benefits": [
+          "最佳压缩比",
+          "免版税技术",
+          "开放标准",
+          "面向未来的格式"
+        ]
+      },
+      {
+        "title": "高级色彩科学",
+        "description": "AVIF 支持广色域、HDR 和高位深度，可实现专业级图像质量。",
+        "icon": "🎨",
+        "benefits": [
+          "10 位和 12 位色彩",
+          "HDR 支持",
+          "广色域",
+          "专业质量"
+        ]
+      },
+      {
+        "title": "智能优化",
+        "description": "AVIF 使用感知优化在实现最大压缩的同时保持视觉质量。",
+        "icon": "🧠",
+        "benefits": [
+          "感知质量优化",
+          "内容感知压缩",
+          "自适应编码策略",
+          "人类视觉优化"
+        ]
+      },
+      {
+        "title": "高效的 Alpha 压缩",
+        "description": "AVIF 采用高级算法来高效压缩透明度数据，对于具有 Alpha 通道的图像，取得比 PNG 或 WebP 更好的结果。",
+        "icon": "✨",
+        "benefits": [
+          "卓越的 Alpha 压缩",
+          "带透明度的文件更小",
+          "完全 Alpha 通道支持",
+          "非常适合 Web 图形"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时使用 AVIF 压缩",
+    "description": "AVIF 压缩非常适合需要最佳压缩和卓越质量的现代应用。",
+    "items": [
+      {
+        "title": "下一代 Web 应用",
+        "description": "非常适合优先考虑性能和质量的现代 Web 应用。",
+        "content": "AVIF 是 Web 图像的未来，为带宽敏感型应用提供无与伦比的压缩效率。",
+        "icon": "🚀"
+      },
+      {
+        "title": "高质量摄影",
+        "description": "非常适合需要最大质量和高效存储的专业摄影。",
+        "content": "AVIF 的 HDR 支持和高位深度使其非常适合专业摄影工作流程。",
+        "icon": "📸"
+      },
+      {
+        "title": "流媒体服务",
+        "description": "非常适合视频流平台和媒体服务。",
+        "content": "AVIF 的高效压缩在保持卓越视觉质量的同时降低了带宽成本。",
+        "icon": "🎥"
+      },
+      {
+        "title": "移动优先设计",
+        "description": "对于带宽有限的移动优先应用至关重要。",
+        "content": "AVIF 大大减少了数据使用，改善了移动用户体验并降低了成本。",
+        "icon": "📱"
+      },
+      {
+        "title": "高级内容",
+        "description": "非常适合需要最佳质量的高级内容平台。",
+        "content": "AVIF 能够以高效的带宽利用率提供高级质量内容。",
+        "icon": "⭐"
+      },
+      {
+        "title": "电子商务产品图片",
+        "description": "非常适合需要以最小文件大小提供高质量产品摄影的在线商店。",
+        "content": "AVIF 允许电子商务网站以快速加载时间显示详细的产品图像，在改善转化率和用户体验的同时，与 JPEG 相比将 CDN 成本降低 40-60%。",
+        "icon": "🛒"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "AVIF 压缩最佳实践",
+    "description": "遵循这些专家提示，从 AVIF 压缩中获得最佳结果。",
+    "tips": [
+      {
+        "icon": "🚀",
+        "title": "利用下一代压缩",
+        "content": "AVIF 提供比 WebP 高 30-50%、比 JPEG 高 50-70% 的压缩。对 Web 图像使用质量 75-85 - AVIF 由于高级感知优化，在较低设置下保持出色的质量。对于高端摄影或 HDR 内容，使用质量 85-95 以充分利用 AVIF 的 10 位和 12 位色深功能。"
+      },
+      {
+        "icon": "🎨",
+        "title": "为现代浏览器优化",
+        "content": "AVIF 受到 90% 以上用户（Chrome、Edge、Firefox、Safari 16+）的支持。使用 <picture> 元素，AVIF 优先、WebP 后备和 JPEG/PNG 以实现最大兼容性。AVIF 编码比 JPEG/WebP 慢，因此在构建时预先生成图像，而不是为生产网站即时生成。"
+      },
+      {
+        "icon": "⚡",
+        "title": "最大化质量与大小比率",
+        "content": "AVIF 在小文件大小下的高质量图像方面表现出色。将其用于质量很重要的英雄图像、产品摄影和高分辨率显示器。为摄影内容启用自适应量化和胶片颗粒合成。对于简单的图形或动画，尽管文件大小较大，WebP 或 PNG 可能更高效。"
+      },
+      {
+        "icon": "📦",
+        "title": "战略性实施",
+        "content": "从高影响力图像（英雄部分、产品照片、特色内容）开始。监控编码时间和服务器负载 - AVIF 编码可能比 JPEG 慢 5-10 倍。对开发使用更快的编码速度（6-8），对生产使用更慢的速度（2-4）以平衡质量和处理时间。考虑 CDN 对 AVIF 传输的支持。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 AVIF 压缩和我们的 AVIF 压缩器工具的常见问题。",
+    "items": [
+      {
+        "question": "什么是 AVIF 格式？",
+        "answer": "AVIF 是基于 AV1 视频编解码器的下一代图像格式，提供卓越的压缩效率和高级功能，如 HDR 支持和广色域。"
+      },
+      {
+        "question": "AVIF 与 JPEG 和 WebP 相比如何？",
+        "answer": "AVIF 通常在保持卓越图像质量的同时提供比 JPEG 高 50% 和比 WebP 高 20-30% 的压缩。"
+      },
+      {
+        "question": "所有浏览器都支持 AVIF 吗？",
+        "answer": "Chrome、Firefox 和 Safari 等现代浏览器都支持 AVIF，但旧浏览器可能不支持。建议提供后备格式。"
+      },
+      {
+        "question": "AVIF 支持透明度吗？",
+        "answer": "是的，AVIF 完全支持具有 Alpha 通道的透明度，类似于 PNG 和 WebP。"
+      },
+      {
+        "question": "AVIF 中的 HDR 支持是什么？",
+        "answer": "AVIF 支持高动态范围（HDR）成像，具有 10 位和 12 位色深，可在兼容显示器上实现令人惊叹的图像质量。"
+      },
+      {
+        "question": "我应该何时使用 AVIF？",
+        "answer": "AVIF 最适合现代 Web 应用、移动应用以及最大压缩效率和质量是优先事项的场景。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "探索更多工具",
+    "items": [
+      {
+        "title": "WebP 压缩器",
+        "description": "压缩 WebP 图片",
+        "path": "/compressor/compress-webp"
+      },
+      {
+        "title": "JPEG 转换器",
+        "description": "转换为 JPEG 格式",
+        "path": "/converter/convert-avif-to-jpeg"
+      },
+      {
+        "title": "图片转换器",
+        "description": "在不同图像格式之间转换",
+        "path": "/converter"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将文件拖放到此处或点击选择",
+      "subtitle": "支持 {format} 格式，最大 50MB",
+      "selectFiles": "选择文件"
+    },
+    "files": {
+      "title": "已选择的文件",
+      "count": "{count} 个文件",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "压缩 {format}",
+      "processing": "正在压缩... {progress}%"
+    },
+    "progress": {
+      "label": "处理中...",
+      "compressing": "正在压缩您的 {format} 图像..."
+    },
+    "results": {
+      "title": "压缩完成！🎉",
+      "subtitle": "您的图像已成功优化",
+      "original": "原始",
+      "compressed": "已压缩",
+      "saved": "已节省",
+      "time": "时间",
+      "format": "格式",
+      "compressionRatio": "压缩比",
+      "sizeReduction": "大小减少",
+      "sizeIncrease": "大小增加",
+      "greatJob": "做得好！",
+      "considerAdjusting": "考虑调整设置",
+      "savedSpace": "已节省 {amount} MB",
+      "successMessage": "压缩效果很好！",
+      "successDescription": "您的图像现在小了 {ratio}%，同时保持出色的质量。已为 Web 使用优化！",
+      "download": "下载",
+      "compressMore": "压缩更多",
+      "reset": "重置",
+      "sizeInfo": "原始：{original} MB → 已压缩：{compressed} MB（{ratio}% 减少）"
+    },
+    "settings": {
+      "simple": "简单",
+      "advanced": "高级",
+      "advancedTitle": "高级设置",
+      "quality": "质量",
+      "qualityLow": "低",
+      "qualityMedium": "中",
+      "qualityHigh": "高",
+      "metadata": "保留元数据",
+      "metadataDesc": "EXIF、GPS、相机信息"
+    },
+    "actions": {
+      "downloadAll": "全部下载",
+      "reset": "重置"
+    },
+    "error": {
+      "title": "错误",
+      "tip": "💡 提示：确保您的文件是有效的图像（PNG、JPEG、WebP、AVIF、GIF）且小于 50MB",
+      "unknownError": "未知错误",
+      "processingFailed": "处理 {fileName} 失败",
+      "compressionFailed": "压缩失败"
+    },
+    "status": {
+      "starting": "开始压缩...",
+      "processing": "压缩中... {progress}%",
+      "completed": "压缩完成！"
+    }
+  }
+}

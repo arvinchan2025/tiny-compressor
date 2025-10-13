@@ -1,0 +1,24 @@
+{
+  "title": "服务条款",
+  "lastUpdated": "最后更新：2025年1月1日",
+  "acceptance": {
+    "title": "条款接受",
+    "content": "使用 TinyCompressor 即表示您同意受这些服务条款的约束。"
+  },
+  "serviceDescription": {
+    "title": "服务描述",
+    "content": "TinyCompressor 提供免费的图片压缩和转换工具。所有处理都在您本地的浏览器中进行。"
+  },
+  "userResponsibilities": {
+    "title": "用户责任",
+    "content": "您有责任确保您有权处理您上传的任何图片。"
+  },
+  "limitation": {
+    "title": "责任限制",
+    "content": "TinyCompressor 按现状提供，不提供任何保证。我们不对因使用我们的服务而产生的任何损害承担责任。"
+  },
+  "modifications": {
+    "title": "修改",
+    "content": "我们保留随时修改这些条款的权利。继续使用服务即表示接受修改后的条款。"
+  }
+}

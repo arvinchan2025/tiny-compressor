@@ -1,0 +1,279 @@
+{
+  "seo": {
+    "title": "PNG Kompressor - PNG Bilder Online Kostenlos Komprimieren",
+    "description": "Komprimieren Sie PNG-Bilder online mit unserem kostenlosen PNG Kompressor. Reduzieren Sie PNG-Dateigröße bei Beibehaltung der Qualität. Schnell, sicher und einfach zu bedienen.",
+    "keywords": "PNG Kompressor, PNG komprimieren, PNG Optimierung, PNG Größe reduzieren, PNG Kompressor online, kostenloser PNG Kompressor"
+  },
+  "hero": {
+    "title": "PNG Bild Kompressor",
+    "description": "Komprimieren Sie PNG-Bilder online mit unserer fortschrittlichen Kompressionstechnologie. Reduzieren Sie Dateigröße bei Beibehaltung von Qualität und Transparenz.",
+    "subtitle": "Komprimieren Sie PNG-Bilder online mit unserer fortschrittlichen Kompressionstechnologie. Reduzieren Sie Dateigröße bei Beibehaltung von Qualität und Transparenz.",
+    "badge": "Kompressor"
+  },
+  "formatInfo": {
+    "description": "PNG (Portable Network Graphics) ist ein Raster-Grafikdateiformat, das verlustfreie Datenkompression und Transparenz unterstützt."
+  },
+  "features": {
+    "title": "PNG Format-Funktionen",
+    "description": "Warum PNG der Gold-Standard für Grafiken und Web-Bilder ist",
+    "items": [
+      {
+        "icon": "🔒",
+        "title": "Verlustfreie Qualität",
+        "description": "Null Qualitätsverlust - jedes Pixel perfekt erhalten mit DEFLATE-Kompression"
+      },
+      {
+        "icon": "✨",
+        "title": "Alpha-Transparenz",
+        "description": "Vollständige Alphakanal-Unterstützung mit 256 Stufen Transparenz für glatte Kanten"
+      },
+      {
+        "icon": "📐",
+        "title": "Scharfe Kanten",
+        "description": "Perfekt für Text, Logos und Grafiken - keine Kompressionsartefakte oder Unschärfe"
+      },
+      {
+        "icon": "🎨",
+        "title": "True-Color-Unterstützung",
+        "description": "24-Bit RGB (16.7M Farben) oder indizierte Palette (2-256 Farben) mit Optimierung"
+      },
+      {
+        "icon": "🎯",
+        "title": "Paletten-Optimierung",
+        "description": "Intelligente Farbreduktion zu 8-Bit indiziertem Modus für 50-70% kleinere Dateien"
+      },
+      {
+        "icon": "📦",
+        "title": "Umfangreiche Metadaten",
+        "description": "Chunk-basierte Struktur unterstützt Farbprofile, Gamma, Text-Annotationen"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Wie PNG-Kompression Funktioniert",
+    "description": "Die technischen Prinzipien hinter PNG-Kompression zu verstehen hilft Ihnen, fundierte Entscheidungen über Ihre Bilder zu treffen.",
+    "items": [
+      {
+        "title": "Verlustfreier Kompressionsalgorithmus",
+        "description": "PNG verwendet den DEFLATE-Kompressionsalgorithmus, eine verlustfreie Datenkompression-Methode, die jedes Pixel Ihres Bildes ohne Qualitätsdegradation erhält. Dieser Algorithmus funktioniert durch Finden wiederholter Muster in Bilddaten und deren Ersetzung durch kürzere Codes.",
+        "icon": "🔒",
+        "benefits": [
+          "Null Qualitätsverlust - perfekte Rekonstruktion",
+          "Ideal für Grafiken und Logos",
+          "Erhält Alphakanal-Transparenz",
+          "Geeignet für Bilder, die exakte Reproduktion benötigen"
+        ]
+      },
+      {
+        "title": "Fortschrittliches Filtersystem",
+        "description": "PNG verwendet ein sophistiziertes Filtersystem, das Bilddaten vor Kompression vorverarbeitet. Der Filter sagt Pixelwerte basierend auf benachbarten Pixeln voraus, was Kompressionseffizienz signifikant verbessert durch Reduzierung von Redundanz im Datenstrom.",
+        "icon": "⚡",
+        "benefits": [
+          "Bis zu 30% bessere Kompressionsverhältnisse",
+          "Adaptives Filtern für verschiedene Bildtypen",
+          "Für fotografischen und grafischen Inhalt optimiert",
+          "Industrie-Standard-Implementierung"
+        ]
+      },
+      {
+        "title": "Farbpaletten-Optimierung",
+        "description": "PNG unterstützt mehrere Farbmodi einschließlich indizierter Farbe (Palette), Graustufen und Truecolor. Fortschrittliche Paletten-Optimierungstechniken reduzieren Farbanzahl bei Beibehaltung visueller Treue, resultierend in kleineren Dateigrößen.",
+        "icon": "🎨",
+        "benefits": [
+          "Automatische Farbreduktion für einfache Bilder",
+          "Erhält visuelle Qualität mit weniger Farben",
+          "Unterstützt 8-Bit, 24-Bit und 32-Bit Farbtiefen",
+          "Für einfache und komplexe Bilder optimiert"
+        ]
+      },
+      {
+        "title": "Chunk-Basierte Struktur",
+        "description": "PNG-Dateien verwenden eine modulare chunk-basierte Struktur, die Metadaten-Speicherung, Farbmanagement und progressives Laden ermöglicht. Dieses Design aktiviert fortschrittliche Funktionen wie Gamma-Korrektur, Farbprofile und Text-Annotationen.",
+        "icon": "📦",
+        "benefits": [
+          "Flexible Metadaten-Behandlung",
+          "Farbmanagement-Unterstützung",
+          "Progressive Ladefähigkeit",
+          "Erweiterbares Format-Design"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Wann & Wie PNG-Kompression Verwenden",
+    "description": "Häufige Szenarien und Best Practices für PNG-Kompression",
+    "items": [
+      {
+        "title": "Web-Grafiken & UI-Design",
+        "description": "Logos, Icons und Interface-Elemente mit Transparenz.",
+        "content": "PNG ist der Gold-Standard für Web-Grafiken. Verwenden Sie PNG-32 für Logos und UI-Elemente mit Alpha-Transparenz (zielen Sie auf <200KB). Verwenden Sie PNG-8 für einfache Icons mit begrenzten Farben (2-256 Farben) - kann 50-70% kleinere Dateien erreichen. Vermeiden Sie PNG für Fotos ohne Transparenz - verwenden Sie stattdessen JPEG oder WebP für 50-80% kleinere Dateien.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Screenshots & Dokumentation",
+        "description": "Software-Interfaces, Tutorials und technischer Inhalt.",
+        "content": "PNG erhält Textklarheit und scharfe Kanten perfekt - unverzichtbar für Screenshots. Verwenden Sie verlustfreie Kompression für Dokumentationsbilder. Für Web-Publishing zielen Sie auf unter 200KB pro Screenshot. Falls größer, erwägen Sie Aufteilung in mehrere Bilder oder Verwendung verlustbehafteter Kompression (Qualität 85-90) für Fotos innerhalb Screenshots."
+      },
+      {
+        "title": "Digitale Kunst & Illustration",
+        "description": "Kunstwerke, Vektor-Stil-Illustrationen und Flat-Design.",
+        "content": "PNG erhält Kunstwerk-Integrität bei Reduzierung der Dateigröße. Verwenden Sie PNG-8 für Illustrationen mit begrenzten Farben (bis zu 256) - erreicht 60-80% Reduktion. Verwenden Sie PNG-24 für komplexe Kunstwerke mit Verläufen. Für Kunstwerke ohne Transparenz erwägen Sie WebP für 25-35% bessere Kompression mit verlustfreier Qualität.",
+        "icon": "🎨"
+      },
+      {
+        "title": "Mobile App-Entwicklung",
+        "description": "App-Icons, Splash-Screens und UI-Elemente.",
+        "content": "PNG wird universell auf iOS und Android unterstützt. Verwenden Sie PNG-32 für App-Icons mit Transparenz und Splash-Screens. Optimieren Sie auf exakt benötigte Dimensionen (z.B. 1024×1024 für iOS-Icons) vor Komprimierung. Gruppieren Sie ähnliche Assets und wenden Sie konsistente Kompressionseinstellungen für uniforme Qualität über Ihre App an.",
+        "icon": "📱"
+      },
+      {
+        "title": "Spiele-Entwicklung & Assets",
+        "description": "Sprites, Texturen und 2D-Spiele-Assets mit Transparenz.",
+        "content": "PNG ist unverzichtbar für Spiele-Sprites und UI-Elemente, die Transparenz benötigen. Verwenden Sie PNG-8 für Pixel-Art und einfache Sprites (2-256 Farben). Verwenden Sie PNG-32 für komplexe Sprites mit Alpha-Transparenz. Batch-verarbeiten Sie ähnliche Assets mit konsistenten Einstellungen. Erwägen Sie Textur-Atlanten, um Dateianzahl zu reduzieren und Lade-Performance zu verbessern.",
+        "icon": "🎮"
+      },
+      {
+        "title": "E-Commerce Produktbilder",
+        "description": "Produktfotos mit transparenten Hintergründen.",
+        "content": "PNG ermöglicht Produktbildern, auf jeder Hintergrundfarbe zu funktionieren. Verwenden Sie PNG-32 für Produkte mit weichen Schatten oder gradueller Transparenz. Zielen Sie auf unter 200KB pro Produktbild für schnelle Seitenladungen. Für Fotos ohne Transparenz verwenden Sie JPEG (50-80% kleiner) oder WebP (25-35% kleiner) für bessere Performance und Konversionsraten.",
+        "icon": "🛒"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "description": "Häufige Fragen zu PNG-Kompression und unserem PNG-Kompressor-Tool.",
+    "items": [
+      {
+        "question": "Was ist PNG-Kompression und wie funktioniert sie?",
+        "answer": "PNG-Kompression ist eine verlustfreie Datenkompression-Methode, die Dateigröße reduziert ohne Verlust von Bildqualität oder Transparenz-Information. Sie verwendet den DEFLATE-Algorithmus kombiniert mit fortschrittlichem Filtern, um redundante Datenmuster zu identifizieren und zu eliminieren, resultierend in kleineren Dateigrößen bei Beibehaltung perfekter Bildtreue."
+      },
+      {
+        "question": "Wie stark kann ich eine PNG-Datei komprimieren?",
+        "answer": "Kompressionsverhältnisse variieren signifikant abhängig von Bildinhalt und Komplexität. Einfache Grafiken mit begrenzten Farben können 70-90% Größenreduktion erreichen, während komplexe Fotografien 10-30% Reduktion sehen können. Bilder mit Transparenz komprimieren typischerweise weniger als Vollton-Hintergründe aufgrund zusätzlicher Alphakanal-Daten."
+      },
+      {
+        "question": "Beeinflusst PNG-Kompression Bildqualität oder Transparenz?",
+        "answer": "Nein, PNG verwendet verlustfreie Kompression, was bedeutet, dass Bildqualität, Farben und Transparenz-Information nach Kompression und Dekompression exakt gleich bleiben. Jedes Pixel wird perfekt erhalten, macht PNG ideal für Grafiken, Logos und Bilder, die exakte Reproduktion benötigen."
+      },
+      {
+        "question": "Wann sollte ich PNG statt JPEG oder andere Formate verwenden?",
+        "answer": "Verwenden Sie PNG für Grafiken mit Transparenz, Logos, Icons, Screenshots mit Text, digitale Kunst mit Volltonfarben und jedes Bild, das verlustfreie Qualität benötigt. JPEG ist besser für Fotografien aufgrund höherer Kompressionsverhältnisse, während WebP bessere Kompression für Web-Nutzung bietet aber mit weniger universeller Unterstützung."
+      },
+      {
+        "question": "Kann ich PNG-Dateien mit Transparenz und Alphakanälen komprimieren?",
+        "answer": "Ja, PNG-Kompression erhält Transparenz- und Alphakanal-Information perfekt. Dies macht PNG zum bevorzugten Format für Web-Grafiken, UI-Elemente, Logos und jedes Bild, das auf verschiedenen Hintergrundfarben funktionieren oder Transparenz-Effekte benötigen muss."
+      },
+      {
+        "question": "Wie lange dauert PNG-Kompression mit Ihrem Tool?",
+        "answer": "Unser PNG-Kompressor verarbeitet Bilder typischerweise in unter 3 Sekunden, sogar für große Dateien bis zu 10MB. Verarbeitungszeit hängt von Dateigröße, Komplexität und Verarbeitungsleistung Ihres Geräts ab. Alle Kompression erfolgt lokal in Ihrem Browser für maximale Privatsphäre und Geschwindigkeit."
+      },
+      {
+        "question": "Was sind die Best Practices für PNG-Kompression?",
+        "answer": "Best Practices umfassen: Verwendung geeigneter Farbtiefe (8-Bit für einfache Grafiken, 24-Bit für Fotos, 32-Bit für Transparenz), Optimierung von Farbpaletten, Entfernung unnötiger Metadaten, Größenanpassung auf exakt benötigte Dimensionen und Testen verschiedener Kompressionseinstellungen, um optimale Balance zwischen Dateigröße und Qualität zu finden."
+      },
+      {
+        "question": "Gibt es ein Limit für die Anzahl PNG-Dateien, die ich komprimieren kann?",
+        "answer": "Unser Tool unterstützt Batch-Verarbeitung mehrerer PNG-Dateien gleichzeitig. Während es kein striktes Limit gibt, empfehlen wir Verarbeitung von Dateien in Batches von 20-50 für optimale Performance. Jede Datei kann bis zu 10MB groß sein, und alle Verarbeitung erfolgt lokal in Ihrem Browser."
+      },
+      {
+        "question": "Wie vergleicht sich PNG-Kompression mit anderen Bildformaten?",
+        "answer": "PNG bietet verlustfreie Kompression mit Transparenz-Unterstützung und ist ideal für Grafiken und Web-Nutzung. Im Vergleich zu JPEG hat PNG größere Dateigrößen für Fotos aber erhält perfekte Qualität. WebP bietet bessere Kompression aber weniger Browser-Unterstützung. PNG bleibt der Gold-Standard für Grafiken, die Transparenz und verlustfreie Qualität benötigen."
+      },
+      {
+        "question": "Kann ich die komprimierten PNG-Dateien kommerziell verwenden?",
+        "answer": "Ja, alle komprimierten PNG-Dateien behalten ihre ursprüngliche Lizenzierung und können für jeden Zweck verwendet werden, einschließlich kommerzielle Nutzung. Unser Kompressionsprozess fügt keine Wasserzeichen oder Einschränkungen zu Ihren Bildern hinzu. Die komprimierten Dateien sind identisch in Qualität zu den Originalen, nur mit kleineren Dateigrößen."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Verwandte Tools",
+    "description": "Entdecken Sie mehr Bildkompressions- und Konvertierungswerkzeuge",
+    "items": [
+      {
+        "title": "JPEG Kompressor",
+        "description": "JPEG-Bilder für Web und Mobile komprimieren",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP Kompressor",
+        "description": "WebP-Bilder komprimieren",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "AVIF Kompressor",
+        "description": "AVIF-Bilder komprimieren",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+      "subtitle": "Unterstützt {format} Format, max 50MB",
+      "selectFiles": "Datei Auswählen"
+    },
+    "files": {
+      "title": "Ausgewählte Dateien",
+      "count": "{count} Dateien",
+      "remove": "Entfernen",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "{format} Komprimieren",
+      "processing": "Komprimierung... {progress}%"
+    },
+    "progress": {
+      "label": "Verarbeitung...",
+      "compressing": "Ihr {format} Bild wird komprimiert..."
+    },
+    "results": {
+      "title": "Kompression Abgeschlossen! 🎉",
+      "subtitle": "Ihr Bild wurde erfolgreich optimiert",
+      "original": "Original",
+      "compressed": "Komprimiert",
+      "saved": "Gespart",
+      "time": "Zeit",
+      "format": "Format",
+      "compressionRatio": "Kompressionsverhältnis",
+      "sizeReduction": "Größenreduktion",
+      "sizeIncrease": "Größenzunahme",
+      "greatJob": "Großartige Arbeit!",
+      "considerAdjusting": "Erwägen Sie Anpassung der Einstellungen",
+      "savedSpace": "{amount} MB gespart",
+      "successMessage": "Großartige Kompression!",
+      "successDescription": "Ihr Bild ist jetzt {ratio}% kleiner bei Beibehaltung ausgezeichneter Qualität. Für Web-Nutzung optimiert!",
+      "download": "Herunterladen",
+      "compressMore": "Mehr Komprimieren",
+      "reset": "Zurücksetzen",
+      "sizeInfo": "Original: {original} MB → Komprimiert: {compressed} MB ({ratio}% Reduktion)"
+    },
+    "settings": {
+      "simple": "Einfach",
+      "advanced": "Erweitert",
+      "advancedTitle": "Erweiterte Einstellungen",
+      "quality": "Qualität",
+      "qualityLow": "Niedrig",
+      "qualityMedium": "Mittel",
+      "qualityHigh": "Hoch",
+      "metadata": "Metadaten Beibehalten",
+      "metadataDesc": "EXIF, GPS, Kamera-Info"
+    },
+    "actions": {
+      "downloadAll": "Alle Herunterladen",
+      "reset": "Zurücksetzen"
+    },
+    "error": {
+      "title": "Fehler",
+      "tip": "💡 Tipp: Stellen Sie sicher, dass Ihre Datei ein gültiges Bild (PNG, JPEG, WebP, AVIF, GIF) und unter 50MB ist",
+      "unknownError": "Unbekannter Fehler",
+      "processingFailed": "Verarbeitung von {fileName} fehlgeschlagen",
+      "compressionFailed": "Kompression fehlgeschlagen"
+    },
+    "status": {
+      "starting": "Kompression wird gestartet...",
+      "processing": "Komprimierung... {progress}%",
+      "completed": "Kompression abgeschlossen!"
+    }
+  }
+}

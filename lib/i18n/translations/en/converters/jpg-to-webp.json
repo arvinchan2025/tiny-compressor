@@ -1,0 +1,281 @@
+{
+  "seo": {
+    "title": "JPG to WebP Converter - Convert JPG Images Online",
+    "description": "Convert JPG images to WebP format online. Free, fast, and easy to use JPG to WebP converter.",
+    "keywords": "JPG to WebP, convert JPG, image converter, online tool"
+  },
+  "hero": {
+    "title": "JPG to WebP Converter",
+    "subtitle": "Convert JPG images to WebP format online",
+    "description": "Convert JPG images to WebP format for better compression and modern web performance while maintaining excellent quality."
+  },
+  "features": {
+    "title": "JPG to WebP Conversion Features",
+    "description": "Why convert JPG to WebP for better web performance",
+    "items": [
+      {
+        "icon": "📉",
+        "title": "25-35% Smaller Files",
+        "description": "WebP provides better compression than JPG with same quality"
+      },
+      {
+        "icon": "✨",
+        "title": "Better Quality",
+        "description": "Superior image quality at equivalent file sizes"
+      },
+      {
+        "icon": "🎨",
+        "title": "Transparency Support",
+        "description": "WebP supports alpha channel, JPG doesn't"
+      },
+      {
+        "icon": "🌐",
+        "title": "95%+ Browser Support",
+        "description": "Supported by all modern browsers since 2020"
+      },
+      {
+        "icon": "⚡",
+        "title": "Batch Conversion",
+        "description": "Convert multiple JPG files to WebP simultaneously"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Secure",
+        "description": "All conversion happens locally in your browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "JPG vs WebP Format Comparison",
+    "subtitle": "Understanding the differences between JPG and WebP formats",
+    "jpg": {
+      "description": "JPG (JPEG) is a widely used lossy compression format for digital photographs.",
+      "features": [
+        "Lossy compression",
+        "Universal compatibility",
+        "Great for photos",
+        "No transparency support"
+      ]
+    },
+    "webp": {
+      "description": "WebP is a modern image format that provides superior compression compared to JPG.",
+      "features": [
+        "Better compression",
+        "Transparency support",
+        "Both lossy and lossless modes",
+        "Modern browser support"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "How JPG to WebP Conversion Works",
+    "description": "Understanding the technical advantages of WebP over JPG",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "Advanced Compression Technology",
+        "description": "WebP uses VP8/VP9 predictive coding instead of JPG's DCT, achieving 25-35% better compression at same quality through advanced block prediction and entropy coding.",
+        "benefits": [
+          "VP8/VP9 vs DCT compression",
+          "25-35% smaller at same quality",
+          "Better block prediction",
+          "Efficient entropy coding"
+        ]
+      },
+      {
+        "icon": "🎯",
+        "title": "Quality Preservation",
+        "description": "Converting JPG to WebP can maintain or improve perceived quality. WebP's advanced algorithms handle compression artifacts better, especially in gradients and textures.",
+        "benefits": [
+          "Quality maintained or improved",
+          "Better gradient handling",
+          "Reduced blocking artifacts",
+          "Smoother textures"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "Transparency Addition",
+        "description": "Unlike JPG, WebP supports alpha channel transparency. While conversion doesn't add transparency automatically, the format enables future editing with transparency support.",
+        "benefits": [
+          "Alpha channel support",
+          "8-bit transparency (256 levels)",
+          "Ready for transparency editing",
+          "Smaller than PNG with alpha"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Flexible Quality Control",
+        "description": "WebP offers fine-grained quality control (0-100) with better quality-to-size ratio than JPG. Same quality as JPG at 25-35% smaller size, or better quality at same size.",
+        "benefits": [
+          "Quality range 0-100",
+          "Better quality/size ratio",
+          "Lossless mode available",
+          "Optimized for web delivery"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "When & How to Convert JPG to WebP",
+    "description": "Common scenarios and best practices for JPG to WebP conversion",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Website Performance Optimization",
+        "description": "Modernize your website with better image compression.",
+        "content": "Convert JPG photos to WebP for 25-35% smaller files with same quality. Essential for image-heavy websites, blogs, and portfolios. Use quality 80-85 for photos (matches JPG quality 85-90). Implement <picture> element with WebP primary, JPG fallback for 95%+ browser support. Prioritize hero images, product photos, and above-the-fold content for maximum impact."
+      },
+      {
+        "icon": "📱",
+        "title": "Mobile & E-commerce",
+        "description": "Improve mobile experience and conversion rates.",
+        "content": "WebP's 25-35% size reduction dramatically improves mobile load times. Critical for e-commerce where 1-second delay = 7% conversion loss. Convert product photos to WebP (quality 80-85). Use lossy WebP for catalog images, lossless for hero products. Test on actual mobile devices - WebP decoding is hardware-accelerated on modern phones."
+      },
+      {
+        "icon": "📸",
+        "title": "Photography & Portfolio Sites",
+        "description": "Showcase photos with better quality and smaller sizes.",
+        "content": "WebP maintains photo quality while reducing bandwidth. Use quality 85-90 for portfolio photos (better than JPG 90-95 at smaller size). Convert gallery images to WebP for faster browsing. Provide JPG downloads for clients needing universal compatibility. WebP's better gradient handling reduces banding in skies and smooth surfaces."
+      },
+      {
+        "icon": "💾",
+        "title": "Cloud Storage & CDN",
+        "description": "Reduce storage and bandwidth costs.",
+        "content": "Converting JPG to WebP reduces cloud storage and CDN costs by 25-35%. Batch convert entire photo libraries for immediate savings. Use quality 80-85 for general content, 85-90 for premium content. Monitor browser support (95%+) and serve WebP to supported browsers, JPG to legacy. ROI is significant for high-traffic sites."
+      },
+      {
+        "icon": "📰",
+        "title": "News & Content Sites",
+        "description": "Improve page load speed and user engagement.",
+        "content": "WebP reduces article image sizes by 25-35%, improving page load speed and SEO rankings. Convert featured images and inline photos to WebP (quality 80-85). Use lazy loading with WebP for below-the-fold images. Faster load times = better engagement and lower bounce rates. Essential for ad-supported sites where speed affects revenue."
+      },
+      {
+        "icon": "⚠️",
+        "title": "When to Keep JPG",
+        "description": "Scenarios where JPG is still the better choice.",
+        "content": "Keep JPG if: 1) Need universal compatibility (emails, older systems), 2) Targeting Safari <14 or Chrome <85 users (check analytics), 3) Working with print workflows, 4) Client deliverables requiring JPG format. WebP excels for modern web apps with 95%+ browser support. Use progressive enhancement: WebP → JPG fallback."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about JPG to WebP conversion",
+    "items": [
+      {
+        "question": "Will converting JPG to WebP improve image quality?",
+        "answer": "Converting JPG to WebP won't restore quality lost in original JPG compression, but WebP's advanced algorithms can maintain or improve perceived quality. At the same file size, WebP often looks better than JPG due to superior compression technology. For best results, convert from highest quality JPG available. WebP's better gradient handling reduces banding and blocking artifacts."
+      },
+      {
+        "question": "How much smaller are WebP files compared to JPG?",
+        "answer": "WebP provides 25-35% better compression than JPG at equivalent quality. For example, a 1MB JPG photo might become 650-750KB as WebP with same visual quality. Actual savings depend on image content - photos with gradients and textures see better compression. You can also choose better quality at same size, or same quality at smaller size."
+      },
+      {
+        "question": "Which browsers support WebP format?",
+        "answer": "WebP has 95%+ browser support as of 2024. Supported by Chrome 23+ (2012), Firefox 65+ (2019), Edge 18+ (2018), Safari 14+ (2020), and Opera 12.1+ (2012). Mobile support includes Chrome Android, Safari iOS 14+, and Samsung Internet 4+. For older browsers, implement <picture> element with WebP primary and JPG fallback."
+      },
+      {
+        "question": "Can I convert JPG to WebP without quality loss?",
+        "answer": "Since JPG is already lossy, converting to WebP preserves current quality but cannot restore data lost in original JPG compression. For best results: 1) Convert from highest quality JPG, 2) Use WebP quality 80-90 to match or exceed JPG quality, 3) Compare visually before deploying. WebP's lossless mode is available but results in larger files than lossy WebP."
+      },
+      {
+        "question": "Should I convert all JPG images to WebP?",
+        "answer": "For modern websites, yes - WebP provides significant performance benefits with 95%+ browser support. However: 1) Implement progressive enhancement (WebP → JPG fallback), 2) Keep JPG for emails and universal compatibility, 3) Monitor your audience's browser support, 4) Use quality 80-85 for general content. WebP is ideal for sites prioritizing performance and modern browser support."
+      },
+      {
+        "question": "Is JPG to WebP conversion free and secure?",
+        "answer": "Yes, our JPG to WebP converter is completely free with no registration, watermarks, or payment required. All conversion happens locally in your browser using WebAssembly - your images never leave your device. This ensures 100% privacy and security, with no server uploads, data collection, or third-party access. WebP encoding is performed entirely client-side."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Related Tools",
+    "description": "Explore more image conversion and compression tools",
+    "items": [
+      {
+        "title": "WebP to JPG Converter",
+        "description": "Convert WebP images back to JPG format",
+        "url": "/converter/convert-webp-to-jpg"
+      },
+      {
+        "title": "Compress JPG",
+        "description": "Further optimize JPG files",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Compress WebP",
+        "description": "Optimize WebP files for even smaller sizes",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Drag and drop JPG files here or click to select",
+      "subtitle": "Support JPG/JPEG format, up to {maxFiles} files, max 10MB each",
+      "selectFiles": "Select JPG Files"
+    },
+    "errors": {
+      "maxFiles": "Maximum {maxFiles} files allowed",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "unsupportedFormat": "Unsupported file format: {fileName}. Only JPG/JPEG files are supported.",
+      "uploadFailed": "File upload failed",
+      "conversionFailed": "Conversion failed. Please try again."
+    },
+    "files": {
+      "title": "Selected JPG Files",
+      "count": "{count} files selected",
+      "reset": "Reset All",
+      "remove": "Remove",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Convert to WebP",
+      "simpleStart": "Quick Convert JPG to WebP",
+      "advancedStart": "Convert JPG to WebP (Advanced)",
+      "processing": "Converting to WebP... {progress}%"
+    },
+    "progress": {
+      "label": "Conversion Progress",
+      "status": "Converting JPG to WebP... {progress}% complete"
+    },
+    "settings": {
+      "title": "WebP Conversion Settings",
+      "simple": "Simple",
+      "advanced": "Advanced",
+      "simpleTitle": "Quick Settings",
+      "advancedTitle": "Advanced WebP Settings",
+      "quality": "Quality",
+      "qualityHighest": "Highest (95)",
+      "qualityHigh": "High (90)",
+      "qualityMedium": "Balanced (85)",
+      "qualityLow": "Small Size (80)",
+      "qualityLowest": "Smallest (75)",
+      "compressionMode": "Compression Mode",
+      "compressionLossy": "Lossy (Recommended)",
+      "compressionLossless": "Lossless (Larger files)",
+      "sharpness": "Sharpness",
+      "sharpnessAuto": "Auto",
+      "sharpnessSharp": "Sharp (7)",
+      "sharpnessMedium": "Medium (4)",
+      "sharpnessSoft": "Soft (0)",
+      "metadata": "Preserve Metadata",
+      "optimize": "Optimize for Web",
+      "presetBalanced": "Balanced",
+      "presetBalancedDesc": "Quality 85, good compression",
+      "presetQuality": "High Quality",
+      "presetQualityDesc": "Quality 90, larger files",
+      "presetSmall": "Maximum Compression",
+      "presetSmallDesc": "Quality 80, smallest files"
+    },
+    "downloadAll": "Download All WebP Files",
+    "results": {
+      "title": "WebP Conversion Results",
+      "count": "{count} JPG files converted to WebP",
+      "sizeInfo": "Original JPG: {original} MB → WebP: {converted} MB ({change}% reduction)",
+      "download": "Download WebP"
+    }
+  }
+}
+

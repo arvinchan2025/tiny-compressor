@@ -1,0 +1,387 @@
+{
+  "brand": {
+    "name": "TinyCompressor"
+  },
+  "nav": {
+    "home": "ホーム",
+    "compressor": "圧縮器",
+    "converter": "変換器",
+    "language": "言語",
+    "menu": "メニュー",
+    "close": "閉じる"
+  },
+  "breadcrumbs": {
+    "home": "ホーム",
+    "compressor": "圧縮器",
+    "converter": "変換器"
+  },
+  "compressor": {
+    "title": "画像圧縮器",
+    "subtitle": "品質を維持しながら画像ファイルサイズを最大90%削減。高速、セキュア、完全無料。",
+    "description": "画像をWeb、メール、ストレージ用に最適化するプロフェッショナルな画像圧縮ツール。すべての主要な画像形式をサポートし、高度な圧縮アルゴリズムを使用。",
+    "badge": "画像圧縮",
+    "statsLabels": {
+      "compression": "圧縮率",
+      "speed": "速度"
+    },
+    "tools": {
+      "png": {
+        "name": "PNG圧縮器",
+        "description": "可逆最適化でPNG画像を圧縮",
+        "features": [
+          "可逆圧縮",
+          "透明度サポート",
+          "ウェブ最適化"
+        ],
+        "compression": "最大80%"
+      },
+      "jpeg": {
+        "name": "JPEG圧縮器",
+        "description": "スマート圧縮でJPEGファイルサイズを削減",
+        "features": [
+          "スマート圧縮",
+          "品質制御",
+          "メタデータ削除"
+        ],
+        "compression": "最大90%"
+      },
+      "webp": {
+        "name": "WebP圧縮器",
+        "description": "Web配信用にWebP画像を最適化",
+        "features": [
+          "現代的なフォーマット",
+          "優れた圧縮",
+          "ウェブ最適化"
+        ],
+        "compression": "最大85%"
+      },
+      "avif": {
+        "name": "AVIF圧縮器",
+        "description": "次世代圧縮でAVIF画像を圧縮",
+        "features": [
+          "次世代フォーマット",
+          "最大圧縮",
+          "未来志向"
+        ],
+        "compression": "最大95%"
+      },
+      "gif": {
+        "name": "GIF圧縮器",
+        "description": "品質を維持しながらGIFファイルサイズを削減",
+        "features": [
+          "アニメーションサポート",
+          "色最適化",
+          "フレーム削減"
+        ],
+        "compression": "最大70%"
+      },
+      "bmp": {
+        "name": "BMP圧縮器",
+        "description": "高度な最適化でBMPビットマップ画像を圧縮",
+        "features": [
+          "ビットマップ最適化",
+          "レガシーサポート",
+          "可逆変換"
+        ],
+        "compression": "最大90%"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "超高速",
+        "description": "最適化されたアルゴリズムで数秒で複数の画像を処理",
+        "details": "最大100枚の画像を同時処理"
+      },
+      "security": {
+        "title": "プライバシー優先",
+        "description": "画像はブラウザでローカルに処理 - アップロード不要",
+        "details": "クライアント側処理で完全なプライバシーを確保"
+      },
+      "quality": {
+        "title": "品質制御",
+        "description": "ファイルサイズと画像品質のバランスを取る高度な設定",
+        "details": "高度なアルゴリズムで視覚品質を維持"
+      },
+      "title": "なぜ私たちの画像圧縮器を選ぶのか？",
+      "items": [
+        {
+          "title": "超高速",
+          "description": "最適化されたアルゴリズムで数秒で複数の画像を処理"
+        },
+        {
+          "title": "プライバシー優先",
+          "description": "画像はブラウザでローカルに処理 - アップロード不要"
+        },
+        {
+          "title": "多様な形式",
+          "description": "PNG、JPEG、WebP、AVIF、GIF、BMP形式をサポート"
+        },
+        {
+          "title": "品質制御",
+          "description": "ファイルサイズと画像品質のバランスを取る高度な設定"
+        },
+        {
+          "title": "一括処理",
+          "description": "時間を節約するために一度に複数の画像を圧縮"
+        },
+        {
+          "title": "永続無料",
+          "description": "登録不要、ウォーターマークなし、隠れた費用なし"
+        }
+      ]
+    },
+    "stats": {
+      "processed": {
+        "number": "1500万+",
+        "label": "圧縮済み画像",
+        "description": "月間"
+      },
+      "reduction": {
+        "number": "90%",
+        "label": "平均削減",
+        "description": "ファイルサイズ"
+      },
+      "formats": {
+        "number": "6",
+        "label": "サポート形式",
+        "description": "すべての主要タイプ"
+      }
+    },
+    "whyChoose": {
+      "title": "なぜ私たちの画像圧縮器を選ぶのか？",
+      "items": [
+        {
+          "title": "超高速",
+          "description": "最適化アルゴリズムで数秒で複数の画像を処理"
+        },
+        {
+          "title": "プライバシー優先",
+          "description": "画像はブラウザでローカルに処理 - アップロード不要"
+        },
+        {
+          "title": "複数フォーマット",
+          "description": "PNG、JPEG、WebP、AVIF、GIF、BMPフォーマットをサポート"
+        },
+        {
+          "title": "品質制御",
+          "description": "ファイルサイズと画像品質のバランスを取る高度な設定"
+        },
+        {
+          "title": "バッチ処理",
+          "description": "時間を節約するために複数の画像を一度に圧縮"
+        },
+        {
+          "title": "永久無料",
+          "description": "登録不要、透かしなし、隠れた費用なし"
+        }
+      ]
+    }
+  },
+  "converter": {
+    "title": "画像変換器",
+    "subtitle": "高品質で高速処理により異なる形式間で画像を変換。",
+    "description": "画像を人気の形式間で変換するプロフェッショナルな画像変換ツール。PNG、JPEG、WebP、AVIF、HEIC形式をサポートし、高度な変換技術を採用。",
+    "badge": "フォーマット変換",
+    "statsLabels": {
+      "compression": "圧縮率",
+      "speed": "速度"
+    },
+    "tools": {
+      "pngToJpg": {
+        "name": "PNGからJPG",
+        "description": "PNG画像をJPG形式に変換",
+        "features": [
+          "背景処理",
+          "品質保持",
+          "ウェブ最適化"
+        ],
+        "conversion": "即時"
+      },
+      "pngToWebp": {
+        "name": "PNGからWebP",
+        "description": "PNG画像をWebP形式に変換",
+        "features": [
+          "現代的フォーマット",
+          "優れた品質",
+          "ウェブ配信"
+        ],
+        "conversion": "即時"
+      },
+      "pngToAvif": {
+        "name": "PNGからAVIF",
+        "description": "PNG画像をAVIF形式に変換",
+        "features": [
+          "次世代フォーマット",
+          "最大効率",
+          "未来志向"
+        ],
+        "conversion": "即時"
+      },
+      "jpgToPng": {
+        "name": "JPGからPNG",
+        "description": "JPG画像をPNG形式に変換",
+        "features": [
+          "透明度サポート",
+          "可逆変換",
+          "品質制御"
+        ],
+        "conversion": "即時"
+      },
+      "webpToPng": {
+        "name": "WebPからPNG",
+        "description": "WebP画像をPNG形式に変換",
+        "features": [
+          "ユニバーサル互換性",
+          "可逆変換",
+          "品質保持"
+        ],
+        "conversion": "即時"
+      },
+      "jpgToWebp": {
+        "name": "JPGからWebP",
+        "description": "JPG画像をWebP形式に変換",
+        "features": [
+          "サイズ削減",
+          "品質向上",
+          "ウェブ最適化"
+        ],
+        "conversion": "即時"
+      },
+      "jpgToAvif": {
+        "name": "JPGからAVIF",
+        "description": "JPG画像をAVIF形式に変換",
+        "features": [
+          "最大圧縮",
+          "優れた品質",
+          "現代的フォーマット"
+        ],
+        "conversion": "即時"
+      },
+      "webpToJpg": {
+        "name": "WebPからJPG",
+        "description": "WebP画像をJPG形式に変換",
+        "features": [
+          "レガシーサポート",
+          "品質最適化",
+          "ユニバーサル互換性"
+        ],
+        "conversion": "即時"
+      },
+      "webpToAvif": {
+        "name": "WebPからAVIF",
+        "description": "WebP画像をAVIF形式に変換",
+        "features": [
+          "次世代アップグレード",
+          "最大効率",
+          "未来志向"
+        ],
+        "conversion": "即時"
+      },
+      "heicToJpg": {
+        "name": "HEICからJPG",
+        "description": "HEIC画像をJPG形式に変換",
+        "features": [
+          "iPhone互換性",
+          "クロスプラットフォーム",
+          "品質保持"
+        ],
+        "conversion": "即時"
+      }
+    },
+    "features": {
+      "speed": {
+        "title": "超高速",
+        "description": "最適化されたアルゴリズムで数秒で複数の画像を変換",
+        "details": "数秒で複数の画像を変換"
+      },
+      "security": {
+        "title": "プライバシー優先",
+        "description": "画像はブラウザでローカルに処理 - アップロード不要",
+        "details": "クライアント側処理で完全なプライバシーを確保"
+      },
+      "quality": {
+        "title": "品質制御",
+        "description": "変換過程で画像品質を維持する高度な設定",
+        "details": "高度なアルゴリズムで画像品質を維持"
+      }
+    },
+    "stats": {
+      "converted": {
+        "number": "1000万+",
+        "label": "変換済み画像",
+        "description": "月間"
+      },
+      "formats": {
+        "number": "10+",
+        "label": "サポート形式",
+        "description": "すべての主要タイプ"
+      },
+      "quality": {
+        "number": "100%",
+        "label": "品質保持",
+        "description": "ロスレス変換"
+      }
+    },
+    "whyChoose": {
+      "title": "なぜ私たちの画像変換器を選ぶのか？",
+      "items": [
+        {
+          "title": "高品質変換",
+          "description": "高度なアルゴリズムでフォーマット間変換時に画像品質を維持"
+        },
+        {
+          "title": "ローカル処理",
+          "description": "すべての変換はブラウザでローカルに実行 - 完全プライベート"
+        },
+        {
+          "title": "10+フォーマット",
+          "description": "PNG、JPG、WebP、AVIF、HEIC等の主要形式をサポート"
+        },
+        {
+          "title": "バッチ変換",
+          "description": "効率向上のため複数ファイルを同時に変換"
+        },
+        {
+          "title": "即時結果",
+          "description": "高速処理で変換済み画像をすぐに取得"
+        },
+        {
+          "title": "完全無料",
+          "description": "制限なし使用、登録や支払い不要"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "company": "TinyCompressor",
+    "description": "無料オンライン画像圧縮・変換ツール",
+    "links": {
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "about": "私たちについて",
+      "contact": "お問い合わせ"
+    },
+    "copyright": "© 2024 TinyCompressor. 全著作権所有。"
+  },
+  "language": {
+    "current": "現在の言語",
+    "change": "言語変更",
+    "select": "言語選択"
+  },
+  "tools": {
+    "title": "ツールを選択",
+    "start": "今すぐ開始"
+  },
+  "features": {
+    "title": "なぜ私たちのツールを選ぶのか？",
+    "subtitle": "ユーザーフレンドリーな機能を持つ先進技術",
+    "free": "100%無料",
+    "secure": "セキュア・プライベート",
+    "fast": "超高速"
+  },
+  "cta": {
+    "title": "準備はできましたか？",
+    "description": "私たちの画像処理ツールを信頼する何千ものユーザーに参加",
+    "backToHome": "ホームに戻る"
+  }
+}

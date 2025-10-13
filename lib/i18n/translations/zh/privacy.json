@@ -1,0 +1,27 @@
+{
+  "title": "隐私政策",
+  "lastUpdated": "最后更新：2025年1月1日",
+  "introduction": {
+    "title": "介绍",
+    "content": "本隐私政策描述了 TinyCompressor 在您使用我们的图片压缩和转换服务时如何收集、使用和保护您的信息。"
+  },
+  "informationCollection": {
+    "title": "我们收集的信息",
+    "content": "我们不收集、存储或传输您的图片。所有处理都在您本地的浏览器中进行。"
+  },
+  "dataProcessing": {
+    "title": "数据处理",
+    "content": "所有图片处理完全在您的浏览器中执行。您的文件永远不会离开您的设备。"
+  },
+  "cookies": {
+    "title": "Cookie",
+    "content": "我们仅使用 Cookie 来记住您的语言偏好并改善您的体验。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "content": "如果您对本隐私政策有任何疑问，请联系我们。"
+  }
+}
+
+
+

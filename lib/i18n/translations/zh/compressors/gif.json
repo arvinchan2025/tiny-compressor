@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "GIF 压缩 - 在线压缩动画 GIF 和图片",
+    "description": "使用高级优化在线压缩 GIF 图片。在保留动画质量和视觉保真度的同时减少文件大小。",
+    "keywords": [
+      "GIF 压缩器",
+      "动画 GIF",
+      "GIF 优化",
+      "图像压缩",
+      "在线工具"
+    ]
+  },
+  "hero": {
+    "title": "GIF 压缩器",
+    "subtitle": "使用高级优化压缩动画 GIF 和静态图像",
+    "description": "使用智能优化在线压缩 GIF 图片，在保留动画质量和视觉保真度的同时减少文件大小。",
+    "badge": "压缩器"
+  },
+  "features": {
+    "title": "GIF 格式功能",
+    "description": "为什么 GIF 对于动画和兼容性仍然至关重要",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "原生动画支持",
+        "description": "内置于格式中的基于帧的动画 - 无需视频编解码器"
+      },
+      {
+        "icon": "🌍",
+        "title": "通用兼容性",
+        "description": "在所有浏览器、设备和电子邮件客户端上 100% 支持 - 甚至旧系统"
+      },
+      {
+        "icon": "🎨",
+        "title": "256 色调色板",
+        "description": "对具有有限颜色的图形高效 - 非常适合徽标和简单动画"
+      },
+      {
+        "icon": "🔄",
+        "title": "LZW 无损压缩",
+        "description": "无损压缩算法完美保留每个像素"
+      },
+      {
+        "icon": "✨",
+        "title": "单色透明度",
+        "description": "基于索引的透明度，可在任何背景上实现干净的边缘"
+      },
+      {
+        "icon": "📧",
+        "title": "电子邮件安全格式",
+        "description": "唯一具有通用电子邮件客户端支持的动画格式"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "GIF 压缩原理",
+    "description": "了解 GIF 压缩背后的技术原理可帮助您对动画做出明智的决策。",
+    "items": [
+      {
+        "title": "LZW 压缩算法",
+        "description": "GIF 使用 LZW（Lempel-Ziv-Welch）无损压缩算法来识别和压缩图像数据中的重复模式。",
+        "icon": "🔄",
+        "benefits": [
+          "无损压缩",
+          "基于模式的效率",
+          "通用支持",
+          "快速处理"
+        ]
+      },
+      {
+        "title": "色彩调色板优化",
+        "description": "GIF 每帧支持最多 256 种颜色（8 位）。智能调色板减少可在保留视觉质量的同时最小化文件大小。",
+        "icon": "🎨",
+        "benefits": [
+          "自适应调色板选择",
+          "每帧优化",
+          "抖动支持",
+          "颜色量化"
+        ]
+      },
+      {
+        "title": "帧增量压缩",
+        "description": "动画 GIF 仅存储帧之间的差异，显著减少变化最小的动画的文件大小。",
+        "icon": "🎬",
+        "benefits": [
+          "高效的动画存储",
+          "帧到帧优化",
+          "处理方法控制",
+          "减少冗余"
+        ]
+      },
+      {
+        "title": "透明度处理",
+        "description": "GIF 支持单色透明度，允许将调色板中的一种颜色指定为透明。",
+        "icon": "✨",
+        "benefits": [
+          "基于索引的透明度",
+          "无 Alpha 通道开销",
+          "高效压缩",
+          "通用兼容性"
+        ]
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将文件拖放到此处或点击选择",
+      "subtitle": "支持 {format} 格式，最大 50MB",
+      "selectFiles": "选择文件"
+    },
+    "files": {
+      "title": "已选择的文件",
+      "count": "{count} 个文件",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "压缩 {format}",
+      "processing": "正在压缩... {progress}%"
+    },
+    "progress": {
+      "label": "处理中...",
+      "compressing": "正在压缩您的 {format} 图像..."
+    },
+    "results": {
+      "title": "压缩完成！🎉",
+      "subtitle": "您的图像已成功优化",
+      "original": "原始",
+      "compressed": "已压缩",
+      "saved": "已节省",
+      "time": "时间",
+      "format": "格式",
+      "compressionRatio": "压缩比",
+      "sizeReduction": "大小减少",
+      "sizeIncrease": "大小增加",
+      "greatJob": "做得好！",
+      "considerAdjusting": "考虑调整设置",
+      "savedSpace": "已节省 {amount} MB",
+      "successMessage": "压缩效果很好！",
+      "successDescription": "您的图像现在小了 {ratio}%，同时保持出色的质量。已为 Web 使用优化！",
+      "download": "下载",
+      "compressMore": "压缩更多",
+      "reset": "重置",
+      "sizeInfo": "原始：{original} MB → 已压缩：{compressed} MB（{ratio}% 减少）"
+    },
+    "settings": {
+      "simple": "简单",
+      "advanced": "高级",
+      "advancedTitle": "高级设置",
+      "quality": "质量",
+      "qualityLow": "低",
+      "qualityMedium": "中",
+      "qualityHigh": "高",
+      "metadata": "保留元数据",
+      "metadataDesc": "EXIF、GPS、相机信息"
+    },
+    "actions": {
+      "downloadAll": "全部下载",
+      "reset": "重置"
+    },
+    "error": {
+      "title": "错误",
+      "tip": "💡 提示：确保您的文件是有效的图像（PNG、JPEG、WebP、AVIF、GIF）且小于 50MB",
+      "unknownError": "未知错误",
+      "processingFailed": "处理 {fileName} 失败",
+      "compressionFailed": "压缩失败"
+    },
+    "status": {
+      "starting": "开始压缩...",
+      "processing": "压缩中... {progress}%",
+      "completed": "压缩完成！"
+    }
+  },
+  "useCases": {
+    "title": "何时使用 GIF 压缩",
+    "description": "GIF 压缩非常适合具有有限颜色的动画和图形。",
+    "items": [
+      {
+        "title": "动画图形",
+        "description": "非常适合简单的动画、加载指示器和装饰元素。",
+        "content": "GIF 的基于帧的动画支持使其非常适合创建引人入胜的视觉元素，如加载旋转器、动画图标和装饰网站功能。",
+        "icon": "🎬"
+      },
+      {
+        "title": "徽标和图标",
+        "description": "非常适合具有有限颜色的徽标、图标和简单图形。",
+        "content": "GIF 对平面颜色图像的高效压缩使其非常适合徽标和图标，特别是当需要动画时。",
+        "icon": "🎨"
+      },
+      {
+        "title": "简单插图",
+        "description": "非常适合线条艺术、图表和具有平面颜色的插图。",
+        "content": "GIF 擅长压缩具有实色和清晰线条的插图，使其非常适合信息图表和图表。",
+        "icon": "✏️"
+      },
+      {
+        "title": "Web 图形和 UI 元素",
+        "description": "非常适合 Web 图形、按钮和用户界面组件。",
+        "content": "GIF 的通用浏览器支持和高效压缩使其非常适合 Web UI 元素和交互式图形。",
+        "icon": "🌐"
+      },
+      {
+        "title": "社交媒体内容",
+        "description": "在社交平台上分享动画内容的流行格式。",
+        "content": "GIF 动画在社交媒体平台上得到广泛支持，使其非常适合创建可共享的内容。",
+        "icon": "📱"
+      },
+      {
+        "title": "电子邮件营销",
+        "description": "电子邮件活动中动画内容的安全格式，具有通用客户端支持。",
+        "content": "GIF 是唯一几乎具有通用电子邮件客户端支持的动画图像格式。非常适合电子邮件营销活动中的动画横幅、产品展示和行动号召元素，其中不支持 WebP 或视频等现代格式。",
+        "icon": "📧"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "GIF 压缩最佳实践",
+    "description": "遵循这些专家提示，从 GIF 压缩中获得最佳结果。",
+    "tips": [
+      {
+        "icon": "🎨",
+        "title": "优化色彩调色板",
+        "content": "GIF 每帧限制为 256 种颜色。战略性地减少颜色 - 32-64 种颜色通常足以用于简单的动画。对渐变使用抖动，但对平面颜色图形禁用它以减少文件大小。感知色彩量化比均匀量化更好地保留视觉质量。"
+      },
+      {
+        "icon": "🎬",
+        "title": "掌握帧优化",
+        "content": "删除重复或不必要的帧 - 每帧都会增加文件大小。有效使用帧处理方法：对具有透明区域的动画使用「恢复到背景」，对不透明动画使用「不处理」。优化帧率：10-15 FPS 对于大多数 Web 动画来说已经足够，而视频为 24-30 FPS。"
+      },
+      {
+        "icon": "📦",
+        "title": "了解 GIF 的现代替代品",
+        "content": "仅对具有有限颜色的简单、短动画（2-5 秒）使用 GIF。对于复杂的动画，转换为 MP4 视频（小 90%）或动画 WebP（小 30-50%，质量更好）。对于静态图形，PNG 提供更好的无损压缩。GIF 的主要优势是通用兼容性 - 所有浏览器和平台都支持它。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 GIF 压缩的常见问题",
+    "items": [
+      {
+        "question": "GIF 与其他格式有什么区别？",
+        "answer": "GIF 支持动画和透明度，使其非常适合具有有限颜色和动画内容的简单图形。与 JPEG 不同，它对实色使用无损压缩，与 PNG 不同，它支持基于帧的动画。"
+      },
+      {
+        "question": "GIF 文件可以压缩多少？",
+        "answer": "GIF 压缩取决于图像复杂性。具有有限颜色的简单图形可以实现 50-80% 的大小减少，而由于 256 色限制，复杂图像或照片可能只会看到 20-40% 的减少。"
+      },
+      {
+        "question": "我应该将 GIF 用于照片吗？",
+        "answer": "GIF 由于其 256 色限制不适合照片，这可能导致显著的质量损失和色带。对照片使用 JPEG，或对具有全色支持的更好压缩使用 WebP/AVIF 等现代格式。"
+      },
+      {
+        "question": "如何优化 GIF 动画？",
+        "answer": "通过减少色彩调色板、调整帧率、删除不必要的帧、有效使用帧处理方法以及考虑动画的目的和持续时间来优化 GIF 动画。保持动画简短和简单以获得最佳结果。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像压缩和转换工具",
+    "items": [
+      {
+        "title": "PNG 压缩器",
+        "description": "压缩 PNG 图片",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPEG 压缩器",
+        "description": "压缩 JPEG 图片",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP 压缩器",
+        "description": "压缩 WebP 图片",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  }
+}

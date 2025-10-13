@@ -1,0 +1,274 @@
+{
+  "seo": {
+    "title": "JPEG 转 PNG - 在线转换 JPEG 图片",
+    "description": "在线将 JPEG 图片转换为 PNG 格式。免费、快速且易于使用的 JPEG 转 PNG 转换器。",
+    "keywords": "JPEG 转 PNG, JPEG 转换, 图片转换器, 在线工具"
+  },
+  "hero": {
+    "title": "JPEG 转 PNG 转换器",
+    "subtitle": "在线将 JPEG 图片转换为 PNG 格式",
+    "description": "将 JPEG 图片转换为 PNG 格式，以恢复无损质量并在需要时添加透明度支持。"
+  },
+  "features": {
+    "title": "JPEG 转 PNG 转换功能",
+    "description": "为什么要将 JPEG 转换为 PNG 以获得无损质量",
+    "items": [
+      {
+        "icon": "🔒",
+        "title": "无损质量保留",
+        "description": "PNG 的无损压缩可防止进一步的质量损失"
+      },
+      {
+        "icon": "✨",
+        "title": "透明度支持",
+        "description": "PNG 支持透明效果的 Alpha 通道"
+      },
+      {
+        "icon": "🎨",
+        "title": "更适合编辑",
+        "description": "非常适合需要多次编辑且不损失质量的图形"
+      },
+      {
+        "icon": "📐",
+        "title": "清晰的文本和图形",
+        "description": "非常适合文本、徽标和有清晰边缘的图像"
+      },
+      {
+        "icon": "⚡",
+        "title": "批量转换",
+        "description": "同时将多个 JPEG 文件转换为 PNG"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% 安全",
+        "description": "所有转换均在您的浏览器本地进行"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "JPEG vs PNG 格式对比",
+    "subtitle": "了解 JPEG 和 PNG 格式之间的差异",
+    "jpeg": {
+      "description": "JPEG（Joint Photographic Experts Group）是数字图像（尤其是数字摄影）中常用的有损压缩方法。",
+      "features": [
+        "有损压缩",
+        "文件大小更小",
+        "适合照片",
+        "不支持透明度"
+      ]
+    },
+    "png": {
+      "description": "PNG（Portable Network Graphics）是一种支持无损数据压缩和透明度的光栅图形文件格式。",
+      "features": [
+        "无损压缩",
+        "透明度支持",
+        "非常适合图形和徽标",
+        "文件大小更大"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "JPEG 转 PNG 转换原理",
+    "description": "了解从有损到无损转换的技术过程",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "解压和重新编码",
+        "description": "JPEG 的 DCT（离散余弦变换）压缩数据被完全解压，然后使用 PNG 的无损 DEFLATE 压缩算法重新编码。",
+        "benefits": [
+          "完全 JPEG 解压",
+          "PNG DEFLATE 重新编码",
+          "无额外质量损失",
+          "文件大小更大（2-5 倍）"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "质量无法恢复",
+        "description": "JPEG 的有损压缩会永久丢弃图像数据。转换为 PNG 会保留当前状态，但无法恢复原始 JPEG 压缩中丢失的信息。",
+        "benefits": [
+          "丢失的 JPEG 数据是永久的",
+          "防止进一步降级",
+          "非常适合存档目的",
+          "保持当前质量水平"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "透明度通道添加",
+        "description": "JPEG 不支持透明度，但 PNG 添加了 Alpha 通道。转换后的图像以完全不透明开始，但可以在转换后添加透明度。",
+        "benefits": [
+          "启用 Alpha 通道支持",
+          "初始完全不透明（无透明度）",
+          "准备好编辑透明度",
+          "8 位 Alpha 支持（256 级）"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "色彩空间和位深度",
+        "description": "JPEG 通常使用 8 位 YCbCr 色彩空间。PNG 转换会转换为 RGB 色彩空间，同时保持每通道 8 位深度（总共 24 位或带 Alpha 的 32 位）。",
+        "benefits": [
+          "从 YCbCr 转换为 RGB",
+          "保持每通道 8 位",
+          "24 位 RGB 或 32 位 RGBA",
+          "标准 sRGB 色彩空间"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时以及如何将 JPEG 转换为 PNG",
+    "description": "JPEG 转 PNG 转换的常见场景和最佳实践",
+    "items": [
+      {
+        "icon": "🎨",
+        "title": "图形和徽标编辑",
+        "description": "准备 JPEG 图形进行编辑，而不会有额外的质量损失。",
+        "content": "在编辑前将 JPEG 图形转换为 PNG，以防止多次保存时的累积质量损失。对于需要进一步编辑的文本、徽标或有清晰边缘的图像至关重要。注意：无法恢复 JPEG 压缩中已经丢失的质量。最适合错误保存为 JPEG 且需要透明度或无损编辑的图形。"
+      },
+      {
+        "icon": "🖨️",
+        "title": "打印和专业用途",
+        "description": "为打印或专业应用准备图像。",
+        "content": "对于需要无损格式的打印工作流程，转换为 PNG。PNG 可防止编辑和校对过程中的进一步质量降低。预计文件大小会增加 2-5 倍。为获得最佳打印效果，请从可用的最高质量 JPEG 开始。PNG 比 JPEG 更适合打印校对、设计样机和存档目的。"
+      },
+      {
+        "icon": "✂️",
+        "title": "添加透明度",
+        "description": "为合成和叠加启用透明度。",
+        "content": "当您需要为产品照片、徽标或图形添加透明度时，将 JPEG 转换为 PNG。转换后，使用照片编辑软件删除背景。PNG 的 Alpha 通道支持 256 级透明度，可实现平滑边缘。非常适合需要透明背景的电子商务产品图像、徽标叠加和 Web 图形。"
+      },
+      {
+        "icon": "🔄",
+        "title": "多重编辑工作流程",
+        "description": "在迭代编辑期间防止质量损失。",
+        "content": "在涉及多次保存的编辑工作流程开始时转换为 PNG。每次 JPEG 保存都会导致额外的质量损失（代际损失）。PNG 的无损压缩可通过无限次保存保持质量。对于协作编辑、A/B 测试变体和迭代设计过程至关重要。保留原始 JPEG 作为备份。"
+      },
+      {
+        "icon": "📸",
+        "title": "屏幕截图增强",
+        "description": "改善带有文本和 UI 元素的屏幕截图。",
+        "content": "将 JPEG 屏幕截图转换为 PNG，以获得更好的文本清晰度和 UI 元素锐度。JPEG 的有损压缩会在文本和清晰边缘周围产生伪影。PNG 是屏幕截图、文档和教程图像的标准。在注释或编辑屏幕截图时防止质量损失。文件大小的增加对于提高清晰度是可以接受的。"
+      },
+      {
+        "icon": "⚠️",
+        "title": "何时不转换",
+        "description": "了解限制以避免质量问题。",
+        "content": "如果以下情况，请不要转换：1）图像是 Web 使用照片（JPEG 更小），2）不需要进一步编辑（转换不会提高质量），3）文件大小很重要（PNG 大 2-5 倍），4）图像无论如何都会重新压缩为 JPEG。JPEG → PNG → JPEG 转换会导致双重质量损失。对照片保留 JPEG，对图形使用 PNG。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 JPEG 转 PNG 转换的常见问题",
+    "items": [
+      {
+        "question": "将 JPEG 转换为 PNG 会提高图像质量吗？",
+        "answer": "不会，将 JPEG 转换为 PNG 无法恢复 JPEG 压缩期间已经丢失的质量。JPEG 的有损压缩会永久丢弃图像数据。但是，转换为 PNG 可以防止后续编辑和保存期间的进一步质量损失。可以将其视为「冻结」当前质量水平 - 您不会获得更好的质量，但也不会再失去更多。"
+      },
+      {
+        "question": "如果无法恢复质量，为什么要将 JPEG 转换为 PNG？",
+        "answer": "如果以下情况，请将 JPEG 转换为 PNG：1）需要添加透明度（产品照片、徽标），2）图像将经过多次编辑（每次 JPEG 保存都会损失更多质量），3）处理需要清晰边缘的图形/文本（而不是照片），4）准备打印工作流程，5）存档目的以防止进一步降级。PNG 的无损压缩非常适合错误保存为 JPEG 的图形。"
+      },
+      {
+        "question": "与 JPEG 相比，PNG 文件有多大？",
+        "answer": "PNG 文件通常比 JPEG 文件大 2-5 倍。例如，1MB 的 JPEG 照片可能会变成 3-5MB 的 PNG。确切大小取决于图像复杂性 - 具有渐变的照片会扩展更多，而具有实色的图形会压缩得更好。这种大小增加是无损质量和透明度支持的权衡。"
+      },
+      {
+        "question": "将 JPEG 转换为 PNG 后可以添加透明度吗？",
+        "answer": "可以！转换本身不会添加透明度，但 PNG 格式支持 Alpha 通道。转换后，使用照片编辑软件（Photoshop、GIMP、Photopea）删除背景或添加透明度。转换后的 PNG 以完全不透明（无透明度）开始，但已准备好使用 256 级 Alpha 支持进行透明度编辑。"
+      },
+      {
+        "question": "我应该将所有 JPEG 照片转换为 PNG 吗？",
+        "answer": "不应该，对于 Web 使用照片，请保留 JPEG。JPEG 的有损压缩非常适合照片，其中 2-5 倍更小的文件大小比完美质量更重要。仅当以下情况时将 JPEG 转换为 PNG：1）需要添加透明度，2）图像需要进一步编辑，3）处理图形/文本（而不是照片），或 4）文件大小不是问题。对 Web 照片使用 JPEG 或 WebP 等现代格式。"
+      },
+      {
+        "question": "JPEG 转 PNG 转换是否免费且安全？",
+        "answer": "是的，我们的 JPEG 转 PNG 转换器完全免费，无需注册、无水印、无付款。所有转换都使用 WebAssembly 在您的浏览器中本地进行 - 图像不会离开您的设备。这可确保 100% 的隐私和安全，没有服务器上传、数据收集或对文件的第三方访问。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像转换和压缩工具",
+    "items": [
+      {
+        "title": "PNG 转 JPEG",
+        "description": "将 PNG 图片转换回 JPEG 格式",
+        "url": "/converter/convert-png-to-jpg"
+      },
+      {
+        "title": "PNG 压缩",
+        "description": "进一步优化 PNG 文件",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPG 转 WebP",
+        "description": "将 JPG 转换为现代 WebP 格式",
+        "url": "/converter/convert-jpg-to-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将 JPEG 文件拖放到此处或点击选择",
+      "subtitle": "支持 JPEG/JPG 格式，最多 {maxFiles} 个文件，每个最大 10MB",
+      "selectFiles": "选择 JPEG 文件"
+    },
+    "errors": {
+      "maxFiles": "最多允许 {maxFiles} 个文件",
+      "fileTooLarge": "文件 {fileName} 太大。请选择小于 10MB 的文件",
+      "unsupportedFormat": "不支持的文件格式：{fileName}。仅支持 JPEG/JPG 文件。",
+      "uploadFailed": "文件上传失败",
+      "conversionFailed": "转换失败。请重试。"
+    },
+    "files": {
+      "title": "已选择的 JPEG 文件",
+      "count": "已选择 {count} 个文件",
+      "reset": "全部重置",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "转换为 PNG",
+      "simpleStart": "快速 JPEG 转 PNG 转换",
+      "advancedStart": "JPEG 转 PNG 转换（高级）",
+      "processing": "正在转换为 PNG... {progress}%"
+    },
+    "progress": {
+      "label": "转换进度",
+      "status": "正在将 JPEG 转换为 PNG... {progress}% 完成"
+    },
+    "settings": {
+      "title": "PNG 转换设置",
+      "simple": "简单",
+      "advanced": "高级",
+      "simpleTitle": "快速设置",
+      "advancedTitle": "PNG 高级设置",
+      "compressionLevel": "压缩级别",
+      "compressionFastest": "最快速度（级别 1）",
+      "compressionBalanced": "平衡（级别 6）",
+      "compressionBest": "最高压缩（级别 9）",
+      "colorDepth": "色深",
+      "colorDepth24": "24 位 RGB",
+      "colorDepth32": "32 位 RGBA（带 Alpha）",
+      "interlace": "隔行扫描 PNG",
+      "metadata": "保留元数据",
+      "optimize": "为 Web 优化",
+      "presetFast": "快速转换",
+      "presetFastDesc": "快速转换，文件较大",
+      "presetBalanced": "平衡",
+      "presetBalancedDesc": "良好压缩，合理速度",
+      "presetOptimal": "最大压缩",
+      "presetOptimalDesc": "最小 PNG 文件，转换较慢"
+    },
+    "downloadAll": "下载所有 PNG 文件",
+    "results": {
+      "title": "PNG 转换结果",
+      "count": "{count} 个 JPEG 文件已转换为 PNG",
+      "sizeInfo": "原始 JPEG：{original} MB → PNG：{converted} MB（{change}% 增加）",
+      "download": "下载 PNG"
+    }
+  }
+}

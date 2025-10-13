@@ -1,6 +1,6 @@
 /**
  * 转换流程说明组件
- * 解释转换过程和技术原理
+ * 解释转换过程和技术原
  */
 
 'use client';
@@ -12,7 +12,7 @@ interface HowConversionWorksProps {
   locale: SupportedLanguage;
   sourceFormat: string;
   targetFormat: string;
-  customSteps?: Array<{
+  customSteps: Array<{
     step: string;
     title: string;
     description: string;
@@ -30,31 +30,31 @@ export default function HowConversionWorks({
 }: HowConversionWorksProps) {
   const isRTL = locale === 'ar';
   
-  // 默认步骤 - 简化描述
+  // 默认步骤 - 简化描
   const defaultSteps = [
     {
       step: '1',
-      title: translations?.converter?.howItWorks?.steps?.upload?.title || `Upload ${sourceFormat.toUpperCase()} Images`,
-      description: translations?.converter?.howItWorks?.steps?.upload?.description || `Select ${sourceFormat.toUpperCase()} images from your device`,
-      icon: '📤'
+      title: translations.converter.howItWorks.steps.upload.title || `Upload ${sourceFormat.toUpperCase()} Images`,
+      description: translations.converter.howItWorks.steps.upload.description || `Select ${sourceFormat.toUpperCase()} images from your device`,
+      icon: ''
     },
     {
       step: '2',
-      title: translations?.converter?.howItWorks?.steps?.settings?.title || 'Choose Quality',
-      description: translations?.converter?.howItWorks?.steps?.settings?.description || 'Select conversion quality and settings',
-      icon: '⚙️'
+      title: translations.converter.howItWorks.steps.settings.title || 'Choose Quality',
+      description: translations.converter.howItWorks.steps.settings.description || 'Select conversion quality and settings',
+      icon: ''
     },
     {
       step: '3',
-      title: translations?.converter?.howItWorks?.steps?.convert?.title || `Convert to ${targetFormat.toUpperCase()}`,
-      description: translations?.converter?.howItWorks?.steps?.convert?.description || `Click convert to change format to ${targetFormat.toUpperCase()}`,
-      icon: '🔄'
+      title: translations.converter.howItWorks.steps.convert.title || `Convert to ${targetFormat.toUpperCase()}`,
+      description: translations.converter.howItWorks.steps.convert.description || `Click convert to change format to ${targetFormat.toUpperCase()}`,
+      icon: ''
     },
     {
       step: '4',
-      title: translations?.converter?.howItWorks?.steps?.download?.title || 'Download Results',
-      description: translations?.converter?.howItWorks?.steps?.download?.description || 'Download your converted images',
-      icon: '⬇️'
+      title: translations.converter.howItWorks.steps.download.title || 'Download Results',
+      description: translations.converter.howItWorks.steps.download.description || 'Download your converted images',
+      icon: ''
     }
   ];
 
@@ -70,10 +70,10 @@ export default function HowConversionWorks({
       >
         <div className="text-center mb-12">
           <h2 className="heading-3 text-slate-800 mb-4">
-            {translations?.converter?.howItWorks?.title || 'How Image Conversion Works'}
+            {translations.converter.howItWorks.title || 'How Image Conversion Works'}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            {translations?.converter?.howItWorks?.subtitle || `Our converter uses advanced algorithms to transform ${sourceFormat.toUpperCase()} images to ${targetFormat.toUpperCase()} format while maintaining quality`}
+            {translations.converter.howItWorks.subtitle || `Our converter uses advanced algorithms to transform ${sourceFormat.toUpperCase()} images to ${targetFormat.toUpperCase()} format while maintaining quality`}
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export default function HowConversionWorks({
           ))}
         </div>
 
-        {/* 技术细节 */}
+        {/* 技术细*/}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -116,38 +116,38 @@ export default function HowConversionWorks({
           className="mt-16 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-neutral-200/50 p-8"
         >
           <h3 className="text-2xl font-bold text-center mb-8 text-slate-800">
-            {translations?.converter?.howItWorks?.technicalDetails?.title || 'Technical Details'}
+            {translations.converter.howItWorks.technicalDetails.title || 'Technical Details'}
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* 转换算法 */}
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-slate-800 mb-4">
-                {translations?.converter?.howItWorks?.technicalDetails?.algorithm?.title || 'Conversion Algorithm'}
+                {translations.converter.howItWorks.technicalDetails.algorithm.title || 'Conversion Algorithm'}
               </h4>
               <ul className="space-y-2 text-slate-600">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.algorithm?.step1 || 'Advanced format detection and validation'}
+                    {translations.converter.howItWorks.technicalDetails.algorithm.step1 || 'Advanced format detection and validation'}
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.algorithm?.step2 || 'Intelligent color space conversion and optimization'}
+                    {translations.converter.howItWorks.technicalDetails.algorithm.step2 || 'Intelligent color space conversion and optimization'}
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.algorithm?.step3 || 'Quality preservation with compression optimization'}
+                    {translations.converter.howItWorks.technicalDetails.algorithm.step3 || 'Quality preservation with compression optimization'}
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.algorithm?.step4 || 'Metadata handling and format-specific optimizations'}
+                    {translations.converter.howItWorks.technicalDetails.algorithm.step4 || 'Metadata handling and format-specific optimizations'}
                   </span>
                 </li>
               </ul>
@@ -156,31 +156,31 @@ export default function HowConversionWorks({
             {/* 质量保证 */}
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-slate-800 mb-4">
-                {translations?.converter?.howItWorks?.technicalDetails?.quality?.title || 'Quality Assurance'}
+                {translations.converter.howItWorks.technicalDetails.quality.title || 'Quality Assurance'}
               </h4>
               <ul className="space-y-2 text-slate-600">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.quality?.step1 || 'Lossless metadata preservation when requested'}
+                    {translations.converter.howItWorks.technicalDetails.quality.step1 || 'Lossless metadata preservation when requested'}
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.quality?.step2 || 'Color accuracy maintenance across format conversion'}
+                    {translations.converter.howItWorks.technicalDetails.quality.step2 || 'Color accuracy maintenance across format conversion'}
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.quality?.step3 || 'Automatic quality optimization for target format'}
+                    {translations.converter.howItWorks.technicalDetails.quality.step3 || 'Automatic quality optimization for target format'}
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span className="text-sm">
-                    {translations?.converter?.howItWorks?.technicalDetails?.quality?.step4 || 'Real-time conversion preview and validation'}
+                    {translations.converter.howItWorks.technicalDetails.quality.step4 || 'Real-time conversion preview and validation'}
                   </span>
                 </li>
               </ul>
@@ -197,10 +197,10 @@ export default function HowConversionWorks({
               </div>
               <div>
                 <h4 className="font-semibold text-blue-800 mb-2">
-                  {translations?.converter?.howItWorks?.technicalDetails?.performance?.title || 'Performance Optimization'}
+                  {translations.converter.howItWorks.technicalDetails.performance.title || 'Performance Optimization'}
                 </h4>
                 <p className="text-blue-700 text-sm leading-relaxed">
-                  {translations?.converter?.howItWorks?.technicalDetails?.performance?.description || 'Our conversion engine uses optimized algorithms and parallel processing to ensure fast, efficient conversion of your images while maintaining the highest quality standards.'}
+                  {translations.converter.howItWorks.technicalDetails.performance.description || 'Our conversion engine uses optimized algorithms and parallel processing to ensure fast, efficient conversion of your images while maintaining the highest quality standards.'}
                 </p>
               </div>
             </div>

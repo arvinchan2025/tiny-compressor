@@ -4,7 +4,7 @@
  */
 
 // 支持的语言类型
-export type SupportedLanguage = 'en' | 'zh' | 'es' | 'de' | 'fr' | 'ar';
+export type SupportedLanguage = 'en' | 'zh' | 'es' | 'de' | 'fr' | 'ar' | 'ja' | 'ko' | 'pt' | 'ru' | 'it';
 
 // 图片格式类型
 export type ImageFormat = 'jpeg' | 'png' | 'webp' | 'avif' | 'heic' | 'bmp' | 'tiff' | 'ico' | 'svg' | 'gif';

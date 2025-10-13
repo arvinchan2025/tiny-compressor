@@ -1,0 +1,274 @@
+{
+  "seo": {
+    "title": "JPEG to PNG Converter - Convert JPEG Images Online",
+    "description": "Convert JPEG images to PNG format online. Free, fast, and easy to use JPEG to PNG converter.",
+    "keywords": "JPEG to PNG, convert JPEG, image converter, online tool"
+  },
+  "hero": {
+    "title": "JPEG to PNG Converter",
+    "subtitle": "Convert JPEG images to PNG format online",
+    "description": "Convert JPEG images to PNG format to restore lossless quality and add transparency support where needed."
+  },
+  "features": {
+    "title": "JPEG to PNG Conversion Features",
+    "description": "Why convert JPEG to PNG for lossless quality",
+    "items": [
+      {
+        "icon": "🔒",
+        "title": "Lossless Quality Preservation",
+        "description": "Prevent further quality loss with PNG's lossless compression"
+      },
+      {
+        "icon": "✨",
+        "title": "Transparency Support",
+        "description": "PNG supports alpha channel for transparency effects"
+      },
+      {
+        "icon": "🎨",
+        "title": "Better for Editing",
+        "description": "Ideal for graphics that require multiple edits without quality loss"
+      },
+      {
+        "icon": "📐",
+        "title": "Sharp Text & Graphics",
+        "description": "Perfect for images with text, logos, and sharp edges"
+      },
+      {
+        "icon": "⚡",
+        "title": "Batch Conversion",
+        "description": "Convert multiple JPEG files to PNG simultaneously"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Secure",
+        "description": "All conversion happens locally in your browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "JPEG vs PNG Format Comparison",
+    "subtitle": "Understanding the differences between JPEG and PNG formats",
+    "jpeg": {
+      "description": "JPEG (Joint Photographic Experts Group) is a commonly used method of lossy compression for digital images, particularly for digital photographs.",
+      "features": [
+        "Lossy compression",
+        "Smaller file sizes",
+        "Great for photos",
+        "No transparency support"
+      ]
+    },
+    "png": {
+      "description": "PNG (Portable Network Graphics) is a raster graphics file format that supports lossless data compression and transparency.",
+      "features": [
+        "Lossless compression",
+        "Transparency support",
+        "Perfect for graphics and logos",
+        "Larger file sizes"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "How JPEG to PNG Conversion Works",
+    "description": "Understanding the technical process of converting from lossy to lossless",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "Decompression & Re-encoding",
+        "description": "JPEG's DCT (Discrete Cosine Transform) compressed data is fully decompressed, then re-encoded using PNG's DEFLATE lossless compression algorithm.",
+        "benefits": [
+          "Full JPEG decompression",
+          "PNG DEFLATE re-encoding",
+          "No additional quality loss",
+          "Larger file size (2-5x)"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "Quality Cannot Be Restored",
+        "description": "JPEG's lossy compression permanently discards image data. Converting to PNG preserves the current state but cannot recover lost information from original JPEG compression.",
+        "benefits": [
+          "Lost JPEG data is permanent",
+          "Prevents further degradation",
+          "Ideal for archival purposes",
+          "Maintains current quality level"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "Transparency Channel Addition",
+        "description": "While JPEG doesn't support transparency, PNG adds an alpha channel. The converted image starts with full opacity, but transparency can be added post-conversion.",
+        "benefits": [
+          "Alpha channel support enabled",
+          "Initial full opacity (no transparency)",
+          "Ready for transparency editing",
+          "Supports 8-bit alpha (256 levels)"
+        ]
+      },
+      {
+        "icon": "🎨",
+        "title": "Color Space & Bit Depth",
+        "description": "JPEG typically uses 8-bit YCbCr color space. PNG conversion transforms to RGB color space while maintaining 8-bit depth per channel (24-bit total, or 32-bit with alpha).",
+        "benefits": [
+          "YCbCr to RGB conversion",
+          "8-bit per channel maintained",
+          "24-bit RGB or 32-bit RGBA",
+          "sRGB color space standard"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "When & How to Convert JPEG to PNG",
+    "description": "Common scenarios and best practices for JPEG to PNG conversion",
+    "items": [
+      {
+        "icon": "🎨",
+        "title": "Graphics & Logo Editing",
+        "description": "Prepare JPEG graphics for editing without further quality loss.",
+        "content": "Convert JPEG graphics to PNG before editing to prevent cumulative quality loss from multiple saves. Essential for images with text, logos, or sharp edges that will undergo further editing. Note: Cannot restore quality already lost in JPEG compression. Best for graphics mistakenly saved as JPEG that need transparency or lossless editing."
+      },
+      {
+        "icon": "🖨️",
+        "title": "Print & Professional Use",
+        "description": "Prepare images for print or professional applications.",
+        "content": "Convert to PNG for print workflows requiring lossless formats. PNG prevents further quality degradation during editing and proofing. Expect 2-5x larger file sizes. For best print results, start with highest quality JPEG available. PNG is preferred over JPEG for print proofs, design mockups, and archival purposes."
+      },
+      {
+        "icon": "✂️",
+        "title": "Adding Transparency",
+        "description": "Enable transparency for compositing and overlays.",
+        "content": "Convert JPEG to PNG when you need to add transparency for product photos, logos, or graphics. Use photo editing software to remove backgrounds after conversion. PNG's alpha channel supports 256 levels of transparency for smooth edges. Ideal for e-commerce product images, logo overlays, and web graphics requiring transparent backgrounds."
+      },
+      {
+        "icon": "🔄",
+        "title": "Multi-Edit Workflows",
+        "description": "Prevent quality loss during iterative editing.",
+        "content": "Convert to PNG at the start of editing workflows involving multiple saves. Each JPEG save causes additional quality loss (generation loss). PNG's lossless compression maintains quality through unlimited saves. Essential for collaborative editing, A/B testing variations, and iterative design processes. Keep original JPEG as backup."
+      },
+      {
+        "icon": "📸",
+        "title": "Screenshot Enhancement",
+        "description": "Improve screenshots with text and UI elements.",
+        "content": "Convert JPEG screenshots to PNG for better text clarity and UI element sharpness. JPEG's lossy compression creates artifacts around text and sharp edges. PNG is the standard for screenshots, documentation, and tutorial images. Prevents quality loss when annotating or editing screenshots. File size increase is acceptable for improved clarity."
+      },
+      {
+        "icon": "⚠️",
+        "title": "When NOT to Convert",
+        "description": "Scenarios where keeping JPEG is better.",
+        "content": "Don't convert if: 1) Image is a photo for web use (JPEG is smaller), 2) No further editing needed (conversion won't improve quality), 3) File size is critical (PNG is 2-5x larger), 4) Image will be re-compressed to JPEG anyway. Converting JPEG → PNG → JPEG causes double quality loss. Keep JPEG for photos, use PNG for graphics."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about JPEG to PNG conversion",
+    "items": [
+      {
+        "question": "Will converting JPEG to PNG improve image quality?",
+        "answer": "No, converting JPEG to PNG cannot restore quality already lost during JPEG compression. JPEG's lossy compression permanently discards image data. However, converting to PNG prevents further quality loss during subsequent edits and saves. Think of it as 'freezing' the current quality level - you won't get better quality, but you won't lose any more either."
+      },
+      {
+        "question": "Why would I convert JPEG to PNG if quality can't be restored?",
+        "answer": "Convert JPEG to PNG when: 1) You need to add transparency (product photos, logos), 2) Image will undergo multiple edits (each JPEG save loses more quality), 3) Working with graphics/text that need sharp edges, 4) Preparing for print workflows, 5) Archival purposes to prevent further degradation. PNG's lossless compression is ideal for graphics mistakenly saved as JPEG."
+      },
+      {
+        "question": "How much larger will PNG files be compared to JPEG?",
+        "answer": "PNG files are typically 2-5x larger than JPEG files. For example, a 1MB JPEG photo might become 3-5MB as PNG. The exact size depends on image complexity - photos with gradients expand more, while graphics with solid colors compress better. This size increase is the tradeoff for lossless quality and transparency support."
+      },
+      {
+        "question": "Can I add transparency after converting JPEG to PNG?",
+        "answer": "Yes! While the conversion itself doesn't add transparency, PNG format supports alpha channels. After converting, use photo editing software (Photoshop, GIMP, Photopea) to remove backgrounds or add transparency. The converted PNG starts with full opacity (no transparency) but is ready for transparency editing with 256 levels of alpha support."
+      },
+      {
+        "question": "Should I convert all my JPEG photos to PNG?",
+        "answer": "No, keep photos as JPEG for web use. JPEG's lossy compression is ideal for photos where 2-5x smaller file sizes matter more than perfect quality. Only convert JPEG to PNG if: 1) You need to add transparency, 2) Image requires further editing, 3) Working with graphics/text (not photos), or 4) File size isn't a concern. For web photos, use JPEG or modern formats like WebP."
+      },
+      {
+        "question": "Is JPEG to PNG conversion free and secure?",
+        "answer": "Yes, our JPEG to PNG converter is completely free with no registration, watermarks, or payment required. All conversion happens locally in your browser using WebAssembly - your images never leave your device. This ensures 100% privacy and security, with no server uploads, data collection, or third-party access to your files."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Related Tools",
+    "description": "Explore more image conversion and compression tools",
+    "items": [
+      {
+        "title": "PNG to JPEG Converter",
+        "description": "Convert PNG images back to JPEG format",
+        "url": "/converter/convert-png-to-jpg"
+      },
+      {
+        "title": "Compress PNG",
+        "description": "Optimize PNG files for smaller sizes",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPG to WebP Converter",
+        "description": "Convert JPG to modern WebP format",
+        "url": "/converter/convert-jpg-to-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Drag and drop JPEG files here or click to select",
+      "subtitle": "Support JPEG/JPG format, up to {maxFiles} files, max 10MB each",
+      "selectFiles": "Select JPEG Files"
+    },
+    "errors": {
+      "maxFiles": "Maximum {maxFiles} files allowed",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "unsupportedFormat": "Unsupported file format: {fileName}. Only JPEG/JPG files are supported.",
+      "uploadFailed": "File upload failed",
+      "conversionFailed": "Conversion failed. Please try again."
+    },
+    "files": {
+      "title": "Selected JPEG Files",
+      "count": "{count} files selected",
+      "reset": "Reset All",
+      "remove": "Remove",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Convert to PNG",
+      "simpleStart": "Quick Convert JPEG to PNG",
+      "advancedStart": "Convert JPEG to PNG (Advanced)",
+      "processing": "Converting to PNG... {progress}%"
+    },
+    "progress": {
+      "label": "Conversion Progress",
+      "status": "Converting JPEG to PNG... {progress}% complete"
+    },
+    "settings": {
+      "title": "PNG Conversion Settings",
+      "simple": "Simple",
+      "advanced": "Advanced",
+      "simpleTitle": "Quick Settings",
+      "advancedTitle": "Advanced PNG Settings",
+      "compressionLevel": "Compression Level",
+      "compressionFastest": "Fastest (Level 1)",
+      "compressionBalanced": "Balanced (Level 6)",
+      "compressionBest": "Best Compression (Level 9)",
+      "colorDepth": "Color Depth",
+      "colorDepth24": "24-bit RGB",
+      "colorDepth32": "32-bit RGBA (with alpha)",
+      "interlace": "Interlaced PNG",
+      "metadata": "Preserve Metadata",
+      "optimize": "Optimize for Web",
+      "presetFast": "Fast Conversion",
+      "presetFastDesc": "Quick conversion, larger files",
+      "presetBalanced": "Balanced",
+      "presetBalancedDesc": "Good compression, reasonable speed",
+      "presetOptimal": "Maximum Compression",
+      "presetOptimalDesc": "Smallest PNG files, slower conversion"
+    },
+    "downloadAll": "Download All PNG Files",
+    "results": {
+      "title": "PNG Conversion Results",
+      "count": "{count} JPEG files converted to PNG",
+      "sizeInfo": "Original JPEG: {original} MB → PNG: {converted} MB ({change}% increase)",
+      "download": "Download PNG"
+    }
+  }
+}

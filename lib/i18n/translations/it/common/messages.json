@@ -1,0 +1,68 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "byte",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "pixels": "px",
+    "percent": "%",
+    "seconds": "sec",
+    "minutes": "min",
+    "hours": "ore"
+  },
+  "time": {
+    "seconds": "secondi",
+    "minutes": "minuti",
+    "hours": "ore",
+    "days": "giorni",
+    "justNow": "proprio ora",
+    "ago": "fa",
+    "inProgress": "in corso",
+    "estimated": "stimato"
+  },
+  "fileOperations": {
+    "uploading": "Caricamento...",
+    "processing": "Elaborazione...",
+    "downloading": "Scaricamento...",
+    "uploaded": "Caricato",
+    "processed": "Elaborato",
+    "downloaded": "Scaricato",
+    "failed": "Fallito",
+    "cancelled": "Annullato",
+    "paused": "In Pausa",
+    "resumed": "Ripreso"
+  },
+  "validation": {
+    "required": "Questo campo è obbligatorio",
+    "invalidFormat": "Formato non valido",
+    "fileTooLarge": "File troppo grande",
+    "fileTooSmall": "File troppo piccolo",
+    "unsupportedFormat": "Formato file non supportato",
+    "maxFilesExceeded": "Numero massimo file superato",
+    "invalidUrl": "URL non valido",
+    "networkError": "Errore rete verificato"
+  },
+  "status": {
+    "ready": "Pronto",
+    "processing": "Elaborazione",
+    "completed": "Completato",
+    "error": "Errore",
+    "warning": "Avviso",
+    "info": "Informazione",
+    "success": "Successo",
+    "failed": "Fallito",
+    "cancelled": "Annullato",
+    "paused": "In Pausa"
+  }
+}

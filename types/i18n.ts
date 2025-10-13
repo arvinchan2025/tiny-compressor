@@ -4,7 +4,7 @@
  */
 
 // 支持的语言类型
-export type SupportedLanguage = 'en' | 'zh' | 'es' | 'de' | 'fr' | 'ar';
+export type SupportedLanguage = 'en' | 'zh' | 'es' | 'de' | 'fr' | 'ar' | 'ja' | 'ko' | 'pt' | 'ru' | 'it';
 
 // 语言信息接口
 export interface LanguageInfo {

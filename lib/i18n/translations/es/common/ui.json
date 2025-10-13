@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "submit": "Enviar",
+    "download": "Descargar",
+    "upload": "Subir",
+    "remove": "Eliminar",
+    "clear": "Limpiar",
+    "reset": "Restablecer",
+    "apply": "Aplicar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "retry": "Reintentar",
+    "selectAll": "Seleccionar Todo",
+    "deselectAll": "Deseleccionar Todo",
+    "removeSelected": "Eliminar Seleccionados"
+  },
+  "labels": {
+    "quality": "Calidad",
+    "size": "Tamaño",
+    "format": "Formato",
+    "filename": "Nombre de archivo",
+    "dimensions": "Dimensiones",
+    "fileSize": "Tamaño de archivo",
+    "compressionRatio": "Relación de compresión",
+    "processingTime": "Tiempo de procesamiento"
+  },
+  "placeholders": {
+    "search": "Buscar...",
+    "enterFilename": "Ingresar nombre de archivo",
+    "selectFormat": "Seleccionar formato",
+    "selectQuality": "Seleccionar calidad"
+  },
+  "tooltips": {
+    "download": "Descargar archivo",
+    "remove": "Eliminar archivo",
+    "preview": "Vista previa de imagen",
+    "settings": "Abrir configuración",
+    "help": "Mostrar ayuda"
+  },
+  "modals": {
+    "confirm": {
+      "title": "Confirmar Acción",
+      "message": "¿Estás seguro de que quieres continuar?",
+      "yes": "Sí",
+      "no": "No"
+    },
+    "error": {
+      "title": "Error",
+      "message": "Ocurrió un error. Por favor intenta de nuevo."
+    },
+    "success": {
+      "title": "Éxito",
+      "message": "Operación completada exitosamente."
+    }
+  },
+  "fileUploader": {
+    "dragActive": "Suelta archivos aquí",
+    "dragInactive": "Arrastra y suelta archivos aquí o haz clic para seleccionar",
+    "dragReject": "Algunos archivos no se pueden subir",
+    "clickToUpload": "o haz clic para seleccionar archivos",
+    "supportedFormats": "Formatos soportados",
+    "maxSize": "Tamaño máximo",
+    "maxFiles": "Máximo de archivos",
+    "errors": {
+      "fileTooLarge": "El archivo {fileName} es demasiado grande. El tamaño máximo es {maxSize}.",
+      "fileInvalidType": "El archivo {fileName} tiene un tipo inválido. Formatos soportados: {formats}.",
+      "tooManyFiles": "Demasiados archivos. Máximo permitido: {maxFiles}.",
+      "fileRejected": "El archivo {fileName} fue rechazado: {errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "¡{count} archivo(s) subido(s) exitosamente!"
+    }
+  },
+  "tabs": {
+    "simple": "Simple",
+    "advanced": "Avanzado"
+  },
+  "forms": {
+    "required": "Este campo es obligatorio",
+    "optional": "Opcional",
+    "invalidFormat": "Formato inválido",
+    "invalidValue": "Valor inválido"
+  }
+}

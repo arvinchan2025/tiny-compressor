@@ -1,0 +1,36 @@
+{
+  "company": "TinyCompressor",
+  "description": "高速、安全、完全無料のプロフェッショナルグレードの画像圧縮・変換ツール。",
+  "links": {
+    "home": "ホーム",
+    "compressor": "圧縮器",
+    "converter": "コンバーター"
+  },
+  "formats": {
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "png": "PNG"
+  },
+  "legal": {
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "sections": {
+    "quickLinks": "クイックリンク",
+    "formats": "対応フォーマット",
+    "legal": "法的・サポート"
+  },
+  "brand": {
+    "name": "TinyCompressor",
+    "description": "プロフェッショナル画像圧縮・変換ツール"
+  },
+  "social": {
+    "twitter": "Twitterでフォロー",
+    "github": "GitHubを表示"
+  },
+  "copyright": "© {year} TinyCompressor. 全著作権所有。",
+  "madeWith": "で作られた",
+  "by": "作成者：",
+  "author": "TinyCompressorチーム"
+}

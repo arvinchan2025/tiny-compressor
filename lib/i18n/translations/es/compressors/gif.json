@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "Compresor GIF - Comprimir GIFs Animados e Imágenes Online",
+    "description": "Comprime imágenes GIF online con optimización avanzada. Reduce el tamaño de archivo preservando animaciones y calidad. Rápido y gratuito.",
+    "keywords": [
+      "GIF compressor",
+      "animated GIF",
+      "GIF optimization",
+      "image compression",
+      "online tool"
+    ]
+  },
+  "hero": {
+    "title": "GIF Compressor",
+    "subtitle": "Comprime GIFs animados e imágenes estáticas con optimización avanzada",
+    "description": "Compress GIF images online with intelligent optimization that reduces file size while preserving animation quality and visual fidelity.",
+    "badge": "Compresor"
+  },
+  "features": {
+    "title": "Características del Formato GIF",
+    "description": "Por qué GIF sigue siendo popular para animaciones y gráficos simples",
+    "items": [
+      {
+        "icon": "🎬",
+        "title": "Soporte de Animación",
+        "description": "Animaciones basadas en fotogramas con control de tiempo - ideal para gráficos simples en movimiento"
+      },
+      {
+        "icon": "🌍",
+        "title": "Paleta de 256 Colores",
+        "description": "Hasta 256 colores por fotograma con reducción inteligente de paleta para archivos más pequeños"
+      },
+      {
+        "icon": "🎨",
+        "title": "Transparencia de Un Color",
+        "description": "Soporta transparencia de un solo color para bordes limpios en cualquier fondo"
+      },
+      {
+        "icon": "🔄",
+        "title": "Compresión LZW",
+        "description": "Compresión sin pérdida que funciona mejor con colores planos y bordes nítidos"
+      },
+      {
+        "icon": "✨",
+        "title": "Soporte Universal",
+        "description": "100% soporte de navegadores, clientes de correo y plataformas de redes sociales"
+      },
+      {
+        "icon": "📧",
+        "title": "Tamaño de Archivo Pequeño",
+        "description": "Excelente compresión para gráficos simples - a menudo más pequeño que PNG para imágenes de pocos colores"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Cómo Funciona la Compresión GIF",
+    "description": "Comprender los principios técnicos detrás de GIF te ayuda a optimizar animaciones y gráficos simples.",
+    "items": [
+      {
+        "title": "Compresión LZW Sin Pérdida",
+        "description": "GIF usa compresión LZW (Lempel-Ziv-Welch), un algoritmo sin pérdida que funciona mejor con colores planos y bordes nítidos. Es altamente eficiente para gráficos simples, logos e ilustraciones con paletas de color limitadas.",
+        "icon": "🎬",
+        "benefits": [
+          "Compresión sin pérdida para calidad perfecta",
+          "Ideal para gráficos de colores planos",
+          "Excelente para logos e iconos",
+          "Soporte universal en todas las plataformas"
+        ]
+      },
+      {
+        "title": "Paleta de 256 Colores",
+        "description": "GIF soporta hasta 256 colores (8-bit) por fotograma. La reducción inteligente de paleta minimiza la pérdida de calidad visual mientras reduce significativamente el tamaño del archivo.",
+        "icon": "🎨",
+        "benefits": [
+          "Hasta 256 colores por fotograma",
+          "Reducción inteligente de paleta",
+          "Ideal para gráficos simples",
+          "Archivos pequeños para imágenes de pocos colores"
+        ]
+      },
+      {
+        "title": "Optimización de Fotogramas de Animación",
+        "description": "Los GIF animados almacenan solo las diferencias entre fotogramas, reduciendo significativamente el tamaño del archivo. La optimización de fotogramas minimiza la redundancia.",
+        "icon": "🔢",
+        "benefits": [
+          "Almacena solo diferencias entre fotogramas",
+          "Reduce significativamente el tamaño del archivo",
+          "Ideal para animaciones simples",
+          "Soporta bucles infinitos"
+        ]
+      },
+      {
+        "title": "Transparencia de Un Solo Color",
+        "description": "GIF soporta transparencia de un solo color, permitiendo que un color en la paleta sea designado como transparente para bordes limpios en cualquier fondo.",
+        "icon": "✨",
+        "benefits": [
+          "Transparencia de un solo color",
+          "Bordes limpios en cualquier fondo",
+          "Ideal para logos e iconos",
+          "Soporte universal"
+        ]
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+      "subtitle": "Soporta formato {format}, máx 50MB",
+      "selectFiles": "Seleccionar Archivo"
+    },
+    "files": {
+      "title": "Archivos Seleccionados",
+      "count": "{count} archivos",
+      "remove": "Eliminar",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "Comprimir {format}",
+      "processing": "Comprimiendo... {progress}%"
+    },
+    "progress": {
+      "label": "Procesando...",
+      "compressing": "Comprimiendo tu imagen {format}..."
+    },
+    "results": {
+      "title": "¡Compresión completada! 🎉",
+      "subtitle": "Tu imagen ha sido optimizada exitosamente",
+      "original": "Original",
+      "compressed": "Comprimido",
+      "saved": "Ahorrado",
+      "time": "Tiempo",
+      "format": "Formato",
+      "compressionRatio": "Ratio de Compresión",
+      "sizeReduction": "Reducción de Tamaño",
+      "sizeIncrease": "Aumento de Tamaño",
+      "greatJob": "¡Excelente!",
+      "considerAdjusting": "Considera ajustar configuraciones",
+      "savedSpace": "Ahorrado {amount} MB",
+      "successMessage": "¡Gran compresión!",
+      "successDescription": "Tu imagen ahora es {ratio}% más pequeña mientras mantiene excelente calidad. ¡Optimizada para uso web!",
+      "download": "Descargar",
+      "compressMore": "Comprimir Más",
+      "reset": "Reiniciar",
+      "sizeInfo": "Original: {original} MB → Comprimido: {compressed} MB ({ratio}% reducción)"
+    },
+    "settings": {
+      "simple": "Simple",
+      "advanced": "Avanzado",
+      "advancedTitle": "Configuraciones Avanzadas",
+      "quality": "Calidad",
+      "qualityLow": "Baja",
+      "qualityMedium": "Media",
+      "qualityHigh": "Alta",
+      "metadata": "Mantener Metadatos",
+      "metadataDesc": "EXIF, GPS, info de cámara"
+    },
+    "actions": {
+      "downloadAll": "Descargar Todo",
+      "reset": "Reiniciar"
+    },
+    "error": {
+      "title": "Error",
+      "tip": "💡 Consejo: Asegúrate de que tu archivo sea una imagen válida (PNG, JPEG, WebP, AVIF, GIF) y menor a 50MB",
+      "unknownError": "Error desconocido",
+      "processingFailed": "Error al procesar {fileName}",
+      "compressionFailed": "Compresión fallida"
+    },
+    "status": {
+      "starting": "Iniciando compresión...",
+      "processing": "Comprimiendo... {progress}%",
+      "completed": "¡Compresión completada!"
+    }
+  },
+  "useCases": {
+    "title": "Cuándo y Cómo Usar la Compresión GIF",
+    "description": "Escenarios comunes y mejores prácticas para la compresión GIF",
+    "items": [
+      {
+        "title": "Animaciones Simples y Elementos UI",
+        "description": "Perfecto para animaciones simples, indicadores de carga y elementos decorativos.",
+        "content": "El soporte de animación basada en fotogramas de GIF lo hace ideal para crear elementos visuales atractivos como spinners de carga, indicadores de progreso y animaciones decorativas. Perfecto para animaciones simples que no requieren códecs de video. Funciona en todas las plataformas sin necesidad de códecs de video.",
+        "icon": "🎬"
+      },
+      {
+        "title": "Logos e Iconos",
+        "description": "Ideal para logos, iconos y gráficos simples con colores limitados.",
+        "content": "La compresión eficiente de GIF para imágenes de colores planos lo hace perfecto para logos e iconos, especialmente cuando se necesita animación o compatibilidad con sistemas heredados es importante. La paleta de 256 colores es suficiente para la mayoría de logos e iconos.",
+        "icon": "🎨"
+      },
+      {
+        "title": "Ilustraciones y Diagramas",
+        "description": "Excelente para arte lineal, diagramas e ilustraciones de colores planos.",
+        "content": "GIF es excelente para comprimir ilustraciones con colores sólidos y líneas limpias, haciéndolo ideal para infografías, diagramas e ilustraciones técnicas. La compresión sin pérdida asegura nitidez y legibilidad.",
+        "icon": "✏️"
+      },
+      {
+        "title": "Gráficos Web y Componentes UI",
+        "description": "Excelente para gráficos web, botones y componentes de interfaz de usuario.",
+        "content": "El soporte universal de navegadores de GIF y compresión eficiente lo hacen perfecto para elementos UI web y gráficos de interfaz. Usa cuando la compatibilidad con navegadores heredados es importante o se necesita animación simple.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Redes Sociales",
+        "description": "Formato popular para compartir contenido animado en plataformas sociales.",
+        "content": "Las animaciones GIF son ampliamente soportadas en plataformas de redes sociales, haciéndolas perfectas para crear contenido atractivo. Ideal para animaciones cortas en bucle, reacciones y memes visuales.",
+        "icon": "📱"
+      },
+      {
+        "title": "Campañas de Correo",
+        "description": "Formato seguro para contenido animado con soporte universal de clientes de correo.",
+        "content": "GIF es el único formato de imagen animada con soporte casi universal de clientes de correo. Perfecto para banners animados, exhibiciones de productos y llamadas a la acción en boletines de correo.",
+        "icon": "📧"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "Mejores Prácticas",
+    "description": "Consejos para optimizar tus imágenes GIF",
+    "tips": [
+      {
+        "icon": "🎬",
+        "title": "Limita la Paleta de Colores",
+        "content": "Reduce el número de colores a lo mínimo necesario. Menos colores = archivos más pequeños. Para gráficos simples, 16-64 colores suelen ser suficientes."
+      },
+      {
+        "icon": "🎨",
+        "title": "Optimiza Fotogramas de Animación",
+        "content": "Para GIF animados, usa optimización de fotogramas para almacenar solo cambios entre fotogramas. Reduce la tasa de fotogramas y elimina fotogramas innecesarios."
+      },
+      {
+        "icon": "📧",
+        "title": "Usa GIF para Gráficos Simples",
+        "content": "GIF es mejor para gráficos con colores planos y bordes nítidos. Para fotos, usa JPEG o WebP. Para gráficos complejos con muchos colores, considera PNG."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Preguntas comunes sobre la compresión GIF.",
+    "items": [
+      {
+        "question": "¿Cuál es la diferencia entre GIF y otros formatos?",
+        "answer": "GIF soporta animación y transparencia, haciéndolo ideal para gráficos simples con colores limitados y animaciones. PNG ofrece mejor compresión sin pérdida y transparencia alfa pero no soporta animación. JPEG es mejor para fotos pero no soporta transparencia ni animación."
+      },
+      {
+        "question": "¿Cuánto se pueden comprimir los archivos GIF?",
+        "answer": "La compresión GIF varía según la complejidad de la imagen. Gráficos simples con colores limitados pueden lograr reducción de tamaño del 50-80%. Los GIF animados pueden comprimirse en 30-60% mediante optimización de fotogramas y reducción de paleta de colores."
+      },
+      {
+        "question": "¿Debo usar GIF para fotos?",
+        "answer": "GIF no es ideal para fotos debido a su limitación de 256 colores, que puede causar pérdida significativa de calidad y bandas. Usa JPEG (con pérdida) o PNG (sin pérdida) para fotos. GIF es mejor para gráficos con colores limitados y animaciones."
+      },
+      {
+        "question": "¿Cómo optimizo animaciones GIF?",
+        "answer": "Optimiza animaciones GIF reduciendo la paleta de colores, ajustando la tasa de fotogramas, eliminando fotogramas innecesarios y usando optimización de fotogramas que almacena solo diferencias entre fotogramas. Minimizar el dithering y limitar el conteo de bucles puede reducir aún más el tamaño del archivo."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Herramientas Relacionadas",
+    "description": "Explora más herramientas de compresión y conversión de imágenes",
+    "items": [
+      {
+        "title": "Compresor PNG",
+        "description": "Comprime imágenes PNG",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "Compresor WebP",
+        "description": "Comprime imágenes WebP",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Compresor AVIF",
+        "description": "Comprime imágenes AVIF",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "バイト",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "pixels": "px",
+    "percent": "%",
+    "seconds": "秒",
+    "minutes": "分",
+    "hours": "時間"
+  },
+  "time": {
+    "seconds": "秒",
+    "minutes": "分",
+    "hours": "時間",
+    "days": "日",
+    "justNow": "たった今",
+    "ago": "前",
+    "inProgress": "進行中",
+    "estimated": "推定"
+  },
+  "fileOperations": {
+    "uploading": "アップロード中...",
+    "processing": "処理中...",
+    "downloading": "ダウンロード中...",
+    "uploaded": "アップロード完了",
+    "processed": "処理完了",
+    "downloaded": "ダウンロード完了",
+    "failed": "失敗",
+    "cancelled": "キャンセル",
+    "paused": "一時停止",
+    "resumed": "再開"
+  },
+  "validation": {
+    "required": "このフィールドは必須です",
+    "invalidFormat": "無効な形式",
+    "fileTooLarge": "ファイルが大きすぎます",
+    "fileTooSmall": "ファイルが小さすぎます",
+    "unsupportedFormat": "サポートされていないファイル形式",
+    "maxFilesExceeded": "最大ファイル数を超えました",
+    "invalidUrl": "無効なURL",
+    "networkError": "ネットワークエラーが発生しました"
+  },
+  "status": {
+    "ready": "準備完了",
+    "processing": "処理中",
+    "completed": "完了",
+    "error": "エラー",
+    "warning": "警告",
+    "info": "情報",
+    "success": "成功",
+    "failed": "失敗",
+    "cancelled": "キャンセル",
+    "paused": "一時停止"
+  }
+}

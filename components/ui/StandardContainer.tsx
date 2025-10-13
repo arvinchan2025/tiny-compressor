@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { commonSpacing, responsiveSpacing, layoutUtils } from '@/lib/spacing-utils';
 
 interface StandardContainerProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: 'page' | 'content' | 'section' | 'card';
-  size?: 'sm' | 'md' | 'lg' | 'xl';
-  center?: boolean;
+  variant: 'page' | 'content' | 'section' | 'card';
+  size: 'sm' | 'md' | 'lg' | 'xl';
+  center: boolean;
   children: React.ReactNode;
 }
 

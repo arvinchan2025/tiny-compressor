@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "免费在线图像工具",
+    "description": "先进的图像压缩和转换工具，采用前沿算法。在保持完美质量的同时，文件大小最多减少90%。闪电般快速、完全安全、永久免费。",
+    "getStarted": "开始压缩",
+    "learnMore": "尝试转换器",
+    "stats": {
+      "sizeReduction": "最高减小90%",
+      "supportedFormats": "支持16+种格式",
+      "freeSecure": "100%免费且安全",
+      "processingSpeed": "亚秒级处理",
+      "privacy": "客户端本地处理",
+      "reliability": "99.9%可用性"
+    }
+  },
+  "features": {
+    "title": "为什么选择TinyCompressor？",
+    "subtitle": "先进的图像处理技术与友好的用户体验",
+    "free": {
+      "title": "永远100%免费",
+      "description": "无隐藏费用、无订阅、无限制 - 永远完全免费"
+    },
+    "secure": {
+      "title": "隐私优先",
+      "description": "所有处理都在您的浏览器中本地进行 - 您的文件永远不会离开您的设备"
+    },
+    "fast": {
+      "title": "闪电般快速",
+      "description": "基于WebAssembly的优化算法，提供极速处理性能"
+    },
+    "quality": {
+      "title": "专业品质",
+      "description": "先进的算法确保为普通用户和专业人士提供最佳结果"
+    },
+    "global": {
+      "title": "全球可访问性",
+      "description": "支持11种语言，响应式设计适配所有设备"
+    },
+    "mobile": {
+      "title": "移动端优化",
+      "description": "在所有设备上提供完美体验，支持触控友好界面"
+    }
+  },
+  "tools": {
+    "title": "选择您的工具",
+    "subtitle": "为您的图像处理需求提供专业级工具",
+    "statsLabels": {
+      "compression": "压缩率",
+      "formats": "格式",
+      "processing": "处理速度",
+      "quality": "质量",
+      "speed": "速度"
+    },
+    "compressor": {
+      "title": "图像压缩器",
+      "description": "采用前沿技术驱动的先进压缩算法，在保持质量的同时显著减小文件体积",
+      "button": "开始压缩",
+      "features": [
+        "支持PNG、JPG、WebP、AVIF、GIF、BMP",
+        "批量处理多个文件",
+        "实时预览的高级质量控制",
+        "无损和有损压缩选项",
+        "元数据保存和移除",
+        "自定义压缩设置"
+      ],
+      "stats": {
+        "compression": "高达90%",
+        "formats": "6+种格式",
+        "processing": "< 3秒"
+      }
+    },
+    "converter": {
+      "title": "图像转换器",
+      "description": "使用专业级算法在不同图像格式之间进行精确快速的转换",
+      "button": "开始转换",
+      "features": [
+        "10+种格式之间的格式转换",
+        "质量保持算法",
+        "批量处理功能",
+        "多种输出格式选项",
+        "颜色空间转换",
+        "透明度处理"
+      ],
+      "stats": {
+        "formats": "10+种格式",
+        "quality": "无损",
+        "speed": "即时"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "工作原理",
+    "subtitle": "简单、快速、安全的图像处理，只需三个简单步骤",
+    "steps": [
+      {
+        "title": "上传图像",
+        "description": "拖拽或点击上传您的图像。支持批量上传。",
+        "details": "支持所有主要格式，即时预览"
+      },
+      {
+        "title": "选择设置",
+        "description": "选择压缩级别、质量或目标格式，实时预览。",
+        "details": "专业结果的高级选项"
+      },
+      {
+        "title": "处理与下载",
+        "description": "即刻获得优化后的图像，附带详细的压缩统计信息。",
+        "details": "支持批量下载，文件结构有序"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "适用于各种场景",
+    "subtitle": "从网页开发到社交媒体，为任何用途优化图像",
+    "categories": [
+      {
+        "title": "网页开发",
+        "description": "优化网站图像以提升加载速度和用户体验",
+        "icon": "🌐"
+      },
+      {
+        "title": "移动应用",
+        "description": "为iOS和Android应用优化图像资源",
+        "icon": "📱"
+      },
+      {
+        "title": "电子商务",
+        "description": "压缩产品图像以改善在线商店性能",
+        "icon": "🛒"
+      },
+      {
+        "title": "社交媒体",
+        "description": "为各种平台优化社交媒体图像",
+        "icon": "📢"
+      },
+      {
+        "title": "设计工作",
+        "description": "为设计师和创意专业人士优化工作流程",
+        "icon": "🎨"
+      },
+      {
+        "title": "内容创作",
+        "description": "为博客、新闻和内容平台优化图像",
+        "icon": "📝"
+      }
+    ]
+  },
+  "cta": {
+    "title": "准备优化您的图像了吗？",
+    "description": "加入数百万信赖TinyCompressor图像处理工具的用户。立即开始优化您的图像，体验显著差异！",
+    "getStarted": "立即开始",
+    "learnMore": "了解更多"
+  }
+}

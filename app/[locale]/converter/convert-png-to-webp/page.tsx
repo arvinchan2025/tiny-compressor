@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import ConverterPageLayout from '@/components/layout/ConverterPageLayout';
+import ConvertPngToWebpClient from './ConvertPngToWebpClient';
 
 interface ConvertPngToWebpPageProps {
   params: {
@@ -12,25 +12,14 @@ export async function generateMetadata({ params }: ConvertPngToWebpPageProps): P
   const { locale } = params;
   
   return {
-    title: 'PNG to WebP Converter - Convert PNG Images to WebP Online',
-    description: 'Free online PNG to WebP converter. Convert PNG images to WebP format with high quality. No registration required.',
-    keywords: 'PNG to WebP, convert PNG, PNG converter, WebP converter',
-    openGraph: {
-      title: 'PNG to WebP Converter - Convert PNG Images to WebP Online',
-      description: 'Free online PNG to WebP converter. Convert PNG images to WebP format with high quality.',
-      type: 'website',
-    },
+    title: 'PNG to WebP Converter - Free Online Image Format Converter',
+    description: 'Convert PNG to WebP online for free! Superior compression and modern web optimization. Fast, secure, and completely private conversion.',
+    keywords: 'PNG to WebP, convert PNG, image converter, free online converter, WebP converter'
   };
 }
 
 export default function ConvertPngToWebpPage({ params }: ConvertPngToWebpPageProps) {
-  const { locale } = params;
-  
   return (
-    <ConverterPageLayout
-      locale={locale}
-      sourceFormat="png"
-      targetFormat="webp"
-    />
+    <ConvertPngToWebpClient locale={params.locale} />
   );
 }

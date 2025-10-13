@@ -8,12 +8,12 @@ import StandardCard from './StandardCard';
 interface SuccessStateProps {
   title: string;
   message: string;
-  action?: {
+  action: {
     label: string;
     onClick: () => void;
   };
-  onDismiss?: () => void;
-  className?: string;
+  onDismiss: () => void;
+  className: string;
 }
 
 export default function StandardSuccessState({

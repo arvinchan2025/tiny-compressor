@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
-import ConverterPageLayout from '@/components/layout/ConverterPageLayout';
+import ConvertWebpToJpgClient from './ConvertWebpToJpgClient';
 
 interface ConvertWebpToJpgPageProps {
   params: {
@@ -12,25 +12,14 @@ export async function generateMetadata({ params }: ConvertWebpToJpgPageProps): P
   const { locale } = params;
   
   return {
-    title: 'WebP to JPG Converter - Convert WebP Images to JPG Online',
-    description: 'Free online WebP to JPG converter. Convert WebP images to JPG format with high quality. No registration required.',
-    keywords: 'WebP to JPG, convert WebP, WebP converter, JPG converter',
-    openGraph: {
-      title: 'WebP to JPG Converter - Convert WebP Images to JPG Online',
-      description: 'Free online WebP to JPG converter. Convert WebP images to JPG format with high quality.',
-      type: 'website',
-    },
+    title: 'WebP to JPG Converter - Free Online Image Format Converter',
+    description: 'Convert WebP to JPG online for free! Universal compatibility and broader support. Fast, secure, and completely private conversion.',
+    keywords: 'WebP to JPG, convert WebP, image converter, free online converter, JPG converter'
   };
 }
 
 export default function ConvertWebpToJpgPage({ params }: ConvertWebpToJpgPageProps) {
-  const { locale } = params;
-  
   return (
-    <ConverterPageLayout
-      locale={locale}
-      sourceFormat="webp"
-      targetFormat="jpg"
-    />
+    <ConvertWebpToJpgClient locale={params.locale} />
   );
 }

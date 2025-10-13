@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "PNG 压缩 - 在线免费压缩 PNG 图片",
+    "description": "使用我们的免费 PNG 压缩器在线压缩 PNG 图片。在保持质量的同时减少 PNG 文件大小。快速、安全且易于使用。",
+    "keywords": "PNG 压缩器, 压缩 PNG, PNG 优化, 减少 PNG 大小, 在线 PNG 压缩器, 免费 PNG 压缩器"
+  },
+  "hero": {
+    "title": "PNG 图片压缩器",
+    "description": "使用我们的先进压缩技术在线压缩 PNG 图片。在保持质量和透明度的同时减少文件大小。",
+    "subtitle": "使用我们的先进压缩技术在线压缩 PNG 图片。在保持质量和透明度的同时减少文件大小。",
+    "badge": "压缩器"
+  },
+  "formatInfo": {
+    "description": "PNG（Portable Network Graphics）是一种支持无损数据压缩和透明度的光栅图形文件格式。"
+  },
+  "features": {
+    "title": "PNG 格式功能",
+    "description": "为什么 PNG 是图形和 Web 图像的黄金标准",
+    "items": [
+      {
+        "icon": "🔒",
+        "title": "无损质量",
+        "description": "零质量损失 - 使用 DEFLATE 压缩完美保留每个像素"
+      },
+      {
+        "icon": "✨",
+        "title": "Alpha 透明度",
+        "description": "完全 Alpha 通道支持，具有 256 级透明度，可实现平滑边缘"
+      },
+      {
+        "icon": "📐",
+        "title": "清晰的边缘",
+        "description": "非常适合文本、徽标和图形 - 无压缩伪影或模糊"
+      },
+      {
+        "icon": "🎨",
+        "title": "真彩色支持",
+        "description": "24 位 RGB（1670 万色）或带优化的索引调色板（2-256 色）"
+      },
+      {
+        "icon": "🎯",
+        "title": "调色板优化",
+        "description": "智能色彩减少到 8 位索引模式，文件小 50-70%"
+      },
+      {
+        "icon": "📦",
+        "title": "丰富的元数据",
+        "description": "基于块的结构支持色彩配置文件、伽玛、文本注释"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "PNG 压缩原理",
+    "description": "了解 PNG 压缩背后的技术原理可帮助您对图像做出明智的决策。",
+    "items": [
+      {
+        "title": "无损压缩算法",
+        "description": "PNG 使用 DEFLATE 压缩算法，这是一种无损数据压缩方法，可以在不损失任何图像质量或透明度信息的情况下减少文件大小。该算法通过查找图像数据中的重复模式并将其替换为更短的代码来工作。",
+        "icon": "🔒",
+        "benefits": [
+          "零质量损失 - 完美重建",
+          "非常适合图形和徽标",
+          "保留 Alpha 通道透明度",
+          "适合需要精确再现的图像"
+        ]
+      },
+      {
+        "title": "高级过滤系统",
+        "description": "PNG 采用复杂的过滤系统，在压缩之前对图像数据进行预处理。过滤器根据相邻像素预测像素值，通过减少数据流中的冗余显著提高压缩效率。",
+        "icon": "⚡",
+        "benefits": [
+          "压缩比提高最多 30%",
+          "针对不同图像类型的自适应过滤",
+          "为摄影和图形内容优化",
+          "行业标准实现"
+        ]
+      },
+      {
+        "title": "色彩调色板优化",
+        "description": "PNG 支持多种色彩模式，包括索引色（调色板）、灰度和真彩色。高级调色板优化技术在保持视觉保真度的同时减少颜色数量，从而产生更小的文件大小。",
+        "icon": "🎨",
+        "benefits": [
+          "简单图像的自动色彩减少",
+          "用更少的颜色保持视觉质量",
+          "支持 8 位、24 位和 32 位色深",
+          "为简单和复杂图像优化"
+        ]
+      },
+      {
+        "title": "基于块的结构",
+        "description": "PNG 文件使用模块化的基于块的结构，允许元数据存储、色彩管理和渐进式加载。这种设计支持伽玛校正、色彩配置文件和文本注释等高级功能。",
+        "icon": "📦",
+        "benefits": [
+          "灵活的元数据处理",
+          "色彩管理支持",
+          "渐进式加载功能",
+          "可扩展的格式设计"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "何时以及如何使用 PNG 压缩",
+    "description": "PNG 压缩的常见场景和最佳实践",
+    "items": [
+      {
+        "title": "Web 图形和 UI 设计",
+        "description": "具有透明度的徽标、图标和界面元素。",
+        "content": "PNG 是 Web 图形的黄金标准。对具有 Alpha 透明度的徽标和 UI 元素使用 PNG-32（目标 <200KB）。对具有有限颜色（2-256 色）的简单图标使用 PNG-8 - 可以实现 50-70% 更小的文件。避免对没有透明度的照片使用 PNG - 改用 JPEG 或 WebP 以获得 50-80% 更小的文件。",
+        "icon": "🌐"
+      },
+      {
+        "title": "屏幕截图和文档",
+        "description": "软件界面、教程和技术内容。",
+        "content": "PNG 完美保留文本清晰度和清晰边缘 - 对屏幕截图至关重要。对文档图像使用无损压缩。对于 Web 发布，目标每个屏幕截图小于 200KB。如果更大，请考虑拆分为多个图像或对屏幕截图中的照片使用有损压缩（质量 85-90）。",
+        "icon": "📄"
+      },
+      {
+        "title": "数字艺术和插图",
+        "description": "艺术作品、矢量风格插图和扁平设计。",
+        "content": "PNG 在减少文件大小的同时保持艺术作品的完整性。对具有有限颜色（最多 256）的插图使用 PNG-8 - 可实现 60-80% 的减少。对具有渐变的复杂艺术作品使用 PNG-24。对于没有透明度的艺术作品，请考虑使用 WebP 以获得具有无损质量的 25-35% 更好的压缩。",
+        "icon": "🎨"
+      },
+      {
+        "title": "移动应用开发",
+        "description": "应用图标、启动画面和 UI 元素。",
+        "content": "PNG 在 iOS 和 Android 上得到普遍支持。对具有透明度的应用图标和启动画面使用 PNG-32。在压缩之前优化到确切的所需尺寸（例如 iOS 图标为 1024×1024）。将类似资产分组并应用一致的压缩设置，以在整个应用中实现统一质量。",
+        "icon": "📱"
+      },
+      {
+        "title": "游戏开发和资产",
+        "description": "具有透明度的精灵、纹理和 2D 游戏资产。",
+        "content": "PNG 对于需要透明度的游戏精灵和 UI 元素至关重要。对像素艺术和简单精灵（2-256 色）使用 PNG-8。对具有 Alpha 透明度的复杂精灵使用 PNG-32。使用一致的设置批量处理类似资产。考虑纹理图集以减少文件数量并提高加载性能。",
+        "icon": "🎮"
+      },
+      {
+        "title": "电子商务产品图片",
+        "description": "具有透明背景的产品照片。",
+        "content": "PNG 使产品图像可以在任何背景颜色上使用。对具有柔和阴影或渐变透明度的产品使用 PNG-32。目标每个产品图像小于 200KB 以实现快速页面加载。对于没有透明度的照片，使用 JPEG（小 50-80%）或 WebP（小 25-35%）以获得更好的性能和转化率。",
+        "icon": "🛒"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 PNG 压缩和我们的 PNG 压缩器工具的常见问题。",
+    "items": [
+      {
+        "question": "什么是 PNG 压缩，它是如何工作的？",
+        "answer": "PNG 压缩是一种无损数据压缩方法，可以在不损失任何图像质量或透明度信息的情况下减少文件大小。它使用 DEFLATE 算法与高级过滤相结合来识别和消除冗余数据模式，在保持完美图像保真度的同时产生更小的文件大小。"
+      },
+      {
+        "question": "我可以压缩 PNG 文件多少？",
+        "answer": "压缩比因图像内容和复杂性而异。具有有限颜色的简单图形可以实现 70-90% 的大小减少，而复杂照片可能只会看到 10-30% 的减少。由于额外的 Alpha 通道数据，具有透明度的图像通常比纯色背景压缩得少。"
+      },
+      {
+        "question": "PNG 压缩会影响图像质量或透明度吗？",
+        "answer": "不会，PNG 使用无损压缩，这意味着压缩和解压后图像质量、颜色和透明度信息保持完全相同。每个像素都被完美保留，使 PNG 成为图形、徽标和需要精确再现的图像的理想选择。"
+      },
+      {
+        "question": "我应该何时使用 PNG 而不是 JPEG 或其他格式？",
+        "answer": "对具有透明度的图形、徽标、图标、带有文本的屏幕截图、具有实色的数字艺术以及需要无损质量的任何图像使用 PNG。JPEG 由于更高的压缩比而更适合照片，而 WebP 为 Web 使用提供更好的压缩，但通用支持较少。"
+      },
+      {
+        "question": "我可以压缩具有透明度和 Alpha 通道的 PNG 文件吗？",
+        "answer": "是的，PNG 压缩可以完美保留透明度和 Alpha 通道信息。这使 PNG 成为 Web 图形、UI 元素、徽标以及需要在不同背景颜色上使用或需要透明效果的任何图像的首选格式。"
+      },
+      {
+        "question": "使用您的工具压缩 PNG 需要多长时间？",
+        "answer": "我们的 PNG 压缩器通常在 3 秒内处理图像，即使对于最大 10MB 的大文件也是如此。处理时间取决于文件大小、复杂性和设备的处理能力。所有压缩都在您的浏览器中本地进行，以获得最大的隐私和速度。"
+      },
+      {
+        "question": "PNG 压缩的最佳实践是什么？",
+        "answer": "最佳实践包括：使用适当的色深（简单图形为 8 位，照片为 24 位，透明度为 32 位）、优化色彩调色板、删除不必要的元数据、调整到所需的确切尺寸以及测试不同的压缩设置以找到文件大小和质量之间的最佳平衡。"
+      },
+      {
+        "question": "我可以压缩的 PNG 文件数量有限制吗？",
+        "answer": "我们的工具支持同时批量处理多个 PNG 文件。虽然没有严格的限制，但我们建议以 20-50 的批次处理文件以获得最佳性能。每个文件最大可达 10MB，所有处理都在您的浏览器中本地进行。"
+      },
+      {
+        "question": "PNG 压缩与其他图像格式相比如何？",
+        "answer": "PNG 提供具有透明度支持的无损压缩，使其非常适合图形和 Web 使用。与 JPEG 相比，PNG 的照片文件大小更大，但保持完美质量。WebP 提供更好的压缩，但浏览器支持较少。PNG 仍然是需要透明度和无损质量的图形的黄金标准。"
+      },
+      {
+        "question": "我可以将压缩的 PNG 文件用于商业用途吗？",
+        "answer": "是的，所有压缩的 PNG 文件都保持其原始许可，可以用于任何目的，包括商业用途。我们的压缩过程不会在您的图像中添加任何水印或限制。压缩的文件在质量上与原件相同，只是文件大小更小。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "相关工具",
+    "description": "探索更多图像压缩和转换工具",
+    "items": [
+      {
+        "title": "JPEG 压缩器",
+        "description": "为 Web 和移动端压缩 JPEG 图片",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP 压缩器",
+        "description": "压缩 WebP 图片",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "AVIF 压缩器",
+        "description": "压缩 AVIF 图片",
+        "url": "/compressor/compress-avif"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将文件拖放到此处或点击选择",
+      "subtitle": "支持 {format} 格式，最大 50MB",
+      "selectFiles": "选择文件"
+    },
+    "files": {
+      "title": "已选择的文件",
+      "count": "{count} 个文件",
+      "remove": "移除",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "压缩 {format}",
+      "processing": "正在压缩... {progress}%"
+    },
+    "progress": {
+      "label": "处理中...",
+      "compressing": "正在压缩您的 {format} 图像..."
+    },
+    "results": {
+      "title": "压缩完成！🎉",
+      "subtitle": "您的图像已成功优化",
+      "original": "原始",
+      "compressed": "已压缩",
+      "saved": "已节省",
+      "time": "时间",
+      "format": "格式",
+      "compressionRatio": "压缩比",
+      "sizeReduction": "大小减少",
+      "sizeIncrease": "大小增加",
+      "greatJob": "做得好！",
+      "considerAdjusting": "考虑调整设置",
+      "savedSpace": "已节省 {amount} MB",
+      "successMessage": "压缩效果很好！",
+      "successDescription": "您的图像现在小了 {ratio}%，同时保持出色的质量。已为 Web 使用优化！",
+      "download": "下载",
+      "compressMore": "压缩更多",
+      "reset": "重置",
+      "sizeInfo": "原始：{original} MB → 已压缩：{compressed} MB（{ratio}% 减少）"
+    },
+    "settings": {
+      "simple": "简单",
+      "advanced": "高级",
+      "advancedTitle": "高级设置",
+      "quality": "质量",
+      "qualityLow": "低",
+      "qualityMedium": "中",
+      "qualityHigh": "高",
+      "metadata": "保留元数据",
+      "metadataDesc": "EXIF、GPS、相机信息"
+    },
+    "actions": {
+      "downloadAll": "全部下载",
+      "reset": "重置"
+    },
+    "error": {
+      "title": "错误",
+      "tip": "💡 提示：确保您的文件是有效的图像（PNG、JPEG、WebP、AVIF、GIF）且小于 50MB",
+      "unknownError": "未知错误",
+      "processingFailed": "处理 {fileName} 失败",
+      "compressionFailed": "压缩失败"
+    },
+    "status": {
+      "starting": "开始压缩...",
+      "processing": "压缩中... {progress}%",
+      "completed": "压缩完成！"
+    }
+  }
+}

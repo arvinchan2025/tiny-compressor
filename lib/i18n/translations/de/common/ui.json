@@ -1,0 +1,88 @@
+{
+  "buttons": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "submit": "Absenden",
+    "download": "Herunterladen",
+    "upload": "Hochladen",
+    "remove": "Entfernen",
+    "clear": "Löschen",
+    "reset": "Zurücksetzen",
+    "apply": "Anwenden",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige",
+    "retry": "Wiederholen",
+    "selectAll": "Alle Auswählen",
+    "deselectAll": "Alle Abwählen",
+    "removeSelected": "Ausgewählte Entfernen"
+  },
+  "labels": {
+    "quality": "Qualität",
+    "size": "Größe",
+    "format": "Format",
+    "filename": "Dateiname",
+    "dimensions": "Abmessungen",
+    "fileSize": "Dateigröße",
+    "compressionRatio": "Kompressionsverhältnis",
+    "processingTime": "Verarbeitungszeit"
+  },
+  "placeholders": {
+    "search": "Suchen...",
+    "enterFilename": "Dateinamen eingeben",
+    "selectFormat": "Format auswählen",
+    "selectQuality": "Qualität auswählen"
+  },
+  "tooltips": {
+    "download": "Datei herunterladen",
+    "remove": "Datei entfernen",
+    "preview": "Bild vorschauen",
+    "settings": "Einstellungen öffnen",
+    "help": "Hilfe anzeigen"
+  },
+  "modals": {
+    "confirm": {
+      "title": "Aktion Bestätigen",
+      "message": "Sind Sie sicher, dass Sie fortfahren möchten?",
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "error": {
+      "title": "Fehler",
+      "message": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "success": {
+      "title": "Erfolg",
+      "message": "Operation erfolgreich abgeschlossen."
+    }
+  },
+  "fileUploader": {
+    "dragActive": "Dateien hier ablegen",
+    "dragInactive": "Ziehen Sie Dateien hierher",
+    "dragReject": "Einige Dateien können nicht hochgeladen werden",
+    "clickToUpload": "oder klicken Sie zum Auswählen von Dateien",
+    "supportedFormats": "Unterstützte Formate",
+    "maxSize": "Max Größe",
+    "maxFiles": "Max Dateien",
+    "errors": {
+      "fileTooLarge": "Datei {fileName} ist zu groß. Maximale Größe ist {maxSize}.",
+      "fileInvalidType": "Datei {fileName} hat einen ungültigen Typ. Unterstützte Formate: {formats}.",
+      "tooManyFiles": "Zu viele Dateien. Maximal erlaubt: {maxFiles}.",
+      "fileRejected": "Datei {fileName} wurde abgelehnt: {errorMessage}"
+    },
+    "messages": {
+      "uploadSuccess": "{count} Datei{plural} erfolgreich hochgeladen!"
+    }
+  },
+  "tabs": {
+    "simple": "Einfach",
+    "advanced": "Erweitert"
+  },
+  "forms": {
+    "required": "Dieses Feld ist erforderlich",
+    "optional": "Optional",
+    "invalidFormat": "Ungültiges Format",
+    "invalidValue": "Ungültiger Wert"
+  }
+}

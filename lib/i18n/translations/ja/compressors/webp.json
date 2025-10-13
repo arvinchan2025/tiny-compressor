@@ -1,0 +1,279 @@
+{
+  "seo": {
+    "title": "WebP圧縮 - WebP画像をオンラインで無料圧縮",
+    "description": "無料のWebP圧縮ツールでWebP画像をオンラインで圧縮します。品質を維持しながらWebPファイルサイズを削減します。高速、安全、使いやすい。",
+    "keywords": "WebP圧縮、WebP圧縮、WebP最適化、WebPサイズ削減、オンラインWebP圧縮、無料WebP圧縮"
+  },
+  "hero": {
+    "title": "WebP画像圧縮",
+    "description": "高度な圧縮技術でWebP画像をオンラインで圧縮します。品質と透明度を維持しながらファイルサイズを削減します。",
+    "subtitle": "高度な圧縮技術でWebP画像をオンラインで圧縮します。品質と透明度を維持しながらファイルサイズを削減します。",
+    "badge": "圧縮"
+  },
+  "formatInfo": {
+    "description": "WebPは、Googleによって開発されたモダン画像形式で、ロッシーおよびロスレス圧縮の両方をサポートし、JPEGおよびPNGと比較して優れた圧縮効率を提供します。"
+  },
+  "features": {
+    "title": "WebP形式の特徴",
+    "description": "WebPがWebパフォーマンスのモダンな選択である理由",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "優れた圧縮",
+        "description": "同じ品質でJPEGより25-35%小さい、PNGより25%小さい"
+      },
+      {
+        "icon": "🔄",
+        "title": "デュアル圧縮モード",
+        "description": "1つの形式でロッシー (写真用) とロスレス (グラフィック用) の両方"
+      },
+      {
+        "icon": "✨",
+        "title": "効率的なアルファチャネル",
+        "description": "PNGよりはるかに優れた透明度圧縮 - 特に段階的アルファに"
+      },
+      {
+        "icon": "🎬",
+        "title": "アニメーションサポート",
+        "description": "アニメーションWebPファイルはより良い品質でGIFより30-50%小さい"
+      },
+      {
+        "icon": "🌐",
+        "title": "95%+ブラウザサポート",
+        "description": "Chrome、Firefox、Safari、Edge - 2020年以降すべてのモダンブラウザでサポート"
+      },
+      {
+        "icon": "🎯",
+        "title": "シャープネス制御",
+        "description": "より小さいサイズで知覚品質を維持するための組み込みシャープネスパラメータ (0-7)"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "WebP圧縮の仕組み",
+    "description": "WebP圧縮の背後にある技術的原理を理解することは、画像について情報に基づいた決定を下すのに役立ちます。",
+    "items": [
+      {
+        "title": "VP8/VP9コーデック",
+        "description": "WebPは画像に適合されたGoogleのVP8/VP9ビデオコーデック技術を使用し、優れた圧縮を提供します。",
+        "icon": "🎥",
+        "benefits": [
+          "高度なアルゴリズム",
+          "より良い圧縮",
+          "将来性のある技術"
+        ]
+      },
+      {
+        "title": "予測コーディング",
+        "description": "WebPは予測コーディングを使用して冗長性を削減し、より高い圧縮率を実現します。",
+        "icon": "🔮",
+        "benefits": [
+          "効率的な圧縮",
+          "品質保持",
+          "スマート予測"
+        ]
+      },
+      {
+        "title": "ロスレスおよびロッシーモード",
+        "description": "WebPは異なるユースケースのためにロスレスおよびロッシー圧縮モードの両方をサポートします。",
+        "icon": "🔄",
+        "benefits": [
+          "柔軟な圧縮オプション",
+          "グラフィックにはロスレス",
+          "写真にはロッシー",
+          "両方の世界のベスト"
+        ]
+      },
+      {
+        "title": "アルファチャネル圧縮",
+        "description": "WebPは画像データと一緒に透明度情報を効率的に圧縮し、アルファチャネルを持つ画像でPNGより小さいファイルサイズを提供します。",
+        "icon": "✨",
+        "benefits": [
+          "効率的な透明度圧縮",
+          "アルファ付きPNGより小さい",
+          "完全な透明度サポート",
+          "Webグラフィック用に最適化"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "WebP圧縮を使用する場合",
+    "description": "WebP圧縮は、優れた圧縮が必要なモダンWebアプリケーションとシナリオに最適です。",
+    "items": [
+      {
+        "title": "モダンWebサイト",
+        "description": "より速い読み込み時間とより良いパフォーマンスを必要とするサイトに最適です。",
+        "content": "WebPは良好な視覚的品質と透明度サポートを維持しながらWeb画像に優れた圧縮を提供します。",
+        "icon": "🌐"
+      },
+      {
+        "title": "モバイルアプリケーション",
+        "description": "帯域幅とストレージが限られているモバイルアプリに最適です。",
+        "content": "WebPの優れた圧縮は、アプリサイズを削減し、モバイルデバイスでの読み込みパフォーマンスを改善するのに役立ちます。",
+        "icon": "📱"
+      },
+      {
+        "title": "eコマース",
+        "description": "速く読み込み、良く見える必要がある製品画像に最適です。",
+        "content": "WebP圧縮は、より良いユーザー体験のために品質を維持しながら製品画像の高速読み込みを保証します。",
+        "icon": "🛒"
+      },
+      {
+        "title": "ソーシャルメディア",
+        "description": "大量の画像を処理するソーシャルメディアプラットフォームに優れています。",
+        "content": "WebPは帯域幅コストを削減し、ソーシャルメディアプラットフォームでユーザー体験を改善するのに役立ちます。",
+        "icon": "📢"
+      },
+      {
+        "title": "プログレッシブWebアプリ",
+        "description": "異なるデバイス間で効率的に機能する必要があるPWAに最適です。",
+        "content": "WebPのモダン機能と圧縮効率は、プログレッシブWebアプリケーションに最適です。",
+        "icon": "⚡"
+      },
+      {
+        "title": "コンテンツデリバリーネットワーク",
+        "description": "最小限の帯域幅使用を必要とする最適化されたCDNコンテンツ配信に最適です。",
+        "content": "WebPは視覚的品質を維持しながらJPEG/PNGと比較してCDNコストを25-35%削減します。その広範なブラウザサポート (95%+) は、自動形式ネゴシエーションでグローバルコンテンツ配信に最適です。",
+        "icon": "🌍"
+      }
+    ]
+  },
+  "bestPractices": {
+    "title": "WebP圧縮のベストプラクティス",
+    "description": "WebP圧縮から最良の結果を得るために、これらの専門家のヒントに従ってください。",
+    "tips": [
+      {
+        "icon": "🔄",
+        "title": "デュアル圧縮モードを活用",
+        "content": "UIグラフィック、ロゴ、スクリーンショットにはWebPロスレスを使用してください—通常PNGより25%小さいです。写真には品質80-90のWebPロッシーを使用して、同等の品質でJPEGより25-35%優れた圧縮を実現します。WebPのアルファ透明度圧縮は、特に段階的な透明度を持つ画像でPNGよりはるかに優れています。"
+      },
+      {
+        "icon": "⚡",
+        "title": "Webパフォーマンスゲインを最大化",
+        "content": "WebPはJPEG/PNGと比較して総ページ重量を30-50%削減できます。大きい画像 (>100KB)、ヒーロー画像、製品写真の変換を優先してください。WebPの組み込みシャープネスパラメータ (0-7) を使用して、より小さいファイルサイズで知覚品質を維持します。モバイルデータ使用量を大幅に削減するためにレスポンシブ画像にWebPを検討してください。"
+      },
+      {
+        "icon": "🌐",
+        "title": "プログレッシブエンハンスメントを実装",
+        "content": "WebPは95%+のユーザーによってサポートされています (2020年以降すべてのモダンブラウザ)。WebPとJPEG/PNGフォールバックで<picture>要素を使用してユニバーサル互換性を実現します。メールにはWebPを避けてください (限定的なクライアントサポート) およびプラットフォームがすべてのコンテキストでWebPをサポートしていない可能性があるためソーシャルメディア共有のサムネイルにはJPEG/PNGを使用してください。"
+      },
+      {
+        "icon": "📦",
+        "title": "スマートバッチ変換戦略",
+        "content": "一貫したパフォーマンス改善のために画像ライブラリ全体をWebPに変換します。コンテンツ画像にはロッシー品質80-85、ヒーロー/フィーチャー画像には85-90、ブランド資産にはロスレスを使用してください。WebPの圧縮は高度な知覚最適化により異なる画面で異なって見える可能性があるため、異なるデバイスで視覚的品質を監視してください。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "WebP圧縮と当社のWebP圧縮ツールに関する一般的な質問。",
+    "items": [
+      {
+        "question": "WebPはJPEGより優れていますか？",
+        "answer": "WebPは通常、透明度サポートに加えて、同等またはより良い品質で JPEGより25-35%優れた圧縮を提供します。"
+      },
+      {
+        "question": "すべてのブラウザがWebPをサポートしていますか？",
+        "answer": "ほとんどのモダンブラウザはWebPをサポートしています。古いブラウザの場合、フォールバック形式を提供する必要があります。"
+      },
+      {
+        "question": "すべての画像にWebPを使用すべきですか？",
+        "answer": "WebPはWeb使用に最適ですが、オーディエンスのブラウザサポートを考慮し、必要に応じてフォールバックを提供してください。"
+      },
+      {
+        "question": "WebPの使用は安全ですか？",
+        "answer": "はい、WebP圧縮はブラウザ内で完全に行われます。画像はローカルに処理され、サーバーにアップロードされることはなく、完全なプライバシーとセキュリティが保証されます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "その他のツールを探索",
+    "items": [
+      {
+        "title": "JPEG圧縮",
+        "description": "JPEG画像を圧縮",
+        "path": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "PNG変換",
+        "description": "PNG形式に変換",
+        "path": "/converter/convert-webp-to-png"
+      },
+      {
+        "title": "画像変換",
+        "description": "異なる画像形式間で変換",
+        "path": "/converter"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "{format}形式をサポート、最大50MB",
+      "selectFiles": "ファイルを選択"
+    },
+    "files": {
+      "title": "選択されたファイル",
+      "count": "{count}ファイル",
+      "remove": "削除",
+      "sizeInfo": "{size} MB"
+    },
+    "compress": {
+      "start": "{format}を圧縮",
+      "processing": "圧縮中... {progress}%"
+    },
+    "progress": {
+      "label": "処理中...",
+      "compressing": "{format}画像を圧縮中..."
+    },
+    "results": {
+      "title": "圧縮完了！🎉",
+      "subtitle": "画像が正常に最適化されました",
+      "original": "元",
+      "compressed": "圧縮済み",
+      "saved": "節約",
+      "time": "時間",
+      "format": "形式",
+      "compressionRatio": "圧縮率",
+      "sizeReduction": "サイズ削減",
+      "sizeIncrease": "サイズ増加",
+      "greatJob": "素晴らしい仕事！",
+      "considerAdjusting": "設定の調整を検討してください",
+      "savedSpace": "{amount} MB節約",
+      "successMessage": "素晴らしい圧縮！",
+      "successDescription": "画像は優れた品質を維持しながら{ratio}%小さくなりました。Web使用用に最適化されました！",
+      "download": "ダウンロード",
+      "compressMore": "もっと圧縮",
+      "reset": "リセット",
+      "sizeInfo": "元: {original} MB → 圧縮済み: {compressed} MB ({ratio}%削減)"
+    },
+    "settings": {
+      "simple": "シンプル",
+      "advanced": "詳細",
+      "advancedTitle": "詳細設定",
+      "quality": "品質",
+      "qualityLow": "低",
+      "qualityMedium": "中",
+      "qualityHigh": "高",
+      "metadata": "メタデータを保持",
+      "metadataDesc": "EXIF、GPS、カメラ情報"
+    },
+    "actions": {
+      "downloadAll": "すべてダウンロード",
+      "reset": "リセット"
+    },
+    "error": {
+      "title": "エラー",
+      "tip": "💡ヒント: ファイルが有効な画像 (PNG、JPEG、WebP、AVIF、GIF) で50MB未満であることを確認してください",
+      "unknownError": "不明なエラー",
+      "processingFailed": "{fileName}の処理に失敗しました",
+      "compressionFailed": "圧縮に失敗しました"
+    },
+    "status": {
+      "starting": "圧縮を開始中...",
+      "processing": "圧縮中... {progress}%",
+      "completed": "圧縮完了！"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "TinyCompressor",
+    "subtitle": "무료 온라인 이미지 도구",
+    "description": "최첨단 알고리즘으로 구동되는 고급 이미지 압축 및 변환 도구. 완벽한 품질을 유지하면서 파일 크기를 최대 90%까지 줄입니다. 번개처럼 빠르고, 완전히 안전하며, 영원히 무료입니다.",
+    "getStarted": "압축 시작",
+    "learnMore": "변환기 사용해보기",
+    "stats": {
+      "sizeReduction": "최대 90% 크기 감소",
+      "supportedFormats": "16+ 지원 형식",
+      "freeSecure": "100% 무료 및 안전",
+      "processingSpeed": "서브 초 처리",
+      "privacy": "클라이언트 측 처리",
+      "reliability": "99.9% 가동 시간"
+    }
+  },
+  "features": {
+    "title": "왜 TinyCompressor를 선택해야 할까요?",
+    "subtitle": "사용자 친화적 기능을 갖춘 고급 이미지 처리 기술",
+    "free": {
+      "title": "영원히 100% 무료",
+      "description": "숨겨진 비용 없음, 구독 없음, 제한 없음 - 영원히 완전 무료"
+    },
+    "secure": {
+      "title": "개인정보 보호 우선",
+      "description": "모든 처리는 브라우저에서 로컬로 수행됩니다 - 파일이 기기를 떠나지 않습니다"
+    },
+    "fast": {
+      "title": "번개처럼 빠름",
+      "description": "WebAssembly로 구동되는 최적화된 알고리즘으로 최고의 처리 속도 제공"
+    },
+    "quality": {
+      "title": "전문가 품질",
+      "description": "고급 알고리즘으로 일반 사용자와 전문가 모두에게 최적의 결과 보장"
+    },
+    "global": {
+      "title": "글로벌 접근성",
+      "description": "11개 언어로 제공되며 모든 기기에서 반응형 디자인"
+    },
+    "mobile": {
+      "title": "모바일 최적화",
+      "description": "터치 친화적 인터페이스로 모든 기기에서 완벽한 경험"
+    }
+  },
+  "tools": {
+    "title": "도구 선택",
+    "subtitle": "이미지 처리 요구사항을 위한 전문가급 도구",
+    "statsLabels": {
+      "compression": "압축률",
+      "formats": "형식",
+      "processing": "처리 속도",
+      "quality": "품질",
+      "speed": "속도"
+    },
+    "compressor": {
+      "title": "이미지 압축기",
+      "description": "최첨단 기술로 구동되는 고급 압축 알고리즘을 사용하여 품질을 유지하면서 파일 크기 줄이기",
+      "button": "압축 시작",
+      "features": [
+        "PNG, JPG, WebP, AVIF, GIF, BMP 지원",
+        "여러 파일 일괄 처리",
+        "실시간 미리보기가 있는 고급 품질 제어",
+        "무손실 및 손실 압축 옵션",
+        "메타데이터 보존 및 제거",
+        "사용자 정의 압축 설정"
+      ],
+      "stats": {
+        "compression": "최대 90%",
+        "formats": "6+ 형식",
+        "processing": "< 3초"
+      }
+    },
+    "converter": {
+      "title": "이미지 변환기",
+      "description": "전문가급 알고리즘을 사용하여 다양한 이미지 형식 간의 정밀하고 빠른 변환",
+      "button": "변환 시작",
+      "features": [
+        "10+ 형식 간 형식 변환",
+        "품질 보존 알고리즘",
+        "일괄 처리 기능",
+        "다양한 출력 형식 옵션",
+        "색상 공간 변환",
+        "투명도 처리"
+      ],
+      "stats": {
+        "formats": "10+ 형식",
+        "quality": "무손실",
+        "speed": "즉시"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "작동 방식",
+    "subtitle": "세 가지 간단한 단계로 간단하고 빠르며 안전한 이미지 처리",
+    "steps": [
+      {
+        "title": "이미지 업로드",
+        "description": "드래그 앤 드롭하거나 클릭하여 이미지를 업로드합니다. 일괄 업로드 지원.",
+        "details": "모든 주요 형식을 지원하며 즉시 미리보기"
+      },
+      {
+        "title": "설정 선택",
+        "description": "압축 수준, 품질 또는 대상 형식을 선택하고 실시간 미리보기.",
+        "details": "전문적인 결과를 위한 고급 옵션"
+      },
+      {
+        "title": "처리 및 다운로드",
+        "description": "몇 초 안에 최적화된 이미지를 받고 즉시 다운로드.",
+        "details": "일괄 다운로드 및 처리 통계"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "사용 사례",
+    "subtitle": "TinyCompressor의 다양한 산업 및 애플리케이션에서의 실제 용도 탐색",
+    "categories": [
+      {
+        "title": "웹 개발",
+        "description": "로딩 속도와 사용자 경험을 향상시키기 위한 웹사이트 이미지 최적화",
+        "icon": "🌐"
+      },
+      {
+        "title": "모바일 앱",
+        "description": "iOS 및 Android 앱용 이미지 리소스 최적화",
+        "icon": "📱"
+      },
+      {
+        "title": "전자상거래",
+        "description": "온라인 스토어 성능 향상을 위한 제품 이미지 압축",
+        "icon": "🛒"
+      },
+      {
+        "title": "소셜 미디어",
+        "description": "다양한 플랫폼용 소셜 미디어 이미지 최적화",
+        "icon": "📢"
+      },
+      {
+        "title": "디자인 작업",
+        "description": "디자이너와 크리에이티브 전문가의 워크플로우 최적화",
+        "icon": "🎨"
+      },
+      {
+        "title": "콘텐츠 제작",
+        "description": "블로그, 뉴스 및 콘텐츠 플랫폼용 이미지 최적화",
+        "icon": "📝"
+      }
+    ]
+  },
+  "cta": {
+    "title": "이미지를 최적화할 준비가 되셨나요?",
+    "description": "우리의 이미지 처리 도구를 신뢰하는 수백만 사용자에 합류하세요",
+    "getStarted": "지금 시작하기",
+    "learnMore": "더 알아보기"
+  }
+}

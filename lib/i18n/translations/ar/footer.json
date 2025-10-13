@@ -1,0 +1,36 @@
+{
+  "company": "TinyCompressor",
+  "description": "أدوات ضغط وتحويل الصور الاحترافية السريعة والآمنة والمجانية تماماً.",
+  "links": {
+    "home": "الرئيسية",
+    "compressor": "ضاغط",
+    "converter": "محول"
+  },
+  "formats": {
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "png": "PNG"
+  },
+  "legal": {
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الخدمة"
+  },
+  "sections": {
+    "quickLinks": "روابط سريعة",
+    "formats": "التنسيقات المدعومة",
+    "legal": "القانونية والدعم"
+  },
+  "brand": {
+    "name": "TinyCompressor",
+    "description": "أدوات ضغط وتحويل الصور الاحترافية"
+  },
+  "social": {
+    "twitter": "تابعنا على تويتر",
+    "github": "عرض GitHub الخاص بنا"
+  },
+  "copyright": "© {year} TinyCompressor. جميع الحقوق محفوظة.",
+  "madeWith": "صُنع بـ",
+  "by": "بواسطة",
+  "author": "فريق TinyCompressor"
+}

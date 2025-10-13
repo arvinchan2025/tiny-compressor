@@ -20,7 +20,7 @@ export interface CompressionOptions {
   quality: number;
   maxWidth?: number;
   maxHeight?: number;
-  format?: 'jpeg' | 'png' | 'webp' | 'avif' | 'gif';
+  format?: 'jpeg' | 'png' | 'webp' | 'avif' | 'gif' | 'heic';
   keepMetadata?: boolean;
   progressive?: boolean;
   // JPEG specific options
@@ -56,6 +56,13 @@ export interface CompressionOptions {
     optimizationLevel: number;
     optimizeFrames: boolean;
     colors: number;
+  };
+  // HEIC specific options
+  heicOptions?: {
+    quality: number;
+    lossless: boolean;
+    colorSpace: 'srgb' | 'p3' | 'rec2020';
+    speed: number;
   };
 }
 
@@ -140,6 +147,14 @@ export const SUPPORTED_FORMATS: ImageFormat[] = [
     mimeType: 'image/gif',
     description: 'Animation support, limited colors',
     features: ['Animation', 'Transparency', 'Limited colors'],
+    supported: true
+  },
+  {
+    name: 'HEIC',
+    extension: '.heic',
+    mimeType: 'image/heic',
+    description: 'Apple\'s efficient image format',
+    features: ['Lossy/Lossless', 'Small file size', 'Apple devices'],
     supported: true
   }
 ];

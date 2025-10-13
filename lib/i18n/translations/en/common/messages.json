@@ -1,0 +1,74 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "pixels": "px",
+    "percent": "%",
+    "seconds": "sec",
+    "minutes": "min",
+    "hours": "hr"
+  },
+  "time": {
+    "seconds": "seconds",
+    "minutes": "minutes",
+    "hours": "hours",
+    "days": "days",
+    "justNow": "just now",
+    "ago": "ago",
+    "inProgress": "in progress",
+    "estimated": "estimated"
+  },
+  "fileOperations": {
+    "uploading": "Uploading...",
+    "processing": "Processing...",
+    "downloading": "Downloading...",
+    "uploaded": "Uploaded",
+    "processed": "Processed",
+    "downloaded": "Downloaded",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "paused": "Paused",
+    "resumed": "Resumed"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidFormat": "Invalid format",
+    "fileTooLarge": "File is too large",
+    "fileTooSmall": "File is too small",
+    "unsupportedFormat": "Unsupported file format",
+    "maxFilesExceeded": "Maximum number of files exceeded",
+    "invalidUrl": "Invalid URL",
+    "networkError": "Network error occurred"
+  },
+  "status": {
+    "ready": "Ready",
+    "processing": "Processing",
+    "completed": "Completed",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information",
+    "success": "Success",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "paused": "Paused"
+  }
+}
+
+
+
+
+
+

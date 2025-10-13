@@ -1,0 +1,41 @@
+{
+  "company": "TinyCompressor",
+  "description": "专业级图像压缩和转换工具，快速、安全、完全免费。",
+  "links": {
+    "home": "首页",
+    "compressor": "压缩器",
+    "converter": "转换器"
+  },
+  "formats": {
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "png": "PNG"
+  },
+  "legal": {
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "sections": {
+    "quickLinks": "快速链接",
+    "formats": "支持的格式",
+    "legal": "法律与支持"
+  },
+  "brand": {
+    "name": "TinyCompressor",
+    "description": "专业图像压缩和转换工具"
+  },
+  "social": {
+    "twitter": "在Twitter上关注我们",
+    "github": "查看我们的GitHub"
+  },
+  "copyright": "© {year} TinyCompressor. 保留所有权利。",
+  "madeWith": "用",
+  "by": "制作，作者：",
+  "author": "TinyCompressor团队"
+}
+
+
+
+
+

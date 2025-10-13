@@ -1,0 +1,68 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "بايت",
+    "kb": "كيلوبايت",
+    "mb": "ميجابايت",
+    "gb": "جيجابايت",
+    "pixels": "بكسل",
+    "percent": "%",
+    "seconds": "ثانية",
+    "minutes": "دقيقة",
+    "hours": "ساعة"
+  },
+  "time": {
+    "seconds": "ثوانٍ",
+    "minutes": "دقائق",
+    "hours": "ساعات",
+    "days": "أيام",
+    "justNow": "الآن",
+    "ago": "منذ",
+    "inProgress": "قيد التقدم",
+    "estimated": "متوقع"
+  },
+  "fileOperations": {
+    "uploading": "جاري التحميل...",
+    "processing": "جاري المعالجة...",
+    "downloading": "جاري التنزيل...",
+    "uploaded": "تم التحميل",
+    "processed": "تمت المعالجة",
+    "downloaded": "تم التنزيل",
+    "failed": "فشل",
+    "cancelled": "ملغي",
+    "paused": "متوقف مؤقتًا",
+    "resumed": "مستأنف"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "invalidFormat": "تنسيق غير صالح",
+    "fileTooLarge": "الملف كبير جدًا",
+    "fileTooSmall": "الملف صغير جدًا",
+    "unsupportedFormat": "تنسيق ملف غير مدعوم",
+    "maxFilesExceeded": "تم تجاوز الحد الأقصى لعدد الملفات",
+    "invalidUrl": "رابط URL غير صالح",
+    "networkError": "حدث خطأ في الشبكة"
+  },
+  "status": {
+    "ready": "جاهز",
+    "processing": "جاري المعالجة",
+    "completed": "مكتمل",
+    "error": "خطأ",
+    "warning": "تحذير",
+    "info": "معلومات",
+    "success": "نجح",
+    "failed": "فشل",
+    "cancelled": "ملغي",
+    "paused": "متوقف مؤقتًا"
+  }
+}

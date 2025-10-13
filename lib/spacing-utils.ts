@@ -3,7 +3,9 @@
  * 提供统一的间距计算和布局工具
  */
 
-import { spacing } from './design-system';
+import designSystem from './design-system';
+
+const { spacing } = designSystem;
 
 // 间距类型
 export type SpacingScale = keyof typeof spacing;

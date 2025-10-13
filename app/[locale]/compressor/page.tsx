@@ -1,7 +1,7 @@
 import { SupportedLanguage } from '@/types/i18n';
-import CompressorNavigation from '@/components/compressor/CompressorNavigation';
-import PageLayout from '@/components/layout/PageLayout';
+import UnifiedClient from '@/components/UnifiedClient';
 import { Metadata } from 'next';
+import { SUPPORTED_LANGUAGES } from '@/lib/language-config';
 
 interface CompressorPageProps {
   params: {
@@ -11,7 +11,7 @@ interface CompressorPageProps {
 
 export async function generateMetadata({ params }: CompressorPageProps): Promise<Metadata> {
   const { locale } = params;
-  const validLocale: SupportedLanguage = ['en', 'zh', 'es', 'de', 'fr', 'ar'].includes(locale)
+  const validLocale: SupportedLanguage = SUPPORTED_LANGUAGES.includes(locale as SupportedLanguage)
     ? (locale as SupportedLanguage)
     : 'en';
 
@@ -45,6 +45,31 @@ export async function generateMetadata({ params }: CompressorPageProps): Promise
       title: "ضاغط الصور - أداة الضغط المجانية عبر الإنترنت | TinyCompressor",
       description: "اضغط الصور مجاناً عبر الإنترنت! قلل حجم ملفات JPG، PNG، WebP، AVIF، GIF بنسبة تصل إلى 90% مع الحفاظ على الجودة. ضغط ذكي مع معالجة مجمعة. لا يتطلب تسجيل.",
       keywords: "ضاغط الصور, ضغط الصور, تقليل حجم الملف, ضغط JPG, ضغط PNG, ضغط WebP, ضغط AVIF, ضغط GIF, ضغط مجمع, محسن الصور عبر الإنترنت, أداة ضغط الصور المجانية"
+    },
+    ja: {
+      title: "画像圧縮ツール - 無料オンライン圧縮ツール | TinyCompressor",
+      description: "画像を無料でオンライン圧縮！JPG、PNG、WebP、AVIF、GIFファイルサイズを品質を保ちながら最大90%削減。スマート圧縮とバッチ処理。登録不要。",
+      keywords: "画像圧縮ツール, 画像圧縮, ファイルサイズ削減, JPG圧縮, PNG圧縮, WebP圧縮, AVIF圧縮, GIF圧縮, バッチ圧縮, オンライン画像最適化, 無料画像圧縮ツール"
+    },
+    ko: {
+      title: "이미지 압축기 - 무료 온라인 압축 도구 | TinyCompressor",
+      description: "이미지를 무료로 온라인 압축! 품질을 유지하면서 JPG, PNG, WebP, AVIF, GIF 파일 크기를 최대 90%까지 줄입니다. 스마트 압축과 배치 처리. 등록 불필요.",
+      keywords: "이미지 압축기, 이미지 압축, 파일 크기 줄이기, JPG 압축, PNG 압축, WebP 압축, AVIF 압축, GIF 압축, 배치 압축, 온라인 이미지 최적화, 무료 이미지 압축 도구"
+    },
+    pt: {
+      title: "Compressor de Imagens - Ferramenta Gratuita de Compressão Online | TinyCompressor",
+      description: "Comprima imagens online gratuitamente! Reduza o tamanho dos arquivos JPG, PNG, WebP, AVIF, GIF em até 90% mantendo a qualidade. Compressão inteligente com processamento em lote. Não requer registro.",
+      keywords: "compressor de imagens, comprimir imagens, reduzir tamanho arquivo, compressão JPG, compressão PNG, compressão WebP, compressão AVIF, compressão GIF, compressão em lote, otimizador imagem online, ferramenta gratuita compressão imagem"
+    },
+    ru: {
+      title: "Компрессор изображений - Бесплатный онлайн инструмент сжатия | TinyCompressor",
+      description: "Сжимайте изображения онлайн бесплатно! Уменьшайте размеры файлов JPG, PNG, WebP, AVIF, GIF до 90% сохраняя качество. Умное сжатие с пакетной обработкой. Регистрация не требуется.",
+      keywords: "компрессор изображений, сжатие изображений, уменьшение размера файла, сжатие JPG, сжатие PNG, сжатие WebP, сжатие AVIF, сжатие GIF, пакетное сжатие, онлайн оптимизатор изображений, бесплатный инструмент сжатия изображений"
+    },
+    it: {
+      title: "Compressore di Immagini - Strumento Gratuito di Compressione Online | TinyCompressor",
+      description: "Comprimi immagini online gratuitamente! Riduci le dimensioni dei file JPG, PNG, WebP, AVIF, GIF fino al 90% mantenendo la qualità. Compressione intelligente con elaborazione batch. Nessuna registrazione richiesta.",
+      keywords: "compressore di immagini, comprimere immagini, ridurre dimensione file, compressione JPG, compressione PNG, compressione WebP, compressione AVIF, compressione GIF, compressione batch, ottimizzatore immagini online, strumento gratuito compressione immagini"
     }
   };
 
@@ -72,13 +97,15 @@ export async function generateMetadata({ params }: CompressorPageProps): Promise
 
 export default async function CompressorPage({ params }: CompressorPageProps) {
   const { locale } = params;
-  const validLocale: SupportedLanguage = ['en', 'zh', 'es', 'de', 'fr', 'ar'].includes(locale)
+  const validLocale: SupportedLanguage = SUPPORTED_LANGUAGES.includes(locale as SupportedLanguage)
     ? (locale as SupportedLanguage)
     : 'en';
 
   return (
-    <PageLayout locale={validLocale}>
-      <CompressorNavigation locale={validLocale} />
-    </PageLayout>
+    <UnifiedClient 
+      locale={validLocale} 
+      pageType="navigation"
+      sourceFormat="compressor"
+    />
   );
 }

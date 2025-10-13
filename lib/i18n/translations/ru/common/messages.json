@@ -1,0 +1,68 @@
+{
+  "fileTypes": {
+    "png": "PNG",
+    "jpg": "JPG",
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "gif": "GIF",
+    "bmp": "BMP",
+    "tiff": "TIFF",
+    "svg": "SVG"
+  },
+  "units": {
+    "bytes": "байт",
+    "kb": "КБ",
+    "mb": "МБ",
+    "gb": "ГБ",
+    "pixels": "пкс",
+    "percent": "%",
+    "seconds": "сек",
+    "minutes": "мин",
+    "hours": "ч"
+  },
+  "time": {
+    "seconds": "секунд",
+    "minutes": "минут",
+    "hours": "часов",
+    "days": "дней",
+    "justNow": "только что",
+    "ago": "назад",
+    "inProgress": "в процессе",
+    "estimated": "оценочно"
+  },
+  "fileOperations": {
+    "uploading": "Загрузка...",
+    "processing": "Обработка...",
+    "downloading": "Скачивание...",
+    "uploaded": "Загружено",
+    "processed": "Обработано",
+    "downloaded": "Скачано",
+    "failed": "Не удалось",
+    "cancelled": "Отменено",
+    "paused": "Приостановлено",
+    "resumed": "Возобновлено"
+  },
+  "validation": {
+    "required": "Это поле обязательно",
+    "invalidFormat": "Неверный формат",
+    "fileTooLarge": "Файл слишком большой",
+    "fileTooSmall": "Файл слишком маленький",
+    "unsupportedFormat": "Неподдерживаемый формат файла",
+    "maxFilesExceeded": "Превышено максимальное количество файлов",
+    "invalidUrl": "Неверный URL",
+    "networkError": "Произошла ошибка сети"
+  },
+  "status": {
+    "ready": "Готово",
+    "processing": "Обработка",
+    "completed": "Завершено",
+    "error": "Ошибка",
+    "warning": "Предупреждение",
+    "info": "Информация",
+    "success": "Успех",
+    "failed": "Не удалось",
+    "cancelled": "Отменено",
+    "paused": "Приостановлено"
+  }
+}

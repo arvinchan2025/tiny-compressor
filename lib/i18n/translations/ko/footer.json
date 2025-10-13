@@ -1,0 +1,36 @@
+{
+  "company": "TinyCompressor",
+  "description": "빠르고 안전하며 완전히 무료인 전문급 이미지 압축 및 변환 도구입니다.",
+  "links": {
+    "home": "홈",
+    "compressor": "압축기",
+    "converter": "변환기"
+  },
+  "formats": {
+    "jpeg": "JPEG",
+    "webp": "WebP",
+    "avif": "AVIF",
+    "png": "PNG"
+  },
+  "legal": {
+    "privacy": "개인정보처리방침",
+    "terms": "서비스 약관"
+  },
+  "sections": {
+    "quickLinks": "빠른 링크",
+    "formats": "지원 형식",
+    "legal": "법적 및 지원"
+  },
+  "brand": {
+    "name": "TinyCompressor",
+    "description": "전문 이미지 압축 및 변환 도구"
+  },
+  "social": {
+    "twitter": "Twitter에서 팔로우",
+    "github": "GitHub 보기"
+  },
+  "copyright": "© {year} TinyCompressor. 모든 권리 보유.",
+  "madeWith": "로 제작됨",
+  "by": "제작자:",
+  "author": "TinyCompressor 팀"
+}

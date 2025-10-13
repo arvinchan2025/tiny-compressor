@@ -1,0 +1,277 @@
+{
+  "seo": {
+    "title": "WebP zu JPG Konverter - WebP Bilder Online Konvertieren",
+    "description": "Konvertieren Sie WebP-Bilder online in JPG-Format. Kostenloser, schneller und einfach zu bedienender WebP zu JPG Konverter.",
+    "keywords": "WebP zu JPG, WebP konvertieren, Bildkonverter, Online-Tool"
+  },
+  "hero": {
+    "title": "WebP zu JPG Konverter",
+    "subtitle": "Konvertieren Sie WebP-Bilder online in JPG-Format",
+    "description": "Konvertieren Sie WebP-Bilder in JPG-Format für universelle Kompatibilität und weitverbreitete Nutzung auf allen Plattformen und Geräten."
+  },
+  "features": {
+    "title": "WebP zu JPG Konvertierungsfunktionen",
+    "description": "Warum WebP zu JPG für maximale Kompatibilität konvertieren",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "Universelle Kompatibilität",
+        "description": "JPG funktioniert überall - 100% Browser- und Geräte-Unterstützung"
+      },
+      {
+        "icon": "📧",
+        "title": "E-Mail & Soziale Medien",
+        "description": "Perfekt für E-Mails, soziale Medien und Legacy-Systeme"
+      },
+      {
+        "icon": "🖨️",
+        "title": "Druckfertig",
+        "description": "JPG ist das Standardformat für Druck und professionelle Nutzung"
+      },
+      {
+        "icon": "💾",
+        "title": "Kleiner als PNG",
+        "description": "JPG bietet bessere Kompression als PNG für Fotos"
+      },
+      {
+        "icon": "⚡",
+        "title": "Batch-Konvertierung",
+        "description": "Konvertieren Sie mehrere WebP-Dateien gleichzeitig in JPG"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Sicher",
+        "description": "Alle Konvertierungen erfolgen lokal in Ihrem Browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "WebP vs JPG Formatvergleich",
+    "subtitle": "Die Unterschiede zwischen WebP- und JPG-Formaten verstehen",
+    "webp": {
+      "description": "WebP ist ein modernes Bildformat, das überlegene Kompression im Vergleich zu JPG bietet.",
+      "features": [
+        "Bessere Kompression",
+        "Transparenz-Unterstützung",
+        "Modernes Format",
+        "95%+ Browser-Unterstützung"
+      ]
+    },
+    "jpg": {
+      "description": "JPG (JPEG) ist das am weitesten verbreitete Bildformat mit universeller Kompatibilität.",
+      "features": [
+        "Universelle Kompatibilität",
+        "100% Browser-Unterstützung",
+        "Weitverbreitet unterstützt",
+        "Industriestandard"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Wie WebP zu JPG Konvertierung Funktioniert",
+    "description": "Den technischen Prozess der Konvertierung zu universellem JPG verstehen",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "WebP-Dekompression & JPG-Neukodierung",
+        "description": "WebPs VP8/VP9 komprimierte Daten werden vollständig dekomprimiert, dann mit JPGs DCT (Diskrete Kosinus-Transformation) Kompression neu kodiert für maximale Kompatibilität.",
+        "benefits": [
+          "Vollständige WebP-Dekompression",
+          "JPG DCT-Neukodierung",
+          "Qualität erhalten",
+          "Universelle Kompatibilität gewonnen"
+        ]
+      },
+      {
+        "icon": "⚠️",
+        "title": "Qualitätsüberlegungen",
+        "description": "Wenn ursprüngliches WebP verlustbehaftet war, erhält Konvertierung zu JPG aktuelle Qualität, kann aber verlorene Daten nicht wiederherstellen. Verlustfreies WebP konvertiert zu JPG mit minimalem Qualitätsverlust (JPG ist immer verlustbehaftet).",
+        "benefits": [
+          "Verlustbehaftetes WebP → Qualität eingefroren",
+          "Verlustfreies WebP → leichter Qualitätsverlust",
+          "Keine zusätzliche Degradation",
+          "Einstellbare JPG-Qualität"
+        ]
+      },
+      {
+        "icon": "❌",
+        "title": "Transparenzverlust",
+        "description": "JPG unterstützt keine Transparenz. WebPs Alphakanal wird während Konvertierung entfernt, transparente Bereiche werden mit Volltonfarbe gefüllt (typischerweise weiß oder schwarz).",
+        "benefits": [
+          "Transparenz entfernt",
+          "Hintergrundfarbe hinzugefügt",
+          "Kleinere Dateigröße",
+          "Universelle Kompatibilität"
+        ]
+      },
+      {
+        "icon": "🌍",
+        "title": "Maximale Kompatibilität",
+        "description": "JPG hat 100% universelle Unterstützung in allen Browsern (seit 1995), E-Mail-Clients, sozialen Medien, Drucksoftware und Geräten. Das sicherste Format für garantierte Kompatibilität.",
+        "benefits": [
+          "100% Browser-Unterstützung",
+          "Alle E-Mail-Clients",
+          "Social Media kompatibel",
+          "Druckfertiges Format"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Wann & Wie WebP zu JPG Konvertieren",
+    "description": "Häufige Szenarien und Best Practices für WebP zu JPG Konvertierung",
+    "items": [
+      {
+        "icon": "📧",
+        "title": "E-Mail-Marketing & Newsletter",
+        "description": "Stellen Sie sicher, dass Bilder in allen E-Mail-Clients angezeigt werden.",
+        "content": "Konvertieren Sie WebP zu JPG für E-Mail-Kampagnen und Newsletter. Viele E-Mail-Clients unterstützen WebP nicht (Outlook, Apple Mail, Gmail). JPG gewährleistet universelle Anzeige. Verwenden Sie Qualität 85-90 für gute Balance. Unverzichtbar für Transaktions-E-Mails, Marketing-Kampagnen und E-Mail-Signaturen. JPG ist die einzige sichere Wahl für E-Mail-Bilder."
+      },
+      {
+        "icon": "📱",
+        "title": "Soziale Medien & Teilen",
+        "description": "Maximieren Sie Kompatibilität über soziale Plattformen.",
+        "content": "Konvertieren Sie WebP zu JPG für Social-Media-Uploads. Während große Plattformen WebP unterstützen, gewährleistet JPG Kompatibilität über alle Plattformen und ältere App-Versionen. Verwenden Sie Qualität 85-90 für soziale Medien. Unverzichtbar für Profilbilder, Cover-Fotos und geteilte Inhalte. JPG ist universell unterstützt und verarbeitet auf einigen Plattformen schneller."
+      },
+      {
+        "icon": "🖥️",
+        "title": "Legacy-System-Unterstützung",
+        "description": "Kompatibilität mit älteren Browsern und Software.",
+        "content": "Konvertieren Sie WebP zu JPG für Systeme mit älteren Browsern (IE11, Safari <14, Chrome <85). Unverzichtbar für Enterprise-Umgebungen, Regierungs-Websites und Anwendungen für ältere Geräte. JPG hat 100% Browser-Unterstützung seit 1995. Wenn Ihre Analytics >5% Nutzer auf alten Browsern zeigen, liefern Sie JPG statt WebP."
+      },
+      {
+        "icon": "🖨️",
+        "title": "Druck & Professionelle Nutzung",
+        "description": "Bereiten Sie Bilder für Druck und professionelle Anwendungen vor.",
+        "content": "Konvertieren Sie WebP zu JPG für Druck-Workflows. Die meiste Drucksoftware erwartet JPG, TIFF oder PNG. JPG ist der Standard für Fotodruck und professionelle Anwendungen. Verwenden Sie Qualität 90-95 für Druck. Unverzichtbar für Broschüren, Visitenkarten, Poster und professionellen Druck. Starten Sie mit höchster verfügbarer WebP-Qualität."
+      },
+      {
+        "icon": "🎨",
+        "title": "Design-Deliverables",
+        "description": "Kunden-Deliverables und universelles Datei-Sharing.",
+        "content": "Konvertieren Sie WebP zu JPG für Kunden-Deliverables und Datei-Sharing. JPG ist universell anerkannt und öffnet in aller Software ohne Plugins. Verwenden Sie Qualität 85-95 je nach Anwendungsfall. Unverzichtbar für Design-Übergaben, Kunden-Präsentationen und Datei-Sharing, wo Empfänger-Software unbekannt ist. JPG ist die sichere Standardwahl."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Wann WebP Behalten",
+        "description": "Szenarien, in denen WebP die bessere Wahl ist.",
+        "content": "Behalten Sie WebP, wenn: 1) Nur moderne Browser anvisiert (95%+ Unterstützung), 2) Web-Performance kritisch ist (25-35% kleiner als JPG), 3) Transparenz benötigt wird (JPG unterstützt sie nicht), 4) Progressive Verbesserung verwendet wird (WebP → JPG-Fallback). WebP glänzt für moderne Web-Apps. Verwenden Sie JPG für E-Mails, Druck, Legacy-Systeme und universelle Kompatibilität."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "description": "Häufige Fragen zur WebP zu JPG Konvertierung",
+    "items": [
+      {
+        "question": "Warum WebP zu JPG konvertieren, wenn WebP besser ist?",
+        "answer": "Konvertieren Sie WebP zu JPG für universelle Kompatibilität. Während WebP 95%+ Browser-Unterstützung hat, hat JPG 100% Unterstützung in allen Browsern (seit 1995), E-Mail-Clients, sozialen Medien, Drucksoftware und Geräten. JPG ist unverzichtbar für E-Mails, Druck-Workflows, ältere Browser und Szenarien, wo garantierte Kompatibilität wichtiger ist als Dateigröße."
+      },
+      {
+        "question": "Wird die Konvertierung von WebP zu JPG die Bildqualität beeinflussen?",
+        "answer": "Qualität hängt vom ursprünglichen WebP ab: 1) Verlustbehaftetes WebP → JPG: Aktuelle Qualität erhalten, kein zusätzlicher Verlust bei Verwendung hoher JPG-Qualität (85-95). 2) Verlustfreies WebP → JPG: Leichter Qualitätsverlust, da JPG immer verlustbehaftet ist, aber typischerweise nicht wahrnehmbar bei Qualität 90-95. Verwenden Sie höchste JPG-Qualitätseinstellung für beste Ergebnisse."
+      },
+      {
+        "question": "Was passiert mit Transparenz beim Konvertieren von WebP zu JPG?",
+        "answer": "JPG unterstützt keine Transparenz. Während Konvertierung werden transparente Bereiche mit Vollton-Hintergrundfarbe gefüllt (typischerweise weiß oder schwarz). Wenn Ihr WebP Transparenz hat, erwägen Sie Konvertierung zu PNG stattdessen, um sie zu erhalten. Für Fotos ohne wichtige Transparenz ist JPG in Ordnung und resultiert in kleineren Dateien als PNG."
+      },
+      {
+        "question": "Wie vergleichen sich Dateigrößen zwischen WebP und JPG?",
+        "answer": "WebP ist typischerweise 25-35% kleiner als JPG bei gleichwertiger Qualität. Konvertierung von WebP zu JPG wird Dateigröße erhöhen. Zum Beispiel könnte ein 500KB WebP 650-750KB als JPG werden. Diese Größenzunahme ist der Kompromiss für universelle Kompatibilität. JPGs größere Größe ist akzeptabel für E-Mails, Druck und Szenarien, wo Kompatibilität kritisch ist."
+      },
+      {
+        "question": "Welche Browser und Software unterstützen JPG-Format?",
+        "answer": "JPG hat 100% universelle Unterstützung. Unterstützt von allen Browsern seit 1995, allen E-Mail-Clients, allen Social-Media-Plattformen, aller Design-Software, allen Betriebssystemen und allen Bild-Viewern. JPG ist das kompatibelste jemals erstellte Bildformat. Es ist die sichere Wahl, wenn Sie garantierte Kompatibilität über alle Plattformen und Geräte benötigen."
+      },
+      {
+        "question": "Ist die WebP zu JPG Konvertierung kostenlos und sicher?",
+        "answer": "Ja, unser WebP zu JPG Konverter ist vollständig kostenlos ohne Registrierung, Wasserzeichen oder Zahlungsanforderung. Alle Konvertierungen erfolgen lokal in Ihrem Browser mit WebAssembly - Ihre Bilder verlassen niemals Ihr Gerät. Dies gewährleistet 100% Privatsphäre und Sicherheit, ohne Server-Uploads, Datenerfassung oder Drittanbieter-Zugriff. WebP-Dekodierung und JPG-Kodierung werden vollständig client-seitig durchgeführt."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Verwandte Tools",
+    "description": "Entdecken Sie mehr Bildkonvertierungs- und Komprimierungswerkzeuge",
+    "items": [
+      {
+        "title": "JPG zu WebP Konverter",
+        "description": "Konvertieren Sie JPG-Bilder in modernes WebP-Format",
+        "url": "/converter/convert-jpg-to-webp"
+      },
+      {
+        "title": "JPG Komprimieren",
+        "description": "Optimieren Sie JPG-Dateien für kleinere Größen",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP Komprimieren",
+        "description": "Optimieren Sie WebP-Dateien weiter",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Ziehen Sie WebP-Dateien hierher oder klicken Sie zum Auswählen",
+      "subtitle": "Unterstützt WebP-Format, bis zu {maxFiles} Dateien, max 10MB je Datei",
+      "selectFiles": "WebP-Dateien Auswählen"
+    },
+    "errors": {
+      "maxFiles": "Maximal {maxFiles} Dateien erlaubt",
+      "fileTooLarge": "Datei {fileName} ist zu groß, bitte wählen Sie Dateien kleiner als 10MB",
+      "unsupportedFormat": "Nicht unterstütztes Dateiformat: {fileName}. Nur WebP-Dateien werden unterstützt.",
+      "uploadFailed": "Datei-Upload fehlgeschlagen",
+      "conversionFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+    },
+    "files": {
+      "title": "Ausgewählte WebP-Dateien",
+      "count": "{count} Dateien ausgewählt",
+      "reset": "Alle Zurücksetzen",
+      "remove": "Entfernen",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Zu JPG Konvertieren",
+      "simpleStart": "Schnell WebP zu JPG Konvertieren",
+      "advancedStart": "WebP zu JPG Konvertieren (Erweitert)",
+      "processing": "Konvertierung zu JPG... {progress}%"
+    },
+    "progress": {
+      "label": "Konvertierungsfortschritt",
+      "status": "Konvertierung WebP zu JPG... {progress}% abgeschlossen"
+    },
+    "settings": {
+      "title": "JPG-Konvertierungseinstellungen",
+      "simple": "Einfach",
+      "advanced": "Erweitert",
+      "simpleTitle": "Schnelleinstellungen",
+      "advancedTitle": "Erweiterte JPG-Einstellungen",
+      "quality": "Qualität",
+      "qualityHighest": "Höchste (95)",
+      "qualityHigh": "Hoch (90)",
+      "qualityMedium": "Ausgeglichen (85)",
+      "qualityLow": "Kleine Größe (80)",
+      "qualityLowest": "Kleinste (75)",
+      "backgroundColor": "Hintergrundfarbe (für Transparenz)",
+      "backgroundWhite": "Weiß",
+      "backgroundBlack": "Schwarz",
+      "backgroundCustom": "Benutzerdefiniert",
+      "progressive": "Progressives JPG",
+      "metadata": "Metadaten Beibehalten",
+      "optimize": "Für Web Optimieren",
+      "presetEmail": "E-Mail",
+      "presetEmailDesc": "Qualität 85, optimiert für E-Mail",
+      "presetWeb": "Web",
+      "presetWebDesc": "Qualität 85, optimiert für Web",
+      "presetPrint": "Druck",
+      "presetPrintDesc": "Qualität 95, hohe Qualität für Druck"
+    },
+    "downloadAll": "Alle JPG-Dateien Herunterladen",
+    "results": {
+      "title": "JPG-Konvertierungsergebnisse",
+      "count": "{count} WebP-Dateien zu JPG konvertiert",
+      "sizeInfo": "Original WebP: {original} MB → JPG: {converted} MB ({change}% Zunahme)",
+      "download": "JPG Herunterladen"
+    }
+  }
+}

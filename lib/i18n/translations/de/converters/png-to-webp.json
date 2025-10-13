@@ -1,0 +1,280 @@
+{
+  "seo": {
+    "title": "PNG zu WebP Konverter - PNG Bilder Online Konvertieren",
+    "description": "Konvertieren Sie PNG-Bilder online in WebP-Format. Kostenloser, schneller und einfach zu bedienender PNG zu WebP Konverter.",
+    "keywords": "PNG zu WebP, PNG konvertieren, Bildkonverter, Online-Tool"
+  },
+  "hero": {
+    "title": "PNG zu WebP Konverter",
+    "subtitle": "Konvertieren Sie PNG-Bilder online in WebP-Format",
+    "description": "Konvertieren Sie PNG-Bilder in WebP-Format für bessere Kompression und schnellere Ladezeiten bei Beibehaltung von Qualität und Transparenz-Unterstützung."
+  },
+  "features": {
+    "title": "PNG zu WebP Konvertierungsfunktionen",
+    "description": "Warum PNG zu WebP für moderne Web-Performance konvertieren",
+    "items": [
+      {
+        "icon": "🚀",
+        "title": "25-35% Bessere Kompression",
+        "description": "WebP bietet überlegene Kompression im Vergleich zu PNG bei Beibehaltung der Qualität"
+      },
+      {
+        "icon": "✨",
+        "title": "Transparenz Erhalten",
+        "description": "Vollständige Alphakanal-Unterstützung mit besserer Kompression als PNG"
+      },
+      {
+        "icon": "🔄",
+        "title": "Verlustfreie & Verlustbehaftete Modi",
+        "description": "Wählen Sie zwischen perfekter Qualität oder maximaler Kompression"
+      },
+      {
+        "icon": "🌐",
+        "title": "95%+ Browser-Unterstützung",
+        "description": "Unterstützt von allen modernen Browsern seit 2020"
+      },
+      {
+        "icon": "⚡",
+        "title": "Batch-Konvertierung",
+        "description": "Konvertieren Sie mehrere PNG-Dateien gleichzeitig in WebP"
+      },
+      {
+        "icon": "🔐",
+        "title": "100% Sicher",
+        "description": "Alle Konvertierungen erfolgen lokal in Ihrem Browser"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "PNG vs WebP Formatvergleich",
+    "subtitle": "Die Unterschiede zwischen PNG- und WebP-Formaten verstehen",
+    "png": {
+      "description": "PNG (Portable Network Graphics) ist ein Raster-Grafikdateiformat, das verlustfreie Datenkompression und Transparenz unterstützt.",
+      "features": [
+        "Verlustfreie Kompression",
+        "Transparenz-Unterstützung",
+        "Perfekt für Grafiken und Logos",
+        "Größere Dateigrößen"
+      ]
+    },
+    "webp": {
+      "description": "WebP ist ein modernes Bildformat entwickelt von Google, das überlegene Kompression im Vergleich zu PNG und JPEG bietet.",
+      "features": [
+        "Überlegene Kompression",
+        "Transparenz-Unterstützung",
+        "Verlustfreie und verlustbehaftete Modi",
+        "Kleinere Dateigrößen"
+      ]
+    }
+  },
+  "technicalPrinciples": {
+    "title": "Wie PNG zu WebP Konvertierung Funktioniert",
+    "description": "Die technischen Vorteile von WebP gegenüber PNG verstehen",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "Fortschrittlicher Kompressionsalgorithmus",
+        "description": "WebP verwendet VP8/VP9 prädiktive Kodierung (aus Video-Kompression) statt PNGs DEFLATE und erreicht 25-35% bessere Kompression bei Beibehaltung der Qualität.",
+        "benefits": [
+          "VP8/VP9 prädiktive Kodierung",
+          "25-35% kleiner als PNG",
+          "Verlustfreie oder verlustbehaftete Modi verfügbar",
+          "Für Web-Bereitstellung optimiert"
+        ]
+      },
+      {
+        "icon": "✨",
+        "title": "Überlegene Alphakanal-Kompression",
+        "description": "WebP komprimiert Transparenz-Daten effizienter als PNG, besonders für Bilder mit graduellen Alpha-Übergängen wie weichen Schatten und Glows.",
+        "benefits": [
+          "Bessere Alpha-Kompression als PNG",
+          "Ideal für weiche Schatten und Verläufe",
+          "Erhält Transparenz-Qualität",
+          "Reduziert Dateigröße um 30-40%"
+        ]
+      },
+      {
+        "icon": "🎯",
+        "title": "Dual-Kompression-Modi",
+        "description": "Wählen Sie verlustfreien Modus (perfekte Qualität, 25% kleiner als PNG) oder verlustbehafteten Modus (60-80% kleiner, minimaler sichtbarer Verlust) basierend auf Ihren Bedürfnissen.",
+        "benefits": [
+          "Verlustfrei: perfekte Qualität, 25% kleiner",
+          "Verlustbehaftet: 60-80% kleiner",
+          "Wählbar pro Bild",
+          "Beste Flexibilität für Web-Nutzung"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Flexible Qualitätskontrolle",
+        "description": "WebP bietet feingranulare Qualitätskontrolle (0-100) mit besserem Qualitäts-zu-Größe-Verhältnis als PNG, perfekt optimiert für Web-Performance.",
+        "benefits": [
+          "Qualitätsbereich 0-100",
+          "Besseres Qualität/Größe-Verhältnis",
+          "Schärfeparameter für Optimierung",
+          "Für Web-Bereitstellung optimiert"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Wann & Wie PNG zu WebP Konvertieren",
+    "description": "Häufige Szenarien und Best Practices für PNG zu WebP Konvertierung",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Web-Performance-Optimierung",
+        "description": "Modernisieren Sie Ihre Website mit besserer Bildkompression.",
+        "content": "Konvertieren Sie PNG-Grafiken zu WebP für 25-35% kleinere Dateien. Verwenden Sie verlustfreies WebP für Logos und UI-Elemente (25% kleiner, perfekte Qualität). Verwenden Sie verlustbehaftetes WebP bei Qualität 80-90 für Fotos mit Transparenz (60-80% kleiner). Implementieren Sie <picture>-Element mit WebP primär, PNG-Fallback für 95%+ Browser-Unterstützung."
+      },
+      {
+        "icon": "🎨",
+        "title": "Logos & Grafiken mit Transparenz",
+        "description": "Perfekte Qualität bei kleineren Größen.",
+        "content": "WebP glänzt für Logos und Grafiken mit Transparenz. Verwenden Sie verlustfreies WebP für perfekte Qualität bei 25% Größenreduktion. Für weniger kritische Grafiken liefert verlustbehaftetes WebP bei Qualität 85-90 nahezu identische Qualität bei 40-60% kleinerer Größe. Ideal für Web-UI-Elemente und Marken-Assets."
+      },
+      {
+        "icon": "📸",
+        "title": "Fotos mit Transparenz",
+        "description": "Produkt-Bilder und freigestellte Fotos.",
+        "content": "WebP ist perfekt für Produkt-Fotos mit transparenten Hintergründen. Konvertieren Sie PNG-Produkt-Bilder zu verlustbehaftetem WebP bei Qualität 80-85 für 60-70% Größenreduktion bei Beibehaltung guter Qualität. Wesentlich kleiner als PNG bei Erhalt von Transparenz. Ideal für E-Commerce-Produkt-Kataloge."
+      },
+      {
+        "icon": "💾",
+        "title": "Cloud-Speicher & CDN",
+        "description": "Reduzieren Sie Speicher- und Bandbreitenkosten.",
+        "content": "Konvertierung von PNG zu WebP reduziert Cloud-Speicher- und CDN-Kosten um 25-70% je nach Modus. Batch-konvertieren Sie PNG-Bibliotheken für sofortige Einsparungen. Verwenden Sie verlustfrei für kritische Assets, verlustbehaftet bei Qualität 80-85 für allgemeinen Inhalt. ROI ist signifikant für hochfrequentierte Sites mit vielen Grafiken."
+      },
+      {
+        "icon": "📱",
+        "title": "Mobile & Progressive Web Apps",
+        "description": "Optimieren Sie für mobile Performance.",
+        "content": "WebPs kleinere Dateigrößen verbessern mobile Ladezeiten dramatisch. Konvertieren Sie PNG-Assets zu WebP für 25-70% Reduktion. Kritisch für PWAs, wo jedes KB zählt. Mobile Browser haben ausgezeichnete WebP-Unterstützung. Verwenden Sie verlustbehaftetes WebP für maximale Kompression, verlustfreies für Qualität-kritische Assets."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Wann PNG Behalten",
+        "description": "Szenarien, wo PNG noch die bessere Wahl ist.",
+        "content": "Behalten Sie PNG, wenn: 1) Safari <14 oder Chrome <65 Unterstützung benötigt (prüfen Sie Analytics), 2) E-Mail-Kompatibilität kritisch ist (viele Clients unterstützen WebP nicht), 3) Mit Legacy-Tools arbeiten, 4) Maximale universelle Kompatibilität benötigen. WebP glänzt für moderne Web-Apps mit 95%+ Browser-Unterstützung."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "description": "Häufige Fragen zur PNG zu WebP Konvertierung",
+    "items": [
+      {
+        "question": "Erhält WebP Transparenz bei Konvertierung von PNG?",
+        "answer": "Ja! WebP unterstützt vollständig Alphakanal-Transparenz wie PNG. PNGs Transparenz wird zu WebPs Alphakanal konvertiert, oft mit 30-40% besserer Kompression. WebP ist hervorragend für Grafiken, Logos und Produkt-Bilder mit transparenten Hintergründen. Verlustfreies WebP erhält perfekte Transparenz-Qualität."
+      },
+      {
+        "question": "Wie viel kleiner sind WebP-Dateien im Vergleich zu PNG?",
+        "answer": "WebP ist typischerweise 25-70% kleiner als PNG abhängig vom Modus. Verlustfreies WebP erreicht 25-35% Größenreduktion mit null Qualitätsverlust. Verlustbehaftetes WebP bei Qualität 80-90 bietet 60-70% Reduktion mit minimaler visueller Differenz. Tatsächliche Einsparungen hängen von Bildinhalt ab - Grafiken mit Transparenz sehen ausgezeichnete Kompression."
+      },
+      {
+        "question": "Sollte ich verlustfreies oder verlustbehaftetes WebP verwenden?",
+        "answer": "Für Logos, UI-Grafiken und Assets, die perfekte Qualität benötigen, verwenden Sie verlustfreies WebP (25% kleiner als PNG, null Qualitätsverlust). Für Fotos mit Transparenz und weniger kritische Grafiken verwenden Sie verlustbehaftetes WebP bei Qualität 80-90 (60-70% kleiner, minimaler visueller Unterschied). Vergleichen Sie visuell vor Deployment."
+      },
+      {
+        "question": "Welche Browser unterstützen WebP-Format?",
+        "answer": "WebP hat 95%+ Browser-Unterstützung ab 2024. Unterstützt von Chrome 23+ (2012), Firefox 65+ (2019), Edge 18+ (2018), Safari 14+ (2020), Opera 12.1+ (2012). Mobile-Unterstützung umfasst Chrome Android, Safari iOS 14+, Samsung Internet 4+. Für ältere Browser implementieren Sie <picture>-Element mit WebP primär und PNG-Fallback."
+      },
+      {
+        "question": "Kann ich alle meine PNG-Dateien zu WebP konvertieren?",
+        "answer": "Für moderne Websites, ja - WebP bietet signifikante Performance-Vorteile mit 95%+ Browser-Unterstützung. Implementieren Sie progressive Verbesserung: WebP → PNG-Fallback für universelle Kompatibilität. Priorisieren Sie große PNGs (>100KB) für maximale Wirkung. Überwachen Sie Browser-Analytics Ihrer Zielgruppe. Vermeiden Sie WebP für E-Mails (begrenzte Client-Unterstützung)."
+      },
+      {
+        "question": "Ist PNG zu WebP Konvertierung kostenlos und sicher?",
+        "answer": "Ja, unser PNG zu WebP Konverter ist vollständig kostenlos ohne Registrierung, Wasserzeichen oder Zahlungsanforderung. Alle Konvertierungen erfolgen lokal in Ihrem Browser mit WebAssembly - Ihre Bilder verlassen niemals Ihr Gerät. Dies gewährleistet 100% Privatsphäre und Sicherheit, ohne Server-Uploads, Datenerfassung oder Drittanbieter-Zugriff. WebP-Kodierung wird vollständig client-seitig durchgeführt."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Verwandte Tools",
+    "description": "Entdecken Sie mehr Bildkonvertierungs- und Komprimierungswerkzeuge",
+    "items": [
+      {
+        "title": "WebP zu PNG Konverter",
+        "description": "Konvertieren Sie WebP-Bilder zurück in PNG-Format",
+        "url": "/converter/convert-webp-to-png"
+      },
+      {
+        "title": "PNG Komprimieren",
+        "description": "Optimieren Sie PNG-Dateien weiter",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "WebP Komprimieren",
+        "description": "Optimieren Sie WebP-Dateien für noch kleinere Größen",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Ziehen Sie PNG-Dateien hierher oder klicken Sie zum Auswählen",
+      "subtitle": "Unterstützt PNG-Format, bis zu {maxFiles} Dateien, max 10MB je Datei",
+      "selectFiles": "PNG-Dateien Auswählen"
+    },
+    "errors": {
+      "maxFiles": "Maximal {maxFiles} Dateien erlaubt",
+      "fileTooLarge": "Datei {fileName} ist zu groß, bitte wählen Sie Dateien kleiner als 10MB",
+      "unsupportedFormat": "Nicht unterstütztes Dateiformat: {fileName}. Nur PNG-Dateien werden unterstützt.",
+      "uploadFailed": "Datei-Upload fehlgeschlagen",
+      "conversionFailed": "Konvertierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+    },
+    "files": {
+      "title": "Ausgewählte PNG-Dateien",
+      "count": "{count} Dateien ausgewählt",
+      "reset": "Alle Zurücksetzen",
+      "remove": "Entfernen",
+      "sizeInfo": "{size} MB"
+    },
+    "convert": {
+      "start": "Zu WebP Konvertieren",
+      "simpleStart": "Schnell PNG zu WebP Konvertieren",
+      "advancedStart": "PNG zu WebP Konvertieren (Erweitert)",
+      "processing": "Konvertierung zu WebP... {progress}%"
+    },
+    "progress": {
+      "label": "Konvertierungsfortschritt",
+      "status": "Konvertierung PNG zu WebP... {progress}% abgeschlossen"
+    },
+    "settings": {
+      "title": "WebP-Konvertierungseinstellungen",
+      "simple": "Einfach",
+      "advanced": "Erweitert",
+      "simpleTitle": "Schnelleinstellungen",
+      "advancedTitle": "Erweiterte WebP-Einstellungen",
+      "quality": "Qualität",
+      "qualityHighest": "Höchste (95)",
+      "qualityHigh": "Hoch (90)",
+      "qualityMedium": "Ausgeglichen (85)",
+      "qualityLow": "Kleine Größe (80)",
+      "qualityLowest": "Kleinste (75)",
+      "compressionMode": "Kompressionsmodus",
+      "compressionLossless": "Verlustfrei (Perfekte Qualität)",
+      "compressionLossy": "Verlustbehaftet (Kleinere Dateien)",
+      "sharpness": "Schärfe",
+      "sharpnessAuto": "Auto",
+      "sharpnessSharp": "Scharf (7)",
+      "sharpnessMedium": "Mittel (4)",
+      "sharpnessSoft": "Weich (0)",
+      "metadata": "Metadaten Beibehalten",
+      "optimize": "Für Web Optimieren",
+      "presetLossless": "Verlustfrei",
+      "presetLosslessDesc": "Perfekte Qualität, 25% kleiner",
+      "presetBalanced": "Ausgeglichen",
+      "presetBalancedDesc": "Qualität 85, 40-60% kleiner",
+      "presetSmall": "Maximum Kompression",
+      "presetSmallDesc": "Qualität 75, 60-70% kleiner"
+    },
+    "downloadAll": "Alle WebP-Dateien Herunterladen",
+    "results": {
+      "title": "WebP-Konvertierungsergebnisse",
+      "count": "{count} PNG-Dateien zu WebP konvertiert",
+      "sizeInfo": "Original PNG: {original} MB → WebP: {converted} MB ({change}% Reduktion)",
+      "download": "WebP Herunterladen"
+    }
+  }
+}
