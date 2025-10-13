@@ -21,26 +21,33 @@ interface ModernSEOProps {
 }
 
 export default function ModernSEO({ locale, format = 'png' }: ModernSEOProps) {
-  // 根据格式选择相应的翻译钩子
-  const getTranslationHook = () => {
+  // 在组件顶层调用所有hooks（符合React Hooks规则）
+  const pngTranslation = usePngCompressorTranslation();
+  const jpegTranslation = useJpegCompressorTranslation();
+  const webpTranslation = useWebpCompressorTranslation();
+  const avifTranslation = useAvifCompressorTranslation();
+  const gifTranslation = useGifCompressorTranslation();
+
+  // 根据格式选择相应的翻译对象
+  const getTranslation = () => {
     switch (format.toLowerCase()) {
       case 'png':
-        return usePngCompressorTranslation();
+        return pngTranslation;
       case 'jpeg':
       case 'jpg':
-        return useJpegCompressorTranslation();
+        return jpegTranslation;
       case 'webp':
-        return useWebpCompressorTranslation();
+        return webpTranslation;
       case 'avif':
-        return useAvifCompressorTranslation();
+        return avifTranslation;
       case 'gif':
-        return useGifCompressorTranslation();
+        return gifTranslation;
       default:
-        return usePngCompressorTranslation();
+        return pngTranslation;
     }
   };
 
-  const { t } = getTranslationHook();
+  const { t } = getTranslation();
 
   const title = t('seo.title') || `${format.toUpperCase()} Compressor - Compress ${format.toUpperCase()} Images Online`;
   const description = t('seo.description') || `Compress ${format.toUpperCase()} images online with advanced optimization. Reduce file size while maintaining quality.`;
