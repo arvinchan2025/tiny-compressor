@@ -1,4 +1,11 @@
 {
+  "theme": {
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム",
+    "toggle": "テーマ切替",
+    "followingSystem": "システムに従う"
+  },
   "buttons": {
     "save": "保存",
     "cancel": "キャンセル",

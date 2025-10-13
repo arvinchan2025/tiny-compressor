@@ -70,7 +70,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 dark:bg-gray-950 text-white transition-colors">
       <StandardContainer variant="content" size="lg" center>
         <div className="py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -81,8 +81,8 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
               transition={{ duration: 0.6 }}
               className="lg:col-span-1"
             >
-              <h3 className="text-xl font-bold mb-4">{t('brand.name')}</h3>
-              <p className="text-gray-400 mb-4">{t('brand.description')}</p>
+              <h3 className="text-xl font-bold mb-4 text-white">{t('brand.name')}</h3>
+              <p className="text-gray-400 dark:text-gray-500 mb-4">{t('brand.description')}</p>
               <div className="flex space-x-4">
                 <motion.a
                   whileHover={{ scale: 1.1 }}
@@ -115,7 +115,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h3 className="text-lg font-semibold mb-4">{t('sections.quickLinks')}</h3>
+              <h3 className="text-lg font-semibold mb-4 text-white">{t('sections.quickLinks')}</h3>
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
                   <motion.li
@@ -126,7 +126,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
                   >
                     <a
                       href={link.path}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-400 dark:text-gray-500 hover:text-white dark:hover:text-gray-200 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -141,7 +141,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="text-lg font-semibold mb-4">{t('sections.formats')}</h3>
+              <h3 className="text-lg font-semibold mb-4 text-white">{t('sections.formats')}</h3>
               <ul className="space-y-2">
                 {formatLinks.map((link, index) => (
                   <motion.li
@@ -152,7 +152,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
                   >
                     <a
                       href={link.path}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-400 dark:text-gray-500 hover:text-white dark:hover:text-gray-200 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -167,7 +167,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <h3 className="text-lg font-semibold mb-4">{t('sections.legal')}</h3>
+              <h3 className="text-lg font-semibold mb-4 text-white">{t('sections.legal')}</h3>
               <ul className="space-y-2">
                 {legalLinks.map((link, index) => (
                   <motion.li
@@ -178,7 +178,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
                   >
                     <a
                       href={link.path}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-400 dark:text-gray-500 hover:text-white dark:hover:text-gray-200 transition-colors"
                     >
                       {link.name}
                     </a>
@@ -193,14 +193,14 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-8 pt-8 border-t border-gray-800"
+            className="mt-8 pt-8 border-t border-gray-800 dark:border-gray-900"
           >
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 dark:text-gray-500 text-sm">
                 {t('copyright', { year: currentYear })}
               </p>
-              <p className="text-gray-400 text-sm mt-2 md:mt-0">
-                {t('madeWith')} <span className="text-red-500">♥</span> {t('by')} {t('author')}
+              <p className="text-gray-400 dark:text-gray-500 text-sm mt-2 md:mt-0">
+                {t('madeWith')} <span className="text-red-500 dark:text-red-400">♥</span> {t('by')} {t('author')}
               </p>
             </div>
           </motion.div>

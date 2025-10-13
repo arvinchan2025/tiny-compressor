@@ -118,13 +118,13 @@ export default function CompressorPage({
 
   return (
     <StandardPageLayout locale={locale}>
-      <div className="min-h-screen bg-white">
+      <div className="page-base min-h-screen">
         {/* Hero Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative py-12 bg-gradient-to-b from-gray-50 to-white"
+          className="section-default relative py-16"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="text-center max-w-4xl mx-auto">
@@ -132,9 +132,9 @@ export default function CompressorPage({
                 initial={{ scale: 0.8 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="inline-flex items-center px-4 py-1.5 bg-blue-50 border border-blue-200 rounded-full text-xs font-medium text-blue-700 mb-6"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-white/95 dark:bg-gray-850/95 backdrop-blur-md border-2 border-blue-200 dark:border-blue-700/50 rounded-full text-sm font-semibold text-blue-700 dark:text-blue-300 mb-8 shadow-lg transition-all"
               >
-                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
+                <span className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full animate-pulse" />
                 {currentFormat.name} {t('hero.badge')}
               </motion.div>
               
@@ -142,7 +142,7 @@ export default function CompressorPage({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+                className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 dark:from-gray-100 dark:via-blue-300 dark:to-purple-300 bg-clip-text text-transparent mb-6"
               >
                 {t('hero.title')}
               </motion.h1>
@@ -151,7 +151,7 @@ export default function CompressorPage({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-lg text-gray-600"
+                className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed transition-colors"
               >
                 {t('hero.description')}
               </motion.p>
@@ -164,7 +164,7 @@ export default function CompressorPage({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="py-12"
+          className="section-subtle py-16"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-4xl mx-auto">
@@ -191,15 +191,15 @@ export default function CompressorPage({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="py-12 bg-white"
+          className="section-default py-12"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold text-gray-900 mb-3">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                   {t('features.title')}
                 </h2>
-                <p className="text-base text-gray-600">
+                <p className="text-base text-gray-600 dark:text-gray-300 transition-colors">
                   {t('features.description')}
                 </p>
               </div>
@@ -221,13 +221,13 @@ export default function CompressorPage({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.9 + index * 0.1 }}
-                      className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
+                      className="card-glass p-6"
                     >
                       <div className="text-3xl mb-4">{icon || '✓'}</div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                         {title}
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300 transition-colors">
                         {description}
                       </p>
                     </motion.div>
@@ -243,15 +243,15 @@ export default function CompressorPage({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0 }}
-          className="py-12"
+          className="section-default py-12"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                   {t('technicalPrinciples.title')}
                 </h2>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600 dark:text-gray-300 transition-colors">
                   {t('technicalPrinciples.description')}
                 </p>
               </div>
@@ -263,21 +263,21 @@ export default function CompressorPage({
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 1.1 + index * 0.1 }}
-                    className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-6"
+                    className="card-glass p-6"
                   >
                     <div className="text-3xl mb-4">{t(`technicalPrinciples.items.${index}.icon`)}</div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                       {t(`technicalPrinciples.items.${index}.title`)}
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 transition-colors">
                       {t(`technicalPrinciples.items.${index}.description`)}
                     </p>
                     <ul className="space-y-2">
                       {[0, 1, 2, 3].map((benefitIdx) => {
                         const benefit = t(`technicalPrinciples.items.${index}.benefits.${benefitIdx}`);
                         return benefit && benefit !== `technicalPrinciples.items.${index}.benefits.${benefitIdx}` ? (
-                          <li key={benefitIdx} className="flex items-start text-sm text-gray-600">
-                            <span className="text-green-500 mr-2">✓</span>
+                          <li key={benefitIdx} className="flex items-start text-sm text-gray-600 dark:text-gray-400 transition-colors">
+                            <span className="text-green-500 dark:text-green-400 mr-2">✓</span>
                             <span>{benefit}</span>
                           </li>
                         ) : null;
@@ -295,15 +295,15 @@ export default function CompressorPage({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.1 }}
-          className="py-12 bg-gray-50"
+          className="section-alternate py-12"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                   {t('useCases.title')}
                 </h2>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600 dark:text-gray-300 transition-colors">
                   {t('useCases.description')}
                 </p>
               </div>
@@ -320,16 +320,16 @@ export default function CompressorPage({
                       initial={{ opacity: 0, scale: 0.9 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.5, delay: 1.2 + index * 0.05 }}
-                      className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all hover:scale-105"
+                      className="card-glass p-6 hover:scale-105"
                     >
                       <div className="text-4xl mb-4">{t(`useCases.items.${index}.icon`)}</div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                         {title}
                       </h3>
-                      <p className="text-sm text-gray-600 mb-3">
+                      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 transition-colors">
                         {t(`useCases.items.${index}.description`)}
                       </p>
-                      <p className="text-sm text-gray-500">
+                      <p className="text-sm text-gray-500 dark:text-gray-400 transition-colors">
                         {t(`useCases.items.${index}.content`)}
                       </p>
                     </motion.div>
@@ -345,15 +345,15 @@ export default function CompressorPage({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-          className="py-12 bg-gray-50"
+          className="section-alternate py-12"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                   {t('faq.title')}
                 </h2>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600 dark:text-gray-300 transition-colors">
                   {t('faq.description')}
                 </p>
               </div>
@@ -370,12 +370,12 @@ export default function CompressorPage({
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 1.7 + index * 0.1 }}
-                    className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-6"
+                    className="card-glass p-6"
                   >
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                       {t(`faq.items.${index}.question`)}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-300 transition-colors">
                       {t(`faq.items.${index}.answer`)}
                     </p>
                   </motion.div>
@@ -385,17 +385,24 @@ export default function CompressorPage({
           </StandardContainer>
         </motion.section>
 
-        {/* Quick Links Section */}
+        {/* Quick Links Section - CTA Style */}
         {t('quickLinks.title') && (
           <motion.section
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 2.4 }}
-            className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50"
+            className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-700 dark:via-purple-700 dark:to-pink-700 relative overflow-hidden transition-colors"
           >
-            <StandardContainer variant="page" size="lg">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+            {/* Background Decorative Layers */}
+            <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
+            <div className="absolute inset-0">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent" />
+              <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-white/10 to-transparent" />
+            </div>
+            
+            <StandardContainer variant="page" size="lg" className="relative z-10">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-white mb-4">
                   {t('quickLinks.title')}
                 </h2>
               </div>
@@ -415,11 +422,11 @@ export default function CompressorPage({
                       transition={{ duration: 0.6, delay: 2.6 + index * 0.1 }}
                     >
                       <Link href={itemUrl || '#'}>
-                        <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50 hover:shadow-xl hover:border-blue-300 transition-all duration-300 h-full">
-                          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        <div className="card-cta p-6 h-full group">
+                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                             {itemTitle}
                           </h3>
-                          <p className="text-gray-600 text-sm">
+                          <p className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors">
                             {itemDescription}
                           </p>
                         </div>

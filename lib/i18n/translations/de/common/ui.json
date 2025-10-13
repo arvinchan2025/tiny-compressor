@@ -1,4 +1,11 @@
 {
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System",
+    "toggle": "Design wechseln",
+    "followingSystem": "Folgt dem System"
+  },
   "buttons": {
     "save": "Speichern",
     "cancel": "Abbrechen",

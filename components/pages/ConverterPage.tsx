@@ -41,20 +41,20 @@ export default function ConverterPage({
 
   return (
     <StandardPageLayout locale={locale}>
-      <div className="min-h-screen bg-white">
+      <div className="page-base min-h-screen">
         {/* Hero Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="py-12 bg-gradient-to-b from-gray-50 to-white"
+          className="section-default py-12"
         >
           <StandardContainer variant="page" size="lg">
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
                 {t('hero.title')}
               </h1>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-600 dark:text-gray-300 transition-colors">
                 {t('hero.subtitle')}
               </p>
             </div>
@@ -90,14 +90,14 @@ export default function ConverterPage({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="py-16 bg-white/50"
+          className="section-subtle py-16"
         >
           <StandardContainer variant="page" size="lg">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
                 {t('comparison.title')}
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('comparison.subtitle')}
               </p>
             </div>
@@ -107,20 +107,20 @@ export default function ConverterPage({
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50"
+                className="card-glass p-6"
               >
                 <div className="text-center mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                     {sourceFormat.toUpperCase()}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 dark:text-gray-300 transition-colors">
                     {t(`comparison.${sourceFormat}.description`)}
                   </p>
                 </div>
                 <ul className="space-y-2">
                   {Array.from({ length: 4 }, (_, index) => (
-                    <li key={index} className="flex items-center text-gray-600">
-                      <StandardIcon name="check" size="sm" className="mr-2 text-green-500" />
+                    <li key={index} className="flex items-center text-gray-600 dark:text-gray-300 transition-colors">
+                      <StandardIcon name="check" size="sm" className="mr-2 text-green-500 dark:text-green-400" />
                       {t(`comparison.${sourceFormat}.features.${index}`)}
                     </li>
                   ))}
@@ -131,20 +131,20 @@ export default function ConverterPage({
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
-                className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50"
+                className="card-glass p-6"
               >
                 <div className="text-center mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                     {targetFormat.toUpperCase()}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 dark:text-gray-300 transition-colors">
                     {t(`comparison.${targetFormat}.description`)}
                   </p>
                 </div>
                 <ul className="space-y-2">
                   {Array.from({ length: 4 }, (_, index) => (
-                    <li key={index} className="flex items-center text-gray-600">
-                      <StandardIcon name="check" size="sm" className="mr-2 text-green-500" />
+                    <li key={index} className="flex items-center text-gray-600 dark:text-gray-300 transition-colors">
+                      <StandardIcon name="check" size="sm" className="mr-2 text-green-500 dark:text-green-400" />
                       {t(`comparison.${targetFormat}.features.${index}`)}
                     </li>
                   ))}
@@ -159,15 +159,15 @@ export default function ConverterPage({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="py-12 bg-gray-50"
+          className="section-alternate py-12"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold text-gray-900 mb-3">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                   {t('features.title')}
                 </h2>
-                <p className="text-base text-gray-600">
+                <p className="text-base text-gray-600 dark:text-gray-300 transition-colors">
                   {t('features.description')}
                 </p>
               </div>
@@ -186,13 +186,13 @@ export default function ConverterPage({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.9 + index * 0.1 }}
-                      className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
+                      className="card-glass p-6"
                     >
                       <div className="text-3xl mb-4">{icon || '✓'}</div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                         {title}
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300 transition-colors">
                         {description}
                       </p>
                     </motion.div>
@@ -208,15 +208,15 @@ export default function ConverterPage({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0 }}
-          className="py-12"
+          className="section-default py-12"
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold text-gray-900 mb-3">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                   {t('technicalPrinciples.title')}
                 </h2>
-                <p className="text-base text-gray-600">
+                <p className="text-base text-gray-600 dark:text-gray-300 transition-colors">
                   {t('technicalPrinciples.description')}
                 </p>
               </div>
@@ -235,28 +235,28 @@ export default function ConverterPage({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-                      className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-6"
-                    >
-                      <div className="text-3xl mb-4">{icon || '🔧'}</div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                        {title}
-                      </h3>
-                      <p className="text-gray-600 mb-4">
-                        {description}
-                      </p>
-                      <ul className="space-y-2">
-                        {Array.from({ length: 4 }).map((_, benefitIndex) => {
-                          const benefit = t(`technicalPrinciples.items.${index}.benefits.${benefitIndex}`);
-                          if (benefit.startsWith('technicalPrinciples.items.')) return null;
-                          return (
-                            <li key={benefitIndex} className="flex items-start text-sm text-gray-700">
-                              <span className="text-green-500 mr-2">✓</span>
-                              <span>{benefit}</span>
-                            </li>
-                          );
-                        }).filter(Boolean)}
-                      </ul>
-                    </motion.div>
+                    className="card-glass p-6"
+                  >
+                    <div className="text-3xl mb-4">{icon || '🔧'}</div>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
+                      {title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 transition-colors">
+                      {description}
+                    </p>
+                    <ul className="space-y-2">
+                      {Array.from({ length: 4 }).map((_, benefitIndex) => {
+                        const benefit = t(`technicalPrinciples.items.${index}.benefits.${benefitIndex}`);
+                        if (benefit.startsWith('technicalPrinciples.items.')) return null;
+                        return (
+                          <li key={benefitIndex} className="flex items-start text-sm text-gray-700 dark:text-gray-300 transition-colors">
+                            <span className="text-green-500 dark:text-green-400 mr-2">✓</span>
+                            <span>{benefit}</span>
+                          </li>
+                        );
+                      }).filter(Boolean)}
+                    </ul>
+                  </motion.div>
                   );
                 }).filter(Boolean)}
               </div>
@@ -269,14 +269,14 @@ export default function ConverterPage({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          className="py-16 bg-white/50"
+          className="section-subtle py-16"
         >
           <StandardContainer variant="page" size="lg">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
                 {t('useCases.title')}
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('useCases.description')}
               </p>
             </div>
@@ -288,17 +288,17 @@ export default function ConverterPage({
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50"
+                  className="card-glass p-6"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <StandardIcon name="image" size="md" className="text-green-600" />
+                    <div className="w-12 h-12 bg-green-100 dark:bg-green-900/50 rounded-full flex items-center justify-center flex-shrink-0 transition-colors">
+                      <StandardIcon name="image" size="md" className="text-green-600 dark:text-green-400" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                         {t(`useCases.items.${index}.title`)}
                       </h3>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
                         {t(`useCases.items.${index}.description`)}
                       </p>
                     </div>
@@ -314,14 +314,14 @@ export default function ConverterPage({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.6 }}
-          className="py-12"
+          className="section-alternate py-12"
         >
           <StandardContainer variant="page" size="lg">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
                 {t('faq.title')}
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('faq.description')}
               </p>
             </div>
@@ -337,12 +337,12 @@ export default function ConverterPage({
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.8 + index * 0.1 }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50 mb-6"
+                  className="card-glass p-6 mb-6"
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                     {t(`faq.items.${index}.question`)}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
                     {t(`faq.items.${index}.answer`)}
                   </p>
                 </motion.div>
@@ -352,19 +352,26 @@ export default function ConverterPage({
           </StandardContainer>
         </motion.section>
 
-        {/* Quick Links Section */}
+        {/* Quick Links Section - CTA Style */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 2.2 }}
-          className="py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50"
+          className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-700 dark:via-purple-700 dark:to-pink-700 relative overflow-hidden transition-colors"
         >
-          <StandardContainer variant="page" size="lg">
+          {/* Background Decorative Layers */}
+          <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
+          <div className="absolute inset-0">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent" />
+            <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-white/10 to-transparent" />
+          </div>
+          
+          <StandardContainer variant="page" size="lg" className="relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-bold text-white mb-4">
                 {t('quickLinks.title')}
               </h2>
-              <p className="text-gray-600">
+              <p className="text-blue-100 dark:text-blue-200 transition-colors">
                 {t('quickLinks.description')}
               </p>
             </div>
@@ -384,11 +391,11 @@ export default function ConverterPage({
                     transition={{ duration: 0.6, delay: 2.4 + index * 0.1 }}
                   >
                     <Link href={itemUrl || '#'}>
-                      <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-200/50 hover:shadow-xl hover:border-blue-300 transition-all duration-300 h-full">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <div className="card-cta p-6 h-full group">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                           {itemTitle}
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors">
                           {itemDescription}
                         </p>
                       </div>

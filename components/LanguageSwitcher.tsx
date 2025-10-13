@@ -52,7 +52,7 @@ export default function LanguageSwitcher({
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 space-x-2"
+        className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 space-x-2"
       >
         <span className="text-lg">{currentLanguage.flag}</span>
         <span className="hidden sm:block">{currentLanguage.name}</span>
@@ -67,7 +67,7 @@ export default function LanguageSwitcher({
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+        <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-50">
           <div className="py-1">
             {languages.map((language) => (
               <button
@@ -76,15 +76,15 @@ export default function LanguageSwitcher({
                   onLanguageChange(language.code);
                   setIsOpen(false);
                 }}
-                className={`w-full flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 transition-colors duration-150 space-x-3 ${
-                  language.code === currentLocale ? 'bg-blue-50 text-blue-700' : ''
+                className={`w-full flex items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors duration-150 space-x-3 ${
+                  language.code === currentLocale ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' : ''
                 }`}
               >
                 <span className="text-lg">{language.flag}</span>
                 <span className="flex-1 text-left">{language.name}</span>
                 {language.code === currentLocale && (
                   <svg
-                    className="w-4 h-4 text-blue-600"
+                    className="w-4 h-4 text-blue-600 dark:text-blue-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

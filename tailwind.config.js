@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', // 启用基于class的暗黑模式
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -90,7 +91,12 @@ module.exports = {
           600: '#4b5563',
           700: '#374151',
           800: '#1f2937',
+          825: '#1c2531',  // 新增：卡片浮层背景
+          850: '#19202b',  // 新增：标准卡片背景
+          875: '#161c26',  // 新增：Section 背景
           900: '#111827',
+          925: '#0e1419',  // 新增：深度背景
+          950: '#0a0e13',  // 新增：页面基础背景
         }
       },
       fontFamily: {

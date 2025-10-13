@@ -1,4 +1,11 @@
 {
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统",
+    "toggle": "切换主题",
+    "followingSystem": "跟随系统中"
+  },
   "buttons": {
     "save": "保存",
     "cancel": "取消",

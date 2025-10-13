@@ -79,15 +79,49 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
         <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
+        {/* 防闪烁脚本 - 必须在页面渲染前执行 */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const STORAGE_KEY = 'tinycompressor-theme';
+                  const getSystemTheme = () => {
+                    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                  };
+                  
+                  const savedTheme = localStorage.getItem(STORAGE_KEY);
+                  let themeToApply = 'light';
+                  
+                  if (savedTheme === 'dark') {
+                    themeToApply = 'dark';
+                  } else if (savedTheme === 'light') {
+                    themeToApply = 'light';
+                  } else {
+                    // 默认跟随系统
+                    themeToApply = getSystemTheme();
+                  }
+                  
+                  // 立即应用主题
+                  document.documentElement.classList.add(themeToApply);
+                  document.documentElement.setAttribute('data-theme', themeToApply);
+                } catch (e) {
+                  // 如果出错，默认亮色模式
+                  document.documentElement.classList.add('light');
+                }
+              })();
+            `,
+          }}
+        />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <ClientProviders>
           {children}
         </ClientProviders>

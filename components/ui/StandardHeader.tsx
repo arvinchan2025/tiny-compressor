@@ -6,6 +6,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { Locale } from '@/lib/i18n';
 import { useTranslation } from '@/hooks/useTranslation';
 import LanguageSwitcher from '../LanguageSwitcher';
+import ThemeSwitcher from '../ThemeSwitcher';
 import StandardButton from './StandardButton';
 import StandardIcon from './StandardIcon';
 import StandardContainer from './StandardContainer';
@@ -64,7 +65,7 @@ export default function StandardHeader({
   ];
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 transition-colors">
       <StandardContainer variant="content" size="lg" center>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -82,7 +83,7 @@ export default function StandardHeader({
                 className="object-contain"
               />
             </div>
-            <span className="text-xl font-bold text-gray-900">
+            <span className="text-xl font-bold text-gray-900 dark:text-gray-100">
               {t('brand.name')}
             </span>
           </motion.div>
@@ -100,8 +101,8 @@ export default function StandardHeader({
                   onClick={() => handleNavClick(item.path)}
                   className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     item.isActive
-                      ? 'bg-blue-100 text-blue-700'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                      ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
+                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800'
                   }`}
                 >
                   <StandardIcon name={item.icon} size="sm" variant="default" className="w-4 h-4" />
@@ -112,7 +113,12 @@ export default function StandardHeader({
           </nav>
 
           {/* Right Side Actions */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
+            {/* Theme Switcher */}
+            <div className="hidden lg:block">
+              <ThemeSwitcher />
+            </div>
+
             {/* Language Switcher */}
             <LanguageSwitcher
               currentLocale={currentLocale}
@@ -124,7 +130,7 @@ export default function StandardHeader({
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+              className="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               <StandardIcon 
                 name={isMobileMenuOpen ? 'close' : 'menu'} 
@@ -144,7 +150,7 @@ export default function StandardHeader({
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden border-t border-gray-200"
+              className="md:hidden border-t border-gray-200 dark:border-gray-800"
             >
               <nav className="py-4 space-y-2">
                 {navigationItems.map((item, index) => (
@@ -158,8 +164,8 @@ export default function StandardHeader({
                       onClick={() => handleNavClick(item.path)}
                       className={`flex items-center space-x-3 w-full px-4 py-3 rounded-lg text-left transition-colors ${
                         item.isActive
-                          ? 'bg-blue-100 text-blue-700'
-                          : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                          ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800'
                       }`}
                     >
                       <StandardIcon name={item.icon} size="md" variant="default" className="w-5 h-5" />

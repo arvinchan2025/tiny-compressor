@@ -1,4 +1,11 @@
 {
+  "theme": {
+    "light": "Светлая",
+    "dark": "Тёмная",
+    "system": "Системная",
+    "toggle": "Сменить тему",
+    "followingSystem": "Следует системе"
+  },
   "buttons": {
     "save": "Сохранить",
     "cancel": "Отмена",

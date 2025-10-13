@@ -399,9 +399,9 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
 
   return (
     <StandardPageLayout locale={locale}>
-      <div className="min-h-screen bg-white">
+      <div className="page-base min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-12 bg-gradient-to-b from-gray-50 to-white">
+        <section className="section-default relative py-12">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               variants={containerVariants}
@@ -412,9 +412,9 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               {/* Minimal Badge */}
               <motion.div
                 variants={itemVariants}
-                className="inline-flex items-center px-4 py-1.5 bg-blue-50 border border-blue-200 rounded-full text-xs font-medium text-blue-700 mb-6"
+                className="inline-flex items-center px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 rounded-full text-xs font-medium text-blue-700 dark:text-blue-300 mb-6 transition-colors"
               >
-                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
+                <span className="w-1.5 h-1.5 bg-blue-500 dark:bg-blue-400 rounded-full mr-2" />
                 {pageType === 'compressor' 
                   ? (t('compressor.badge') || 'Image Compression')
                   : (t('converter.badge') || 'Format Conversion')
@@ -424,7 +424,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               {/* Clean Title */}
               <motion.h1
                 variants={heroVariants}
-                className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight"
+                className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight transition-colors"
               >
                 <span className="text-4xl mr-3">{config.heroIcon}</span>
                 {config.title}
@@ -433,7 +433,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               {/* Clean Subtitle */}
               <motion.p
                 variants={itemVariants}
-                className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"
+                className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto transition-colors"
               >
                 {config.subtitle}
               </motion.p>
@@ -441,14 +441,14 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               {/* Compact Stats */}
               <motion.div
                 variants={itemVariants}
-                className="inline-flex items-center gap-8 px-6 py-3 bg-white rounded-lg border border-gray-200 shadow-sm"
+                className="inline-flex items-center gap-8 px-6 py-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-colors"
               >
                 {config.stats.map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-2xl font-bold text-gray-900">
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white transition-colors">
                       {stat.number}
                     </div>
-                    <div className="text-xs text-gray-500 mt-0.5">
+                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 transition-colors">
                       {stat.label}
                     </div>
                   </div>
@@ -459,7 +459,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
         </section>
 
         {/* Tools Grid Section */}
-        <section className="py-12">
+        <section className="py-12 transition-colors">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -468,10 +468,10 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               viewport={{ once: true }}
               className="text-center mb-10"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 transition-colors">
                 {t('tools.title')}
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {config.description}
               </p>
             </motion.div>
@@ -487,7 +487,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
                   className="group"
                 >
                   <Link href={tool.path}>
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:border-blue-400 hover:shadow-md transition-all duration-200 h-full flex flex-col">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 h-full flex flex-col">
                       {/* Top Accent Bar */}
                       <div className={`h-0.5 bg-gradient-to-r ${tool.gradient}`} />
                       
@@ -495,13 +495,13 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
                         {/* Icon and Title */}
                         <div className="flex items-center mb-3">
                           <span className="text-3xl mr-3">{tool.icon}</span>
-                          <h3 className="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">
+                          <h3 className="text-base font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight">
                             {tool.name}
                           </h3>
                         </div>
 
                         {/* Description */}
-                        <p className="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-2 leading-relaxed transition-colors">
                           {tool.description}
                         </p>
 
@@ -510,7 +510,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
                           {tool.features.map((feature, featureIndex) => (
                             <span 
                               key={featureIndex} 
-                              className="inline-block px-2 py-1 bg-gray-50 text-xs text-gray-600 rounded"
+                              className="inline-block px-2 py-1 bg-gray-50 dark:bg-gray-700 text-xs text-gray-600 dark:text-gray-300 rounded transition-colors"
                             >
                               {feature}
                             </span>
@@ -518,15 +518,15 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
                         </div>
 
                         {/* Bottom Badge */}
-                        <div className="mt-auto pt-3 border-t border-gray-100">
+                        <div className="mt-auto pt-3 border-t border-gray-100 dark:border-gray-700 transition-colors">
                           <div className="flex items-center justify-between text-xs">
-                            <span className="text-gray-500">
+                            <span className="text-gray-500 dark:text-gray-400 transition-colors">
                               {pageType === 'compressor' 
                                 ? (t('compressor.statsLabels.compression') || '圧縮率')
                                 : (t('converter.statsLabels.speed') || '速度')
                               }
                             </span>
-                            <span className="font-semibold text-gray-900">
+                            <span className="font-semibold text-gray-900 dark:text-white transition-colors">
                               {pageType === 'compressor' ? (tool as any).compression : (tool as any).conversion}
                             </span>
                           </div>
@@ -541,7 +541,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
         </section>
 
         {/* Features Section */}
-        <section className="py-12 bg-gray-50">
+        <section className="section-alternate py-12">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -550,10 +550,10 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               viewport={{ once: true }}
               className="text-center mb-10"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 transition-colors">
                 {t('features.title')}
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('features.subtitle')}
               </p>
             </motion.div>
@@ -567,14 +567,14 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200 h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-500 hover:shadow-sm transition-all duration-200 h-full">
                     <div className="flex items-center mb-3">
                       <span className="text-2xl mr-3">{feature.icon}</span>
-                      <h3 className="text-base font-semibold text-gray-900">
+                      <h3 className="text-base font-semibold text-gray-900 dark:text-white transition-colors">
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
                       {feature.description}
                     </p>
                   </div>
@@ -606,7 +606,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
                 {t('cta.description')}
               </p>
               <Link href={locale === 'en' ? '/' : `/${locale}`}>
-                <button className="inline-flex items-center px-6 py-2.5 bg-white text-blue-600 text-sm font-semibold rounded-lg hover:bg-blue-50 transition-colors duration-200 shadow-lg">
+                <button className="inline-flex items-center px-6 py-2.5 bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-400 text-sm font-semibold rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors duration-200 shadow-lg">
                   <span className="mr-2">←</span>
                   {t('cta.backToHome')}
                 </button>

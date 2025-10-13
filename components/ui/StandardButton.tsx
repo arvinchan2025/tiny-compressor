@@ -40,37 +40,37 @@ export default function StandardButton({
     lg: 'px-6 py-3 text-lg'
   };
 
-  // 变体样式
+  // 变体样式（支持暗黑模式）
   const variantStyles = {
     primary: `
-      bg-blue-600 text-white
-      hover:bg-blue-700
+      bg-blue-600 dark:bg-blue-700 text-white
+      hover:bg-blue-700 dark:hover:bg-blue-600
       focus:ring-blue-500
-      active:bg-blue-800
+      active:bg-blue-800 dark:active:bg-blue-900
     `,
     secondary: `
-      bg-gray-600 text-white
-      hover:bg-gray-700
+      bg-gray-600 dark:bg-gray-700 text-white
+      hover:bg-gray-700 dark:hover:bg-gray-600
       focus:ring-gray-500
-      active:bg-gray-800
+      active:bg-gray-800 dark:active:bg-gray-900
     `,
     outline: `
-      border border-gray-300 bg-white text-gray-700
-      hover:bg-gray-50
+      border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200
+      hover:bg-gray-50 dark:hover:bg-gray-700
       focus:ring-blue-500
-      active:bg-gray-100
+      active:bg-gray-100 dark:active:bg-gray-600
     `,
     ghost: `
-      bg-transparent text-gray-700
-      hover:bg-gray-100
+      bg-transparent text-gray-700 dark:text-gray-200
+      hover:bg-gray-100 dark:hover:bg-gray-800
       focus:ring-blue-500
-      active:bg-gray-200
+      active:bg-gray-200 dark:active:bg-gray-700
     `,
     danger: `
-      bg-red-600 text-white
-      hover:bg-red-700
+      bg-red-600 dark:bg-red-700 text-white
+      hover:bg-red-700 dark:hover:bg-red-600
       focus:ring-red-500
-      active:bg-red-800
+      active:bg-red-800 dark:active:bg-red-900
     `
   };
 

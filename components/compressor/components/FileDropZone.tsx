@@ -67,8 +67,8 @@ export default function FileDropZone({ onFileSelect, locale = 'en', format = 'pn
     <motion.div
       className={`relative border-2 border-dashed rounded-2xl p-8 text-center transition-all duration-300 ${
         isDragOver
-          ? 'border-blue-400 bg-blue-50'
-          : 'border-slate-300 bg-slate-50 hover:border-slate-400 hover:bg-slate-100'
+          ? 'border-blue-400 dark:border-blue-500 bg-blue-50 dark:bg-blue-900/30'
+          : 'border-slate-300 dark:border-gray-600 bg-slate-50 dark:bg-gray-800 hover:border-slate-400 dark:hover:border-gray-500 hover:bg-slate-100 dark:hover:bg-gray-700'
       }`}
       onDrop={handleDrop}
       onDragOver={handleDragOver}
@@ -90,11 +90,11 @@ export default function FileDropZone({ onFileSelect, locale = 'en', format = 'pn
         </div>
       </motion.div>
 
-      <h3 className="text-lg font-semibold text-slate-800 mb-2">
+      <h3 className="text-lg font-semibold text-slate-800 dark:text-gray-200 mb-2 transition-colors">
         {t('operation.upload.title')}
       </h3>
       
-      <p className="text-slate-600 mb-4">
+      <p className="text-slate-600 dark:text-gray-400 mb-4 transition-colors">
         {t('operation.upload.subtitle', { format: format.toUpperCase(), maxFiles: 10 })}
       </p>
 
@@ -106,7 +106,7 @@ export default function FileDropZone({ onFileSelect, locale = 'en', format = 'pn
         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
       />
 
-      <div className="flex justify-center space-x-4 text-xs text-slate-500">
+      <div className="flex justify-center space-x-4 text-xs text-slate-500 dark:text-gray-400 transition-colors">
         <span>PNG</span>
         <span>•</span>
         <span>JPEG</span>

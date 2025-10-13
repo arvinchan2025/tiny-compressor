@@ -21,12 +21,12 @@ export default function ModeSelector({ isAdvancedMode, onModeChange, locale = 'e
   
   return (
     <div className="flex justify-center mb-6">
-      <div className="bg-slate-100 rounded-xl p-1 inline-flex">
+      <div className="bg-slate-100 dark:bg-slate-800 rounded-xl p-1 inline-flex transition-colors">
         <motion.button
           className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 ${
             !isAdvancedMode
-              ? 'bg-white text-slate-800 shadow-sm'
-              : 'text-slate-600 hover:text-slate-800'
+              ? 'bg-white dark:bg-gray-700 text-slate-800 dark:text-white shadow-sm'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'
           }`}
           onClick={() => onModeChange(false)}
           whileHover={{ scale: 1.02 }}
@@ -39,8 +39,8 @@ export default function ModeSelector({ isAdvancedMode, onModeChange, locale = 'e
         <motion.button
           className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 ${
             isAdvancedMode
-              ? 'bg-white text-slate-800 shadow-sm'
-              : 'text-slate-600 hover:text-slate-800'
+              ? 'bg-white dark:bg-gray-700 text-slate-800 dark:text-white shadow-sm'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'
           }`}
           onClick={() => onModeChange(true)}
           whileHover={{ scale: 1.02 }}

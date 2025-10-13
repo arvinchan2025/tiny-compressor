@@ -43,7 +43,7 @@ export default function StandardPageLayout({
   };
 
   return (
-    <div className={`min-h-screen bg-white ${className}`}>
+    <div className={`min-h-screen bg-white dark:bg-gray-900 transition-colors ${className}`}>
       {showHeader && (
         <StandardHeader
           currentLocale={locale}

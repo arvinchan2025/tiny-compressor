@@ -1,4 +1,11 @@
 {
+  "theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام",
+    "toggle": "تبديل السمة",
+    "followingSystem": "متابعة النظام"
+  },
   "buttons": {
     "save": "حفظ",
     "cancel": "إلغاء",

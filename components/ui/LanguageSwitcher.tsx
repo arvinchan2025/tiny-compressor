@@ -44,7 +44,7 @@ export default function LanguageSwitcher({
     <div className={`relative ${className}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+        className="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
         aria-label={t('nav.language') || 'Select Language'}
       >
         <span className="text-lg">{LANGUAGE_FLAGS[currentLocale]}</span>
@@ -52,25 +52,25 @@ export default function LanguageSwitcher({
         <StandardIcon 
           name={isOpen ? 'chevron-up' : 'chevron-down'} 
           size="sm" 
-          className="text-gray-500" 
+          className="text-gray-500 dark:text-gray-400" 
         />
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-1 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
+        <div className="absolute right-0 mt-1 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
           <div className="py-1">
             {SUPPORTED_LANGUAGES.map((locale: SupportedLanguage) => (
               <button
                 key={locale}
                 onClick={() => handleLanguageChange(locale)}
-                className={`w-full flex items-center space-x-3 px-4 py-2 text-sm text-left hover:bg-gray-100 transition-colors duration-200 ${
-                  locale === currentLocale ? 'bg-blue-50 text-blue-700' : 'text-gray-700'
+                className={`w-full flex items-center space-x-3 px-4 py-2 text-sm text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 ${
+                  locale === currentLocale ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400' : 'text-gray-700 dark:text-gray-200'
                 }`}
               >
                 <span className="text-lg">{LANGUAGE_FLAGS[locale as SupportedLanguage]}</span>
                 <span className="flex-1">{LANGUAGE_NAMES[locale as SupportedLanguage]}</span>
                 {locale === currentLocale && (
-                  <StandardIcon name="check" size="sm" className="text-blue-600" />
+                  <StandardIcon name="check" size="sm" className="text-blue-600 dark:text-blue-400" />
                 )}
               </button>
             ))}

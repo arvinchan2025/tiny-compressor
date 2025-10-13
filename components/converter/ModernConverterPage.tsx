@@ -205,13 +205,13 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-purple-50 dark:from-gray-900 dark:via-slate-900 dark:to-purple-950 transition-colors">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${sourceFormatInfo.color} opacity-20 rounded-full blur-3xl`} />
-          <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr ${targetFormatInfo.color} opacity-20 rounded-full blur-3xl`} />
+          <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br ${sourceFormatInfo.color} opacity-20 dark:opacity-15 rounded-full blur-3xl transition-opacity`} />
+          <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr ${targetFormatInfo.color} opacity-20 dark:opacity-15 rounded-full blur-3xl transition-opacity`} />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -224,19 +224,20 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
             {/* Conversion Badge */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full text-lg font-semibold mb-8 shadow-lg"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white/95 dark:bg-gray-850/95 backdrop-blur-md border-2 border-purple-200 dark:border-purple-700/50 rounded-full text-lg font-semibold mb-8 shadow-lg transition-all"
             >
-              <span className={`text-2xl mr-3 ${sourceFormatInfo.icon}`}>{sourceFormatInfo.icon}</span>
-              <span className="text-gray-600">{sourceFormatInfo.name}</span>
-              <span className="mx-4 text-gray-400">→</span>
-              <span className={`text-2xl mr-3 ${targetFormatInfo.icon}`}>{targetFormatInfo.icon}</span>
-              <span className="text-gray-600">{targetFormatInfo.name}</span>
+              <span className="text-2xl">{sourceFormatInfo.icon}</span>
+              <span className="text-gray-900 dark:text-white transition-colors">{sourceFormatInfo.name}</span>
+              <span className="mx-2 text-blue-500 dark:text-blue-400 font-bold">→</span>
+              <span className="text-2xl">{targetFormatInfo.icon}</span>
+              <span className="text-gray-900 dark:text-white transition-colors">{targetFormatInfo.name}</span>
+              <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse ml-1" />
             </motion.div>
 
             {/* Main Title */}
             <motion.h1
               variants={itemVariants}
-              className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent mb-6 leading-tight"
+              className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 dark:from-gray-100 dark:via-blue-300 dark:to-purple-300 bg-clip-text text-transparent mb-6 leading-tight"
             >
               {t('hero.title') || `${sourceFormatInfo.name} to ${targetFormatInfo.name} Converter`}
             </motion.h1>
@@ -244,7 +245,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
             {/* Subtitle */}
             <motion.p
               variants={itemVariants}
-              className="text-xl lg:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed transition-colors"
             >
               {t('hero.description') || `Convert ${sourceFormatInfo.name} images to ${targetFormatInfo.name} format with professional quality. Fast, secure, and completely free image format conversion.`}
             </motion.p>
@@ -264,7 +265,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
               </motion.button>
               
               <motion.button
-                className="group px-8 py-4 bg-white border-2 border-gray-200 text-gray-700 font-semibold rounded-xl hover:border-blue-300 hover:text-blue-700 transition-all duration-300"
+                className="group px-8 py-4 bg-white dark:bg-gray-850 border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 font-semibold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-blue-300 dark:hover:border-blue-500 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -276,7 +277,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white/50 backdrop-blur-sm">
+      <section className="section-subtle py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -285,10 +286,10 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors">
               Why Choose Our {sourceFormatInfo.name} to {targetFormatInfo.name} Converter?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors">
               Professional-grade conversion with advanced features
             </p>
           </motion.div>
@@ -303,14 +304,14 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 ${feature.bgColor} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className="card-solid rounded-2xl p-8 transform hover:-translate-y-1">
+                  <div className={`inline-flex items-center justify-center w-16 h-16 ${feature.bgColor} dark:bg-white/5 rounded-2xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                     <span className="text-3xl">{feature.icon}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
                     {feature.description}
                   </p>
                 </div>
@@ -330,10 +331,10 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors">
               Conversion Benefits
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors">
               Why convert from {sourceFormatInfo.name} to {targetFormatInfo.name}?
             </p>
           </motion.div>
@@ -348,12 +349,12 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+                <div className="card-solid rounded-2xl p-6">
                   <div className="text-4xl mb-4">{benefit.icon}</div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 transition-colors">
                     {benefit.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 dark:text-gray-300 text-sm transition-colors">
                     {benefit.description}
                   </p>
                 </div>
@@ -364,7 +365,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-20 bg-white">
+      <section className="section-default py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -373,10 +374,10 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors">
               Perfect for Every Use Case
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors">
               From web development to professional photography
             </p>
           </motion.div>
@@ -398,7 +399,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
                       <h3 className="text-xl font-bold text-gray-900 mb-2">
                         {useCase.title}
                       </h3>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300 transition-colors">
                         {useCase.description}
                       </p>
                     </div>
@@ -406,7 +407,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
                   <div className="space-y-2">
                     {useCase.benefits.map((benefit, benefitIndex) => (
                       <div key={benefitIndex} className="flex items-center text-sm text-gray-600">
-                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
+                        <span className="w-1.5 h-1.5 bg-blue-500 dark:bg-blue-400 rounded-full mr-2" />
                         {benefit}
                       </div>
                     ))}
@@ -428,10 +429,10 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors">
               Best Practices
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors">
               Tips and tricks for optimal conversion results
             </p>
           </motion.div>
@@ -447,14 +448,14 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
                 className="group"
               >
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 transition-colors">
                     {practice.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 transition-colors">
                     {practice.description}
                   </p>
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <p className="text-blue-800 text-sm font-medium">
+                  <div className="bg-blue-50/80 dark:bg-blue-500/10 backdrop-blur-sm border border-blue-200/50 dark:border-blue-500/20 rounded-lg p-4 transition-colors">
+                    <p className="text-blue-900 dark:text-blue-200 text-sm font-medium transition-colors">
                       💡 {practice.tip}
                     </p>
                   </div>
@@ -466,7 +467,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="section-default py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -475,7 +476,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors">
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
@@ -491,12 +492,12 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100"
+                className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors"
               >
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 transition-colors">
                   {faq.question}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300 transition-colors">
                   {faq.answer}
                 </p>
               </motion.div>
@@ -522,7 +523,7 @@ export default function ModernConverterPage({ sourceFormat, targetFormat, locale
               Convert your {sourceFormatInfo.name} images to {targetFormatInfo.name} format now. Fast, secure, and completely free!
             </p>
             <motion.button
-              className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="px-8 py-4 bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-400 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

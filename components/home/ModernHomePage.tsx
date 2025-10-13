@@ -221,9 +221,9 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="page-base min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-12 bg-gradient-to-b from-gray-50 to-white">
+      <section className="section-default relative py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={containerVariants}
@@ -234,16 +234,16 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
             {/* Minimal Badge */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center px-4 py-1.5 bg-blue-50 border border-blue-200 rounded-full text-xs font-medium text-blue-700 mb-6"
+              className="inline-flex items-center px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 rounded-full text-xs font-medium text-blue-700 dark:text-blue-300 mb-6 transition-colors"
             >
-              <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
+              <span className="w-1.5 h-1.5 bg-blue-500 dark:bg-blue-400 rounded-full mr-2" />
               {t('hero.subtitle') || 'Free Online Image Tools'}
             </motion.div>
 
             {/* Clean Title */}
             <motion.h1
               variants={heroVariants}
-              className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight"
+              className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4 leading-tight transition-colors"
             >
               {t('hero.title') || 'TinyCompressor'}
             </motion.h1>
@@ -251,7 +251,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
             {/* Clean Subtitle */}
             <motion.p
               variants={itemVariants}
-              className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto"
+              className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto transition-colors"
             >
               {t('hero.description') || 'Professional image compression and conversion tools. Reduce file sizes by up to 90% while maintaining quality. Fast, secure, and completely free.'}
             </motion.p>
@@ -263,7 +263,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
             >
               <a
                 href={getNavigationPagePath('compressor', locale)}
-                className="inline-flex items-center px-6 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                className="inline-flex items-center px-6 py-2.5 bg-blue-600 dark:bg-blue-700 text-white text-sm font-medium rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-200 shadow-md hover:shadow-lg"
               >
                 <span className="mr-2">🗜️</span>
                 {t('hero.getStarted') || 'Start Compressing'}
@@ -271,7 +271,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
               
               <a
                 href={getNavigationPagePath('converter', locale)}
-                className="inline-flex items-center px-6 py-2.5 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-200"
+                className="inline-flex items-center px-6 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 text-sm font-medium rounded-lg hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200"
               >
                 <span className="mr-2">🔄</span>
                 {t('hero.learnMore') || 'Try Converter'}
@@ -281,14 +281,14 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
             {/* Compact Stats */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-6 px-6 py-3 bg-white rounded-lg border border-gray-200 shadow-sm"
+              className="inline-flex items-center gap-6 px-6 py-3 bg-white dark:bg-gray-850 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all"
             >
               {techStats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">
+                  <div className="text-2xl font-bold text-gray-900 dark:text-gray-100">
                     {stat.number}
                   </div>
-                  <div className="text-xs text-gray-500 mt-0.5">
+                  <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                     {stat.label}
                   </div>
                 </div>
@@ -299,7 +299,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
       </section>
 
       {/* Tools Section */}
-      <section className="py-12">
+      <section className="section-default py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -308,10 +308,10 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
               viewport={{ once: true }}
               className="text-center mb-10"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                 {t('tools.title') || 'Choose Your Tool'}
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('tools.subtitle') || 'Professional-grade tools for all your image processing needs'}
               </p>
             </motion.div>
@@ -327,7 +327,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                 className="group"
               >
                 <a href={tool.link}>
-                  <div className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:border-blue-400 hover:shadow-md transition-all duration-200 h-full flex flex-col">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md dark:hover:shadow-2xl transition-all duration-200 h-full flex flex-col">
                     {/* Top Accent Bar */}
                     <div className={`h-0.5 bg-gradient-to-r ${tool.gradient}`} />
                     
@@ -335,13 +335,13 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                         {/* Icon and Title */}
                         <div className="flex items-center mb-3">
                           <span className="text-4xl mr-3">{tool.icon}</span>
-                          <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                             {tool.title}
                           </h3>
                         </div>
 
                         {/* Description */}
-                        <p className="text-base text-gray-600 mb-4">
+                        <p className="text-base text-gray-600 dark:text-gray-300 mb-4 transition-colors">
                           {tool.description}
                         </p>
 
@@ -350,7 +350,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                           {tool.features.map((feature, featureIndex) => (
                             <span 
                               key={featureIndex} 
-                              className="inline-block px-2 py-1 bg-gray-50 text-xs text-gray-600 rounded"
+                              className="inline-block px-2 py-1 bg-gray-50 dark:bg-gray-700/50 text-xs text-gray-600 dark:text-gray-300 rounded transition-colors"
                             >
                               {feature}
                             </span>
@@ -358,7 +358,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                         </div>
 
                         {/* Stats */}
-                        <div className="flex items-center gap-4 pt-3 mt-auto border-t border-gray-100">
+                        <div className="flex items-center gap-4 pt-3 mt-auto border-t border-gray-100 dark:border-gray-700 transition-colors">
                           {Object.entries(tool.stats).map(([key, value]) => {
                             const statLabels: Record<string, string> = {
                               'compression': t('tools.statsLabels.compression') || '圧縮率',
@@ -369,8 +369,8 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                             };
                             return (
                               <div key={key} className="text-center">
-                                <div className="text-base font-bold text-gray-900">{value}</div>
-                                <div className="text-xs text-gray-500">{statLabels[key] || key}</div>
+                                <div className="text-base font-bold text-gray-900 dark:text-gray-100">{value}</div>
+                                <div className="text-xs text-gray-500 dark:text-gray-400">{statLabels[key] || key}</div>
                               </div>
                             );
                           })}
@@ -385,7 +385,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
       </section>
 
       {/* Features Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="section-alternate py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -394,10 +394,10 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
               viewport={{ once: true }}
               className="text-center mb-10"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                 {t('features.title') || 'Why Choose TinyCompressor?'}
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('features.subtitle') || 'Advanced image processing technology with user-friendly features'}
               </p>
             </motion.div>
@@ -411,14 +411,14 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200 h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-500 hover:shadow-sm dark:hover:shadow-2xl transition-all duration-200 h-full">
                     <div className="flex items-center mb-3">
                       <span className="text-2xl mr-3">{feature.icon}</span>
-                      <h3 className="text-base font-semibold text-gray-900">
+                      <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 transition-colors">
                         {feature.title}
                       </h3>
                     </div>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
                       {feature.description}
                     </p>
                   </div>
@@ -429,7 +429,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-12 bg-white">
+      <section className="section-default py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -438,10 +438,10 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
               viewport={{ once: true }}
               className="text-center mb-10"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                 {t('howItWorks.title') || 'How It Works'}
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('howItWorks.subtitle') || 'Simple, fast, and secure image processing in three easy steps'}
               </p>
             </motion.div>
@@ -456,15 +456,15 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg mb-3">
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 transition-colors">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-lg mb-3 transition-colors">
                     <span className="text-2xl">{step.icon}</span>
                   </div>
-                  <div className="text-sm font-bold text-blue-600 mb-2">{step.step}</div>
-                  <h3 className="text-base font-semibold text-gray-900 mb-2">
+                  <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-2 transition-colors">{step.step}</div>
+                  <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2 transition-colors">
                     {step.title}
                   </h3>
-                  <p className="text-xs text-gray-600 leading-relaxed">
+                  <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed transition-colors">
                     {step.description}
                   </p>
                 </div>
@@ -475,7 +475,7 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="section-alternate py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -484,10 +484,10 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
               viewport={{ once: true }}
               className="text-center mb-10"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
                 {t('useCases.title') || 'Perfect for Every Use Case'}
               </h2>
-              <p className="text-base text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
                 {t('useCases.subtitle') || 'From web development to social media, optimize images for any purpose'}
               </p>
             </motion.div>
@@ -501,20 +501,20 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all duration-200 h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-500 hover:shadow-sm dark:hover:shadow-2xl transition-all duration-200 h-full">
                     <div className="flex items-center mb-3">
                       <span className="text-2xl mr-3">{useCase.icon}</span>
-                      <h3 className="text-base font-semibold text-gray-900">
+                      <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 transition-colors">
                         {useCase.category}
                       </h3>
                     </div>
-                    <p className="text-sm text-gray-600 mb-3">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 transition-colors">
                       {useCase.description}
                     </p>
                     <div className="space-y-1.5">
                       {useCase.benefits.map((benefit, benefitIndex) => (
-                        <div key={benefitIndex} className="flex items-center text-xs text-gray-500">
-                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
+                        <div key={benefitIndex} className="flex items-center text-xs text-gray-500 dark:text-gray-400 transition-colors">
+                          <span className="w-1.5 h-1.5 bg-blue-500 dark:bg-blue-400 rounded-full mr-2" />
                           {benefit}
                         </div>
                       ))}
@@ -527,8 +527,8 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
       </section>
 
       {/* CTA Section - Gradient Background */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10" />
+      <section className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-700 dark:via-purple-700 dark:to-pink-700 relative overflow-hidden transition-colors">
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent" />
           <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-white/10 to-transparent" />
@@ -544,20 +544,20 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
             <h2 className="text-3xl font-bold text-white mb-3">
               {t('cta.title') || 'Ready to Optimize Your Images?'}
             </h2>
-            <p className="text-base text-blue-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-base text-blue-100 dark:text-blue-200 mb-6 max-w-2xl mx-auto transition-colors">
               {t('cta.description') || 'Join millions of users who trust TinyCompressor for their image processing needs. Start optimizing your images today!'}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href={getNavigationPagePath('compressor', locale)}
-                className="inline-flex items-center px-6 py-2.5 bg-white text-blue-600 text-sm font-semibold rounded-lg hover:bg-blue-50 transition-colors duration-200 shadow-lg"
+                className="inline-flex items-center px-6 py-2.5 bg-white dark:bg-gray-100 text-blue-600 dark:text-blue-700 text-sm font-semibold rounded-lg hover:bg-blue-50 dark:hover:bg-white transition-colors duration-200 shadow-lg"
               >
                 <span className="mr-2">🗜️</span>
                 {t('cta.getStarted') || 'Start Compressing'}
               </a>
               <a
                 href={getNavigationPagePath('converter', locale)}
-                className="inline-flex items-center px-6 py-2.5 border-2 border-white text-white text-sm font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200"
+                className="inline-flex items-center px-6 py-2.5 border-2 border-white text-white text-sm font-semibold rounded-lg hover:bg-white hover:text-blue-600 dark:hover:text-blue-700 transition-all duration-200"
               >
                 <span className="mr-2">🔄</span>
                 {t('cta.learnMore') || 'Try Converter'}

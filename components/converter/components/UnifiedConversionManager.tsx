@@ -204,18 +204,18 @@ export default function UnifiedConversionManager({
 
       {/* 文件上传区域 */}
       <div 
-        className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-blue-400 transition-colors cursor-pointer"
+        className="bg-gray-50/50 dark:bg-gray-850/50 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-12 text-center hover:border-purple-400 dark:hover:border-purple-500 hover:bg-purple-50/50 dark:hover:bg-purple-500/5 transition-all duration-200 cursor-pointer backdrop-blur-sm group"
         onDragOver={(e) => {
           e.preventDefault();
-          e.currentTarget.classList.add('border-blue-500', 'bg-blue-50');
+          e.currentTarget.classList.add('!border-purple-500', 'dark:!border-purple-400');
         }}
         onDragLeave={(e) => {
           e.preventDefault();
-          e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50');
+          e.currentTarget.classList.remove('!border-purple-500', 'dark:!border-purple-400');
         }}
         onDrop={(e) => {
           e.preventDefault();
-          e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50');
+          e.currentTarget.classList.remove('!border-purple-500', 'dark:!border-purple-400');
           const files = Array.from(e.dataTransfer.files);
           handleDrop(files);
         }}
@@ -224,16 +224,16 @@ export default function UnifiedConversionManager({
         }}
       >
         <div className="space-y-4">
-          <div className="text-gray-600">
-            <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
-              <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+          <div className="text-gray-400 dark:text-gray-500 group-hover:text-purple-500 dark:group-hover:text-purple-400 transition-colors">
+            <svg className="mx-auto h-16 w-16" stroke="currentColor" fill="none" viewBox="0 0 48 48" strokeWidth={1.5}>
+              <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div>
-            <h3 className="text-lg font-medium text-gray-900">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors mb-2">
               {t('operation.upload.title')}
             </h3>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
               {t('operation.upload.subtitle', { 
                 sourceFormat: sourceFormat.toUpperCase(), 
                 targetFormat: targetFormat.toUpperCase(),
@@ -242,7 +242,7 @@ export default function UnifiedConversionManager({
             </p>
           </div>
           <div>
-            <span className="mt-2 inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+            <span className="mt-2 inline-flex items-center rounded-lg bg-purple-600 dark:bg-purple-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-purple-700 dark:hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 shadow-md hover:shadow-lg transition-all">
               {t('operation.upload.selectFiles')}
             </span>
             <input
@@ -270,9 +270,9 @@ export default function UnifiedConversionManager({
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="bg-red-50 border border-red-200 rounded-md p-4"
+            className="bg-red-50/80 dark:bg-red-500/10 border border-red-200 dark:border-red-500/20 rounded-lg p-4 backdrop-blur-sm transition-colors"
           >
-            <p className="text-sm text-red-600">{error}</p>
+            <p className="text-sm text-red-700 dark:text-red-300 font-medium transition-colors">{error}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -287,64 +287,68 @@ export default function UnifiedConversionManager({
             className="space-y-4"
           >
             <div className="flex items-center justify-between">
-              <h3 className="text-lg font-medium text-gray-900">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white transition-colors">
                 {t('operation.files.title')}
               </h3>
               <div className="flex items-center space-x-3">
-                <span className="text-sm text-gray-500">
+                <span className="text-sm text-gray-500 dark:text-gray-400 transition-colors">
                   {t('operation.files.count', { count: imageFiles.length })}
                 </span>
                 <button
                   onClick={handleReset}
-                  className="text-sm text-gray-500 hover:text-gray-700 underline transition-colors"
+                  className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 underline transition-colors"
                 >
                   {t('operation.files.reset')}
                 </button>
               </div>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-3">
               {imageFiles.map((imageFile) => (
                 <motion.div
                   key={imageFile.id}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 20 }}
-                  className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-sm transition-all duration-200"
+                  className="flex items-center justify-between p-4 bg-white dark:bg-gray-850 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-purple-300 dark:hover:border-purple-500 hover:shadow-md dark:hover:shadow-xl transition-all duration-200"
                 >
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-4 flex-1">
                     <div className="relative">
                       <img
                         src={imageFile.url}
                         alt={imageFile.name}
-                        className="w-14 h-14 object-cover rounded-lg border border-gray-200 shadow-sm"
+                        className="w-14 h-14 object-cover rounded-lg border-2 border-gray-200 dark:border-gray-700 shadow-sm"
                       />
-                      <div className="absolute -top-1 -right-1 w-5 h-5 bg-blue-500 text-white text-xs rounded-full flex items-center justify-center font-medium">
+                      <div className="absolute -top-1 -right-1 w-6 h-6 bg-purple-500 dark:bg-purple-600 text-white text-[10px] rounded-full flex items-center justify-center font-bold shadow-md">
                         {sourceFormat.toUpperCase()}
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-gray-900 truncate">
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-semibold text-gray-900 dark:text-white truncate transition-colors">
                         {imageFile.name}
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 transition-colors">
                         {t('operation.files.sizeInfo', { 
                           size: (imageFile.size / 1024 / 1024).toFixed(2) 
                         })}
                       </p>
                       <div className="flex items-center mt-1">
-                        <span className="text-xs text-gray-400">
-                          {sourceFormat.toUpperCase()} → {targetFormat.toUpperCase()}
+                        <span className="inline-flex items-center text-xs text-purple-600 dark:text-purple-400 font-medium transition-colors">
+                          {sourceFormat.toUpperCase()}
+                          <svg className="w-3 h-3 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                          {targetFormat.toUpperCase()}
                         </span>
                       </div>
                     </div>
                   </div>
                   <button
                     onClick={() => handleRemoveFile(imageFile.id)}
-                    className="text-red-500 hover:text-red-700 p-2 rounded-full hover:bg-red-50 transition-all duration-200 group"
+                    className="text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 p-2.5 rounded-lg hover:bg-red-50 dark:hover:bg-red-500/10 transition-all duration-200"
                     title={t('operation.files.remove')}
                   >
-                    <svg className="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </motion.div>
@@ -371,25 +375,25 @@ export default function UnifiedConversionManager({
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
-                  className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200"
+                  className="bg-gradient-to-r from-purple-50/80 to-blue-50/80 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl p-6 border border-purple-200 dark:border-purple-700/50 backdrop-blur-sm transition-colors"
                 >
                   <div className="flex items-center mb-4">
-                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-600 rounded-lg flex items-center justify-center mr-3 shadow-md">
                       <span className="text-white text-sm">⚙️</span>
                     </div>
-                    <h4 className="text-base font-semibold text-slate-800">
+                    <h4 className="text-base font-semibold text-slate-800 dark:text-white transition-colors">
                       {t('operation.settings.advancedTitle') || 'Advanced Settings'}
                     </h4>
                   </div>
                   
                   <div className="space-y-4">
                     {/* Quality Slider */}
-                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                    <div className="bg-white dark:bg-gray-850 rounded-lg p-4 shadow-sm dark:shadow-xl border border-gray-200 dark:border-gray-700 transition-colors">
                       <div className="flex items-center justify-between mb-3">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors">
                           {t('operation.settings.quality') || 'Quality'}
                         </label>
-                        <span className="text-lg font-bold text-blue-600">
+                        <span className="text-lg font-bold text-purple-600 dark:text-purple-400 transition-colors">
                           {settings.quality}
                         </span>
                       </div>
@@ -401,7 +405,7 @@ export default function UnifiedConversionManager({
                         onChange={(e) => handleSettingsChange({ quality: parseInt(e.target.value) })}
                         className="w-full h-2 bg-gradient-to-r from-red-200 via-yellow-200 to-green-200 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-blue-600 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg"
                       />
-                      <div className="flex justify-between text-xs text-gray-500 mt-2">
+                      <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mt-2 transition-colors">
                         <span>{t('operation.settings.qualityLow') || 'Low (60)'}</span>
                         <span>{t('operation.settings.qualityMedium') || 'Medium (80)'}</span>
                         <span>{t('operation.settings.qualityHigh') || 'High (100)'}</span>
@@ -410,18 +414,18 @@ export default function UnifiedConversionManager({
 
                     {/* Progressive (只对 JPEG 有效) */}
                     {(targetFormat === 'jpeg' || targetFormat === 'jpg') && (
-                      <div className="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+                      <div className="flex items-center justify-between bg-white dark:bg-gray-850 rounded-lg p-3 shadow-sm dark:shadow-xl border border-gray-200 dark:border-gray-700 transition-colors">
                         <div className="flex-1">
-                          <label className="text-sm font-medium text-gray-700">
+                          <label className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors">
                             {t('operation.settings.progressive') || 'Progressive JPEG'}
                           </label>
-                          <div className="text-xs text-gray-500 mt-0.5">
+                          <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 transition-colors">
                             {t('operation.settings.progressiveDesc') || 'Better for web'}
                           </div>
                         </div>
                         <input 
                           type="checkbox" 
-                          className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                          className="w-5 h-5 rounded border-gray-300 dark:border-gray-600 text-purple-600 focus:ring-purple-500 dark:bg-gray-800 transition-colors"
                           checked={settings.progressive}
                           onChange={(e) => handleSettingsChange({ progressive: e.target.checked })}
                         />
@@ -429,36 +433,36 @@ export default function UnifiedConversionManager({
                     )}
 
                     {/* Preserve Metadata */}
-                    <div className="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+                    <div className="flex items-center justify-between bg-white dark:bg-gray-850 rounded-lg p-3 shadow-sm dark:shadow-xl border border-gray-200 dark:border-gray-700 transition-colors">
                       <div className="flex-1">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors">
                           {t('operation.settings.metadata') || 'Keep Metadata'}
                         </label>
-                        <div className="text-xs text-gray-500 mt-0.5">
+                        <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 transition-colors">
                           {t('operation.settings.metadataDesc') || 'EXIF, GPS, camera info'}
                         </div>
                       </div>
                       <input 
                         type="checkbox" 
-                        className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                        className="w-5 h-5 rounded border-gray-300 dark:border-gray-600 text-purple-600 focus:ring-purple-500 dark:bg-gray-800 transition-colors"
                         checked={settings.preserveMetadata}
                         onChange={(e) => handleSettingsChange({ preserveMetadata: e.target.checked })}
                       />
                     </div>
 
                     {/* Optimize for Web */}
-                    <div className="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+                    <div className="flex items-center justify-between bg-white dark:bg-gray-850 rounded-lg p-3 shadow-sm dark:shadow-xl border border-gray-200 dark:border-gray-700 transition-colors">
                       <div className="flex-1">
-                        <label className="text-sm font-medium text-gray-700">
+                        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors">
                           {t('operation.settings.optimizeForWeb') || 'Optimize for Web'}
                         </label>
-                        <div className="text-xs text-gray-500 mt-0.5">
+                        <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 transition-colors">
                           {t('operation.settings.optimizeDesc') || 'Smaller file size'}
                         </div>
                       </div>
                       <input 
                         type="checkbox" 
-                        className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                        className="w-5 h-5 rounded border-gray-300 dark:border-gray-600 text-purple-600 focus:ring-purple-500 dark:bg-gray-800 transition-colors"
                         checked={settings.optimizeForWeb}
                         onChange={(e) => handleSettingsChange({ optimizeForWeb: e.target.checked })}
                       />
@@ -473,10 +477,10 @@ export default function UnifiedConversionManager({
               onClick={handleConvert}
               disabled={isConverting}
               className={`
-                w-full py-4 px-8 rounded-xl font-bold text-lg transition-all duration-200 relative overflow-hidden
+                w-full py-4 sm:py-5 px-8 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 relative overflow-hidden
                 ${isConverting
-                   ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 shadow-lg hover:shadow-2xl active:shadow-lg'
+                   ? 'bg-slate-300 dark:bg-gray-700 text-slate-500 dark:text-gray-500 cursor-not-allowed'
+                  : 'bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-600 dark:to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 dark:hover:from-blue-700 dark:hover:to-purple-700 shadow-lg hover:shadow-2xl active:shadow-lg'
                 }
               `}
               whileHover={isConverting ? {} : { scale: 1.02, y: -2 }}
@@ -484,18 +488,18 @@ export default function UnifiedConversionManager({
             >
               {/* 按钮光泽效果 */}
               {!isConverting && (
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-20 animate-pulse"></div>
               )}
               
               {isConverting ? (
                 <div className="flex items-center justify-center space-x-3">
-                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white dark:border-gray-300"></div>
                   <span>{t('operation.convert.processing', { progress: Math.round(conversionProgress) })}</span>
                 </div>
               ) : (
                 <div className="flex items-center justify-center space-x-3">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                   </svg>
                   <span>
                     {t('operation.convert.start', { 
@@ -514,7 +518,7 @@ export default function UnifiedConversionManager({
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200"
+                  className="bg-gradient-to-r from-purple-50/80 to-blue-50/80 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl p-6 border border-purple-200 dark:border-purple-700/50 backdrop-blur-sm transition-colors"
                 >
                   <div className="space-y-4">
                     {/* 进度环和百分比 */}
@@ -529,7 +533,7 @@ export default function UnifiedConversionManager({
                             stroke="currentColor"
                             strokeWidth="8"
                             fill="none"
-                            className="text-gray-200"
+                            className="text-gray-200 dark:text-gray-700 transition-colors"
                           />
                           {/* 进度圆环 */}
                           <motion.circle
@@ -553,7 +557,7 @@ export default function UnifiedConversionManager({
                         </svg>
                         {/* 百分比文字 */}
                         <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="text-2xl font-bold text-blue-600">
+                          <span className="text-2xl font-bold text-purple-600 dark:text-purple-400 transition-colors">
                             {Math.round(conversionProgress)}%
                           </span>
                         </div>
@@ -561,20 +565,20 @@ export default function UnifiedConversionManager({
                     </div>
 
                     {/* 进度条 */}
-                    <div className="relative bg-white rounded-full h-4 overflow-hidden shadow-inner">
+                    <div className="relative bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden shadow-inner transition-colors">
                       <motion.div
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 h-full rounded-full relative overflow-hidden"
+                        className="bg-gradient-to-r from-blue-500 to-purple-500 h-full rounded-full relative overflow-hidden"
                         initial={{ width: 0 }}
                         animate={{ width: `${conversionProgress}%` }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
                       >
                         {/* 进度条光泽动画 */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-40 animate-shimmer"></div>
                       </motion.div>
                     </div>
                     
                     {/* 状态文字 */}
-                    <div className="text-xs text-center text-gray-500">
+                    <div className="text-xs text-center text-gray-600 dark:text-gray-400 font-medium transition-colors">
                       {t('operation.progress.status', { progress: Math.round(conversionProgress) }) || `Converting... ${Math.round(conversionProgress)}%`}
                     </div>
                   </div>

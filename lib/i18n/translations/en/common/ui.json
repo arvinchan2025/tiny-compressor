@@ -1,4 +1,11 @@
 {
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Toggle theme",
+    "followingSystem": "Following system"
+  },
   "buttons": {
     "save": "Save",
     "cancel": "Cancel",

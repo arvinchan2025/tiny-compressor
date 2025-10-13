@@ -310,9 +310,9 @@ export default function UnifiedCompressionManager({
   }, []);
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+    <div className="bg-white dark:bg-gray-850 rounded-2xl shadow-xl dark:shadow-2xl border border-slate-200 dark:border-gray-700 overflow-hidden transition-colors">
       {/* 模式选择器 */}
-      <div className="p-6 pb-4">
+      <div className="p-6 pb-4 bg-gray-50/50 dark:bg-gray-900/50 transition-colors">
         <ModeSelector 
           isAdvancedMode={isAdvancedMode}
           onModeChange={handleModeChange}
@@ -339,26 +339,26 @@ export default function UnifiedCompressionManager({
             exit={{ opacity: 0, y: -10 }}
             className="mx-6 mb-6"
           >
-            <div className="bg-red-50 border-l-4 border-red-500 rounded-xl p-4 shadow-sm">
+            <div className="bg-red-50/80 dark:bg-red-500/10 border-l-4 border-red-500 dark:border-red-400 rounded-xl p-4 shadow-sm backdrop-blur-sm transition-colors">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <svg className="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-6 w-6 text-red-500 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div className="ml-3 flex-1">
-                  <h3 className="text-sm font-semibold text-red-800 mb-1">
+                  <h3 className="text-sm font-semibold text-red-800 dark:text-red-300 mb-1 transition-colors">
                     {t('operation.error.title')}
                   </h3>
-                  <div className="text-sm text-red-700 mb-2">{error}</div>
+                  <div className="text-sm text-red-700 dark:text-red-300 mb-2 transition-colors">{error}</div>
                   {/* 友好提示 */}
-                  <div className="text-xs text-red-600 bg-red-100 rounded-lg p-2 mt-2">
+                  <div className="text-xs text-red-600 dark:text-red-300 bg-red-100 dark:bg-red-500/20 rounded-lg p-2 mt-2 transition-colors">
                     {t('operation.error.tip')}
                   </div>
                 </div>
                 <button
                   onClick={() => setError(null)}
-                  className="flex-shrink-0 ml-2 text-red-400 hover:text-red-600 transition-colors"
+                  className="flex-shrink-0 ml-2 text-red-400 hover:text-red-600 dark:hover:text-red-300 transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -372,7 +372,7 @@ export default function UnifiedCompressionManager({
 
       {/* 压缩操作区域 */}
       {imageFiles.length > 0 && (
-        <div className="p-6 pt-4 border-t border-slate-200 bg-slate-50">
+        <div className="p-6 pt-4 border-t border-slate-200 dark:border-gray-700 bg-slate-50/50 dark:bg-gray-900/30 transition-colors">
           {/* 文件预览卡片 - 响应式优化 */}
           <div className="mb-6 max-w-2xl mx-auto">
             {imageFiles.map((file) => (
@@ -380,7 +380,7 @@ export default function UnifiedCompressionManager({
                 key={file.id}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-white rounded-xl border border-slate-200 p-3 sm:p-4 shadow-sm"
+                className="bg-white dark:bg-gray-850 rounded-xl border border-slate-200 dark:border-gray-700 p-3 sm:p-4 shadow-sm dark:shadow-xl transition-colors"
               >
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   {/* 图片预览缩略图 */}
@@ -402,10 +402,10 @@ export default function UnifiedCompressionManager({
                   
                   {/* 文件信息 - 响应式 */}
                   <div className="flex-1 min-w-0">
-                    <h4 className="text-xs sm:text-sm font-semibold text-gray-900 truncate">
+                    <h4 className="text-xs sm:text-sm font-semibold text-gray-900 dark:text-white truncate transition-colors">
                       {file.name}
                     </h4>
-                    <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-gray-500">
+                    <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-gray-500 dark:text-gray-400 transition-colors">
                       <span className="flex items-center">
                         <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -418,7 +418,7 @@ export default function UnifiedCompressionManager({
                         </svg>
                         {(file.size / 1024 / 1024).toFixed(2)} MB
                       </span>
-                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 dark:bg-blue-500/20 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-blue-500/30 transition-colors">
                         {format.toUpperCase()}
                       </span>
                     </div>
@@ -430,7 +430,7 @@ export default function UnifiedCompressionManager({
                       setImageFiles([]);
                       setError(null);
                     }}
-                    className="flex-shrink-0 p-2 sm:p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+                    className="flex-shrink-0 p-2 sm:p-2 text-gray-400 dark:text-gray-500 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-lg transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
                     aria-label="Remove file"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -453,24 +453,24 @@ export default function UnifiedCompressionManager({
                   exit={{ opacity: 0, height: 0 }}
                   className="w-full max-w-2xl"
                 >
-                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200">
+                  <div className="bg-gradient-to-r from-blue-50/80 to-purple-50/80 dark:from-blue-900/20 dark:to-purple-900/20 rounded-xl p-6 border border-blue-200 dark:border-blue-700/50 backdrop-blur-sm transition-colors">
                     <div className="flex items-center mb-4">
-                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3 shadow-md">
                         <span className="text-white text-sm">⚙️</span>
                       </div>
-                      <h3 className="text-base font-semibold text-slate-800">
+                      <h3 className="text-base font-semibold text-slate-800 dark:text-white transition-colors">
                         {t('operation.settings.advancedTitle')} - {format.toUpperCase()}
                       </h3>
                     </div>
                     
                     <div className="space-y-4">
                       {/* Quality Slider */}
-                      <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <div className="bg-white dark:bg-gray-850 rounded-lg p-4 shadow-sm dark:shadow-xl border border-gray-200 dark:border-gray-700 transition-colors">
                         <div className="flex items-center justify-between mb-3">
-                          <label className="text-sm font-medium text-gray-700">
+                          <label className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors">
                             {t('operation.settings.quality') || 'Quality'}
                           </label>
-                          <span className="text-lg font-bold text-blue-600">
+                          <span className="text-lg font-bold text-blue-600 dark:text-blue-400 transition-colors">
                             {compressionSettings.quality}
                           </span>
                         </div>
@@ -482,7 +482,7 @@ export default function UnifiedCompressionManager({
                           onChange={(e) => handleSettingsChange({ quality: parseInt(e.target.value) })}
                           className="w-full h-2 bg-gradient-to-r from-red-200 via-yellow-200 to-green-200 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-blue-600 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg"
                         />
-                        <div className="flex justify-between text-xs text-gray-500 mt-2">
+                        <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mt-2 transition-colors">
                           <span>{t('operation.settings.qualityLow') || 'Low'}</span>
                           <span>{t('operation.settings.qualityMedium') || 'Medium'}</span>
                           <span>{t('operation.settings.qualityHigh') || 'High'}</span>
@@ -490,12 +490,12 @@ export default function UnifiedCompressionManager({
                       </div>
 
                       {/* Keep Metadata */}
-                      <div className="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+                      <div className="flex items-center justify-between bg-white dark:bg-gray-850 rounded-lg p-3 shadow-sm dark:shadow-xl border border-gray-200 dark:border-gray-700 transition-colors">
                         <div className="flex-1">
-                          <label className="text-sm font-medium text-gray-700">
+                          <label className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors">
                             {t('operation.settings.metadata') || 'Keep Metadata'}
                           </label>
-                          <div className="text-xs text-gray-500 mt-0.5">
+                          <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 transition-colors">
                             {t('operation.settings.metadataDesc') || 'EXIF, GPS, camera info'}
                           </div>
                         </div>
@@ -518,10 +518,10 @@ export default function UnifiedCompressionManager({
               onClick={handleCompress}
               disabled={isCompressing}
               className={`
-                w-full max-w-2xl py-4 sm:py-4 px-6 sm:px-8 rounded-xl font-bold text-base sm:text-lg transition-all duration-200 relative overflow-hidden
+                w-full max-w-2xl py-4 sm:py-5 px-6 sm:px-8 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 relative overflow-hidden
                 ${isCompressing
-                   ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 shadow-lg hover:shadow-2xl active:shadow-lg'
+                   ? 'bg-slate-300 dark:bg-gray-700 text-slate-500 dark:text-gray-500 cursor-not-allowed'
+                  : 'bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-600 dark:to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 dark:hover:from-blue-700 dark:hover:to-purple-700 shadow-lg hover:shadow-2xl active:shadow-lg'
                 }
               `}
               whileHover={isCompressing ? {} : { scale: 1.02, y: -2 }}
@@ -529,18 +529,18 @@ export default function UnifiedCompressionManager({
             >
               {/* 按钮光泽效果 */}
               {!isCompressing && (
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-20 animate-pulse"></div>
               )}
               
               {isCompressing ? (
                 <div className="flex items-center justify-center space-x-3">
-                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white dark:border-gray-300"></div>
                   <span>{t('operation.compress.processing', { progress: Math.round(compressionProgress) })}</span>
                 </div>
               ) : (
                 <div className="flex items-center justify-center space-x-3">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                   </svg>
                   <span>{t('operation.compress.start', { format: format.toUpperCase() })}</span>
                 </div>
@@ -557,20 +557,20 @@ export default function UnifiedCompressionManager({
                   transition={{ duration: 0.3 }}
                   className="w-full max-w-2xl"
                 >
-                  <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+                  <div className="bg-white dark:bg-gray-850 rounded-xl border border-slate-200 dark:border-gray-700 p-5 shadow-sm dark:shadow-xl backdrop-blur-sm transition-colors">
                     <div className="space-y-3">
                       {/* 进度标题和百分比 */}
                       <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-gray-700">
+                        <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 transition-colors">
                           {t('operation.progress.label')}
                         </span>
-                        <span className="text-lg font-bold text-blue-600">
+                        <span className="text-xl font-bold text-blue-600 dark:text-blue-400 transition-colors">
                           {Math.round(compressionProgress)}%
                         </span>
                       </div>
                       
                       {/* 进度条 */}
-                      <div className="relative w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                      <div className="relative w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden shadow-inner">
                         <motion.div
                           className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 rounded-full"
                           initial={{ width: '0%' }}
@@ -578,12 +578,12 @@ export default function UnifiedCompressionManager({
                           transition={{ duration: 0.3, ease: 'easeOut' }}
                         >
                           {/* 进度条光泽动画 */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-40 animate-shimmer"></div>
                         </motion.div>
                       </div>
                       
                       {/* 状态文字 */}
-                      <div className="text-xs text-center text-gray-500">
+                      <div className="text-xs text-center text-gray-500 dark:text-gray-400 font-medium transition-colors">
                         {t('operation.progress.compressing', { format: format.toUpperCase() })}
                       </div>
                     </div>

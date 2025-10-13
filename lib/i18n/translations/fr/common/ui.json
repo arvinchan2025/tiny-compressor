@@ -1,4 +1,11 @@
 {
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "toggle": "Changer de thème",
+    "followingSystem": "Suit le système"
+  },
   "buttons": {
     "save": "Enregistrer",
     "cancel": "Annuler",

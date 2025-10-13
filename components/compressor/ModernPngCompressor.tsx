@@ -647,17 +647,24 @@ export default function ModernPngCompressor({ locale }: ModernPngCompressorProps
           </div>
         </motion.section>
 
-        {/* Quick Links Section */}
+        {/* Quick Links Section - CTA Style */}
         <motion.section 
-          className="py-16 bg-gradient-to-r from-blue-600 to-purple-600"
+          className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-700 dark:via-purple-700 dark:to-pink-700 relative overflow-hidden transition-colors"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.1 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="container mx-auto px-4">
+          {/* Background Decorative Layers */}
+          <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
+          <div className="absolute inset-0">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent" />
+            <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-white/10 to-transparent" />
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-6xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-white mb-8">
+              <h2 className="text-3xl font-bold text-white mb-12">
                 {t('quickLinks.title')}
               </h2>
               
@@ -666,18 +673,16 @@ export default function ModernPngCompressor({ locale }: ModernPngCompressorProps
                   <motion.a
                     key={index}
                     href={item.path}
-                    className="block p-6 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all duration-300"
+                    className="card-cta block p-6 group"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
                   >
-                    <div className="text-white text-lg font-semibold mb-2">
+                    <div className="text-gray-900 dark:text-white text-lg font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {item.title}
                     </div>
-                    <div className="text-white/80 text-sm">
+                    <div className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors">
                       {item.description}
                     </div>
                   </motion.a>

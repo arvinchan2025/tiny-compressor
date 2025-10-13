@@ -7,6 +7,7 @@
 
 import { ReactNode } from 'react';
 import { SettingsProvider } from '@/contexts/SettingsContext';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 // import TranslationPreloader from './TranslationPreloader';
 
 interface ClientProvidersProps {
@@ -15,9 +16,11 @@ interface ClientProvidersProps {
 
 export function ClientProviders({ children }: ClientProvidersProps) {
   return (
-    <SettingsProvider>
-      {/* <TranslationPreloader locale="en" /> */}
-      {children}
-    </SettingsProvider>
+    <ThemeProvider>
+      <SettingsProvider>
+        {/* <TranslationPreloader locale="en" /> */}
+        {children}
+      </SettingsProvider>
+    </ThemeProvider>
   );
 }

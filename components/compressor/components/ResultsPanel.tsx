@@ -43,7 +43,7 @@ export default function ResultsPanel({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="border-t border-slate-200 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50"
+      className="border-t border-slate-200 dark:border-gray-700 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 dark:from-green-950/20 dark:via-blue-950/20 dark:to-purple-950/20 transition-colors"
     >
       <div className="p-6 max-w-3xl mx-auto">
         {/* 成功标题 - 增强庆祝感 */}
@@ -52,7 +52,7 @@ export default function ResultsPanel({
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 200, damping: 10 }}
-            className="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+            className="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-600 dark:from-green-600 dark:to-emerald-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
           >
             <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -63,7 +63,7 @@ export default function ResultsPanel({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-2xl font-bold text-gray-900 mb-2"
+            className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2 transition-colors"
           >
             {t('operation.results.title')}
           </motion.h3>
@@ -71,7 +71,7 @@ export default function ResultsPanel({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-gray-600"
+            className="text-gray-600 dark:text-gray-300 transition-colors"
           >
             {t('operation.results.subtitle')}
           </motion.p>
@@ -85,16 +85,16 @@ export default function ResultsPanel({
           className="space-y-4 mb-6"
         >
           {/* 主要统计卡片 */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-slate-200">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-slate-200 dark:border-gray-700 transition-colors">
             {/* 压缩率高亮显示 */}
             <div className="text-center mb-6">
-              <div className="inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl px-6 py-4 border-2 border-green-200">
-                <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <div className="inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 rounded-2xl px-6 py-4 border-2 border-green-200 dark:border-green-700 transition-colors">
+                <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <div>
-                  <div className="text-xs text-green-700 font-medium mb-1">{t('operation.results.compressionRatio')}</div>
-                  <div className={`text-4xl font-black ${isPositiveSavings ? 'text-green-600' : 'text-red-600'}`}>
+                  <div className="text-xs text-green-700 dark:text-green-400 font-medium mb-1 transition-colors">{t('operation.results.compressionRatio')}</div>
+                  <div className={`text-4xl font-black ${isPositiveSavings ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'} transition-colors`}>
                     {isPositiveSavings ? '-' : '+'}{Math.abs(compressionRatio)}%
                   </div>
                 </div>
@@ -106,8 +106,8 @@ export default function ResultsPanel({
               <div className="grid grid-cols-2 gap-4">
                 {/* 原始图片预览 */}
                 <div className="space-y-2">
-                  <div className="text-xs font-semibold text-gray-600 uppercase text-center">{t('operation.results.original')}</div>
-                  <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden border border-gray-200">
+                  <div className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase text-center transition-colors">{t('operation.results.original')}</div>
+                  <div className="aspect-video bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 transition-colors">
                     {originalImageUrl && (
                       <img 
                         src={originalImageUrl} 
@@ -117,17 +117,17 @@ export default function ResultsPanel({
                     )}
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-gray-900">
+                    <div className="text-2xl font-bold text-gray-900 dark:text-gray-100 transition-colors">
                       {(result.originalSize / 1024 / 1024).toFixed(2)}
                     </div>
-                    <div className="text-xs text-gray-500">MB</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400 transition-colors">MB</div>
                   </div>
                 </div>
                 
                 {/* 压缩后图片预览 */}
                 <div className="space-y-2">
-                  <div className="text-xs font-semibold text-green-700 uppercase text-center">{t('operation.results.compressed')}</div>
-                  <div className="aspect-video bg-green-50 rounded-lg overflow-hidden border-2 border-green-300">
+                  <div className="text-xs font-semibold text-green-700 dark:text-green-400 uppercase text-center transition-colors">{t('operation.results.compressed')}</div>
+                  <div className="aspect-video bg-green-50 dark:bg-green-900/30 rounded-lg overflow-hidden border-2 border-green-300 dark:border-green-700 transition-colors">
                     {result.preview && (
                       <img 
                         src={result.preview} 
@@ -137,21 +137,21 @@ export default function ResultsPanel({
                     )}
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-green-600">
+                    <div className="text-2xl font-bold text-green-600 dark:text-green-400 transition-colors">
                       {(result.compressedSize / 1024 / 1024).toFixed(2)}
                     </div>
-                    <div className="text-xs text-green-600">MB</div>
+                    <div className="text-xs text-green-600 dark:text-green-400 transition-colors">MB</div>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* 详细统计 */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200">
+            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200 dark:border-gray-700 transition-colors">
               {/* 节省空间 */}
               <div className="text-center">
-                <div className="text-xs text-gray-500 mb-1">{t('operation.results.saved')}</div>
-                <div className="text-lg font-bold text-green-600">
+                <div className="text-xs text-gray-500 dark:text-gray-400 mb-1 transition-colors">{t('operation.results.saved')}</div>
+                <div className="text-lg font-bold text-green-600 dark:text-green-400 transition-colors">
                   {((result.originalSize - result.compressedSize) / 1024 / 1024).toFixed(2)} MB
                 </div>
               </div>
