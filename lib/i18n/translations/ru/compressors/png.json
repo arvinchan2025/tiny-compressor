@@ -216,9 +216,11 @@
     },
     "files": {
       "title": "Выбранные файлы",
+      "name": "Имя",
+      "dimensions": "Размеры",
       "count": "{count} файл(ов)",
       "remove": "Удалить",
-      "sizeInfo": "{size} MB"
+      "sizeInfo": "Размер"
     },
     "compress": {
       "start": "Сжать {format}",
@@ -247,6 +249,7 @@
       "download": "Скачать",
       "compressMore": "Сжать еще",
       "reset": "Сбросить",
+      "sizeComparison": "Сравнение размеров",
       "sizeInfo": "Оригинал: {original} MB → Сжато: {compressed} MB (сокращение {ratio}%)"
     },
     "settings": {
@@ -257,10 +260,14 @@
       "qualityLow": "Низкое",
       "qualityMedium": "Среднее",
       "qualityHigh": "Высокое",
-      "metadata": "Сохранить метаданные",
-      "metadataDesc": "EXIF, GPS, информация о камере"
+      "keepMetadata": "Сохранить метаданные",
+      "metadataDesc": "Сохранить информацию EXIF, GPS и о камере",
+      "progressive": "Прогрессивный JPEG",
+      "progressiveDesc": "Прогрессивная загрузка изображений для лучшей веб-производительности"
     },
     "actions": {
+      "compress": "Сжать сейчас",
+      "cancel": "Отменить",
       "downloadAll": "Скачать все",
       "reset": "Сбросить"
     },
@@ -273,8 +280,12 @@
     },
     "status": {
       "starting": "Начало сжатия...",
-      "processing": "Сжатие... {progress}%",
+      "processing": "Сжатие изображения...",
       "completed": "Сжатие завершено!"
+    },
+    "stats": {
+      "qualityUsed": "Используемое качество",
+      "processingTime": "Время обработки"
     }
   }
 }

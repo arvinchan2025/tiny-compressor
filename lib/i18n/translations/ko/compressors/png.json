@@ -216,9 +216,11 @@
     },
     "files": {
       "title": "선택된 파일",
+      "name": "이름",
+      "dimensions": "크기",
       "count": "{count}개 파일",
       "remove": "제거",
-      "sizeInfo": "{size} MB"
+      "sizeInfo": "크기"
     },
     "compress": {
       "start": "{format} 압축",
@@ -247,6 +249,7 @@
       "download": "다운로드",
       "compressMore": "더 압축",
       "reset": "재설정",
+      "sizeComparison": "크기 비교",
       "sizeInfo": "원본: {original} MB → 압축됨: {compressed} MB ({ratio}% 감소)"
     },
     "settings": {
@@ -257,10 +260,14 @@
       "qualityLow": "낮음",
       "qualityMedium": "중간",
       "qualityHigh": "높음",
-      "metadata": "메타데이터 유지",
-      "metadataDesc": "EXIF, GPS, 카메라 정보"
+      "keepMetadata": "메타데이터 유지",
+      "metadataDesc": "EXIF, GPS, 카메라 정보 보존",
+      "progressive": "프로그레시브 JPEG",
+      "progressiveDesc": "더 나은 웹 성능을 위해 이미지를 프로그레시브하게 로드"
     },
     "actions": {
+      "compress": "지금 압축",
+      "cancel": "취소",
       "downloadAll": "모두 다운로드",
       "reset": "재설정"
     },
@@ -273,8 +280,12 @@
     },
     "status": {
       "starting": "압축 시작 중...",
-      "processing": "압축 중... {progress}%",
+      "processing": "이미지 압축 중...",
       "completed": "압축 완료!"
+    },
+    "stats": {
+      "qualityUsed": "사용된 품질",
+      "processingTime": "처리 시간"
     }
   }
 }

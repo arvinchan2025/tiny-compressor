@@ -84,6 +84,16 @@
           "무손실 변환"
         ],
         "compression": "최대 90%"
+      },
+      "pdf": {
+        "name": "PDF 압축기",
+        "description": "고급 압축으로 PDF 파일 크기 줄이기",
+        "features": [
+          "이미지 압축",
+          "메타데이터 제거",
+          "개인정보 보호"
+        ],
+        "compression": "최대 60%"
       }
     },
     "features": {

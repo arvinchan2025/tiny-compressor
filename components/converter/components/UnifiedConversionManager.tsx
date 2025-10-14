@@ -5,7 +5,7 @@
 
 'use client';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
 import { convertImage, validateImageFile, getImageMetadata } from '@/lib/image-processing/compression';
@@ -14,6 +14,7 @@ import { Locale } from '@/lib/i18n';
 import ConversionResultsPanel from './ConversionResultsPanel';
 import ModeSelector from '@/components/compressor/components/ModeSelector';
 import ConversionModeSelector from './ConversionModeSelector';
+import SingleFileConverter from '../SingleFileConverter';
 
 // 转换特定的设置接口
 interface ConversionSpecificSettings {
@@ -191,6 +192,35 @@ export default function UnifiedConversionManager({
     setSettings(prev => ({ ...prev, ...newSettings }));
   }, []);
 
+  // ⭐ 智能模式检测：单文件使用优化体验
+  const isSingleFileMode = useMemo(() => 
+    imageFiles.length === 1 && conversionResults.length === 0,
+    [imageFiles.length, conversionResults.length]
+  );
+
+  // ⭐ 单文件模式：使用 SingleFileConverter
+  if (isSingleFileMode) {
+    return (
+      <SingleFileConverter
+        locale={locale}
+        sourceFormat={sourceFormat}
+        targetFormat={targetFormat}
+        initialFile={imageFiles[0]} // 传递已上传的文件
+        onComplete={(result) => {
+          setConversionResults([result]);
+          onConversionComplete?.([result]);
+        }}
+        onReset={() => {
+          setImageFiles([]);
+          setConversionResults([]);
+          setError(null);
+          setResetKey(prev => prev + 1);
+        }}
+      />
+    );
+  }
+
+  // 批量模式：使用原有的批量处理界面
   return (
     <div className="space-y-6">
       {/* 模式选择器 */}
@@ -202,9 +232,10 @@ export default function UnifiedConversionManager({
         targetFormat={targetFormat}
       />
 
-      {/* 文件上传区域 */}
-      <div 
-        className="bg-gray-50/50 dark:bg-gray-850/50 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-12 text-center hover:border-purple-400 dark:hover:border-purple-500 hover:bg-purple-50/50 dark:hover:bg-purple-500/5 transition-all duration-200 cursor-pointer backdrop-blur-sm group"
+      {/* 文件上传区域 - 只在没有文件时显示 */}
+      {imageFiles.length === 0 && conversionResults.length === 0 && (
+        <div 
+          className="bg-gray-50/50 dark:bg-gray-850/50 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-12 text-center hover:border-purple-400 dark:hover:border-purple-500 hover:bg-purple-50/50 dark:hover:bg-purple-500/5 transition-all duration-200 cursor-pointer backdrop-blur-sm group"
         onDragOver={(e) => {
           e.preventDefault();
           e.currentTarget.classList.add('!border-purple-500', 'dark:!border-purple-400');
@@ -262,6 +293,7 @@ export default function UnifiedConversionManager({
           </div>
         </div>
       </div>
+      )}
 
       {/* 错误显示 */}
       <AnimatePresence>
@@ -277,9 +309,9 @@ export default function UnifiedConversionManager({
         )}
       </AnimatePresence>
 
-      {/* 文件列表 */}
+      {/* 文件列表 - 只在没有结果时显示 */}
       <AnimatePresence>
-        {imageFiles.length > 0 && (
+        {imageFiles.length > 0 && conversionResults.length === 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -358,9 +390,9 @@ export default function UnifiedConversionManager({
         )}
       </AnimatePresence>
 
-      {/* 转换按钮 */}
+      {/* 转换按钮 - 只在没有结果时显示 */}
       <AnimatePresence>
-        {imageFiles.length > 0 && (
+        {imageFiles.length > 0 && conversionResults.length === 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

@@ -110,9 +110,11 @@
     },
     "files": {
       "title": "Selected Files",
+      "name": "Name",
+      "dimensions": "Dimensions",
       "count": "{count} files",
       "remove": "Remove",
-      "sizeInfo": "{size} MB"
+      "sizeInfo": "Size"
     },
     "compress": {
       "start": "Compress {format}",
@@ -123,6 +125,7 @@
     },
     "results": {
       "title": "Compression Results",
+      "sizeComparison": "Size Comparison",
       "sizeInfo": "Original: {original} MB → Compressed: {compressed} MB ({ratio}% reduction)",
       "download": "Download"
     },
@@ -134,6 +137,8 @@
       "metadata": "Keep Metadata"
     },
     "actions": {
+      "compress": "Compress Now",
+      "cancel": "Cancel",
       "downloadAll": "Download All",
       "reset": "Reset"
     },
@@ -144,6 +149,10 @@
       "starting": "Starting compression...",
       "processing": "Compressing... {progress}%",
       "completed": "Compression completed!"
+    },
+    "stats": {
+      "qualityUsed": "Quality Used",
+      "processingTime": "Processing Time"
     }
   },
   "useCases": {

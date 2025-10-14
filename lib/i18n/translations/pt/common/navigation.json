@@ -84,6 +84,16 @@
           "Otimização de paleta"
         ],
         "compression": "Até 95%"
+      },
+      "pdf": {
+        "name": "Compressor PDF",
+        "description": "Reduza o tamanho de arquivos PDF com compressão avançada",
+        "features": [
+          "Compressão de imagens",
+          "Remoção de metadados",
+          "Privacidade protegida"
+        ],
+        "compression": "Até 60%"
       }
     },
     "features": {

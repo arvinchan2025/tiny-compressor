@@ -84,6 +84,16 @@
           "Paletten-Optimierung"
         ],
         "compression": "Bis zu 95% Dateigröße-Reduzierung"
+      },
+      "pdf": {
+        "name": "PDF-Kompressor",
+        "description": "Reduzieren Sie PDF-Dateigröße mit fortschrittlicher Komprimierung",
+        "features": [
+          "Bildkomprimierung",
+          "Metadaten-Entfernung",
+          "Datenschutz geschützt"
+        ],
+        "compression": "Bis zu 60%"
       }
     },
     "features": {

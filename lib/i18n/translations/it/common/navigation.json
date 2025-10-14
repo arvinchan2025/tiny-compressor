@@ -84,6 +84,16 @@
           "Ottimizzazione tavolozza"
         ],
         "compression": "Fino al 95%"
+      },
+      "pdf": {
+        "name": "Compressore PDF",
+        "description": "Riduci la dimensione dei file PDF con compressione avanzata",
+        "features": [
+          "Compressione immagini",
+          "Rimozione metadati",
+          "Privacy protetta"
+        ],
+        "compression": "Fino al 60%"
       }
     },
     "features": {

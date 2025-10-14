@@ -216,9 +216,11 @@
     },
     "files": {
       "title": "選択されたファイル",
+      "name": "名前",
+      "dimensions": "サイズ",
       "count": "{count}ファイル",
       "remove": "削除",
-      "sizeInfo": "{size} MB"
+      "sizeInfo": "サイズ"
     },
     "compress": {
       "start": "{format}を圧縮",
@@ -247,6 +249,7 @@
       "download": "ダウンロード",
       "compressMore": "もっと圧縮",
       "reset": "リセット",
+      "sizeComparison": "サイズ比較",
       "sizeInfo": "元: {original} MB → 圧縮済み: {compressed} MB ({ratio}%削減)"
     },
     "settings": {
@@ -257,10 +260,14 @@
       "qualityLow": "低",
       "qualityMedium": "中",
       "qualityHigh": "高",
-      "metadata": "メタデータを保持",
-      "metadataDesc": "EXIF、GPS、カメラ情報"
+      "keepMetadata": "メタデータを保持",
+      "metadataDesc": "EXIF、GPS、カメラ情報を保持",
+      "progressive": "プログレッシブJPEG",
+      "progressiveDesc": "より良いWebパフォーマンスのために画像をプログレッシブに読み込み"
     },
     "actions": {
+      "compress": "今すぐ圧縮",
+      "cancel": "キャンセル",
       "downloadAll": "すべてダウンロード",
       "reset": "リセット"
     },
@@ -273,8 +280,12 @@
     },
     "status": {
       "starting": "圧縮を開始中...",
-      "processing": "圧縮中... {progress}%",
+      "processing": "画像圧縮中...",
       "completed": "圧縮完了！"
+    },
+    "stats": {
+      "qualityUsed": "使用された品質",
+      "processingTime": "処理時間"
     }
   }
 }

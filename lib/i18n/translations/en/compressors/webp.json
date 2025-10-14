@@ -215,9 +215,11 @@
     },
     "files": {
       "title": "Selected Files",
+      "name": "Name",
+      "dimensions": "Dimensions",
       "count": "{count} files",
       "remove": "Remove",
-      "sizeInfo": "{size} MB"
+      "sizeInfo": "Size"
     },
     "compress": {
       "start": "Compress {format}",
@@ -246,6 +248,7 @@
       "download": "Download",
       "compressMore": "Compress More",
       "reset": "Reset",
+      "sizeComparison": "Size Comparison",
       "sizeInfo": "Original: {original} MB → Compressed: {compressed} MB ({ratio}% reduction)"
     },
     "settings": {
@@ -253,13 +256,17 @@
       "advanced": "Advanced",
       "advancedTitle": "Advanced Settings",
       "quality": "Quality",
-      "qualityLow": "Low",
+      "qualityLow": "Low (Smaller file)",
       "qualityMedium": "Medium",
-      "qualityHigh": "High",
-      "metadata": "Keep Metadata",
-      "metadataDesc": "EXIF, GPS, camera info"
+      "qualityHigh": "High (Best quality)",
+      "keepMetadata": "Keep Metadata",
+      "metadataDesc": "Preserve EXIF, GPS, and camera information",
+      "progressive": "Progressive JPEG",
+      "progressiveDesc": "Load images progressively for better web performance"
     },
     "actions": {
+      "compress": "Compress Now",
+      "cancel": "Cancel",
       "downloadAll": "Download All",
       "reset": "Reset"
     },
@@ -274,6 +281,10 @@
       "starting": "Starting compression...",
       "processing": "Compressing... {progress}%",
       "completed": "Compression completed!"
+    },
+    "stats": {
+      "qualityUsed": "Quality Used",
+      "processingTime": "Processing Time"
     }
   }
 }

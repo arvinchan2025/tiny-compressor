@@ -1,0 +1,307 @@
+{
+  "seo": {
+    "title": "Compresseur PDF - Compresser les fichiers PDF en ligne gratuitement",
+    "description": "Compressez les fichiers PDF en ligne avec notre compresseur PDF gratuit. Réduisez la taille du fichier tout en maintenant la qualité. Rapide, sécurisé et facile à utiliser.",
+    "keywords": "compresseur PDF, compresser PDF, optimisation PDF, réduire taille PDF, compresseur PDF en ligne, compresseur PDF gratuit"
+  },
+  "hero": {
+    "title": "Compresseur PDF",
+    "description": "Compressez les fichiers PDF en ligne avec notre technologie de compression avancée. Réduisez la taille du fichier tout en maintenant la qualité et la lisibilité.",
+    "subtitle": "Compressez les fichiers PDF en ligne avec notre technologie de compression avancée. Réduisez la taille du fichier tout en maintenant la qualité et la lisibilité.",
+    "badge": "Compresseur"
+  },
+  "formatInfo": {
+    "description": "PDF (Portable Document Format) est un format de fichier développé par Adobe pour représenter des documents de manière indépendante du logiciel d'application, du matériel et des systèmes d'exploitation."
+  },
+  "features": {
+    "title": "Caractéristiques du format PDF",
+    "description": "Pourquoi PDF est la norme universelle pour le partage de documents",
+    "items": [
+      {
+        "icon": "📄",
+        "title": "Norme Universelle",
+        "description": "Format standardisé ISO lisible sur tout appareil, plateforme ou système d'exploitation"
+      },
+      {
+        "icon": "🖼️",
+        "title": "Support de Contenu Mixte",
+        "description": "Combine parfaitement texte, images, graphiques vectoriels, polices et multimédia"
+      },
+      {
+        "icon": "🔒",
+        "title": "Sécurité et Chiffrement",
+        "description": "Protection par mot de passe intégrée, signatures numériques et chiffrement AES 256 bits"
+      },
+      {
+        "icon": "📝",
+        "title": "Texte Recherchable",
+        "description": "Recherche de texte intégrale, support copier-coller et fonctionnalités d'accessibilité pour lecteurs d'écran"
+      },
+      {
+        "icon": "🎯",
+        "title": "Fonctionnalités Interactives",
+        "description": "Prend en charge les formulaires, annotations, signets, hyperliens et pièces jointes intégrées"
+      },
+      {
+        "icon": "📱",
+        "title": "Fidélité d'Impression",
+        "description": "Garantie WYSIWYG - le document apparaît exactement pareil à l'écran et imprimé"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "Comment fonctionne la compression PDF",
+    "description": "Comprendre les principes techniques derrière la compression PDF vous aide à optimiser les documents efficacement.",
+    "items": [
+      {
+        "title": "Compression d'Images",
+        "description": "Les fichiers PDF contiennent souvent des images haute résolution qui peuvent être optimisées sans perte visible de qualité. Notre compresseur analyse chaque image intégrée et applique une compression optimale basée sur le type de contenu - JPEG pour les photos, FLATE pour les graphiques - réduisant les données d'image de 40-80% tout en maintenant la fidélité visuelle.",
+        "icon": "🖼️",
+        "benefits": [
+          "Réduire la résolution d'image au DPI approprié (150-300)",
+          "Appliquer une compression optimale par type d'image",
+          "Supprimer les ressources d'image dupliquées ou inutilisées",
+          "Convertir les images en formats efficaces"
+        ]
+      },
+      {
+        "title": "Sous-ensemble de Polices",
+        "description": "Les documents PDF intègrent des fichiers de police complets pour assurer un rendu de texte cohérent. Le sous-ensemble de polices extrait uniquement les caractères réellement utilisés dans le document, réduisant considérablement la taille des données de police - une police complète (200KB) devient un sous-ensemble (10-30KB) avec zéro impact visuel.",
+        "icon": "🔤",
+        "benefits": [
+          "Intégrer uniquement les caractères utilisés au lieu de polices complètes",
+          "Réduire les données de police de 80-95%",
+          "Maintenir un rendu de texte parfait et la capacité de recherche",
+          "Support efficace pour plusieurs langues"
+        ]
+      },
+      {
+        "title": "Optimisation du Flux de Contenu",
+        "description": "Les flux de contenu PDF contiennent des instructions de dessin pour le texte, les graphiques et la mise en page. Ces flux peuvent être optimisés en supprimant les opérateurs redondants, en fusionnant les opérations similaires et en appliquant la compression FLATE, réduisant la taille du flux de 20-40% sans altérer la sortie visuelle.",
+        "icon": "📊",
+        "benefits": [
+          "Supprimer les opérations de dessin redondantes",
+          "Fusionner les flux de contenu dupliqués",
+          "Appliquer une compression FLATE efficace",
+          "Optimiser les graphiques de chemin et vectoriels"
+        ]
+      },
+      {
+        "title": "Nettoyage des Métadonnées et Objets",
+        "description": "Les PDFs accumulent des métadonnées, annotations et objets inutilisés pendant la création et l'édition. Supprimer les métadonnées inutiles, nettoyer les références d'objets et éliminer les ressources inutilisées peut réduire la taille du fichier de 10-30% tout en préservant la fonctionnalité et l'apparence du document.",
+        "icon": "🧹",
+        "benefits": [
+          "Supprimer l'historique d'édition et les données temporaires",
+          "Nettoyer les objets et références inutilisés",
+          "Supprimer les métadonnées optionnelles (date de création, info logiciel)",
+          "Éliminer les ressources intégrées dupliquées"
+        ]
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Quand et comment utiliser la compression PDF",
+    "description": "Scénarios courants et meilleures pratiques pour la compression PDF",
+    "items": [
+      {
+        "title": "Pièces Jointes Email",
+        "description": "Documents pour partage par email et distribution rapide.",
+        "content": "La plupart des fournisseurs d'email limitent les pièces jointes à 10-25MB. Compressez les PDFs à moins de 5MB pour une livraison fiable. Pour les documents avec beaucoup d'images, utilisez une qualité moyenne (150 DPI) - atteint typiquement une réduction de taille de 50-70%. Pour les documents riches en texte, la compression produit des économies de 20-40%. Si c'est encore trop grand, divisez en plusieurs fichiers ou utilisez des liens de partage cloud.",
+        "icon": "📧"
+      },
+      {
+        "title": "Publication Web et Téléchargements",
+        "description": "PDFs pour téléchargements de site web, documentation et visualisation en ligne.",
+        "content": "Optimisez les PDFs pour la livraison web pour réduire les temps de chargement de page et les coûts de bande passante. Ciblez moins de 2MB par document - objectif de 1-3 secondes de téléchargement sur mobile 4G. Utilisez une qualité d'image moyenne (150 DPI) et activez la vue web rapide pour un chargement progressif. Pour les gros documents (rapports, livres électroniques), considérez les diviser en chapitres ou utiliser la linéarisation pour un affichage initial plus rapide.",
+        "icon": "🌐"
+      },
+      {
+        "title": "Distribution Mobile",
+        "description": "Documents optimisés pour la visualisation et le partage sur appareils mobiles.",
+        "content": "Les utilisateurs mobiles ont besoin de PDFs légers pour téléchargement rapide et visualisation sur bande passante limitée. Compressez agressivement - ciblez un maximum de 1-3MB. Réduisez la résolution d'image à 150 DPI (suffisant pour les écrans mobiles). Supprimez les métadonnées inutiles. Testez sur de vrais appareils mobiles pour assurer la lisibilité. Considérez des mises en page spécifiques au mobile ou des alternatives PDF responsives pour les documents complexes.",
+        "icon": "📱"
+      },
+      {
+        "title": "Archive et Stockage Cloud",
+        "description": "Optimisation de stockage de documents à long terme et sauvegarde.",
+        "content": "Réduisez les coûts de stockage et temps de sauvegarde en compressant les PDFs archivés. Utilisez une qualité moyenne-élevée pour l'équilibre d'archivage - atteint 40-60% de réduction tout en maintenant la qualité à long terme. Traitez en lot des documents similaires avec des paramètres cohérents. Pour les archives rarement accédées, utilisez une compression plus élevée. Gardez les originaux de documents légaux/médicaux critiques avant une compression agressive.",
+        "icon": "📦"
+      },
+      {
+        "title": "Matériaux d'Impression et Marketing",
+        "description": "Brochures, catalogues et documents promotionnels.",
+        "content": "Équilibrez la taille du fichier avec la qualité d'impression pour les PDFs de marketing. Utilisez une haute qualité (300 DPI) pour les matériaux destinés à l'impression professionnelle. Utilisez une qualité moyenne (150-200 DPI) pour la distribution numérique uniquement. Compressez les gros catalogues de produits par lots. Pour les catalogues en ligne, créez des versions séparées haute résolution (impression) et basse résolution (web) pour optimiser les deux cas d'usage.",
+        "icon": "🎨"
+      },
+      {
+        "title": "Formulaires et Documents",
+        "description": "Formulaires d'entreprise, contrats et documents remplissables.",
+        "content": "Optimisez les formulaires PDF remplissables pour un chargement et distribution plus rapides. Compressez soigneusement pour maintenir la fonctionnalité du formulaire et la clarté du texte. Utilisez une qualité moyenne pour les images de fond/logos. Préservez les champs de formulaire, JavaScript et signatures numériques. Testez la fonctionnalité du formulaire après compression. Pour la distribution à haut volume (1000+ destinataires), même 10% de réduction de taille économise une bande passante significative.",
+        "icon": "📋"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "description": "Questions communes sur la compression PDF et notre outil compresseur PDF.",
+    "items": [
+      {
+        "question": "Qu'est-ce que la compression PDF et comment ça fonctionne ?",
+        "answer": "La compression PDF réduit la taille du fichier en optimisant les images, en sous-ensemblant les polices, en supprimant les métadonnées et en compressant les flux de contenu. Notre compresseur analyse votre PDF et applique une optimisation intelligente - réduisant typiquement la taille de 20-60% pour les documents riches en images et 10-30% pour les documents de texte, tout en préservant la qualité, la capacité de recherche et toutes les fonctionnalités interactives."
+      },
+      {
+        "question": "Combien puis-je comprimer mes fichiers PDF ?",
+        "answer": "Les résultats de compression varient considérablement par type de contenu. Les PDFs riches en images (présentations, documents scannés) atteignent typiquement une réduction de taille de 40-70%. Les documents riches en texte compriment de 15-30%. Les scans haute résolution peuvent comprimer de 70-85%. Les documents déjà optimisés peuvent seulement comprimer de 5-15%. Notre outil applique automatiquement les paramètres optimaux basés sur le contenu de votre PDF."
+      },
+      {
+        "question": "La compression PDF affectera-t-elle la qualité ou la lisibilité du texte ?",
+        "answer": "Non, la qualité du texte reste parfaite. La compression PDF n'affecte pas le texte vectoriel, les polices ou la capacité de recherche. Seules les images intégrées sont optimisées en utilisant des paramètres de qualité intelligents qui maintiennent la clarté visuelle tout en réduisant la taille du fichier. Tout le texte reste net, sélectionnable et recherchable exactement comme dans l'original."
+      },
+      {
+        "question": "Mes données PDF sont-elles sécurisées pendant la compression ?",
+        "answer": "Absolument ! Toute la compression se passe localement dans votre navigateur en utilisant JavaScript et Web Workers. Vos PDFs ne quittent jamais votre appareil ou ne sont téléchargés sur aucun serveur. Nous ne stockons, transmettons ou accédons pas à vos documents. Cela assure une confidentialité complète et sécurité pour les PDFs sensibles ou confidentiels."
+      },
+      {
+        "question": "Quelles fonctionnalités PDF sont préservées pendant la compression ?",
+        "answer": "Toutes les fonctionnalités essentielles sont préservées : texte, formatage, polices, hyperliens, signets, champs de formulaire, annotations, signatures numériques et structure du document. Seules les images intégrées sont optimisées et les métadonnées optionnelles supprimées. Votre PDF compressé maintient une fonctionnalité complète et compatibilité."
+      },
+      {
+        "question": "Puis-je comprimer des PDFs protégés par mot de passe ou chiffrés ?",
+        "answer": "Notre outil fonctionne actuellement mieux avec les PDFs non protégés. Si votre PDF est protégé par mot de passe, vous devrez d'abord supprimer le mot de passe en utilisant Adobe Acrobat ou d'autres outils PDF, puis le compresser, et optionnellement ré-appliquer la protection par mot de passe après. Cela assure des résultats de compression optimaux."
+      },
+      {
+        "question": "Combien de temps prend la compression PDF avec notre outil ?",
+        "answer": "La vitesse de compression dépend de la taille du fichier et de la complexité. Les PDFs typiques (1-10MB) compriment en 5-15 secondes. Les gros fichiers (10-50MB) peuvent prendre 30-60 secondes. Le traitement se passe entièrement sur votre appareil, donc la performance varie basée sur la puissance CPU de votre ordinateur. Tout le traitement inclut des mises à jour de progression en temps réel."
+      },
+      {
+        "question": "Quelle est la différence entre compression PDF sans perte et avec perte ?",
+        "answer": "La compression sans perte (utilisée pour le texte et vecteurs) réduit la taille sans perte de qualité - la reconstruction parfaite est possible. La compression avec perte (utilisée pour les images) supprime des données visuellement non importantes pour une plus grande réduction de taille avec une perte de qualité perçue minimale. Notre outil applique intelligemment les deux méthodes : sans perte pour texte/vecteurs, avec perte contrôlée pour images."
+      },
+      {
+        "question": "Puis-je comprimer plusieurs fichiers PDF par lots à la fois ?",
+        "answer": "Actuellement notre outil optimise les fichiers PDF individuels pour de meilleurs résultats et traitement plus rapide. Pour les besoins de compression par lots, vous pouvez traiter plusieurs fichiers séquentiellement. Nous prévoyons d'ajouter le traitement par lots dans les mises à jour futures basées sur les commentaires et demandes des utilisateurs."
+      },
+      {
+        "question": "Les PDFs compressés fonctionneront-ils sur tous les appareils et lecteurs PDF ?",
+        "answer": "Oui ! Les PDFs compressés maintiennent une compatibilité complète avec tous les lecteurs PDF et appareils - Adobe Acrobat, navigateurs web, applications mobiles et visualiseurs de système d'exploitation. Le processus de compression préserve la conformité aux standards PDF, assurant que vos documents fonctionnent partout où PDF est supporté."
+      },
+      {
+        "question": "Quelle est la taille maximale de fichier PDF que je peux comprimer ?",
+        "answer": "Notre outil supporte actuellement les fichiers PDF jusqu'à 50MB de taille. Cela couvre la plupart des cas d'usage courants - documents, présentations, rapports et fichiers scannés de résolution modérée. Pour les fichiers plus gros, considérez les diviser en sections plus petites ou utiliser un logiciel PDF de bureau dédié pour des résultats optimaux."
+      },
+      {
+        "question": "Puis-je utiliser les fichiers PDF compressés commercialement ?",
+        "answer": "Oui, absolument ! La compression n'affecte pas la licence ou droits d'usage de votre PDF. Le fichier compressé maintient toutes les propriétés de l'original - si vous possédez les droits du PDF original, vous possédez les mêmes droits de la version compressée. Aucun filigrane, restrictions ou limitations ne sont ajoutés pendant la compression."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Outils Connexes",
+    "description": "Explorez plus d'outils de compression et conversion",
+    "items": [
+      {
+        "title": "Compresseur PNG",
+        "description": "Compresser les images PNG",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "Compresseur JPEG",
+        "description": "Compresser les images JPEG",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "Compresseur WebP",
+        "description": "Compresser les images WebP",
+        "url": "/compressor/compress-webp"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Glissez le fichier PDF ici ou cliquez pour télécharger",
+      "subtitle": "Taille maximale de fichier : 50MB",
+      "selectFiles": "Choisir un fichier PDF"
+    },
+    "files": {
+      "title": "Fichiers Sélectionnés",
+      "name": "Nom",
+      "dimensions": "Pages",
+      "count": "{count} fichiers",
+      "remove": "Supprimer",
+      "sizeInfo": "Taille"
+    },
+    "compress": {
+      "start": "Compresser PDF",
+      "processing": "Compression... {progress}%"
+    },
+    "progress": {
+      "label": "Traitement...",
+      "compressing": "Optimisation des images et suppression des données inutiles"
+    },
+    "results": {
+      "title": "Compression Terminée ! 🎉",
+      "subtitle": "Votre PDF a été optimisé avec succès",
+      "original": "Original",
+      "compressed": "Comprimé",
+      "saved": "Économisé",
+      "time": "Temps",
+      "format": "Format",
+      "compressionRatio": "Ratio de Compression",
+      "sizeReduction": "Réduction de Taille",
+      "sizeIncrease": "Augmentation de Taille",
+      "greatJob": "Excellent travail !",
+      "considerAdjusting": "Considérez ajuster les paramètres",
+      "savedSpace": "Économisé {amount} KB",
+      "successMessage": "Excellente compression !",
+      "successDescription": "Votre PDF est maintenant {ratio}% plus petit tout en maintenant une excellente qualité. Optimisé pour le partage !",
+      "download": "Télécharger",
+      "compressMore": "Compresser Plus",
+      "reset": "Réinitialiser",
+      "sizeComparison": "Comparaison de Taille",
+      "sizeInfo": "Original : {original} MB → Comprimé : {compressed} MB (réduction {ratio}%)"
+    },
+    "settings": {
+      "simple": "Simple",
+      "advanced": "Avancé",
+      "advancedTitle": "Paramètres Avancés",
+      "quality": "Qualité d'Image",
+      "qualityLow": "Faible (fichier plus petit)",
+      "qualityMedium": "Moyenne",
+      "qualityHigh": "Élevée (meilleure qualité)",
+      "keepMetadata": "Conserver Métadonnées",
+      "metadataDesc": "Préserver les propriétés du document et métadonnées",
+      "compressImages": "Compresser Images",
+      "compressImagesDesc": "Optimiser les images intégrées pour un fichier plus petit",
+      "removeMetadata": "Supprimer Métadonnées",
+      "removeMetadataDesc": "Supprimer les propriétés du document et métadonnées"
+    },
+    "actions": {
+      "compress": "Compresser Maintenant",
+      "cancel": "Annuler",
+      "downloadAll": "Télécharger Tout",
+      "reset": "Réinitialiser"
+    },
+    "error": {
+      "title": "Erreur",
+      "tip": "💡 Astuce : Assurez-vous que votre fichier est un PDF valide et moins de 50MB",
+      "unknownError": "Erreur inconnue",
+      "processingFailed": "Échec du traitement {fileName}",
+      "compressionFailed": "Échec de compression"
+    },
+    "status": {
+      "starting": "Démarrage de la compression...",
+      "processing": "Compression PDF...",
+      "completed": "Compression terminée !"
+    },
+    "stats": {
+      "qualityUsed": "Qualité Utilisée",
+      "processingTime": "Temps de Traitement"
+    }
+  },
+  "cta": {
+    "title": "Prêt à compresser votre PDF ?",
+    "description": "Commencez à compresser vos fichiers PDF maintenant et expérimentez une gestion de documents plus rapide et efficace.",
+    "startButton": "Commencer la Compression",
+    "learnButton": "En Savoir Plus"
+  }
+}

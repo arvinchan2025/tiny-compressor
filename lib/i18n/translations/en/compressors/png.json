@@ -210,15 +210,17 @@
   },
   "operation": {
     "upload": {
-      "title": "Drag and drop your file here or click to select",
-      "subtitle": "Support {format} format, max 50MB",
-      "selectFiles": "Select File"
+      "title": "Drag and drop your {format} image here or click to select",
+      "subtitle": "Maximum file size: 10MB",
+      "selectFiles": "Choose {format} File"
     },
     "files": {
       "title": "Selected Files",
+      "name": "Name",
+      "dimensions": "Dimensions",
       "count": "{count} files",
       "remove": "Remove",
-      "sizeInfo": "{size} MB"
+      "sizeInfo": "Size"
     },
     "compress": {
       "start": "Compress {format}",
@@ -226,7 +228,7 @@
     },
     "progress": {
       "label": "Processing...",
-      "compressing": "Compressing your {format} image..."
+      "compressing": "Applying compression settings"
     },
     "results": {
       "title": "Compression Complete! 🎉",
@@ -241,12 +243,13 @@
       "sizeIncrease": "Size Increase",
       "greatJob": "Great job!",
       "considerAdjusting": "Consider adjusting settings",
-      "savedSpace": "Saved {amount} MB",
+      "savedSpace": "Saved {amount} KB",
       "successMessage": "Great compression!",
       "successDescription": "Your image is now {ratio}% smaller while maintaining excellent quality. Optimized for web use!",
       "download": "Download",
       "compressMore": "Compress More",
       "reset": "Reset",
+      "sizeComparison": "Size Comparison",
       "sizeInfo": "Original: {original} MB → Compressed: {compressed} MB ({ratio}% reduction)"
     },
     "settings": {
@@ -254,27 +257,35 @@
       "advanced": "Advanced",
       "advancedTitle": "Advanced Settings",
       "quality": "Quality",
-      "qualityLow": "Low",
+      "qualityLow": "Low (Smaller file)",
       "qualityMedium": "Medium",
-      "qualityHigh": "High",
-      "metadata": "Keep Metadata",
-      "metadataDesc": "EXIF, GPS, camera info"
+      "qualityHigh": "High (Best quality)",
+      "keepMetadata": "Keep Metadata",
+      "metadataDesc": "Preserve EXIF, GPS, and camera information",
+      "progressive": "Progressive JPEG",
+      "progressiveDesc": "Load images progressively for better web performance"
     },
     "actions": {
+      "compress": "Compress Now",
+      "cancel": "Cancel",
       "downloadAll": "Download All",
       "reset": "Reset"
     },
     "error": {
       "title": "Error",
-      "tip": "💡 Tip: Make sure your file is a valid image (PNG, JPEG, WebP, AVIF, GIF) and under 50MB",
+      "tip": "💡 Tip: Make sure your file is a valid image (PNG, JPEG, WebP, AVIF, GIF) and under 10MB",
       "unknownError": "Unknown error",
       "processingFailed": "Failed to process {fileName}",
       "compressionFailed": "Compression failed"
     },
     "status": {
       "starting": "Starting compression...",
-      "processing": "Compressing... {progress}%",
+      "processing": "Compressing Image...",
       "completed": "Compression completed!"
+    },
+    "stats": {
+      "qualityUsed": "Quality Used",
+      "processingTime": "Processing Time"
     }
   }
 }

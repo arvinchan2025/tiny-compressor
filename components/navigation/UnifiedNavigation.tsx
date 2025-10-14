@@ -154,6 +154,21 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               t('compressor.tools.bmp.features.2')
             ],
             compression: t('compressor.tools.bmp.compression')
+          },
+          {
+            id: 'pdf',
+            name: t('compressor.tools.pdf.name'),
+            description: t('compressor.tools.pdf.description'),
+            path: getFunctionalPagePath('compressor', 'compress-pdf', locale),
+            icon: '📄',
+            color: 'red',
+            gradient: 'from-red-500 to-orange-600',
+            features: [
+              t('compressor.tools.pdf.features.0'),
+              t('compressor.tools.pdf.features.1'),
+              t('compressor.tools.pdf.features.2')
+            ],
+            compression: t('compressor.tools.pdf.compression')
           }
         ],
         features: [

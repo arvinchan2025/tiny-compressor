@@ -17,7 +17,7 @@
   },
   "compressor": {
     "title": "图像压缩器",
-    "subtitle": "在保持质量的同时将图像文件大小减少高达90%。快速、安全、完全免费。",
+    "subtitle": "在保持质量的同时将图像文件大小减少多达90%。快速、安全、完全免费。",
     "description": "专业的图像压缩工具，帮助您优化图像用于网页、邮件和存储。支持所有主要图像格式，采用先进的压缩算法。",
     "badge": "图像压缩",
     "statsLabels": {
@@ -26,71 +26,81 @@
     },
     "tools": {
       "png": {
-        "name": "PNG压缩器",
-        "description": "使用无损优化压缩PNG图像",
+        "name": "PNG 压缩器",
+        "description": "使用无损优化压缩 PNG 图像",
         "features": [
           "无损压缩",
           "透明度支持",
-          "网络优化"
+          "网页优化"
         ],
-        "compression": "最多压缩80%"
+        "compression": "高达 80%"
       },
       "jpeg": {
-        "name": "JPEG压缩器",
-        "description": "使用智能压缩减少JPEG文件大小",
+        "name": "JPEG 压缩器",
+        "description": "使用智能压缩减少 JPEG 文件大小",
         "features": [
           "智能压缩",
           "质量控制",
           "元数据移除"
         ],
-        "compression": "最多压缩90%"
+        "compression": "高达 90%"
       },
       "webp": {
-        "name": "WebP压缩器",
-        "description": "为网络传输优化WebP图像",
+        "name": "WebP 压缩器",
+        "description": "为网页传递优化 WebP 图像",
         "features": [
           "现代格式",
           "卓越压缩",
-          "网络优化"
+          "网页优化"
         ],
-        "compression": "最多压缩85%"
+        "compression": "高达 85%"
       },
       "avif": {
-        "name": "AVIF压缩器",
-        "description": "使用下一代压缩技术压缩AVIF图像",
+        "name": "AVIF 压缩器",
+        "description": "使用下一代压缩技术压缩 AVIF 图像",
         "features": [
           "下一代格式",
           "最大压缩",
-          "未来趋势"
+          "面向未来"
         ],
-        "compression": "最多压缩95%"
+        "compression": "高达 95%"
       },
       "gif": {
-        "name": "GIF压缩器",
-        "description": "在保持质量的同时减少GIF文件大小",
+        "name": "GIF 压缩器",
+        "description": "在保持质量的同时减少 GIF 文件大小",
         "features": [
           "动画支持",
           "颜色优化",
           "帧数减少"
         ],
-        "compression": "最多压缩70%"
+        "compression": "高达 70%"
       },
       "bmp": {
-        "name": "BMP压缩器",
-        "description": "使用先进优化技术压缩BMP位图图像",
+        "name": "BMP 压缩器",
+        "description": "使用高级优化压缩 BMP 位图图像",
         "features": [
           "位图优化",
-          "旧格式支持",
+          "传统支持",
           "无损转换"
         ],
-        "compression": "最多压缩90%"
+        "compression": "高达 90%"
+      },
+      "pdf": {
+        "name": "PDF 压缩器",
+        "description": "使用高级压缩技术减少 PDF 文件大小",
+        "features": [
+          "图像压缩",
+          "元数据移除",
+          "隐私保护"
+        ],
+        "compression": "高达 60%"
       }
     },
     "features": {
       "speed": {
         "title": "闪电般快速",
         "description": "使用我们的优化算法在几秒钟内处理多个图像",
-        "details": "同时处理多达100张图像"
+        "details": "同时处理多达 100 个图像"
       },
       "security": {
         "title": "隐私优先",
@@ -100,7 +110,7 @@
       "quality": {
         "title": "质量控制",
         "description": "高级设置平衡文件大小和图像质量",
-        "details": "先进算法保持视觉质量"
+        "details": "高级算法保持视觉质量"
       },
       "title": "为什么选择我们的图像压缩器？",
       "items": [
@@ -114,7 +124,7 @@
         },
         {
           "title": "多种格式",
-          "description": "支持PNG、JPEG、WebP、AVIF、GIF和BMP格式"
+          "description": "支持 PNG、JPEG、WebP、AVIF、GIF 和 BMP 格式"
         },
         {
           "title": "质量控制",
@@ -126,7 +136,7 @@
         },
         {
           "title": "永远免费",
-          "description": "无注册、无水印、无隐藏费用"
+          "description": "无需注册、无水印、无隐藏费用"
         }
       ]
     },
@@ -138,88 +148,59 @@
       },
       "reduction": {
         "number": "90%",
-        "label": "平均减小",
+        "label": "平均减少",
         "description": "文件大小"
       },
       "formats": {
-        "number": "6",
+        "number": "7",
         "label": "支持格式",
         "description": "所有主要类型"
       }
-    },
-    "whyChoose": {
-      "title": "为什么选择我们的图像压缩器？",
-      "items": [
-        {
-          "title": "闪电般快速",
-          "description": "使用优化算法在几秒钟内处理多张图像"
-        },
-        {
-          "title": "隐私优先",
-          "description": "您的图像在浏览器中本地处理 - 无需上传"
-        },
-        {
-          "title": "多种格式",
-          "description": "支持PNG、JPEG、WebP、AVIF、GIF和BMP格式"
-        },
-        {
-          "title": "质量控制",
-          "description": "高级设置可平衡文件大小和图像质量"
-        },
-        {
-          "title": "批量处理",
-          "description": "一次压缩多张图像以节省时间"
-        },
-        {
-          "title": "永久免费",
-          "description": "无需注册，无水印，无隐藏费用"
-        }
-      ]
     }
   },
   "converter": {
     "title": "图像转换器",
-    "subtitle": "高质量快速处理在不同格式之间转换图像。",
-    "description": "专业的图像转换工具，将您的图像转换为流行格式。支持PNG、JPEG、WebP、AVIF和HEIC格式，采用先进的转换技术。",
+    "subtitle": "在不同格式之间转换图像，具有高质量和快速处理。",
+    "description": "专业的图像转换工具，将您的图像在流行格式之间转换。支持 PNG、JPEG、WebP、AVIF 和 HEIC，采用先进的转换技术。",
     "badge": "格式转换",
     "statsLabels": {
-      "compression": "压缩率",
+      "compression": "压缩",
       "speed": "速度"
     },
     "tools": {
       "pngToJpg": {
-        "name": "PNG转JPG",
-        "description": "将PNG图像转换为JPG格式",
+        "name": "PNG 转 JPG",
+        "description": "将 PNG 图像转换为 JPG 格式",
         "features": [
           "背景处理",
           "质量保持",
-          "网络优化"
+          "网页优化"
         ],
         "conversion": "即时"
       },
       "pngToWebp": {
-        "name": "PNG转WebP",
-        "description": "将PNG图像转换为WebP格式",
+        "name": "PNG 转 WebP",
+        "description": "将 PNG 图像转换为 WebP 格式",
         "features": [
           "现代格式",
           "卓越质量",
-          "网络传输"
+          "网页传递"
         ],
         "conversion": "即时"
       },
       "pngToAvif": {
-        "name": "PNG转AVIF",
-        "description": "将PNG图像转换为AVIF格式",
+        "name": "PNG 转 AVIF",
+        "description": "将 PNG 图像转换为 AVIF 格式",
         "features": [
           "下一代格式",
           "最大效率",
-          "未来趋势"
+          "面向未来"
         ],
         "conversion": "即时"
       },
       "jpgToPng": {
-        "name": "JPG转PNG",
-        "description": "将JPEG图像转换为PNG格式",
+        "name": "JPG 转 PNG",
+        "description": "将 JPG 图像转换为 PNG 格式",
         "features": [
           "透明度支持",
           "无损转换",
@@ -228,28 +209,28 @@
         "conversion": "即时"
       },
       "webpToPng": {
-        "name": "WebP转PNG",
-        "description": "将WebP图像转换为PNG格式",
+        "name": "WebP 转 PNG",
+        "description": "将 WebP 图像转换为 PNG 格式",
         "features": [
-          "通用兼容",
+          "通用兼容性",
           "无损转换",
           "质量保持"
         ],
         "conversion": "即时"
       },
       "jpgToWebp": {
-        "name": "JPG转WebP",
-        "description": "将JPEG图像转换为WebP格式",
+        "name": "JPG 转 WebP",
+        "description": "将 JPG 图像转换为 WebP 格式",
         "features": [
           "大小减少",
-          "质量提升",
-          "网络优化"
+          "质量改进",
+          "网页优化"
         ],
         "conversion": "即时"
       },
       "jpgToAvif": {
-        "name": "JPG转AVIF",
-        "description": "将JPEG图像转换为AVIF格式",
+        "name": "JPG 转 AVIF",
+        "description": "将 JPG 图像转换为 AVIF 格式",
         "features": [
           "最大压缩",
           "卓越质量",
@@ -258,30 +239,30 @@
         "conversion": "即时"
       },
       "webpToJpg": {
-        "name": "WebP转JPG",
-        "description": "将WebP图像转换为JPEG格式",
+        "name": "WebP 转 JPG",
+        "description": "将 WebP 图像转换为 JPG 格式",
         "features": [
-          "旧格式支持",
+          "传统支持",
           "质量优化",
-          "通用兼容"
+          "通用兼容性"
         ],
         "conversion": "即时"
       },
       "webpToAvif": {
-        "name": "WebP转AVIF",
-        "description": "将WebP图像转换为AVIF格式",
+        "name": "WebP 转 AVIF",
+        "description": "将 WebP 图像转换为 AVIF 格式",
         "features": [
           "下一代升级",
           "最大效率",
-          "未来趋势"
+          "面向未来"
         ],
         "conversion": "即时"
       },
       "heicToJpg": {
-        "name": "HEIC转JPG",
-        "description": "将HEIC图像转换为JPEG格式",
+        "name": "HEIC 转 JPG",
+        "description": "将 HEIC 图像转换为 JPG 格式",
         "features": [
-          "iPhone兼容",
+          "iPhone 兼容性",
           "跨平台",
           "质量保持"
         ],
@@ -292,7 +273,7 @@
       "speed": {
         "title": "闪电般快速",
         "description": "使用我们的优化算法在几秒钟内转换多个图像",
-        "details": "几秒内转换多个图像"
+        "details": "在几秒钟内转换多个图像"
       },
       "security": {
         "title": "隐私优先",
@@ -302,7 +283,7 @@
       "quality": {
         "title": "质量控制",
         "description": "高级设置在转换过程中保持图像质量",
-        "details": "先进算法保持图像质量"
+        "details": "高级算法保持图像质量"
       }
     },
     "stats": {
@@ -318,38 +299,9 @@
       },
       "quality": {
         "number": "100%",
-        "label": "质量保留",
+        "label": "质量保持",
         "description": "无损转换"
       }
-    },
-    "whyChoose": {
-      "title": "为什么选择我们的图像转换器？",
-      "items": [
-        {
-          "title": "高质量转换",
-          "description": "使用先进算法在格式之间转换时保持图像质量"
-        },
-        {
-          "title": "本地处理",
-          "description": "所有转换在您的浏览器中本地进行 - 完全私密"
-        },
-        {
-          "title": "10+种格式",
-          "description": "支持PNG、JPG、WebP、AVIF、HEIC等主流格式"
-        },
-        {
-          "title": "批量转换",
-          "description": "同时转换多个文件以提高效率"
-        },
-        {
-          "title": "即时结果",
-          "description": "快速处理，立即获得转换后的图像"
-        },
-        {
-          "title": "完全免费",
-          "description": "无限制使用，无需注册或付费"
-        }
-      ]
     }
   },
   "footer": {
@@ -374,14 +326,14 @@
   },
   "features": {
     "title": "为什么选择我们的工具？",
-    "subtitle": "先进的技术与用户友好的功能",
-    "free": "100%免费",
-    "secure": "安全且私密",
+    "subtitle": "先进技术与用户友好功能",
+    "free": "100% 免费",
+    "secure": "安全私密",
     "fast": "闪电般快速"
   },
   "cta": {
     "title": "准备开始了吗？",
-    "description": "加入数千名信任我们图像处理工具的用户",
+    "description": "加入成千上万信任我们图像处理工具的用户",
     "backToHome": "返回首页"
   }
 }

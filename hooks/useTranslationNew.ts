@@ -208,7 +208,7 @@ export function useModuleTranslation(module: TranslationModule, providedLocale?:
   }, [locale, module])
   
   const moduleT = useMemo(() => {
-    return (key: string, params?: Record<string, string | number | boolean>) => {
+    return (key: string, params?: Record<string, string | number | boolean> | { returnObjects?: boolean }) => {
       // Check if translations object exists and module is loaded
       if (!translations || !translations[module]) {
         return key

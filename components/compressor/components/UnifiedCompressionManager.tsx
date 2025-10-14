@@ -5,7 +5,7 @@
 
 'use client';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
 import { compressImage, validateImageFile, getImageMetadata } from '@/lib/image-processing/compression';
@@ -14,6 +14,7 @@ import FileDropZone from './FileDropZone';
 import ResultsPanel from './ResultsPanel';
 import { useModuleTranslation } from '@/hooks/useTranslationNew';
 import { Locale } from '@/lib/i18n';
+import SingleFileCompressor from '../SingleFileCompressor';
 
 // 格式特定的设置接口
 interface FormatSpecificSettings {
@@ -309,6 +310,29 @@ export default function UnifiedCompressionManager({
     setResetKey(prev => prev + 1); // 增加 resetKey 以重置文件输入
   }, []);
 
+  // ⭐ 智能模式检测：单文件使用优化体验
+  const isSingleFileMode = useMemo(() => 
+    imageFiles.length === 1, // 移除 compressionResults.length === 0 条件
+    [imageFiles.length]
+  );
+
+  // ⭐ 单文件模式：使用 SingleFileCompressor
+  if (isSingleFileMode) {
+    return (
+      <SingleFileCompressor
+        locale={locale as Locale}
+        format={format}
+        initialFile={imageFiles[0]} // 传递已上传的文件
+        onComplete={(result) => {
+          setCompressionResults([result]);
+          onCompressionComplete?.([result]);
+        }}
+        onReset={handleReset}
+      />
+    );
+  }
+
+  // 批量模式：使用原有的批量处理界面
   return (
     <div className="bg-white dark:bg-gray-850 rounded-2xl shadow-xl dark:shadow-2xl border border-slate-200 dark:border-gray-700 overflow-hidden transition-colors">
       {/* 模式选择器 */}
@@ -320,15 +344,17 @@ export default function UnifiedCompressionManager({
         />
       </div>
 
-      {/* 文件上传区域 */}
-      <div className="px-6 pb-6">
-        <FileDropZone 
-          onFileSelect={handleFilesSelected}
-          locale={locale}
-          format={format}
-          resetKey={resetKey}
-        />
-      </div>
+      {/* 文件上传区域 - 只在没有文件时显示 */}
+      {imageFiles.length === 0 && compressionResults.length === 0 && (
+        <div className="px-6 pb-6">
+          <FileDropZone 
+            onFileSelect={handleFilesSelected}
+            locale={locale}
+            format={format}
+            resetKey={resetKey}
+          />
+        </div>
+      )}
 
       {/* 错误显示 - 优化友好度 */}
       <AnimatePresence>
@@ -370,8 +396,8 @@ export default function UnifiedCompressionManager({
         )}
       </AnimatePresence>
 
-      {/* 压缩操作区域 */}
-      {imageFiles.length > 0 && (
+      {/* 压缩操作区域 - 只在没有结果时显示 */}
+      {imageFiles.length > 0 && compressionResults.length === 0 && (
         <div className="p-6 pt-4 border-t border-slate-200 dark:border-gray-700 bg-slate-50/50 dark:bg-gray-900/30 transition-colors">
           {/* 文件预览卡片 - 响应式优化 */}
           <div className="mb-6 max-w-2xl mx-auto">

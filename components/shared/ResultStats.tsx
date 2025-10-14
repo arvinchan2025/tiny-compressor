@@ -1,0 +1,51 @@
+'use client';
+
+import React from 'react';
+import { motion } from 'framer-motion';
+
+interface StatItem {
+  label: string;
+  value: string;
+  color?: 'gray' | 'green' | 'blue' | 'red' | 'purple' | 'orange';
+  highlight?: boolean;
+}
+
+interface ResultStatsProps {
+  stats: StatItem[];
+}
+
+const colorClasses = {
+  gray: 'text-gray-900 dark:text-gray-100',
+  green: 'text-green-600 dark:text-green-400',
+  blue: 'text-blue-600 dark:text-blue-400',
+  red: 'text-red-600 dark:text-red-400',
+  purple: 'text-purple-600 dark:text-purple-400',
+  orange: 'text-orange-600 dark:text-orange-400'
+};
+
+export default function ResultStats({ stats }: ResultStatsProps) {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {stats.map((stat, index) => (
+        <motion.div
+          key={index}
+          className="card-glass p-4 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: index * 0.1 }}
+          whileHover={{ y: -2 }}
+        >
+          <div className={`text-3xl font-bold mb-1 ${colorClasses[stat.color || 'gray']}`}>
+            {stat.value}
+          </div>
+          <div className="text-sm text-text-secondary">
+            {stat.label}
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+
+
+

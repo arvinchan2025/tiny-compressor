@@ -86,6 +86,28 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R23Y0Z9XSP"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-R23Y0Z9XSP', {
+                page_title: document.title,
+                page_location: window.location.href,
+                anonymize_ip: true,
+                allow_google_signals: true,
+                allow_ad_personalization_signals: false
+              });
+            `,
+          }}
+        />
+        
         {/* 防闪烁脚本 - 必须在页面渲染前执行 */}
         <script
           dangerouslySetInnerHTML={{

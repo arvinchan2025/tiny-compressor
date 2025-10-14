@@ -158,8 +158,8 @@ export async function loadTranslations(
 export function getTranslationValue(
   translations: Record<string, any>,
   keyPath: string,
-  params?: Record<string, string | number | boolean>
-): string {
+  params?: Record<string, string | number | boolean | { returnObjects?: boolean }>
+): any {
   const keys = keyPath.split('.')
   let value: any = translations
   
@@ -172,6 +172,14 @@ export function getTranslationValue(
     }
   }
   
+  // Check if returnObjects is requested
+  const returnObjects = params && typeof params === 'object' && 'returnObjects' in params && params.returnObjects;
+  
+  // If returnObjects is true, return the value as-is (could be object or array)
+  if (returnObjects) {
+    return value;
+  }
+  
   if (typeof value === 'string') {
     // Replace parameters
     if (params) {
@@ -182,6 +190,7 @@ export function getTranslationValue(
     return value
   }
   
+  // If value is not a string and returnObjects is not requested, return keyPath
   return keyPath
 }
 

@@ -216,9 +216,11 @@
     },
     "files": {
       "title": "Fichiers Sélectionnés",
+      "name": "Nom",
+      "dimensions": "Dimensions",
       "count": "{count} fichiers",
       "remove": "Supprimer",
-      "sizeInfo": "{size} MB"
+      "sizeInfo": "Taille"
     },
     "compress": {
       "start": "Compresser {format}",
@@ -247,6 +249,7 @@
       "download": "Télécharger",
       "compressMore": "Compresser Plus",
       "reset": "Réinitialiser",
+      "sizeComparison": "Comparaison de Taille",
       "sizeInfo": "Original : {original} MB → Compressé : {compressed} MB (réduction de {ratio}%)"
     },
     "settings": {
@@ -257,10 +260,14 @@
       "qualityLow": "Basse",
       "qualityMedium": "Moyenne",
       "qualityHigh": "Élevée",
-      "metadata": "Conserver les Métadonnées",
-      "metadataDesc": "EXIF, GPS, info appareil"
+      "keepMetadata": "Conserver les Métadonnées",
+      "metadataDesc": "Préserver les informations EXIF, GPS et d'appareil",
+      "progressive": "JPEG Progressif",
+      "progressiveDesc": "Charger les images progressivement pour de meilleures performances web"
     },
     "actions": {
+      "compress": "Compresser Maintenant",
+      "cancel": "Annuler",
       "downloadAll": "Télécharger Tout",
       "reset": "Réinitialiser"
     },
@@ -273,8 +280,12 @@
     },
     "status": {
       "starting": "Démarrage de la compression...",
-      "processing": "Compression... {progress}%",
+      "processing": "Compression d'Image...",
       "completed": "Compression terminée !"
+    },
+    "stats": {
+      "qualityUsed": "Qualité Utilisée",
+      "processingTime": "Temps de Traitement"
     }
   }
 }

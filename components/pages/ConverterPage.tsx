@@ -12,6 +12,7 @@ import StandardButton from '@/components/ui/StandardButton';
 import StandardIcon from '@/components/ui/StandardIcon';
 import Link from 'next/link';
 import { getNavigationPagePath } from '@/lib/i18n/path-utils';
+import LoadingSpinner from '@/components/ui/LoadingSpinner';
 
 interface ConverterPageProps {
   locale: Locale;
@@ -30,13 +31,7 @@ export default function ConverterPage({
   const { t, isLoading } = useModuleTranslation(`converters/${conversionModule}`, locale);
 
   if (isLoading) {
-    return (
-      <StandardPageLayout locale={locale}>
-        <div className="flex justify-center items-center min-h-screen">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
-        </div>
-      </StandardPageLayout>
-    );
+    return <LoadingSpinner />;
   }
 
   return (

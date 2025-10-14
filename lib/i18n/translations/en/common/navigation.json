@@ -84,6 +84,16 @@
           "Lossless conversion"
         ],
         "compression": "Up to 90%"
+      },
+      "pdf": {
+        "name": "PDF Compressor",
+        "description": "Reduce PDF file size with advanced compression",
+        "features": [
+          "Image compression",
+          "Metadata removal",
+          "Privacy protected"
+        ],
+        "compression": "Up to 60%"
       }
     },
     "features": {
@@ -142,7 +152,7 @@
         "description": "File size"
       },
       "formats": {
-        "number": "6",
+        "number": "7",
         "label": "Supported Formats",
         "description": "All major types"
       }

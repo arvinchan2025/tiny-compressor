@@ -84,6 +84,16 @@
           "可逆変換"
         ],
         "compression": "最大90%"
+      },
+      "pdf": {
+        "name": "PDF圧縮器",
+        "description": "高度な圧縮でPDFファイルサイズを削減",
+        "features": [
+          "画像圧縮",
+          "メタデータ削除",
+          "プライバシー保護"
+        ],
+        "compression": "最大60%"
       }
     },
     "features": {

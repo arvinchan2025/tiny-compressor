@@ -216,9 +216,11 @@
     },
     "files": {
       "title": "الملفات المحددة",
+      "name": "الاسم",
+      "dimensions": "الأبعاد",
       "count": "{count} ملفات",
       "remove": "إزالة",
-      "sizeInfo": "{size} ميجابايت"
+      "sizeInfo": "الحجم"
     },
     "compress": {
       "start": "ضغط {format}",
@@ -247,6 +249,7 @@
       "download": "تنزيل",
       "compressMore": "ضغط المزيد",
       "reset": "إعادة تعيين",
+      "sizeComparison": "مقارنة الحجم",
       "sizeInfo": "الأصلي: {original} ميجابايت ← المضغوط: {compressed} ميجابايت ({ratio}% تقليل)"
     },
     "settings": {
@@ -257,10 +260,14 @@
       "qualityLow": "منخفض",
       "qualityMedium": "متوسط",
       "qualityHigh": "عالي",
-      "metadata": "الحفاظ على البيانات الوصفية",
-      "metadataDesc": "EXIF، GPS، معلومات الكاميرا"
+      "keepMetadata": "الحفاظ على البيانات الوصفية",
+      "metadataDesc": "الحفاظ على معلومات EXIF و GPS والكاميرا",
+      "progressive": "JPEG تدريجي",
+      "progressiveDesc": "تحميل الصور تدريجياً لأداء ويب أفضل"
     },
     "actions": {
+      "compress": "ضغط الآن",
+      "cancel": "إلغاء",
       "downloadAll": "تنزيل الكل",
       "reset": "إعادة تعيين"
     },
@@ -273,8 +280,12 @@
     },
     "status": {
       "starting": "جاري بدء الضغط...",
-      "processing": "جاري الضغط... {progress}%",
+      "processing": "جاري ضغط الصورة...",
       "completed": "اكتمل الضغط!"
+    },
+    "stats": {
+      "qualityUsed": "الجودة المستخدمة",
+      "processingTime": "وقت المعالجة"
     }
   }
 }
