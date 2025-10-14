@@ -47,7 +47,7 @@ export default function CompressorPage({
   onSettingsChange,
   onReset,
   compressionSettings,
-  maxFiles = 10
+  maxFiles = 1
 }: CompressorPageProps) {
   const { t } = useModuleTranslation(`compressors/${format}`, locale);
 

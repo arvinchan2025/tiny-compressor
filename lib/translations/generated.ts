@@ -1,6 +1,6 @@
 // Auto-generated translation file
 // Do not modify this file manually
-// Generated at: 2025-10-14T10:04:41.840Z
+// Generated at: 2025-10-14T12:46:32.724Z
 
 export const translations = {
   "en": {
@@ -727,7 +727,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Drag and drop your file here or click to select",
+          "title": "Drag and drop your {format} image here or click to select",
           "subtitle": "Support {format} format, max 50MB",
           "selectFiles": "Select File"
         },
@@ -912,7 +912,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Drag and drop files here or click to select",
+          "title": "Drag and drop your {format} image here or click to select",
           "subtitle": "Support {format} format, up to {maxFiles} files, max 10MB each",
           "selectFiles": "Select Files"
         },
@@ -1181,7 +1181,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Drag and drop your file here or click to select",
+          "title": "Drag and drop your {format} image here or click to select",
           "subtitle": "Support {format} format, max 50MB",
           "selectFiles": "Select File"
         },
@@ -1604,7 +1604,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Drag and drop your file here or click to select",
+          "title": "Drag and drop your {format} image here or click to select",
           "subtitle": "Support {format} format, max 50MB",
           "selectFiles": "Select File"
         },
@@ -2203,7 +2203,7 @@ export const translations = {
       "operation": {
         "upload": {
           "title": "Drag and drop your {format} image here or click to select",
-          "subtitle": "Maximum file size: 10MB",
+          "subtitle": "Support {format} format, max 50MB",
           "selectFiles": "Choose {format} File"
         },
         "files": {
@@ -2492,7 +2492,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Drag and drop your file here or click to select",
+          "title": "Drag and drop your {format} image here or click to select",
           "subtitle": "Support {format} format, max 50MB",
           "selectFiles": "Select File"
         },
@@ -6335,7 +6335,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "将文件拖放到此处或点击选择",
+          "title": "拖放您的 {format} 图片到此处或点击选择",
           "subtitle": "支持 {format} 格式，最大 50MB",
           "selectFiles": "选择文件"
         },
@@ -6509,7 +6509,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "将文件拖放到此处或点击选择",
+          "title": "拖放您的 {format} 图片到此处或点击选择",
           "subtitle": "支持 {format} 格式，最多 {maxFiles} 个文件，每个最大 10MB",
           "selectFiles": "选择文件"
         },
@@ -6769,7 +6769,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "将文件拖放到此处或点击选择",
+          "title": "拖放您的 {format} 图片到此处或点击选择",
           "subtitle": "支持 {format} 格式，最大 50MB",
           "selectFiles": "选择文件"
         },
@@ -7155,7 +7155,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "将文件拖放到此处或点击选择",
+          "title": "拖放您的 {format} 图片到此处或点击选择",
           "subtitle": "支持 {format} 格式，最大 50MB",
           "selectFiles": "选择文件"
         },
@@ -7742,7 +7742,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "将文件拖放到此处或点击选择",
+          "title": "拖放您的 {format} 图片到此处或点击选择",
           "subtitle": "支持 {format} 格式，最大 50MB",
           "selectFiles": "选择文件"
         },
@@ -8032,7 +8032,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "将文件拖放到此处或点击选择",
+          "title": "拖放您的 {format} 图片到此处或点击选择",
           "subtitle": "支持 {format} 格式，最大 50MB",
           "selectFiles": "选择文件"
         },
@@ -11868,7 +11868,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+          "title": "Arrastra y suelta tu imagen {format} aquí o haz clic para seleccionar",
           "subtitle": "Soporta formato {format}, máx 50MB",
           "selectFiles": "Seleccionar Archivo"
         },
@@ -12042,7 +12042,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+          "title": "Arrastra y suelta tu imagen {format} aquí o haz clic para seleccionar",
           "subtitle": "Soporta formato {format}, máx 50MB",
           "selectFiles": "Seleccionar Archivo"
         },
@@ -12327,7 +12327,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+          "title": "Arrastra y suelta tu imagen {format} aquí o haz clic para seleccionar",
           "subtitle": "Soporta formato {format}, máx 50MB",
           "selectFiles": "Seleccionar Archivo"
         },
@@ -12739,7 +12739,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+          "title": "Arrastra y suelta tu imagen {format} aquí o haz clic para seleccionar",
           "subtitle": "Soporta formato {format}, máx 50MB",
           "selectFiles": "Seleccionar Archivo"
         },
@@ -13326,7 +13326,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+          "title": "Arrastra y suelta tu imagen {format} aquí o haz clic para seleccionar",
           "subtitle": "Soporta formato {format}, máx 50MB",
           "selectFiles": "Seleccionar Archivo"
         },
@@ -13617,7 +13617,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+          "title": "Arrastra y suelta tu imagen {format} aquí o haz clic para seleccionar",
           "subtitle": "Soporta formato {format}, máx 50MB",
           "selectFiles": "Seleccionar Archivo"
         },
@@ -17614,7 +17614,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+          "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
           "subtitle": "Unterstützt {format} Format, max 50MB",
           "selectFiles": "Datei Auswählen"
         },
@@ -18048,7 +18048,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+          "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
           "subtitle": "Unterstützt {format} Format, max 50MB",
           "selectFiles": "Datei Auswählen"
         },
@@ -18460,7 +18460,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+          "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
           "subtitle": "Unterstützt {format} Format, max 50MB",
           "selectFiles": "Datei Auswählen"
         },
@@ -19046,7 +19046,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+          "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
           "subtitle": "Unterstützt {format} Format, max 50MB",
           "selectFiles": "Datei Auswählen"
         },
@@ -19336,7 +19336,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+          "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
           "subtitle": "Unterstützt {format} Format, max 50MB",
           "selectFiles": "Datei Auswählen"
         },
@@ -21008,7 +21008,7 @@ export const translations = {
           "advanced": "Erweitert"
         },
         "upload": {
-          "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+          "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
           "subtitle": "Unterstützt {sourceFormat} Format, max 50MB",
           "selectFiles": "Datei Auswählen"
         },
@@ -23160,7 +23160,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+          "title": "Glissez-déposez votre image {format} ici ou cliquez pour sélectionner",
           "subtitle": "Supporte le format {format}, max 50MB",
           "selectFiles": "Sélectionner un Fichier"
         },
@@ -23594,7 +23594,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+          "title": "Glissez-déposez votre image {format} ici ou cliquez pour sélectionner",
           "subtitle": "Supporte le format {format}, max 50MB",
           "selectFiles": "Sélectionner un Fichier"
         },
@@ -24006,7 +24006,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+          "title": "Glissez-déposez votre image {format} ici ou cliquez pour sélectionner",
           "subtitle": "Supporte le format {format}, max 50MB",
           "selectFiles": "Sélectionner un Fichier"
         },
@@ -24593,7 +24593,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+          "title": "Glissez-déposez votre image {format} ici ou cliquez pour sélectionner",
           "subtitle": "Supporte le format {format}, max 50MB",
           "selectFiles": "Sélectionner un Fichier"
         },
@@ -24883,7 +24883,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+          "title": "Glissez-déposez votre image {format} ici ou cliquez pour sélectionner",
           "subtitle": "Supporte le format {format}, max 50MB",
           "selectFiles": "Sélectionner un Fichier"
         },
@@ -26559,7 +26559,7 @@ export const translations = {
           "advanced": "Avancé"
         },
         "upload": {
-          "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+          "title": "Glissez-déposez votre image {format} ici ou cliquez pour sélectionner",
           "subtitle": "Supporte le format {sourceFormat}, max 50MB",
           "selectFiles": "Sélectionner un Fichier"
         },
@@ -28767,7 +28767,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "اسحب وأفلت ملفك هنا أو انقر للتحديد",
+          "title": "اسحب وأفلت صورتك {format} هنا أو انقر للتحديد",
           "subtitle": "يدعم تنسيق {format}، الحد الأقصى 50 ميجابايت",
           "selectFiles": "حدد ملف"
         },
@@ -29201,7 +29201,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "اسحب وأفلت ملفك هنا أو انقر للتحديد",
+          "title": "اسحب وأفلت صورتك {format} هنا أو انقر للتحديد",
           "subtitle": "يدعم تنسيق {format}، الحد الأقصى 50 ميجابايت",
           "selectFiles": "حدد ملف"
         },
@@ -29613,7 +29613,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "اسحب وأفلت ملفك هنا أو انقر للتحديد",
+          "title": "اسحب وأفلت صورتك {format} هنا أو انقر للتحديد",
           "subtitle": "يدعم تنسيق {format}، الحد الأقصى 50 ميجابايت",
           "selectFiles": "حدد ملف"
         },
@@ -30200,7 +30200,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "اسحب وأفلت ملفك هنا أو انقر للتحديد",
+          "title": "اسحب وأفلت صورتك {format} هنا أو انقر للتحديد",
           "subtitle": "يدعم تنسيق {format}، الحد الأقصى 50 ميجابايت",
           "selectFiles": "حدد ملف"
         },
@@ -30490,7 +30490,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "اسحب وأفلت ملفك هنا أو انقر للتحديد",
+          "title": "اسحب وأفلت صورتك {format} هنا أو انقر للتحديد",
           "subtitle": "يدعم تنسيق {format}، الحد الأقصى 50 ميجابايت",
           "selectFiles": "حدد ملف"
         },
@@ -32162,7 +32162,7 @@ export const translations = {
           "advanced": "متقدم"
         },
         "upload": {
-          "title": "اسحب وأفلت ملفك هنا أو انقر للتحديد",
+          "title": "اسحب وأفلت صورتك {format} هنا أو انقر للتحديد",
           "subtitle": "يدعم تنسيق {sourceFormat}، الحد الأقصى 50 ميجابايت",
           "selectFiles": "حدد ملف"
         },
@@ -34372,7 +34372,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+          "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
           "subtitle": "{format}形式をサポート、最大50MB",
           "selectFiles": "ファイルを選択"
         },
@@ -34546,7 +34546,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+          "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
           "subtitle": "{format}形式をサポート、最大{maxFiles}ファイル、各最大10MB",
           "selectFiles": "ファイルを選択"
         },
@@ -34806,7 +34806,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+          "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
           "subtitle": "{format}形式をサポート、最大50MB",
           "selectFiles": "ファイルを選択"
         },
@@ -35218,7 +35218,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+          "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
           "subtitle": "{format}形式をサポート、最大50MB",
           "selectFiles": "ファイルを選択"
         },
@@ -35805,7 +35805,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+          "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
           "subtitle": "{format}形式をサポート、最大50MB",
           "selectFiles": "ファイルを選択"
         },
@@ -36095,7 +36095,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+          "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
           "subtitle": "{format}形式をサポート、最大50MB",
           "selectFiles": "ファイルを選択"
         },
@@ -37767,7 +37767,7 @@ export const translations = {
           "advanced": "詳細"
         },
         "upload": {
-          "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+          "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
           "subtitle": "{sourceFormat}形式をサポート、最大50MB",
           "selectFiles": "ファイルを選択"
         },
@@ -39977,7 +39977,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+          "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
           "subtitle": "{format} 형식 지원, 최대 50MB",
           "selectFiles": "파일 선택"
         },
@@ -40151,7 +40151,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+          "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
           "subtitle": "{format} 형식 지원, 최대 {maxFiles}개 파일, 각각 최대 10MB",
           "selectFiles": "파일 선택"
         },
@@ -40411,7 +40411,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+          "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
           "subtitle": "{format} 형식 지원, 최대 50MB",
           "selectFiles": "파일 선택"
         },
@@ -40823,7 +40823,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+          "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
           "subtitle": "{format} 형식 지원, 최대 50MB",
           "selectFiles": "파일 선택"
         },
@@ -41410,7 +41410,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+          "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
           "subtitle": "{format} 형식 지원, 최대 50MB",
           "selectFiles": "파일 선택"
         },
@@ -41700,7 +41700,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+          "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
           "subtitle": "{format} 형식 지원, 최대 50MB",
           "selectFiles": "파일 선택"
         },
@@ -43372,7 +43372,7 @@ export const translations = {
           "advanced": "고급"
         },
         "upload": {
-          "title": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+          "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
           "subtitle": "{sourceFormat} 형식 지원, 최대 50MB",
           "selectFiles": "파일 선택"
         },
@@ -45576,7 +45576,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arraste seu arquivo aqui ou clique para selecionar",
+          "title": "Arraste sua imagem {format} aqui ou clique para selecionar",
           "subtitle": "Suporta formato {format}, máximo 50MB",
           "selectFiles": "Selecionar Arquivo"
         },
@@ -46010,7 +46010,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arraste seu arquivo aqui ou clique para selecionar",
+          "title": "Arraste sua imagem {format} aqui ou clique para selecionar",
           "subtitle": "Suporta formato {format}, máximo 50MB",
           "selectFiles": "Selecionar Arquivo"
         },
@@ -46422,7 +46422,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arraste seu arquivo aqui ou clique para selecionar",
+          "title": "Arraste sua imagem {format} aqui ou clique para selecionar",
           "subtitle": "Suporta formato {format}, máximo 50MB",
           "selectFiles": "Selecionar Arquivo"
         },
@@ -47009,7 +47009,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arraste seu arquivo aqui ou clique para selecionar",
+          "title": "Arraste sua imagem {format} aqui ou clique para selecionar",
           "subtitle": "Suporta formato {format}, máximo 50MB",
           "selectFiles": "Selecionar Arquivo"
         },
@@ -47299,7 +47299,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Arraste seu arquivo aqui ou clique para selecionar",
+          "title": "Arraste sua imagem {format} aqui ou clique para selecionar",
           "subtitle": "Suporta formato {format}, máximo 50MB",
           "selectFiles": "Selecionar Arquivo"
         },
@@ -48975,7 +48975,7 @@ export const translations = {
           "advanced": "Avançado"
         },
         "upload": {
-          "title": "Arraste seu arquivo aqui ou clique para selecionar",
+          "title": "Arraste sua imagem {format} aqui ou clique para selecionar",
           "subtitle": "Suporta formato {sourceFormat}, máximo 50MB",
           "selectFiles": "Selecionar Arquivo"
         },
@@ -51183,7 +51183,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Перетащите файл сюда или нажмите для выбора",
+          "title": "Перетащите ваше {format} изображение сюда или нажмите для выбора",
           "subtitle": "Поддерживает формат {format}, максимум 50MB",
           "selectFiles": "Выбрать файл"
         },
@@ -51617,7 +51617,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Перетащите файл сюда или нажмите для выбора",
+          "title": "Перетащите ваше {format} изображение сюда или нажмите для выбора",
           "subtitle": "Поддержка формата {format}, максимум 50MB",
           "selectFiles": "Выбрать файл"
         },
@@ -52029,7 +52029,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Перетащите файл сюда или нажмите для выбора",
+          "title": "Перетащите ваше {format} изображение сюда или нажмите для выбора",
           "subtitle": "Поддержка формата {format}, максимум 50MB",
           "selectFiles": "Выбрать файл"
         },
@@ -52616,7 +52616,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Перетащите файл сюда или нажмите для выбора",
+          "title": "Перетащите ваше {format} изображение сюда или нажмите для выбора",
           "subtitle": "Поддержка формата {format}, максимум 50MB",
           "selectFiles": "Выбрать файл"
         },
@@ -52906,7 +52906,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Перетащите файл сюда или нажмите для выбора",
+          "title": "Перетащите ваше {format} изображение сюда или нажмите для выбора",
           "subtitle": "Поддержка формата {format}, максимум 50MB",
           "selectFiles": "Выбрать файл"
         },
@@ -56787,7 +56787,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Trascina il tuo file qui o clicca per selezionare",
+          "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
           "subtitle": "Supporta formato {format}, max 50MB",
           "selectFiles": "Seleziona File"
         },
@@ -57221,7 +57221,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Trascina il tuo file qui o clicca per selezionare",
+          "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
           "subtitle": "Supporta formato {format}, max 50MB",
           "selectFiles": "Seleziona File"
         },
@@ -57633,7 +57633,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Trascina il tuo file qui o clicca per selezionare",
+          "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
           "subtitle": "Supporta formato {format}, max 50MB",
           "selectFiles": "Seleziona File"
         },
@@ -58220,7 +58220,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Trascina il tuo file qui o clicca per selezionare",
+          "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
           "subtitle": "Supporta formato {format}, max 50MB",
           "selectFiles": "Seleziona File"
         },
@@ -58510,7 +58510,7 @@ export const translations = {
       },
       "operation": {
         "upload": {
-          "title": "Trascina il tuo file qui o clicca per selezionare",
+          "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
           "subtitle": "Supporta formato {format}, max 50MB",
           "selectFiles": "Seleziona File"
         },
@@ -60182,7 +60182,7 @@ export const translations = {
           "advanced": "Avanzato"
         },
         "upload": {
-          "title": "Trascina il tuo file qui o clicca per selezionare",
+          "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
           "subtitle": "Supporta formato {sourceFormat}, max 50MB",
           "selectFiles": "Seleziona File"
         },
@@ -61611,3 +61611,30 @@ export const translations = {
     }
   }
 }
+
+export const supportedModules = [
+  "common/messages",
+  "common/navigation",
+  "common/ui",
+  "compressors/avif",
+  "compressors/bmp",
+  "compressors/gif",
+  "compressors/jpeg",
+  "compressors/pdf",
+  "compressors/png",
+  "compressors/webp",
+  "converters/heic-to-jpg",
+  "converters/jpg-to-avif",
+  "converters/jpg-to-png",
+  "converters/jpg-to-webp",
+  "converters/png-to-avif",
+  "converters/png-to-jpg",
+  "converters/png-to-webp",
+  "converters/webp-to-avif",
+  "converters/webp-to-jpg",
+  "converters/webp-to-png",
+  "footer",
+  "home",
+  "privacy",
+  "terms"
+]

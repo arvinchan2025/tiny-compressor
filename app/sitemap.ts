@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/compressor/compress-avif',
     '/compressor/compress-gif',
     '/compressor/compress-bmp',
+    '/compressor/compress-pdf',
   ]
   
   // 所有转换器页面
@@ -36,6 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',           // 首页
     '/privacy',   // 隐私政策
     '/terms',     // 服务条款
+    '/compressor', // 压缩器主页
+    '/converter',  // 转换器主页
   ]
   
   // 合并所有页面
@@ -50,6 +53,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       let priority = 0.8
       if (page === '') {
         priority = 1.0 // 首页最高优先级
+      } else if (page === '/compressor' || page === '/converter') {
+        priority = 0.95 // 功能主页高优先级
       } else if (compressorPages.includes(page) || converterPages.includes(page)) {
         priority = 0.9 // 核心功能页面高优先级
       } else {
@@ -59,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       // 确定更新频率
       const changeFrequency: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' = 
         page === '' ? 'daily' : 
+        (page === '/compressor' || page === '/converter') ? 'weekly' :
         (compressorPages.includes(page) || converterPages.includes(page)) ? 'weekly' : 
         'monthly'
       

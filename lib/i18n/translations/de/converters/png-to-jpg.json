@@ -216,7 +216,7 @@
       "advanced": "Erweitert"
     },
     "upload": {
-      "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
+      "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
       "subtitle": "Unterstützt {sourceFormat} Format, max 50MB",
       "selectFiles": "Datei Auswählen"
     },

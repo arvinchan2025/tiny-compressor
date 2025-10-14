@@ -104,7 +104,7 @@
   },
   "operation": {
     "upload": {
-      "title": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
       "subtitle": "{format}形式をサポート、最大50MB",
       "selectFiles": "ファイルを選択"
     },

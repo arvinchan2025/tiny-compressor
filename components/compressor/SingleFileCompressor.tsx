@@ -200,7 +200,7 @@ export default function SingleFileCompressor({
           >
             <UploadArea
               title={t('operation.upload.title', { format: format.toUpperCase() })}
-              subtitle={t('operation.upload.subtitle')}
+              subtitle={t('operation.upload.subtitle', { format: format.toUpperCase() })}
               buttonText={t('operation.upload.selectFiles', { format: format.toUpperCase() })}
               acceptTypes={`image/${format}`}
               onFileSelect={handleFileSelect}

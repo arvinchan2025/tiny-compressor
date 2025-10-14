@@ -236,7 +236,7 @@
   },
   "operation": {
     "upload": {
-      "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+      "title": "Glissez-déposez votre image {format} ici ou cliquez pour sélectionner",
       "subtitle": "Supporte le format {format}, max 50MB",
       "selectFiles": "Sélectionner un Fichier"
     },

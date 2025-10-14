@@ -210,7 +210,7 @@
   },
   "operation": {
     "upload": {
-      "title": "Trascina il tuo file qui o clicca per selezionare",
+      "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
       "subtitle": "Supporta formato {format}, max 50MB",
       "selectFiles": "Seleziona File"
     },

@@ -113,7 +113,7 @@ export default function CompressPngClient({ locale }: CompressPngClientProps) {
       onSettingsChange={handleSettingsChange}
       onReset={handleReset}
       compressionSettings={compressionSettings}
-      maxFiles={10}
+      maxFiles={1}
     />
   );
 }

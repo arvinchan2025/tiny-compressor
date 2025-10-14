@@ -104,7 +104,7 @@
   },
   "operation": {
     "upload": {
-      "title": "将文件拖放到此处或点击选择",
+      "title": "拖放您的 {format} 图片到此处或点击选择",
       "subtitle": "支持 {format} 格式，最多 {maxFiles} 个文件，每个最大 10MB",
       "selectFiles": "选择文件"
     },

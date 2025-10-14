@@ -54,11 +54,21 @@ function readTranslationsRecursive(dir, locale, basePath = '') {
 function generateTypeScriptContent(allTranslations) {
   const timestamp = new Date().toISOString();
   
+  // 获取所有支持的模块
+  const supportedModules = [];
+  const firstLocale = Object.keys(allTranslations)[0];
+  if (firstLocale && allTranslations[firstLocale]) {
+    supportedModules.push(...Object.keys(allTranslations[firstLocale]));
+  }
+  
   let content = `// Auto-generated translation file\n`;
   content += `// Do not modify this file manually\n`;
   content += `// Generated at: ${timestamp}\n\n`;
   content += `export const translations = `;
   content += JSON.stringify(allTranslations, null, 2);
+  content += `\n\n`;
+  content += `export const supportedModules = `;
+  content += JSON.stringify(supportedModules, null, 2);
   content += `\n`;
 
   return content;

@@ -220,7 +220,7 @@
   },
   "operation": {
     "upload": {
-      "title": "Arrastra y suelta tu archivo aquí o haz clic para seleccionar",
+      "title": "Arrastra y suelta tu imagen {format} aquí o haz clic para seleccionar",
       "subtitle": "Soporta formato {format}, máx 50MB",
       "selectFiles": "Seleccionar Archivo"
     },

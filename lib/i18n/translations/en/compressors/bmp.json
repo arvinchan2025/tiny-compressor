@@ -104,7 +104,7 @@
   },
   "operation": {
     "upload": {
-      "title": "Drag and drop files here or click to select",
+      "title": "Drag and drop your {format} image here or click to select",
       "subtitle": "Support {format} format, up to {maxFiles} files, max 10MB each",
       "selectFiles": "Select Files"
     },

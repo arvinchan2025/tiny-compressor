@@ -91,7 +91,7 @@ export default function FileDropZone({ onFileSelect, locale = 'en', format = 'pn
       </motion.div>
 
       <h3 className="text-lg font-semibold text-slate-800 dark:text-gray-200 mb-2 transition-colors">
-        {t('operation.upload.title')}
+        {t('operation.upload.title', { format: format.toUpperCase() })}
       </h3>
       
       <p className="text-slate-600 dark:text-gray-400 mb-4 transition-colors">

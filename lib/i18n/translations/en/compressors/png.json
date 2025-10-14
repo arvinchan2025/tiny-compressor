@@ -211,7 +211,7 @@
   "operation": {
     "upload": {
       "title": "Drag and drop your {format} image here or click to select",
-      "subtitle": "Maximum file size: 10MB",
+      "subtitle": "Support {format} format, max 50MB",
       "selectFiles": "Choose {format} File"
     },
     "files": {

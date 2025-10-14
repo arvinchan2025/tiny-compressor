@@ -310,10 +310,10 @@ export default function UnifiedCompressionManager({
     setResetKey(prev => prev + 1); // 增加 resetKey 以重置文件输入
   }, []);
 
-  // ⭐ 智能模式检测：单文件使用优化体验
+  // ⭐ 单文件模式：始终使用单文件体验
   const isSingleFileMode = useMemo(() => 
-    imageFiles.length === 1, // 移除 compressionResults.length === 0 条件
-    [imageFiles.length]
+    true, // 始终使用单文件模式
+    []
   );
 
   // ⭐ 单文件模式：使用 SingleFileCompressor

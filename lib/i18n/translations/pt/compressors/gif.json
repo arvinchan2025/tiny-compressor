@@ -104,7 +104,7 @@
   },
   "operation": {
     "upload": {
-      "title": "Arraste seu arquivo aqui ou clique para selecionar",
+      "title": "Arraste sua imagem {format} aqui ou clique para selecionar",
       "subtitle": "Suporta formato {format}, máximo 50MB",
       "selectFiles": "Selecionar Arquivo"
     },
