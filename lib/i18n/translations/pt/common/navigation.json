@@ -94,6 +94,16 @@
           "Privacidade protegida"
         ],
         "compression": "Até 60%"
+      },
+      "video": {
+        "name": "Compressor de Vídeo",
+        "description": "Comprima arquivos de vídeo com tecnologia FFmpeg",
+        "features": [
+          "Múltiplos formatos",
+          "Predefinições de qualidade",
+          "Processamento no lado do cliente"
+        ],
+        "compression": "Até 85%"
       }
     },
     "features": {

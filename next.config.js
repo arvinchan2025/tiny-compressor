@@ -54,6 +54,33 @@ const nextConfig = {
             value: 'origin-when-cross-origin'
           }
         ]
+      },
+      // FFmpeg.wasm 需要的 COOP/COEP headers
+      {
+        source: '/compressor/compress-video',
+        headers: [
+          {
+            key: 'Cross-Origin-Embedder-Policy',
+            value: 'require-corp'
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin'
+          }
+        ]
+      },
+      {
+        source: '/:locale/compressor/compress-video',
+        headers: [
+          {
+            key: 'Cross-Origin-Embedder-Policy',
+            value: 'require-corp'
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin'
+          }
+        ]
       }
     ];
   }

@@ -1,0 +1,290 @@
+{
+  "seo": {
+    "title": "動画圧縮ツール - 無料オンライン動画圧縮",
+    "description": "無料でオンライン動画ファイルを圧縮！品質を維持しながらファイルサイズを最大85%削減。MP4、WebM、AVI、MOV、MKV形式に対応。100%クライアント側処理、アップロード不要。",
+    "keywords": "動画圧縮, ビデオ圧縮, 動画サイズ削減, MP4圧縮, 動画最適化, オンライン動画ツール, 無料動画圧縮"
+  },
+  "hero": {
+    "title": "動画圧縮ツール",
+    "subtitle": "高度なFFmpeg技術で動画を圧縮、100%ブラウザ内で処理",
+    "badge": "クライアント側処理"
+  },
+  "formatInfo": {
+    "title": "動画圧縮について",
+    "description": "動画圧縮は、より効率的なエンコーディングによってファイルサイズを削減します。当ツールはFFmpeg.wasmを使用して、ブラウザ内で完全に動画を処理し、プライバシーとセキュリティを確保します。サーバーにファイルがアップロードされることはありません。",
+    "features": [
+      "MP4、WebM、AVI、MOV、MKV形式に対応",
+      "最大85%のファイルサイズ削減",
+      "画質を維持",
+      "ファイルのアップロード不要",
+      "100%プライベートで安全"
+    ]
+  },
+  "features": {
+    "title": "強力な機能",
+    "subtitle": "動画圧縮に必要なすべて",
+    "items": [
+      {
+        "icon": "zap",
+        "title": "高速圧縮",
+        "description": "FFmpeg.wasmを使用してブラウザ内で効率的な動画処理を実現"
+      },
+      {
+        "icon": "shield",
+        "title": "100%プライベート",
+        "description": "すべての処理はブラウザ内でローカルに行われます。動画がデバイスから出ることはありません"
+      },
+      {
+        "icon": "sliders",
+        "title": "品質プリセット",
+        "description": "さまざまな圧縮ニーズに応じて、低、中、高品質プリセットから選択"
+      },
+      {
+        "icon": "gauge",
+        "title": "リアルタイム進行状況",
+        "description": "詳細な時間予測と現在の処理段階で圧縮の進行状況を追跡"
+      },
+      {
+        "icon": "file-video",
+        "title": "複数形式対応",
+        "description": "MP4、WebM、AVI、MOV、MKVなど、人気の動画形式に対応"
+      },
+      {
+        "icon": "download",
+        "title": "即時ダウンロード",
+        "description": "処理完了後、すぐに圧縮された動画をダウンロード"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "動画圧縮の仕組み",
+    "subtitle": "動画圧縮技術の理解",
+    "items": [
+      {
+        "icon": "cpu",
+        "title": "動画エンコーディング",
+        "description": "H.264コーデックを使用して最適化された圧縮設定で動画を再エンコードし、品質を保ちながらファイルサイズを削減"
+      },
+      {
+        "icon": "image",
+        "title": "解像度スケーリング",
+        "description": "オプションで動画解像度（1080p、720p、480p、360p）を下げて、ファイルサイズを大幅に削減"
+      },
+      {
+        "icon": "settings",
+        "title": "ビットレート最適化",
+        "description": "CRF（固定品質係数）を使用して動画ビットレートを調整し、効率的な圧縮を実現"
+      },
+      {
+        "icon": "volume-2",
+        "title": "オーディオ圧縮",
+        "description": "AACコーデックを使用して最適化されたビットレートでオーディオを再エンコードし、ファイルサイズを削減"
+      },
+      {
+        "icon": "layers",
+        "title": "FFmpeg処理",
+        "description": "WebAssembly版のFFmpeg.wasmを活用し、ブラウザ内で強力な動画処理を実現"
+      },
+      {
+        "icon": "lock",
+        "title": "クライアント側処理",
+        "description": "すべての圧縮はWebAssemblyを使用してブラウザ内で行われ、完全なプライバシーとセキュリティを確保"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "最適な用途",
+    "subtitle": "動画圧縮が役立つ一般的なシナリオ",
+    "items": [
+      {
+        "icon": "share-2",
+        "title": "ソーシャルメディア共有",
+        "description": "アップロード制限に合わせて動画を圧縮"
+      },
+      {
+        "icon": "mail",
+        "title": "メール添付",
+        "description": "メールの添付ファイルサイズ制限内に収める"
+      },
+      {
+        "icon": "smartphone",
+        "title": "モバイルデバイス",
+        "description": "スマートフォンやタブレットのストレージスペースを節約"
+      },
+      {
+        "icon": "cloud",
+        "title": "クラウドストレージ",
+        "description": "より少ないストレージスペースでより多くの動画を保存"
+      },
+      {
+        "icon": "globe",
+        "title": "ウェブサイト",
+        "description": "読み込み時間を改善するためにウェブ動画を最適化"
+      },
+      {
+        "icon": "users",
+        "title": "チーム共同作業",
+        "description": "大きな動画ファイルをより迅速に共有"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "動画圧縮に関する一般的な質問",
+    "items": [
+      {
+        "question": "動画はどのくらい圧縮できますか？",
+        "answer": "圧縮率は元の動画の品質と選択した設定によって異なります。通常、品質を大きく損なうことなく40〜85%のサイズ削減が可能です。"
+      },
+      {
+        "question": "どの動画形式がサポートされていますか？",
+        "answer": "MP4、WebM、AVI、MOV、MKVなど、ほとんどの一般的な動画形式をサポートしています。出力は最大の互換性のためにMP4形式です。"
+      },
+      {
+        "question": "処理時間はどのくらいですか？",
+        "answer": "処理時間は動画のサイズと選択した品質設定によって異なります。短い動画は数秒で処理され、長い動画は数分かかる場合があります。"
+      },
+      {
+        "question": "動画圧縮は安全ですか？",
+        "answer": "はい、完全に安全です。すべての処理はブラウザ内でローカルに行われます。動画がサーバーにアップロードされることはなく、デバイスから出ることもありません。"
+      },
+      {
+        "question": "圧縮された動画の品質はどうなりますか？",
+        "answer": "中品質設定を使用すると、ほとんどの視聴者は元の動画と圧縮された動画の違いに気付きません。高品質設定では、視覚的な品質の違いはほとんどありません。"
+      },
+      {
+        "question": "FFmpeg.wasmとは何ですか？",
+        "answer": "FFmpeg.wasmは、WebAssemblyにコンパイルされた人気の動画処理ツールFFmpegのバージョンで、ブラウザ内で直接実行できます。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "クイックリンク",
+    "description": "他のツールもご覧ください",
+    "items": [
+      {
+        "title": "画像圧縮",
+        "description": "画像ファイルを圧縮",
+        "url": "/compressor"
+      },
+      {
+        "title": "画像変換",
+        "description": "画像形式を変換",
+        "url": "/converter"
+      },
+      {
+        "title": "すべての圧縮ツール",
+        "description": "すべての圧縮ツールを表示",
+        "url": "/compressor"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "動画ファイルをここにドロップまたはクリックして選択",
+      "subtitle": "MP4、WebM、AVI、MOV、MKV形式に対応、最大500MB",
+      "selectFiles": "動画ファイルを選択"
+    },
+    "files": {
+      "name": "ファイル名",
+      "size": "ファイルサイズ",
+      "duration": "再生時間",
+      "resolution": "解像度"
+    },
+    "settings": {
+      "simple": "シンプル",
+      "advanced": "詳細設定",
+      "advancedTitle": "圧縮設定",
+      "compressionEngine": "圧縮エンジン",
+      "simpleCompression": "シンプル圧縮",
+      "simpleCompressionDesc": "ブラウザネイティブ圧縮。高速でダウンロード不要。",
+      "ffmpegCompression": "FFmpeg圧縮",
+      "ffmpegCompressionDesc": "FFmpegを使用した高品質で多機能な圧縮。",
+      "ffmpegWarning": "FFmpeg圧縮はエンジンのダウンロード（約31MB）が必要です。初回使用時は2〜10分かかる場合があります。",
+      "presets": "プリセット",
+      "custom": "カスタム",
+      "quality": "圧縮品質",
+      "qualityLabel": "品質プリセット",
+      "resolution": "解像度",
+      "resolutionKeep": "元のまま",
+      "resolution1080p": "1080p (1920x1080)",
+      "resolution720p": "720p (1280x720)",
+      "resolution480p": "480p (854x480)",
+      "resolution360p": "360p (640x360)",
+      "codec": "コーデック",
+      "codecH264": "H.264（最高の互換性）",
+      "codecH265": "H.265（より良い圧縮）",
+      "codecVP9": "VP9（WebM形式）",
+      "bitrate": "ビットレート",
+      "bitrateValue": "{value} Kbps",
+      "frameRate": "フレームレート",
+      "frameRateValue": "{value} FPS",
+      "removeAudio": "オーディオを削除",
+      "removeAudioDesc": "オーディオトラックを削除してファイルサイズをさらに削減",
+      "low": "低品質（高速）",
+      "lowDesc": "最小ファイルサイズで最速圧縮",
+      "medium": "中品質（バランス）",
+      "mediumDesc": "品質とファイルサイズの最適なバランス",
+      "high": "高品質（低速）",
+      "highDesc": "最高品質でファイルサイズは大きめ",
+      "estimatedReduction": "推定サイズ削減：{ratio}%",
+      "simpleMode": "シンプル圧縮（ブラウザネイティブ）を使用中 - 詳細設定モードに切り替えてカスタマイズ",
+      "ffmpegDownloadNote": "圧縮開始時にFFmpeg（約31MB）がダウンロードされます。初回使用時は2〜10分かかる場合があります。"
+    },
+    "progress": {
+      "loadingEngine": "動画処理エンジンを読み込み中...",
+      "compressing": "動画を圧縮中...",
+      "finalizing": "圧縮された動画を完成中...",
+      "engineInfo": "FFmpeg.wasmをデフォルト設定で読み込み中です。初回初期化には2〜10分かかり、一度だけ実行されます。プロキシを使用している場合、さらに時間がかかる可能性があります。",
+      "processingInfo": "動画を処理中です。動画のサイズと品質設定によっては数分かかる場合があります。"
+    },
+    "status": {
+      "processing": "処理中... {progress}%",
+      "stage": "ステージ：{stage}",
+      "timeRemaining": "推定残り時間：{time}",
+      "currentTime": "進行状況：{current} / {total}",
+      "engineReady": "動画処理エンジンの準備が完了しました！今すぐ動画を圧縮できます。",
+      "loadingEngine": "動画処理エンジンを読み込み中..."
+    },
+    "results": {
+      "title": "圧縮完了！",
+      "originalSize": "元のサイズ",
+      "compressedSize": "圧縮後のサイズ",
+      "saved": "削減量",
+      "compressionRatio": "圧縮率",
+      "processingTime": "処理時間",
+      "duration": "再生時間",
+      "resolution": "解像度"
+    },
+    "actions": {
+      "compress": "動画を圧縮",
+      "download": "圧縮された動画をダウンロード",
+      "cancel": "キャンセル",
+      "compressAnother": "別の動画を圧縮",
+      "reset": "最初からやり直す",
+      "backToSimple": "シンプル圧縮に戻る"
+    },
+    "errors": {
+      "fileTooLarge": "ファイルが大きすぎます。最大サイズは{max}です",
+      "unsupportedFormat": "サポートされていない動画形式です。MP4、WebM、AVI、MOV、またはMKVを使用してください",
+      "metadataFailed": "動画のメタデータの読み取りに失敗しました。ファイルが破損している可能性があります",
+      "compressionFailed": "動画圧縮に失敗しました。別の品質設定またはファイルをお試しください",
+      "loadFailed": "FFmpegの読み込みに失敗しました。ページを更新して再試行してください",
+      "browserNotSupported": "お使いのブラウザは動画圧縮をサポートしていません。Chrome、Edge、Firefoxなどの最新ブラウザをご使用ください",
+      "engineNotReady": "動画処理エンジンはまだ読み込み中です。お待ちください..."
+    },
+    "warnings": {
+      "largeFile": "大きなファイルが検出されました（{size}MB）。圧縮に数分かかる場合があります",
+      "firstTime": "初回セットアップ：FFmpeg（約31MB）をダウンロード中です。お待ちください...",
+      "mobileSlow": "モバイルデバイスが検出されました。デスクトップよりも処理が遅くなる場合があります"
+    },
+    "info": {
+      "privacy": "動画は完全にブラウザ内で処理されます。アップロード不要。",
+      "nativeCompression": "ブラウザネイティブ圧縮を使用中（外部ダウンロード不要）",
+      "processingNative": "ブラウザネイティブ動画圧縮を使用中",
+      "compatible": "出力形式：MP4（H.264動画、AACオーディオ）最大の互換性のため",
+      "tip": "ヒント：サイズと品質の最適なバランスには「中品質」を選択してください"
+    }
+  }
+}
+

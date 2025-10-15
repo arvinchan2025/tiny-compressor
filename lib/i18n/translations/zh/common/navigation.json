@@ -94,6 +94,16 @@
           "隐私保护"
         ],
         "compression": "高达 60%"
+      },
+      "video": {
+        "name": "视频压缩器",
+        "description": "使用 FFmpeg 技术压缩视频文件",
+        "features": [
+          "多种格式",
+          "质量预设",
+          "客户端处理"
+        ],
+        "compression": "高达 85%"
       }
     },
     "features": {

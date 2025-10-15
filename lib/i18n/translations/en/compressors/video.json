@@ -1,0 +1,320 @@
+{
+  "seo": {
+    "title": "Video Compressor - Free Online Video Compression Tool",
+    "description": "Compress video files online for free! Reduce file size by up to 85% while maintaining quality. Support MP4, WebM, AVI, MOV, MKV formats. 100% client-side processing, no upload required.",
+    "keywords": "video compressor, compress video, video compression, reduce video size, MP4 compressor, video optimizer, online video tool, free video compression"
+  },
+  "hero": {
+    "title": "Video Compressor",
+    "subtitle": "Compress videos with advanced FFmpeg technology, 100% in your browser",
+    "badge": "Client-Side Processing"
+  },
+  "formatInfo": {
+    "title": "About Video Compression",
+    "description": "Video compression reduces file size by encoding videos more efficiently. Our tool uses FFmpeg.wasm to process videos entirely in your browser, ensuring complete privacy and security. No files are uploaded to any server.",
+    "features": [
+      "Supports MP4, WebM, AVI, MOV, MKV formats",
+      "Up to 85% file size reduction",
+      "Maintains visual quality",
+      "No file upload required",
+      "100% private and secure"
+    ]
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need for video compression",
+    "items": [
+      {
+        "icon": "zap",
+        "title": "Fast Compression",
+        "description": "Powered by FFmpeg.wasm for efficient video processing directly in your browser"
+      },
+      {
+        "icon": "shield",
+        "title": "100% Private",
+        "description": "All processing happens locally in your browser. Your videos never leave your device"
+      },
+      {
+        "icon": "sliders",
+        "title": "Quality Presets",
+        "description": "Choose from Low, Medium, or High quality presets for different compression needs"
+      },
+      {
+        "icon": "gauge",
+        "title": "Real-time Progress",
+        "description": "Track compression progress with detailed time estimates and current processing stage"
+      },
+      {
+        "icon": "file-video",
+        "title": "Multiple Formats",
+        "description": "Support for MP4, WebM, AVI, MOV, MKV and other popular video formats"
+      },
+      {
+        "icon": "download",
+        "title": "Instant Download",
+        "description": "Download your compressed video immediately after processing is complete"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "How Video Compression Works",
+    "subtitle": "Understanding the technology behind video compression",
+    "items": [
+      {
+        "icon": "cpu",
+        "title": "Video Encoding",
+        "description": "Uses H.264 codec to re-encode video with optimized compression settings, reducing file size while preserving quality"
+      },
+      {
+        "icon": "image",
+        "title": "Resolution Scaling",
+        "description": "Optionally reduces video resolution (1080p, 720p, 480p, 360p) to significantly decrease file size"
+      },
+      {
+        "icon": "settings",
+        "title": "Bitrate Optimization",
+        "description": "Adjusts video bitrate using CRF (Constant Rate Factor) for efficient compression"
+      },
+      {
+        "icon": "volume-2",
+        "title": "Audio Compression",
+        "description": "Re-encodes audio using AAC codec with optimized bitrate for smaller file size"
+      },
+      {
+        "icon": "layers",
+        "title": "FFmpeg Processing",
+        "description": "Leverages FFmpeg.wasm, a WebAssembly port of FFmpeg, for powerful video processing in the browser"
+      },
+      {
+        "icon": "lock",
+        "title": "Client-Side Processing",
+        "description": "All compression happens in your browser using WebAssembly, ensuring complete privacy and security"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Perfect For",
+    "subtitle": "Common scenarios where video compression helps",
+    "items": [
+      {
+        "icon": "share-2",
+        "title": "Social Media Sharing",
+        "description": "Reduce video size to meet platform upload limits and ensure faster sharing on social networks"
+      },
+      {
+        "icon": "mail",
+        "title": "Email Attachments",
+        "description": "Compress videos to fit email attachment size limits without sacrificing too much quality"
+      },
+      {
+        "icon": "smartphone",
+        "title": "Mobile Storage",
+        "description": "Free up storage space on your phone by compressing videos while keeping them watchable"
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud Storage",
+        "description": "Save cloud storage space and reduce backup time by compressing video files"
+      },
+      {
+        "icon": "globe",
+        "title": "Website Videos",
+        "description": "Optimize videos for web delivery, ensuring faster page load times and better user experience"
+      },
+      {
+        "icon": "users",
+        "title": "Video Presentations",
+        "description": "Compress presentation videos for easier distribution to colleagues and clients"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about video compression",
+    "items": [
+      {
+        "question": "How much can I compress my video?",
+        "answer": "Compression ratio depends on the original video and quality preset. Low quality can achieve up to 85% reduction, medium quality around 65%, and high quality around 45%. Higher compression means smaller file size but may reduce quality."
+      },
+      {
+        "question": "Will compression affect video quality?",
+        "answer": "Yes, compression involves a trade-off between file size and quality. Our quality presets are designed to minimize visible quality loss. High quality preset maintains excellent visual quality while still reducing file size significantly."
+      },
+      {
+        "question": "What's the maximum file size I can compress?",
+        "answer": "The current limit is 500MB. Larger files may cause browser memory issues. For videos over 500MB, we recommend using desktop video editing software or server-based compression services."
+      },
+      {
+        "question": "How long does compression take?",
+        "answer": "Compression time depends on video length, resolution, and quality preset. As a rough estimate: a 100MB video takes about 1-3 minutes on modern computers. Low quality is fastest, high quality is slowest."
+      },
+      {
+        "question": "Is my video uploaded to your servers?",
+        "answer": "No! All processing happens entirely in your browser using FFmpeg.wasm. Your video never leaves your device, ensuring complete privacy and security."
+      },
+      {
+        "question": "What video formats are supported?",
+        "answer": "We support MP4, WebM, AVI, MOV, MKV, M4V, and 3GP formats as input. The output is always MP4 format with H.264 video codec and AAC audio codec for maximum compatibility."
+      },
+      {
+        "question": "Can I compress multiple videos at once?",
+        "answer": "Currently, we support single video compression to ensure stable performance and prevent browser crashes. You can compress videos one at a time."
+      },
+      {
+        "question": "Why is the first compression slow?",
+        "answer": "The first time you use the compressor, it needs to download FFmpeg.wasm (about 31MB). This only happens once - subsequent compressions will be much faster as the files are cached by your browser."
+      },
+      {
+        "question": "Which quality preset should I choose?",
+        "answer": "Low Quality: Best for quick sharing, social media (when size limits are strict). Medium Quality: Balanced option for most use cases. High Quality: When you need to preserve details and don't mind larger file sizes."
+      },
+      {
+        "question": "Can I use this on mobile devices?",
+        "answer": "Yes, but performance will be slower on mobile devices, especially for large videos. We recommend using a desktop or laptop for best results, particularly for videos over 100MB."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "More Video Tools",
+    "description": "Explore other video and image tools",
+    "items": [
+      {
+        "title": "PNG Compressor",
+        "description": "Compress PNG images",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPEG Compressor",
+        "description": "Compress JPEG images",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP Compressor",
+        "description": "Compress WebP images",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "PDF Compressor",
+        "description": "Compress PDF files",
+        "url": "/compressor/compress-pdf"
+      },
+      {
+        "title": "Image Converter",
+        "description": "Convert image formats",
+        "url": "/converter"
+      },
+      {
+        "title": "All Compressors",
+        "description": "View all compression tools",
+        "url": "/compressor"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "Drop video file here or click to select",
+      "subtitle": "Support MP4, WebM, AVI, MOV, MKV formats, max 500MB",
+      "selectFiles": "Choose Video File"
+    },
+    "files": {
+      "name": "File Name",
+      "size": "File Size",
+      "duration": "Duration",
+      "resolution": "Resolution"
+    },
+    "settings": {
+      "simple": "Simple",
+      "advanced": "Advanced",
+      "advancedTitle": "Compression Settings",
+      "compressionEngine": "Compression Engine",
+      "simpleCompression": "Simple Compression",
+      "simpleCompressionDesc": "Browser-native compression. Fast and no downloads required.",
+      "ffmpegCompression": "FFmpeg Compression",
+      "ffmpegCompressionDesc": "FFmpeg-powered compression with higher quality and more options.",
+      "ffmpegWarning": "FFmpeg compression requires downloading the engine (~31MB). First use may take 2-10 minutes.",
+      "presets": "Presets",
+      "custom": "Custom",
+      "quality": "Compression Quality",
+      "qualityLabel": "Quality Preset",
+      "resolution": "Resolution",
+      "resolutionKeep": "Keep Original",
+      "resolution1080p": "1080p (1920x1080)",
+      "resolution720p": "720p (1280x720)",
+      "resolution480p": "480p (854x480)",
+      "resolution360p": "360p (640x360)",
+      "codec": "Codec",
+      "codecH264": "H.264 (Best compatibility)",
+      "codecH265": "H.265 (Better compression)",
+      "codecVP9": "VP9 (WebM format)",
+      "bitrate": "Bitrate",
+      "bitrateValue": "{value} Kbps",
+      "frameRate": "Frame Rate",
+      "frameRateValue": "{value} FPS",
+      "removeAudio": "Remove Audio",
+      "removeAudioDesc": "Further reduce file size by removing the audio track",
+      "low": "Low Quality (Fast)",
+      "lowDesc": "Smallest file size with fastest compression",
+      "medium": "Medium Quality (Balanced)",
+      "mediumDesc": "Good balance between quality and file size",
+      "high": "High Quality (Slow)",
+      "highDesc": "Best quality with larger file size",
+      "estimatedReduction": "Estimated size reduction: {ratio}%",
+      "simpleMode": "Using Simple Compression (browser-native) - Switch to Advanced mode to customize",
+      "ffmpegDownloadNote": "FFmpeg will be downloaded (~31MB) when you start compression. First-time use may take 2-10 minutes."
+    },
+    "progress": {
+      "loadingEngine": "Loading video processing engine...",
+      "compressing": "Compressing video...",
+      "finalizing": "Finalizing compressed video...",
+      "engineInfo": "FFmpeg.wasm is loading with default configuration. First-time initialization may take 2-10 minutes and only happens once. If you're using a proxy, this may take longer.",
+      "processingInfo": "Processing your video. This may take several minutes depending on video size and quality settings."
+    },
+    "status": {
+      "processing": "Processing... {progress}%",
+      "stage": "Stage: {stage}",
+      "timeRemaining": "Est. time remaining: {time}",
+      "currentTime": "Progress: {current} / {total}",
+      "engineReady": "Video processing engine ready! You can now compress your video.",
+      "loadingEngine": "Loading video processing engine..."
+    },
+    "results": {
+      "title": "Compression Complete!",
+      "originalSize": "Original Size",
+      "compressedSize": "Compressed Size",
+      "saved": "Saved",
+      "compressionRatio": "Compression Ratio",
+      "processingTime": "Processing Time",
+      "duration": "Duration",
+      "resolution": "Resolution"
+    },
+    "actions": {
+      "compress": "Compress Video",
+      "download": "Download Compressed Video",
+      "cancel": "Cancel",
+      "compressAnother": "Compress Another Video",
+      "reset": "Start Over"
+    },
+    "errors": {
+      "fileTooLarge": "File is too large. Maximum size is {max}",
+      "unsupportedFormat": "Unsupported video format. Please use MP4, WebM, AVI, MOV, or MKV",
+      "metadataFailed": "Failed to read video metadata. The file may be corrupted",
+      "compressionFailed": "Video compression failed. Please try a different quality setting or file",
+      "loadFailed": "Failed to load FFmpeg. Please refresh the page and try again",
+      "browserNotSupported": "Your browser doesn't support video compression. Please use a modern browser such as Chrome, Edge, or Firefox",
+      "engineNotReady": "Video processing engine is still loading. Please wait..."
+    },
+    "warnings": {
+      "largeFile": "Large file detected ({size}MB). Compression may take several minutes",
+      "firstTime": "First-time setup: Downloading FFmpeg (~31MB). Please wait...",
+      "mobileSlow": "Mobile device detected. Processing may be slower than on desktop"
+    },
+    "info": {
+      "privacy": "Your video is processed entirely in your browser. No upload required.",
+      "nativeCompression": "Using browser-native compression (no external downloads required)",
+      "processingNative": "Using browser-native video compression",
+      "compatible": "Output format: MP4 (H.264 video, AAC audio) for maximum compatibility",
+      "tip": "Tip: Choose 'Medium Quality' for the optimal balance between size and quality"
+    }
+  }
+}
+

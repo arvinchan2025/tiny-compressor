@@ -1,0 +1,290 @@
+{
+  "seo": {
+    "title": "비디오 압축기 - 무료 온라인 비디오 압축 도구",
+    "description": "무료로 온라인에서 비디오 파일을 압축하세요! 품질을 유지하면서 파일 크기를 최대 85%까지 줄입니다. MP4, WebM, AVI, MOV, MKV 형식 지원. 100% 클라이언트 측 처리, 업로드 불필요.",
+    "keywords": "비디오 압축기, 비디오 압축, 동영상 압축, 비디오 크기 줄이기, MP4 압축기, 비디오 최적화, 온라인 비디오 도구, 무료 비디오 압축"
+  },
+  "hero": {
+    "title": "비디오 압축기",
+    "subtitle": "고급 FFmpeg 기술로 비디오 압축, 100% 브라우저에서",
+    "badge": "클라이언트 측 처리"
+  },
+  "formatInfo": {
+    "title": "비디오 압축 정보",
+    "description": "비디오 압축은 더 효율적으로 인코딩하여 파일 크기를 줄입니다. 우리 도구는 FFmpeg.wasm을 사용하여 브라우저에서 완전히 비디오를 처리하여 완전한 개인 정보 보호와 보안을 보장합니다. 파일은 서버에 업로드되지 않습니다.",
+    "features": [
+      "MP4, WebM, AVI, MOV, MKV 형식 지원",
+      "최대 85% 파일 크기 감소",
+      "시각적 품질 유지",
+      "파일 업로드 불필요",
+      "100% 비공개 및 안전"
+    ]
+  },
+  "features": {
+    "title": "강력한 기능",
+    "subtitle": "비디오 압축에 필요한 모든 것",
+    "items": [
+      {
+        "icon": "zap",
+        "title": "빠른 압축",
+        "description": "브라우저에서 직접 효율적인 비디오 처리를 위해 FFmpeg.wasm으로 구동"
+      },
+      {
+        "icon": "shield",
+        "title": "100% 비공개",
+        "description": "모든 처리는 브라우저에서 로컬로 이루어집니다. 비디오가 장치를 떠나지 않습니다"
+      },
+      {
+        "icon": "sliders",
+        "title": "품질 프리셋",
+        "description": "다양한 압축 요구 사항에 대해 낮음, 중간 또는 높음 품질 프리셋 중 선택"
+      },
+      {
+        "icon": "gauge",
+        "title": "실시간 진행 상황",
+        "description": "상세한 시간 추정치와 현재 처리 단계로 압축 진행 상황 추적"
+      },
+      {
+        "icon": "file-video",
+        "title": "다중 형식",
+        "description": "MP4, WebM, AVI, MOV, MKV 및 기타 인기 비디오 형식 지원"
+      },
+      {
+        "icon": "download",
+        "title": "즉시 다운로드",
+        "description": "처리 완료 후 즉시 압축된 비디오 다운로드"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "비디오 압축 작동 방식",
+    "subtitle": "비디오 압축 기술 이해",
+    "items": [
+      {
+        "icon": "cpu",
+        "title": "비디오 인코딩",
+        "description": "H.264 코덱을 사용하여 최적화된 압축 설정으로 비디오를 재인코딩하여 품질을 유지하면서 파일 크기 감소"
+      },
+      {
+        "icon": "image",
+        "title": "해상도 스케일링",
+        "description": "선택적으로 비디오 해상도(1080p, 720p, 480p, 360p)를 줄여 파일 크기를 크게 감소"
+      },
+      {
+        "icon": "settings",
+        "title": "비트레이트 최적화",
+        "description": "CRF(일정 속도 계수)를 사용하여 효율적인 압축을 위해 비디오 비트레이트 조정"
+      },
+      {
+        "icon": "volume-2",
+        "title": "오디오 압축",
+        "description": "최적화된 비트레이트로 AAC 코덱을 사용하여 오디오를 재인코딩하여 파일 크기 감소"
+      },
+      {
+        "icon": "layers",
+        "title": "FFmpeg 처리",
+        "description": "브라우저에서 강력한 비디오 처리를 위해 WebAssembly 버전의 FFmpeg인 FFmpeg.wasm 활용"
+      },
+      {
+        "icon": "lock",
+        "title": "클라이언트 측 처리",
+        "description": "모든 압축은 WebAssembly를 사용하여 브라우저에서 이루어지며 완전한 개인 정보 보호와 보안 보장"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "완벽한 용도",
+    "subtitle": "비디오 압축이 도움이 되는 일반적인 시나리오",
+    "items": [
+      {
+        "icon": "share-2",
+        "title": "소셜 미디어 공유",
+        "description": "업로드 제한에 맞게 비디오 압축"
+      },
+      {
+        "icon": "mail",
+        "title": "이메일 첨부",
+        "description": "이메일 첨부 파일 제한에 맞게 크기 줄이기"
+      },
+      {
+        "icon": "smartphone",
+        "title": "모바일 기기",
+        "description": "스마트폰과 태블릿에서 저장 공간 절약"
+      },
+      {
+        "icon": "cloud",
+        "title": "클라우드 스토리지",
+        "description": "더 적은 저장 공간으로 더 많은 비디오 저장"
+      },
+      {
+        "icon": "globe",
+        "title": "웹사이트",
+        "description": "로딩 시간 개선을 위해 웹 비디오 최적화"
+      },
+      {
+        "icon": "users",
+        "title": "팀 협업",
+        "description": "큰 비디오 파일을 더 빠르게 공유"
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "비디오 압축에 대한 일반적인 질문",
+    "items": [
+      {
+        "question": "비디오를 얼마나 압축할 수 있나요?",
+        "answer": "압축률은 원본 비디오 품질과 선택한 설정에 따라 다릅니다. 일반적으로 품질을 크게 잃지 않고 40-85%의 크기 감소를 달성할 수 있습니다."
+      },
+      {
+        "question": "어떤 비디오 형식이 지원되나요?",
+        "answer": "MP4, WebM, AVI, MOV, MKV를 포함한 대부분의 일반적인 비디오 형식을 지원합니다. 최대 호환성을 위해 출력은 MP4 형식입니다."
+      },
+      {
+        "question": "처리 시간은 얼마나 걸리나요?",
+        "answer": "처리 시간은 비디오 크기와 선택한 품질 설정에 따라 다릅니다. 짧은 비디오는 몇 초 안에 처리되며 긴 비디오는 몇 분이 걸릴 수 있습니다."
+      },
+      {
+        "question": "비디오 압축은 안전한가요?",
+        "answer": "네, 완전히 안전합니다. 모든 처리는 브라우저에서 로컬로 이루어집니다. 비디오는 절대 서버에 업로드되지 않으며 장치를 떠나지 않습니다."
+      },
+      {
+        "question": "압축된 비디오의 품질은 어떻게 되나요?",
+        "answer": "중간 품질 설정으로 대부분의 시청자는 원본과 압축된 비디오의 차이를 알아차리지 못합니다. 높은 품질 설정은 거의 눈에 띄지 않는 시각적 품질 차이가 있습니다."
+      },
+      {
+        "question": "FFmpeg.wasm이란 무엇인가요?",
+        "answer": "FFmpeg.wasm은 인기 있는 비디오 처리 도구 FFmpeg의 WebAssembly로 컴파일된 버전으로, 브라우저에서 직접 실행할 수 있습니다."
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "빠른 링크",
+    "description": "다른 도구 탐색",
+    "items": [
+      {
+        "title": "이미지 압축기",
+        "description": "이미지 파일 압축",
+        "url": "/compressor"
+      },
+      {
+        "title": "이미지 변환기",
+        "description": "이미지 형식 변환",
+        "url": "/converter"
+      },
+      {
+        "title": "모든 압축기",
+        "description": "모든 압축 도구 보기",
+        "url": "/compressor"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "비디오 파일을 여기에 드롭하거나 클릭하여 선택",
+      "subtitle": "MP4, WebM, AVI, MOV, MKV 형식 지원, 최대 500MB",
+      "selectFiles": "비디오 파일 선택"
+    },
+    "files": {
+      "name": "파일 이름",
+      "size": "파일 크기",
+      "duration": "재생 시간",
+      "resolution": "해상도"
+    },
+    "settings": {
+      "simple": "간단",
+      "advanced": "고급",
+      "advancedTitle": "압축 설정",
+      "compressionEngine": "압축 엔진",
+      "simpleCompression": "간단 압축",
+      "simpleCompressionDesc": "브라우저 네이티브 압축. 빠르고 다운로드 불필요.",
+      "ffmpegCompression": "FFmpeg 압축",
+      "ffmpegCompressionDesc": "더 높은 품질과 더 많은 옵션을 제공하는 FFmpeg 기반 압축.",
+      "ffmpegWarning": "FFmpeg 압축은 엔진 다운로드(~31MB)가 필요합니다. 첫 사용 시 2-10분이 걸릴 수 있습니다.",
+      "presets": "프리셋",
+      "custom": "사용자 정의",
+      "quality": "압축 품질",
+      "qualityLabel": "품질 프리셋",
+      "resolution": "해상도",
+      "resolutionKeep": "원본 유지",
+      "resolution1080p": "1080p (1920x1080)",
+      "resolution720p": "720p (1280x720)",
+      "resolution480p": "480p (854x480)",
+      "resolution360p": "360p (640x360)",
+      "codec": "코덱",
+      "codecH264": "H.264 (최고의 호환성)",
+      "codecH265": "H.265 (더 나은 압축)",
+      "codecVP9": "VP9 (WebM 형식)",
+      "bitrate": "비트레이트",
+      "bitrateValue": "{value} Kbps",
+      "frameRate": "프레임 속도",
+      "frameRateValue": "{value} FPS",
+      "removeAudio": "오디오 제거",
+      "removeAudioDesc": "오디오 트랙을 제거하여 파일 크기를 더욱 줄입니다",
+      "low": "낮은 품질 (빠름)",
+      "lowDesc": "가장 빠른 압축으로 가장 작은 파일 크기",
+      "medium": "중간 품질 (균형)",
+      "mediumDesc": "품질과 파일 크기 간의 좋은 균형",
+      "high": "높은 품질 (느림)",
+      "highDesc": "더 큰 파일 크기로 최고 품질",
+      "estimatedReduction": "예상 크기 감소: {ratio}%",
+      "simpleMode": "간단 압축 사용 중 (브라우저 네이티브) - 사용자 정의하려면 고급 모드로 전환",
+      "ffmpegDownloadNote": "압축 시작 시 FFmpeg(~31MB)가 다운로드됩니다. 첫 사용 시 2-10분이 걸릴 수 있습니다."
+    },
+    "progress": {
+      "loadingEngine": "비디오 처리 엔진 로딩 중...",
+      "compressing": "비디오 압축 중...",
+      "finalizing": "압축된 비디오 완성 중...",
+      "engineInfo": "FFmpeg.wasm이 기본 구성으로 로딩 중입니다. 첫 초기화는 2-10분이 걸릴 수 있으며 한 번만 발생합니다. 프록시를 사용하는 경우 더 오래 걸릴 수 있습니다.",
+      "processingInfo": "비디오를 처리하는 중입니다. 비디오 크기와 품질 설정에 따라 몇 분이 걸릴 수 있습니다."
+    },
+    "status": {
+      "processing": "처리 중... {progress}%",
+      "stage": "단계: {stage}",
+      "timeRemaining": "예상 남은 시간: {time}",
+      "currentTime": "진행 상황: {current} / {total}",
+      "engineReady": "비디오 처리 엔진이 준비되었습니다! 이제 비디오를 압축할 수 있습니다.",
+      "loadingEngine": "비디오 처리 엔진 로딩 중..."
+    },
+    "results": {
+      "title": "압축 완료!",
+      "originalSize": "원본 크기",
+      "compressedSize": "압축된 크기",
+      "saved": "절약됨",
+      "compressionRatio": "압축률",
+      "processingTime": "처리 시간",
+      "duration": "재생 시간",
+      "resolution": "해상도"
+    },
+    "actions": {
+      "compress": "비디오 압축",
+      "download": "압축된 비디오 다운로드",
+      "cancel": "취소",
+      "compressAnother": "다른 비디오 압축",
+      "reset": "다시 시작",
+      "backToSimple": "간단 압축으로 돌아가기"
+    },
+    "errors": {
+      "fileTooLarge": "파일이 너무 큽니다. 최대 크기는 {max}입니다",
+      "unsupportedFormat": "지원되지 않는 비디오 형식입니다. MP4, WebM, AVI, MOV 또는 MKV를 사용하세요",
+      "metadataFailed": "비디오 메타데이터 읽기에 실패했습니다. 파일이 손상되었을 수 있습니다",
+      "compressionFailed": "비디오 압축에 실패했습니다. 다른 품질 설정이나 파일을 시도하세요",
+      "loadFailed": "FFmpeg 로드에 실패했습니다. 페이지를 새로 고침하고 다시 시도하세요",
+      "browserNotSupported": "브라우저가 비디오 압축을 지원하지 않습니다. Chrome, Edge 또는 Firefox와 같은 최신 브라우저를 사용하세요",
+      "engineNotReady": "비디오 처리 엔진이 아직 로딩 중입니다. 기다려주세요..."
+    },
+    "warnings": {
+      "largeFile": "큰 파일이 감지되었습니다({size}MB). 압축에 몇 분이 걸릴 수 있습니다",
+      "firstTime": "첫 설정: FFmpeg 다운로드 중(~31MB). 기다려주세요...",
+      "mobileSlow": "모바일 기기가 감지되었습니다. 데스크톱보다 처리가 느릴 수 있습니다"
+    },
+    "info": {
+      "privacy": "비디오는 브라우저에서 완전히 처리됩니다. 업로드 불필요.",
+      "nativeCompression": "브라우저 네이티브 압축 사용 중 (외부 다운로드 불필요)",
+      "processingNative": "브라우저 네이티브 비디오 압축 사용 중",
+      "compatible": "출력 형식: MP4 (H.264 비디오, AAC 오디오) 최대 호환성",
+      "tip": "팁: 크기와 품질 간의 최적 균형을 위해 '중간 품질'을 선택하세요"
+    }
+  }
+}
+

@@ -2,7 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://tinycompressor.com'
-  const lastModified = new Date() // 动态获取当前日期
+  // 最后更新：2025-10-15
+  const lastModified = new Date('2025-10-15')
   
   // 支持的所有11种语言
   const locales = ['en', 'zh', 'ja', 'ko', 'ar', 'de', 'es', 'fr', 'it', 'pt', 'ru']
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/compressor/compress-gif',
     '/compressor/compress-bmp',
     '/compressor/compress-pdf',
+    '/compressor/compress-video',
   ]
   
   // 所有转换器页面

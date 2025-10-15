@@ -58,6 +58,8 @@
     "i18n:clean": "rm -rf lib/i18n/generated"
   },
   "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "@ffmpeg/util": "^0.12.1",
     "@squoosh/lib": "^0.4.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",

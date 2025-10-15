@@ -94,6 +94,16 @@
           "プライバシー保護"
         ],
         "compression": "最大60%"
+      },
+      "video": {
+        "name": "ビデオ圧縮",
+        "description": "FFmpeg技術でビデオファイルを圧縮",
+        "features": [
+          "複数フォーマット",
+          "品質プリセット",
+          "クライアント側処理"
+        ],
+        "compression": "最大85%"
       }
     },
     "features": {

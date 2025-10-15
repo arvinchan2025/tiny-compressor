@@ -169,6 +169,21 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
               t('compressor.tools.pdf.features.2')
             ],
             compression: t('compressor.tools.pdf.compression')
+          },
+          {
+            id: 'video',
+            name: t('compressor.tools.video.name'),
+            description: t('compressor.tools.video.description'),
+            path: getFunctionalPagePath('compressor', 'compress-video', locale),
+            icon: '🎥',
+            color: 'purple',
+            gradient: 'from-purple-500 to-pink-600',
+            features: [
+              t('compressor.tools.video.features.0'),
+              t('compressor.tools.video.features.1'),
+              t('compressor.tools.video.features.2')
+            ],
+            compression: t('compressor.tools.video.compression')
           }
         ],
         features: [

@@ -1,0 +1,320 @@
+{
+  "seo": {
+    "title": "视频压缩器 - 免费在线视频压缩工具",
+    "description": "免费在线压缩视频文件！在保持画质的同时最多减小85%的文件大小。支持 MP4、WebM、AVI、MOV、MKV 格式。100% 客户端处理，无需上传。",
+    "keywords": "视频压缩器, 压缩视频, 视频压缩, 减小视频大小, MP4压缩器, 视频优化器, 在线视频工具, 免费视频压缩"
+  },
+  "hero": {
+    "title": "视频压缩器",
+    "subtitle": "使用先进的 FFmpeg 技术压缩视频，100% 浏览器端处理",
+    "badge": "客户端处理"
+  },
+  "formatInfo": {
+    "title": "关于视频压缩",
+    "description": "视频压缩通过更高效的编码方式减小文件大小。我们的工具使用 FFmpeg.wasm 在您的浏览器中完全处理视频，确保完全的隐私和安全。不会上传任何文件到服务器。",
+    "features": [
+      "支持 MP4、WebM、AVI、MOV、MKV 格式",
+      "最多减小 85% 的文件大小",
+      "保持视觉质量",
+      "无需上传文件",
+      "100% 私密安全"
+    ]
+  },
+  "features": {
+    "title": "强大功能",
+    "subtitle": "视频压缩所需的一切",
+    "items": [
+      {
+        "icon": "zap",
+        "title": "快速压缩",
+        "description": "由 FFmpeg.wasm 驱动，直接在浏览器中高效处理视频"
+      },
+      {
+        "icon": "shield",
+        "title": "100% 私密",
+        "description": "所有处理都在您的浏览器本地进行。您的视频永远不会离开您的设备"
+      },
+      {
+        "icon": "sliders",
+        "title": "质量预设",
+        "description": "从低、中、高质量预设中选择，满足不同压缩需求"
+      },
+      {
+        "icon": "gauge",
+        "title": "实时进度",
+        "description": "实时跟踪压缩进度，提供详细的时间估算和当前处理阶段"
+      },
+      {
+        "icon": "file-video",
+        "title": "多种格式",
+        "description": "支持 MP4、WebM、AVI、MOV、MKV 等流行视频格式"
+      },
+      {
+        "icon": "download",
+        "title": "即时下载",
+        "description": "处理完成后立即下载压缩后的视频"
+      }
+    ]
+  },
+  "technicalPrinciples": {
+    "title": "视频压缩原理",
+    "subtitle": "了解视频压缩背后的技术",
+    "items": [
+      {
+        "icon": "cpu",
+        "title": "视频编码",
+        "description": "使用 H.264 编解码器以优化的压缩设置重新编码视频，在保持质量的同时减小文件大小"
+      },
+      {
+        "icon": "image",
+        "title": "分辨率缩放",
+        "description": "可选择降低视频分辨率（1080p、720p、480p、360p）以显著减小文件大小"
+      },
+      {
+        "icon": "settings",
+        "title": "比特率优化",
+        "description": "使用 CRF（恒定速率因子）调整视频比特率以实现高效压缩"
+      },
+      {
+        "icon": "volume-2",
+        "title": "音频压缩",
+        "description": "使用 AAC 编解码器以优化的比特率重新编码音频，减小文件大小"
+      },
+      {
+        "icon": "layers",
+        "title": "FFmpeg 处理",
+        "description": "利用 FFmpeg.wasm（FFmpeg 的 WebAssembly 版本）在浏览器中进行强大的视频处理"
+      },
+      {
+        "icon": "lock",
+        "title": "客户端处理",
+        "description": "所有压缩都使用 WebAssembly 在您的浏览器中进行，确保完全的隐私和安全"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "适用场景",
+    "subtitle": "视频压缩的常见使用场景",
+    "items": [
+      {
+        "icon": "share-2",
+        "title": "社交媒体分享",
+        "description": "减小视频大小以满足平台上传限制，确保在社交网络上更快地分享"
+      },
+      {
+        "icon": "mail",
+        "title": "邮件附件",
+        "description": "压缩视频以适应邮件附件大小限制，同时不会牺牲太多质量"
+      },
+      {
+        "icon": "smartphone",
+        "title": "手机存储",
+        "description": "压缩视频以释放手机存储空间，同时保持可观看性"
+      },
+      {
+        "icon": "cloud",
+        "title": "云存储",
+        "description": "压缩视频文件以节省云存储空间并减少备份时间"
+      },
+      {
+        "icon": "globe",
+        "title": "网站视频",
+        "description": "优化网站视频传输，确保更快的页面加载时间和更好的用户体验"
+      },
+      {
+        "icon": "users",
+        "title": "视频演示",
+        "description": "压缩演示视频，便于分发给同事和客户"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于视频压缩的常见问题",
+    "items": [
+      {
+        "question": "我可以压缩多少视频？",
+        "answer": "压缩率取决于原始视频和质量预设。低质量可以实现高达85%的减小，中等质量约65%，高质量约45%。压缩率越高意味着文件越小，但可能会降低质量。"
+      },
+      {
+        "question": "压缩会影响视频质量吗？",
+        "answer": "是的，压缩涉及文件大小和质量之间的权衡。我们的质量预设旨在最大限度地减少可见的质量损失。高质量预设保持出色的视觉质量，同时仍然显著减小文件大小。"
+      },
+      {
+        "question": "我可以压缩的最大文件大小是多少？",
+        "answer": "当前限制为 500MB。更大的文件可能会导致浏览器内存问题。对于超过 500MB 的视频，我们建议使用桌面视频编辑软件或基于服务器的压缩服务。"
+      },
+      {
+        "question": "压缩需要多长时间？",
+        "answer": "压缩时间取决于视频长度、分辨率和质量预设。粗略估计：100MB 的视频在现代计算机上需要约 1-3 分钟。低质量最快，高质量最慢。"
+      },
+      {
+        "question": "我的视频会上传到您的服务器吗？",
+        "answer": "不会！所有处理都完全在您的浏览器中使用 FFmpeg.wasm 进行。您的视频永远不会离开您的设备，确保完全的隐私和安全。"
+      },
+      {
+        "question": "支持哪些视频格式？",
+        "answer": "我们支持 MP4、WebM、AVI、MOV、MKV、M4V 和 3GP 格式作为输入。输出始终为 MP4 格式，采用 H.264 视频编解码器和 AAC 音频编解码器，以实现最大兼容性。"
+      },
+      {
+        "question": "可以一次压缩多个视频吗？",
+        "answer": "目前，我们支持单个视频压缩，以确保稳定的性能并防止浏览器崩溃。您可以一次压缩一个视频。"
+      },
+      {
+        "question": "为什么第一次压缩很慢？",
+        "answer": "第一次使用压缩器时，需要下载 FFmpeg.wasm（约 31MB）。这只会发生一次 - 后续压缩会快得多，因为文件会被浏览器缓存。"
+      },
+      {
+        "question": "我应该选择哪种质量预设？",
+        "answer": "低质量：最适合快速分享、社交媒体（当大小限制严格时）。中等质量：大多数使用场景的平衡选项。高质量：当您需要保留细节且不介意较大文件时。"
+      },
+      {
+        "question": "可以在移动设备上使用吗？",
+        "answer": "可以，但移动设备上的性能会较慢，特别是对于大型视频。我们建议使用桌面或笔记本电脑以获得最佳效果，特别是对于超过 100MB 的视频。"
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "更多视频工具",
+    "description": "探索其他视频和图像工具",
+    "items": [
+      {
+        "title": "PNG 压缩器",
+        "description": "压缩 PNG 图片",
+        "url": "/compressor/compress-png"
+      },
+      {
+        "title": "JPEG 压缩器",
+        "description": "压缩 JPEG 图片",
+        "url": "/compressor/compress-jpeg"
+      },
+      {
+        "title": "WebP 压缩器",
+        "description": "压缩 WebP 图片",
+        "url": "/compressor/compress-webp"
+      },
+      {
+        "title": "PDF 压缩器",
+        "description": "压缩 PDF 文件",
+        "url": "/compressor/compress-pdf"
+      },
+      {
+        "title": "图片转换器",
+        "description": "转换图片格式",
+        "url": "/converter"
+      },
+      {
+        "title": "所有压缩器",
+        "description": "查看所有压缩工具",
+        "url": "/compressor"
+      }
+    ]
+  },
+  "operation": {
+    "upload": {
+      "title": "将视频文件拖放到此处或点击选择",
+      "subtitle": "支持 MP4、WebM、AVI、MOV、MKV 格式，最大 500MB",
+      "selectFiles": "选择视频文件"
+    },
+    "files": {
+      "name": "文件名",
+      "size": "文件大小",
+      "duration": "时长",
+      "resolution": "分辨率"
+    },
+    "settings": {
+      "simple": "简单",
+      "advanced": "高级",
+      "advancedTitle": "压缩设置",
+      "compressionEngine": "压缩引擎",
+      "simpleCompression": "简单压缩",
+      "simpleCompressionDesc": "浏览器原生压缩。快速，无需下载。",
+      "ffmpegCompression": "FFmpeg 压缩",
+      "ffmpegCompressionDesc": "FFmpeg 驱动的压缩。更高质量，更多选项。",
+      "ffmpegWarning": "FFmpeg 压缩需要下载引擎（~31MB）。首次使用可能需要 2-10 分钟。",
+      "presets": "预设",
+      "custom": "自定义",
+      "quality": "压缩质量",
+      "qualityLabel": "质量预设",
+      "resolution": "分辨率",
+      "resolutionKeep": "保持原始",
+      "resolution1080p": "1080p (1920x1080)",
+      "resolution720p": "720p (1280x720)",
+      "resolution480p": "480p (854x480)",
+      "resolution360p": "360p (640x360)",
+      "codec": "编码器",
+      "codecH264": "H.264（最佳兼容性）",
+      "codecH265": "H.265（更好的压缩）",
+      "codecVP9": "VP9（WebM 格式）",
+      "bitrate": "码率",
+      "bitrateValue": "{value} Kbps",
+      "frameRate": "帧率",
+      "frameRateValue": "{value} FPS",
+      "removeAudio": "移除音频",
+      "removeAudioDesc": "通过移除音频轨道进一步减小文件大小",
+      "low": "低质量（快速）",
+      "lowDesc": "最小文件大小，最快压缩",
+      "medium": "中等质量（平衡）",
+      "mediumDesc": "良好质量和合理文件大小",
+      "high": "高质量（慢速）",
+      "highDesc": "最佳质量，较大文件",
+      "estimatedReduction": "预计大小减小：{ratio}%",
+      "simpleMode": "使用简单压缩（浏览器原生）- 切换到高级模式以自定义",
+      "ffmpegDownloadNote": "压缩开始时将下载 FFmpeg（~31MB）。首次使用可能需要 2-10 分钟。"
+    },
+    "progress": {
+      "loadingEngine": "正在加载视频处理引擎...",
+      "compressing": "正在压缩视频...",
+      "finalizing": "正在完成压缩视频...",
+            "engineInfo": "FFmpeg.wasm 正在使用默认配置加载。首次初始化可能需要 2-10 分钟。这只会发生一次。如果您使用代理，可能需要更长时间。",
+      "processingInfo": "正在处理您的视频。根据视频大小和质量设置，这可能需要几分钟。"
+    },
+    "status": {
+      "processing": "处理中... {progress}%",
+      "stage": "阶段：{stage}",
+      "timeRemaining": "预计剩余时间：{time}",
+      "currentTime": "进度：{current} / {total}",
+      "engineReady": "视频处理引擎已就绪！现在可以压缩您的视频。",
+      "loadingEngine": "正在加载视频处理引擎..."
+    },
+    "results": {
+      "title": "压缩完成！",
+      "originalSize": "原始大小",
+      "compressedSize": "压缩后大小",
+      "saved": "已节省",
+      "compressionRatio": "压缩率",
+      "processingTime": "处理时间",
+      "duration": "时长",
+      "resolution": "分辨率"
+    },
+    "actions": {
+      "compress": "压缩视频",
+      "download": "下载压缩视频",
+      "cancel": "取消",
+      "compressAnother": "压缩另一个视频",
+      "reset": "重新开始"
+    },
+    "errors": {
+      "fileTooLarge": "文件太大。最大大小为 {max}",
+      "unsupportedFormat": "不支持的视频格式。请使用 MP4、WebM、AVI、MOV 或 MKV",
+      "metadataFailed": "无法读取视频元数据。文件可能已损坏",
+      "compressionFailed": "视频压缩失败。请尝试不同的质量设置或文件",
+      "loadFailed": "无法加载 FFmpeg。请刷新页面重试",
+      "browserNotSupported": "您的浏览器不支持视频压缩。请使用现代浏览器，如 Chrome、Edge 或 Firefox",
+      "engineNotReady": "视频处理引擎仍在加载中。请稍候..."
+    },
+    "warnings": {
+      "largeFile": "检测到大文件（{size}MB）。压缩可能需要几分钟",
+      "firstTime": "首次设置：正在下载 FFmpeg（约 31MB）。请稍候...",
+      "mobileSlow": "检测到移动设备。处理可能比桌面设备慢"
+    },
+    "info": {
+      "privacy": "您的视频完全在浏览器中处理。无需上传。",
+      "nativeCompression": "使用浏览器原生压缩（无需外部下载）",
+      "processingNative": "使用浏览器原生视频压缩",
+      "compatible": "输出格式：MP4（H.264 视频，AAC 音频）以实现最大兼容性",
+      "tip": "提示：选择「中等质量」可在大小和质量之间获得最佳平衡"
+    }
+  }
+}
+

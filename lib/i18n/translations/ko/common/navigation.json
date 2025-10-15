@@ -94,6 +94,16 @@
           "개인정보 보호"
         ],
         "compression": "최대 60%"
+      },
+      "video": {
+        "name": "비디오 압축기",
+        "description": "FFmpeg 기술로 비디오 파일 압축",
+        "features": [
+          "다중 형식",
+          "품질 사전 설정",
+          "클라이언트 측 처리"
+        ],
+        "compression": "최대 85%"
       }
     },
     "features": {
