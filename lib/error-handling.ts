@@ -1,407 +1,154 @@
 /**
- * 高级错误处理系统
- * 提供全局错误边界、错误监控、用户友好的错误信息
+ * 错误处理工具和组件
+ * 提供统一的错误处理机制和错误边界组件
  */
 
-import { ErrorInfo, ReactNode } from 'react';
+import React from 'react';
 
-export interface ErrorContext {
+// 错误类型定义
+export interface AppError {
+  code: string;
+  message: string;
+  details?: any;
+  timestamp: number;
   userId?: string;
   sessionId?: string;
-  timestamp: number;
-  userAgent: string;
-  url: string;
-  componentStack?: string;
-  errorBoundary?: string;
 }
 
-export interface ErrorReport {
-  id: string;
-  message: string;
-  stack?: string;
-  context: ErrorContext;
-  severity: 'low' | 'medium' | 'high' | 'critical';
-  category: 'javascript' | 'network' | 'compression' | 'conversion' | 'ui' | 'unknown';
-  resolved: boolean;
-  userReported: boolean;
+// 错误级别
+export enum ErrorLevel {
+  LOW = 'low',
+  MEDIUM = 'medium',
+  HIGH = 'high',
+  CRITICAL = 'critical'
 }
 
+// 错误处理器类
 export class ErrorHandler {
-  private static errors: Map<string, ErrorReport> = new Map();
-  private static listeners: Array<(error: ErrorReport) => void> = [];
-  private static maxErrors = 100;
+  private static instance: ErrorHandler;
+  private errorQueue: AppError[] = [];
+  private maxQueueSize = 100;
+
+  private constructor() {}
+
+  public static getInstance(): ErrorHandler {
+    if (!ErrorHandler.instance) {
+      ErrorHandler.instance = new ErrorHandler();
+    }
+    return ErrorHandler.instance;
+  }
 
   /**
    * 记录错误
    */
-  static reportError(
-    error: Error,
-    context: Partial<ErrorContext> = {},
-    severity: ErrorReport['severity'] = 'medium',
-    category: ErrorReport['category'] = 'unknown'
-  ): string {
-    const errorId = this.generateErrorId();
-    const timestamp = Date.now();
-
-    const errorReport: ErrorReport = {
-      id: errorId,
-      message: error.message,
-      stack: error.stack,
-      context: {
-        timestamp,
-        userAgent: navigator.userAgent,
-        url: window.location.href,
-        ...context
-      },
-      severity,
-      category,
-      resolved: false,
-      userReported: false
+  public logError(error: Partial<AppError>, level: ErrorLevel = ErrorLevel.MEDIUM): void {
+    const fullError: AppError = {
+      code: error.code || 'UNKNOWN_ERROR',
+      message: error.message || 'An unknown error occurred',
+      details: error.details,
+      timestamp: Date.now(),
+      userId: error.userId,
+      sessionId: error.sessionId
     };
 
-    // 存储错误
-    this.errors.set(errorId, errorReport);
-
-    // 清理旧错误
-    if (this.errors.size > this.maxErrors) {
-      const oldestError = this.errors.keys().next().value;
-      this.errors.delete(oldestError);
-    }
-
-    // 通知监听器
-    this.listeners.forEach(listener => listener(errorReport));
-
-    // 根据严重程度决定处理方式
-    this.handleErrorBySeverity(errorReport);
-
-    return errorId;
-  }
-
-  /**
-   * 根据严重程度处理错误
-   */
-  private static handleErrorBySeverity(error: ErrorReport): void {
-    switch (error.severity) {
-      case 'critical':
-        // 关键错误：立即通知用户并记录
-        this.showCriticalError(error);
-        this.logToConsole(error, 'error');
-        break;
-      case 'high':
-        // 高级错误：显示警告并记录
-        this.showErrorNotification(error);
-        this.logToConsole(error, 'warn');
-        break;
-      case 'medium':
-        // 中级错误：记录到控制台
-        this.logToConsole(error, 'info');
-        break;
-      case 'low':
-        // 低级错误：静默记录
-        this.logToConsole(error, 'debug');
-        break;
-    }
-  }
-
-  /**
-   * 显示关键错误
-   */
-  private static showCriticalError(error: ErrorReport): void {
-    // 创建错误模态框
-    const modal = document.createElement('div');
-    modal.className = 'error-modal';
-    modal.innerHTML = `
-      <div class="error-modal-content">
-        <div class="error-modal-header">
-          <h2>⚠️ Critical Error</h2>
-          <button class="error-modal-close">&times;</button>
-        </div>
-        <div class="error-modal-body">
-          <p>We encountered a critical error. Please refresh the page or contact support.</p>
-          <details>
-            <summary>Error Details</summary>
-            <pre>${error.message}</pre>
-            <p><strong>Error ID:</strong> ${error.id}</p>
-          </details>
-        </div>
-        <div class="error-modal-footer">
-          <button class="btn btn-primary" onclick="window.location.reload()">Refresh Page</button>
-          <button class="btn btn-secondary" onclick="this.closest('.error-modal').remove()">Close</button>
-        </div>
-      </div>
-    `;
-
-    // 添加样式
-    const style = document.createElement('style');
-    style.textContent = `
-      .error-modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10000;
-      }
-      .error-modal-content {
-        background: white;
-        border-radius: 8px;
-        max-width: 500px;
-        width: 90%;
-        max-height: 80vh;
-        overflow-y: auto;
-      }
-      .error-modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        border-bottom: 1px solid #eee;
-      }
-      .error-modal-body {
-        padding: 20px;
-      }
-      .error-modal-footer {
-        padding: 20px;
-        border-top: 1px solid #eee;
-        display: flex;
-        gap: 10px;
-        justify-content: flex-end;
-      }
-      .btn {
-        padding: 8px 16px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      .btn-primary {
-        background: #007bff;
-        color: white;
-      }
-      .btn-secondary {
-        background: #6c757d;
-        color: white;
-      }
-    `;
-
-    document.head.appendChild(style);
-    document.body.appendChild(modal);
-
-    // 关闭按钮事件
-    modal.querySelector('.error-modal-close')?.addEventListener('click', () => {
-      modal.remove();
-    });
-  }
-
-  /**
-   * 显示错误通知
-   */
-  private static showErrorNotification(error: ErrorReport): void {
-    const notification = document.createElement('div');
-    notification.className = 'error-notification';
-    notification.innerHTML = `
-      <div class="error-notification-content">
-        <span class="error-notification-icon">⚠️</span>
-        <span class="error-notification-message">${this.getUserFriendlyMessage(error)}</span>
-        <button class="error-notification-close">&times;</button>
-      </div>
-    `;
-
-    // 添加样式
-    const style = document.createElement('style');
-    style.textContent = `
-      .error-notification {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: #fff3cd;
-        border: 1px solid #ffeaa7;
-        border-radius: 4px;
-        padding: 12px 16px;
-        max-width: 400px;
-        z-index: 1000;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      .error-notification-content {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .error-notification-close {
-        background: none;
-        border: none;
-        font-size: 18px;
-        cursor: pointer;
-        margin-left: auto;
-      }
-    `;
-
-    if (!document.querySelector('.error-notification-styles')) {
-      style.className = 'error-notification-styles';
-      document.head.appendChild(style);
-    }
-
-    document.body.appendChild(notification);
-
-    // 自动移除
-    setTimeout(() => {
-      notification.remove();
-    }, 5000);
-
-    // 关闭按钮事件
-    notification.querySelector('.error-notification-close')?.addEventListener('click', () => {
-      notification.remove();
-    });
-  }
-
-  /**
-   * 获取用户友好的错误消息
-   */
-  private static getUserFriendlyMessage(error: ErrorReport): string {
-    const messages = {
-      compression: 'Image compression failed. Please try again or use a different image.',
-      conversion: 'Image conversion failed. Please check the image format and try again.',
-      network: 'Network error. Please check your connection and try again.',
-      javascript: 'An unexpected error occurred. Please refresh the page.',
-      ui: 'Interface error. Please refresh the page.',
-      unknown: 'An unexpected error occurred. Please try again.'
-    };
-
-    return messages[error.category] || messages.unknown;
-  }
-
-  /**
-   * 记录到控制台
-   */
-  private static logToConsole(error: ErrorReport, level: 'debug' | 'info' | 'warn' | 'error'): void {
-    const logMessage = `[${error.severity.toUpperCase()}] ${error.category}: ${error.message}`;
+    // 添加到错误队列
+    this.errorQueue.push(fullError);
     
+    // 保持队列大小
+    if (this.errorQueue.length > this.maxQueueSize) {
+      this.errorQueue.shift();
+    }
+
+    // 根据错误级别处理
     switch (level) {
-      case 'debug':
-        console.debug(logMessage, error);
+      case ErrorLevel.CRITICAL:
+        console.error('CRITICAL ERROR:', fullError);
+        // 这里可以发送到错误监控服务
         break;
-      case 'info':
-        console.info(logMessage, error);
+      case ErrorLevel.HIGH:
+        console.error('HIGH PRIORITY ERROR:', fullError);
         break;
-      case 'warn':
-        console.warn(logMessage, error);
+      case ErrorLevel.MEDIUM:
+        console.warn('MEDIUM PRIORITY ERROR:', fullError);
         break;
-      case 'error':
-        console.error(logMessage, error);
+      case ErrorLevel.LOW:
+        console.info('LOW PRIORITY ERROR:', fullError);
         break;
     }
   }
 
   /**
-   * 生成错误ID
+   * 获取错误队列
    */
-  private static generateErrorId(): string {
-    return `error_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  public getErrors(): AppError[] {
+    return [...this.errorQueue];
   }
 
   /**
-   * 添加错误监听器
+   * 清空错误队列
    */
-  static addErrorListener(listener: (error: ErrorReport) => void): void {
-    this.listeners.push(listener);
+  public clearErrors(): void {
+    this.errorQueue = [];
   }
 
   /**
-   * 移除错误监听器
+   * 获取最近的错误
    */
-  static removeErrorListener(listener: (error: ErrorReport) => void): void {
-    const index = this.listeners.indexOf(listener);
-    if (index > -1) {
-      this.listeners.splice(index, 1);
-    }
-  }
-
-  /**
-   * 获取所有错误
-   */
-  static getErrors(): ErrorReport[] {
-    return Array.from(this.errors.values());
-  }
-
-  /**
-   * 获取未解决的错误
-   */
-  static getUnresolvedErrors(): ErrorReport[] {
-    return this.getErrors().filter(error => !error.resolved);
-  }
-
-  /**
-   * 标记错误为已解决
-   */
-  static resolveError(errorId: string): void {
-    const error = this.errors.get(errorId);
-    if (error) {
-      error.resolved = true;
-    }
-  }
-
-  /**
-   * 清理所有错误
-   */
-  static clearErrors(): void {
-    this.errors.clear();
-  }
-
-  /**
-   * 导出错误报告
-   */
-  static exportErrors(): string {
-    return JSON.stringify(this.getErrors(), null, 2);
+  public getRecentError(): AppError | null {
+    return this.errorQueue.length > 0 ? this.errorQueue[this.errorQueue.length - 1] : null;
   }
 }
 
-/**
- * React错误边界组件
- */
-export interface ErrorBoundaryState {
+// 错误边界组件属性
+interface ErrorBoundaryProps {
+  fallback?: React.ReactNode;
+  onError?: (error: Error, errorInfo: React.ErrorInfo) => void;
+  children: React.ReactNode;
+}
+
+// 错误边界组件状态
+interface ErrorBoundaryState {
   hasError: boolean;
   error?: Error;
-  errorInfo?: ErrorInfo;
   errorId?: string;
 }
 
-export class ErrorBoundary extends React.Component<
-  { children: ReactNode; fallback?: ReactNode; onError?: (error: Error, errorInfo: ErrorInfo) => void },
-  ErrorBoundaryState
-> {
-  constructor(props: any) {
+// 错误边界组件
+export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  private errorHandler: ErrorHandler;
+
+  constructor(props: ErrorBoundaryProps) {
     super(props);
-    this.state = { hasError: false };
+    this.state = {
+      hasError: false,
+    };
+    this.errorHandler = ErrorHandler.getInstance();
   }
 
   static getDerivedStateFromError(error: Error): ErrorBoundaryState {
     return {
       hasError: true,
-      error
+      error,
+      errorId: `ERR_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
     };
   }
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    const errorId = ErrorHandler.reportError(
-      error,
-      {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    // 记录错误
+    this.errorHandler.logError({
+      code: 'REACT_ERROR_BOUNDARY',
+      message: error.message,
+      details: {
+        stack: error.stack,
         componentStack: errorInfo.componentStack,
-        errorBoundary: this.constructor.name
-      },
-      'high',
-      'ui'
-    );
+        errorId: this.state.errorId
+      }
+    }, ErrorLevel.HIGH);
 
-    this.setState({
-      error,
-      errorInfo,
-      errorId
-    });
-
-    this.props.onError?.(error, errorInfo);
+    // 调用外部错误处理函数
+    if (this.props.onError) {
+      this.props.onError(error, errorInfo);
+    }
   }
 
   render() {
@@ -410,22 +157,16 @@ export class ErrorBoundary extends React.Component<
         return this.props.fallback;
       }
 
-      return (
-        <div className="error-boundary">
-          <div className="error-boundary-content">
-            <h2>Something went wrong</h2>
-            <p>We're sorry, but something unexpected happened.</p>
-            {this.state.errorId && (
-              <p>Error ID: {this.state.errorId}</p>
-            )}
-            <button 
-              onClick={() => window.location.reload()}
-              className="btn btn-primary"
-            >
-              Refresh Page
-            </button>
-          </div>
-        </div>
+      return React.createElement('div', { className: 'error-boundary' },
+        React.createElement('div', { className: 'error-boundary-content' },
+          React.createElement('h2', null, 'Something went wrong'),
+          React.createElement('p', null, 'We\'re sorry, but something unexpected happened.'),
+          this.state.errorId && React.createElement('p', null, `Error ID: ${this.state.errorId}`),
+          React.createElement('button', {
+            onClick: () => window.location.reload(),
+            className: 'btn btn-primary'
+          }, 'Refresh Page')
+        )
       );
     }
 
@@ -433,112 +174,82 @@ export class ErrorBoundary extends React.Component<
   }
 }
 
-/**
- * 异步错误处理
- */
-export class AsyncErrorHandler {
-  /**
-   * 包装异步函数，自动捕获错误
-   */
-  static wrap<T extends any[], R>(
-    fn: (...args: T) => Promise<R>,
-    context?: string
-  ): (...args: T) => Promise<R> {
-    return async (...args: T): Promise<R> => {
-      try {
-        return await fn(...args);
-      } catch (error) {
-        ErrorHandler.reportError(
-          error as Error,
-          { componentStack: context },
-          'medium',
-          'javascript'
-        );
-        throw error;
-      }
-    };
-  }
+// 错误处理Hook
+export function useErrorHandler() {
+  const errorHandler = ErrorHandler.getInstance();
 
-  /**
-   * 安全执行异步函数，不抛出错误
-   */
-  static async safeExecute<T>(
-    fn: () => Promise<T>,
-    defaultValue: T,
-    context?: string
-  ): Promise<T> {
+  const handleError = React.useCallback((error: Partial<AppError>, level?: ErrorLevel) => {
+    errorHandler.logError(error, level);
+  }, [errorHandler]);
+
+  const getErrors = React.useCallback(() => {
+    return errorHandler.getErrors();
+  }, [errorHandler]);
+
+  const clearErrors = React.useCallback(() => {
+    errorHandler.clearErrors();
+  }, [errorHandler]);
+
+  return {
+    handleError,
+    getErrors,
+    clearErrors
+  };
+}
+
+// 异步错误处理函数
+export function withErrorHandling<T extends any[], R>(
+  fn: (...args: T) => Promise<R>,
+  errorCode: string = 'ASYNC_ERROR'
+) {
+  return async (...args: T): Promise<R | null> => {
     try {
-      return await fn();
+      return await fn(...args);
     } catch (error) {
-      ErrorHandler.reportError(
-        error as Error,
-        { componentStack: context },
-        'low',
-        'javascript'
-      );
-      return defaultValue;
+      const errorHandler = ErrorHandler.getInstance();
+      errorHandler.logError({
+        code: errorCode,
+        message: error instanceof Error ? error.message : 'Unknown async error',
+        details: error
+      }, ErrorLevel.MEDIUM);
+      return null;
     }
-  }
+  };
 }
 
-/**
- * 网络错误处理
- */
-export class NetworkErrorHandler {
-  /**
-   * 处理网络请求错误
-   */
-  static handleNetworkError(error: Error, url: string, method: string = 'GET'): void {
-    let category: ErrorReport['category'] = 'network';
-    let severity: ErrorReport['severity'] = 'medium';
-
-    // 根据错误类型调整严重程度
-    if (error.message.includes('timeout')) {
-      severity = 'low';
-    } else if (error.message.includes('404')) {
-      severity = 'medium';
-    } else if (error.message.includes('500')) {
-      severity = 'high';
+// 同步错误处理函数
+export function withSyncErrorHandling<T extends any[], R>(
+  fn: (...args: T) => R,
+  errorCode: string = 'SYNC_ERROR'
+) {
+  return (...args: T): R | null => {
+    try {
+      return fn(...args);
+    } catch (error) {
+      const errorHandler = ErrorHandler.getInstance();
+      errorHandler.logError({
+        code: errorCode,
+        message: error instanceof Error ? error.message : 'Unknown sync error',
+        details: error
+      }, ErrorLevel.MEDIUM);
+      return null;
     }
-
-    ErrorHandler.reportError(
-      error,
-      { url: `${method} ${url}` },
-      severity,
-      category
-    );
-  }
-
-  /**
-   * 重试网络请求
-   */
-  static async retryRequest<T>(
-    requestFn: () => Promise<T>,
-    maxRetries: number = 3,
-    delay: number = 1000
-  ): Promise<T> {
-    let lastError: Error;
-
-    for (let i = 0; i < maxRetries; i++) {
-      try {
-        return await requestFn();
-      } catch (error) {
-        lastError = error as Error;
-        
-        if (i < maxRetries - 1) {
-          await new Promise(resolve => setTimeout(resolve, delay * Math.pow(2, i)));
-        }
-      }
-    }
-
-    throw lastError!;
-  }
+  };
 }
 
-export default {
-  ErrorHandler,
-  ErrorBoundary,
-  AsyncErrorHandler,
-  NetworkErrorHandler
-};
+// 错误格式化函数
+export function formatError(error: unknown): string {
+  if (error instanceof Error) {
+    return error.message;
+  }
+  if (typeof error === 'string') {
+    return error;
+  }
+  if (error && typeof error === 'object' && 'message' in error) {
+    return String((error as any).message);
+  }
+  return 'An unknown error occurred';
+}
 
+// 导出默认实例
+export default ErrorHandler.getInstance();

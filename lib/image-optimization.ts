@@ -359,10 +359,12 @@ export class ResponsiveImageHelper {
   }
 }
 
-export default {
+const imageOptimizationModule = {
   ImageOptimizer,
   LazyImageLoader,
   ImagePreloader,
   ResponsiveImageHelper
 };
+
+export default imageOptimizationModule;
 

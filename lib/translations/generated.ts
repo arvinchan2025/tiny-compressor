@@ -1,6 +1,6 @@
 // Auto-generated translation file
 // Do not modify this file manually
-// Generated at: 2025-10-19T16:17:14.271Z
+// Generated at: 2025-10-19T16:38:04.239Z
 
 export const translations = {
   "en": {

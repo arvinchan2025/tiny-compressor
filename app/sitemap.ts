@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://tinycompressor.com'
-  // 最后更新：2025-10-15
-  const lastModified = new Date('2025-10-15')
+  // 最后更新：2025-10-19
+  const lastModified = new Date('2025-10-19')
   
   // 支持的所有11种语言
   const locales = ['en', 'zh', 'ja', 'ko', 'ar', 'de', 'es', 'fr', 'it', 'pt', 'ru']
