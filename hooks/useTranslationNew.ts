@@ -19,7 +19,7 @@ function isStaticModule(module: TranslationModule): boolean {
 // Translation Hook return type
 interface UseTranslationReturn {
   t: (module: TranslationModule, key: string, params?: Record<string, string | number | boolean>) => Promise<string>
-  tSync: (translations: Record<string, any>, module: TranslationModule, key: string, params?: Record<string, string | number | boolean>) => string
+  tSync: (translations: Record<string, any>, module: TranslationModule, key: string, params?: Record<string, string | number | boolean>, options?: { returnObjects?: boolean }) => any
   locale: Locale
   isLoading: boolean
   switchLocale: (locale: Locale) => void
@@ -130,14 +130,15 @@ export function useTranslationNew(initialModules: TranslationModule[] = []): Use
     translations: Record<string, any>,
     module: TranslationModule, 
     key: string, 
-    params?: Record<string, string | number | boolean>
-  ): string => {
+    params?: Record<string, string | number | boolean>,
+    options?: { returnObjects?: boolean }
+  ): any => {
     // Check if translations object exists and has the module
     if (!translations || !translations[module]) {
       return key // Return key as fallback if module not loaded
     }
     const translation = translations[module]
-    return getTranslationValue(translation, key, params)
+    return getTranslationValue(translation, key, params, options)
   }
 
   const switchLocale = (newLocale: Locale) => {
@@ -208,12 +209,27 @@ export function useModuleTranslation(module: TranslationModule, providedLocale?:
   }, [locale, module])
   
   const moduleT = useMemo(() => {
-    return (key: string, params?: Record<string, string | number | boolean> | { returnObjects?: boolean }) => {
+    return (key: string, paramsOrOptions?: Record<string, string | number | boolean> | { returnObjects?: boolean }) => {
       // Check if translations object exists and module is loaded
       if (!translations || !translations[module]) {
         return key
       }
-      return getTranslationValue(translations[module], key, params)
+      
+      // Separate params and options
+      let params: Record<string, string | number | boolean> | undefined
+      let options: { returnObjects?: boolean } | undefined
+      
+      if (paramsOrOptions) {
+        if ('returnObjects' in paramsOrOptions) {
+          // It's options object
+          options = paramsOrOptions
+        } else {
+          // It's params object
+          params = paramsOrOptions
+        }
+      }
+      
+      return getTranslationValue(translations[module], key, params, options)
     }
   }, [translations, module])
 

@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useCallback, useState } from 'react';
-import { motion } from 'framer-motion';
 import { Upload } from 'lucide-react';
 
 interface UploadAreaProps {
@@ -53,9 +52,12 @@ export default function UploadArea({
   }, [onFileSelect]);
 
   return (
-    <motion.div
+    <div
       className={`
-        border-2 border-dashed rounded-xl p-12 text-center transition-all
+        border-2 border-dashed rounded-xl p-12 text-center
+        transition-all duration-300 ease-out
+        hover:scale-[1.01]
+        animate-scale-in
         ${isDragging
           ? `border-${accentColor}-500 bg-${accentColor}-50 dark:bg-${accentColor}-500/10`
           : `border-border-default hover:border-${accentColor}-500 hover:bg-${accentColor}-50/50 dark:hover:bg-${accentColor}-500/5`
@@ -64,10 +66,6 @@ export default function UploadArea({
       onDrop={handleDrop}
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
-      whileHover={{ scale: 1.01 }}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
     >
       <Upload className={`w-16 h-16 text-${accentColor}-500 mx-auto mb-4`} />
       
@@ -83,7 +81,10 @@ export default function UploadArea({
         inline-flex items-center gap-2 px-6 py-3 
         bg-gradient-to-r from-${accentColor}-600 to-${accentColor}-700 
         dark:from-${accentColor}-700 dark:to-${accentColor}-800
-        text-white rounded-lg font-medium hover:shadow-lg transition-all cursor-pointer
+        text-white rounded-lg font-medium 
+        transition-all duration-300 ease-out
+        hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]
+        cursor-pointer
       `}>
         <Upload className="w-5 h-5" />
         {buttonText}
@@ -94,7 +95,7 @@ export default function UploadArea({
           className="hidden"
         />
       </label>
-    </motion.div>
+    </div>
   );
 }
 

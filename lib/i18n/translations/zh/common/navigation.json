@@ -345,5 +345,678 @@
     "title": "准备开始了吗？",
     "description": "加入成千上万信任我们图像处理工具的用户",
     "backToHome": "返回首页"
+  },
+  "compressorNavigation": {
+    "tools": {
+      "png": {
+        "subtitle": "无损压缩",
+        "description": "优化PNG图像，同时保持透明度和质量",
+        "features": ["PNG", "透明度", "无损"],
+        "stats": "最高减小95%",
+        "buttonText": "压缩PNG"
+      },
+      "jpeg": {
+        "subtitle": "智能压缩",
+        "description": "通过智能质量优化减小JPEG文件大小",
+        "features": ["JPEG", "质量控制", "快速处理"],
+        "stats": "最高减小85%",
+        "buttonText": "压缩JPEG"
+      },
+      "webp": {
+        "subtitle": "现代格式",
+        "description": "使用先进算法压缩WebP图像，实现网页优化",
+        "features": ["WebP", "网页优化", "高质量"],
+        "stats": "最高减小90%",
+        "buttonText": "压缩WebP"
+      },
+      "avif": {
+        "subtitle": "下一代格式",
+        "description": "超现代AVIF压缩，具有卓越的质量体积比",
+        "features": ["AVIF", "超强压缩", "面向未来"],
+        "stats": "最高减小95%",
+        "buttonText": "压缩AVIF"
+      },
+      "gif": {
+        "subtitle": "动画支持",
+        "description": "压缩动画GIF，同时保持流畅播放",
+        "features": ["GIF", "动画", "颜色优化"],
+        "stats": "最高减小70%",
+        "buttonText": "压缩GIF"
+      },
+      "bmp": {
+        "subtitle": "位图优化",
+        "description": "减小BMP文件大小，同时保持图像保真度",
+        "features": ["BMP", "未压缩", "高保真"],
+        "stats": "最高减小80%",
+        "buttonText": "压缩BMP"
+      },
+      "pdf": {
+        "subtitle": "文档压缩",
+        "description": "通过高级压缩和元数据移除减小PDF文件大小",
+        "features": ["PDF", "元数据移除", "高级压缩"],
+        "stats": "最高减小60%",
+        "buttonText": "压缩PDF"
+      },
+      "video": {
+        "subtitle": "视频优化",
+        "description": "使用FFmpeg技术和质量预设压缩视频文件",
+        "features": ["MP4", "AVI", "MOV", "WebM"],
+        "stats": "最高减小85%",
+        "buttonText": "压缩视频"
+      }
+    },
+    "heroStats": [
+      {
+        "number": "1500万+",
+        "label": "已处理文件",
+        "color": "blue"
+      },
+      {
+        "number": "95%",
+        "label": "最大减小率",
+        "color": "green"
+      },
+      {
+        "number": "8+",
+        "label": "支持格式",
+        "color": "purple"
+      },
+      {
+        "number": "100%",
+        "label": "永久免费",
+        "color": "orange"
+      }
+    ],
+    "compressionTechniques": [
+      {
+        "icon": "🧠",
+        "title": "智能算法选择",
+        "description": "根据文件类型和内容特征自动选择最佳压缩算法，以获得最佳结果。",
+        "color": "blue"
+      },
+      {
+        "icon": "🎯",
+        "title": "无损和有损选项",
+        "description": "在最大质量的无损压缩和最大减小的有损压缩之间选择。",
+        "color": "green"
+      },
+      {
+        "icon": "⚡",
+        "title": "WebAssembly优化",
+        "description": "利用WebAssembly技术实现接近原生的性能和更快的压缩处理。",
+        "color": "purple"
+      },
+      {
+        "icon": "🔍",
+        "title": "内容感知分析",
+        "description": "高级图像分析检测模式并针对特定内容类型优化压缩设置。",
+        "color": "orange"
+      },
+      {
+        "icon": "📊",
+        "title": "实时质量指标",
+        "description": "实时质量评估确保您在文件大小和视觉质量之间保持完美平衡。",
+        "color": "pink"
+      },
+      {
+        "icon": "🛠️",
+        "title": "批量处理就绪",
+        "description": "针对单文件处理优化，计划提供高级批量压缩功能。",
+        "color": "indigo"
+      }
+    ],
+    "howItWorks": [
+      {
+        "step": "01",
+        "title": "上传您的文件",
+        "description": "简单拖拽或点击选择您的文件。我们支持所有主要图像、文档和视频格式。",
+        "icon": "📁"
+      },
+      {
+        "step": "02",
+        "title": "选择压缩设置",
+        "description": "选择您首选的压缩级别和质量设置。我们的智能预设自动优化以获得最佳结果。",
+        "icon": "⚙️"
+      },
+      {
+        "step": "03",
+        "title": "下载压缩文件",
+        "description": "几秒钟内获得优化文件。比较原始与压缩大小，查看节省的空间。",
+        "icon": "💾"
+      }
+    ],
+    "bestPractices": [
+      {
+        "category": "图像",
+        "tips": [
+          "使用PNG处理带透明度的图形",
+          "JPEG适合照片",
+          "WebP提供最佳压缩和质量",
+          "AVIF提供最大减小"
+        ]
+      },
+      {
+        "category": "文档",
+        "tips": [
+          "压缩前移除不必要的图像",
+          "法律文件使用无损压缩",
+          "敏感文件考虑密码保护"
+        ]
+      },
+      {
+        "category": "视频",
+        "tips": [
+          "MP4在平台间最兼容",
+          "H.265提供更好的压缩比",
+          "网页使用降低分辨率",
+          "根据内容类型调整比特率"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "文件压缩安全吗？",
+        "answer": "是的，我们的压缩完全安全。所有处理都在您的浏览器中使用客户端技术本地进行。您的文件永远不会离开您的设备，确保最大的隐私和安全性。"
+      },
+      {
+        "question": "压缩会降低文件质量吗？",
+        "answer": "我们的智能压缩算法旨在在减小文件大小的同时保持视觉质量。您可以选择不同的质量级别来平衡大小减小和质量保持。"
+      },
+      {
+        "question": "您支持哪些文件格式？",
+        "answer": "我们支持所有主要格式，包括图像的PNG、JPEG、WebP、AVIF、GIF、BMP；文档的PDF；以及视频的MP4、MOV、AVI。我们会定期添加更多格式。"
+      },
+      {
+        "question": "文件大小能减小多少？",
+        "answer": "压缩比因文件类型和内容而异。图像通常可减小60-90%，PDF可减小30-70%，视频可减小40-80%，具体取决于原始质量和使用设置。"
+      },
+      {
+        "question": "有文件大小限制吗？",
+        "answer": "我们的基于浏览器的压缩在100MB以下的文件中效果最佳，以获得最佳性能。更大的文件可能需要更长时间处理，但仍然受支持。"
+      },
+      {
+        "question": "可以一次压缩多个文件吗？",
+        "answer": "目前，我们专注于单文件压缩以获得最佳质量结果。批量压缩功能计划在未来的更新中提供。"
+      }
+    ],
+    "sections": {
+      "hero": {
+        "subtitle": "专业的压缩工具，在保持卓越质量的同时将文件大小减小高达95%。无需注册。"
+      },
+      "compressionTechniques": {
+        "title": "高级压缩技术",
+        "subtitle": "我们的压缩算法使用前沿技术实现最大文件大小减小"
+      },
+      "howItWorks": {
+        "title": "工作原理",
+        "subtitle": "通过几个简单步骤开始使用我们的压缩工具"
+      },
+      "bestPractices": {
+        "title": "文件压缩最佳实践",
+        "subtitle": "遵循这些专家提示，为不同文件类型获得最佳压缩结果"
+      },
+      "faq": {
+        "title": "常见问题",
+        "subtitle": "获取有关文件压缩的常见问题答案"
+      },
+      "cta": {
+        "title": "准备压缩您的文件了吗？",
+        "description": "加入数百万信任TinyCompressor进行日常文件优化需求的用户。几秒钟内开始处理您的图像、文档和视频。",
+        "buttons": {
+          "startCompression": "开始压缩",
+          "backToHome": "返回首页"
+        }
+      }
+    }
+  },
+  "converterNavigation": {
+    "sections": {
+      "hero": {
+        "subtitle": "专业的格式转换工具，以完美的质量和通用兼容性转换您的图像。无需注册。"
+      },
+      "toolsSection": {
+        "title": "选择您的转换工具",
+        "subtitle": "专业的图像和文档格式转换工具。选择最适合您特定转换需求的完美工具。"
+      },
+      "conversionTechnologies": {
+        "title": "先进的转换技术",
+        "subtitle": "我们的转换算法使用前沿技术实现完美的格式转换，同时保持质量"
+      },
+      "howItWorks": {
+        "title": "工作原理",
+        "subtitle": "只需几个简单步骤即可开始使用我们的转换工具"
+      },
+      "bestPractices": {
+        "title": "格式转换最佳实践",
+        "subtitle": "遵循这些专业技巧，为不同文件类型获得最佳转换结果"
+      },
+      "faq": {
+        "title": "常见问题",
+        "subtitle": "获取有关格式转换常见问题的答案"
+      },
+      "cta": {
+        "title": "准备转换您的文件了吗？",
+        "description": "加入数百万信任TinyCompressor进行日常文件转换需求的用户。几秒钟内开始转换您的图像和文档。",
+        "buttons": {
+          "startConversion": "开始转换",
+          "backToHome": "返回首页",
+          "convertNow": "立即转换"
+        }
+      }
+    },
+    "heroStats": [
+      {
+        "number": "10+",
+        "label": "格式对",
+        "color": "blue"
+      },
+      {
+        "number": "100%",
+        "label": "质量保持",
+        "color": "green"
+      },
+      {
+        "number": "快速",
+        "label": "转换速度",
+        "color": "purple"
+      },
+      {
+        "number": "100%",
+        "label": "永久免费",
+        "color": "orange"
+      }
+    ],
+    "conversionTechnologies": [
+      {
+        "icon": "🧠",
+        "title": "智能算法选择",
+        "description": "根据源格式和目标格式自动选择最佳转换算法，以获得最佳结果。",
+        "color": "blue"
+      },
+      {
+        "icon": "🎯",
+        "title": "质量保持",
+        "description": "在不同格式之间转换时保持视觉保真度的高级算法。",
+        "color": "green"
+      },
+      {
+        "icon": "⚡",
+        "title": "WebAssembly优化",
+        "description": "利用WebAssembly技术实现接近原生性能的更快转换处理。",
+        "color": "purple"
+      },
+      {
+        "icon": "🔍",
+        "title": "元数据处理",
+        "description": "对EXIF、ICC配置文件和其他嵌入数据进行智能元数据保持和优化。",
+        "color": "orange"
+      },
+      {
+        "icon": "🛡️",
+        "title": "透明度支持",
+        "description": "对PNG、GIF和WebP格式的完整透明度通道支持，具有智能背景处理。",
+        "color": "pink"
+      },
+      {
+        "icon": "📐",
+        "title": "质量优化",
+        "description": "适应内容特征的智能质量算法，实现最佳的大小与质量比。",
+        "color": "indigo"
+      }
+    ],
+    "howItWorks": [
+      {
+        "step": "01",
+        "title": "上传您的文件",
+        "description": "只需拖放您的文件或点击选择。我们支持所有主要的图像和文档格式。",
+        "icon": "📁"
+      },
+      {
+        "step": "02",
+        "title": "选择目标格式",
+        "description": "选择您想要的输出格式。我们的智能推荐帮助您选择最适合您需求的格式。",
+        "icon": "🎯"
+      },
+      {
+        "step": "03",
+        "title": "下载转换文件",
+        "description": "几秒钟内获取您的转换文件。比较原始格式和转换格式，确保完美兼容性。",
+        "icon": "💾"
+      }
+    ],
+    "bestPractices": [
+      {
+        "category": "图像",
+        "tips": [
+          "使用PNG处理带透明度的图形",
+          "JPEG适合照片",
+          "WebP在质量和压缩方面提供最佳效果",
+          "AVIF提供最大尺寸减少"
+        ]
+      },
+      {
+        "category": "文档",
+        "tips": [
+          "PDF最适合文档",
+          "考虑对大文件进行压缩",
+          "需要时保持元数据"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "文件转换安全吗？",
+        "answer": "是的，我们的转换是完全安全的。所有处理都在您的浏览器中使用客户端技术本地进行。您的文件永远不会离开您的设备，确保最大的隐私和安全性。"
+      },
+      {
+        "question": "转换会影响文件质量吗？",
+        "answer": "我们的智能转换算法旨在在格式之间转换时保持视觉质量。您可以选择不同的质量级别来平衡转换准确性和文件大小。"
+      },
+      {
+        "question": "您支持哪些文件格式进行转换？",
+        "answer": "我们支持所有主要格式，包括PNG、JPEG、WebP、AVIF、GIF、BMP用于图像；PDF用于文档。您可以在任何兼容格式之间转换。"
+      },
+      {
+        "question": "转换过程有多快？",
+        "answer": "我们的WebAssembly优化转换非常快。大多数文件在几秒钟内完成转换，具体取决于文件大小和复杂性。"
+      },
+      {
+        "question": "有文件大小限制吗？",
+        "answer": "我们的基于浏览器的转换在100MB以下的文件中效果最佳，以获得最佳性能。较大的文件可能需要更长的处理时间，但仍然受支持。"
+      },
+      {
+        "question": "我可以一次转换多个文件吗？",
+        "answer": "目前，我们专注于单文件转换以获得最佳质量结果。批量转换功能计划在未来的更新中提供。"
+      }
+    ],
+    "formatGuide": [
+      {
+        "format": "PNG",
+        "description": "支持透明度的无损压缩。适合图形、徽标和需要透明度的图像。",
+        "bestFor": "图形、徽标、截图、带透明度的图像",
+        "size": "较大的文件大小",
+        "icon": "🖼️"
+      },
+      {
+        "format": "JPEG",
+        "description": "为照片优化的有损压缩。适合复杂颜色和渐变的照片。",
+        "bestFor": "照片、复杂图像、网页照片",
+        "size": "良好的压缩",
+        "icon": "📸"
+      },
+      {
+        "format": "WebP",
+        "description": "提供有损和无损压缩的现代格式。比JPEG更好的压缩，质量相似。",
+        "bestFor": "网页图像、现代浏览器、性能优化",
+        "size": "优秀的压缩",
+        "icon": "🌐"
+      },
+      {
+        "format": "AVIF",
+        "description": "具有卓越压缩的下一代格式。比JPEG压缩率高50%，质量更好。",
+        "bestFor": "面向未来的图像、最大压缩、现代浏览器",
+        "size": "卓越的压缩",
+        "icon": "🚀"
+      },
+      {
+        "format": "GIF",
+        "description": "支持动画和透明度。限制为256色，适合简单图形和动画。",
+        "bestFor": "简单动画、基本图形、社交媒体",
+        "size": "可变（取决于复杂度）",
+        "icon": "🎬"
+      },
+      {
+        "format": "BMP",
+        "description": "未压缩的位图格式。文件大小较大，但为归档目的提供完美的质量保持。",
+        "bestFor": "归档存储、印刷媒体、最大质量",
+        "size": "非常大的文件大小",
+        "icon": "📁"
+      }
+    ],
+    "labels": {
+      "popular": "热门",
+      "keyFeatures": "主要特点："
+    },
+    "tools": [
+      {
+        "id": "png-to-jpg",
+        "title": "PNG转JPG",
+        "subtitle": "高质量转换",
+        "description": "将PNG图像转换为JPG格式，具有智能质量优化",
+        "icon": "📷",
+        "gradient": "from-blue-500 to-green-500",
+        "features": ["PNG", "JPG", "质量控制"],
+        "stats": "完美质量",
+        "popular": true
+      },
+      {
+        "id": "png-to-webp",
+        "title": "PNG转WebP",
+        "subtitle": "现代格式",
+        "description": "将PNG图像转换为现代WebP格式，获得更好的网页性能",
+        "icon": "🌐",
+        "gradient": "from-blue-500 to-purple-500",
+        "features": ["PNG", "WebP", "网页优化"],
+        "stats": "减小高达90%",
+        "popular": false
+      },
+      {
+        "id": "png-to-avif",
+        "title": "PNG转AVIF",
+        "subtitle": "下一代格式",
+        "description": "将PNG图像转换为超现代AVIF格式，具有卓越的压缩性能",
+        "icon": "🚀",
+        "gradient": "from-blue-500 to-orange-500",
+        "features": ["PNG", "AVIF", "超强压缩"],
+        "stats": "减小高达95%",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-png",
+        "title": "JPG转PNG",
+        "subtitle": "添加透明度",
+        "description": "将JPG图像转换为PNG格式，具有背景移除功能",
+        "icon": "🖼️",
+        "gradient": "from-green-500 to-blue-500",
+        "features": ["JPG", "PNG", "透明度"],
+        "stats": "无损质量",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-webp",
+        "title": "JPG转WebP",
+        "subtitle": "网页优化",
+        "description": "将JPG图像转换为WebP格式，获得更好的网页性能",
+        "icon": "🌐",
+        "gradient": "from-green-500 to-purple-500",
+        "features": ["JPG", "WebP", "网页优化"],
+        "stats": "减小高达85%",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-avif",
+        "title": "JPG转AVIF",
+        "subtitle": "超强压缩",
+        "description": "将JPG图像转换为AVIF格式，具有卓越的压缩比",
+        "icon": "🚀",
+        "gradient": "from-green-500 to-orange-500",
+        "features": ["JPG", "AVIF", "超强压缩"],
+        "stats": "减小高达90%",
+        "popular": false
+      },
+      {
+        "id": "webp-to-png",
+        "title": "WebP转PNG",
+        "subtitle": "通用格式",
+        "description": "将WebP图像转换为PNG格式，获得最大兼容性",
+        "icon": "🖼️",
+        "gradient": "from-purple-500 to-blue-500",
+        "features": ["WebP", "PNG", "通用"],
+        "stats": "完全兼容",
+        "popular": false
+      },
+      {
+        "id": "webp-to-jpg",
+        "title": "WebP转JPG",
+        "subtitle": "传统支持",
+        "description": "将WebP图像转换为JPG格式，支持旧版浏览器",
+        "icon": "📷",
+        "gradient": "from-purple-500 to-green-500",
+        "features": ["WebP", "JPG", "传统支持"],
+        "stats": "浏览器兼容",
+        "popular": false
+      },
+      {
+        "id": "webp-to-avif",
+        "title": "WebP转AVIF",
+        "subtitle": "下一代",
+        "description": "将WebP图像转换为AVIF格式，获得更好的压缩性能",
+        "icon": "🚀",
+        "gradient": "from-purple-500 to-orange-500",
+        "features": ["WebP", "AVIF", "下一代"],
+        "stats": "减小高达80%",
+        "popular": false
+      },
+      {
+        "id": "heic-to-jpg",
+        "title": "HEIC转JPG",
+        "subtitle": "iOS兼容",
+        "description": "将iOS设备的HEIC图像转换为JPG格式，获得通用兼容性",
+        "icon": "📱",
+        "gradient": "from-pink-500 to-green-500",
+        "features": ["HEIC", "JPG", "iOS支持"],
+        "stats": "通用格式",
+        "popular": false
+      }
+    ]
+  },
+  "compressorNavigation": {
+    "tools": {
+      "png": {
+        "subtitle": "无损压缩",
+        "description": "优化PNG图像，同时保持透明度和质量",
+        "features": ["PNG", "透明度", "无损"],
+        "stats": "最高减小95%",
+        "buttonText": "压缩PNG"
+      },
+      "jpeg": {
+        "subtitle": "智能压缩",
+        "description": "通过智能质量优化减小JPEG文件大小",
+        "features": ["JPEG", "质量控制", "快速处理"],
+        "stats": "最高减小85%",
+        "buttonText": "压缩JPEG"
+      },
+      "webp": {
+        "subtitle": "现代格式",
+        "description": "使用先进算法压缩WebP图像，实现网页优化",
+        "features": ["WebP", "网页优化", "高质量"],
+        "stats": "最高减小90%",
+        "buttonText": "压缩WebP"
+      },
+      "avif": {
+        "subtitle": "下一代格式",
+        "description": "超现代AVIF压缩，具有卓越的质量体积比",
+        "features": ["AVIF", "超强压缩", "面向未来"],
+        "stats": "最高减小95%",
+        "buttonText": "压缩AVIF"
+      },
+      "gif": {
+        "subtitle": "动画支持",
+        "description": "压缩动画GIF，同时保持流畅播放",
+        "features": ["GIF", "动画", "颜色优化"],
+        "stats": "最高减小70%",
+        "buttonText": "压缩GIF"
+      },
+      "bmp": {
+        "subtitle": "位图优化",
+        "description": "减小BMP文件大小，同时保持图像保真度",
+        "features": ["BMP", "未压缩", "高保真"],
+        "stats": "最高减小80%",
+        "buttonText": "压缩BMP"
+      },
+      "pdf": {
+        "subtitle": "文档压缩",
+        "description": "通过高级压缩和元数据移除减小PDF文件大小",
+        "features": ["PDF", "元数据移除", "高级压缩"],
+        "stats": "最高减小60%",
+        "buttonText": "压缩PDF"
+      },
+      "video": {
+        "subtitle": "视频压缩",
+        "description": "使用FFmpeg技术压缩视频文件",
+        "features": ["多格式", "质量预设", "客户端处理"],
+        "stats": "最高减小85%",
+        "buttonText": "压缩视频"
+      }
+    },
+    "heroStats": [
+      { "number": "95%", "label": "最大减小", "color": "blue" },
+      { "number": "6+", "label": "格式", "color": "green" },
+      { "number": "快速", "label": "处理", "color": "purple" },
+      { "number": "100%", "label": "永远免费", "color": "orange" }
+    ],
+    "compressionTechniques": [
+      { "icon": "🧠", "title": "智能算法选择", "description": "根据图像类型和期望结果自动选择最佳压缩算法，获得最优结果。", "color": "blue" },
+      { "icon": "🎯", "title": "质量保持", "description": "先进算法在压缩过程中保持视觉质量，同时减小文件大小。", "color": "green" },
+      { "icon": "⚡", "title": "WebAssembly优化", "description": "利用WebAssembly技术实现接近原生的性能和更快的压缩处理。", "color": "purple" },
+      { "icon": "🔍", "title": "元数据管理", "description": "智能保留和优化EXIF、ICC配置文件和其他嵌入数据的元数据。", "color": "orange" },
+      { "icon": "🛡️", "title": "透明度支持", "description": "完整支持PNG、GIF和WebP中的透明度通道，具有智能背景处理。", "color": "pink" },
+      { "icon": "📐", "title": "质量优化", "description": "智能质量算法适应图像特征，实现最佳的大小质量比。", "color": "indigo" }
+    ],
+    "howItWorks": [
+      { "step": "01", "title": "上传图像", "description": "简单拖放您的图像或点击选择。我们支持所有常见图像格式。", "icon": "📁" },
+      { "step": "02", "title": "选择设置", "description": "选择压缩级别、质量或目标格式，实时预览。高级选项提供专业结果。", "icon": "⚙️" },
+      { "step": "03", "title": "处理和下载", "description": "立即获得优化图像，包含详细的压缩统计。批量下载，文件结构井然有序。", "icon": "💾" }
+    ],
+    "bestPractices": [
+      { "category": "照片", "tips": ["使用JPEG处理照片", "网页80-90%质量", "邮件60-80%质量", "打印95%+质量"] },
+      { "category": "图形", "tips": ["PNG用于透明图形", "WebP用于现代浏览器", "AVIF用于最大压缩", "GIF用于动画"] }
+    ],
+    "faq": [
+      { "question": "图像压缩安全吗？", "answer": "是的，我们的压缩是完全安全的。所有处理都在您的浏览器中本地进行，使用客户端技术。您的文件永远不会离开您的设备，确保最大的隐私和安全性。" },
+      { "question": "图像质量会受影响吗？", "answer": "我们的智能压缩算法旨在在压缩过程中保持视觉质量。您可以选择不同的质量级别来平衡压缩精度和文件大小。" },
+      { "question": "支持哪些图像格式？", "answer": "我们支持所有常见格式，包括PNG、JPEG、WebP、AVIF、GIF和BMP。您可以在所有兼容格式之间进行压缩。" },
+      { "question": "压缩过程有多快？", "answer": "我们基于WebAssembly的优化压缩非常快速。大多数图像在几秒钟内处理完成，具体取决于图像大小和复杂度。" },
+      { "question": "有文件大小限制吗？", "answer": "我们基于浏览器的压缩最适合100MB以下的文件，以获得最佳性能。更大的文件可能需要更长时间，但仍然受支持。" },
+      { "question": "可以同时压缩多张图像吗？", "answer": "目前我们专注于单图像压缩以获得最佳质量结果。批量压缩功能计划在未来的更新中推出。" }
+    ],
+    "sections": {
+      "hero": {
+        "subtitle": "专业的图像压缩工具，以完美的质量和通用兼容性处理您的图像。无需注册。"
+      },
+      "compressionTechniques": {
+        "title": "高级压缩技术",
+        "subtitle": "我们的压缩算法使用最先进的技术实现最佳大小减小，同时保持质量"
+      },
+      "howItWorks": {
+        "title": "工作原理",
+        "subtitle": "通过几个简单步骤开始使用我们的压缩工具"
+      },
+      "bestPractices": {
+        "title": "图像压缩最佳实践",
+        "subtitle": "遵循这些专家技巧，为不同类型的图像获得最佳压缩结果"
+      },
+      "faq": {
+        "title": "常见问题",
+        "subtitle": "获取有关图像压缩常见问题的答案"
+      },
+      "cta": {
+        "title": "准备压缩您的图像了吗？",
+        "description": "加入数百万信任TinyCompressor进行日常图像压缩需求的用户。几秒钟内开始压缩您的图像。",
+        "buttons": {
+          "startCompression": "开始压缩",
+          "backToHome": "返回首页",
+          "compressNow": "立即压缩"
+        }
+      }
+    },
+    "labels": {
+      "popular": "热门",
+      "keyFeatures": "主要特点："
+    },
+    "toolsSection": {
+      "title": "选择您的压缩工具",
+      "subtitle": "专业的图像压缩工具，适用于不同格式。选择最适合您特定压缩需求的完美工具。"
+    }
   }
 }

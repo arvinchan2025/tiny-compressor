@@ -345,5 +345,455 @@
     "title": "¿Listo para comenzar?",
     "description": "Únete a miles de usuarios que confían en nuestras herramientas de procesamiento de imágenes",
     "backToHome": "Volver al Inicio"
+  },
+  "converterNavigation": {
+    "sections": {
+      "hero": {
+        "subtitle": "Herramientas profesionales de conversión de formato que transforman tus imágenes con calidad perfecta y compatibilidad universal. Sin registro requerido."
+      },
+      "toolsSection": {
+        "title": "Elige tu herramienta de conversión",
+        "subtitle": "Herramientas profesionales de conversión de formato para imágenes y documentos. Selecciona la herramienta perfecta para tus necesidades específicas de conversión."
+      },
+      "conversionTechnologies": {
+        "title": "Tecnologías de conversión avanzadas",
+        "subtitle": "Nuestros algoritmos de conversión utilizan tecnología de vanguardia para lograr una transformación de formato perfecta mientras preservan la calidad"
+      },
+      "howItWorks": {
+        "title": "Cómo funciona",
+        "subtitle": "Comienza con nuestras herramientas de conversión en solo unos pasos simples"
+      },
+      "bestPractices": {
+        "title": "Mejores prácticas de conversión de formato",
+        "subtitle": "Sigue estos consejos de expertos para obtener los mejores resultados de conversión para diferentes tipos de archivos"
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Obtén respuestas a preguntas comunes sobre la conversión de formato"
+      },
+      "cta": {
+        "title": "¿Listo para convertir tus archivos?",
+        "description": "Únete a millones de usuarios que confían en TinyCompressor para sus necesidades diarias de conversión de archivos. Comienza a convertir tus imágenes y documentos en segundos.",
+        "buttons": {
+          "startConversion": "Comenzar conversión",
+          "backToHome": "Volver al inicio",
+          "convertNow": "Convertir Ahora"
+        }
+      }
+    },
+    "heroStats": [
+      {
+        "number": "10+",
+        "label": "Pares de formato",
+        "color": "blue"
+      },
+      {
+        "number": "100%",
+        "label": "Calidad preservada",
+        "color": "green"
+      },
+      {
+        "number": "Rápido",
+        "label": "Velocidad de conversión",
+        "color": "purple"
+      },
+      {
+        "number": "100%",
+        "label": "Gratis para siempre",
+        "color": "orange"
+      }
+    ],
+    "conversionTechnologies": [
+      {
+        "icon": "🧠",
+        "title": "Selección inteligente de algoritmos",
+        "description": "Elige automáticamente el mejor algoritmo de conversión basado en los formatos de origen y destino para resultados óptimos.",
+        "color": "blue"
+      },
+      {
+        "icon": "🎯",
+        "title": "Preservación de calidad",
+        "description": "Algoritmos avanzados que mantienen la fidelidad visual al convertir entre diferentes formatos.",
+        "color": "green"
+      },
+      {
+        "icon": "⚡",
+        "title": "Optimización WebAssembly",
+        "description": "Aprovecha la tecnología WebAssembly para un rendimiento casi nativo y procesamiento de conversión más rápido.",
+        "color": "purple"
+      },
+      {
+        "icon": "🔍",
+        "title": "Manejo de metadatos",
+        "description": "Preservación y optimización inteligente de metadatos para perfiles EXIF, ICC y otros datos incrustados.",
+        "color": "orange"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Soporte de transparencia",
+        "description": "Soporte completo de canales de transparencia para formatos PNG, GIF y WebP con manejo inteligente de fondos.",
+        "color": "pink"
+      },
+      {
+        "icon": "📐",
+        "title": "Optimización de calidad",
+        "description": "Algoritmos de calidad inteligentes que se adaptan a las características del contenido para ratios óptimos de tamaño a calidad.",
+        "color": "indigo"
+      }
+    ],
+    "howItWorks": [
+      {
+        "step": "01",
+        "title": "Sube tu archivo",
+        "description": "Simplemente arrastra y suelta tu archivo o haz clic para seleccionar. Soportamos todos los formatos principales de imágenes y documentos.",
+        "icon": "📁"
+      },
+      {
+        "step": "02",
+        "title": "Elige el formato de destino",
+        "description": "Selecciona tu formato de salida deseado. Nuestras recomendaciones inteligentes te ayudan a elegir el mejor formato para tus necesidades.",
+        "icon": "🎯"
+      },
+      {
+        "step": "03",
+        "title": "Descarga el archivo convertido",
+        "description": "Obtén tu archivo convertido en segundos. Compara formatos originales y convertidos, asegurando compatibilidad perfecta.",
+        "icon": "💾"
+      }
+    ],
+    "bestPractices": [
+      {
+        "category": "Imágenes",
+        "tips": [
+          "Usa PNG para gráficos con transparencia",
+          "JPEG es ideal para fotografías",
+          "WebP ofrece la mejor compresión con calidad",
+          "AVIF proporciona máxima reducción de tamaño"
+        ]
+      },
+      {
+        "category": "Documentos",
+        "tips": [
+          "PDF es mejor para documentos",
+          "Considera la compresión para archivos grandes",
+          "Preserva metadatos cuando sea necesario"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Es segura la conversión de archivos?",
+        "answer": "Sí, nuestra conversión es completamente segura. Todo el procesamiento ocurre localmente en tu navegador usando tecnologías del lado del cliente. Tus archivos nunca abandonan tu dispositivo, garantizando máxima privacidad y seguridad."
+      },
+      {
+        "question": "¿La conversión afectará la calidad del archivo?",
+        "answer": "Nuestros algoritmos de conversión inteligentes están diseñados para mantener la calidad visual al convertir entre formatos. Puedes elegir diferentes niveles de calidad para equilibrar la precisión de conversión y el tamaño del archivo."
+      },
+      {
+        "question": "¿Qué formatos de archivo soportas para conversión?",
+        "answer": "Soportamos todos los formatos principales incluyendo PNG, JPEG, WebP, AVIF, GIF, BMP para imágenes; PDF para documentos. Puedes convertir entre cualquier formato compatible."
+      },
+      {
+        "question": "¿Qué tan rápida es la conversión?",
+        "answer": "Nuestra conversión optimizada con WebAssembly es extremadamente rápida. La mayoría de archivos se convierten en segundos, dependiendo del tamaño y complejidad del archivo."
+      },
+      {
+        "question": "¿Hay límites de tamaño de archivo?",
+        "answer": "Nuestra conversión basada en navegador funciona mejor con archivos menores a 100MB para un rendimiento óptimo. Archivos más grandes pueden tomar más tiempo para procesar pero aún son compatibles."
+      },
+      {
+        "question": "¿Puedo convertir múltiples archivos a la vez?",
+        "answer": "Actualmente, nos enfocamos en conversión de archivo único para los mejores resultados de calidad. Las funciones de conversión por lotes están planeadas para futuras actualizaciones."
+      }
+    ],
+    "formatGuide": [
+      {
+        "format": "PNG",
+        "description": "Compresión sin pérdida con soporte de transparencia. Perfecto para gráficos, logotipos e imágenes que requieren transparencia.",
+        "bestFor": "Gráficos, logotipos, capturas de pantalla, imágenes con transparencia",
+        "size": "Archivos más grandes",
+        "icon": "🖼️"
+      },
+      {
+        "format": "JPEG",
+        "description": "Compresión con pérdida optimizada para fotografías. Excelente para fotos con colores complejos y gradientes.",
+        "bestFor": "Fotografías, imágenes complejas, fotos web",
+        "size": "Buena compresión",
+        "icon": "📸"
+      },
+      {
+        "format": "WebP",
+        "description": "Formato moderno que ofrece compresión con y sin pérdida. Mejor compresión que JPEG con calidad similar.",
+        "bestFor": "Imágenes web, navegadores modernos, optimización de rendimiento",
+        "size": "Excelente compresión",
+        "icon": "🌐"
+      },
+      {
+        "format": "AVIF",
+        "description": "Formato de próxima generación con compresión superior. Hasta 50% mejor compresión que JPEG con mejor calidad.",
+        "bestFor": "Imágenes a prueba de futuro, máxima compresión, navegadores modernos",
+        "size": "Compresión superior",
+        "icon": "🚀"
+      },
+      {
+        "format": "GIF",
+        "description": "Soporta animación y transparencia. Limitado a 256 colores, mejor para gráficos simples y animaciones.",
+        "bestFor": "Animaciones simples, gráficos básicos, redes sociales",
+        "size": "Variable (depende de la complejidad)",
+        "icon": "🎬"
+      },
+      {
+        "format": "BMP",
+        "description": "Formato de mapa de bits no comprimido. Archivos grandes pero conservación perfecta de calidad para propósitos de archivo.",
+        "bestFor": "Almacenamiento de archivos, medios impresos, máxima calidad",
+        "size": "Archivos muy grandes",
+        "icon": "📁"
+      }
+    ],
+    "labels": {
+      "popular": "Popular",
+      "keyFeatures": "Características Clave:"
+    },
+    "tools": [
+      {
+        "id": "png-to-jpg",
+        "title": "PNG a JPG",
+        "subtitle": "Convertir con calidad",
+        "description": "Convertir imágenes PNG a formato JPG con optimización inteligente de calidad",
+        "icon": "📷",
+        "gradient": "from-blue-500 to-green-500",
+        "features": ["PNG", "JPG", "Control de calidad"],
+        "stats": "Calidad perfecta",
+        "popular": true
+      },
+      {
+        "id": "png-to-webp",
+        "title": "PNG a WebP",
+        "subtitle": "Formato moderno",
+        "description": "Convertir imágenes PNG a formato WebP moderno para mejor rendimiento web",
+        "icon": "🌐",
+        "gradient": "from-blue-500 to-purple-500",
+        "features": ["PNG", "WebP", "Optimizado para web"],
+        "stats": "Hasta 90% más pequeño",
+        "popular": false
+      },
+      {
+        "id": "png-to-avif",
+        "title": "PNG a AVIF",
+        "subtitle": "Formato de próxima generación",
+        "description": "Convertir imágenes PNG a formato AVIF ultra-moderno con compresión superior",
+        "icon": "🚀",
+        "gradient": "from-blue-500 to-orange-500",
+        "features": ["PNG", "AVIF", "Ultra compresión"],
+        "stats": "Hasta 95% más pequeño",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-png",
+        "title": "JPG a PNG",
+        "subtitle": "Agregar transparencia",
+        "description": "Convertir imágenes JPG a formato PNG con capacidad de eliminación de fondo",
+        "icon": "🖼️",
+        "gradient": "from-green-500 to-blue-500",
+        "features": ["JPG", "PNG", "Transparencia"],
+        "stats": "Calidad sin pérdidas",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-webp",
+        "title": "JPG a WebP",
+        "subtitle": "Optimización web",
+        "description": "Convertir imágenes JPG a formato WebP para mejor rendimiento web",
+        "icon": "🌐",
+        "gradient": "from-green-500 to-purple-500",
+        "features": ["JPG", "WebP", "Optimizado para web"],
+        "stats": "Hasta 85% más pequeño",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-avif",
+        "title": "JPG a AVIF",
+        "subtitle": "Ultra compresión",
+        "description": "Convertir imágenes JPG a formato AVIF con ratios de compresión superiores",
+        "icon": "🚀",
+        "gradient": "from-green-500 to-orange-500",
+        "features": ["JPG", "AVIF", "Ultra compresión"],
+        "stats": "Hasta 90% más pequeño",
+        "popular": false
+      },
+      {
+        "id": "webp-to-png",
+        "title": "WebP a PNG",
+        "subtitle": "Formato universal",
+        "description": "Convertir imágenes WebP a formato PNG para máxima compatibilidad",
+        "icon": "🖼️",
+        "gradient": "from-purple-500 to-blue-500",
+        "features": ["WebP", "PNG", "Universal"],
+        "stats": "Compatibilidad completa",
+        "popular": false
+      },
+      {
+        "id": "webp-to-jpg",
+        "title": "WebP a JPG",
+        "subtitle": "Soporte legacy",
+        "description": "Convertir imágenes WebP a formato JPG para soporte de navegadores antiguos",
+        "icon": "📷",
+        "gradient": "from-purple-500 to-green-500",
+        "features": ["WebP", "JPG", "Soporte legacy"],
+        "stats": "Compatible con navegadores",
+        "popular": false
+      },
+      {
+        "id": "webp-to-avif",
+        "title": "WebP a AVIF",
+        "subtitle": "Próxima generación",
+        "description": "Convertir imágenes WebP a formato AVIF para aún mejor compresión",
+        "icon": "🚀",
+        "gradient": "from-purple-500 to-orange-500",
+        "features": ["WebP", "AVIF", "Próxima generación"],
+        "stats": "Hasta 80% más pequeño",
+        "popular": false
+      },
+      {
+        "id": "heic-to-jpg",
+        "title": "HEIC a JPG",
+        "subtitle": "Compatibilidad iOS",
+        "description": "Convertir imágenes HEIC de dispositivos iOS a formato JPG para compatibilidad universal",
+        "icon": "📱",
+        "gradient": "from-pink-500 to-green-500",
+        "features": ["HEIC", "JPG", "Soporte iOS"],
+        "stats": "Formato universal",
+        "popular": false
+      }
+    ]
+  },
+  "compressorNavigation": {
+    "tools": {
+      "png": {
+        "subtitle": "Compresión sin pérdida",
+        "description": "Optimiza imágenes PNG preservando transparencia y calidad",
+        "features": ["PNG", "Transparencia", "Sin pérdida"],
+        "stats": "Hasta 95% de reducción",
+        "buttonText": "Comprimir PNG"
+      },
+      "jpeg": {
+        "subtitle": "Compresión inteligente",
+        "description": "Reduce tamaños de archivos JPEG con optimización inteligente de calidad",
+        "features": ["JPEG", "Control de calidad", "Procesamiento rápido"],
+        "stats": "Hasta 85% de reducción",
+        "buttonText": "Comprimir JPEG"
+      },
+      "webp": {
+        "subtitle": "Formato moderno",
+        "description": "Comprime imágenes WebP con algoritmos avanzados para optimización web",
+        "features": ["WebP", "Optimizado para web", "Alta calidad"],
+        "stats": "Hasta 90% de reducción",
+        "buttonText": "Comprimir WebP"
+      },
+      "avif": {
+        "subtitle": "Formato de próxima generación",
+        "description": "Compresión AVIF ultra-moderna con relación calidad-tamaño superior",
+        "features": ["AVIF", "Ultra compresión", "Listo para el futuro"],
+        "stats": "Hasta 95% de reducción",
+        "buttonText": "Comprimir AVIF"
+      },
+      "gif": {
+        "subtitle": "Soporte de animación",
+        "description": "Comprime GIFs animados manteniendo reproducción suave",
+        "features": ["GIF", "Animación", "Optimización de color"],
+        "stats": "Hasta 70% de reducción",
+        "buttonText": "Comprimir GIF"
+      },
+      "bmp": {
+        "subtitle": "Optimización de mapa de bits",
+        "description": "Reduce tamaños de archivos BMP preservando fidelidad de imagen",
+        "features": ["BMP", "Sin comprimir", "Alta fidelidad"],
+        "stats": "Hasta 80% de reducción",
+        "buttonText": "Comprimir BMP"
+      },
+      "pdf": {
+        "subtitle": "Compresión de documentos",
+        "description": "Reduce tamaños de archivos PDF con compresión avanzada y eliminación de metadatos",
+        "features": ["PDF", "Eliminación de metadatos", "Compresión avanzada"],
+        "stats": "Hasta 60% de reducción",
+        "buttonText": "Comprimir PDF"
+      },
+      "video": {
+        "subtitle": "Compresión de video",
+        "description": "Comprime archivos de video con tecnología FFmpeg",
+        "features": ["Múltiples formatos", "Presets de calidad", "Procesamiento del lado del cliente"],
+        "stats": "Hasta 85% de reducción",
+        "buttonText": "Comprimir Video"
+      }
+    },
+    "heroStats": [
+      { "number": "95%", "label": "Reducción Máx", "color": "blue" },
+      { "number": "6+", "label": "Formatos", "color": "green" },
+      { "number": "Rápido", "label": "Procesamiento", "color": "purple" },
+      { "number": "100%", "label": "Gratuito para siempre", "color": "orange" }
+    ],
+    "compressionTechniques": [
+      { "icon": "🧠", "title": "Selección Inteligente de Algoritmo", "description": "Selecciona automáticamente el mejor algoritmo de compresión basado en el tipo de imagen y resultado deseado para resultados óptimos.", "color": "blue" },
+      { "icon": "🎯", "title": "Preservación de Calidad", "description": "Algoritmos avanzados que mantienen la calidad visual durante la compresión reduciendo tamaños de archivo.", "color": "green" },
+      { "icon": "⚡", "title": "Optimización WebAssembly", "description": "Utiliza tecnología WebAssembly para rendimiento casi nativo y procesamiento de compresión más rápido.", "color": "purple" },
+      { "icon": "🔍", "title": "Gestión de Metadatos", "description": "Preservación y optimización inteligente de metadatos para EXIF, perfiles ICC y otros datos incorporados.", "color": "orange" },
+      { "icon": "🛡️", "title": "Soporte de Transparencia", "description": "Soporte completo para canales de transparencia en PNG, GIF y WebP con gestión inteligente de fondo.", "color": "pink" },
+      { "icon": "📐", "title": "Optimización de Calidad", "description": "Algoritmos de calidad inteligentes que se adaptan a las características de la imagen para relaciones tamaño-calidad óptimas.", "color": "indigo" }
+    ],
+    "howItWorks": [
+      { "step": "01", "title": "Cargar Imágenes", "description": "Simplemente arrastra y suelta tus imágenes o haz clic para seleccionar. Soportamos todos los formatos de imagen comunes.", "icon": "📁" },
+      { "step": "02", "title": "Elegir Configuración", "description": "Selecciona nivel de compresión, calidad o formato objetivo con vista previa en tiempo real. Opciones avanzadas para resultados profesionales.", "icon": "⚙️" },
+      { "step": "03", "title": "Procesamiento y Descarga", "description": "Obtén imágenes optimizadas instantáneamente con estadísticas de compresión detalladas. Descarga por lotes con estructura de archivos organizada.", "icon": "💾" }
+    ],
+    "bestPractices": [
+      { "category": "Fotos", "tips": ["Usa JPEG para fotos", "80-90% calidad para web", "60-80% para email", "95%+ para impresión"] },
+      { "category": "Gráficos", "tips": ["PNG para gráficos con transparencia", "WebP para navegadores modernos", "AVIF para compresión máxima", "GIF para animaciones"] }
+    ],
+    "faq": [
+      { "question": "¿Es segura la compresión de imágenes?", "answer": "Sí, nuestra compresión es completamente segura. Todo el procesamiento ocurre localmente en tu navegador con tecnologías del lado del cliente. Tus archivos nunca abandonan tu dispositivo, garantizando máxima privacidad y seguridad." },
+      { "question": "¿Se verá afectada la calidad de la imagen?", "answer": "Nuestros algoritmos de compresión inteligentes están diseñados para mantener la calidad visual durante la compresión. Puedes elegir diferentes niveles de calidad para equilibrar precisión de compresión y tamaño de archivo." },
+      { "question": "¿Qué formatos de imagen son compatibles?", "answer": "Soportamos todos los formatos comunes incluyendo PNG, JPEG, WebP, AVIF, GIF y BMP. Puedes comprimir entre todos los formatos compatibles." },
+      { "question": "¿Qué tan rápido es el proceso de compresión?", "answer": "Nuestra compresión optimizada WebAssembly es extremadamente rápida. La mayoría de las imágenes se procesan en segundos, dependiendo del tamaño y complejidad de la imagen." },
+      { "question": "¿Hay límites de tamaño de archivo?", "answer": "Nuestra compresión basada en navegador funciona mejor con archivos bajo 100MB para rendimiento óptimo. Archivos más grandes pueden tomar más tiempo pero aún son compatibles." },
+      { "question": "¿Puedo comprimir múltiples imágenes simultáneamente?", "answer": "Actualmente nos enfocamos en compresión de imagen única para los mejores resultados de calidad. Las funcionalidades de compresión por lotes están planificadas para futuras actualizaciones." }
+    ],
+    "sections": {
+      "hero": {
+        "subtitle": "Herramientas profesionales de compresión de imágenes que procesan tus imágenes con calidad perfecta y compatibilidad universal. No se requiere registro."
+      },
+      "compressionTechniques": {
+        "title": "Técnicas de Compresión Avanzadas",
+        "subtitle": "Nuestros algoritmos de compresión utilizan la tecnología más avanzada para lograr reducción de tamaño óptima manteniendo la calidad"
+      },
+      "howItWorks": {
+        "title": "Cómo Funciona",
+        "subtitle": "Comienza con nuestras herramientas de compresión en unos simples pasos"
+      },
+      "bestPractices": {
+        "title": "Mejores Prácticas de Compresión de Imágenes",
+        "subtitle": "Sigue estos consejos de expertos para obtener los mejores resultados de compresión para diferentes tipos de imágenes"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "subtitle": "Obtén respuestas a preguntas comunes sobre compresión de imágenes"
+      },
+      "cta": {
+        "title": "¿Listo para comprimir tus imágenes?",
+        "description": "Únete a millones de usuarios que confían en TinyCompressor para sus necesidades diarias de compresión de imágenes. Comienza a comprimir tus imágenes en segundos.",
+        "buttons": {
+          "startCompression": "Comenzar Compresión",
+          "backToHome": "Volver al Inicio",
+          "compressNow": "Comprimir Ahora"
+        }
+      }
+    },
+    "labels": {
+      "popular": "Popular",
+      "keyFeatures": "Características Clave:"
+    },
+    "toolsSection": {
+      "title": "Elige Tu Herramienta de Compresión",
+      "subtitle": "Herramientas de compresión de imágenes de grado profesional para diferentes formatos. Selecciona la herramienta perfecta para tus necesidades específicas de compresión."
+    }
   }
 }

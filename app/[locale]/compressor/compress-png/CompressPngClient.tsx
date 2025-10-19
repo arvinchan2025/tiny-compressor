@@ -1,10 +1,24 @@
 'use client';
 
 import React, { useState, useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import { SupportedLanguage } from '@/types/i18n';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
-import CompressorPage from '@/components/pages/CompressorPage';
-import UnifiedCompressionManager from '@/components/compressor/components/UnifiedCompressionManager';
+import ModernCompressorPage from '@/components/pages/ModernCompressorPage';
+import LoadingSpinner from '@/components/ui/LoadingSpinner';
+
+// 懒加载压缩管理器
+const UnifiedCompressionManager = dynamic(
+  () => import('@/components/compressor/components/UnifiedCompressionManager'),
+  {
+    loading: () => (
+      <div className="card-glass p-8">
+        <LoadingSpinner />
+      </div>
+    ),
+    ssr: false
+  }
+);
 
 interface CompressPngClientProps {
   locale: SupportedLanguage;
@@ -97,7 +111,7 @@ export default function CompressPngClient({ locale }: CompressPngClientProps) {
   }, []);
 
   return (
-    <CompressorPage
+    <ModernCompressorPage
       locale={locale}
       format="png"
       imageFiles={imageFiles}
@@ -113,7 +127,7 @@ export default function CompressPngClient({ locale }: CompressPngClientProps) {
       onSettingsChange={handleSettingsChange}
       onReset={handleReset}
       compressionSettings={compressionSettings}
-      maxFiles={1}
+      maxFiles={10}
     />
   );
 }

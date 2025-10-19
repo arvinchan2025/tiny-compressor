@@ -3,7 +3,8 @@
  * 支持多种格式的图像压缩和转换
  */
 
-import imageCompression from 'browser-image-compression';
+import { loadImageCompression } from './image-compression-loader';
+import type imageCompression from 'browser-image-compression';
 import { 
   ImageFile, 
   CompressionOptions, 
@@ -204,6 +205,9 @@ async function compressPng(imageFile: ImageFile, options: CompressionOptions): P
   };
   
   try {
+    // 动态加载压缩库
+    const imageCompression = await loadImageCompression();
+    
     // 使用专业库压缩
     const compressedFile = await imageCompression(imageFile.file, compressionOptions);
     
@@ -257,6 +261,9 @@ async function compressJpeg(imageFile: ImageFile, options: CompressionOptions): 
   };
   
   try {
+    // 动态加载压缩库
+    const imageCompression = await loadImageCompression();
+    
     const compressedFile = await imageCompression(imageFile.file, compressionOptions);
     const preview = URL.createObjectURL(compressedFile);
     
@@ -307,6 +314,9 @@ async function compressWebp(imageFile: ImageFile, options: CompressionOptions): 
   };
   
   try {
+    // 动态加载压缩库
+    const imageCompression = await loadImageCompression();
+    
     const compressedFile = await imageCompression(imageFile.file, compressionOptions);
     const preview = URL.createObjectURL(compressedFile);
     

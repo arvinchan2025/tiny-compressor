@@ -194,17 +194,38 @@
       {
         "title": "JPEG 压缩器",
         "description": "为 Web 和移动端压缩 JPEG 图片",
-        "url": "/compressor/compress-jpeg"
+        "url": "/compressor/compress-jpeg",
+        "icon": "📷"
       },
       {
         "title": "WebP 压缩器",
         "description": "压缩 WebP 图片",
-        "url": "/compressor/compress-webp"
+        "url": "/compressor/compress-webp",
+        "icon": "🌐"
       },
       {
         "title": "AVIF 压缩器",
         "description": "压缩 AVIF 图片",
-        "url": "/compressor/compress-avif"
+        "url": "/compressor/compress-avif",
+        "icon": "⚡"
+      },
+      {
+        "title": "GIF 压缩器",
+        "description": "在保持动画的同时减小 GIF 文件大小",
+        "url": "/compressor/compress-gif",
+        "icon": "🎬"
+      },
+      {
+        "title": "BMP 压缩器",
+        "description": "压缩 BMP 图片以获得更好的存储效果",
+        "url": "/compressor/compress-bmp",
+        "icon": "🖼️"
+      },
+      {
+        "title": "图像转换器",
+        "description": "在不同图像格式之间转换",
+        "url": "/converter",
+        "icon": "🔄"
       }
     ]
   },

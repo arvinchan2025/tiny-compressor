@@ -5,11 +5,55 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   
-  // 启用实验性功能
+  // 编译器优化
+  compiler: {
+    // 生产环境移除 console.log（保留 error 和 warn）
+    removeConsole: process.env.NODE_ENV === 'production' ? {
+      exclude: ['error', 'warn'],
+    } : false,
+  },
+  
+  // 强制动态渲染 - 禁用静态生成
+  trailingSlash: false,
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
+  },
+  
+  // 强制所有页面动态渲染
   experimental: {
     // 启用服务器组件
     serverComponentsExternalPackages: [],
+    // 强制动态渲染
+    forceSwcTransforms: true,
   },
+
+        // Webpack配置 - 支持Worker
+        webpack: (config, { isServer }) => {
+          if (!isServer) {
+            // 客户端配置
+            config.resolve.fallback = {
+              ...config.resolve.fallback,
+              fs: false,
+              path: false,
+              crypto: false,
+            };
+
+            // 优化Worker加载
+            config.module.rules.push({
+              test: /\.worker\.(js|ts)$/,
+              use: {
+                loader: 'worker-loader',
+                options: {
+                  name: 'static/[hash].worker.js',
+                  publicPath: '/_next/',
+                },
+              },
+            });
+          }
+
+          return config;
+        },
+  
   
   // 图片优化配置
   images: {

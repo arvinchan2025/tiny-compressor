@@ -1,16 +1,31 @@
 'use client';
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Locale } from '@/lib/i18n';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import StandardPageLayout from '@/components/layout/StandardPageLayout';
 import UnifiedCompressorOperation from '@/components/compressor/UnifiedCompressorOperation';
-import UnifiedCompressionManager from '@/components/compressor/components/UnifiedCompressionManager';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
 import StandardContainer from '@/components/ui/StandardContainer';
+import LoadingSpinner from '@/components/ui/LoadingSpinner';
+import CTAQuickLinks from '@/components/shared/CTAQuickLinks';
 // import { CompressorFormat } from '@/types/image';
+
+// 懒加载压缩管理器组件（较大的组件）
+const UnifiedCompressionManager = dynamic(
+  () => import('@/components/compressor/components/UnifiedCompressionManager'),
+  {
+    loading: () => (
+      <div className="card-glass p-8">
+        <LoadingSpinner />
+      </div>
+    ),
+    ssr: false
+  }
+);
 
 interface CompressorPageProps {
   locale: Locale;
@@ -49,7 +64,7 @@ export default function CompressorPage({
   compressionSettings,
   maxFiles = 1
 }: CompressorPageProps) {
-  const { t } = useModuleTranslation(`compressors/${format}`, locale);
+  const { t, isLoading: translationLoading } = useTranslation(`compressors/${format}`, locale);
 
   const formatInfo = {
     jpeg: {
@@ -124,37 +139,71 @@ export default function CompressorPage({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="section-default relative py-16"
+          className="relative overflow-hidden"
         >
-          <StandardContainer variant="content" size="lg" center>
-            <div className="text-center max-w-4xl mx-auto">
-              <motion.div
-                initial={{ scale: 0.8 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-5 py-2 bg-white/95 dark:bg-gray-850/95 backdrop-blur-md border-2 border-blue-200 dark:border-blue-700/50 rounded-full text-sm font-semibold text-blue-700 dark:text-blue-300 mb-8 shadow-lg transition-all"
-              >
-                <span className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full animate-pulse" />
-                {currentFormat.name} {t('hero.badge')}
-              </motion.div>
-              
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 dark:from-gray-100 dark:via-blue-300 dark:to-purple-300 bg-clip-text text-transparent mb-6"
-              >
-                {t('hero.title')}
-              </motion.h1>
-              
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed transition-colors"
-              >
-                {t('hero.description')}
-              </motion.p>
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-purple-600/5 to-pink-600/5 dark:from-blue-400/10 dark:via-purple-400/10 dark:to-pink-400/10" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl" />
+          
+          <StandardContainer variant="content" size="xl" center className="relative z-10">
+            <div className="text-center pt-20 pb-16">
+              {/* Main Headline */}
+              <div className="mb-12">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    {t('hero.title')}
+                  </span>
+                </h1>
+                
+                <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
+                  {t('hero.description')}
+                </p>
+              </div>
+
+              {/* Stats Badge */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-blue-600 dark:text-blue-400">
+                      90%
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Size Reduction
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-green-600 dark:text-green-400">
+                      6+
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Formats
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-purple-600 dark:text-purple-400">
+                      100%
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Free
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-orange-600 dark:text-orange-400">
+                      &lt;3s
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Processing
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </StandardContainer>
         </motion.section>
@@ -387,56 +436,45 @@ export default function CompressorPage({
 
         {/* Quick Links Section - CTA Style */}
         {t('quickLinks.title') && (
-          <motion.section
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 2.4 }}
-            className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-700 dark:via-purple-700 dark:to-pink-700 relative overflow-hidden transition-colors"
-          >
-            {/* Background Decorative Layers */}
-            <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
-            <div className="absolute inset-0">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent" />
-              <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-white/10 to-transparent" />
-            </div>
-            
-            <StandardContainer variant="page" size="lg" className="relative z-10">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-white mb-4">
-                  {t('quickLinks.title')}
-                </h2>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                {Array.from({ length: 6 }, (_, index) => {
-                  const itemTitle = t(`quickLinks.items.${index}.title`);
-                  const itemDescription = t(`quickLinks.items.${index}.description`);
-                  const itemUrl = t(`quickLinks.items.${index}.url`);
+          <div className="relative z-10">
+            <CTAQuickLinks
+              title={t('quickLinks.title')}
+              description={t('quickLinks.description')}
+              items={(() => {
+                // 定义默认的图标映射
+                const defaultIcons = ['📷', '🌐', '⚡', '🎬', '🖼️', '🔄'];
+                
+                // 尝试获取完整的 quickLinks.items 数组
+                const quickLinksItems = t('quickLinks.items', { returnObjects: true });
+                
+                // 如果成功获取到数组，直接使用
+                if (Array.isArray(quickLinksItems)) {
+                  return quickLinksItems.filter(item => item && item.title).map((item, index) => ({
+                    title: item.title,
+                    description: item.description,
+                    url: item.url,
+                    icon: item.icon || defaultIcons[index] || '🔧'
+                  }));
+                }
+                
+                // 否则使用原来的逐个获取方法，并添加默认图标
+                return Array.from({ length: 6 }, (_, index) => {
+                  const title = t(`quickLinks.items.${index}.title`);
+                  const description = t(`quickLinks.items.${index}.description`);
+                  const url = t(`quickLinks.items.${index}.url`);
+                  const icon = t(`quickLinks.items.${index}.icon`);
                   
-                  if (!itemTitle || itemTitle.includes('quickLinks.items')) return null;
-                  
-                  return (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 2.6 + index * 0.1 }}
-                    >
-                      <Link href={itemUrl || '#'}>
-                        <div className="card-cta p-6 h-full group">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                            {itemTitle}
-                          </h3>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors">
-                            {itemDescription}
-                          </p>
-                        </div>
-                      </Link>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </StandardContainer>
-          </motion.section>
+                  return {
+                    title,
+                    description,
+                    url,
+                    icon: icon || defaultIcons[index] || '🔧'
+                  };
+                }).filter(item => item.title && !item.title.includes('quickLinks.items'));
+              })()}
+              maxItems={6}
+            />
+          </div>
         )}
       </div>
     </StandardPageLayout>

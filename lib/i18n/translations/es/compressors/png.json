@@ -193,18 +193,39 @@
     "items": [
       {
         "title": "Compresor JPEG",
-        "description": "Comprime imágenes JPEG",
-        "url": "/compressor/compress-jpeg"
+        "description": "Comprimir imágenes JPEG para web y móvil",
+        "url": "/compressor/compress-jpeg",
+        "icon": "📷"
       },
       {
         "title": "Compresor WebP",
-        "description": "Comprime imágenes WebP",
-        "url": "/compressor/compress-webp"
+        "description": "Comprimir imágenes WebP",
+        "url": "/compressor/compress-webp",
+        "icon": "🌐"
       },
       {
         "title": "Compresor AVIF",
-        "description": "Comprime imágenes AVIF",
-        "url": "/compressor/compress-avif"
+        "description": "Comprimir imágenes AVIF",
+        "url": "/compressor/compress-avif",
+        "icon": "⚡"
+      },
+      {
+        "title": "Compresor GIF",
+        "description": "Reducir tamaños de archivos GIF preservando animaciones",
+        "url": "/compressor/compress-gif",
+        "icon": "🎬"
+      },
+      {
+        "title": "Compresor BMP",
+        "description": "Comprimir imágenes BMP para mejor almacenamiento",
+        "url": "/compressor/compress-bmp",
+        "icon": "🖼️"
+      },
+      {
+        "title": "Convertidor de imágenes",
+        "description": "Convertir entre diferentes formatos de imagen",
+        "url": "/converter",
+        "icon": "🔄"
       }
     ]
   },

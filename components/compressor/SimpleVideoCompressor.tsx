@@ -216,9 +216,6 @@ export default function SimpleVideoCompressor({
           title={t('operation.progress.compressing')}
           subtitle={`Processing... ${Math.round(progress)}%`}
           progress={progress}
-          currentTime={0}
-          totalDuration={0}
-          estimatedTimeRemaining={0}
           accentColor="blue"
         />
         <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-6">
@@ -327,7 +324,7 @@ export default function SimpleVideoCompressor({
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            {t('operation.actions.backToSimple', 'Back to Simple Compression')}
+            {t('operation.actions.backToSimple') || 'Back to Simple Compression'}
           </button>
         </div>
         
@@ -343,7 +340,7 @@ export default function SimpleVideoCompressor({
               fps: customFps,
               codec: customCodec,
               removeAudio: removeAudio
-            } : undefined}
+            } as any : undefined}
             onComplete={(result) => {
               // 将 FFmpeg 的结果转换为 Simple 结果格式
               const simpleResult: SimpleCompressionResult = {

@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { FileText, Image, X } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 interface FileInfoCardProps {
   fileName: string;
@@ -37,12 +36,7 @@ export default function FileInfoCard({
   const IconComponent = fileType === 'pdf' ? FileText : Image;
 
   return (
-    <motion.div
-      className="card-glass p-6"
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-    >
+    <div className="card-glass p-6 animate-scale-in">
       <div className="flex items-start gap-4">
         <div className={`p-3 bg-${accentColor}-500/10 dark:bg-${accentColor}-500/20 rounded-lg`}>
           <IconComponent className={`w-8 h-8 text-${accentColor}-600 dark:text-${accentColor}-400`} />
@@ -81,14 +75,14 @@ export default function FileInfoCard({
         {onRemove && (
           <button
             onClick={onRemove}
-            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors duration-200"
             aria-label="Remove file"
           >
-            <X className="w-5 h-5 text-text-secondary hover:text-text-primary" />
+            <X className="w-5 h-5 text-text-secondary hover:text-text-primary transition-colors duration-200" />
           </button>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }
 

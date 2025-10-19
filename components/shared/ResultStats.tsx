@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 
 interface StatItem {
   label: string;
@@ -27,13 +26,10 @@ export default function ResultStats({ stats }: ResultStatsProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {stats.map((stat, index) => (
-        <motion.div
+        <div
           key={index}
-          className="card-glass p-4 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: index * 0.1 }}
-          whileHover={{ y: -2 }}
+          className="card-glass p-4 text-center animate-slide-up transition-transform duration-300 hover:-translate-y-0.5"
+          style={{ animationDelay: `${index * 100}ms` }}
         >
           <div className={`text-3xl font-bold mb-1 ${colorClasses[stat.color || 'gray']}`}>
             {stat.value}
@@ -41,7 +37,7 @@ export default function ResultStats({ stats }: ResultStatsProps) {
           <div className="text-sm text-text-secondary">
             {stat.label}
           </div>
-        </motion.div>
+        </div>
       ))}
     </div>
   );

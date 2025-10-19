@@ -7,9 +7,10 @@
 
 import React, { useState, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
+import { ImageFile, CompressionOptions } from '@/types/image';
+import { ConversionResult } from '@/lib/image-processing/types';
 import { convertImage, validateImageFile, getImageMetadata } from '@/lib/image-processing/compression';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import { Locale } from '@/lib/i18n';
 import ConversionResultsPanel from './ConversionResultsPanel';
 import ModeSelector from '@/components/compressor/components/ModeSelector';
@@ -30,7 +31,7 @@ interface UnifiedConversionManagerProps {
   targetFormat: string;
   locale: Locale;
   maxFiles?: number;
-  onConversionComplete?: (results: CompressionResult[]) => void;
+  onConversionComplete?: (results: ConversionResult[]) => void;
   onError?: (error: string) => void;
 }
 
@@ -42,13 +43,13 @@ export default function UnifiedConversionManager({
   onConversionComplete,
   onError
 }: UnifiedConversionManagerProps) {
-  const { t } = useModuleTranslation(`converters/${sourceFormat}-to-${targetFormat}`, locale);
+  const { t } = useTranslation(`converters/${sourceFormat}-to-${targetFormat}`, locale);
   
   // 状态管理
   const [imageFiles, setImageFiles] = useState<ImageFile[]>([]);
   const [isConverting, setIsConverting] = useState(false);
   const [conversionProgress, setConversionProgress] = useState(0);
-  const [conversionResults, setConversionResults] = useState<CompressionResult[]>([]);
+  const [conversionResults, setConversionResults] = useState<ConversionResult[]>([]);
   const [isAdvancedMode, setIsAdvancedMode] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [resetKey, setResetKey] = useState(0); // 用于重置文件输入
@@ -136,8 +137,29 @@ export default function UnifiedConversionManager({
           colorSpace: settings.colorSpace
         };
 
-        const result = await convertImage(file, sourceFormat, targetFormat, convertOptions);
-        results.push(result);
+        const compressionResult = await convertImage(file, sourceFormat, targetFormat, convertOptions);
+        
+        // 转换为 ConversionResult 格式
+        const conversionResult: ConversionResult = {
+          id: compressionResult.id,
+          originalFile: compressionResult.originalFile,
+          convertedFile: compressionResult.compressedFile,
+          originalSize: compressionResult.originalSize,
+          convertedSize: compressionResult.compressedSize,
+          conversionRatio: compressionResult.compressionRatio,
+          processingTime: compressionResult.processingTime,
+          settings: {
+            sourceFormat,
+            targetFormat,
+            quality: settings.quality,
+            keepMetadata: settings.preserveMetadata,
+            optimizationLevel: 9
+          },
+          preview: compressionResult.preview,
+          metadata: compressionResult.metadata
+        };
+        
+        results.push(conversionResult);
       }
 
       setConversionResults(results);
@@ -192,10 +214,10 @@ export default function UnifiedConversionManager({
     setSettings(prev => ({ ...prev, ...newSettings }));
   }, []);
 
-  // ⭐ 智能模式检测：单文件使用优化体验
+  // ⭐ 单文件模式：始终使用单文件体验
   const isSingleFileMode = useMemo(() => 
-    imageFiles.length === 1 && conversionResults.length === 0,
-    [imageFiles.length, conversionResults.length]
+    true, // 始终使用单文件模式
+    []
   );
 
   // ⭐ 单文件模式：使用 SingleFileConverter

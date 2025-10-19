@@ -147,9 +147,141 @@
     ]
   },
   "cta": {
-    "title": "¿Listo para Optimizar Tus Imágenes?",
-    "description": "Únete a millones de usuarios que confían en TinyCompressor para sus necesidades de procesamiento de imágenes. ¡Comienza a optimizar tus imágenes hoy y experimenta la diferencia!",
+    "title": "¿Listo para Optimizar Tus Archivos?",
+    "description": "Únete a millones de usuarios que confían en TinyCompressor para sus necesidades diarias de optimización de archivos. Comienza a procesar tus imágenes, documentos y videos en segundos.",
     "getStarted": "Empezar Ahora",
-    "learnMore": "Saber Más"
+    "learnMore": "Saber Más",
+    "buttons": {
+      "startCompression": "Iniciar Compresión",
+      "convertFormats": "Convertir Formatos"
+    }
+  },
+  "sections": {
+    "chooseTool": {
+      "title": "Elige Tu Herramienta",
+      "subtitle": "Herramientas de grado profesional para imágenes, documentos y videos. Selecciona la herramienta perfecta para tus necesidades específicas de optimización de archivos."
+    },
+    "benefits": {
+      "title": "¿Por qué elegir TinyCompressor?",
+      "subtitle": "Construido con tecnología moderna y experiencia de usuario en mente"
+    }
+  },
+  "labels": {
+    "mostPopular": "Más Popular"
+  },
+  "toolCategories": {
+    "images": {
+      "title": "Compresión de Imágenes",
+      "subtitle": "Optimizar fotos y gráficos",
+      "description": "Reduce el tamaño de archivos manteniendo la calidad para web, email y almacenamiento",
+      "icon": "🗜️",
+      "features": ["PNG", "JPEG", "WebP", "AVIF", "GIF", "BMP"],
+      "stats": "Hasta 95% de reducción",
+      "buttonText": "Comprimir Imágenes"
+    },
+    "conversion": {
+      "title": "Conversión de Formatos",
+      "subtitle": "Transformar tipos de archivo",
+      "description": "Convierte entre diferentes formatos de imagen con perfecta compatibilidad",
+      "icon": "🔄",
+      "features": ["PNG↔JPG", "WebP↔PNG", "HEIC↔JPG", "AVIF↔PNG"],
+      "stats": "10+ conversiones",
+      "buttonText": "Convertir Imágenes"
+    },
+    "pdf": {
+      "title": "Compresión PDF",
+      "subtitle": "Reducir documentos",
+      "description": "Reduce el tamaño de archivos PDF con compresión avanzada y eliminación de metadatos",
+      "icon": "📄",
+      "features": ["PDF", "Compresión de imágenes", "Eliminación de metadatos"],
+      "stats": "Hasta 60% de reducción",
+      "buttonText": "Comprimir PDF"
+    },
+    "video": {
+      "title": "Procesamiento de Video",
+      "subtitle": "Optimizar videos",
+      "description": "Comprime archivos de video con tecnología FFmpeg y preajustes de calidad",
+      "icon": "🎬",
+      "features": ["MP4", "AVI", "MOV", "WebM"],
+      "stats": "Hasta 85% de reducción",
+      "buttonText": "Comprimir Videos"
+    }
+  },
+  "benefits": [
+    {
+      "icon": "🔒",
+      "title": "Privacidad Primero",
+      "description": "Todo el procesamiento ocurre localmente en tu navegador usando tecnologías del lado del cliente. Tus archivos nunca salen de tu dispositivo.",
+      "color": "blue"
+    },
+    {
+      "icon": "⚡",
+      "title": "Súper Rápido",
+      "description": "Algoritmos optimizados impulsados por WebAssembly entregan resultados en segundos, no minutos.",
+      "color": "green"
+    },
+    {
+      "icon": "🆓",
+      "title": "Completamente Gratis",
+      "description": "Sin límites, sin suscripciones, sin costos ocultos. Úsalo tanto como necesites sin marcas de agua.",
+      "color": "purple"
+    },
+    {
+      "icon": "🎯",
+      "title": "Alta Calidad",
+      "description": "Algoritmos de compresión de grado profesional que mantienen la fidelidad visual mientras reducen el tamaño del archivo.",
+      "color": "orange"
+    }
+  ],
+  "hero": {
+    "subtitle": "Herramientas profesionales de optimización de archivos que reducen tamaños hasta 95% manteniendo excelente calidad. No se requiere registro.",
+    "quickActions": {
+      "compressFiles": "Comprimir Archivos",
+      "convertFormats": "Convertir Formatos"
+    }
+  },
+  "heroStats": [
+    {
+      "number": "15M+",
+      "label": "Archivos Procesados",
+      "color": "blue"
+    },
+    {
+      "number": "95%",
+      "label": "Reducción Máxima",
+      "color": "green"
+    },
+    {
+      "number": "16+",
+      "label": "Formatos Soportados",
+      "color": "purple"
+    },
+    {
+      "number": "100%",
+      "label": "Gratis Para Siempre",
+      "color": "orange"
+    }
+  ],
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre nuestras herramientas de optimización de archivos",
+    "items": [
+      {
+        "question": "¿Cómo TinyCompressor reduce el tamaño de archivos?",
+        "answer": "Usamos algoritmos de compresión avanzados que analizan tus archivos y eliminan datos innecesarios mientras mantienen la calidad. Nuestras herramientas pueden reducir el tamaño de archivos hasta 95% para imágenes, 60% para PDFs y 85% para videos sin pérdida notable de calidad."
+      },
+      {
+        "question": "¿Es seguro usar TinyCompressor?",
+        "answer": "¡Absolutamente seguro! Todo el procesamiento ocurre localmente en tu navegador usando tecnologías del lado del cliente. Tus archivos nunca se suben a nuestros servidores, garantizando privacidad y seguridad completas."
+      },
+      {
+        "question": "¿Qué formatos de archivo soporta TinyCompressor?",
+        "answer": "Soportamos 16+ formatos incluyendo PNG, JPEG, WebP, AVIF, GIF, BMP para imágenes; PDF para documentos; y MP4, AVI, MOV, WebM para videos. Puedes comprimir o convertir entre formatos compatibles."
+      },
+      {
+        "question": "¿TinyCompressor es realmente gratis?",
+        "answer": "¡Sí! TinyCompressor es 100% gratis para siempre sin costos ocultos, suscripciones o límites de tamaño de archivo. No se requiere registro y no se añaden marcas de agua a tus archivos."
+      }
+    ]
   }
 }

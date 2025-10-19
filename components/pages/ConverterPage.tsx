@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { Locale } from '@/lib/i18n';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import StandardPageLayout from '@/components/layout/StandardPageLayout';
-import UnifiedConversionManager from '@/components/converter/components/UnifiedConversionManager';
 import { ImageFile } from '@/types/image';
 import StandardContainer from '@/components/ui/StandardContainer';
 import StandardButton from '@/components/ui/StandardButton';
@@ -13,6 +13,20 @@ import StandardIcon from '@/components/ui/StandardIcon';
 import Link from 'next/link';
 import { getNavigationPagePath } from '@/lib/i18n/path-utils';
 import LoadingSpinner from '@/components/ui/LoadingSpinner';
+import CTAQuickLinks from '@/components/shared/CTAQuickLinks';
+
+// 懒加载转换管理器组件
+const UnifiedConversionManager = dynamic(
+  () => import('@/components/converter/components/UnifiedConversionManager'),
+  {
+    loading: () => (
+      <div className="card-glass p-8">
+        <LoadingSpinner />
+      </div>
+    ),
+    ssr: false
+  }
+);
 
 interface ConverterPageProps {
   locale: Locale;
@@ -28,10 +42,16 @@ export default function ConverterPage({
   maxFiles = 10
 }: ConverterPageProps) {
   const conversionModule = `${sourceFormat}-to-${targetFormat}`;
-  const { t, isLoading } = useModuleTranslation(`converters/${conversionModule}`, locale);
+  const { t, isLoading } = useTranslation(`converters/${conversionModule}`, locale);
 
   if (isLoading) {
-    return <LoadingSpinner />;
+    return (
+      <StandardPageLayout locale={locale}>
+        <div className="flex items-center justify-center min-h-screen">
+          <LoadingSpinner />
+        </div>
+      </StandardPageLayout>
+    );
   }
 
   return (
@@ -42,16 +62,71 @@ export default function ConverterPage({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="section-default py-12"
+          className="relative overflow-hidden"
         >
-          <StandardContainer variant="page" size="lg">
-            <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
-                {t('hero.title')}
-              </h1>
-              <p className="text-lg text-gray-600 dark:text-gray-300 transition-colors">
-                {t('hero.subtitle')}
-              </p>
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-purple-600/5 to-pink-600/5 dark:from-blue-400/10 dark:via-purple-400/10 dark:to-pink-400/10" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl" />
+          
+          <StandardContainer variant="content" size="xl" center className="relative z-10">
+            <div className="text-center pt-20 pb-16">
+              {/* Main Headline */}
+              <div className="mb-12">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    {t('hero.title') || `${sourceFormat.toUpperCase()} to ${targetFormat.toUpperCase()} Converter`}
+                  </span>
+                </h1>
+                
+                <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
+                  {t('hero.subtitle') || `Professional format conversion to transform your images with quality preservation`}
+                </p>
+              </div>
+
+              {/* Stats Badge */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-blue-600 dark:text-blue-400">
+                      10+
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Formats
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-green-600 dark:text-green-400">
+                      100%
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Quality
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-purple-600 dark:text-purple-400">
+                      100%
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Free
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-orange-600 dark:text-orange-400">
+                      &lt;1s
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Speed
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </StandardContainer>
         </motion.section>
@@ -89,12 +164,12 @@ export default function ConverterPage({
         >
           <StandardContainer variant="page" size="lg">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
-                {t('comparison.title')}
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
-                {t('comparison.subtitle')}
-              </p>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                  {t('comparison.title') || `${sourceFormat.toUpperCase()} vs ${targetFormat.toUpperCase()} Format Comparison`}
+                </h2>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  {t('comparison.subtitle') || 'Understanding the differences between these formats'}
+                </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -109,14 +184,14 @@ export default function ConverterPage({
                     {sourceFormat.toUpperCase()}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 transition-colors">
-                    {t(`comparison.${sourceFormat}.description`)}
+                    {t(`comparison.${sourceFormat}.description`) || `${sourceFormat.toUpperCase()} format description`}
                   </p>
                 </div>
                 <ul className="space-y-2">
                   {Array.from({ length: 4 }, (_, index) => (
                     <li key={index} className="flex items-center text-gray-600 dark:text-gray-300 transition-colors">
                       <StandardIcon name="check" size="sm" className="mr-2 text-green-500 dark:text-green-400" />
-                      {t(`comparison.${sourceFormat}.features.${index}`)}
+                      {t(`comparison.${sourceFormat}.features.${index}`) || `Feature ${index + 1}`}
                     </li>
                   ))}
                 </ul>
@@ -133,14 +208,14 @@ export default function ConverterPage({
                     {targetFormat.toUpperCase()}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 transition-colors">
-                    {t(`comparison.${targetFormat}.description`)}
+                    {t(`comparison.${targetFormat}.description`) || `${targetFormat.toUpperCase()} format description`}
                   </p>
                 </div>
                 <ul className="space-y-2">
                   {Array.from({ length: 4 }, (_, index) => (
                     <li key={index} className="flex items-center text-gray-600 dark:text-gray-300 transition-colors">
                       <StandardIcon name="check" size="sm" className="mr-2 text-green-500 dark:text-green-400" />
-                      {t(`comparison.${targetFormat}.features.${index}`)}
+                      {t(`comparison.${targetFormat}.features.${index}`) || `Feature ${index + 1}`}
                     </li>
                   ))}
                 </ul>
@@ -159,11 +234,11 @@ export default function ConverterPage({
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
-                  {t('features.title')}
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                  {t('features.title') || `${sourceFormat.toUpperCase()} to ${targetFormat.toUpperCase()} Conversion Features`}
                 </h2>
-                <p className="text-base text-gray-600 dark:text-gray-300 transition-colors">
-                  {t('features.description')}
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  {t('features.description') || 'Why convert for better quality and features'}
                 </p>
               </div>
               
@@ -208,11 +283,11 @@ export default function ConverterPage({
           <StandardContainer variant="content" size="lg" center>
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3 transition-colors">
-                  {t('technicalPrinciples.title')}
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                  {t('technicalPrinciples.title') || `How ${sourceFormat.toUpperCase()} to ${targetFormat.toUpperCase()} Conversion Works`}
                 </h2>
-                <p className="text-base text-gray-600 dark:text-gray-300 transition-colors">
-                  {t('technicalPrinciples.description')}
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                  {t('technicalPrinciples.description') || 'Understanding the technical process of conversion'}
                 </p>
               </div>
               
@@ -268,11 +343,11 @@ export default function ConverterPage({
         >
           <StandardContainer variant="page" size="lg">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
-                {t('useCases.title')}
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                {t('useCases.title') || `When & How to Convert ${sourceFormat.toUpperCase()} to ${targetFormat.toUpperCase()}`}
               </h2>
-              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
-                {t('useCases.description')}
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                {t('useCases.description') || 'Common scenarios and best practices for conversion'}
               </p>
             </div>
 
@@ -313,11 +388,11 @@ export default function ConverterPage({
         >
           <StandardContainer variant="page" size="lg">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 transition-colors">
-                {t('faq.title')}
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+                {t('faq.title') || 'Frequently Asked Questions'}
               </h2>
-              <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
-                {t('faq.description')}
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                {t('faq.description') || 'Common questions about conversion'}
               </p>
             </div>
 
@@ -348,59 +423,37 @@ export default function ConverterPage({
         </motion.section>
 
         {/* Quick Links Section - CTA Style */}
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 2.2 }}
-          className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-700 dark:via-purple-700 dark:to-pink-700 relative overflow-hidden transition-colors"
-        >
-          {/* Background Decorative Layers */}
-          <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
-          <div className="absolute inset-0">
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent" />
-            <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-white/10 to-transparent" />
-          </div>
-          
-          <StandardContainer variant="page" size="lg" className="relative z-10">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-white mb-4">
-                {t('quickLinks.title')}
-              </h2>
-              <p className="text-blue-100 dark:text-blue-200 transition-colors">
-                {t('quickLinks.description')}
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {Array.from({ length: 6 }, (_, index) => {
-                const itemTitle = t(`quickLinks.items.${index}.title`);
-                const itemDescription = t(`quickLinks.items.${index}.description`);
-                const itemUrl = t(`quickLinks.items.${index}.url`);
-                
-                if (!itemTitle || itemTitle.includes('quickLinks.items')) return null;
-                
-                return (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 2.4 + index * 0.1 }}
-                  >
-                    <Link href={itemUrl || '#'}>
-                      <div className="card-cta p-6 h-full group">
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                          {itemTitle}
-                        </h3>
-                        <p className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors">
-                          {itemDescription}
-                        </p>
-                      </div>
-                    </Link>
-                  </motion.div>
-                );
-              }).filter(Boolean)}
-            </div>
-          </StandardContainer>
-        </motion.section>
+        <CTAQuickLinks
+          title={t('quickLinks.title') || 'Related Tools'}
+          description={t('quickLinks.description') || 'Explore more conversion and compression tools'}
+          items={(() => {
+            const defaultIcons = ['📷', '🌐', '⚡', '🎬', '🖼️', '🔄'];
+            const quickLinksItems = t('quickLinks.items', { returnObjects: true });
+
+            if (Array.isArray(quickLinksItems)) {
+              return quickLinksItems.filter(item => item && item.title).map((item, index) => ({
+                title: item.title,
+                description: item.description,
+                url: item.url,
+                icon: item.icon || defaultIcons[index] || '🔧'
+              }));
+            }
+
+            return Array.from({ length: 6 }, (_, index) => {
+              const title = t(`quickLinks.items.${index}.title`);
+              const description = t(`quickLinks.items.${index}.description`);
+              const url = t(`quickLinks.items.${index}.url`);
+
+              return {
+                title,
+                description,
+                url,
+                icon: defaultIcons[index] || '🔧'
+              };
+            }).filter(item => item.title && !item.title.includes('quickLinks.items'));
+          })()}
+          maxItems={6}
+        />
 
       </div>
     </StandardPageLayout>

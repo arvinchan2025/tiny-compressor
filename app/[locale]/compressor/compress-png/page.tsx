@@ -2,6 +2,11 @@ import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
 import CompressPngClient from './CompressPngClient';
 
+// 强制动态渲染
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
+
 interface CompressPngPageProps {
   params: {
     locale: SupportedLanguage;

@@ -193,18 +193,39 @@
     "items": [
       {
         "title": "JPEG 압축기",
-        "description": "웹 및 모바일용 JPEG 이미지 압축",
-        "url": "/compressor/compress-jpeg"
+        "description": "웹과 모바일을 위한 JPEG 이미지 압축",
+        "url": "/compressor/compress-jpeg",
+        "icon": "📷"
       },
       {
         "title": "WebP 압축기",
         "description": "WebP 이미지 압축",
-        "url": "/compressor/compress-webp"
+        "url": "/compressor/compress-webp",
+        "icon": "🌐"
       },
       {
         "title": "AVIF 압축기",
         "description": "AVIF 이미지 압축",
-        "url": "/compressor/compress-avif"
+        "url": "/compressor/compress-avif",
+        "icon": "⚡"
+      },
+      {
+        "title": "GIF 압축기",
+        "description": "애니메이션을 유지하면서 GIF 파일 크기 줄이기",
+        "url": "/compressor/compress-gif",
+        "icon": "🎬"
+      },
+      {
+        "title": "BMP 압축기",
+        "description": "더 나은 저장을 위한 BMP 이미지 압축",
+        "url": "/compressor/compress-bmp",
+        "icon": "🖼️"
+      },
+      {
+        "title": "이미지 변환기",
+        "description": "다양한 이미지 형식 간 변환",
+        "url": "/converter",
+        "icon": "🔄"
       }
     ]
   },

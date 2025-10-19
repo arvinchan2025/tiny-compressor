@@ -1,92 +1,109 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { Locale } from '@/lib/i18n';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import StandardPageLayout from '@/components/layout/StandardPageLayout';
 import StandardContainer from '@/components/ui/StandardContainer';
-import SingleFilePdfCompressor from '@/components/compressor/SingleFilePdfCompressor';
 import LoadingSpinner from '@/components/ui/LoadingSpinner';
+import CTAQuickLinks from '@/components/shared/CTAQuickLinks';
+
+// 懒加载 PDF 压缩器组件
+const SingleFilePdfCompressor = dynamic(
+  () => import('@/components/compressor/SingleFilePdfCompressor'),
+  {
+    loading: () => (
+      <div className="card-glass p-12">
+        <LoadingSpinner />
+      </div>
+    ),
+    ssr: false // PDF 压缩是纯客户端功能
+  }
+);
 
 interface PdfCompressorPageProps {
   locale: Locale;
 }
 
 export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
-  const { t, isLoading } = useModuleTranslation('compressors/pdf', locale);
-
-  // 调试：检查翻译加载
-  React.useEffect(() => {
-    console.log('=== PdfCompressorPage Debug ===');
-    console.log('locale:', locale);
-    console.log('isLoading:', isLoading);
-    
-    // 测试字符串翻译
-    const titleTest = t('features.title');
-    console.log('features.title:', titleTest);
-    console.log('Type:', typeof titleTest);
-    
-    // 测试数组翻译
-    const itemsTest = t('features.items', { returnObjects: true });
-    console.log('features.items (with returnObjects):', itemsTest);
-    console.log('Type:', typeof itemsTest);
-    console.log('Is Array:', Array.isArray(itemsTest));
-    console.log('Length:', itemsTest?.length);
-    console.log('Has .map():', typeof itemsTest?.map === 'function');
-    
-    if (!Array.isArray(itemsTest)) {
-      console.error('❌ features.items 不是数组！实际返回:', itemsTest);
-    }
-  }, [t, isLoading, locale]);
-
-  if (isLoading) {
-    return <LoadingSpinner />;
-  }
+  const { t, isLoading } = useTranslation('compressors/pdf' as any, locale as any);
 
   return (
     <StandardPageLayout locale={locale}>
       <div className="page-base min-h-screen">
         {/* Hero Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="section-default relative py-16"
-        >
-          <StandardContainer variant="content" size="lg" center>
-            <div className="text-center max-w-4xl mx-auto">
-              <motion.div
-                initial={{ scale: 0.8 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-5 py-2 bg-white/95 dark:bg-gray-850/95 backdrop-blur-md border-2 border-blue-200 dark:border-blue-700/50 rounded-full text-sm font-semibold text-blue-700 dark:text-blue-300 mb-8 shadow-lg transition-all"
-              >
-                <span className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full animate-pulse" />
-                PDF {t('hero.badge')}
-              </motion.div>
-              
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 dark:from-gray-100 dark:via-blue-300 dark:to-purple-300 bg-clip-text text-transparent mb-6"
-              >
-                {t('hero.title')}
-              </motion.h1>
-              
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
-              >
-                {t('hero.description')}
-              </motion.p>
+        <section className="relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-purple-600/5 to-pink-600/5 dark:from-blue-400/10 dark:via-purple-400/10 dark:to-pink-400/10" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl" />
+          
+          <StandardContainer variant="content" size="xl" center className="relative z-10">
+            <div className="text-center pt-20 pb-16">
+              {/* Main Headline */}
+              <div className="mb-12">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    {isLoading ? 'PDF Compressor' : t('hero.title')}
+                  </span>
+                </h1>
+                
+                <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
+                  {isLoading 
+                    ? 'Professional PDF compression to reduce file sizes while maintaining quality and readability'
+                    : t('hero.subtitle')
+                  }
+                </p>
+              </div>
+
+              {/* Stats Badge */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-blue-600 dark:text-blue-400">
+                      85%
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Size Reduction
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-green-600 dark:text-green-400">
+                      100%
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Quality
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-purple-600 dark:text-purple-400">
+                      100%
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Free
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
+                    <div className="text-3xl font-bold mb-2 text-orange-600 dark:text-orange-400">
+                      &lt;5s
+                    </div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      Processing
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </StandardContainer>
-        </motion.section>
+        </section>
 
         {/* Compressor Component */}
         <motion.section
@@ -117,7 +134,7 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6"
               >
-                {t('features.title')}
+                {isLoading ? 'PDF Format Features' : t('features.title')}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -125,7 +142,7 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
               >
-                {t('features.description')}
+                {isLoading ? 'Why PDF is the universal standard for document sharing' : t('features.description')}
               </motion.p>
             </div>
 
@@ -135,7 +152,10 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
               transition={{ duration: 0.6, delay: 0.9 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
-              {(t('features.items', { returnObjects: true }) as any[]).map((feature: any, index: number) => (
+              {(() => {
+                const features = t('features.items', { returnObjects: true });
+                const featuresArray = Array.isArray(features) ? features : [];
+                return featuresArray.map((feature: any, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -151,7 +171,8 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                     {feature.description}
                   </p>
                 </motion.div>
-              ))}
+                ));
+              })()}
             </motion.div>
           </StandardContainer>
         </motion.section>
@@ -162,7 +183,7 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           className="section-subtle relative py-16"
-          data-technical-section
+          data-technical-principles-section
         >
           <StandardContainer variant="content" size="lg" center>
             <div className="text-center max-w-4xl mx-auto mb-16">
@@ -172,7 +193,7 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 1.3 }}
                 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6"
               >
-                {t('technicalPrinciples.title')}
+                {isLoading ? 'How PDF Compression Works' : t('technicalPrinciples.title')}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -180,12 +201,18 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 1.4 }}
                 className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
               >
-                {t('technicalPrinciples.description')}
+                {isLoading 
+                  ? 'Understanding the technical principles behind PDF compression helps you optimize documents effectively.'
+                  : t('technicalPrinciples.description')
+                }
               </motion.p>
             </div>
 
             <div className="space-y-8">
-              {(t('technicalPrinciples.items', { returnObjects: true }) as any[]).map((item: any, index: number) => (
+              {(() => {
+                const items = t('technicalPrinciples.items', { returnObjects: true });
+                const itemsArray = Array.isArray(items) ? items : [];
+                return itemsArray.map((item: any, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -203,7 +230,7 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                         {item.description}
                       </p>
                       <ul className="space-y-2">
-                        {item.benefits.map((benefit: string, benefitIndex: number) => (
+                        {(item.benefits && Array.isArray(item.benefits) ? item.benefits : []).map((benefit: string, benefitIndex: number) => (
                           <li key={benefitIndex} className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
                             <span className="text-blue-500 dark:text-blue-400 mt-1">✓</span>
                             <span>{benefit}</span>
@@ -213,7 +240,8 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                     </div>
                   </div>
                 </motion.div>
-              ))}
+                ));
+              })()}
             </div>
           </StandardContainer>
         </motion.section>
@@ -234,7 +262,7 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 1.9 }}
                 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6"
               >
-                {t('useCases.title')}
+                {isLoading ? 'When & How to Use PDF Compression' : t('useCases.title')}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -242,12 +270,15 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 2.0 }}
                 className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
               >
-                {t('useCases.description')}
+                {isLoading ? 'Common scenarios and best practices for PDF compression' : t('useCases.description')}
               </motion.p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {(t('useCases.items', { returnObjects: true }) as any[]).map((item: any, index: number) => (
+              {(() => {
+                const useCases = t('useCases.items', { returnObjects: true });
+                const useCasesArray = Array.isArray(useCases) ? useCases : [];
+                return useCasesArray.map((item: any, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -270,7 +301,8 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                     {item.content}
                   </p>
                 </motion.div>
-              ))}
+                ));
+              })()}
             </div>
           </StandardContainer>
         </motion.section>
@@ -291,7 +323,7 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 2.3 }}
                 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6"
               >
-                {t('faq.title')}
+                {isLoading ? 'Frequently Asked Questions' : t('faq.title')}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -299,12 +331,18 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                 transition={{ duration: 0.6, delay: 2.4 }}
                 className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
               >
-                {t('faq.description')}
+                {isLoading 
+                  ? 'Common questions about PDF compression and our PDF compressor tool.'
+                  : t('faq.description')
+                }
               </motion.p>
             </div>
 
             <div className="space-y-6">
-              {(t('faq.items', { returnObjects: true }) as any[]).map((item: any, index: number) => (
+              {(() => {
+                const faqItems = t('faq.items', { returnObjects: true });
+                const faqItemsArray = Array.isArray(faqItems) ? faqItems : [];
+                return faqItemsArray.map((item: any, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -319,66 +357,31 @@ export default function PdfCompressorPage({ locale }: PdfCompressorPageProps) {
                     {item.answer}
                   </p>
                 </motion.div>
-              ))}
+                ));
+              })()}
             </div>
           </StandardContainer>
         </motion.section>
 
-        {/* Quick Links Section - CTA Style */}
+        {/* CTA Quick Links Section */}
         {t('quickLinks.title') && (
-          <motion.section
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 2.4 }}
-            className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-700 dark:via-purple-700 dark:to-pink-700 relative overflow-hidden transition-colors"
-          >
-            {/* Background Decorative Layers */}
-            <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
-            <div className="absolute inset-0">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent" />
-              <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-white/10 to-transparent" />
-            </div>
-            
-            <StandardContainer variant="page" size="lg" className="relative z-10">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-white mb-4">
-                  {t('quickLinks.title')}
-                </h2>
-                <p className="text-blue-100 dark:text-blue-200 transition-colors">
-                  {t('quickLinks.description')}
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                {Array.from({ length: 6 }, (_, index) => {
-                  const itemTitle = t(`quickLinks.items.${index}.title`);
-                  const itemDescription = t(`quickLinks.items.${index}.description`);
-                  const itemUrl = t(`quickLinks.items.${index}.url`);
-                  
-                  if (!itemTitle || itemTitle.includes('quickLinks.items')) return null;
-                  
-                  return (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 2.6 + index * 0.1 }}
-                    >
-                      <Link href={itemUrl || '#'}>
-                        <div className="card-cta p-6 h-full group">
-                          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                            {itemTitle}
-                          </h3>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors">
-                            {itemDescription}
-                          </p>
-                        </div>
-                      </Link>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </StandardContainer>
-          </motion.section>
+          <div className="relative z-10">
+            <CTAQuickLinks
+              title={t('quickLinks.title')}
+              description={t('quickLinks.description')}
+              items={(() => {
+                const quickLinks = t('quickLinks.items', { returnObjects: true });
+                const quickLinksArray = Array.isArray(quickLinks) ? quickLinks : [];
+                return quickLinksArray.map((link: any) => ({
+                  title: link.title || '',
+                  description: link.description || '',
+                  url: link.url || '#',
+                  icon: link.icon || ''
+                })).filter(item => item.title && !item.title.includes('quickLinks.items'));
+              })()}
+              maxItems={6}
+            />
+          </div>
         )}
       </div>
     </StandardPageLayout>

@@ -6,22 +6,14 @@ import { Locale, TranslationModule, getLocaleFromPath, supportedLocales, switchL
 // Import generated translation data
 import { translations, supportedModules } from '@/lib/translations/generated'
 
-// 静态翻译模块列表 - 这些模块将在构建时打包
-const STATIC_MODULES: TranslationModule[] = [
-  'common/navigation',
-  'common/ui', 
-  'home',
-  'footer'
-]
-
-// 检查是否为静态模块
-function isStaticModule(module: TranslationModule): boolean {
-  return STATIC_MODULES.includes(module)
+// 检查是否为支持的模块（所有在 generated.ts 中的模块）
+function isSupportedModule(module: TranslationModule): boolean {
+  return supportedModules.includes(module)
 }
 
 // Translation Hook return type
 interface UseTranslationReturn {
-  t: (key: string, params?: Record<string, string | number | boolean>) => any
+  t: (key: string, params?: Record<string, string | number | boolean> & { returnObjects?: boolean }) => any
   locale: Locale
   isLoading: boolean
   switchLocale: (locale: Locale) => void
@@ -30,8 +22,8 @@ interface UseTranslationReturn {
 }
 
 // Create translation function
-function createTranslationFunction(translations: Record<string, any>): (key: string, params?: Record<string, string | number | boolean>) => any {
-  return (key: string, params?: Record<string, string | number | boolean>): any => {
+function createTranslationFunction(translations: Record<string, any>): (key: string, params?: Record<string, string | number | boolean> & { returnObjects?: boolean }) => any {
+  return (key: string, params?: Record<string, string | number | boolean> & { returnObjects?: boolean }): any => {
     const keys = key.split('.')
     let value: any = translations
     
@@ -41,6 +33,11 @@ function createTranslationFunction(translations: Record<string, any>): (key: str
       } else {
         return key // If translation not found, return original key
       }
+    }
+    
+    // If returnObjects is true, return the value as-is (could be object or array)
+    if (params?.returnObjects) {
+      return value;
     }
     
     if (typeof value === 'string') {
@@ -62,15 +59,15 @@ function createTranslationFunction(translations: Record<string, any>): (key: str
   }
 }
 
-// 静态翻译Hook - 专门处理静态模块
+// 翻译Hook - 处理所有支持的模块
 export function useTranslation(module: TranslationModule = 'common/ui', providedLocale?: Locale): UseTranslationReturn {
-  // 检查是否为静态模块
-  if (!isStaticModule(module)) {
-    console.warn(`useTranslation: Module '${module}' is not a static module. Consider using useTranslationNew for dynamic modules.`)
+  // 检查是否为支持的模块
+  if (!isSupportedModule(module)) {
+    console.warn(`useTranslation: Module '${module}' is not a supported module.`)
   }
   
   const [locale, setLocale] = useState<Locale>(providedLocale || 'en')
-  const [isLoading, setIsLoading] = useState(!providedLocale)
+  const [isLoading, setIsLoading] = useState(false)
 
   // Detect current language (only if no locale provided)
   useEffect(() => {
@@ -138,11 +135,11 @@ export function useTranslation(module: TranslationModule = 'common/ui', provided
   }
 }
 
-// 专门用于静态翻译模块的Hook
+// 专门用于支持的翻译模块的Hook
 export function useStaticTranslation(module: TranslationModule, locale?: Locale): UseTranslationReturn {
-  // 强制检查静态模块
-  if (!isStaticModule(module)) {
-    throw new Error(`useStaticTranslation: Module '${module}' is not a static module. Use useTranslationNew for dynamic modules.`)
+  // 强制检查支持的模块
+  if (!isSupportedModule(module)) {
+    throw new Error(`useStaticTranslation: Module '${module}' is not a supported module.`)
   }
   
   const [currentLocale, setCurrentLocale] = useState<Locale>(locale || 'en')
@@ -178,7 +175,7 @@ export function useStaticTranslation(module: TranslationModule, locale?: Locale)
       setCurrentLocale(newLocale)
     },
     availableLocales: supportedLocales as Locale[],
-    availableModules: STATIC_MODULES as TranslationModule[],
+    availableModules: supportedModules as TranslationModule[],
   }
 }
 

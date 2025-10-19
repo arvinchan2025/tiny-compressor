@@ -146,10 +146,146 @@
       }
     ]
   },
+  "sections": {
+    "chooseTool": {
+      "title": "도구 선택하기",
+      "subtitle": "이미지, 문서, 비디오를 위한 전문 도구입니다. 특정 파일 최적화 요구사항에 맞는 완벽한 도구를 선택하세요."
+    },
+    "benefits": {
+      "title": "TinyCompressor를 선택하는 이유는?",
+      "subtitle": "최신 기술과 사용자 경험을 염두에 두고 설계되었습니다"
+    }
+  },
+  "labels": {
+    "mostPopular": "가장 인기 있는"
+  },
+  "toolCategories": {
+    "images": {
+      "title": "이미지 압축",
+      "subtitle": "사진 및 그래픽 최적화",
+      "description": "웹, 이메일, 저장을 위해 품질을 유지하면서 파일 크기를 줄이세요",
+      "icon": "🗜️",
+      "features": ["PNG", "JPEG", "WebP", "AVIF", "GIF", "BMP"],
+      "stats": "최대 95% 감소",
+      "buttonText": "이미지 압축"
+    },
+    "conversion": {
+      "title": "형식 변환",
+      "subtitle": "파일 유형 변환",
+      "description": "완벽한 호환성으로 다양한 이미지 형식 간 변환",
+      "icon": "🔄",
+      "features": ["PNG↔JPG", "WebP↔PNG", "HEIC↔JPG", "AVIF↔PNG"],
+      "stats": "10+ 변환",
+      "buttonText": "이미지 변환"
+    },
+    "pdf": {
+      "title": "PDF 압축",
+      "subtitle": "문서 축소",
+      "description": "고급 압축 및 메타데이터 제거로 PDF 파일 크기 감소",
+      "icon": "📄",
+      "features": ["PDF", "이미지 압축", "메타데이터 제거"],
+      "stats": "최대 60% 감소",
+      "buttonText": "PDF 압축"
+    },
+    "video": {
+      "title": "비디오 처리",
+      "subtitle": "비디오 최적화",
+      "description": "FFmpeg 기술과 품질 사전 설정으로 비디오 파일 압축",
+      "icon": "🎬",
+      "features": ["MP4", "AVI", "MOV", "WebM"],
+      "stats": "최대 85% 감소",
+      "buttonText": "비디오 압축"
+    }
+  },
+  "benefits": [
+    {
+      "icon": "🔒",
+      "title": "프라이버시 우선",
+      "description": "모든 처리는 클라이언트 측 기술을 사용하여 브라우저에서 로컬로 수행됩니다. 파일이 기기를 떠나지 않습니다.",
+      "color": "blue"
+    },
+    {
+      "icon": "⚡",
+      "title": "초고속",
+      "description": "WebAssembly로 구동되는 최적화된 알고리즘이 몇 분이 아닌 몇 초 만에 결과를 제공합니다.",
+      "color": "green"
+    },
+    {
+      "icon": "🆓",
+      "title": "완전 무료",
+      "description": "제한 없음, 구독 없음, 숨겨진 비용 없음. 워터마크 없이 원하는 만큼 사용하세요.",
+      "color": "purple"
+    },
+    {
+      "icon": "🎯",
+      "title": "고품질",
+      "description": "파일 크기를 줄이면서 시각적 충실도를 유지하는 전문가급 압축 알고리즘입니다.",
+      "color": "orange"
+    }
+  ],
+  "hero": {
+    "subtitle": "파일 크기를 최대 95%까지 줄이면서 우수한 품질을 유지하는 전문 파일 최적화 도구입니다. 등록이 필요하지 않습니다.",
+    "quickActions": {
+      "compressFiles": "파일 압축",
+      "convertFormats": "형식 변환"
+    }
+  },
+  "heroStats": [
+    {
+      "number": "15M+",
+      "label": "처리된 파일",
+      "color": "blue"
+    },
+    {
+      "number": "95%",
+      "label": "최대 감소",
+      "color": "green"
+    },
+    {
+      "number": "100%",
+      "label": "무료",
+      "color": "purple"
+    },
+    {
+      "number": "11",
+      "label": "언어",
+      "color": "orange"
+    }
+  ],
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "파일 최적화 도구에 대해 알아야 할 모든 것",
+    "items": [
+      {
+        "question": "이미지 압축이 무료인가요?",
+        "answer": "네, TinyCompressor는 완전히 무료입니다. 숨겨진 비용, 구독, 제한이 없습니다. 원하는 만큼 많은 이미지를 압축할 수 있습니다."
+      },
+      {
+        "question": "내 데이터가 안전한가요?",
+        "answer": "물론입니다. 모든 처리는 브라우저에서 로컬로 수행됩니다. 파일이 서버로 전송되지 않고 기기를 떠나지 않습니다."
+      },
+      {
+        "question": "어떤 이미지 형식이 지원되나요?",
+        "answer": "PNG, JPEG, WebP, AVIF, GIF, BMP 등 모든 일반적인 형식을 지원합니다. 또한 PDF 압축과 비디오 처리도 지원합니다."
+      },
+      {
+        "question": "압축 속도는 얼마나 빠른가요?",
+        "answer": "WebAssembly 최적화 알고리즘은 매우 빠릅니다. 대부분의 이미지는 3초 미만으로 처리됩니다."
+      },
+      {
+        "question": "품질을 제어할 수 있나요?",
+        "answer": "네, 실시간 미리보기와 함께 압축 수준, 품질 설정, 출력 형식에 대한 완전한 제어가 가능합니다."
+      }
+    ]
+  },
   "cta": {
-    "title": "이미지를 최적화할 준비가 되셨나요?",
-    "description": "우리의 이미지 처리 도구를 신뢰하는 수백만 사용자에 합류하세요",
-    "getStarted": "지금 시작하기",
-    "learnMore": "더 알아보기"
+    "title": "파일을 최적화할 준비가 되셨나요?",
+    "description": "일상적인 파일 최적화 요구사항을 위해 TinyCompressor를 신뢰하는 수백만 사용자에 합류하세요. 몇 초 안에 이미지, 문서, 비디오 처리를 시작하세요.",
+    "getStarted": "압축 시작",
+    "learnMore": "변환기 사용해보기",
+    "buttons": {
+      "startCompression": "압축 시작",
+      "convertFormats": "형식 변환"
+    }
   }
 }

@@ -403,5 +403,557 @@
     "title": "準備はできましたか？",
     "description": "私たちの画像処理ツールを信頼する何千ものユーザーに参加",
     "backToHome": "ホームに戻る"
+  },
+  "compressorNavigation": {
+    "toolsSection": {
+      "title": "圧縮ツールを選択",
+      "subtitle": "異なるフォーマット用のプロフェッショナルな画像圧縮ツール。あなたの特定の圧縮ニーズに最適なツールを選択してください。"
+    },
+    "tools": {
+      "png": {
+        "subtitle": "ロスレス圧縮",
+        "description": "透明度と品質を保ちながらPNG画像を最適化",
+        "features": ["PNG", "透明度", "ロスレス"],
+        "stats": "最大95%削減",
+        "buttonText": "PNGを圧縮"
+      },
+      "jpeg": {
+        "subtitle": "スマート圧縮",
+        "description": "インテリジェントな品質最適化でJPEGファイルサイズを削減",
+        "features": ["JPEG", "品質制御", "高速処理"],
+        "stats": "最大85%削減",
+        "buttonText": "JPEGを圧縮"
+      },
+      "webp": {
+        "subtitle": "モダンフォーマット",
+        "description": "ウェブ最適化のための高度なアルゴリズムでWebP画像を圧縮",
+        "features": ["WebP", "ウェブ最適化", "高品質"],
+        "stats": "最大90%削減",
+        "buttonText": "WebPを圧縮"
+      },
+      "avif": {
+        "subtitle": "次世代フォーマット",
+        "description": "優れた品質対サイズ比を持つ超モダンなAVIF圧縮",
+        "features": ["AVIF", "超高圧縮", "将来対応"],
+        "stats": "最大95%削減",
+        "buttonText": "AVIFを圧縮"
+      },
+      "gif": {
+        "subtitle": "アニメーション対応",
+        "description": "スムーズな再生を保ちながらアニメーションGIFを圧縮",
+        "features": ["GIF", "アニメーション", "色最適化"],
+        "stats": "最大70%削減",
+        "buttonText": "GIFを圧縮"
+      },
+      "bmp": {
+        "subtitle": "ビットマップ最適化",
+        "description": "画像の忠実度を保ちながらBMPファイルサイズを削減",
+        "features": ["BMP", "非圧縮", "高忠実度"],
+        "stats": "最大80%削減",
+        "buttonText": "BMPを圧縮"
+      },
+      "pdf": {
+        "subtitle": "ドキュメント圧縮",
+        "description": "高度な圧縮とメタデータ削除でPDFファイルサイズを削減",
+        "features": ["PDF", "メタデータ削除", "高度圧縮"],
+        "stats": "最大60%削減",
+        "buttonText": "PDFを圧縮"
+      },
+      "video": {
+        "subtitle": "動画最適化",
+        "description": "FFmpeg技術と品質プリセットで動画ファイルを圧縮",
+        "features": ["MP4", "AVI", "MOV", "WebM"],
+        "stats": "最大85%削減",
+        "buttonText": "動画を圧縮"
+      }
+    },
+    "heroStats": [
+      {
+        "number": "1500万+",
+        "label": "処理済みファイル",
+        "color": "blue"
+      },
+      {
+        "number": "95%",
+        "label": "最大削減率",
+        "color": "green"
+      },
+      {
+        "number": "8+",
+        "label": "対応フォーマット",
+        "color": "purple"
+      },
+      {
+        "number": "100%",
+        "label": "永久無料",
+        "color": "orange"
+      }
+    ],
+    "compressionTechniques": [
+      {
+        "icon": "🧠",
+        "title": "スマートアルゴリズム選択",
+        "description": "ファイルタイプとコンテンツ特性に基づいて最適な圧縮アルゴリズムを自動選択し、最良の結果を得ます。",
+        "color": "blue"
+      },
+      {
+        "icon": "🎯",
+        "title": "ロスレス・ロッシーオプション",
+        "description": "最大品質のロスレス圧縮と最大削減のロッシー圧縮の間で選択できます。",
+        "color": "green"
+      },
+      {
+        "icon": "⚡",
+        "title": "WebAssembly最適化",
+        "description": "ネイティブに近いパフォーマンスとより高速な圧縮処理を実現するWebAssembly技術を活用します。",
+        "color": "purple"
+      },
+      {
+        "icon": "🔍",
+        "title": "コンテンツ認識分析",
+        "description": "高度な画像分析がパターンを検出し、特定のコンテンツタイプに最適化された圧縮設定を行います。",
+        "color": "orange"
+      },
+      {
+        "icon": "📊",
+        "title": "リアルタイム品質メトリクス",
+        "description": "ライブ品質評価により、ファイルサイズと視覚品質の完璧なバランスを維持できます。",
+        "color": "pink"
+      },
+      {
+        "icon": "🛠️",
+        "title": "バッチ処理対応",
+        "description": "単一ファイル処理に最適化され、高度なバッチ圧縮機能の計画があります。",
+        "color": "indigo"
+      }
+    ],
+    "howItWorks": [
+      {
+        "step": "01",
+        "title": "ファイルをアップロード",
+        "description": "ファイルをドラッグ&ドロップするか、クリックして選択してください。すべての主要な画像、ドキュメント、動画フォーマットに対応しています。",
+        "icon": "📁"
+      },
+      {
+        "step": "02",
+        "title": "圧縮設定を選択",
+        "description": "お好みの圧縮レベルと品質設定を選択してください。スマートプリセットが自動的に最適化して最良の結果を提供します。",
+        "icon": "⚙️"
+      },
+      {
+        "step": "03",
+        "title": "圧縮ファイルをダウンロード",
+        "description": "数秒で最適化されたファイルを取得してください。元のファイルと圧縮ファイルのサイズを比較し、節約したスペースを確認できます。",
+        "icon": "💾"
+      }
+    ],
+    "bestPractices": [
+      {
+        "category": "画像",
+        "tips": [
+          "透明度のあるグラフィックにはPNGを使用",
+          "写真にはJPEGが理想的",
+          "WebPは品質と圧縮のバランスが最適",
+          "AVIFは最大削減を提供"
+        ]
+      },
+      {
+        "category": "ドキュメント",
+        "tips": [
+          "圧縮前に不要な画像を削除",
+          "法的文書にはロスレス圧縮を使用",
+          "機密ファイルにはパスワード保護を検討"
+        ]
+      },
+      {
+        "category": "動画",
+        "tips": [
+          "MP4はプラットフォーム間で最も互換性が高い",
+          "H.265はより良い圧縮比を提供",
+          "ウェブ使用には低解像度",
+          "コンテンツタイプに基づいてビットレートを調整"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "ファイル圧縮は安全ですか？",
+        "answer": "はい、私たちの圧縮は完全に安全です。すべての処理はクライアントサイド技術を使用してブラウザでローカルに実行されます。ファイルがデバイスから離れることはなく、最大のプライバシーとセキュリティが保証されます。"
+      },
+      {
+        "question": "圧縮はファイル品質を低下させますか？",
+        "answer": "私たちのスマート圧縮アルゴリズムは、ファイルサイズを削減しながら視覚品質を維持するように設計されています。削減率と品質保持のバランスを取るために、異なる品質レベルから選択できます。"
+      },
+      {
+        "question": "どのファイルフォーマットに対応していますか？",
+        "answer": "画像のPNG、JPEG、WebP、AVIF、GIF、BMP、ドキュメントのPDF、動画のMP4、MOV、AVIなど、すべての主要フォーマットに対応しています。新しいフォーマットも定期的に追加されています。"
+      },
+      {
+        "question": "ファイルサイズはどのくらい削減できますか？",
+        "answer": "圧縮比はファイルタイプとコンテンツによって異なります。画像は通常60-90%、PDFは30-70%、動画は40-80%削減できます。これは元の品質と使用設定によって決まります。"
+      },
+      {
+        "question": "ファイルサイズ制限はありますか？",
+        "answer": "ブラウザベースの圧縮は、最適なパフォーマンスのために100MB未満のファイルで最も効果的です。より大きなファイルは処理に時間がかかる場合がありますが、引き続きサポートされています。"
+      },
+      {
+        "question": "複数のファイルを一度に圧縮できますか？",
+        "answer": "現在、最良の品質結果を得るために単一ファイル圧縮に焦点を当てています。バッチ圧縮機能は将来のアップデートで計画されています。"
+      }
+    ],
+    "sections": {
+      "hero": {
+        "subtitle": "優れた品質を保ちながらファイルサイズを最大95%削減するプロフェッショナルな圧縮ツール。登録不要。"
+      },
+      "compressionTechniques": {
+        "title": "高度な圧縮技術",
+        "subtitle": "私たちの圧縮アルゴリズムは最先端技術を使用して最大ファイルサイズ削減を実現します"
+      },
+      "howItWorks": {
+        "title": "動作原理",
+        "subtitle": "いくつかの簡単なステップで私たちの圧縮ツールを開始できます"
+      },
+      "bestPractices": {
+        "title": "ファイル圧縮のベストプラクティス",
+        "subtitle": "これらの専門家のヒントに従って、異なるファイルタイプで最良の圧縮結果を得てください"
+      },
+      "faq": {
+        "title": "よくある質問",
+        "subtitle": "ファイル圧縮に関するよくある質問の回答を取得"
+      },
+      "cta": {
+        "title": "ファイルを圧縮する準備はできましたか？",
+        "description": "日常のファイル最適化ニーズにTinyCompressorを信頼する何百万人ものユーザーに参加してください。数秒で画像、ドキュメント、動画の処理を開始できます。",
+        "buttons": {
+          "startCompression": "圧縮を開始",
+          "backToHome": "ホームに戻る"
+        }
+      }
+    }
+  },
+  "converterNavigation": {
+    "sections": {
+      "hero": {
+        "subtitle": "完璧な品質と普遍的な互換性で画像を変換する専門的なフォーマット変換ツール。登録不要。"
+      },
+      "toolsSection": {
+        "title": "変換ツールを選択",
+        "subtitle": "画像とドキュメントの専門的なフォーマット変換ツール。特定の変換ニーズに最適なツールを選択してください。"
+      },
+      "conversionTechnologies": {
+        "title": "先進的な変換技術",
+        "subtitle": "私たちの変換アルゴリズムは最先端技術を使用して品質を保持しながら完璧なフォーマット変換を実現します"
+      },
+      "howItWorks": {
+        "title": "仕組み",
+        "subtitle": "わずか数ステップで変換ツールを開始できます"
+      },
+      "bestPractices": {
+        "title": "フォーマット変換のベストプラクティス",
+        "subtitle": "異なるファイルタイプで最高の変換結果を得るために、これらの専門家のヒントに従ってください"
+      },
+      "faq": {
+        "title": "よくある質問",
+        "subtitle": "フォーマット変換に関する一般的な質問の答えを取得"
+      },
+      "cta": {
+        "title": "ファイルを変換する準備はできましたか？",
+        "description": "日常のファイル変換ニーズにTinyCompressorを信頼する何百万人ものユーザーに参加してください。数秒で画像とドキュメントの変換を開始できます。",
+        "buttons": {
+          "startConversion": "変換を開始",
+          "backToHome": "ホームに戻る",
+          "convertNow": "今すぐ変換"
+        }
+      }
+    },
+    "labels": {
+      "popular": "人気",
+      "keyFeatures": "主な機能："
+    },
+    "heroStats": [
+      {
+        "number": "10+",
+        "label": "フォーマットペア",
+        "color": "blue"
+      },
+      {
+        "number": "100%",
+        "label": "品質保持",
+        "color": "green"
+      },
+      {
+        "number": "高速",
+        "label": "変換速度",
+        "color": "purple"
+      },
+      {
+        "number": "100%",
+        "label": "永久無料",
+        "color": "orange"
+      }
+    ],
+    "conversionTechnologies": [
+      {
+        "icon": "🧠",
+        "title": "スマートアルゴリズム選択",
+        "description": "最適な結果を得るために、ソースフォーマットとターゲットフォーマットに基づいて最適な変換アルゴリズムを自動選択します。",
+        "color": "blue"
+      },
+      {
+        "icon": "🎯",
+        "title": "品質保持",
+        "description": "異なるフォーマット間で変換する際に視覚的忠実度を維持する高度なアルゴリズム。",
+        "color": "green"
+      },
+      {
+        "icon": "⚡",
+        "title": "WebAssembly最適化",
+        "description": "ネイティブに近いパフォーマンスとより高速な変換処理のためにWebAssembly技術を活用します。",
+        "color": "purple"
+      },
+      {
+        "icon": "🔍",
+        "title": "メタデータ処理",
+        "description": "EXIF、ICCプロファイル、その他の埋め込みデータのインテリジェントなメタデータ保持と最適化。",
+        "color": "orange"
+      },
+      {
+        "icon": "🛡️",
+        "title": "透明度サポート",
+        "description": "PNG、GIF、WebPフォーマットの完全な透明度チャンネルサポートとインテリジェントな背景処理。",
+        "color": "pink"
+      },
+      {
+        "icon": "📐",
+        "title": "品質最適化",
+        "description": "最適なサイズと品質の比率を実現するために、コンテンツ特性に適応するスマート品質アルゴリズム。",
+        "color": "indigo"
+      }
+    ],
+    "howItWorks": [
+      {
+        "step": "01",
+        "title": "ファイルをアップロード",
+        "description": "ファイルをドラッグ&ドロップするか、クリックして選択してください。すべての主要な画像とドキュメントフォーマットをサポートしています。",
+        "icon": "📁"
+      },
+      {
+        "step": "02",
+        "title": "ターゲットフォーマットを選択",
+        "description": "希望する出力フォーマットを選択してください。スマート推奨機能がニーズに最適なフォーマットを選択するのに役立ちます。",
+        "icon": "🎯"
+      },
+      {
+        "step": "03",
+        "title": "変換ファイルをダウンロード",
+        "description": "数秒で変換ファイルを取得。元のフォーマットと変換フォーマットを比較し、完璧な互換性を確保。",
+        "icon": "💾"
+      }
+    ],
+    "bestPractices": [
+      {
+        "category": "画像",
+        "tips": [
+          "透明度のあるグラフィックにはPNGを使用",
+          "JPEGは写真に最適",
+          "WebPは品質と圧縮で最高の効果を提供",
+          "AVIFは最大のサイズ削減を提供"
+        ]
+      },
+      {
+        "category": "ドキュメント",
+        "tips": [
+          "PDFはドキュメントに最適",
+          "大きなファイルの圧縮を検討",
+          "必要に応じてメタデータを保持"
+        ]
+      }
+    ],
+    "formatGuide": [
+      {
+        "format": "PNG",
+        "description": "透明度サポート付きの可逆圧縮。グラフィック、ロゴ、透明度が必要な画像に最適。",
+        "bestFor": "グラフィック、ロゴ、スクリーンショット、透明度付き画像",
+        "size": "大きなファイルサイズ",
+        "icon": "🖼️"
+      },
+      {
+        "format": "JPEG",
+        "description": "写真に最適化された非可逆圧縮。複雑な色とグラデーションの写真に優れています。",
+        "bestFor": "写真、複雑な画像、Web写真",
+        "size": "良好な圧縮",
+        "icon": "📸"
+      },
+      {
+        "format": "WebP",
+        "description": "可逆圧縮と非可逆圧縮の両方を提供するモダンフォーマット。JPEGと同様の品質でより良い圧縮。",
+        "bestFor": "Web画像、モダンブラウザ、パフォーマンス最適化",
+        "size": "優れた圧縮",
+        "icon": "🌐"
+      },
+      {
+        "format": "AVIF",
+        "description": "優れた圧縮を提供する次世代フォーマット。JPEGより最大50%優れた圧縮とより良い品質。",
+        "bestFor": "将来性のある画像、最大圧縮、モダンブラウザ",
+        "size": "優れた圧縮",
+        "icon": "🚀"
+      },
+      {
+        "format": "GIF",
+        "description": "アニメーションと透明度をサポート。256色に制限され、シンプルなグラフィックとアニメーションに最適。",
+        "bestFor": "シンプルなアニメーション、基本的なグラフィック、ソーシャルメディア",
+        "size": "可変（複雑さによる）",
+        "icon": "🎬"
+      },
+      {
+        "format": "BMP",
+        "description": "非圧縮ビットマップフォーマット。大きなファイルサイズですが、アーカイブ目的で完璧な品質保持。",
+        "bestFor": "アーカイブストレージ、印刷メディア、最大品質",
+        "size": "非常に大きなファイルサイズ",
+        "icon": "📁"
+      }
+    ],
+    "faq": [
+      {
+        "question": "ファイル変換は安全ですか？",
+        "answer": "はい、私たちの変換は完全に安全です。すべての処理はクライアントサイド技術を使用してブラウザでローカルに実行されます。ファイルがデバイスから離れることはなく、最大のプライバシーとセキュリティが保証されます。"
+      },
+      {
+        "question": "変換はファイル品質に影響しますか？",
+        "answer": "私たちのスマート変換アルゴリズムは、フォーマット間で変換する際に視覚品質を維持するように設計されています。変換精度とファイルサイズのバランスを取るために、異なる品質レベルを選択できます。"
+      },
+      {
+        "question": "変換にはどのファイルフォーマットをサポートしていますか？",
+        "answer": "画像用のPNG、JPEG、WebP、AVIF、GIF、BMP、ドキュメント用のPDFを含むすべての主要フォーマットをサポートしています。互換性のあるフォーマット間で変換できます。"
+      },
+      {
+        "question": "変換プロセスはどのくらい速いですか？",
+        "answer": "私たちのWebAssembly最適化変換は非常に高速です。ファイルサイズと複雑さに応じて、ほとんどのファイルは数秒で変換されます。"
+      },
+      {
+        "question": "ファイルサイズ制限はありますか？",
+        "answer": "ブラウザベースの変換は、最適なパフォーマンスのために100MB以下のファイルで最適に動作します。大きなファイルは処理に時間がかかる場合がありますが、サポートされています。"
+      },
+      {
+        "question": "一度に複数のファイルを変換できますか？",
+        "answer": "現在、最高品質の結果を得るために単一ファイル変換に焦点を当てています。バッチ変換機能は将来のアップデートで計画されています。"
+      }
+    ],
+    "tools": [
+      {
+        "id": "png-to-jpg",
+        "title": "PNGからJPGへ",
+        "subtitle": "品質で変換",
+        "description": "PNG画像をJPG形式に変換し、インテリジェントな品質最適化を実現",
+        "icon": "📷",
+        "gradient": "from-blue-500 to-green-500",
+        "features": ["PNG", "JPG", "品質制御"],
+        "stats": "完璧な品質",
+        "popular": true
+      },
+      {
+        "id": "png-to-webp",
+        "title": "PNGからWebPへ",
+        "subtitle": "モダンフォーマット",
+        "description": "PNG画像をモダンなWebP形式に変換し、より良いWebパフォーマンスを実現",
+        "icon": "🌐",
+        "gradient": "from-blue-500 to-purple-500",
+        "features": ["PNG", "WebP", "Web最適化"],
+        "stats": "最大90%削減",
+        "popular": false
+      },
+      {
+        "id": "png-to-avif",
+        "title": "PNGからAVIFへ",
+        "subtitle": "次世代フォーマット",
+        "description": "PNG画像を超モダンなAVIF形式に変換し、優れた圧縮を実現",
+        "icon": "🚀",
+        "gradient": "from-blue-500 to-orange-500",
+        "features": ["PNG", "AVIF", "超圧縮"],
+        "stats": "最大95%削減",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-png",
+        "title": "JPGからPNGへ",
+        "subtitle": "透明度追加",
+        "description": "JPG画像をPNG形式に変換し、背景除去機能を提供",
+        "icon": "🖼️",
+        "gradient": "from-green-500 to-blue-500",
+        "features": ["JPG", "PNG", "透明度"],
+        "stats": "可逆品質",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-webp",
+        "title": "JPGからWebPへ",
+        "subtitle": "Web最適化",
+        "description": "JPG画像をWebP形式に変換し、より良いWebパフォーマンスを実現",
+        "icon": "🌐",
+        "gradient": "from-green-500 to-purple-500",
+        "features": ["JPG", "WebP", "Web最適化"],
+        "stats": "最大85%削減",
+        "popular": false
+      },
+      {
+        "id": "jpg-to-avif",
+        "title": "JPGからAVIFへ",
+        "subtitle": "超圧縮",
+        "description": "JPG画像をAVIF形式に変換し、優れた圧縮比を実現",
+        "icon": "🚀",
+        "gradient": "from-green-500 to-orange-500",
+        "features": ["JPG", "AVIF", "超圧縮"],
+        "stats": "最大90%削減",
+        "popular": false
+      },
+      {
+        "id": "webp-to-png",
+        "title": "WebPからPNGへ",
+        "subtitle": "ユニバーサルフォーマット",
+        "description": "WebP画像をPNG形式に変換し、最大の互換性を提供",
+        "icon": "🖼️",
+        "gradient": "from-purple-500 to-blue-500",
+        "features": ["WebP", "PNG", "ユニバーサル"],
+        "stats": "完全互換性",
+        "popular": false
+      },
+      {
+        "id": "webp-to-jpg",
+        "title": "WebPからJPGへ",
+        "subtitle": "レガシーサポート",
+        "description": "WebP画像をJPG形式に変換し、古いブラウザサポートを提供",
+        "icon": "📷",
+        "gradient": "from-purple-500 to-green-500",
+        "features": ["WebP", "JPG", "レガシーサポート"],
+        "stats": "ブラウザ互換",
+        "popular": false
+      },
+      {
+        "id": "webp-to-avif",
+        "title": "WebPからAVIFへ",
+        "subtitle": "次世代",
+        "description": "WebP画像をAVIF形式に変換し、さらに優れた圧縮を実現",
+        "icon": "🚀",
+        "gradient": "from-purple-500 to-orange-500",
+        "features": ["WebP", "AVIF", "次世代"],
+        "stats": "最大80%削減",
+        "popular": false
+      },
+      {
+        "id": "heic-to-jpg",
+        "title": "HEICからJPGへ",
+        "subtitle": "iOS互換性",
+        "description": "iOSデバイスからのHEIC画像をJPG形式に変換し、ユニバーサル互換性を提供",
+        "icon": "📱",
+        "gradient": "from-pink-500 to-green-500",
+        "features": ["HEIC", "JPG", "iOSサポート"],
+        "stats": "ユニバーサルフォーマット",
+        "popular": false
+      }
+    ],
+    "toolsSection": {
+      "title": "変換ツールを選択",
+      "subtitle": "画像とドキュメント用のプロフェッショナルなフォーマット変換ツール。特定の変換ニーズに最適なツールを選択してください。"
+    }
   }
 }

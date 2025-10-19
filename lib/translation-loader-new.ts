@@ -183,14 +183,9 @@ export function getTranslationValue(
   if (typeof value === 'string') {
     // Replace parameters
     if (params) {
-      console.log('getTranslationValue - value:', value, 'params:', params);
-      const result = value.replace(/\{(\w+)\}/g, (match, paramKey) => {
-        const replacement = params[paramKey]?.toString() || match;
-        console.log(`getTranslationValue - replacing ${match} with ${replacement}`);
-        return replacement;
-      });
-      console.log('getTranslationValue - final result:', result);
-      return result;
+      return value.replace(/\{(\w+)\}/g, (match, paramKey) => {
+        return params[paramKey]?.toString() || match
+      })
     }
     return value
   }

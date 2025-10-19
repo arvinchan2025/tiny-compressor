@@ -399,9 +399,279 @@
     "secure": "안전하고 비공개",
     "fast": "번개처럼 빠름"
   },
+  "converterNavigation": {
+    "sections": {
+      "hero": {
+        "subtitle": "완벽한 품질과 보편적 호환성으로 이미지를 변환하는 전문 포맷 변환 도구입니다. 등록이 필요하지 않습니다."
+      },
+      "toolsSection": {
+        "title": "변환 도구 선택",
+        "subtitle": "이미지 및 문서용 전문급 포맷 변환 도구입니다. 특정 변환 요구에 맞는 완벽한 도구를 선택하세요."
+      },
+      "conversionTechnologies": {
+        "title": "고급 변환 기술",
+        "subtitle": "우리의 변환 알고리즘은 품질을 유지하면서 완벽한 포맷 변환을 달성하기 위해 최첨단 기술을 사용합니다"
+      },
+      "howItWorks": {
+        "title": "작동 방식",
+        "subtitle": "몇 가지 간단한 단계로 우리의 변환 도구를 시작하세요"
+      },
+      "bestPractices": {
+        "title": "포맷 변환 모범 사례",
+        "subtitle": "다양한 파일 유형에 대한 최고의 변환 결과를 얻기 위해 이러한 전문가 팁을 따르세요"
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "subtitle": "포맷 변환에 대한 일반적인 질문에 대한 답변을 얻으세요"
+      },
+      "cta": {
+        "title": "파일 변환할 준비가 되셨나요?",
+        "description": "일상적인 파일 변환 요구에 TinyCompressor를 신뢰하는 수백만 명의 사용자에 합류하세요. 몇 초 안에 이미지와 문서를 변환하세요.",
+        "buttons": {
+          "startConversion": "변환 시작",
+          "backToHome": "홈으로 돌아가기",
+          "convertNow": "지금 변환"
+        }
+      }
+    },
+    "labels": {
+      "popular": "인기",
+      "keyFeatures": "주요 기능:"
+    },
+    "heroStats": [
+      { "number": "10+", "label": "포맷 쌍", "color": "blue" },
+      { "number": "100%", "label": "품질 보존", "color": "green" },
+      { "number": "빠름", "label": "변환 속도", "color": "purple" },
+      { "number": "100%", "label": "영구 무료", "color": "orange" }
+    ],
+    "conversionTechnologies": [
+      { "icon": "🧠", "title": "스마트 알고리즘 선택", "description": "최적의 결과를 위해 소스 및 대상 포맷을 기반으로 최고의 변환 알고리즘을 자동으로 선택합니다.", "color": "blue" },
+      { "icon": "🎯", "title": "품질 보존", "description": "다양한 포맷 간 변환 중 시각적 충실도를 유지하는 고급 알고리즘입니다.", "color": "green" },
+      { "icon": "⚡", "title": "WebAssembly 최적화", "description": "거의 네이티브 성능과 더 빠른 변환 처리를 위해 WebAssembly 기술을 활용합니다.", "color": "purple" },
+      { "icon": "🔍", "title": "메타데이터 처리", "description": "EXIF, ICC 프로필 및 기타 내장 데이터에 대한 지능형 메타데이터 보존 및 최적화입니다.", "color": "orange" },
+      { "icon": "🛡️", "title": "투명도 지원", "description": "지능형 배경 처리를 통한 PNG, GIF 및 WebP용 완전한 투명도 채널 지원입니다.", "color": "pink" },
+      { "icon": "📐", "title": "품질 최적화", "description": "최적의 크기-품질 비율을 위해 콘텐츠 특성에 적응하는 지능형 품질 알고리즘입니다.", "color": "indigo" }
+    ],
+    "howItWorks": [
+      { "step": "01", "title": "파일 업로드", "description": "파일을 드래그 앤 드롭하거나 클릭하여 선택하세요. 모든 주요 이미지 및 문서 포맷을 지원합니다.", "icon": "📁" },
+      { "step": "02", "title": "대상 포맷 선택", "description": "원하는 출력 포맷을 선택하세요. 우리의 스마트 추천이 요구에 맞는 최고의 포맷을 선택하는 데 도움이 됩니다.", "icon": "🎯" },
+      { "step": "03", "title": "변환된 파일 다운로드", "description": "몇 초 안에 변환된 파일을 받으세요. 원본과 변환된 포맷을 비교하여 완벽한 호환성을 보장합니다.", "icon": "💾" }
+    ],
+    "bestPractices": [
+      { "category": "이미지", "tips": ["투명도가 있는 그래픽에는 PNG 사용", "JPEG는 사진에 이상적", "WebP는 품질과 함께 최고의 압축 제공", "AVIF는 최대 크기 감소 제공"] },
+      { "category": "문서", "tips": ["문서에는 PDF가 최고", "대용량 파일에 대한 압축 고려", "필요시 메타데이터 보존"] }
+    ],
+    "formatGuide": [
+      {
+        "format": "PNG",
+        "description": "투명도 지원이 있는 무손실 압축입니다. 투명도가 필요한 그래픽, 로고 및 이미지에 완벽합니다.",
+        "bestFor": "그래픽, 로고, 스크린샷, 투명도가 있는 이미지",
+        "size": "더 큰 파일 크기",
+        "icon": "🖼️"
+      },
+      {
+        "format": "JPEG",
+        "description": "사진에 최적화된 손실 압축입니다. 복잡한 색상과 그라디언트가 있는 사진에 훌륭합니다.",
+        "bestFor": "사진, 복잡한 이미지, 웹 사진",
+        "size": "좋은 압축",
+        "icon": "📸"
+      },
+      {
+        "format": "WebP",
+        "description": "손실 및 무손실 압축을 모두 제공하는 현대적 포맷입니다. 유사한 품질로 JPEG보다 더 나은 압축을 제공합니다.",
+        "bestFor": "웹 이미지, 현대적 브라우저, 성능 최적화",
+        "size": "우수한 압축",
+        "icon": "🌐"
+      },
+      {
+        "format": "AVIF",
+        "description": "우수한 압축을 제공하는 차세대 포맷입니다. 더 나은 품질로 JPEG보다 최대 50% 더 나은 압축을 제공합니다.",
+        "bestFor": "미래 지향적 이미지, 최대 압축, 현대적 브라우저",
+        "size": "우수한 압축",
+        "icon": "🚀"
+      },
+      {
+        "format": "GIF",
+        "description": "애니메이션과 투명도를 지원합니다. 256색으로 제한되며, 간단한 그래픽과 애니메이션에 최적입니다.",
+        "bestFor": "간단한 애니메이션, 기본 그래픽, 소셜 미디어",
+        "size": "가변적 (복잡성에 따라)",
+        "icon": "🎬"
+      },
+      {
+        "format": "BMP",
+        "description": "압축되지 않은 비트맵 포맷입니다. 큰 파일 크기이지만 아카이브 목적으로 완벽한 품질 보존을 제공합니다.",
+        "bestFor": "아카이브 저장, 인쇄 미디어, 최대 품질",
+        "size": "매우 큰 파일 크기",
+        "icon": "📁"
+      }
+    ],
+    "faq": [
+      { "question": "파일 변환이 안전한가요?", "answer": "네, 우리의 변환은 완전히 안전합니다. 모든 처리는 클라이언트 측 기술을 사용하여 브라우저에서 로컬로 이루어집니다. 파일이 디바이스를 떠나지 않으므로 최대한의 프라이버시와 보안이 보장됩니다." },
+      { "question": "변환이 파일 품질에 영향을 미치나요?", "answer": "우리의 지능형 변환 알고리즘은 포맷 간 변환 중 시각적 품질을 유지하도록 설계되었습니다. 변환 정확도와 파일 크기의 균형을 맞추기 위해 다양한 품질 수준을 선택할 수 있습니다." },
+      { "question": "변환을 위해 지원하는 파일 포맷은 무엇인가요?", "answer": "이미지용 PNG, JPEG, WebP, AVIF, GIF, BMP; 문서용 PDF를 포함한 모든 주요 포맷을 지원합니다. 호환되는 모든 포맷 간에 변환할 수 있습니다." },
+      { "question": "변환 과정은 얼마나 빠른가요?", "answer": "우리의 WebAssembly 최적화 변환은 극도로 빠릅니다. 파일 크기와 복잡성에 따라 대부분의 파일이 몇 초 안에 변환됩니다." },
+      { "question": "파일 크기 제한이 있나요?", "answer": "최적의 성능을 위해 100MB 미만의 파일에서 우리의 브라우저 기반 변환이 가장 잘 작동합니다. 더 큰 파일은 처리하는 데 더 오래 걸릴 수 있지만 여전히 지원됩니다." },
+      { "question": "한 번에 여러 파일을 변환할 수 있나요?", "answer": "현재 최고의 품질 결과를 위해 단일 파일 변환에 집중하고 있습니다. 배치 변환 기능은 향후 업데이트에서 계획되어 있습니다." }
+    ],
+    "tools": [
+      { "id": "png-to-jpg", "title": "PNG를 JPG로", "subtitle": "품질과 함께 변환", "description": "지능형 품질 최적화로 PNG 이미지를 JPG 포맷으로 변환", "icon": "📷", "gradient": "from-blue-500 to-green-500", "features": ["PNG", "JPG", "품질 제어"], "stats": "완벽한 품질", "popular": true },
+      { "id": "png-to-webp", "title": "PNG를 WebP로", "subtitle": "현대적 포맷", "description": "더 나은 웹 성능을 위해 PNG 이미지를 현대적인 WebP 포맷으로 변환", "icon": "🌐", "gradient": "from-blue-500 to-purple-500", "features": ["PNG", "WebP", "웹 최적화"], "stats": "최대 90% 더 작음", "popular": false },
+      { "id": "png-to-avif", "title": "PNG를 AVIF로", "subtitle": "차세대 포맷", "description": "우수한 압축으로 PNG 이미지를 초현대적인 AVIF 포맷으로 변환", "icon": "🚀", "gradient": "from-blue-500 to-orange-500", "features": ["PNG", "AVIF", "울트라 압축"], "stats": "최대 95% 더 작음", "popular": false },
+      { "id": "jpg-to-png", "title": "JPG를 PNG로", "subtitle": "투명도 추가", "description": "배경 제거 기능으로 JPG 이미지를 PNG 포맷으로 변환", "icon": "🖼️", "gradient": "from-green-500 to-blue-500", "features": ["JPG", "PNG", "투명도"], "stats": "무손실 품질", "popular": false },
+      { "id": "jpg-to-webp", "title": "JPG를 WebP로", "subtitle": "웹 최적화", "description": "더 나은 웹 성능을 위해 JPG 이미지를 WebP 포맷으로 변환", "icon": "🌐", "gradient": "from-green-500 to-purple-500", "features": ["JPG", "WebP", "웹 최적화"], "stats": "최대 85% 더 작음", "popular": false },
+      { "id": "jpg-to-avif", "title": "JPG를 AVIF로", "subtitle": "울트라 압축", "description": "우수한 압축 비율로 JPG 이미지를 AVIF 포맷으로 변환", "icon": "🚀", "gradient": "from-green-500 to-orange-500", "features": ["JPG", "AVIF", "울트라 압축"], "stats": "최대 90% 더 작음", "popular": false },
+      { "id": "webp-to-png", "title": "WebP를 PNG로", "subtitle": "보편적 포맷", "description": "최대 호환성을 위해 WebP 이미지를 PNG 포맷으로 변환", "icon": "🖼️", "gradient": "from-purple-500 to-blue-500", "features": ["WebP", "PNG", "보편적"], "stats": "완전한 호환성", "popular": false },
+      { "id": "webp-to-jpg", "title": "WebP를 JPG로", "subtitle": "레거시 지원", "description": "오래된 브라우저 지원을 위해 WebP 이미지를 JPG 포맷으로 변환", "icon": "📷", "gradient": "from-purple-500 to-green-500", "features": ["WebP", "JPG", "레거시 지원"], "stats": "브라우저 호환", "popular": false },
+      { "id": "webp-to-avif", "title": "WebP를 AVIF로", "subtitle": "차세대", "description": "더 나은 압축을 위해 WebP 이미지를 AVIF 포맷으로 변환", "icon": "🚀", "gradient": "from-purple-500 to-orange-500", "features": ["WebP", "AVIF", "차세대"], "stats": "최대 80% 더 작음", "popular": false },
+      { "id": "heic-to-jpg", "title": "HEIC를 JPG로", "subtitle": "iOS 호환성", "description": "보편적 호환성을 위해 iOS 디바이스의 HEIC 이미지를 JPG 포맷으로 변환", "icon": "📱", "gradient": "from-pink-500 to-green-500", "features": ["HEIC", "JPG", "iOS 지원"], "stats": "보편적 포맷", "popular": false }
+    ],
+    "toolsSection": {
+      "title": "변환 도구 선택",
+      "subtitle": "이미지와 문서를 위한 전문 포맷 변환 도구. 특정 변환 요구사항에 완벽한 도구를 선택하세요."
+    }
+  },
   "cta": {
     "title": "시작할 준비가 되셨나요?",
     "description": "우리의 이미지 처리 도구를 신뢰하는 수천 명의 사용자에 합류하세요",
     "backToHome": "홈으로 돌아가기"
+  },
+  "compressorNavigation": {
+    "sections": {
+      "hero": {
+        "subtitle": "완벽한 품질과 보편적 호환성으로 이미지를 처리하는 전문 이미지 압축 도구입니다. 등록이 필요하지 않습니다."
+      },
+      "compressionTechniques": {
+        "title": "고급 압축 기술",
+        "subtitle": "우리의 압축 알고리즘은 품질을 유지하면서 최적의 크기 감소를 달성하기 위해 최신 기술을 사용합니다"
+      },
+      "howItWorks": {
+        "title": "작동 방식",
+        "subtitle": "몇 가지 간단한 단계로 압축 도구를 시작하세요"
+      },
+      "bestPractices": {
+        "title": "이미지 압축 모범 사례",
+        "subtitle": "다양한 이미지 유형에 대한 최고의 압축 결과를 얻기 위해 이 전문가 팁을 따르세요"
+      },
+      "faq": {
+        "title": "자주 묻는 질문",
+        "subtitle": "이미지 압축에 대한 일반적인 질문에 대한 답변을 얻으세요"
+      },
+      "cta": {
+        "title": "이미지를 압축할 준비가 되셨나요?",
+        "description": "일상적인 이미지 압축 요구사항을 위해 TinyCompressor를 신뢰하는 수백만 사용자에 합류하세요. 몇 초 안에 이미지 압축을 시작하세요.",
+        "buttons": {
+          "startCompression": "압축 시작",
+          "backToHome": "홈으로 돌아가기",
+          "compressNow": "지금 압축하기"
+        }
+      }
+    },
+    "labels": {
+      "popular": "인기",
+      "keyFeatures": "주요 기능:"
+    },
+    "heroStats": [
+      { "number": "95%", "label": "최대 감소", "color": "blue" },
+      { "number": "6+", "label": "형식", "color": "green" },
+      { "number": "빠름", "label": "처리", "color": "purple" },
+      { "number": "100%", "label": "영원히 무료", "color": "orange" }
+    ],
+    "compressionTechniques": [
+      { "icon": "🧠", "title": "스마트 알고리즘 선택", "description": "이미지 유형과 원하는 결과를 기반으로 최적의 결과를 위해 최고의 압축 알고리즘을 자동으로 선택합니다.", "color": "blue" },
+      { "icon": "🎯", "title": "품질 보존", "description": "파일 크기를 줄이면서 압축 중 시각적 품질을 유지하는 고급 알고리즘입니다.", "color": "green" },
+      { "icon": "⚡", "title": "WebAssembly 최적화", "description": "거의 네이티브 성능과 더 빠른 압축 처리를 위해 WebAssembly 기술을 사용합니다.", "color": "purple" },
+      { "icon": "🔍", "title": "메타데이터 관리", "description": "EXIF, ICC 프로필 및 기타 임베디드 데이터에 대한 지능적인 메타데이터 보존 및 최적화입니다.", "color": "orange" },
+      { "icon": "🛡️", "title": "투명도 지원", "description": "스마트한 배경 처리로 PNG, GIF, WebP에서 투명도 채널에 대한 완전한 지원입니다.", "color": "pink" },
+      { "icon": "📐", "title": "품질 최적화", "description": "최적의 크기-품질 비율을 위해 이미지 특성에 적응하는 지능적인 품질 알고리즘입니다.", "color": "indigo" }
+    ],
+    "howItWorks": [
+      { "step": "01", "title": "이미지 업로드", "description": "이미지를 드래그 앤 드롭하거나 클릭하여 선택하세요. 모든 일반적인 이미지 형식을 지원합니다.", "icon": "📁" },
+      { "step": "02", "title": "설정 선택", "description": "실시간 미리보기와 함께 압축 수준, 품질 또는 대상 형식을 선택하세요. 전문적인 결과를 위한 고급 옵션입니다.", "icon": "⚙️" },
+      { "step": "03", "title": "처리 및 다운로드", "description": "상세한 압축 통계와 함께 최적화된 이미지를 즉시 받으세요. 체계적인 파일 구조로 배치 다운로드합니다.", "icon": "💾" }
+    ],
+    "bestPractices": [
+      { "category": "사진", "tips": ["사진에는 JPEG 사용", "웹용 80-90% 품질", "이메일용 60-80%", "인쇄용 95%+"] },
+      { "category": "그래픽", "tips": ["투명도가 있는 그래픽에는 PNG", "최신 브라우저에는 WebP", "최대 압축에는 AVIF", "애니메이션에는 GIF"] }
+    ],
+    "faq": [
+      { "question": "이미지 압축이 안전한가요?", "answer": "네, 우리의 압축은 완전히 안전합니다. 모든 처리는 클라이언트 측 기술을 사용하여 브라우저에서 로컬로 수행됩니다. 파일이 기기를 떠나지 않아 최대한의 프라이버시와 보안을 보장합니다." },
+      { "question": "이미지 품질이 영향을 받나요?", "answer": "우리의 지능적인 압축 알고리즘은 압축 중 시각적 품질을 유지하도록 설계되었습니다. 압축 정확도와 파일 크기의 균형을 맞추기 위해 다양한 품질 수준을 선택할 수 있습니다." },
+      { "question": "어떤 이미지 형식이 지원되나요?", "answer": "PNG, JPEG, WebP, AVIF, GIF, BMP를 포함한 모든 일반적인 형식을 지원합니다. 모든 호환 형식 간에 압축할 수 있습니다." },
+      { "question": "압축 프로세스는 얼마나 빠른가요?", "answer": "우리의 WebAssembly 최적화 압축은 극도로 빠릅니다. 대부분의 이미지는 이미지 크기와 복잡성에 따라 몇 초 내에 처리됩니다." },
+      { "question": "파일 크기 제한이 있나요?", "answer": "우리의 브라우저 기반 압축은 최적의 성능을 위해 100MB 미만의 파일에서 가장 잘 작동합니다. 더 큰 파일은 더 오래 걸릴 수 있지만 여전히 지원됩니다." },
+      { "question": "여러 이미지를 동시에 압축할 수 있나요?", "answer": "현재 최고의 품질 결과를 위해 단일 이미지 압축에 집중하고 있습니다. 배치 압축 기능은 향후 업데이트에서 계획되어 있습니다." }
+    ],
+    "toolsSection": {
+      "title": "압축 도구 선택",
+      "subtitle": "다양한 형식에 대한 전문 이미지 압축 도구. 특정 압축 요구사항에 완벽한 도구를 선택하세요."
+    },
+    "tools": {
+      "png": {
+        "subtitle": "무손실 압축",
+        "description": "투명도와 품질을 보존하면서 PNG 이미지 최적화",
+        "features": ["PNG", "투명도", "무손실"],
+        "stats": "최대 95% 감소",
+        "buttonText": "PNG 압축"
+      },
+      "jpeg": {
+        "subtitle": "지능적 압축",
+        "description": "지능적인 품질 최적화로 JPEG 파일 크기 감소",
+        "features": ["JPEG", "품질 제어", "빠른 처리"],
+        "stats": "최대 85% 감소",
+        "buttonText": "JPEG 압축"
+      },
+      "webp": {
+        "subtitle": "현대적 형식",
+        "description": "웹 최적화를 위한 고급 알고리즘으로 WebP 이미지 압축",
+        "features": ["WebP", "웹 최적화", "고품질"],
+        "stats": "최대 90% 감소",
+        "buttonText": "WebP 압축"
+      },
+      "avif": {
+        "subtitle": "차세대 형식",
+        "description": "우수한 품질-크기 비율의 초현대적 AVIF 압축",
+        "features": ["AVIF", "초압축", "미래 지향"],
+        "stats": "최대 95% 감소",
+        "buttonText": "AVIF 압축"
+      },
+      "gif": {
+        "subtitle": "애니메이션 지원",
+        "description": "부드러운 재생을 유지하면서 애니메이션 GIF 압축",
+        "features": ["GIF", "애니메이션", "색상 최적화"],
+        "stats": "최대 70% 감소",
+        "buttonText": "GIF 압축"
+      },
+      "bmp": {
+        "subtitle": "비트맵 최적화",
+        "description": "이미지 충실도를 보존하면서 BMP 파일 크기 감소",
+        "features": ["BMP", "압축되지 않음", "고충실도"],
+        "stats": "최대 80% 감소",
+        "buttonText": "BMP 압축"
+      },
+      "pdf": {
+        "subtitle": "문서 압축",
+        "description": "고급 압축 및 메타데이터 제거로 PDF 파일 크기 감소",
+        "features": ["PDF", "메타데이터 제거", "고급 압축"],
+        "stats": "최대 60% 감소",
+        "buttonText": "PDF 압축"
+      },
+      "video": {
+        "subtitle": "비디오 압축",
+        "description": "FFmpeg 기술로 비디오 파일 압축",
+        "features": ["다중 형식", "품질 프리셋", "클라이언트 처리"],
+        "stats": "최대 85% 감소",
+        "buttonText": "비디오 압축"
+      }
+    },
+    "toolsArray": [
+      { "id": "compress-png", "title": "PNG 압축", "subtitle": "투명도 보존", "description": "무손실 압축과 투명도 보존으로 PNG 이미지를 압축하세요", "icon": "🖼️", "gradient": "from-blue-500 to-purple-500", "features": ["PNG", "투명도", "무손실"], "stats": "최대 80% 더 작음", "popular": true },
+      { "id": "compress-jpeg", "title": "JPEG 압축", "subtitle": "사진 최적화", "description": "지능적인 품질 알고리즘으로 JPEG 사진을 압축하세요", "icon": "📸", "gradient": "from-green-500 to-blue-500", "features": ["JPEG", "사진", "품질 제어"], "stats": "최대 90% 더 작음", "popular": true },
+      { "id": "compress-webp", "title": "WebP 압축", "subtitle": "현대적 압축", "description": "고급 알고리즘으로 WebP 이미지를 압축하세요", "icon": "🌐", "gradient": "from-purple-500 to-pink-500", "features": ["WebP", "현대적", "효율적"], "stats": "최대 95% 더 작음", "popular": false },
+      { "id": "compress-avif", "title": "AVIF 압축", "subtitle": "차세대 형식", "description": "최신 기술로 AVIF 이미지를 압축하세요", "icon": "🚀", "gradient": "from-orange-500 to-red-500", "features": ["AVIF", "차세대", "최대"], "stats": "최대 98% 더 작음", "popular": false },
+      { "id": "compress-gif", "title": "GIF 압축", "subtitle": "애니메이션", "description": "GIF 애니메이션과 그래픽을 압축하세요", "icon": "🎬", "gradient": "from-pink-500 to-purple-500", "features": ["GIF", "애니메이션", "색상 최적화"], "stats": "최대 70% 더 작음", "popular": false },
+      { "id": "compress-bmp", "title": "BMP 압축", "subtitle": "비트맵 최적화", "description": "BMP 비트맵 이미지를 효율적으로 압축하세요", "icon": "📁", "gradient": "from-gray-500 to-blue-500", "features": ["BMP", "비트맵", "무손실"], "stats": "최대 60% 더 작음", "popular": false },
+      { "id": "compress-pdf", "title": "PDF 압축", "subtitle": "문서", "description": "고급 알고리즘으로 PDF 문서를 압축하세요", "icon": "📄", "gradient": "from-red-500 to-orange-500", "features": ["PDF", "문서", "메타데이터"], "stats": "최대 60% 더 작음", "popular": false },
+      { "id": "compress-video", "title": "비디오 압축", "subtitle": "멀티미디어", "description": "FFmpeg 기술로 비디오를 압축하세요", "icon": "🎥", "gradient": "from-indigo-500 to-purple-500", "features": ["MP4", "AVI", "MOV"], "stats": "최대 85% 더 작음", "popular": false }
+    ]
   }
 }

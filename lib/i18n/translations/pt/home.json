@@ -146,10 +146,146 @@
       }
     ]
   },
+  "sections": {
+    "chooseTool": {
+      "title": "Escolha Sua Ferramenta",
+      "subtitle": "Ferramentas profissionais para imagens, documentos e vídeos. Selecione a ferramenta perfeita para suas necessidades específicas de otimização de arquivos."
+    },
+    "benefits": {
+      "title": "Por Que Escolher TinyCompressor?",
+      "subtitle": "Projetado com tecnologia moderna e experiência do usuário em mente"
+    }
+  },
+  "labels": {
+    "mostPopular": "Mais Popular"
+  },
+  "toolCategories": {
+    "images": {
+      "title": "Compressão de Imagens",
+      "subtitle": "Otimize fotos e gráficos",
+      "description": "Reduza o tamanho dos arquivos preservando a qualidade para web, email e armazenamento",
+      "icon": "🗜️",
+      "features": ["PNG", "JPEG", "WebP", "AVIF", "GIF", "BMP"],
+      "stats": "Até 95% de redução",
+      "buttonText": "Comprimir Imagens"
+    },
+    "conversion": {
+      "title": "Conversão de Formato",
+      "subtitle": "Transforme tipos de arquivo",
+      "description": "Converta entre diferentes formatos de imagem com compatibilidade perfeita",
+      "icon": "🔄",
+      "features": ["PNG↔JPG", "WebP↔PNG", "HEIC↔JPG", "AVIF↔PNG"],
+      "stats": "10+ conversões",
+      "buttonText": "Converter Imagens"
+    },
+    "pdf": {
+      "title": "Compressão PDF",
+      "subtitle": "Reduza documentos",
+      "description": "Reduza o tamanho dos arquivos PDF com compressão avançada e remoção de metadados",
+      "icon": "📄",
+      "features": ["PDF", "Compressão de imagens", "Remoção de metadados"],
+      "stats": "Até 60% de redução",
+      "buttonText": "Comprimir PDFs"
+    },
+    "video": {
+      "title": "Processamento de Vídeo",
+      "subtitle": "Otimize vídeos",
+      "description": "Comprima arquivos de vídeo com tecnologia FFmpeg e predefinições de qualidade",
+      "icon": "🎬",
+      "features": ["MP4", "AVI", "MOV", "WebM"],
+      "stats": "Até 85% de redução",
+      "buttonText": "Comprimir Vídeos"
+    }
+  },
+  "benefits": [
+    {
+      "icon": "🔒",
+      "title": "Privacidade Primeiro",
+      "description": "Todo o processamento acontece localmente no seu navegador usando tecnologias do lado do cliente. Seus arquivos nunca saem do seu dispositivo.",
+      "color": "blue"
+    },
+    {
+      "icon": "⚡",
+      "title": "Super Rápido",
+      "description": "Algoritmos otimizados alimentados por WebAssembly entregam resultados em segundos, não minutos.",
+      "color": "green"
+    },
+    {
+      "icon": "🆓",
+      "title": "Completamente Gratuito",
+      "description": "Sem limites, sem assinaturas, sem custos ocultos. Use o quanto quiser sem marcas d'água.",
+      "color": "purple"
+    },
+    {
+      "icon": "🎯",
+      "title": "Alta Qualidade",
+      "description": "Algoritmos de compressão de nível profissional que mantêm a fidelidade visual enquanto reduzem o tamanho dos arquivos.",
+      "color": "orange"
+    }
+  ],
+  "hero": {
+    "subtitle": "Ferramentas profissionais de otimização de arquivos que reduzem o tamanho em até 95% mantendo excelente qualidade. Nenhum registro necessário.",
+    "quickActions": {
+      "compressFiles": "Comprimir Arquivos",
+      "convertFormats": "Converter Formatos"
+    }
+  },
+  "heroStats": [
+    {
+      "number": "15M+",
+      "label": "Arquivos Processados",
+      "color": "blue"
+    },
+    {
+      "number": "95%",
+      "label": "Redução Máxima",
+      "color": "green"
+    },
+    {
+      "number": "100%",
+      "label": "Gratuito",
+      "color": "purple"
+    },
+    {
+      "number": "11",
+      "label": "Idiomas",
+      "color": "orange"
+    }
+  ],
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tudo o que você precisa saber sobre nossas ferramentas de otimização de arquivos",
+    "items": [
+      {
+        "question": "A compressão de imagens é gratuita?",
+        "answer": "Sim, o TinyCompressor é completamente gratuito. Não há custos ocultos, assinaturas ou limites. Você pode comprimir quantas imagens quiser."
+      },
+      {
+        "question": "Meus dados estão seguros?",
+        "answer": "Absolutamente. Todo o processamento acontece localmente no seu navegador. Seus arquivos nunca são enviados para nossos servidores e não saem do seu dispositivo."
+      },
+      {
+        "question": "Quais formatos de imagem são suportados?",
+        "answer": "Suportamos todos os formatos comuns: PNG, JPEG, WebP, AVIF, GIF, BMP. Além disso, suportamos compressão PDF e processamento de vídeo."
+      },
+      {
+        "question": "Quão rápida é a compressão?",
+        "answer": "Nossos algoritmos otimizados WebAssembly são extremamente rápidos. A maioria das imagens é processada em menos de 3 segundos."
+      },
+      {
+        "question": "Posso controlar a qualidade?",
+        "answer": "Sim, você tem controle completo sobre os níveis de compressão, configurações de qualidade e formatos de saída com visualização em tempo real."
+      }
+    ]
+  },
   "cta": {
-    "title": "Pronto para Otimizar Suas Imagens?",
-    "description": "Junte-se a milhões de usuários que confiam no TinyCompressor para suas necessidades de processamento de imagens. Comece a otimizar suas imagens hoje e experimente a diferença!",
-    "getStarted": "Começar Agora",
-    "learnMore": "Saber Mais"
+    "title": "Pronto para otimizar seus arquivos?",
+    "description": "Junte-se a milhões de usuários que confiam no TinyCompressor para suas necessidades diárias de otimização de arquivos. Comece a processar suas imagens, documentos e vídeos em segundos.",
+    "getStarted": "Iniciar Compressão",
+    "learnMore": "Experimentar Conversor",
+    "buttons": {
+      "startCompression": "Iniciar Compressão",
+      "convertFormats": "Converter Formatos"
+    }
   }
 }

@@ -3,7 +3,8 @@
  * 基于 pdf-lib 实现纯前端 PDF 压缩
  */
 
-import { PDFDocument, PDFImage, PDFPage } from 'pdf-lib';
+import { loadPdfLib } from './pdf-loader';
+import type { PDFDocument, PDFImage, PDFPage } from 'pdf-lib';
 
 export interface PdfFile {
   id: string;
@@ -117,6 +118,28 @@ export function validatePdfFile(file: File): { valid: boolean; error?: string } 
  */
 export async function getPdfMetadata(file: File): Promise<PdfMetadata> {
   try {
+    // 检查是否在浏览器环境中
+    if (typeof window === 'undefined') {
+      return {
+        pageCount: 0,
+        hasImages: false
+      };
+    }
+
+    // 使用安全的PDF处理器
+    const { SafePdfProcessor } = await import('./safe-pdf-processor');
+    const processor = SafePdfProcessor.getInstance();
+    
+    // 验证环境
+    const envCheck = processor.validateEnvironment();
+    if (!envCheck.supported) {
+      throw new Error(envCheck.reason);
+    }
+    
+    // 动态加载 pdf-lib
+    const { loadPdfLib } = await import('./pdf-loader');
+    const { PDFDocument } = await loadPdfLib();
+    
     const arrayBuffer = await file.arrayBuffer();
     const pdfDoc = await PDFDocument.load(arrayBuffer);
     
@@ -171,9 +194,28 @@ export async function compressPdf(
   pdfFile: PdfFile,
   options: PdfCompressionOptions
 ): Promise<PdfCompressionResult> {
+  // 检查是否在浏览器环境中
+  if (typeof window === 'undefined') {
+    throw new Error('PDF compression is only available in browser environment');
+  }
+
+  // 使用安全的PDF处理器
+  const { SafePdfProcessor } = await import('./safe-pdf-processor');
+  const processor = SafePdfProcessor.getInstance();
+  
+  // 验证环境
+  const envCheck = processor.validateEnvironment();
+  if (!envCheck.supported) {
+    throw new Error(envCheck.reason);
+  }
+  
   const startTime = Date.now();
   
   try {
+    // 动态加载 pdf-lib
+    const { loadPdfLib } = await import('./pdf-loader');
+    const { PDFDocument } = await loadPdfLib();
+    
     // 加载 PDF
     const arrayBuffer = await pdfFile.file.arrayBuffer();
     const pdfDoc = await PDFDocument.load(arrayBuffer);

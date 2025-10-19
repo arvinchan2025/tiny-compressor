@@ -192,19 +192,40 @@
     "description": "Изучите больше инструментов сжатия и конвертации изображений",
     "items": [
       {
-        "title": "Сжатие JPEG",
-        "description": "Сжать изображения JPEG для веб и мобильных устройств",
-        "url": "/compressor/compress-jpeg"
+        "title": "Сжиматель JPEG",
+        "description": "Сжимать изображения JPEG для веб и мобильных",
+        "url": "/compressor/compress-jpeg",
+        "icon": "📷"
       },
       {
-        "title": "Сжатие WebP",
-        "description": "Сжать изображения WebP",
-        "url": "/compressor/compress-webp"
+        "title": "Сжиматель WebP",
+        "description": "Сжимать изображения WebP",
+        "url": "/compressor/compress-webp",
+        "icon": "🌐"
       },
       {
-        "title": "Сжатие AVIF",
-        "description": "Сжать изображения AVIF",
-        "url": "/compressor/compress-avif"
+        "title": "Сжиматель AVIF",
+        "description": "Сжимать изображения AVIF",
+        "url": "/compressor/compress-avif",
+        "icon": "⚡"
+      },
+      {
+        "title": "Сжиматель GIF",
+        "description": "Уменьшать размеры файлов GIF, сохраняя анимацию",
+        "url": "/compressor/compress-gif",
+        "icon": "🎬"
+      },
+      {
+        "title": "Сжиматель BMP",
+        "description": "Сжимать изображения BMP для лучшего хранения",
+        "url": "/compressor/compress-bmp",
+        "icon": "🖼️"
+      },
+      {
+        "title": "Конвертер изображений",
+        "description": "Конвертировать между различными форматами изображений",
+        "url": "/converter",
+        "icon": "🔄"
       }
     ]
   },
@@ -289,6 +310,3 @@
     }
   }
 }
-
-
-

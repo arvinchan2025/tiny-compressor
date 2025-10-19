@@ -193,18 +193,39 @@
     "items": [
       {
         "title": "ضاغط JPEG",
-        "description": "ضغط صور JPEG للويب والهاتف المحمول",
-        "url": "/compressor/compress-jpeg"
+        "description": "ضغط صور JPEG للويب والجوال",
+        "url": "/compressor/compress-jpeg",
+        "icon": "📷"
       },
       {
         "title": "ضاغط WebP",
         "description": "ضغط صور WebP",
-        "url": "/compressor/compress-webp"
+        "url": "/compressor/compress-webp",
+        "icon": "🌐"
       },
       {
         "title": "ضاغط AVIF",
         "description": "ضغط صور AVIF",
-        "url": "/compressor/compress-avif"
+        "url": "/compressor/compress-avif",
+        "icon": "⚡"
+      },
+      {
+        "title": "ضاغط GIF",
+        "description": "تقليل حجم ملفات GIF مع الحفاظ على الرسوم المتحركة",
+        "url": "/compressor/compress-gif",
+        "icon": "🎬"
+      },
+      {
+        "title": "ضاغط BMP",
+        "description": "ضغط صور BMP للحصول على تخزين أفضل",
+        "url": "/compressor/compress-bmp",
+        "icon": "🖼️"
+      },
+      {
+        "title": "محول الصور",
+        "description": "تحويل بين تنسيقات الصور المختلفة",
+        "url": "/converter",
+        "icon": "🔄"
       }
     ]
   },

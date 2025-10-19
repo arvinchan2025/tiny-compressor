@@ -147,9 +147,141 @@
     ]
   },
   "cta": {
-    "title": "画像を最適化する準備はできましたか？",
-    "description": "私たちの画像処理ツールを信頼する何百万人ものユーザーに参加",
+    "title": "ファイルを最適化する準備はできましたか？",
+    "description": "日常のファイル最適化ニーズにTinyCompressorを信頼する何百万人ものユーザーに参加してください。数秒で画像、ドキュメント、動画の処理を開始できます。",
     "getStarted": "今すぐ開始",
-    "learnMore": "詳細を見る"
+    "learnMore": "詳細を見る",
+    "buttons": {
+      "startCompression": "圧縮を開始",
+      "convertFormats": "フォーマットを変換"
+    }
+  },
+  "sections": {
+    "chooseTool": {
+      "title": "ツールを選択",
+      "subtitle": "画像、ドキュメント、動画用のプロフェッショナルグレードのツール。特定のファイル最適化ニーズに最適なツールを選択してください。"
+    },
+    "benefits": {
+      "title": "なぜTinyCompressorを選ぶのか？",
+      "subtitle": "モダンな技術とユーザーエクスペリエンスを考慮して構築"
+    }
+  },
+  "labels": {
+    "mostPopular": "最も人気"
+  },
+  "toolCategories": {
+    "images": {
+      "title": "画像圧縮",
+      "subtitle": "写真・グラフィックの最適化",
+      "description": "品質を保ちながらファイルサイズを削減。ウェブ、メール、ストレージに最適",
+      "icon": "🗜️",
+      "features": ["PNG", "JPEG", "WebP", "AVIF", "GIF", "BMP"],
+      "stats": "最大95%削減",
+      "buttonText": "画像を圧縮"
+    },
+    "conversion": {
+      "title": "フォーマット変換",
+      "subtitle": "ファイルタイプの変換",
+      "description": "異なる画像フォーマット間の完璧な互換性を保った変換",
+      "icon": "🔄",
+      "features": ["PNG↔JPG", "WebP↔PNG", "HEIC↔JPG", "AVIF↔PNG"],
+      "stats": "10+変換",
+      "buttonText": "画像を変換"
+    },
+    "pdf": {
+      "title": "PDF圧縮",
+      "subtitle": "ドキュメントの縮小",
+      "description": "高度な圧縮とメタデータ削除によりPDFファイルサイズを削減",
+      "icon": "📄",
+      "features": ["PDF", "画像圧縮", "メタデータ削除"],
+      "stats": "最大60%削減",
+      "buttonText": "PDFを圧縮"
+    },
+    "video": {
+      "title": "動画処理",
+      "subtitle": "動画の最適化",
+      "description": "FFmpeg技術と品質プリセットで動画ファイルを圧縮",
+      "icon": "🎬",
+      "features": ["MP4", "AVI", "MOV", "WebM"],
+      "stats": "最大85%削減",
+      "buttonText": "動画を圧縮"
+    }
+  },
+  "benefits": [
+    {
+      "icon": "🔒",
+      "title": "プライバシー重視",
+      "description": "すべての処理はクライアントサイド技術を使用してブラウザでローカルに実行されます。ファイルがデバイスから離れることはありません。",
+      "color": "blue"
+    },
+    {
+      "icon": "⚡",
+      "title": "超高速",
+      "description": "WebAssemblyを活用した最適化アルゴリズムにより、数分ではなく数秒で結果を提供します。",
+      "color": "green"
+    },
+    {
+      "icon": "🆓",
+      "title": "完全無料",
+      "description": "制限なし、サブスクリプションなし、隠れたコストなし。必要に応じて使用でき、ウォーターマークはありません。",
+      "color": "purple"
+    },
+    {
+      "icon": "🎯",
+      "title": "高品質",
+      "description": "ファイルサイズを削減しながら視覚的忠実度を維持するプロフェッショナルグレードの圧縮アルゴリズム。",
+      "color": "orange"
+    }
+  ],
+  "hero": {
+    "subtitle": "優れた品質を保ちながらファイルサイズを最大95%削減するプロフェッショナルなファイル最適化ツール。登録不要。",
+    "quickActions": {
+      "compressFiles": "ファイルを圧縮",
+      "convertFormats": "フォーマットを変換"
+    }
+  },
+  "heroStats": [
+    {
+      "number": "1500万+",
+      "label": "処理済みファイル",
+      "color": "blue"
+    },
+    {
+      "number": "95%",
+      "label": "最大削減率",
+      "color": "green"
+    },
+    {
+      "number": "16+",
+      "label": "対応フォーマット",
+      "color": "purple"
+    },
+    {
+      "number": "100%",
+      "label": "永久無料",
+      "color": "orange"
+    }
+  ],
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "ファイル最適化ツールについて知っておくべきすべて",
+    "items": [
+      {
+        "question": "TinyCompressorはどのようにファイルサイズを削減しますか？",
+        "answer": "品質を保ちながら不要なデータを削除する高度な圧縮アルゴリズムを使用します。画像は最大95%、PDFは60%、動画は85%までファイルサイズを削減できます。"
+      },
+      {
+        "question": "TinyCompressorを使用する際のデータは安全ですか？",
+        "answer": "完全に安全です！すべての処理はクライアントサイド技術を使用してブラウザでローカルに実行されます。ファイルがサーバーにアップロードされることはなく、完全なプライバシーとセキュリティが保証されます。"
+      },
+      {
+        "question": "TinyCompressorはどのファイルフォーマットに対応していますか？",
+        "answer": "画像のPNG、JPEG、WebP、AVIF、GIF、BMP、ドキュメントのPDF、動画のMP4、AVI、MOV、WebMなど、16+のフォーマットに対応しています。互換性のあるフォーマット間で圧縮や変換が可能です。"
+      },
+      {
+        "question": "TinyCompressorは本当に無料で使用できますか？",
+        "answer": "はい！TinyCompressorは隠れたコスト、サブスクリプション、ファイルサイズ制限なしで100%永久無料です。登録不要で、ファイルにウォーターマークが追加されることもありません。"
+      }
+    ]
   }
 }

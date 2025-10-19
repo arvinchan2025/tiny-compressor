@@ -7,12 +7,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CompressionResult } from '@/lib/image-processing/types';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { ConversionResult } from '@/lib/image-processing/types';
+import { useTranslation } from '@/hooks/useTranslation';
 import { Locale } from '@/lib/i18n';
 
 interface ConversionResultsPanelProps {
-  result: CompressionResult;
+  result: ConversionResult;
   originalImageUrl?: string;
   sourceFormat: string;
   targetFormat: string;
@@ -30,7 +30,7 @@ export default function ConversionResultsPanel({
   onDownload, 
   onConvertMore 
 }: ConversionResultsPanelProps) {
-  const { t } = useModuleTranslation(`converters/${sourceFormat}-to-${targetFormat}`, locale);
+  const { t } = useTranslation(`converters/${sourceFormat}-to-${targetFormat}`, locale);
   
   // 安全检查
   if (!result) {
@@ -38,8 +38,12 @@ export default function ConversionResultsPanel({
   }
 
   // 计算文件大小变化
-  const sizeChange = result.compressedSize - result.originalSize;
-  const sizeChangePercent = Math.abs((sizeChange / result.originalSize * 100));
+  // 安全检查，确保数据有效
+  const originalSize = result.originalSize || result.originalFile?.size || 0;
+  const convertedSize = result.convertedSize || result.convertedFile?.size || 0;
+  
+  const sizeChange = convertedSize - originalSize;
+  const sizeChangePercent = originalSize > 0 ? Math.abs((sizeChange / originalSize * 100)) : 0;
   const isSizeReduced = sizeChange < 0;
 
   return (
@@ -149,7 +153,7 @@ export default function ConversionResultsPanel({
                 <div className="text-center">
                   <div className="flex items-baseline justify-center space-x-1">
                     <span className="text-xl font-bold text-gray-700">
-                      {(result.originalSize / 1024 / 1024).toFixed(2)}
+                      {(originalSize / 1024 / 1024).toFixed(2)}
                     </span>
                     <div className="text-xs text-gray-500">MB</div>
                   </div>
@@ -174,7 +178,7 @@ export default function ConversionResultsPanel({
                 <div className="text-center">
                   <div className="flex items-baseline justify-center space-x-1">
                     <span className="text-xl font-bold text-green-600">
-                      {(result.compressedSize / 1024 / 1024).toFixed(2)}
+                      {(convertedSize / 1024 / 1024).toFixed(2)}
                     </span>
                     <div className="text-xs text-gray-500">MB</div>
                   </div>

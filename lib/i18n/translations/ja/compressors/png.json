@@ -194,17 +194,38 @@
       {
         "title": "JPEG圧縮",
         "description": "WebとモバイルのためにJPEG画像を圧縮",
-        "url": "/compressor/compress-jpeg"
+        "url": "/compressor/compress-jpeg",
+        "icon": "📷"
       },
       {
         "title": "WebP圧縮",
         "description": "WebP画像を圧縮",
-        "url": "/compressor/compress-webp"
+        "url": "/compressor/compress-webp",
+        "icon": "🌐"
       },
       {
         "title": "AVIF圧縮",
         "description": "AVIF画像を圧縮",
-        "url": "/compressor/compress-avif"
+        "url": "/compressor/compress-avif",
+        "icon": "⚡"
+      },
+      {
+        "title": "GIF圧縮",
+        "description": "アニメーションを保持しながらGIFファイルサイズを削減",
+        "url": "/compressor/compress-gif",
+        "icon": "🎬"
+      },
+      {
+        "title": "BMP圧縮",
+        "description": "より良いストレージのためにBMP画像を圧縮",
+        "url": "/compressor/compress-bmp",
+        "icon": "🖼️"
+      },
+      {
+        "title": "画像変換",
+        "description": "異なる画像形式間で変換",
+        "url": "/converter",
+        "icon": "🔄"
       }
     ]
   },

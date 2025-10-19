@@ -1,10 +1,17 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { ClientProviders } from '@/components/providers/ClientProviders';
 // import { ToastProvider } from '@/components/ui/Toast'; // 移除Toast，改用进度条
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap', // 字体加载时使用系统字体，避免阻塞渲染
+  preload: true,
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'], // 仅加载需要的字重
+});
 
 export const metadata: Metadata = {
   title: 'TinyCompressor - Free Online Image Compression Tool',
@@ -81,32 +88,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* DNS 预解析和预连接 */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://unpkg.com" />
+        
+        {/* Favicon */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
         <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-R23Y0Z9XSP"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-R23Y0Z9XSP', {
-                page_title: document.title,
-                page_location: window.location.href,
-                anonymize_ip: true,
-                allow_google_signals: true,
-                allow_ad_personalization_signals: false
-              });
-            `,
-          }}
-        />
         
         {/* 防闪烁脚本 - 必须在页面渲染前执行 */}
         <script
@@ -147,6 +141,26 @@ export default function RootLayout({
         <ClientProviders>
           {children}
         </ClientProviders>
+        
+        {/* Google Analytics - 延迟加载，不阻塞首屏 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R23Y0Z9XSP"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R23Y0Z9XSP', {
+              page_title: document.title,
+              page_location: window.location.href,
+              anonymize_ip: true,
+              allow_google_signals: true,
+              allow_ad_personalization_signals: false
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

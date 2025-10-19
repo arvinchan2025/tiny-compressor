@@ -10,6 +10,8 @@ import StandardIcon from '@/components/ui/StandardIcon';
 import StandardPageLayout from '@/components/layout/StandardPageLayout';
 import Link from 'next/link';
 import { getFunctionalPagePath } from '@/lib/i18n/path-utils';
+import ModernCompressorNavigation from '@/components/compressor/ModernCompressorNavigation';
+import ModernConverterNavigation from '@/components/converter/ModernConverterNavigation';
 
 interface UnifiedNavigationProps {
   locale: Locale;
@@ -18,6 +20,16 @@ interface UnifiedNavigationProps {
 
 export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigationProps) {
   const { t } = useTranslation('common/navigation', locale);
+
+  // 如果是compressor页面，使用优化版ModernCompressorNavigation组件
+  if (pageType === 'compressor') {
+    return <ModernCompressorNavigation locale={locale} />;
+  }
+
+  // 如果是converter页面，使用优化版ModernConverterNavigation组件
+  if (pageType === 'converter') {
+    return <ModernConverterNavigation locale={locale} />;
+  }
 
   // 动画变体
   const containerVariants = {
@@ -430,56 +442,48 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
   return (
     <StandardPageLayout locale={locale}>
       <div className="page-base min-h-screen">
-        {/* Hero Section */}
-        <section className="section-default relative py-12">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Modern Hero Section */}
+        <section className="relative py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900/20">
+          <div className="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10"></div>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               variants={containerVariants}
               initial="hidden"
               animate="visible"
               className="text-center"
             >
-              {/* Minimal Badge */}
-              <motion.div
-                variants={itemVariants}
-                className="inline-flex items-center px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 rounded-full text-xs font-medium text-blue-700 dark:text-blue-300 mb-6 transition-colors"
-              >
-                <span className="w-1.5 h-1.5 bg-blue-500 dark:bg-blue-400 rounded-full mr-2" />
-                {pageType === 'compressor' 
-                  ? (t('compressor.badge') || 'Image Compression')
-                  : (t('converter.badge') || 'Format Conversion')
-                }
-              </motion.div>
-
-              {/* Clean Title */}
+              {/* Clean Title Design */}
               <motion.h1
                 variants={heroVariants}
-                className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight transition-colors"
+                className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight"
               >
-                <span className="text-4xl mr-3">{config.heroIcon}</span>
-                {config.title}
+                <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent">
+                  {config.title}
+                </span>
               </motion.h1>
 
-              {/* Clean Subtitle */}
+              {/* Refined Subtitle */}
               <motion.p
                 variants={itemVariants}
-                className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto transition-colors"
+                className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed font-light"
               >
                 {config.subtitle}
               </motion.p>
 
-              {/* Compact Stats */}
+              {/* Modern Stats Grid */}
               <motion.div
                 variants={itemVariants}
-                className="inline-flex items-center gap-8 px-6 py-3 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm transition-colors"
+                className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto"
               >
                 {config.stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white transition-colors">
-                      {stat.number}
-                    </div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 transition-colors">
-                      {stat.label}
+                  <div key={index} className="text-center group">
+                    <div className="inline-flex flex-col items-center p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl rounded-2xl border border-white/20 dark:border-gray-700/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                        {stat.number}
+                      </div>
+                      <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                        {stat.label}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -488,77 +492,84 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
           </div>
         </section>
 
-        {/* Tools Grid Section */}
-        <section className="py-12 transition-colors">
+        {/* Modern Tools Grid Section */}
+        <section className="py-20 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-center mb-10"
+              className="text-center mb-16"
             >
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 transition-colors">
+              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-4">
                 {t('tools.title')}
               </h2>
-              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 {config.description}
               </p>
             </motion.div>
 
-            <div className={`grid ${pageType === 'compressor' ? 'md:grid-cols-2 lg:grid-cols-3' : 'md:grid-cols-2 lg:grid-cols-5'} gap-4`}>
+            <div className={`grid ${pageType === 'compressor' ? 'sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3' : 'sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3'} gap-8 xl:gap-10`}>
               {config.tools.map((tool, index) => (
                 <motion.div
                   key={tool.id}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   className="group"
                 >
                   <Link href={tool.path}>
-                    <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition-all duration-200 h-full flex flex-col">
-                      {/* Top Accent Bar */}
-                      <div className={`h-0.5 bg-gradient-to-r ${tool.gradient}`} />
+                    <div className="relative bg-white dark:bg-gray-800 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 overflow-hidden hover:border-transparent hover:shadow-2xl transition-all duration-500 h-full flex flex-col group-hover:-translate-y-3 group-hover:scale-[1.02]">
+                      {/* Premium Gradient Overlay */}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${tool.gradient} opacity-0 group-hover:opacity-8 transition-all duration-500`}></div>
                       
-                      <div className="p-5 flex-1 flex flex-col">
-                        {/* Icon and Title */}
-                        <div className="flex items-center mb-3">
-                          <span className="text-3xl mr-3">{tool.icon}</span>
-                          <h3 className="text-base font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight">
+                      {/* Elegant Accent Line */}
+                      <div className={`h-1 bg-gradient-to-r ${tool.gradient} group-hover:h-1.5 transition-all duration-300`} />
+                      
+                      <div className="p-6 flex-1 flex flex-col relative">
+                        {/* Professional Icon and Title Layout */}
+                        <div className="text-center mb-5">
+                          <div className={`inline-flex w-16 h-16 rounded-xl bg-gradient-to-br ${tool.gradient} items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300 mb-4 relative`}>
+                            <span className="text-2xl text-white">{tool.icon}</span>
+                            {/* Subtle glow effect */}
+                            <div className={`absolute inset-0 rounded-xl bg-gradient-to-br ${tool.gradient} opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-300`}></div>
+                          </div>
+                          <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300 leading-tight">
                             {tool.name}
                           </h3>
                         </div>
 
-                        {/* Description */}
-                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-2 leading-relaxed transition-colors">
+                        {/* Refined Description */}
+                        <p className="text-gray-600 dark:text-gray-300 mb-5 leading-relaxed text-center text-sm">
                           {tool.description}
                         </p>
 
-                        {/* Features Pills */}
-                        <div className="flex flex-wrap gap-1.5 mb-4">
-                          {tool.features.map((feature, featureIndex) => (
+                        {/* Minimalist Features Tags */}
+                        <div className="flex flex-wrap gap-1.5 mb-5 justify-center">
+                          {tool.features.slice(0, 2).map((feature, featureIndex) => (
                             <span 
                               key={featureIndex} 
-                              className="inline-block px-2 py-1 bg-gray-50 dark:bg-gray-700 text-xs text-gray-600 dark:text-gray-300 rounded transition-colors"
+                              className="inline-block px-3 py-1.5 bg-gray-50/80 dark:bg-gray-700/40 text-xs font-medium text-gray-600 dark:text-gray-300 rounded-lg border border-gray-200/40 dark:border-gray-600/40 backdrop-blur-sm"
                             >
                               {feature}
                             </span>
                           ))}
                         </div>
 
-                        {/* Bottom Badge */}
-                        <div className="mt-auto pt-3 border-t border-gray-100 dark:border-gray-700 transition-colors">
-                          <div className="flex items-center justify-between text-xs">
-                            <span className="text-gray-500 dark:text-gray-400 transition-colors">
+                        {/* Elegant Bottom Info */}
+                        <div className="mt-auto pt-4 border-t border-gray-100/60 dark:border-gray-700/60">
+                          <div className="text-center">
+                            <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-wide">
                               {pageType === 'compressor' 
-                                ? (t('compressor.statsLabels.compression') || '圧縮率')
-                                : (t('converter.statsLabels.speed') || '速度')
+                                ? (t('compressor.statsLabels.compression') || 'Compression')
+                                : (t('converter.statsLabels.speed') || 'Speed')
                               }
-                            </span>
-                            <span className="font-semibold text-gray-900 dark:text-white transition-colors">
+                            </div>
+                            <div className={`text-base font-bold bg-gradient-to-r ${tool.gradient} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300`}>
                               {pageType === 'compressor' ? (tool as any).compression : (tool as any).conversion}
-                            </span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -570,41 +581,42 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="section-alternate py-12">
+        {/* Simplified Features Section */}
+        <section className="py-16 bg-gray-50 dark:bg-gray-800/50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-center mb-10"
+              className="text-center mb-12"
             >
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 transition-colors">
+              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-4">
                 {t('features.title')}
               </h2>
-              <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors">
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 {t('features.subtitle')}
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-10">
               {config.features.map((feature, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
+                  className="group"
                 >
-                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-500 hover:shadow-sm transition-all duration-200 h-full">
-                    <div className="flex items-center mb-3">
-                      <span className="text-2xl mr-3">{feature.icon}</span>
-                      <h3 className="text-base font-semibold text-gray-900 dark:text-white transition-colors">
-                        {feature.title}
-                      </h3>
+                  <div className="text-center p-6 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/40 dark:border-gray-700/40 hover:bg-white/80 dark:hover:bg-gray-800/80 hover:shadow-lg transition-all duration-300">
+                    <div className="inline-flex items-center justify-center w-18 h-18 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-lg mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300">
+                      <span className="text-3xl text-white">{feature.icon}</span>
                     </div>
-                    <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
                       {feature.description}
                     </p>
                   </div>
@@ -614,7 +626,7 @@ export default function UnifiedNavigation({ locale, pageType }: UnifiedNavigatio
           </div>
         </section>
 
-        {/* CTA Section - Gradient Background */}
+        {/* CTA Section - Original Colors */}
         <section className="py-16 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 relative overflow-hidden">
           <div className="absolute inset-0 bg-black/10" />
           <div className="absolute inset-0">

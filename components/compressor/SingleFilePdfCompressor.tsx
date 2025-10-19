@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Download, Check } from 'lucide-react';
 import { Locale } from '@/lib/i18n';
 import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { usePdfProcessor } from '@/hooks/usePdfProcessor';
 import { stateVariants } from '@/lib/animations/state-transitions';
 import { Analytics } from '@/lib/analytics';
 import UploadArea from '@/components/shared/UploadArea';
@@ -12,21 +13,69 @@ import FileInfoCard from '@/components/shared/FileInfoCard';
 import ProgressIndicator from '@/components/shared/ProgressIndicator';
 import ActionButtons from '@/components/shared/ActionButtons';
 import ModeSelector from './components/ModeSelector';
-import {
-  createPdfFile,
-  validatePdfFile,
-  compressPdf,
-  formatFileSize,
-  PdfFile,
-  PdfCompressionResult,
-  PdfCompressionOptions
-} from '@/lib/pdf-processing/compression';
+// PDF处理函数将在需要时动态导入
+// import {
+//   createPdfFile,
+//   validatePdfFile,
+//   compressPdf,
+//   formatFileSize,
+//   PdfFile,
+//   PdfCompressionResult,
+//   PdfCompressionOptions
+// } from '@/lib/pdf-processing/compression';
+
+// 类型定义
+interface PdfFile {
+  id: string;
+  file: File;
+  name: string;
+  size: number;
+  lastModified: number;
+  url: string;
+}
+
+interface PdfCompressionResult {
+  originalFile: PdfFile;
+  compressedFile: PdfFile;
+  compressionRatio: number;
+  sizeReduction: number;
+  processingTime: number;
+}
+
+interface PdfCompressionOptions {
+  quality: number;
+  removeMetadata: boolean;
+  optimizeImages: boolean;
+  removeUnusedObjects: boolean;
+}
 
 interface SingleFilePdfCompressorProps {
   locale: Locale;
   onComplete?: (result: PdfCompressionResult) => void;
   onReset?: () => void;
 }
+
+       // 动态导入PDF处理函数的辅助函数
+       async function loadPdfProcessingFunctions() {
+         const { 
+           createPdfFile, 
+           validatePdfFile, 
+           compressPdf, 
+           formatFileSize 
+         } = await import('@/lib/pdf-processing/compression');
+         
+         return { createPdfFile, validatePdfFile, compressPdf, formatFileSize };
+       }
+
+       // 验证PDF处理环境的辅助函数
+       async function validatePdfEnvironment() {
+         try {
+           const { validatePdfEnvironment } = await import('@/lib/pdf-processing/safe-pdf-processor');
+           return validatePdfEnvironment();
+         } catch (error) {
+           return { supported: false, reason: 'Failed to validate environment' };
+         }
+       }
 
 type OperationState = 'empty' | 'config' | 'processing' | 'result';
 
@@ -39,6 +88,7 @@ export default function SingleFilePdfCompressor({
   
   const [state, setState] = useState<OperationState>('empty');
   const [file, setFile] = useState<PdfFile | null>(null);
+  const [formatFileSize, setFormatFileSize] = useState<((size: number) => string) | null>(null);
   const [isAdvancedMode, setIsAdvancedMode] = useState(false);
   const [options, setOptions] = useState<PdfCompressionOptions>({
     imageQuality: 0.7,
@@ -47,14 +97,34 @@ export default function SingleFilePdfCompressor({
     scaleImages: false,
     maxImageDimension: 1920
   });
-  const [progress, setProgress] = useState(0);
-  const [result, setResult] = useState<PdfCompressionResult | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  
+  // 使用新的PDF处理器状态管理
+  const {
+    isProcessing,
+    progress,
+    error,
+    result,
+    metadata,
+    processingTime,
+    workerType,
+    setError,
+    setProgress,
+    setResult,
+    processPdf: processPdfFile,
+    reset: resetProcessor,
+    checkEnvironmentSupport
+  } = usePdfProcessor();
 
   // 文件选择处理
   const handleFileSelect = useCallback(async (selectedFile: File) => {
     try {
       setError(null);
+      
+      // 动态加载PDF处理函数
+      const { validatePdfFile, createPdfFile, formatFileSize } = await loadPdfProcessingFunctions();
+      
+      // 存储formatFileSize函数供后续使用
+      setFormatFileSize(() => formatFileSize);
       
       // 验证文件
       const validation = validatePdfFile(selectedFile);
@@ -94,6 +164,9 @@ export default function SingleFilePdfCompressor({
         });
       }, 200);
 
+      // 动态加载PDF处理函数
+      const { compressPdf } = await loadPdfProcessingFunctions();
+      
       const compressionResult = await compressPdf(file, options);
       
       clearInterval(progressInterval);
@@ -152,6 +225,22 @@ export default function SingleFilePdfCompressor({
             animate="visible"
             exit="exit"
           >
+            {/* 错误显示 */}
+            {error && (
+              <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0">
+                    <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <p className="text-sm text-red-800 dark:text-red-200">{error}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+            
             <UploadArea
               title={t('operation.upload.title')}
               subtitle={t('operation.upload.subtitle')}
@@ -399,7 +488,7 @@ export default function SingleFilePdfCompressor({
                   <div className="flex justify-between text-sm mb-1">
                     <span className="text-text-secondary">Original</span>
                     <span className="font-semibold text-text-primary">
-                      {formatFileSize(result.originalSize)}
+                      {formatFileSize ? formatFileSize(result.originalSize) : `${result.originalSize} bytes`}
                     </span>
                   </div>
                   <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -411,7 +500,7 @@ export default function SingleFilePdfCompressor({
                   <div className="flex justify-between text-sm mb-1">
                     <span className="text-text-secondary">Compressed</span>
                     <span className="font-semibold text-green-600 dark:text-green-400">
-                      {formatFileSize(result.compressedSize)}
+                      {formatFileSize ? formatFileSize(result.compressedSize) : `${result.compressedSize} bytes`}
                     </span>
                   </div>
                   <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -436,7 +525,7 @@ export default function SingleFilePdfCompressor({
                   -{result.savingsPercentage}%
                 </div>
                 <div className="text-sm text-green-700 dark:text-green-300">
-                  Saved {formatFileSize(result.originalSize - result.compressedSize)}
+                  Saved {formatFileSize ? formatFileSize(result.originalSize - result.compressedSize) : `${result.originalSize - result.compressedSize} bytes`}
                 </div>
               </motion.div>
             </div>
@@ -445,13 +534,13 @@ export default function SingleFilePdfCompressor({
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               <div className="p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700 text-center">
                 <div className="text-lg font-bold text-text-primary mb-1">
-                  {formatFileSize(result.originalSize)}
+                  {formatFileSize ? formatFileSize(result.originalSize) : `${result.originalSize} bytes`}
                 </div>
                 <div className="text-xs text-text-secondary">Original Size</div>
               </div>
               <div className="p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700 text-center">
                 <div className="text-lg font-bold text-green-600 dark:text-green-400 mb-1">
-                  {formatFileSize(result.compressedSize)}
+                  {formatFileSize ? formatFileSize(result.compressedSize) : `${result.compressedSize} bytes`}
                 </div>
                 <div className="text-xs text-text-secondary">Compressed Size</div>
               </div>

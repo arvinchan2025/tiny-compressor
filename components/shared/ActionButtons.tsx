@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { LucideIcon } from 'lucide-react';
 
 interface ButtonConfig {
@@ -25,7 +24,7 @@ export default function ActionButtons({
   return (
     <div className={`flex ${layout === 'vertical' ? 'flex-col' : 'flex-col sm:flex-row'} gap-4`}>
       {buttons.map((button, index) => (
-        <motion.button
+        <button
           key={index}
           onClick={button.onClick}
           disabled={button.disabled || button.loading}
@@ -35,15 +34,14 @@ export default function ActionButtons({
               ? 'bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-700 dark:to-purple-700 text-white hover:shadow-lg' 
               : 'border-2 border-border-default hover:bg-gray-50 dark:hover:bg-gray-850 text-text-primary'
             }
-            px-6 py-4 rounded-lg font-semibold transition-all
-            disabled:opacity-50 disabled:cursor-not-allowed
+            px-6 py-4 rounded-lg font-semibold
+            transition-all duration-300 ease-out
+            hover:scale-[1.02] active:scale-[0.98]
+            disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
             flex items-center justify-center gap-2
+            animate-slide-up
           `}
-          whileHover={!button.disabled ? { scale: 1.02 } : {}}
-          whileTap={!button.disabled ? { scale: 0.98 } : {}}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: index * 0.1 }}
+          style={{ animationDelay: `${index * 100}ms` }}
         >
           {button.loading ? (
             <>
@@ -56,7 +54,7 @@ export default function ActionButtons({
               {button.label}
             </>
           )}
-        </motion.button>
+        </button>
       ))}
     </div>
   );

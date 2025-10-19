@@ -65,7 +65,33 @@ function generateTypeScriptContent(allTranslations) {
   content += `// Do not modify this file manually\n`;
   content += `// Generated at: ${timestamp}\n\n`;
   content += `export const translations = `;
-  content += JSON.stringify(allTranslations, null, 2);
+  
+  // 使用更安全的JSON序列化方式
+  try {
+    const jsonString = JSON.stringify(allTranslations, null, 2);
+    content += jsonString;
+  } catch (error) {
+    console.error('❌ Failed to stringify translations:', error.message);
+    // 如果失败，尝试逐个语言序列化
+    content += '{\n';
+    const locales = Object.keys(allTranslations);
+    for (let i = 0; i < locales.length; i++) {
+      const locale = locales[i];
+      content += `  "${locale}": `;
+      try {
+        content += JSON.stringify(allTranslations[locale], null, 2);
+      } catch (localeError) {
+        console.error(`❌ Failed to stringify ${locale}:`, localeError.message);
+        content += '{}';
+      }
+      if (i < locales.length - 1) {
+        content += ',';
+      }
+      content += '\n';
+    }
+    content += '}';
+  }
+  
   content += `\n\n`;
   content += `export const supportedModules = `;
   content += JSON.stringify(supportedModules, null, 2);
@@ -94,6 +120,14 @@ function buildTranslations() {
     
     const moduleCount = Object.keys(allTranslations[locale]).length;
     console.log(`   ✓ Loaded ${moduleCount} modules for ${locale}`);
+    
+    // 调试信息：检查compressorNavigation.tools
+    if (allTranslations[locale]['common/navigation'] && allTranslations[locale]['common/navigation'].compressorNavigation) {
+      const hasTools = 'tools' in allTranslations[locale]['common/navigation'].compressorNavigation;
+      const hasSections = 'sections' in allTranslations[locale]['common/navigation'].compressorNavigation;
+      const hasToolsSection = 'toolsSection' in allTranslations[locale]['common/navigation'].compressorNavigation;
+      console.log(`   🔍 compressorNavigation: tools=${hasTools}, sections=${hasSections}, toolsSection=${hasToolsSection}`);
+    }
   }
 
   // 生成 TypeScript 文件
