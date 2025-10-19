@@ -1,6 +1,10 @@
 import { Metadata } from 'next';
 import UnifiedClient from '@/components/UnifiedClient';
 
+// 强制动态渲染以避免预渲染错误
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: 'WebP Compressor - Free Online Image Compression Tool',
   description: 'Compress WebP images online for free! Reduce file size while maintaining quality. Fast, secure, and completely private compression.',
