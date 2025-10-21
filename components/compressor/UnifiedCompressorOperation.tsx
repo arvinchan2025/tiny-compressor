@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import { Locale } from '@/lib/i18n';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import UnifiedFileManager from '@/components/ui/UnifiedFileManager';
 
 interface UnifiedCompressorOperationProps {
@@ -43,7 +43,7 @@ export default function UnifiedCompressorOperation({
   compressionSettings,
   maxFiles = 10
 }: UnifiedCompressorOperationProps) {
-  const { t } = useModuleTranslation(`compressors/${format}`, locale);
+  const { t } = useTranslation(`compressors/${format}`, locale);
   const [error, setError] = useState<string | null>(null);
 
   // 文件拖放处理
@@ -54,21 +54,21 @@ export default function UnifiedCompressorOperation({
     if (files.length === 0) return;
 
     try {
-      // 检查文件数量限制
+      // 检查文件数量限�?
       if (files.length > maxFiles) {
         setError(t('errors.maxFiles', { maxFiles }));
         return;
       }
 
-      // 检查每个文件
+      // 检查每个文�?
       for (const file of files) {
-        // 检查文件大小 (10MB)
+        // 检查文件大�?(10MB)
         if (file.size > 10 * 1024 * 1024) {
           setError(t('errors.fileTooLarge', { fileName: file.name }));
           return;
         }
 
-        // 检查文件格式
+        // 检查文件格�?
         const supportedFormats = [format];
         const fileExtension = file.name.split('.').pop()?.toLowerCase();
         if (!supportedFormats.includes(fileExtension || '')) {
@@ -77,7 +77,7 @@ export default function UnifiedCompressorOperation({
         }
       }
 
-      // 如果没有错误，处理文件
+      // 如果没有错误，处理文�?
       const newImageFiles = files.map(file => ({
         id: Math.random().toString(),
         file,
@@ -87,7 +87,7 @@ export default function UnifiedCompressorOperation({
         url: URL.createObjectURL(file)
       }));
       
-      setError(null); // 清除之前的错误
+      setError(null); // 清除之前的错�?
       onFilesSelected(newImageFiles);
     } catch (err) {
       setError(err instanceof Error ? err.message : t('errors.uploadFailed'));

@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Conversor PNG para WebP - Converter Imagens PNG Online",
     "description": "Converta imagens PNG para formato WebP online. Conversor PNG para WebP gratuito, rápido e fácil de usar.",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Arraste arquivos PNG aqui ou clique para selecionar",
-      "subtitle": "Suporta formato PNG, até {maxFiles} arquivos, máximo 10MB cada",
-      "selectFiles": "Selecionar Arquivos PNG"
+      "title": "Arraste seu arquivo PNG aqui ou clique para selecionar",
+      "subtitle": "Suporta formato PNG, máximo 50MB",
+      "selectFiles": "Selecionar Arquivo PNG"
     },
     "errors": {
       "maxFiles": "Máximo {maxFiles} arquivos permitidos",
-      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 10MB",
+      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 50MB",
       "unsupportedFormat": "Formato de arquivo não suportado: {fileName}. Apenas arquivos PNG são suportados.",
       "uploadFailed": "Falha no upload do arquivo",
       "conversionFailed": "Conversão falhou. Tente novamente."
@@ -279,6 +279,3 @@
     }
   }
 }
-
-
-

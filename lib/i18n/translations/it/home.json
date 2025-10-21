@@ -1,10 +1,14 @@
 {
   "hero": {
     "title": "TinyCompressor",
-    "subtitle": "Strumenti di Immagine Online Gratuiti",
+    "subtitle": "Strumenti Gratuiti di Compressione e Conversione Immagini Online",
     "description": "Strumenti avanzati di compressione e conversione di immagini alimentati da algoritmi all'avanguardia. Riduci la dimensione del file fino al 90% mantenendo la qualità perfetta. Fulmineo, completamente sicuro e 100% gratuito per sempre.",
     "getStarted": "Inizia a Comprimere",
     "learnMore": "Prova il Convertitore",
+    "quickActions": {
+      "compressFiles": "Comprimi File",
+      "convertFormats": "Converti Formati"
+    },
     "stats": {
       "sizeReduction": "Fino al 90% di Riduzione",
       "supportedFormats": "16+ Formati Supportati",
@@ -223,13 +227,6 @@
       "color": "orange"
     }
   ],
-  "hero": {
-    "subtitle": "Strumenti di ottimizzazione file professionali che riducono le dimensioni fino al 95% mantenendo un'eccellente qualità. Nessuna registrazione richiesta.",
-    "quickActions": {
-      "compressFiles": "Comprimi File",
-      "convertFormats": "Converti Formati"
-    }
-  },
   "heroStats": [
     {
       "number": "15M+",

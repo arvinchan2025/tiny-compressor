@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "JPEG to PNG変換 - JPEG画像をオンラインで変換",
     "description": "JPEG画像をオンラインでPNG形式に変換します。無料、高速、使いやすいJPEG to PNG変換ツール。",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "JPEGファイルをここにドラッグ＆ドロップするか、クリックして選択",
-      "subtitle": "JPEG/JPG形式をサポート、最大{maxFiles}ファイル、各最大10MB",
-      "selectFiles": "JPEGファイルを選択"
+      "title": "JPEG/JPGファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "JPEG/JPG形式をサポート、最大50MB",
+      "selectFiles": "JPEG/JPGファイルを選択"
     },
     "errors": {
       "maxFiles": "最大{maxFiles}ファイルまで許可",
-      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。50MB未満のファイルを選択してください",
       "unsupportedFormat": "サポートされていないファイル形式: {fileName}。JPEG/JPGファイルのみサポートされています。",
       "uploadFailed": "ファイルのアップロードに失敗しました",
       "conversionFailed": "変換に失敗しました。もう一度お試しください。"

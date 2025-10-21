@@ -1,0 +1,96 @@
+{
+  "operation": {
+    "modes": {
+      "simple": "Simple",
+      "advanced": "Avancé"
+    },
+    "upload": {
+      "title": "Glissez-déposez votre fichier ici ou cliquez pour sélectionner",
+      "subtitle": "Supporte le format {format}, max 50MB",
+      "selectFiles": "Sélectionner le Fichier"
+    },
+    "preview": {
+      "formatConversion": "Conversion de Format",
+      "currentFormat": "Format actuel",
+      "targetFormat": "Format cible"
+    },
+    "actions": {
+      "download": "Télécharger",
+      "reset": "Réinitialiser",
+      "cancel": "Annuler",
+      "convert": "Convertir",
+      "downloadAll": "Tout Télécharger"
+    },
+    "status": {
+      "processing": "Traitement... {progress}%"
+    },
+    "files": {
+      "title": "Fichiers Sélectionnés",
+      "name": "Nom",
+      "dimensions": "Dimensions",
+      "sizeInfo": "Taille",
+      "count": "{count} fichiers sélectionnés",
+      "reset": "Tout Réinitialiser",
+      "remove": "Supprimer"
+    },
+    "stats": {
+      "qualityUsed": "Qualité Utilisée",
+      "processingTime": "Temps de Traitement"
+    },
+    "progress": {
+      "label": "Progrès de Conversion",
+      "status": "Traitement... {progress}% terminé"
+    },
+    "converting": {
+      "message": "Conversion de votre image...",
+      "progress": "Conversion... {progress}%"
+    },
+    "convert": {
+      "start": "Convertir",
+      "simpleStart": "Conversion Rapide",
+      "advancedStart": "Convertir (Avancé)",
+      "processing": "Conversion... {progress}%"
+    },
+    "settings": {
+      "title": "Paramètres de Conversion",
+      "simple": "Simple",
+      "advanced": "Avancé",
+      "simpleTitle": "Paramètres Rapides",
+      "advancedTitle": "Paramètres Avancés",
+      "quality": "Qualité",
+      "metadata": "Préserver les Métadonnées",
+      "optimize": "Optimiser pour le Web"
+    },
+    "download": {
+      "downloadAll": "Télécharger Tous les Fichiers"
+    },
+    "results": {
+      "subtitle": "Votre image a été optimisée avec succès",
+      "count": "{count} fichiers convertis",
+      "original": "Original",
+      "originalFormat": "Format Original",
+      "newFormat": "Nouveau Format",
+      "fileSize": "Taille du Fichier",
+      "converted": "Converti",
+      "convertedFormat": "Format {format}",
+      "sizeChange": "Changement de Taille",
+      "time": "Temps",
+      "format": "Format",
+      "smaller": "Plus Petit",
+      "larger": "Plus Grand",
+      "successMessage": "Conversion réussie !",
+      "successDescription": "Votre image a été convertie et optimisée. Prête à télécharger !",
+      "download": "Télécharger",
+      "reset": "Convertir Plus",
+      "sizeInfo": "Original: {original} MB → Converti: {converted} MB ({change}% {changeType})"
+    },
+    "errors": {
+      "unknownError": "Erreur inconnue survenue",
+      "uploadFailed": "Échec du téléchargement de fichier",
+      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Veuillez sélectionner un fichier de moins de 50MB",
+      "unsupportedFormat": "Format de fichier non supporté: {fileName}",
+      "conversionFailed": "Échec de la conversion",
+      "processingFailed": "Échec du traitement de {fileName}"
+    }
+  }
+}

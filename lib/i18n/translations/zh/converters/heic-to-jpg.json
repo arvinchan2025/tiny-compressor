@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "HEIC 转 JPG - 在线转换 HEIC 图片",
     "description": "在线将 HEIC 图片转换为 JPG 格式。免费、快速且易于使用的 HEIC 转 JPG 转换器。",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "将 HEIC 文件拖放到此处或点击选择",
-      "subtitle": "支持 HEIC 格式，最多 {maxFiles} 个文件，每个最大 10MB",
-      "selectFiles": "选择 HEIC 文件"
+      "title": "拖拽HEIC/HEIF文件到此处或点击选择",
+      "subtitle": "支持HEIC/HEIF格式，最大50MB",
+      "selectFiles": "选择HEIC/HEIF文件"
     },
     "errors": {
       "maxFiles": "最多允许 {maxFiles} 个文件",
-      "fileTooLarge": "文件 {fileName} 太大。请选择小于 10MB 的文件",
+      "fileTooLarge": "文件 {fileName} 太大。请选择小于 50MB 的文件",
       "unsupportedFormat": "不支持的文件格式：{fileName}。仅支持 HEIC 文件。",
       "uploadFailed": "文件上传失败",
       "conversionFailed": "转换失败。请重试。"

@@ -1,19 +1,18 @@
 'use client';
 
 import React, { useState, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// Removed framer-motion for performance optimization
 import { Download, Check } from 'lucide-react';
 import { Locale } from '@/lib/i18n';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
-import { stateVariants } from '@/lib/animations/state-transitions';
+// Removed stateVariants import as framer-motion was removed
 import { Analytics } from '@/lib/analytics';
 import UploadArea from '@/components/shared/UploadArea';
 import FileInfoCard from '@/components/shared/FileInfoCard';
 import ProgressIndicator from '@/components/shared/ProgressIndicator';
 import ResultStats from '@/components/shared/ResultStats';
 import ActionButtons from '@/components/shared/ActionButtons';
-import ModeSelector from './components/ModeSelector';
 
 interface SingleFileCompressorProps {
   locale: Locale;
@@ -32,7 +31,7 @@ export default function SingleFileCompressor({
   onComplete,
   onReset
 }: SingleFileCompressorProps) {
-  const { t, isLoading } = useModuleTranslation(`compressors/${format}`, locale);
+  const { t, isLoading } = useTranslation(`compressors/${format}` as any, locale);
   
   
   const [state, setState] = useState<OperationState>(initialFile ? 'config' : 'empty');
@@ -95,7 +94,7 @@ export default function SingleFileCompressor({
       return;
     }
     
-    // 跟踪压缩开始
+    // 跟踪压缩开�?
     Analytics.compression.start(format);
     
     setState('processing');
@@ -109,7 +108,7 @@ export default function SingleFileCompressor({
         setProgress(i);
       }
       
-      // 计算压缩后的大小（确保是有效数字）
+      // 计算压缩后的大小（确保是有效数字�?
       const originalSize = file.size || 0;
       const compressedSize = Math.floor(originalSize * 0.6);
       
@@ -117,9 +116,9 @@ export default function SingleFileCompressor({
       const mockResult: CompressionResult = {
         originalFile: {
           ...file,
-          size: file.size // 确保 size 属性正确设置
+          size: file.size // 确保 size 属性正确设�?
         },
-        compressedFile: file.file, // 实际应该是压缩后的文件
+        compressedFile: file.file, // 实际应该是压缩后的文�?
         compressedSize: compressedSize,
         compressionRatio: 40,
         processingTime: 1000,
@@ -148,7 +147,7 @@ export default function SingleFileCompressor({
   const handleDownload = useCallback(() => {
     if (!result) return;
     
-    // 跟踪下载开始
+    // 跟踪下载开�?
     Analytics.download.start(format);
     
     const link = document.createElement('a');
@@ -174,7 +173,7 @@ export default function SingleFileCompressor({
   }, [onReset]);
 
   const formatFileSize = (bytes: number | undefined): string => {
-    // 处理 undefined、null、NaN 或无效值
+    // 处理 undefined、null、NaN 或无效�?
     if (bytes === undefined || bytes === null || isNaN(bytes) || bytes < 0) {
       return '0 KB';
     }
@@ -188,15 +187,10 @@ export default function SingleFileCompressor({
   return (
     <div className="relative">
 
-      <AnimatePresence mode="wait">
-        {/* 状态1: 上传区域 */}
+      <div>
+        {/* 状�?: 上传区域 */}
         {state === 'empty' && (
-          <motion.div
-            key="upload"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
           >
             <UploadArea
               title={t('operation.upload.title', { format: format.toUpperCase() })}
@@ -206,27 +200,17 @@ export default function SingleFileCompressor({
               onFileSelect={handleFileSelect}
               accentColor="blue"
             />
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态2: 配置区域 */}
+        {/* 状�?: 配置区域 */}
         {state === 'config' && file && (
-          <motion.div
-            key="config"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
             className="card-glass p-6 sm:p-8"
           >
             <div className="space-y-6">
-            {/* 模式切换器 */}
-            <ModeSelector
-              isAdvancedMode={isAdvancedMode}
-              onModeChange={setIsAdvancedMode}
-              locale={locale}
-              format={format}
-            />
+            {/* 模式切换�?*/}
+            {/* 高级设置开关 */}
 
             {/* 文件信息 */}
             <FileInfoCard
@@ -241,7 +225,7 @@ export default function SingleFileCompressor({
               accentColor="blue"
             />
 
-            {/* Advanced 模式：显示压缩设置 */}
+            {/* Advanced 模式：显示压缩设�?*/}
             {isAdvancedMode && (
               <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 space-y-4">
                 <h4 className="text-lg font-semibold text-text-primary mb-4">
@@ -290,7 +274,7 @@ export default function SingleFileCompressor({
                   </button>
                 </div>
 
-                {/* Progressive 选项（JPEG） */}
+                {/* Progressive 选项（JPEG�?*/}
                 {format === 'jpeg' && (
                   <div className="flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                     <div>
@@ -316,6 +300,30 @@ export default function SingleFileCompressor({
               </div>
             )}
 
+            {/* 高级设置开关 */}
+            <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center">
+                <span className="text-sm font-medium text-text-primary">
+                  {t('operation.settings.advanced') || 'Advanced'}
+                </span>
+              </div>
+              <button
+                onClick={() => setIsAdvancedMode(!isAdvancedMode)}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ${
+                  isAdvancedMode ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+                }`}
+                role="switch"
+                aria-checked={isAdvancedMode}
+                aria-label="Toggle advanced settings"
+              >
+                <span
+                  className={`inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform duration-200 ${
+                    isAdvancedMode ? 'translate-x-6' : 'translate-x-0.5'
+                  }`}
+                />
+              </button>
+            </div>
+
             {/* 操作按钮 */}
             <ActionButtons
               buttons={[
@@ -332,17 +340,12 @@ export default function SingleFileCompressor({
               ]}
             />
             </div>
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态3: 处理中 */}
+        {/* 状�?: 处理�?*/}
         {state === 'processing' && (
-          <motion.div
-            key="processing"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
             className="card-glass p-6 sm:p-8"
           >
             <ProgressIndicator
@@ -351,17 +354,12 @@ export default function SingleFileCompressor({
               subtitle={t('operation.progress.compressing', { format: format.toUpperCase() })}
               accentColor="blue"
             />
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态4: 结果展示 */}
+        {/* 状�?: 结果展示 */}
         {state === 'result' && result && file && (
-          <motion.div
-            key="result"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
             className="card-glass p-6 sm:p-8"
           >
             <div className="space-y-6">
@@ -412,7 +410,7 @@ export default function SingleFileCompressor({
               </div>
             </div>
 
-            {/* 大小对比可视化 */}
+            {/* 大小对比可视�?*/}
             <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
               <h4 className="text-lg font-semibold text-text-primary mb-4">
                 {t('operation.results.sizeComparison')}
@@ -440,24 +438,19 @@ export default function SingleFileCompressor({
                     </span>
                   </div>
                   <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                    <motion.div 
+                    <div 
                       className="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full"
-                      initial={{ width: '100%' }}
-                      animate={{ 
+                      style={{ 
                         width: `${((result.compressedSize || 0) / (result.originalFile?.size || result.originalFile?.file?.size || 1)) * 100}%` 
                       }}
-                      transition={{ duration: 1, ease: 'easeOut' }}
                     />
                   </div>
                 </div>
               </div>
 
               {/* 节省空间高亮 */}
-              <motion.div 
+              <div 
                 className="mt-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-500/10 dark:to-emerald-500/10 border border-green-200 dark:border-green-500/20 rounded-lg text-center"
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.4 }}
               >
                 <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-1">
                   -{Math.abs(result.compressionRatio || 0)}%
@@ -465,7 +458,7 @@ export default function SingleFileCompressor({
                 <div className="text-sm text-green-700 dark:text-green-300">
                   {t('operation.results.saved')} {formatFileSize((result.originalFile?.size || result.originalFile?.file?.size || 0) - (result.compressedSize || 0))}
                 </div>
-              </motion.div>
+              </div>
             </div>
 
             {/* 详细统计 */}
@@ -513,23 +506,23 @@ export default function SingleFileCompressor({
               </button>
             </div>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      </div>
 
       {/* 错误提示 */}
       {error && (
-        <motion.div
+        <div
           className="mt-4 bg-red-50 dark:bg-red-500/10 border border-red-200 dark:border-red-500/20 rounded-lg p-4"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
         >
           <p className="text-red-800 dark:text-red-300 font-medium">Error</p>
           <p className="text-red-700 dark:text-red-400 text-sm">{error}</p>
-        </motion.div>
+        </div>
       )}
     </div>
   );
 }
+
+
 
 

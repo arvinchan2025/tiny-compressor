@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "HEIC to JPG変換 - HEIC画像をオンラインで変換",
     "description": "HEIC画像をオンラインでJPG形式に変換します。無料、高速、使いやすいHEIC to JPG変換ツール。",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "HEICファイルをここにドラッグ＆ドロップするか、クリックして選択",
-      "subtitle": "HEIC/HEIF形式をサポート、最大{maxFiles}ファイル、各最大10MB",
-      "selectFiles": "HEICファイルを選択"
+      "title": "HEIC/HEIFファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "HEIC/HEIF形式をサポート、最大50MB",
+      "selectFiles": "HEIC/HEIFファイルを選択"
     },
     "errors": {
       "maxFiles": "最大{maxFiles}ファイルまで許可",
-      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。50MB未満のファイルを選択してください",
       "unsupportedFormat": "サポートされていないファイル形式: {fileName}。HEIC/HEIFファイルのみサポートされています。",
       "uploadFailed": "ファイルのアップロードに失敗しました",
       "conversionFailed": "変換に失敗しました。もう一度お試しください。"

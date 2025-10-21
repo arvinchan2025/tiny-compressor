@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useCallback, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+// Removed framer-motion for performance optimization
+import { useTranslation } from '@/hooks/useTranslation';
 import { Locale } from '@/lib/i18n';
 import { 
   compressVideo, 
@@ -53,10 +53,10 @@ export default function SingleFileVideoCompressor({
   onComplete,
   onReset,
 }: SingleFileVideoCompressorProps) {
-  const { t } = useModuleTranslation('compressors/video', locale);
+  const { t } = useTranslation('compressors/video' as any, locale);
   
   const [file, setFile] = useState<VideoFile | null>(initialFile || null);
-  // 如果有 initialFile，说明是从外部传入的，默认显示 Advanced 模式以显示配置
+  // 如果�?initialFile，说明是从外部传入的，默认显�?Advanced 模式以显示配�?
   const [isAdvancedMode, setIsAdvancedMode] = useState(!!initialFile);
   const [quality, setQuality] = useState<'low' | 'medium' | 'high' | 'custom'>(initialQuality || 'medium');
   const [isLoadingFFmpeg, setIsLoadingFFmpeg] = useState(false);
@@ -71,13 +71,13 @@ export default function SingleFileVideoCompressor({
     try {
       setError('');
       
-      // 检查文件大小
+      // 检查文件大�?
       if (selectedFile.size > FILE_SIZE_LIMIT) {
         setError(t('operation.errors.fileTooLarge', { max: '500MB' }));
         return;
       }
       
-      // 检查文件类型
+      // 检查文件类�?
       if (!selectedFile.type.startsWith('video/')) {
         setError(t('operation.errors.unsupportedFormat'));
         return;
@@ -90,7 +90,7 @@ export default function SingleFileVideoCompressor({
       // 跟踪上传
       Analytics.ui.upload('video');
       
-      // 显示大文件警告
+      // 显示大文件警�?
       if (selectedFile.size > 100 * 1024 * 1024) {
         const sizeMB = (selectedFile.size / 1024 / 1024).toFixed(0);
         console.warn(t('operation.warnings.largeFile', { size: sizeMB }));
@@ -101,14 +101,14 @@ export default function SingleFileVideoCompressor({
     }
   }, [t]);
   
-  // 开始压缩
+  // 开始压�?
   const handleCompress = useCallback(async () => {
     if (!file) return;
     
     try {
       setError('');
       
-      // 跟踪压缩开始
+      // 跟踪压缩开�?
       Analytics.compression.start('video');
       
       // 检查并加载 FFmpeg
@@ -119,20 +119,20 @@ export default function SingleFileVideoCompressor({
         // 小延迟确保状态更新被渲染
         await new Promise(resolve => setTimeout(resolve, 100));
         
-        console.log('✅ isLoadingFFmpeg state set to true');
+        console.log('�?isLoadingFFmpeg state set to true');
         
         await loadFFmpeg((progress) => {
           console.log('📊 FFmpeg load progress:', progress.percentage + '%');
           setFfmpegLoadProgress(progress.percentage);
         });
         
-        console.log('✅ FFmpeg loaded, setting isLoadingFFmpeg to false');
+        console.log('�?FFmpeg loaded, setting isLoadingFFmpeg to false');
         setIsLoadingFFmpeg(false);
       } else {
-        console.log('✅ FFmpeg already loaded, skipping load');
+        console.log('�?FFmpeg already loaded, skipping load');
       }
       
-      // 开始压缩
+      // 开始压�?
       setIsCompressing(true);
       
       // 构建压缩选项
@@ -177,7 +177,7 @@ export default function SingleFileVideoCompressor({
   const handleDownload = useCallback(() => {
     if (!result || !file) return;
     
-    // 跟踪下载开始
+    // 跟踪下载开�?
     Analytics.download.start('video');
     
     const url = URL.createObjectURL(result.compressedBlob);
@@ -203,10 +203,7 @@ export default function SingleFileVideoCompressor({
   // 状态：空（无文件）
   if (!file) {
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+      <div
         className="card-glass p-8"
         data-state="empty"
       >
@@ -224,17 +221,14 @@ export default function SingleFileVideoCompressor({
             💡 {t('operation.info.privacy')}
           </p>
         </div>
-      </motion.div>
+      </div>
     );
   }
   
   // 状态：加载 FFmpeg 或压缩中（优先判断）
   if (isLoadingFFmpeg || isCompressing) {
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+      <div
         className="card-glass p-8"
         data-state="processing"
       >
@@ -273,7 +267,7 @@ export default function SingleFileVideoCompressor({
             </p>
           </>
         )}
-      </motion.div>
+      </div>
     );
   }
   
@@ -283,10 +277,7 @@ export default function SingleFileVideoCompressor({
     const savedMB = (savedSize / 1024 / 1024).toFixed(2);
     
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.95 }}
+      <div
         className="space-y-6"
         data-state="result"
       >
@@ -355,27 +346,19 @@ export default function SingleFileVideoCompressor({
             }
           ]}
         />
-      </motion.div>
+      </div>
     );
   }
   
   // 状态：配置
   if (!isCompressing && !result) {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
+      <div
         className="space-y-6"
         data-state="config"
       >
-        {/* 模式切换器 */}
-        <ModeSelector
-          isAdvancedMode={isAdvancedMode}
-          onModeChange={setIsAdvancedMode}
-          locale={locale}
-          format="video"
-        />
+        {/* 模式切换�?*/}
+        {/* 高级设置开关 */}
         
         {/* 视频预览 */}
         <VideoPreviewCard
@@ -384,7 +367,7 @@ export default function SingleFileVideoCompressor({
           accentColor="blue"
         />
         
-        {/* Simple 模式：显示默认质量信息 */}
+        {/* Simple 模式：显示默认质量信�?*/}
         {!isAdvancedMode && (
           <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <div className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
@@ -433,18 +416,39 @@ export default function SingleFileVideoCompressor({
         )}
         
         {/* 错误提示 */}
-        <AnimatePresence>
+        <div>
           {error && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
+            <div
               className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4"
             >
               <p className="text-red-800 dark:text-red-200">{error}</p>
-            </motion.div>
+            </div>
           )}
-        </AnimatePresence>
+        </div>
+        
+        {/* 高级设置开关 */}
+        <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+          <div className="flex items-center">
+            <span className="text-sm font-medium text-text-primary">
+              {t('operation.settings.advanced') || 'Advanced'}
+            </span>
+          </div>
+          <button
+            onClick={() => setIsAdvancedMode(!isAdvancedMode)}
+            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ${
+              isAdvancedMode ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+            }`}
+            role="switch"
+            aria-checked={isAdvancedMode}
+            aria-label="Toggle advanced settings"
+          >
+            <span
+              className={`inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform duration-200 ${
+                isAdvancedMode ? 'translate-x-6' : 'translate-x-0.5'
+              }`}
+            />
+          </button>
+        </div>
         
         {/* 操作按钮 */}
         <ActionButtons
@@ -461,10 +465,12 @@ export default function SingleFileVideoCompressor({
             }
           ]}
         />
-      </motion.div>
+      </div>
     );
   }
   
   return null;
 }
+
+
 

@@ -1,10 +1,14 @@
 {
   "hero": {
     "title": "TinyCompressor",
-    "subtitle": "無料オンライン画像ツール",
+    "subtitle": "無料オンライン画像圧縮・変換ツール",
     "description": "最先端アルゴリズムで動作する高度な画像圧縮・変換ツール。完璧な品質を維持しながら、ファイルサイズを最大90%削減。超高速、完全セキュア、永続無料。",
     "getStarted": "圧縮開始",
     "learnMore": "変換器を試す",
+    "quickActions": {
+      "compressFiles": "ファイル圧縮",
+      "convertFormats": "フォーマット変換"
+    },
     "stats": {
       "sizeReduction": "最大90%のサイズ削減",
       "supportedFormats": "16+対応フォーマット",
@@ -233,13 +237,6 @@
       "color": "orange"
     }
   ],
-  "hero": {
-    "subtitle": "優れた品質を保ちながらファイルサイズを最大95%削減するプロフェッショナルなファイル最適化ツール。登録不要。",
-    "quickActions": {
-      "compressFiles": "ファイルを圧縮",
-      "convertFormats": "フォーマットを変換"
-    }
-  },
   "heroStats": [
     {
       "number": "1500万+",

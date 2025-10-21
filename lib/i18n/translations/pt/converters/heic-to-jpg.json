@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Conversor HEIC para JPG - Converter Imagens HEIC Online",
     "description": "Converta imagens HEIC para formato JPG online. Conversor HEIC para JPG gratuito, rápido e fácil de usar.",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Arraste arquivos HEIC aqui ou clique para selecionar",
-      "subtitle": "Suporta formato HEIC/HEIF, até {maxFiles} arquivos, cada um até 10MB",
-      "selectFiles": "Selecionar Arquivos HEIC"
+      "title": "Arraste seu arquivo HEIC/HEIF aqui ou clique para selecionar",
+      "subtitle": "Suporta formato HEIC/HEIF, máximo 50MB",
+      "selectFiles": "Selecionar Arquivo HEIC/HEIF"
     },
     "errors": {
       "maxFiles": "Máximo {maxFiles} arquivos permitidos",
-      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 10MB",
+      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 50MB",
       "unsupportedFormat": "Formato de arquivo não suportado: {fileName}. Apenas arquivos HEIC/HEIF são suportados.",
       "uploadFailed": "Falha no upload do arquivo",
       "conversionFailed": "Conversão falhou. Tente novamente."

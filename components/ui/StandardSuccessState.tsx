@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import StandardButton from './StandardButton';
 import StandardIcon from './StandardIcon';
 import StandardCard from './StandardCard';
@@ -24,11 +24,7 @@ export default function StandardSuccessState({
   className = ''
 }: SuccessStateProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.3 }}
+    <div
       className={className}
     >
       <StandardCard
@@ -38,14 +34,7 @@ export default function StandardSuccessState({
       >
         <div className="flex items-start space-x-3">
           {/* 成功图标 */}
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ 
-              duration: 0.5,
-              type: "spring",
-              stiffness: 200
-            }}
+          <div
             className="flex-shrink-0 mt-0.5"
           >
             <StandardIcon 
@@ -53,7 +42,7 @@ export default function StandardSuccessState({
               size="md" 
               className="text-green-500"
             />
-          </motion.div>
+          </div>
 
           {/* 内容 */}
           <div className="flex-1 min-w-0">
@@ -78,10 +67,7 @@ export default function StandardSuccessState({
 
             {/* 操作按钮 */}
             {action && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.2 }}
+              <div
                 className="mt-4"
               >
                 <StandardButton
@@ -91,11 +77,11 @@ export default function StandardSuccessState({
                 >
                   {action.label}
                 </StandardButton>
-              </motion.div>
+              </div>
             )}
           </div>
         </div>
       </StandardCard>
-    </motion.div>
+    </div>
   );
 }

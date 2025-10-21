@@ -212,23 +212,18 @@
   },
   "operation": {
     "upload": {
-      "title": "Drag and drop PNG files here or click to select",
-      "subtitle": "Support PNG format, up to {maxFiles} files, max 10MB each",
-      "selectFiles": "Select PNG Files"
+      "title": "Drag and drop PNG file here or click to select",
+      "subtitle": "Support PNG format, max 50MB",
+      "selectFiles": "Select PNG File"
     },
     "errors": {
-      "maxFiles": "Maximum {maxFiles} files allowed",
-      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 50MB",
       "unsupportedFormat": "Unsupported file format: {fileName}. Only PNG files are supported.",
       "uploadFailed": "File upload failed",
       "conversionFailed": "Conversion failed. Please try again."
     },
     "files": {
-      "title": "Selected PNG Files",
-      "count": "{count} files selected",
-      "reset": "Reset All",
-      "remove": "Remove",
-      "sizeInfo": "{size} MB"
+      "title": "Selected PNG Files"
     },
     "convert": {
       "start": "Convert to AVIF",
@@ -242,11 +237,7 @@
     },
     "settings": {
       "title": "AVIF Conversion Settings",
-      "simple": "Simple",
-      "advanced": "Advanced",
-      "simpleTitle": "Quick Settings",
       "advancedTitle": "Advanced AVIF Settings",
-      "quality": "Quality",
       "qualityLossless": "Lossless (Perfect Quality)",
       "qualityHighest": "Highest (Quality 63)",
       "qualityHigh": "High (Quality 55)",

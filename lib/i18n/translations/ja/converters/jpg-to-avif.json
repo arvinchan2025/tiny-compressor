@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "JPG to AVIF変換 - JPG画像をオンラインで変換",
     "description": "JPG画像をオンラインでAVIF形式に変換します。無料、高速、使いやすいJPG to AVIF変換ツール。",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "JPGファイルをここにドラッグ＆ドロップするか、クリックして選択",
-      "subtitle": "JPG/JPEG形式をサポート、最大{maxFiles}ファイル、各最大10MB",
-      "selectFiles": "JPGファイルを選択"
+      "title": "JPG/JPEGファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "JPG/JPEG形式をサポート、最大50MB",
+      "selectFiles": "JPG/JPEGファイルを選択"
     },
     "errors": {
       "maxFiles": "最大{maxFiles}ファイルまで許可",
-      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。50MB未満のファイルを選択してください",
       "unsupportedFormat": "サポートされていないファイル形式: {fileName}。JPG/JPEGファイルのみサポートされています。",
       "uploadFailed": "ファイルのアップロードに失敗しました",
       "conversionFailed": "変換に失敗しました。もう一度お試しください。"

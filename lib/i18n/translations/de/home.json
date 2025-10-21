@@ -1,10 +1,14 @@
 {
   "hero": {
     "title": "TinyCompressor",
-    "subtitle": "Kostenlose Online-Bildtools",
+    "subtitle": "Kostenlose Online-Bildkomprimierungs- und Konvertierungstools",
     "description": "Fortschrittliche Bildkomprimierungs- und Konvertierungstools, die von modernsten Algorithmen angetrieben werden. Reduzieren Sie die Dateigröße um bis zu 90%, während Sie die perfekte Qualität beibehalten. Blitzschnell, vollkommen sicher und für immer 100% kostenlos.",
     "getStarted": "Komprimierung Starten",
     "learnMore": "Konverter Ausprobieren",
+    "quickActions": {
+      "compressFiles": "Dateien Komprimieren",
+      "convertFormats": "Formate Konvertieren"
+    },
     "stats": {
       "sizeReduction": "Bis zu 90% Größenreduzierung",
       "supportedFormats": "16+ Unterstützte Formate",
@@ -223,13 +227,6 @@
       "color": "orange"
     }
   ],
-  "hero": {
-    "subtitle": "Professionelle Datei-Optimierungstools, die Größen um bis zu 95% reduzieren und dabei ausgezeichnete Qualität bewahren. Keine Registrierung erforderlich.",
-    "quickActions": {
-      "compressFiles": "Dateien komprimieren",
-      "convertFormats": "Formate konvertieren"
-    }
-  },
   "heroStats": [
     {
       "number": "15M+",

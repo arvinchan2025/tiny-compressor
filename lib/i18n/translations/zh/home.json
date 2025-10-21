@@ -1,10 +1,14 @@
 {
   "hero": {
     "title": "TinyCompressor",
-    "subtitle": "免费在线图像工具",
+    "subtitle": "免费在线图像压缩和转换工具",
     "description": "先进的图像压缩和转换工具，采用前沿算法。在保持完美质量的同时，文件大小最多减少90%。闪电般快速、完全安全、永久免费。",
     "getStarted": "开始压缩",
     "learnMore": "尝试转换器",
+    "quickActions": {
+      "compressFiles": "压缩文件",
+      "convertFormats": "转换格式"
+    },
     "stats": {
       "sizeReduction": "最高减小90%",
       "supportedFormats": "支持16+种格式",
@@ -233,13 +237,6 @@
       "color": "orange"
     }
   ],
-  "hero": {
-    "subtitle": "专业的文件优化工具，在保持卓越质量的同时将文件大小减小高达95%。无需注册。",
-    "quickActions": {
-      "compressFiles": "压缩文件",
-      "convertFormats": "转换格式"
-    }
-  },
   "heroStats": [
     {
       "number": "1500万+",

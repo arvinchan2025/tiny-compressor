@@ -1,0 +1,96 @@
+{
+  "operation": {
+    "modes": {
+      "simple": "简单",
+      "advanced": "高级"
+    },
+    "upload": {
+      "title": "拖拽文件到此处或点击选择",
+      "subtitle": "支持 {format} 格式，最大 50MB",
+      "selectFiles": "选择文件"
+    },
+    "preview": {
+      "formatConversion": "格式转换",
+      "currentFormat": "当前格式",
+      "targetFormat": "目标格式"
+    },
+    "actions": {
+      "download": "下载",
+      "reset": "重置",
+      "cancel": "取消",
+      "convert": "转换",
+      "downloadAll": "下载全部"
+    },
+    "status": {
+      "processing": "处理中... {progress}%"
+    },
+    "files": {
+      "title": "已选择的文件",
+      "name": "名称",
+      "dimensions": "尺寸",
+      "sizeInfo": "大小",
+      "count": "已选择 {count} 个文件",
+      "reset": "重置全部",
+      "remove": "移除"
+    },
+    "stats": {
+      "qualityUsed": "使用质量",
+      "processingTime": "处理时间"
+    },
+    "progress": {
+      "label": "转换进度",
+      "status": "处理中... {progress}% 完成"
+    },
+    "converting": {
+      "message": "正在转换您的图片...",
+      "progress": "转换中... {progress}%"
+    },
+    "convert": {
+      "start": "转换",
+      "simpleStart": "快速转换",
+      "advancedStart": "转换（高级）",
+      "processing": "转换中... {progress}%"
+    },
+    "settings": {
+      "title": "转换设置",
+      "simple": "简单",
+      "advanced": "高级",
+      "simpleTitle": "快速设置",
+      "advancedTitle": "高级设置",
+      "quality": "质量",
+      "metadata": "保留元数据",
+      "optimize": "Web优化"
+    },
+    "download": {
+      "downloadAll": "下载所有文件"
+    },
+    "results": {
+      "subtitle": "您的图片已成功优化",
+      "count": "已转换 {count} 个文件",
+      "original": "原始",
+      "originalFormat": "原始格式",
+      "newFormat": "新格式",
+      "fileSize": "文件大小",
+      "converted": "已转换",
+      "convertedFormat": "{format} 格式",
+      "sizeChange": "大小变化",
+      "time": "时间",
+      "format": "格式",
+      "smaller": "更小",
+      "larger": "更大",
+      "successMessage": "转换成功！",
+      "successDescription": "您的图片已转换并优化。准备下载！",
+      "download": "下载",
+      "reset": "继续转换",
+      "sizeInfo": "原始: {original} MB → 转换后: {converted} MB ({change}% {changeType})"
+    },
+    "errors": {
+      "unknownError": "发生未知错误",
+      "uploadFailed": "文件上传失败",
+      "fileTooLarge": "文件 {fileName} 太大。请选择小于 50MB 的文件",
+      "unsupportedFormat": "不支持的文件格式: {fileName}",
+      "conversionFailed": "转换失败",
+      "processingFailed": "处理 {fileName} 失败"
+    }
+  }
+}

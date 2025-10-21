@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Convertisseur PNG vers WebP - Convertir des Images PNG en Ligne",
     "description": "Convertissez des images PNG en format WebP en ligne. Convertisseur PNG vers WebP gratuit, rapide et facile à utiliser.",
@@ -125,43 +125,37 @@
         "icon": "🌐",
         "title": "Optimisation de Performance du Site Web",
         "description": "Modernisez votre site web avec une meilleure compression d'image.",
-        "content": "Convertissez les graphiques PNG en WebP pour des fichiers 25-35% plus petits avec même qualité. Utilisez WebP sans perte pour logos et éléments UI, WebP avec perte (qualité 85-90) pour photos avec transparence. Implémentez l'élément <picture> avec WebP primaire et fallback PNG pour support navigateur 95%+. Priorisez la conversion pour grandes images (>100KB).",
-        "icon": "🌐"
+        "content": "Convertissez les graphiques PNG en WebP pour des fichiers 25-35% plus petits avec même qualité. Utilisez WebP sans perte pour logos et éléments UI, WebP avec perte (qualité 85-90) pour photos avec transparence. Implémentez l'élément <picture> avec WebP primaire et fallback PNG pour support navigateur 95%+. Priorisez la conversion pour grandes images (>100KB)."
       },
       {
         "icon": "📱",
         "title": "Application Mobile et PWA",
         "description": "Réduisez la taille d'application et améliorez la performance mobile.",
-        "content": "WebP réduit la taille d'application mobile de 25-35% par rapport à PNG. Essentiel pour les Progressive Web Apps où chaque KB compte. Utilisez WebP sans perte pour assets UI, avec perte pour images de contenu. Testez sur appareils réels - le décodage WebP est accéléré par matériel sur processeurs mobiles modernes.",
-        "icon": "📱"
+        "content": "WebP réduit la taille d'application mobile de 25-35% par rapport à PNG. Essentiel pour les Progressive Web Apps où chaque KB compte. Utilisez WebP sans perte pour assets UI, avec perte pour images de contenu. Testez sur appareils réels - le décodage WebP est accéléré par matériel sur processeurs mobiles modernes."
       },
       {
         "icon": "✨",
         "title": "Graphiques avec Transparence",
         "description": "Meilleure compression pour images avec canaux alpha.",
-        "content": "La compression alpha de WebP est bien supérieure à PNG, en particulier pour ombres douces, lueurs et transparence graduelle. Utilisez WebP sans perte pour graphiques nécessitant qualité parfaite. Utilisez WebP avec perte (qualité 85-90) pour éléments décoratifs où une perte mineure de qualité est acceptable. Peut atteindre des fichiers 30-50% plus petits que PNG tout en maintenant la transparence.",
-        "icon": "✨"
+        "content": "La compression alpha de WebP est bien supérieure à PNG, en particulier pour ombres douces, lueurs et transparence graduelle. Utilisez WebP sans perte pour graphiques nécessitant qualité parfaite. Utilisez WebP avec perte (qualité 85-90) pour éléments décoratifs où une perte mineure de qualité est acceptable. Peut atteindre des fichiers 30-50% plus petits que PNG tout en maintenant la transparence."
       },
       {
         "icon": "💾",
         "title": "Stockage Cloud et CDN",
         "description": "Réduisez les coûts de stockage et l'usage de bande passante.",
-        "content": "Convertir PNG en WebP réduit les coûts de stockage cloud et CDN de 25-35%. Convertissez par lots des bibliothèques d'images entières pour des économies cohérentes. Utilisez sans perte pour assets de marque, avec perte (qualité 80-85) pour images de contenu. Surveillez la qualité visuelle sur différents appareils et navigateurs.",
-        "icon": "💾"
+        "content": "Convertir PNG en WebP réduit les coûts de stockage cloud et CDN de 25-35%. Convertissez par lots des bibliothèques d'images entières pour des économies cohérentes. Utilisez sans perte pour assets de marque, avec perte (qualité 80-85) pour images de contenu. Surveillez la qualité visuelle sur différents appareils et navigateurs."
       },
       {
         "icon": "🎨",
         "title": "Systèmes de Design et Kits UI",
         "description": "Optimisez les assets de design et bibliothèques de composants.",
-        "content": "Convertissez les assets de design PNG en WebP pour une livraison plus rapide du système de design. Utilisez WebP sans perte pour maintenir les couleurs exactes et la transparence. Particulièrement efficace pour ensembles d'icônes, bibliothèques d'illustrations et assets de composants UI. Fournissez des fallbacks PNG pour outils ne supportant pas WebP.",
-        "icon": "🎨"
+        "content": "Convertissez les assets de design PNG en WebP pour une livraison plus rapide du système de design. Utilisez WebP sans perte pour maintenir les couleurs exactes et la transparence. Particulièrement efficace pour ensembles d'icônes, bibliothèques d'illustrations et assets de composants UI. Fournissez des fallbacks PNG pour outils ne supportant pas WebP."
       },
       {
         "icon": "⚠️",
         "title": "Quand Garder PNG",
         "description": "Scénarios où PNG est toujours le meilleur choix.",
-        "content": "Gardez PNG si : 1) Besoin de compatibilité universelle (emails, systèmes anciens), 2) Travaillant avec outils de design ne supportant pas WebP, 3) Nécessite qualité sans perte et fichier déjà petit (<50KB), 4) Ciblant utilisateurs Safari <14 ou IE. WebP excelle pour les applications web modernes avec support navigateur 95%+.",
-        "icon": "⚠️"
+        "content": "Gardez PNG si : 1) Besoin de compatibilité universelle (emails, systèmes anciens), 2) Travaillant avec outils de design ne supportant pas WebP, 3) Nécessite qualité sans perte et fichier déjà petit (<50KB), 4) Ciblant utilisateurs Safari <14 ou IE. WebP excelle pour les applications web modernes avec support navigateur 95%+."
       }
     ]
   },
@@ -218,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Glissez-déposez des fichiers PNG ici ou cliquez pour sélectionner",
-      "subtitle": "Supporte le format PNG, jusqu'à {maxFiles} fichiers, maximum 10MB chacun",
-      "selectFiles": "Sélectionner des Fichiers PNG"
+      "title": "Glissez-déposez votre fichier PNG ici ou cliquez pour sélectionner",
+      "subtitle": "Supporte le format PNG, maximum 50MB",
+      "selectFiles": "Sélectionner un Fichier PNG"
     },
     "errors": {
       "maxFiles": "Maximum {maxFiles} fichiers autorisés",
-      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Sélectionnez des fichiers de moins de 10MB",
+      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Sélectionnez des fichiers de moins de 50MB",
       "unsupportedFormat": "Format de fichier non supporté : {fileName}. Seuls les fichiers PNG sont supportés.",
       "uploadFailed": "Échec du téléchargement du fichier",
       "conversionFailed": "La conversion a échoué. Veuillez réessayer."

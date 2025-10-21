@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "محول JPG إلى WebP - تحويل صور JPG عبر الإنترنت",
     "description": "حول صور JPG إلى تنسيق WebP عبر الإنترنت. محول JPG إلى WebP مجاني وسريع وسهل الاستخدام.",
@@ -212,9 +212,9 @@
   },
   "operation": {
     "upload": {
-      "title": "اسحب وأفلت ملفات JPG هنا أو انقر للتحديد",
-      "subtitle": "يدعم تنسيق JPG/JPEG، حتى {maxFiles} ملفات، الحد الأقصى 10 ميجابايت لكل منها",
-      "selectFiles": "حدد ملفات JPG"
+      "title": "اسحب وأفلت ملف JPG/JPEG هنا أو انقر للتحديد",
+      "subtitle": "يدعم تنسيق JPG/JPEG، الحد الأقصى 50 ميجابايت",
+      "selectFiles": "حدد ملف JPG/JPEG"
     },
     "errors": {
       "maxFiles": "الحد الأقصى {maxFiles} ملفات مسموح",

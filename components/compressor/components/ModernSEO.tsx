@@ -7,13 +7,7 @@
 
 import React from 'react';
 import Head from 'next/head';
-import { 
-  usePngCompressorTranslation, 
-  useJpegCompressorTranslation, 
-  useWebpCompressorTranslation, 
-  useAvifCompressorTranslation,
-  useGifCompressorTranslation 
-} from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface ModernSEOProps {
   locale: string;
@@ -21,33 +15,7 @@ interface ModernSEOProps {
 }
 
 export default function ModernSEO({ locale, format = 'png' }: ModernSEOProps) {
-  // 在组件顶层调用所有hooks（符合React Hooks规则）
-  const pngTranslation = usePngCompressorTranslation();
-  const jpegTranslation = useJpegCompressorTranslation();
-  const webpTranslation = useWebpCompressorTranslation();
-  const avifTranslation = useAvifCompressorTranslation();
-  const gifTranslation = useGifCompressorTranslation();
-
-  // 根据格式选择相应的翻译对象
-  const getTranslation = () => {
-    switch (format.toLowerCase()) {
-      case 'png':
-        return pngTranslation;
-      case 'jpeg':
-      case 'jpg':
-        return jpegTranslation;
-      case 'webp':
-        return webpTranslation;
-      case 'avif':
-        return avifTranslation;
-      case 'gif':
-        return gifTranslation;
-      default:
-        return pngTranslation;
-    }
-  };
-
-  const { t } = getTranslation();
+  const { t } = useTranslation(`compressors/${format}` as any, locale as any);
 
   const title = t('seo.title') || `${format.toUpperCase()} Compressor - Compress ${format.toUpperCase()} Images Online`;
   const description = t('seo.description') || `Compress ${format.toUpperCase()} images online with advanced optimization. Reduce file size while maintaining quality.`;

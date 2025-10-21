@@ -1,0 +1,96 @@
+{
+  "operation": {
+    "modes": {
+      "simple": "بسيط",
+      "advanced": "متقدم"
+    },
+    "upload": {
+      "title": "اسحب وأفلت ملفك هنا أو انقر للاختيار",
+      "subtitle": "يدعم تنسيق {format}، الحد الأقصى 50 ميجابايت",
+      "selectFiles": "اختر الملف"
+    },
+    "preview": {
+      "formatConversion": "تحويل التنسيق",
+      "currentFormat": "التنسيق الحالي",
+      "targetFormat": "التنسيق المستهدف"
+    },
+    "actions": {
+      "download": "تحميل",
+      "reset": "إعادة تعيين",
+      "cancel": "إلغاء",
+      "convert": "تحويل",
+      "downloadAll": "تحميل الكل"
+    },
+    "status": {
+      "processing": "جاري المعالجة... {progress}%"
+    },
+    "files": {
+      "title": "الملفات المحددة",
+      "name": "الاسم",
+      "dimensions": "الأبعاد",
+      "sizeInfo": "الحجم",
+      "count": "تم اختيار {count} ملف",
+      "reset": "إعادة تعيين الكل",
+      "remove": "إزالة"
+    },
+    "stats": {
+      "qualityUsed": "الجودة المستخدمة",
+      "processingTime": "وقت المعالجة"
+    },
+    "progress": {
+      "label": "تقدم التحويل",
+      "status": "جاري المعالجة... {progress}% مكتمل"
+    },
+    "converting": {
+      "message": "جاري تحويل صورتك...",
+      "progress": "جاري التحويل... {progress}%"
+    },
+    "convert": {
+      "start": "تحويل",
+      "simpleStart": "تحويل سريع",
+      "advancedStart": "تحويل (متقدم)",
+      "processing": "جاري التحويل... {progress}%"
+    },
+    "settings": {
+      "title": "إعدادات التحويل",
+      "simple": "بسيط",
+      "advanced": "متقدم",
+      "simpleTitle": "إعدادات سريعة",
+      "advancedTitle": "إعدادات متقدمة",
+      "quality": "جودة",
+      "metadata": "الحفاظ على البيانات الوصفية",
+      "optimize": "تحسين للويب"
+    },
+    "download": {
+      "downloadAll": "تحميل جميع الملفات"
+    },
+    "results": {
+      "subtitle": "تم تحسين صورتك بنجاح",
+      "count": "تم تحويل {count} ملف",
+      "original": "الأصلي",
+      "originalFormat": "التنسيق الأصلي",
+      "newFormat": "التنسيق الجديد",
+      "fileSize": "حجم الملف",
+      "converted": "تم التحويل",
+      "convertedFormat": "تنسيق {format}",
+      "sizeChange": "تغيير الحجم",
+      "time": "الوقت",
+      "format": "التنسيق",
+      "smaller": "أصغر",
+      "larger": "أكبر",
+      "successMessage": "تم التحويل بنجاح!",
+      "successDescription": "تم تحويل صورتك وتحسينها. جاهزة للتحميل!",
+      "download": "تحميل",
+      "reset": "تحويل المزيد",
+      "sizeInfo": "الأصلي: {original} ميجابايت → المحول: {converted} ميجابايت ({change}% {changeType})"
+    },
+    "errors": {
+      "unknownError": "حدث خطأ غير معروف",
+      "uploadFailed": "فشل في رفع الملف",
+      "fileTooLarge": "الملف {fileName} كبير جداً. يرجى اختيار ملف أصغر من 50 ميجابايت",
+      "unsupportedFormat": "تنسيق الملف غير مدعوم: {fileName}",
+      "conversionFailed": "فشل في التحويل",
+      "processingFailed": "فشل في معالجة {fileName}"
+    }
+  }
+}

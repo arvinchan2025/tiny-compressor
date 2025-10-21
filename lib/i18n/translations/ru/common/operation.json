@@ -1,0 +1,96 @@
+{
+  "operation": {
+    "modes": {
+      "simple": "Простой",
+      "advanced": "Расширенный"
+    },
+    "upload": {
+      "title": "Перетащите ваш файл сюда или нажмите для выбора",
+      "subtitle": "Поддерживает формат {format}, макс. 50МБ",
+      "selectFiles": "Выбрать Файл"
+    },
+    "preview": {
+      "formatConversion": "Конвертация Формата",
+      "currentFormat": "Текущий формат",
+      "targetFormat": "Целевой формат"
+    },
+    "actions": {
+      "download": "Скачать",
+      "reset": "Сбросить",
+      "cancel": "Отменить",
+      "convert": "Конвертировать",
+      "downloadAll": "Скачать Все"
+    },
+    "status": {
+      "processing": "Обработка... {progress}%"
+    },
+    "files": {
+      "title": "Выбранные Файлы",
+      "name": "Имя",
+      "dimensions": "Размеры",
+      "sizeInfo": "Размер",
+      "count": "{count} файлов выбрано",
+      "reset": "Сбросить Все",
+      "remove": "Удалить"
+    },
+    "stats": {
+      "qualityUsed": "Использованное Качество",
+      "processingTime": "Время Обработки"
+    },
+    "progress": {
+      "label": "Прогресс Конвертации",
+      "status": "Обработка... {progress}% завершено"
+    },
+    "converting": {
+      "message": "Конвертация вашего изображения...",
+      "progress": "Конвертация... {progress}%"
+    },
+    "convert": {
+      "start": "Конвертировать",
+      "simpleStart": "Быстрая Конвертация",
+      "advancedStart": "Конвертировать (Расширенный)",
+      "processing": "Конвертация... {progress}%"
+    },
+    "settings": {
+      "title": "Настройки Конвертации",
+      "simple": "Простой",
+      "advanced": "Расширенный",
+      "simpleTitle": "Быстрые Настройки",
+      "advancedTitle": "Расширенные Настройки",
+      "quality": "Качество",
+      "metadata": "Сохранить Метаданные",
+      "optimize": "Оптимизировать для Веб"
+    },
+    "download": {
+      "downloadAll": "Скачать Все Файлы"
+    },
+    "results": {
+      "subtitle": "Ваше изображение было успешно оптимизировано",
+      "count": "{count} файлов конвертировано",
+      "original": "Оригинал",
+      "originalFormat": "Исходный Формат",
+      "newFormat": "Новый Формат",
+      "fileSize": "Размер Файла",
+      "converted": "Конвертировано",
+      "convertedFormat": "Формат {format}",
+      "sizeChange": "Изменение Размера",
+      "time": "Время",
+      "format": "Формат",
+      "smaller": "Меньше",
+      "larger": "Больше",
+      "successMessage": "Конвертация успешна!",
+      "successDescription": "Ваше изображение было конвертировано и оптимизировано. Готово к скачиванию!",
+      "download": "Скачать",
+      "reset": "Конвертировать Еще",
+      "sizeInfo": "Оригинал: {original} МБ → Конвертировано: {converted} МБ ({change}% {changeType})"
+    },
+    "errors": {
+      "unknownError": "Произошла неизвестная ошибка",
+      "uploadFailed": "Ошибка загрузки файла",
+      "fileTooLarge": "Файл {fileName} слишком большой. Пожалуйста, выберите файл меньше 50МБ",
+      "unsupportedFormat": "Неподдерживаемый формат файла: {fileName}",
+      "conversionFailed": "Ошибка конвертации",
+      "processingFailed": "Ошибка обработки {fileName}"
+    }
+  }
+}

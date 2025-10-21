@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "محول WebP إلى AVIF - تحويل صور WebP عبر الإنترنت",
     "description": "حول صور WebP إلى تنسيق AVIF عبر الإنترنت. محول WebP إلى AVIF مجاني وسريع وسهل الاستخدام.",
@@ -212,9 +212,9 @@
   },
   "operation": {
     "upload": {
-      "title": "اسحب وأفلت ملفات WebP هنا أو انقر للتحديد",
-      "subtitle": "يدعم تنسيق WebP، حتى {maxFiles} ملفات، الحد الأقصى 10 ميجابايت لكل منها",
-      "selectFiles": "حدد ملفات WebP"
+      "title": "اسحب وأفلت ملف WebP هنا أو انقر للتحديد",
+      "subtitle": "يدعم تنسيق WebP، الحد الأقصى 50 ميجابايت",
+      "selectFiles": "حدد ملف WebP"
     },
     "errors": {
       "maxFiles": "الحد الأقصى {maxFiles} ملفات مسموح",

@@ -125,43 +125,37 @@
         "icon": "🌐",
         "title": "Website Performance Optimization",
         "description": "Modernize your website with better image compression.",
-        "content": "Convert PNG graphics to WebP for 25-35% smaller files with same quality. Use lossless WebP for logos and UI elements, lossy WebP (quality 85-90) for photos with transparency. Implement <picture> element with WebP primary and PNG fallback for 95%+ browser support. Prioritize conversion for large images (>100KB).",
-        "icon": "🌐"
+        "content": "Convert PNG graphics to WebP for 25-35% smaller files with same quality. Use lossless WebP for logos and UI elements, lossy WebP (quality 85-90) for photos with transparency. Implement <picture> element with WebP primary and PNG fallback for 95%+ browser support. Prioritize conversion for large images (>100KB)."
       },
       {
         "icon": "📱",
         "title": "Mobile App & PWA",
         "description": "Reduce app size and improve mobile performance.",
-        "content": "WebP reduces mobile app size by 25-35% compared to PNG. Essential for Progressive Web Apps where every KB matters. Use lossless WebP for UI assets, lossy for content images. Test on actual devices - WebP decoding is hardware-accelerated on modern mobile processors.",
-        "icon": "📱"
+        "content": "WebP reduces mobile app size by 25-35% compared to PNG. Essential for Progressive Web Apps where every KB matters. Use lossless WebP for UI assets, lossy for content images. Test on actual devices - WebP decoding is hardware-accelerated on modern mobile processors."
       },
       {
         "icon": "✨",
         "title": "Graphics with Transparency",
         "description": "Better compression for images with alpha channels.",
-        "content": "WebP's alpha compression is far superior to PNG, especially for soft shadows, glows, and gradual transparency. Use lossless WebP for graphics requiring perfect quality. Use lossy WebP (quality 85-90) for decorative elements where minor quality loss is acceptable. Can achieve 30-50% smaller files than PNG while maintaining transparency.",
-        "icon": "✨"
+        "content": "WebP's alpha compression is far superior to PNG, especially for soft shadows, glows, and gradual transparency. Use lossless WebP for graphics requiring perfect quality. Use lossy WebP (quality 85-90) for decorative elements where minor quality loss is acceptable. Can achieve 30-50% smaller files than PNG while maintaining transparency."
       },
       {
         "icon": "💾",
         "title": "Cloud Storage & CDN",
         "description": "Reduce storage costs and bandwidth usage.",
-        "content": "Converting PNG to WebP reduces cloud storage and CDN costs by 25-35%. Batch convert entire image libraries for consistent savings. Use lossless for brand assets, lossy (quality 80-85) for content images. Monitor visual quality across different devices and browsers.",
-        "icon": "💾"
+        "content": "Converting PNG to WebP reduces cloud storage and CDN costs by 25-35%. Batch convert entire image libraries for consistent savings. Use lossless for brand assets, lossy (quality 80-85) for content images. Monitor visual quality across different devices and browsers."
       },
       {
         "icon": "🎨",
         "title": "Design Systems & UI Kits",
         "description": "Optimize design assets and component libraries.",
-        "content": "Convert PNG design assets to WebP for faster design system delivery. Use lossless WebP for maintaining exact colors and transparency. Particularly effective for icon sets, illustration libraries, and UI component assets. Provide PNG fallbacks for tools that don't support WebP.",
-        "icon": "🎨"
+        "content": "Convert PNG design assets to WebP for faster design system delivery. Use lossless WebP for maintaining exact colors and transparency. Particularly effective for icon sets, illustration libraries, and UI component assets. Provide PNG fallbacks for tools that don't support WebP."
       },
       {
         "icon": "⚠️",
         "title": "When to Keep PNG",
         "description": "Scenarios where PNG is still the better choice.",
-        "content": "Keep PNG if: 1) Need universal compatibility (emails, older systems), 2) Working with design tools that don't support WebP, 3) Require lossless quality and file is already small (<50KB), 4) Targeting Safari <14 or IE users. WebP excels for modern web applications with 95%+ browser support.",
-        "icon": "⚠️"
+        "content": "Keep PNG if: 1) Need universal compatibility (emails, older systems), 2) Working with design tools that don't support WebP, 3) Require lossless quality and file is already small (<50KB), 4) Targeting Safari <14 or IE users. WebP excels for modern web applications with 95%+ browser support."
       }
     ]
   },
@@ -218,13 +212,12 @@
   },
   "operation": {
     "upload": {
-      "title": "Drag and drop PNG files here or click to select",
-      "subtitle": "Support PNG format, up to {maxFiles} files, max 10MB each",
-      "selectFiles": "Select PNG Files"
+      "title": "Drag and drop PNG file here or click to select",
+      "subtitle": "Support PNG format, max 50MB",
+      "selectFiles": "Select PNG File"
     },
     "errors": {
-      "maxFiles": "Maximum {maxFiles} files allowed",
-      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 50MB",
       "unsupportedFormat": "Unsupported file format: {fileName}. Only PNG files are supported.",
       "uploadFailed": "File upload failed",
       "conversionFailed": "Conversion failed. Please try again."

@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Conversor JPEG para PNG - Converter Imagens JPEG Online",
     "description": "Converta imagens JPEG para formato PNG online. Conversor JPEG para PNG gratuito, rápido e fácil de usar.",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Arraste arquivos JPEG aqui ou clique para selecionar",
-      "subtitle": "Suporta formato JPEG/JPG, até {maxFiles} arquivos, máximo 10MB cada",
-      "selectFiles": "Selecionar Arquivos JPEG"
+      "title": "Arraste seu arquivo JPEG/JPG aqui ou clique para selecionar",
+      "subtitle": "Suporta formato JPEG/JPG, máximo 50MB",
+      "selectFiles": "Selecionar Arquivo JPEG/JPG"
     },
     "errors": {
       "maxFiles": "Máximo {maxFiles} arquivos permitidos",
-      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 10MB",
+      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 50MB",
       "unsupportedFormat": "Formato de arquivo não suportado: {fileName}. Apenas arquivos JPEG/JPG são suportados.",
       "uploadFailed": "Falha no upload do arquivo",
       "conversionFailed": "Conversão falhou. Tente novamente."
@@ -272,6 +272,3 @@
     }
   }
 }
-
-
-

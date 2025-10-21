@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import StandardButton from './StandardButton';
 import StandardIcon from './StandardIcon';
 import StandardCard from './StandardCard';
@@ -91,11 +91,7 @@ export default function ErrorHandler({
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.3 }}
+    <div
       className={className}
     >
       <StandardCard
@@ -187,15 +183,10 @@ export default function ErrorHandler({
               </div>
 
               {/* 灞曞紑鐨勮缁嗕俊*/}
-              <AnimatePresence>
-                {isExpanded && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.2 }}
-                    className="mt-3 p-3 bg-white bg-opacity-50 rounded border"
-                  >
+              {isExpanded && (
+                <div
+                  className="mt-3 p-3 bg-white bg-opacity-50 rounded border"
+                >
                     <div className="space-y-2 text-xs">
                       <div>
                         <span className="font-medium">{t('error.errorCode', 'Error Code')}:</span>
@@ -210,14 +201,13 @@ export default function ErrorHandler({
                         <span>{new Date().toLocaleString()}</span>
                       </div>
                     </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </StandardCard>
-    </motion.div>
+    </div>
   );
 }
 

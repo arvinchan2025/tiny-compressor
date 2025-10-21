@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion'; // Removed to fix build issues
 import { useRouter, usePathname } from 'next/navigation';
 import { Locale } from '@/lib/i18n';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -24,7 +24,7 @@ export default function StandardHeader({
 }: StandardHeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
-  const { t } = useTranslation('common/navigation', currentLocale);
+  const { t, isLoading: translationLoading } = useTranslation('common/navigation', currentLocale);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // 页面状态检测
@@ -45,19 +45,19 @@ export default function StandardHeader({
 
   const navigationItems = [
     {
-      name: t('nav.home'),
+      name: translationLoading ? 'Home' : t('nav.home'),
       path: '/',
       isActive: isHomePage,
       icon: 'home'
     },
     {
-      name: t('nav.compressor'),
+      name: translationLoading ? 'Compressor' : t('nav.compressor'),
       path: '/compressor',
       isActive: isCompressorPage,
       icon: 'compress'
     },
     {
-      name: t('nav.converter'),
+      name: translationLoading ? 'Converter' : t('nav.converter'),
       path: '/converter',
       isActive: isConverterPage,
       icon: 'convert'
@@ -69,33 +69,28 @@ export default function StandardHeader({
       <StandardContainer variant="content" size="lg" center>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <div
             className="flex items-center space-x-2 cursor-pointer"
             onClick={handleLogoClick}
           >
             <div className="relative w-8 h-8">
               <Image
                 src="/logo.svg"
-                alt={t('brand.name')}
+                alt={translationLoading ? 'TinyCompressor' : t('brand.name')}
                 fill
                 className="object-contain"
               />
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-gray-100">
-              {t('brand.name')}
+              {translationLoading ? 'TinyCompressor' : t('brand.name')}
             </span>
-          </motion.div>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item, index) => (
-              <motion.div
+              <div
                 key={item.name}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <button
                   onClick={() => handleNavClick(item.path)}
@@ -108,7 +103,7 @@ export default function StandardHeader({
                   <StandardIcon name={item.icon} size="sm" variant="default" className="w-4 h-4" />
                   <span>{item.name}</span>
                 </button>
-              </motion.div>
+              </div>
             ))}
           </nav>
 
@@ -126,9 +121,7 @@ export default function StandardHeader({
             />
 
             {/* Mobile Menu Button */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
@@ -138,27 +131,19 @@ export default function StandardHeader({
                 variant="default" 
                 className="w-5 h-5" 
               />
-            </motion.button>
+            </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        <AnimatePresence>
-          {isMobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
+        {isMobileMenuOpen && (
+            <div
               className="md:hidden border-t border-gray-200 dark:border-gray-800"
             >
               <nav className="py-4 space-y-2">
                 {navigationItems.map((item, index) => (
-                  <motion.div
+                  <div
                     key={item.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
                   >
                     <button
                       onClick={() => handleNavClick(item.path)}
@@ -171,12 +156,11 @@ export default function StandardHeader({
                       <StandardIcon name={item.icon} size="md" variant="default" className="w-5 h-5" />
                       <span className="font-medium">{item.name}</span>
                     </button>
-                  </motion.div>
+                  </div>
                 ))}
               </nav>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            </div>
+        )}
       </StandardContainer>
     </header>
   );

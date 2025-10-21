@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Convertisseur PNG vers AVIF - Convertir des Images PNG en Ligne",
     "description": "Convertissez des images PNG en format AVIF en ligne. Convertisseur PNG vers AVIF gratuit, rapide et facile à utiliser.",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Glissez-déposez des fichiers PNG ici ou cliquez pour sélectionner",
-      "subtitle": "Supporte le format PNG, jusqu'à {maxFiles} fichiers, maximum 10MB chacun",
-      "selectFiles": "Sélectionner des Fichiers PNG"
+      "title": "Glissez-déposez votre fichier PNG ici ou cliquez pour sélectionner",
+      "subtitle": "Supporte le format PNG, maximum 50MB",
+      "selectFiles": "Sélectionner un Fichier PNG"
     },
     "errors": {
       "maxFiles": "Maximum {maxFiles} fichiers autorisés",
-      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Sélectionnez des fichiers de moins de 10MB",
+      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Sélectionnez des fichiers de moins de 50MB",
       "unsupportedFormat": "Format de fichier non supporté : {fileName}. Seuls les fichiers PNG sont supportés.",
       "uploadFailed": "Échec du téléchargement du fichier",
       "conversionFailed": "La conversion a échoué. Veuillez réessayer."

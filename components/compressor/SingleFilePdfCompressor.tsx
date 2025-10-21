@@ -1,19 +1,19 @@
 'use client';
 
 import React, { useState, useCallback, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// Removed framer-motion for performance optimization
 import { Download, Check } from 'lucide-react';
 import { Locale } from '@/lib/i18n';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import { usePdfProcessor } from '@/hooks/usePdfProcessor';
-import { stateVariants } from '@/lib/animations/state-transitions';
+// Removed stateVariants import as framer-motion was removed
 import { Analytics } from '@/lib/analytics';
 import UploadArea from '@/components/shared/UploadArea';
 import FileInfoCard from '@/components/shared/FileInfoCard';
 import ProgressIndicator from '@/components/shared/ProgressIndicator';
 import ActionButtons from '@/components/shared/ActionButtons';
 import ModeSelector from './components/ModeSelector';
-// PDF处理函数将在需要时动态导入
+// PDF处理函数将在需要时动态导�?
 // import {
 //   createPdfFile,
 //   validatePdfFile,
@@ -55,7 +55,7 @@ interface SingleFilePdfCompressorProps {
   onReset?: () => void;
 }
 
-       // 动态导入PDF处理函数的辅助函数
+       // 动态导入PDF处理函数的辅助函�?
        async function loadPdfProcessingFunctions() {
          const { 
            createPdfFile, 
@@ -67,7 +67,7 @@ interface SingleFilePdfCompressorProps {
          return { createPdfFile, validatePdfFile, compressPdf, formatFileSize };
        }
 
-       // 验证PDF处理环境的辅助函数
+       // 验证PDF处理环境的辅助函�?
        async function validatePdfEnvironment() {
          try {
            const { validatePdfEnvironment } = await import('@/lib/pdf-processing/safe-pdf-processor');
@@ -84,7 +84,7 @@ export default function SingleFilePdfCompressor({
   onComplete,
   onReset
 }: SingleFilePdfCompressorProps) {
-  const { t } = useModuleTranslation('compressors/pdf', locale);
+  const { t } = useTranslation('compressors/pdf' as any, locale);
   
   const [state, setState] = useState<OperationState>('empty');
   const [file, setFile] = useState<PdfFile | null>(null);
@@ -98,7 +98,7 @@ export default function SingleFilePdfCompressor({
     maxImageDimension: 1920
   });
   
-  // 使用新的PDF处理器状态管理
+  // 使用新的PDF处理器状态管�?
   const {
     isProcessing,
     progress,
@@ -123,7 +123,7 @@ export default function SingleFilePdfCompressor({
       // 动态加载PDF处理函数
       const { validatePdfFile, createPdfFile, formatFileSize } = await loadPdfProcessingFunctions();
       
-      // 存储formatFileSize函数供后续使用
+      // 存储formatFileSize函数供后续使�?
       setFormatFileSize(() => formatFileSize);
       
       // 验证文件
@@ -146,14 +146,14 @@ export default function SingleFilePdfCompressor({
   const handleCompress = useCallback(async () => {
     if (!file) return;
     
-    // 跟踪 PDF 压缩开始
+    // 跟踪 PDF 压缩开�?
     Analytics.compression.start('pdf');
     
     setState('processing');
     setProgress(0);
     
     try {
-      // 模拟进度（实际应该从 compressPdf 获取）
+      // 模拟进度（实际应该从 compressPdf 获取�?
       const progressInterval = setInterval(() => {
         setProgress(prev => {
           if (prev >= 90) {
@@ -215,15 +215,10 @@ export default function SingleFilePdfCompressor({
 
   return (
     <div className="relative">
-      <AnimatePresence mode="wait">
-        {/* 状态1: 上传区域 */}
+      <div>
+        {/* 状�?: 上传区域 */}
         {state === 'empty' && (
-          <motion.div
-            key="upload"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
           >
             {/* 错误显示 */}
             {error && (
@@ -249,21 +244,16 @@ export default function SingleFilePdfCompressor({
               onFileSelect={handleFileSelect}
               accentColor="blue"
             />
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态2: 配置区域 */}
+        {/* 状�?: 配置区域 */}
         {state === 'config' && file && (
-          <motion.div
-            key="config"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
             className="card-glass p-6 sm:p-8"
           >
             <div className="space-y-6">
-            {/* 模式切换器 */}
+            {/* 模式切换�?*/}
             <ModeSelector
               isAdvancedMode={isAdvancedMode}
               onModeChange={setIsAdvancedMode}
@@ -284,7 +274,7 @@ export default function SingleFilePdfCompressor({
               accentColor="blue"
             />
 
-            {/* Advanced 模式：显示压缩设置 */}
+            {/* Advanced 模式：显示压缩设�?*/}
             {isAdvancedMode && (
               <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 space-y-4">
                 <h4 className="text-lg font-semibold text-text-primary mb-4">
@@ -335,7 +325,7 @@ export default function SingleFilePdfCompressor({
                   </div>
                 )}
 
-                {/* 移除元数据 */}
+                {/* 移除元数�?*/}
                 <div className="flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
                   <div>
                     <label className="text-sm font-medium text-text-primary cursor-pointer">
@@ -397,17 +387,12 @@ export default function SingleFilePdfCompressor({
               ]}
             />
             </div>
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态3: 处理中 */}
+        {/* 状�?: 处理�?*/}
         {state === 'processing' && (
-          <motion.div
-            key="processing"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
             className="card-glass p-6 sm:p-8"
           >
             <ProgressIndicator
@@ -416,17 +401,12 @@ export default function SingleFilePdfCompressor({
               subtitle={t('operation.progress.compressing')}
               accentColor="blue"
             />
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态4: 结果展示 */}
+        {/* 状�?: 结果展示 */}
         {state === 'result' && result && file && (
-          <motion.div
-            key="result"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
+          <div
             className="card-glass p-6 sm:p-8"
           >
             <div className="space-y-6">
@@ -476,7 +456,7 @@ export default function SingleFilePdfCompressor({
               </div>
             </div>
 
-            {/* 大小对比可视化 */}
+            {/* 大小对比可视�?*/}
             <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
               <h4 className="text-lg font-semibold text-text-primary mb-4">
                 Size Comparison
@@ -504,22 +484,19 @@ export default function SingleFilePdfCompressor({
                     </span>
                   </div>
                   <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                    <motion.div 
+                    <div 
                       className="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full"
-                      initial={{ width: '100%' }}
-                      animate={{ width: `${(result.compressedSize / result.originalSize) * 100}%` }}
-                      transition={{ duration: 1, ease: 'easeOut' }}
+                      style={{ 
+                        width: `${(result.compressedSize / result.originalSize) * 100}%` 
+                      }}
                     />
                   </div>
                 </div>
               </div>
 
               {/* 节省空间高亮 */}
-              <motion.div 
+              <div 
                 className="mt-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-500/10 dark:to-emerald-500/10 border border-green-200 dark:border-green-500/20 rounded-lg text-center"
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.4 }}
               >
                 <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-1">
                   -{result.savingsPercentage}%
@@ -527,7 +504,7 @@ export default function SingleFilePdfCompressor({
                 <div className="text-sm text-green-700 dark:text-green-300">
                   Saved {formatFileSize ? formatFileSize(result.originalSize - result.compressedSize) : `${result.originalSize - result.compressedSize} bytes`}
                 </div>
-              </motion.div>
+              </div>
             </div>
 
             {/* 详细统计 */}
@@ -575,23 +552,23 @@ export default function SingleFilePdfCompressor({
               </button>
             </div>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      </div>
 
       {/* 错误提示 */}
       {error && (
-        <motion.div
+        <div
           className="mt-4 bg-red-50 dark:bg-red-500/10 border border-red-200 dark:border-red-500/20 rounded-lg p-4"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
         >
           <p className="text-red-800 dark:text-red-300 font-medium">Error</p>
           <p className="text-red-700 dark:text-red-400 text-sm">{error}</p>
-        </motion.div>
+        </div>
       )}
     </div>
   );
 }
+
+
 
 

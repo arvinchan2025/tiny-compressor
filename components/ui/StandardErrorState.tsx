@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import StandardButton from './StandardButton';
 import StandardIcon from './StandardIcon';
 import StandardCard from './StandardCard';
@@ -65,11 +65,7 @@ export default function StandardErrorState({
   const styles = getTypeStyles();
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.3 }}
+    <div
       className={className}
     >
       <StandardCard
@@ -140,6 +136,6 @@ export default function StandardErrorState({
           </div>
         </div>
       </StandardCard>
-    </motion.div>
+    </div>
   );
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "PNG to JPG変換 - PNG画像をオンラインで変換",
     "description": "PNG画像をオンラインでJPG形式に変換します。無料、高速、使いやすいPNG to JPG変換ツール。",
@@ -216,9 +216,9 @@
       "advanced": "詳細"
     },
     "upload": {
-      "title": "{format} 画像をここにドラッグ＆ドロップするか、クリックして選択",
-      "subtitle": "{sourceFormat}形式をサポート、最大50MB",
-      "selectFiles": "ファイルを選択"
+      "title": "PNGファイルをここにドラッグ＆ドロップするか、クリックして選択",
+      "subtitle": "PNG形式をサポート、最大50MB",
+      "selectFiles": "PNGファイルを選択"
     },
     "errors": {
       "maxFiles": "最大{maxFiles}ファイルまで許可",
@@ -280,7 +280,9 @@
       "subtitle": "画像が正常に最適化されました",
       "count": "{count}ファイル変換済み",
       "original": "元",
-      "originalFormat": "{format}形式",
+      "originalFormat": "元の形式",
+      "newFormat": "新しい形式",
+      "fileSize": "ファイルサイズ",
       "converted": "変換済み",
       "convertedFormat": "{format}形式",
       "sizeChange": "サイズ変更",

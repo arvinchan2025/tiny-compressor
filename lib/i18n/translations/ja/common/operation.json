@@ -1,0 +1,99 @@
+{
+  "operation": {
+    "upload": {
+    "title": "ファイルをここにドラッグ&ドロップするか、クリックして選択",
+    "subtitle": "{format}形式をサポート、最大50MB",
+    "selectFiles": "ファイルを選択"
+  },
+  "preview": {
+    "formatConversion": "フォーマット変換",
+    "currentFormat": "現在のフォーマット",
+    "targetFormat": "ターゲットフォーマット"
+  },
+  "settings": {
+    "advancedTitle": "高度設定",
+    "quality": "品質",
+    "qualityLow": "10% - 小さなファイル",
+    "qualityHigh": "100% - 最高品質",
+    "maintainQuality": "品質を維持",
+    "maintainQualityDesc": "変換中に元の画像品質を保持",
+    "keepMetadata": "メタデータを保持",
+    "metadataDesc": "EXIFデータやその他のメタデータを保持",
+    "progressive": "プログレッシブJPEG",
+    "progressiveDesc": "ウェブ読み込みに最適",
+    "title": "変換設定",
+    "simple": "シンプル",
+    "advanced": "高度",
+    "simpleTitle": "クイック設定",
+    "metadata": "メタデータを保持",
+    "optimize": "Web用に最適化"
+  },
+  "actions": {
+    "convert": "変換",
+    "compress": "圧縮",
+    "download": "ダウンロード",
+    "reset": "リセット",
+    "cancel": "キャンセル",
+    "convertMore": "もう一度変換",
+    "compressMore": "もう一度圧縮"
+  },
+  "status": {
+    "processing": "処理中... {progress}%"
+  },
+  "progress": {
+    "compressing": "{format}を圧縮中...",
+    "converting": "{format}を変換中..."
+  },
+  "results": {
+    "title": "圧縮完了！🎉",
+    "subtitle": "画像が正常に最適化されました",
+    "count": "{count} ファイルが変換されました",
+    "original": "元のファイル",
+    "originalFormat": "元のフォーマット",
+    "newFormat": "新しいフォーマット",
+    "fileSize": "ファイルサイズ",
+    "converted": "変換後",
+    "convertedFormat": "{format} フォーマット",
+    "sizeChange": "サイズ変更",
+    "time": "時間",
+    "format": "フォーマット",
+    "smaller": "小さく",
+    "larger": "大きく",
+    "successMessage": "変換成功！",
+    "successDescription": "画像が変換・最適化されました。ダウンロードの準備ができています！",
+    "download": "ダウンロード",
+    "reset": "もっと変換",
+    "sizeInfo": "元: {original} MB → 変換後: {converted} MB ({change}% {changeType})",
+    "sizeComparison": "ファイルサイズ比較",
+    "compressed": "圧縮後",
+    "saved": "節約された容量",
+    "compressMore": "もう一度圧縮",
+    "convertMore": "もう一度変換"
+  },
+  "files": {
+    "title": "ファイル情報",
+    "name": "ファイル名",
+    "dimensions": "サイズ",
+    "sizeInfo": "ファイルサイズ",
+    "reset": "すべてリセット"
+  },
+  "stats": {
+    "qualityUsed": "使用品質",
+    "processingTime": "処理時間"
+  },
+  "errors": {
+    "unknownError": "不明なエラーが発生しました",
+    "compressionFailed": "圧縮に失敗しました",
+    "conversionFailed": "変換に失敗しました"
+  },
+  "convert": {
+    "start": "変換",
+    "simpleStart": "クイック変換",
+    "advancedStart": "変換（高度）",
+    "processing": "変換中... {progress}%"
+  },
+  "download": {
+    "downloadAll": "すべてのファイルをダウンロード"
+  }
+  }
+}

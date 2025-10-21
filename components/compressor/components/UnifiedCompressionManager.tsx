@@ -12,7 +12,7 @@ import { compressImage, validateImageFile, getImageMetadata } from '@/lib/image-
 import ModeSelector from './ModeSelector';
 import FileDropZone from './FileDropZone';
 import ResultsPanel from './ResultsPanel';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import { Locale } from '@/lib/i18n';
 import SingleFileCompressor from '../SingleFileCompressor';
 
@@ -76,7 +76,7 @@ export default function UnifiedCompressionManager({
   onCompressionComplete,
   onError
 }: UnifiedCompressionManagerProps) {
-  const { t } = useModuleTranslation(`compressors/${format}`, locale as Locale);
+  const { t } = useTranslation(`compressors/${format}` as any, locale);
   const [imageFiles, setImageFiles] = useState<ImageFile[]>([]);
   const [isCompressing, setIsCompressing] = useState(false);
   const [compressionProgress, setCompressionProgress] = useState(0);

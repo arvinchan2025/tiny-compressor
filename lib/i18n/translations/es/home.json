@@ -1,10 +1,14 @@
 {
   "hero": {
     "title": "TinyCompressor",
-    "subtitle": "Herramientas de Imagen Online Gratuitas",
+    "subtitle": "Herramientas Gratuitas de Compresión y Conversión de Imágenes Online",
     "description": "Herramientas avanzadas de compresión y conversión de imágenes impulsadas por algoritmos de vanguardia. Reduce el tamaño de archivo hasta un 90% manteniendo la calidad perfecta. Ultrarrápido, completamente seguro y 100% gratuito para siempre.",
     "getStarted": "Empezar a Comprimir",
     "learnMore": "Probar Convertidor",
+    "quickActions": {
+      "compressFiles": "Comprimir Archivos",
+      "convertFormats": "Convertir Formatos"
+    },
     "stats": {
       "sizeReduction": "Hasta 90% de Reducción",
       "supportedFormats": "16+ Formatos Soportados",
@@ -149,8 +153,8 @@
   "cta": {
     "title": "¿Listo para Optimizar Tus Archivos?",
     "description": "Únete a millones de usuarios que confían en TinyCompressor para sus necesidades diarias de optimización de archivos. Comienza a procesar tus imágenes, documentos y videos en segundos.",
-    "getStarted": "Empezar Ahora",
-    "learnMore": "Saber Más",
+    "getStarted": "Empezar a Comprimir",
+    "learnMore": "Probar Convertidor",
     "buttons": {
       "startCompression": "Iniciar Compresión",
       "convertFormats": "Convertir Formatos"
@@ -233,13 +237,6 @@
       "color": "orange"
     }
   ],
-  "hero": {
-    "subtitle": "Herramientas profesionales de optimización de archivos que reducen tamaños hasta 95% manteniendo excelente calidad. No se requiere registro.",
-    "quickActions": {
-      "compressFiles": "Comprimir Archivos",
-      "convertFormats": "Convertir Formatos"
-    }
-  },
   "heroStats": [
     {
       "number": "15M+",

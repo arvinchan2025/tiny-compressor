@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "PNG 转 JPG - 在线转换 PNG 图片",
     "description": "在线将 PNG 图片转换为 JPG 格式。免费、快速且易于使用的 PNG 转 JPG 转换器。",
@@ -216,9 +216,9 @@
       "advanced": "高级"
     },
     "upload": {
-      "title": "将文件拖放到此处或点击选择",
-      "subtitle": "支持 {sourceFormat} 格式，最大 50MB",
-      "selectFiles": "选择文件"
+      "title": "拖拽PNG文件到此处或点击选择",
+      "subtitle": "支持PNG格式，最大50MB",
+      "selectFiles": "选择PNG文件"
     },
     "errors": {
       "maxFiles": "最多允许 {maxFiles} 个文件",

@@ -2,13 +2,11 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { Locale, TranslationModule, getLocaleFromPath, supportedLocales, switchLocalePath, getCleanPath } from '@/lib/i18n'
+import { translationPathGenerator, isModuleSupported, isLocaleSupported } from '@/lib/i18n/translation-config'
 
-// Import generated translation data
-import { translations, supportedModules } from '@/lib/translations/generated'
-
-// 检查是否为支持的模块（所有在 generated.ts 中的模块）
+// 检查是否为支持的模块
 function isSupportedModule(module: TranslationModule): boolean {
-  return supportedModules.includes(module)
+  return isModuleSupported(module as string);
 }
 
 // Translation Hook return type
@@ -22,8 +20,13 @@ interface UseTranslationReturn {
 }
 
 // Create translation function
-function createTranslationFunction(translations: Record<string, any>): (key: string, params?: Record<string, string | number | boolean> & { returnObjects?: boolean }) => any {
+function createTranslationFunction(translations: Record<string, any>, locale: string = 'en'): (key: string, params?: Record<string, string | number | boolean> & { returnObjects?: boolean }) => any {
   return (key: string, params?: Record<string, string | number | boolean> & { returnObjects?: boolean }): any => {
+    // 如果翻译为空，返回键本身（避免水合错误）
+    if (Object.keys(translations).length === 0) {
+      return key
+    }
+    
     const keys = key.split('.')
     let value: any = translations
     
@@ -31,7 +34,8 @@ function createTranslationFunction(translations: Record<string, any>): (key: str
       if (value && typeof value === 'object' && k in value) {
         value = value[k]
       } else {
-        return key // If translation not found, return original key
+        // 如果翻译键不匹配，返回键本身
+        return key
       }
     }
     
@@ -59,28 +63,69 @@ function createTranslationFunction(translations: Record<string, any>): (key: str
   }
 }
 
-// 翻译Hook - 处理所有支持的模块
+// 翻译Hook - 使用优化的按需加载
 export function useTranslation(module: TranslationModule = 'common/ui', providedLocale?: Locale): UseTranslationReturn {
   // 检查是否为支持的模块
   if (!isSupportedModule(module)) {
     console.warn(`useTranslation: Module '${module}' is not a supported module.`)
+    console.warn(`Supported modules: common/ui, common/navigation, home, compressor, converter`)
   }
   
   const [locale, setLocale] = useState<Locale>(providedLocale || 'en')
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const [translations, setTranslations] = useState<Record<string, any>>({})
+  const [isClient, setIsClient] = useState(false)
+
+  // 验证语言是否支持
+  if (!isLocaleSupported(locale)) {
+    console.warn(`useTranslation: Locale '${locale}' is not supported. Falling back to 'en'.`)
+    setLocale('en')
+  }
+
+  // 检测客户端环境
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  // 加载翻译数据 - 使用动态导入
+  useEffect(() => {
+    // 只在客户端加载翻译，服务器端不加载
+    if (typeof window === 'undefined') return
+    
+    const loadTranslations = async () => {
+      setIsLoading(true)
+      try {
+        // 动态导入翻译文件
+        console.log(`Attempting to load translations for ${locale}/${module}`)
+        const translationData = await import(`@/lib/i18n/translations/${locale}/${module}.json`)
+        console.log(`Successfully loaded translations for ${locale}/${module}:`, translationData)
+        const translations = translationData.default || translationData
+        console.log(`Setting translations:`, Object.keys(translations))
+        setTranslations(translations)
+      } catch (error) {
+        console.error(`Failed to load translations for ${locale}/${module}:`, error)
+        if (error instanceof Error) {
+          console.error(`Error details:`, error.message, error.stack)
+        }
+        setTranslations({})
+      } finally {
+        setIsLoading(false) // 确保加载状态被正确设置
+      }
+    }
+
+    loadTranslations()
+  }, [isClient, locale, module])
 
   // Detect current language (only if no locale provided)
   useEffect(() => {
     if (providedLocale) {
       setLocale(providedLocale)
-      setIsLoading(false)
       return
     }
     
     const pathname = typeof window !== 'undefined' ? window.location.pathname : '/'
     const detectedLocale = getLocaleFromPath(pathname)
     setLocale(detectedLocale)
-    setIsLoading(false)
   }, [providedLocale])
 
   // Listen for URL changes
@@ -115,15 +160,10 @@ export function useTranslation(module: TranslationModule = 'common/ui', provided
     }
   }
 
-  // Use useMemo for performance optimization
-  const currentTranslations = useMemo(() => {
-    return (translations as any)[locale]?.[module] || {}
-  }, [locale, module])
-
   // Create translation function
   const t = useMemo(() => {
-    return createTranslationFunction(currentTranslations)
-  }, [currentTranslations])
+    return createTranslationFunction(translations, locale)
+  }, [translations, locale])
 
   return {
     t,
@@ -131,11 +171,11 @@ export function useTranslation(module: TranslationModule = 'common/ui', provided
     isLoading,
     switchLocale,
     availableLocales: supportedLocales as Locale[],
-    availableModules: supportedModules as TranslationModule[],
+    availableModules: ['common/ui', 'common/navigation', 'home', 'compressor', 'converter'] as TranslationModule[],
   }
 }
 
-// 专门用于支持的翻译模块的Hook
+// 专门用于支持的翻译模块的Hook - 使用优化的按需加载
 export function useStaticTranslation(module: TranslationModule, locale?: Locale): UseTranslationReturn {
   // 强制检查支持的模块
   if (!isSupportedModule(module)) {
@@ -144,6 +184,13 @@ export function useStaticTranslation(module: TranslationModule, locale?: Locale)
   
   const [currentLocale, setCurrentLocale] = useState<Locale>(locale || 'en')
   const [isLoading, setIsLoading] = useState(true)
+  const [translations, setTranslations] = useState<Record<string, any>>({})
+  const [isClient, setIsClient] = useState(false)
+
+  // 检测客户端环境
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   // 设置语言
   useEffect(() => {
@@ -154,18 +201,33 @@ export function useStaticTranslation(module: TranslationModule, locale?: Locale)
       const detectedLocale = getLocaleFromPath(pathname)
       setCurrentLocale(detectedLocale)
     }
-    setIsLoading(false)
   }, [locale])
 
-  // 获取静态翻译
-  const currentTranslations = useMemo(() => {
-    return (translations as any)[currentLocale]?.[module] || {}
-  }, [currentLocale, module])
+  // 加载翻译数据 - 使用静态导入
+  useEffect(() => {
+    if (!isClient) return // 只在客户端加载翻译
+    
+    const loadTranslations = async () => {
+      setIsLoading(true)
+      try {
+        // 直接导入翻译文件
+        const translationData = await import(`@/lib/i18n/translations/${currentLocale}/${module}.json`)
+        setTranslations(translationData.default || translationData)
+      } catch (error) {
+        console.error(`Failed to load static translations for ${currentLocale}/${module}:`, error)
+        setTranslations({})
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    loadTranslations()
+  }, [isClient, currentLocale, module])
 
   // 创建翻译函数
   const t = useMemo(() => {
-    return createTranslationFunction(currentTranslations)
-  }, [currentTranslations])
+    return createTranslationFunction(translations, currentLocale)
+  }, [translations, currentLocale])
 
   return {
     t,
@@ -175,15 +237,16 @@ export function useStaticTranslation(module: TranslationModule, locale?: Locale)
       setCurrentLocale(newLocale)
     },
     availableLocales: supportedLocales as Locale[],
-    availableModules: supportedModules as TranslationModule[],
+    availableModules: ['common/ui', 'common/navigation', 'home', 'compressor', 'converter'] as TranslationModule[],
   }
 }
 
-// Hook to get all translations (for debugging)
+// Hook to get all translations (for debugging) - 已弃用，使用新的加载器
 export function useAllTranslations() {
+  console.warn('useAllTranslations is deprecated. Use the optimized translation loader instead.')
   return {
-    translations,
+    translations: {},
     supportedLocales,
-    supportedModules,
+    supportedModules: ['common/ui', 'common/navigation', 'home', 'compressor', 'converter'],
   }
 }

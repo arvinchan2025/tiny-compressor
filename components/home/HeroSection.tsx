@@ -35,14 +35,11 @@ export default function HeroSection({
           {/* Main Headline - 关键内容优先渲染 */}
           <div className="mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900 dark:text-white">
-              TinyCompressor
+              {t('hero.title') || 'TinyCompressor'}
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              {translationLoading 
-                ? 'Free Online Image Compression and Conversion Tools' 
-                : t('hero.subtitle')
-              }
+              {t('hero.subtitle') || 'Free Online Image Compression and Conversion Tools'}
             </p>
           </div>
 
@@ -53,7 +50,7 @@ export default function HeroSection({
               className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <span className="relative z-10">
-                {translationLoading ? 'Compress Files' : t('hero.quickActions.compressFiles')}
+                {t('hero.quickActions.compressFiles') || 'Compress Files'}
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
@@ -62,7 +59,7 @@ export default function HeroSection({
               className="group relative px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200 dark:border-slate-700"
             >
               <span className="relative z-10">
-                {translationLoading ? 'Convert Formats' : t('hero.quickActions.convertFormats')}
+                {t('hero.quickActions.convertFormats') || 'Convert Formats'}
               </span>
               <div className="absolute inset-0 bg-slate-50 dark:bg-slate-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
@@ -70,14 +67,24 @@ export default function HeroSection({
 
           {/* Stats - 关键内容优先渲染 */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {translationLoading ? (
-              // 默认统计信息
-              [
-                { number: '90%', label: 'Size Reduction', color: 'blue' },
-                { number: '16+', label: 'Formats', color: 'green' },
-                { number: '100%', label: 'Free', color: 'purple' },
-                { number: '<1s', label: 'Processing', color: 'orange' }
-              ].map((stat, index) => (
+            {(() => {
+              const heroStats = t('heroStats', { returnObjects: true });
+              
+              // 确保heroStats是数组，如果不是则使用默认值
+              let stats;
+              if (Array.isArray(heroStats) && heroStats.length > 0) {
+                stats = heroStats;
+              } else {
+                // 使用默认的统计数据
+                stats = [
+                  { number: '90%', label: 'Size Reduction', color: 'blue' },
+                  { number: '16+', label: 'Formats', color: 'green' },
+                  { number: '100%', label: 'Free', color: 'purple' },
+                  { number: '<1s', label: 'Processing', color: 'orange' }
+                ];
+              }
+              
+              return stats.map((stat: any, index: number) => (
                 <div key={index} className="group">
                   <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
                     <div className={`text-3xl font-bold mb-2 ${
@@ -93,30 +100,8 @@ export default function HeroSection({
                     </div>
                   </div>
                 </div>
-              ))
-            ) : (
-              (t('heroStats', { returnObjects: true }) as Array<{
-                number: string;
-                label: string;
-                color: string;
-              }>).map((stat, index) => (
-                <div key={index} className="group">
-                  <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-white/20 dark:border-slate-700/50">
-                    <div className={`text-3xl font-bold mb-2 ${
-                      stat.color === 'blue' ? 'text-blue-600 dark:text-blue-400' :
-                      stat.color === 'green' ? 'text-green-600 dark:text-green-400' :
-                      stat.color === 'purple' ? 'text-purple-600 dark:text-purple-400' :
-                      'text-orange-600 dark:text-orange-400'
-                    }`}>
-                      {stat.number}
-                    </div>
-                    <div className="text-sm text-slate-600 dark:text-slate-400 font-medium">
-                      {stat.label}
-                    </div>
-                  </div>
-                </div>
-              ))
-            )}
+              ));
+            })()}
           </div>
         </div>
       </StandardContainer>

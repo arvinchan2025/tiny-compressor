@@ -8,7 +8,7 @@ import React, { useCallback, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ImageFile } from '@/types/image';
 import { Locale } from '@/lib/i18n';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface FileDropZoneProps {
   onFileSelect: (file: ImageFile) => void;
@@ -18,7 +18,7 @@ interface FileDropZoneProps {
 }
 
 export default function FileDropZone({ onFileSelect, locale = 'en', format = 'png', resetKey = 0 }: FileDropZoneProps) {
-  const { t } = useModuleTranslation(`compressors/${format}`, locale);
+  const { t } = useTranslation(`compressors/${format}` as any, locale as any);
   const [isDragOver, setIsDragOver] = useState(false);
 
   const handleFileSelect = useCallback((file: File) => {

@@ -1,7 +1,7 @@
 'use client';
 
 import { forwardRef } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion'; // Removed to fix build issues
 import { commonSpacing, responsiveSpacing, layoutUtils } from '@/lib/spacing-utils';
 
 interface StandardContainerProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -51,17 +51,13 @@ const StandardContainer = forwardRef<HTMLDivElement, StandardContainerProps>(
     `.trim().replace(/\s+/g, ' ');
 
     return (
-      <motion.div
+      <div
         ref={ref}
         className={containerClasses}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
-        style={props.style}
-        {...(props as any)}
+        {...props}
       >
         {children}
-      </motion.div>
+      </div>
     );
   }
 );

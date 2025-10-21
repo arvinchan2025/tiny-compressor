@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "محول JPEG إلى PNG - تحويل صور JPEG عبر الإنترنت",
     "description": "حول صور JPEG إلى تنسيق PNG عبر الإنترنت. محول JPEG إلى PNG مجاني وسريع وسهل الاستخدام.",
@@ -212,9 +212,9 @@
   },
   "operation": {
     "upload": {
-      "title": "اسحب وأفلت ملفات JPEG هنا أو انقر للتحديد",
-      "subtitle": "يدعم تنسيق JPEG/JPG، حتى {maxFiles} ملفات، الحد الأقصى 10 ميجابايت لكل منها",
-      "selectFiles": "حدد ملفات JPEG"
+      "title": "اسحب وأفلت ملف JPEG/JPG هنا أو انقر للتحديد",
+      "subtitle": "يدعم تنسيق JPEG/JPG، الحد الأقصى 50 ميجابايت",
+      "selectFiles": "حدد ملف JPEG/JPG"
     },
     "errors": {
       "maxFiles": "الحد الأقصى {maxFiles} ملفات مسموح",

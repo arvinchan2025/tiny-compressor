@@ -32,70 +32,70 @@ export default function ModernHomePage({ locale }: ModernHomePageProps) {
   };
 
   // Tool categories with modern design - based on actual project capabilities
-  const tools = [
+  const tools = translationLoading ? [] : [
     {
       id: 'images',
-      title: t('toolCategories.images.title'),
-      subtitle: t('toolCategories.images.subtitle'),
-      description: t('toolCategories.images.description'),
-      icon: t('toolCategories.images.icon'),
+      title: t('toolCategories.images.title') || 'Image Compression',
+      subtitle: t('toolCategories.images.subtitle') || 'Optimize photos and graphics',
+      description: t('toolCategories.images.description') || 'Reduce file sizes while maintaining quality',
+      icon: t('toolCategories.images.icon') || '🗜️',
       gradient: 'from-blue-500 to-cyan-500',
       href: getLocalizedUrl('/compressor'),
-      features: t('toolCategories.images.features', { returnObjects: true }) as string[],
-      stats: t('toolCategories.images.stats'),
+      features: (t('toolCategories.images.features', { returnObjects: true }) as string[]) || ['PNG', 'JPEG', 'WebP', 'AVIF', 'GIF', 'BMP'],
+      stats: t('toolCategories.images.stats') || 'Up to 95% reduction',
       popular: true
     },
     {
       id: 'conversion',
-      title: t('toolCategories.conversion.title'),
-      subtitle: t('toolCategories.conversion.subtitle'),
-      description: t('toolCategories.conversion.description'),
-      icon: t('toolCategories.conversion.icon'),
+      title: t('toolCategories.conversion.title') || 'Format Conversion',
+      subtitle: t('toolCategories.conversion.subtitle') || 'Transform file types',
+      description: t('toolCategories.conversion.description') || 'Convert between different image formats',
+      icon: t('toolCategories.conversion.icon') || '🔄',
       gradient: 'from-purple-500 to-pink-500',
       href: getLocalizedUrl('/converter'),
-      features: t('toolCategories.conversion.features', { returnObjects: true }) as string[],
-      stats: t('toolCategories.conversion.stats'),
+      features: (t('toolCategories.conversion.features', { returnObjects: true }) as string[]) || ['PNG↔JPG', 'WebP↔PNG', 'HEIC↔JPG', 'AVIF↔PNG'],
+      stats: t('toolCategories.conversion.stats') || '10+ conversions',
       popular: false
     },
     {
       id: 'pdf',
-      title: t('toolCategories.pdf.title'),
-      subtitle: t('toolCategories.pdf.subtitle'),
-      description: t('toolCategories.pdf.description'),
-      icon: t('toolCategories.pdf.icon'),
+      title: t('toolCategories.pdf.title') || 'PDF Compression',
+      subtitle: t('toolCategories.pdf.subtitle') || 'Reduce documents',
+      description: t('toolCategories.pdf.description') || 'Reduce PDF file sizes with advanced compression',
+      icon: t('toolCategories.pdf.icon') || '📄',
       gradient: 'from-emerald-500 to-teal-500',
       href: getLocalizedUrl('/compressor/compress-pdf'),
-      features: t('toolCategories.pdf.features', { returnObjects: true }) as string[],
-      stats: t('toolCategories.pdf.stats'),
+      features: (t('toolCategories.pdf.features', { returnObjects: true }) as string[]) || ['PDF', 'Image compression', 'Metadata removal'],
+      stats: t('toolCategories.pdf.stats') || 'Up to 60% reduction',
       popular: false
     },
     {
       id: 'video',
-      title: t('toolCategories.video.title'),
-      subtitle: t('toolCategories.video.subtitle'),
-      description: t('toolCategories.video.description'),
-      icon: t('toolCategories.video.icon'),
+      title: t('toolCategories.video.title') || 'Video Processing',
+      subtitle: t('toolCategories.video.subtitle') || 'Optimize videos',
+      description: t('toolCategories.video.description') || 'Compress video files with FFmpeg technology',
+      icon: t('toolCategories.video.icon') || '🎬',
       gradient: 'from-orange-500 to-red-500',
       href: getLocalizedUrl('/compressor/compress-video'),
-      features: t('toolCategories.video.features', { returnObjects: true }) as string[],
-      stats: t('toolCategories.video.stats'),
+      features: (t('toolCategories.video.features', { returnObjects: true }) as string[]) || ['MP4', 'AVI', 'MOV', 'WebM'],
+      stats: t('toolCategories.video.stats') || 'Up to 85% reduction',
       popular: false
     }
   ];
 
   // Key benefits - based on actual project capabilities
-  const benefits = t('benefits', { returnObjects: true }) as Array<{
+  const benefits = translationLoading ? [] : (t('benefits', { returnObjects: true }) as Array<{
     icon: string;
     title: string;
     description: string;
     color: string;
-  }>;
+  }>) || [];
 
   // FAQ items
-  const faqs = t('faq.items', { returnObjects: true }) as Array<{
+  const faqs = translationLoading ? [] : (t('faq.items', { returnObjects: true }) as Array<{
     question: string;
     answer: string;
-  }>;
+  }>) || [];
 
   return (
     <>

@@ -212,13 +212,12 @@
   },
   "operation": {
     "upload": {
-      "title": "Drag and drop HEIC files here or click to select",
-      "subtitle": "Support HEIC/HEIF format, up to {maxFiles} files, max 10MB each",
-      "selectFiles": "Select HEIC Files"
+      "title": "Drag and drop HEIC/HEIF file here or click to select",
+      "subtitle": "Support HEIC/HEIF format, max 50MB",
+      "selectFiles": "Select HEIC/HEIF File"
     },
     "errors": {
-      "maxFiles": "Maximum {maxFiles} files allowed",
-      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 50MB",
       "unsupportedFormat": "Unsupported file format: {fileName}. Only HEIC/HEIF files are supported.",
       "uploadFailed": "File upload failed",
       "conversionFailed": "Conversion failed. Please try again."
@@ -271,7 +270,3 @@
     }
   }
 }
-
-
-
-

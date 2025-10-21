@@ -8,7 +8,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CompressionResult } from '@/lib/image-processing/types';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import { Locale } from '@/lib/i18n';
 
 interface ResultsPanelProps {
@@ -28,7 +28,7 @@ export default function ResultsPanel({
   onDownload, 
   onCompressMore 
 }: ResultsPanelProps) {
-  const { t } = useModuleTranslation(`compressors/${format}`, locale);
+  const { t } = useTranslation(`compressors/${format}` as any, locale);
   
   // 安全检查
   if (!result) {

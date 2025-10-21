@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { ClientProviders } from '@/components/providers/ClientProviders';
+import PerformanceMonitor from '@/components/performance/PerformanceMonitor';
 // import { ToastProvider } from '@/components/ui/Toast'; // 移除Toast，改用进度条
 
 const inter = Inter({ 
@@ -11,6 +12,7 @@ const inter = Inter({
   preload: true,
   variable: '--font-inter',
   weight: ['400', '500', '600', '700'], // 仅加载需要的字重
+  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
 });
 
 export const metadata: Metadata = {
@@ -140,6 +142,7 @@ export default function RootLayout({
       <body className={inter.className} suppressHydrationWarning>
         <ClientProviders>
           {children}
+          <PerformanceMonitor />
         </ClientProviders>
         
         {/* Google Analytics - 延迟加载，不阻塞首屏 */}

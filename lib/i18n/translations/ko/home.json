@@ -1,10 +1,14 @@
 {
   "hero": {
     "title": "TinyCompressor",
-    "subtitle": "무료 온라인 이미지 도구",
+    "subtitle": "무료 온라인 이미지 압축 및 변환 도구",
     "description": "최첨단 알고리즘으로 구동되는 고급 이미지 압축 및 변환 도구. 완벽한 품질을 유지하면서 파일 크기를 최대 90%까지 줄입니다. 번개처럼 빠르고, 완전히 안전하며, 영원히 무료입니다.",
     "getStarted": "압축 시작",
     "learnMore": "변환기 사용해보기",
+    "quickActions": {
+      "compressFiles": "파일 압축",
+      "convertFormats": "형식 변환"
+    },
     "stats": {
       "sizeReduction": "최대 90% 크기 감소",
       "supportedFormats": "16+ 지원 형식",
@@ -223,13 +227,6 @@
       "color": "orange"
     }
   ],
-  "hero": {
-    "subtitle": "파일 크기를 최대 95%까지 줄이면서 우수한 품질을 유지하는 전문 파일 최적화 도구입니다. 등록이 필요하지 않습니다.",
-    "quickActions": {
-      "compressFiles": "파일 압축",
-      "convertFormats": "형식 변환"
-    }
-  },
   "heroStats": [
     {
       "number": "15M+",

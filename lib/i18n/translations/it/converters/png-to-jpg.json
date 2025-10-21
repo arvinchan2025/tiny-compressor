@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Convertitore PNG a JPG - Converti Immagini PNG Online",
     "description": "Converti immagini PNG in formato JPG online. Convertitore PNG a JPG gratuito, veloce e facile da usare.",
@@ -216,9 +216,14 @@
       "advanced": "Avanzato"
     },
     "upload": {
-      "title": "Trascina la tua immagine {format} qui o clicca per selezionare",
-      "subtitle": "Supporta formato {sourceFormat}, max 50MB",
-      "selectFiles": "Seleziona File"
+      "title": "Trascina il tuo file PNG qui o clicca per selezionare",
+      "subtitle": "Supporta formato PNG, max 50MB",
+      "selectFiles": "Seleziona File PNG"
+    },
+    "preview": {
+      "formatConversion": "Conversione Formato",
+      "currentFormat": "Formato attuale",
+      "targetFormat": "Formato di destinazione"
     },
     "errors": {
       "maxFiles": "Massimo {maxFiles} file consentiti",
@@ -253,9 +258,11 @@
       "simpleTitle": "Impostazioni Rapide",
       "advancedTitle": "Impostazioni Avanzate",
       "quality": "Qualità",
-      "qualityLow": "Bassa (60)",
+      "qualityLow": "10% - File più piccolo",
       "qualityMedium": "Media (80)",
-      "qualityHigh": "Alta (100)",
+      "qualityHigh": "100% - Qualità migliore",
+      "maintainQuality": "Mantieni Qualità",
+      "maintainQualityDesc": "Mantieni la qualità originale dell'immagine durante la conversione",
       "colorSpace": "Spazio Colore",
       "colorSpaceAuto": "Auto",
       "colorSpaceSrgb": "sRGB",
@@ -280,7 +287,9 @@
       "subtitle": "La tua immagine è stata ottimizzata con successo",
       "count": "{count} file convertiti",
       "original": "Originale",
-      "originalFormat": "Formato {format}",
+      "originalFormat": "Formato Originale",
+      "newFormat": "Nuovo Formato",
+      "fileSize": "Dimensione File",
       "converted": "Convertito",
       "convertedFormat": "Formato {format}",
       "sizeChange": "Cambio Dimensione",

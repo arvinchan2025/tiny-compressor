@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "JPG to AVIF Converter - Convert JPG Images Online",
     "description": "Convert JPG images to AVIF format online. Free, fast, and easy to use JPG to AVIF converter.",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Drag and drop JPG files here or click to select",
-      "subtitle": "Support JPG/JPEG format, up to {maxFiles} files, max 10MB each",
-      "selectFiles": "Select JPG Files"
+      "title": "Arrastra y suelta archivo JPG/JPEG aquí o haz clic para seleccionar",
+      "subtitle": "Soporta formato JPG/JPEG, máx 50MB",
+      "selectFiles": "Seleccionar Archivo JPG/JPEG"
     },
     "errors": {
       "maxFiles": "Maximum {maxFiles} files allowed",
-      "fileTooLarge": "File {fileName} is too large, please select files smaller than 10MB",
+      "fileTooLarge": "File {fileName} is too large, please select files smaller than 50MB",
       "unsupportedFormat": "Unsupported file format: {fileName}. Only JPG/JPEG files are supported.",
       "uploadFailed": "File upload failed",
       "conversionFailed": "Conversion failed. Please try again."

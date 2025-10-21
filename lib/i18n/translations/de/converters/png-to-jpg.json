@@ -216,12 +216,11 @@
       "advanced": "Erweitert"
     },
     "upload": {
-      "title": "Ziehen Sie Ihr {format} Bild hierher oder klicken Sie zum Auswählen",
-      "subtitle": "Unterstützt {sourceFormat} Format, max 50MB",
-      "selectFiles": "Datei Auswählen"
+      "title": "Ziehen Sie Ihre PNG-Datei hierher oder klicken Sie zum Auswählen",
+      "subtitle": "Unterstützt PNG-Format, max 50MB",
+      "selectFiles": "PNG-Datei Auswählen"
     },
     "errors": {
-      "maxFiles": "Maximal {maxFiles} Dateien erlaubt",
       "fileTooLarge": "Datei {fileName} ist zu groß. Bitte wählen Sie eine Datei kleiner als 50MB",
       "unsupportedFormat": "Nicht unterstütztes Dateiformat: {fileName}",
       "uploadFailed": "Datei-Upload fehlgeschlagen",

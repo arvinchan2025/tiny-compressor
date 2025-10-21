@@ -4,7 +4,7 @@
  */
 
 import type { ReactNode } from 'react';
-import type { translations } from '@/lib/translations/generated';
+// Translation types are now handled by the modular translation system
 import type { SupportedLanguage } from './index';
 import type { ImageFile } from './image';
 
@@ -25,7 +25,6 @@ export interface AnimatedComponentProps extends BaseComponentProps {
 
 // 国际化组件 Props
 export interface InternationalizedComponentProps extends BaseComponentProps {
-  readonly translations: typeof translations;
   readonly locale: SupportedLanguage;
 }
 

@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Conversor JPG para WebP - Converter Imagens JPG Online",
     "description": "Converta imagens JPG para formato WebP online. Conversor JPG para WebP gratuito, rápido e fácil de usar.",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Arraste arquivos JPG aqui ou clique para selecionar",
-      "subtitle": "Suporta formato JPG/JPEG, até {maxFiles} arquivos, máximo 10MB cada",
-      "selectFiles": "Selecionar Arquivos JPG"
+      "title": "Arraste seu arquivo JPG/JPEG aqui ou clique para selecionar",
+      "subtitle": "Suporta formato JPG/JPEG, máximo 50MB",
+      "selectFiles": "Selecionar Arquivo JPG/JPEG"
     },
     "errors": {
       "maxFiles": "Máximo {maxFiles} arquivos permitidos",
-      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 10MB",
+      "fileTooLarge": "Arquivo {fileName} muito grande. Selecione arquivos menores que 50MB",
       "unsupportedFormat": "Formato de arquivo não suportado: {fileName}. Apenas arquivos JPG/JPEG são suportados.",
       "uploadFailed": "Falha no upload do arquivo",
       "conversionFailed": "Conversão falhou. Tente novamente."

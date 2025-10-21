@@ -211,51 +211,32 @@
     ]
   },
   "operation": {
-    "modes": {
-      "simple": "Simple",
-      "advanced": "Advanced"
-    },
     "upload": {
-      "title": "Drag and drop your file here or click to select",
-      "subtitle": "Support {sourceFormat} format, max 50MB",
-      "selectFiles": "Select File"
-    },
-    "errors": {
-      "maxFiles": "Maximum {maxFiles} files allowed",
-      "fileTooLarge": "File {fileName} is too large. Please select a file smaller than 50MB",
-      "unsupportedFormat": "Unsupported file format: {fileName}",
-      "uploadFailed": "File upload failed",
-      "conversionFailed": "Conversion failed",
-      "unknownError": "Unknown error",
-      "processingFailed": "Failed to process {fileName}"
+      "title": "Drag and drop PNG file here or click to select",
+      "subtitle": "Support PNG format, max 50MB",
+      "selectFiles": "Select PNG File"
     },
     "files": {
-      "title": "Selected Files",
-      "count": "{count} files selected",
-      "reset": "Reset",
-      "remove": "Remove",
-      "sizeInfo": "{size} MB"
+      "title": "Selected PNG Files"
     },
     "convert": {
-      "start": "Convert to {targetFormat}",
-      "simpleStart": "Quick Convert {sourceFormat} to {targetFormat}",
-      "advancedStart": "Convert {sourceFormat} to {targetFormat} (Advanced)",
-      "processing": "Converting... {progress}%"
+      "start": "Convert to JPG",
+      "simpleStart": "Quick Convert PNG to JPG",
+      "advancedStart": "Convert PNG to JPG (Advanced)",
+      "processing": "Converting PNG to JPG... {progress}%"
     },
     "progress": {
-      "label": "Conversion Progress",
-      "status": "Processing... {progress}% complete"
+      "status": "Converting PNG to JPG... {progress}% complete"
     },
     "settings": {
-      "title": "Conversion Settings",
-      "simple": "Simple",
-      "advanced": "Advanced",
-      "simpleTitle": "Quick Settings",
-      "advancedTitle": "Advanced Settings",
+      "title": "JPG Conversion Settings",
+      "advancedTitle": "Advanced JPG Settings",
       "quality": "Quality",
-      "qualityLow": "Low (60)",
+      "qualityLow": "10% - Smaller file",
       "qualityMedium": "Medium (80)",
-      "qualityHigh": "High (100)",
+      "qualityHigh": "100% - Best quality",
+      "maintainQuality": "Maintain Quality",
+      "maintainQualityDesc": "Keep original image quality during conversion",
       "colorSpace": "Color Space",
       "colorSpaceAuto": "Auto",
       "colorSpaceSrgb": "sRGB",
@@ -274,25 +255,21 @@
       "presetSmall": "Small File",
       "presetSmallDesc": "Smaller file, lower quality"
     },
-    "downloadAll": "Download All",
+    "converting": {
+      "message": "Converting PNG to JPG...",
+      "progress": "Converting PNG to JPG... {progress}%"
+    },
+    "downloadAll": "Download All JPG Files",
     "results": {
-      "title": "Conversion Complete! 🎉",
-      "subtitle": "Your image has been successfully optimized",
-      "count": "{count} files converted",
-      "original": "Original",
-      "originalFormat": "{format} Format",
-      "converted": "Converted",
-      "convertedFormat": "{format} Format",
-      "sizeChange": "Size Change",
-      "time": "Time",
-      "format": "Format",
-      "smaller": "Smaller",
-      "larger": "Larger",
-      "successMessage": "Conversion successful!",
-      "successDescription": "Your image has been converted and optimized. Ready for download!",
-      "download": "Download",
-      "reset": "Convert More",
-      "sizeInfo": "Original: {original} MB → Converted: {converted} MB ({change}% {changeType})"
+      "title": "PNG to JPG Conversion Complete! 🎉",
+      "subtitle": "Your image has been successfully converted",
+      "count": "{count} PNG files converted to JPG",
+      "originalFormat": "Original Format",
+      "newFormat": "New Format",
+      "fileSize": "File Size",
+      "sizeInfo": "Original PNG: {original} MB → JPG: {converted} MB ({change}% reduction)",
+      "download": "Download JPG",
+      "reset": "Convert Another"
     }
   }
 }

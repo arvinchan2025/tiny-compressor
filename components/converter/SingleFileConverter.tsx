@@ -1,18 +1,18 @@
 'use client';
 
 import React, { useState, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import { Download, Check, ArrowRight } from 'lucide-react';
 import { Locale } from '@/lib/i18n';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import { ImageFile, ConversionResult } from '@/types/image';
-import { stateVariants } from '@/lib/animations/state-transitions';
+// import { stateVariants } from '@/lib/animations/state-transitions';
 import UploadArea from '@/components/shared/UploadArea';
 import FileInfoCard from '@/components/shared/FileInfoCard';
 import ProgressIndicator from '@/components/shared/ProgressIndicator';
 import ResultStats from '@/components/shared/ResultStats';
 import ActionButtons from '@/components/shared/ActionButtons';
-import ModeSelector from '../compressor/components/ModeSelector';
+// import ModeSelector from '../compressor/components/ModeSelector';
 
 interface SingleFileConverterProps {
   locale: Locale;
@@ -34,7 +34,19 @@ export default function SingleFileConverter({
   onReset
 }: SingleFileConverterProps) {
   const conversionModule = `${sourceFormat}-to-${targetFormat}`;
-  const { t } = useModuleTranslation(`converters/${conversionModule}`, locale);
+  const { t: tConverter } = useTranslation(`converters/${conversionModule}` as any, locale);
+  const { t: tCommon } = useTranslation('common/operation' as any, locale);
+  
+  // 混合翻译函数：优先使用功能页翻译，回退到共用翻译
+  const t = (key: string, params?: any) => {
+    const converterResult = tConverter(key, params);
+    if (converterResult !== key) return converterResult;
+    
+    const commonResult = tCommon(key, params);
+    if (commonResult !== key) return commonResult;
+    
+    return key;
+  };
   
   const [state, setState] = useState<OperationState>(initialFile ? 'preview' : 'empty');
   const [file, setFile] = useState<ImageFile | null>(initialFile || null);
@@ -153,64 +165,42 @@ export default function SingleFileConverter({
   };
 
   return (
-    <div className="relative">
-      <AnimatePresence mode="wait">
-        {/* 状态1: 上传区域 */}
+    <div className="max-w-4xl mx-auto p-6">
         {state === 'empty' && (
-          <motion.div
-            key="upload"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-          >
+          <div className="text-center">
             <UploadArea
-              title={`Drop ${sourceFormat.toUpperCase()} image here or click to upload`}
-              subtitle={`Maximum file size: 10MB • Will convert to ${targetFormat.toUpperCase()}`}
-              buttonText={`Choose ${sourceFormat.toUpperCase()} File`}
+              title={t('operation.upload.title') || `Upload ${sourceFormat.toUpperCase()} File`}
+              subtitle={t('operation.upload.subtitle', { format: sourceFormat.toUpperCase() }) || `Drag and drop your ${sourceFormat.toUpperCase()} file here or click to select`}
+              buttonText={t('operation.upload.selectFiles') || 'Select File'}
               acceptTypes={`image/${sourceFormat}`}
               onFileSelect={handleFileSelect}
-              accentColor="purple"
+              accentColor="blue"
+              maxFileSize={50}
             />
-          </motion.div>
+
+          </div>
         )}
 
-        {/* 状态2: 预览区域 */}
         {state === 'preview' && file && (
-          <motion.div
-            key="preview"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="card-glass p-6 sm:p-8"
-          >
+          <div className="card-glass p-6 sm:p-8">
             <div className="space-y-6">
-            {/* 模式切换器 */}
-            <ModeSelector
-              isAdvancedMode={isAdvancedMode}
-              onModeChange={setIsAdvancedMode}
-              locale={locale}
-              format={sourceFormat}
-            />
 
-            {/* 文件信息 */}
             <FileInfoCard
               fileName={file.name}
               fileSize={file.size}
               fileType="image"
               metadata={{
-                dimensions: file.width && file.height ? { width: file.width, height: file.height } : undefined,
+                ...(file.width && file.height ? { dimensions: { width: file.width, height: file.height } } : {}),
                 format: sourceFormat.toUpperCase()
               }}
               onRemove={handleReset}
-              accentColor="purple"
+              accentColor="blue"
             />
 
             {/* 格式转换预览 */}
             <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
               <h4 className="text-lg font-semibold text-text-primary mb-6 text-center">
-                Format Conversion
+                {t('operation.preview.formatConversion') || 'Format Conversion'}
               </h4>
               
               <div className="grid grid-cols-3 gap-4 items-center">
@@ -221,18 +211,15 @@ export default function SingleFileConverter({
                     <span className="font-bold text-lg">{sourceFormat.toUpperCase()}</span>
                   </div>
                   <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Current format
+                    {t('operation.preview.currentFormat') || 'Current format'}
                   </p>
                 </div>
                 
                 {/* 箭头 */}
                 <div className="flex justify-center">
-                  <motion.div
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                  >
+                  <div>
                     <ArrowRight className="w-8 h-8 text-purple-500" />
-                  </motion.div>
+                  </div>
                 </div>
                 
                 {/* 目标格式 */}
@@ -242,7 +229,7 @@ export default function SingleFileConverter({
                     <span className="font-bold text-lg">{targetFormat.toUpperCase()}</span>
                   </div>
                   <p className="text-xs text-gray-600 dark:text-gray-400">
-                    Target format
+                    {t('operation.preview.targetFormat') || 'Target format'}
                   </p>
                 </div>
               </div>
@@ -252,7 +239,7 @@ export default function SingleFileConverter({
             {isAdvancedMode && (
               <div className="p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 space-y-4">
                 <h4 className="text-lg font-semibold text-text-primary mb-4">
-                  {t('operation.settings.advancedTitle') || 'Advanced Settings'}
+                  {t('operation.settings.advancedTitle') || 'Advanced Options'}
                 </h4>
                 
                 {/* 质量滑块 */}
@@ -270,8 +257,8 @@ export default function SingleFileConverter({
                     className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-purple-600"
                   />
                   <div className="flex justify-between text-xs text-text-secondary mt-1">
-                    <span>10% - Smaller file</span>
-                    <span>100% - Best quality</span>
+                    <span>{t('operation.settings.qualityLow') || '10% - Smaller file'}</span>
+                    <span>{t('operation.settings.qualityHigh') || '100% - Best quality'}</span>
                   </div>
                 </div>
 
@@ -282,7 +269,7 @@ export default function SingleFileConverter({
                       {t('operation.settings.maintainQuality') || 'Maintain Quality'}
                     </label>
                     <p className="text-xs text-text-secondary mt-0.5">
-                      Keep original image quality during conversion
+                      {t('operation.settings.maintainQualityDesc') || 'Keep original image quality during conversion'}
                     </p>
                   </div>
                   <button
@@ -299,65 +286,68 @@ export default function SingleFileConverter({
               </div>
             )}
 
-            {/* 操作按钮 */}
+            {/* 高级设置开关 */}
+            <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center">
+                <span className="text-sm font-medium text-text-primary">
+                  {t('operation.settings.advanced') || 'Advanced'}
+                </span>
+              </div>
+              <button
+                onClick={() => setIsAdvancedMode(!isAdvancedMode)}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ${
+                  isAdvancedMode ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+                }`}
+                role="switch"
+                aria-checked={isAdvancedMode}
+                aria-label="Toggle advanced settings"
+              >
+                <span
+                  className={`inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform duration-200 ${
+                    isAdvancedMode ? 'translate-x-6' : 'translate-x-0.5'
+                  }`}
+                />
+              </button>
+            </div>
+
             <ActionButtons
               buttons={[
                 {
-                  label: `Convert to ${targetFormat.toUpperCase()}`,
+                  label: t('operation.convert.start') || 'Convert',
                   onClick: handleConvert,
                   variant: 'primary'
                 },
                 {
-                  label: 'Cancel',
+                  label: t('operation.actions.reset') || 'Reset',
                   onClick: handleReset,
                   variant: 'secondary'
                 }
               ]}
             />
             </div>
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态3: 转换中 */}
         {state === 'converting' && (
-          <motion.div
-            key="converting"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="card-glass p-6 sm:p-8"
-          >
+          <div className="card-glass p-6 sm:p-8 text-center">
             <ProgressIndicator
               progress={progress}
-              title="Converting Image..."
-              subtitle={`Converting from ${sourceFormat.toUpperCase()} to ${targetFormat.toUpperCase()}`}
-              accentColor="purple"
+              title="Converting..."
             />
-          </motion.div>
+          </div>
         )}
 
-        {/* 状态4: 结果展示 */}
         {state === 'result' && result && (
-          <motion.div
-            key="result"
-            variants={stateVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="card-glass p-6 sm:p-8"
-          >
-            <div className="space-y-6">
-            {/* 成功消息 */}
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-500/10 dark:to-emerald-500/10 border border-green-200 dark:border-green-500/20 rounded-lg p-6 text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-4">
-                <Check className="w-8 h-8 text-white" />
+          <div className="card-glass p-6 sm:p-8 space-y-6">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Check className="w-8 h-8 text-green-600 dark:text-green-400" />
               </div>
-              <h3 className="text-2xl font-bold text-green-800 dark:text-green-300 mb-2">
-                Conversion Complete!
-              </h3>
-              <p className="text-green-700 dark:text-green-400">
-                Your image has been converted successfully
+              <h2 className="text-2xl font-semibold text-slate-800 dark:text-gray-200 mb-2">
+                {t('operation.results.title') || 'Conversion Complete!'}
+              </h2>
+              <p className="text-slate-600 dark:text-gray-400">
+                {t('operation.results.subtitle') || 'Your image has been successfully converted'}
               </p>
             </div>
 
@@ -365,17 +355,17 @@ export default function SingleFileConverter({
             <ResultStats
               stats={[
                 {
-                  label: 'Original Format',
+                  label: t('operation.results.originalFormat') || 'Original Format',
                   value: result.fromFormat.toUpperCase(),
                   color: 'gray'
                 },
                 {
-                  label: 'New Format',
+                  label: t('operation.results.newFormat') || 'New Format',
                   value: result.toFormat.toUpperCase(),
                   color: 'purple'
                 },
                 {
-                  label: 'File Size',
+                  label: t('operation.results.fileSize') || 'File Size',
                   value: formatFileSize(result.originalFile.size),
                   color: 'green'
                 }
@@ -386,36 +376,26 @@ export default function SingleFileConverter({
             <ActionButtons
               buttons={[
                 {
-                  label: `Download ${targetFormat.toUpperCase()}`,
+                  label: t('operation.results.download') || `Download ${targetFormat.toUpperCase()}`,
                   onClick: handleDownload,
                   icon: Download,
                   variant: 'primary'
                 },
                 {
-                  label: 'Convert Another',
+                  label: t('operation.results.reset') || 'Convert Another',
                   onClick: handleReset,
                   variant: 'secondary'
                 }
               ]}
             />
-            </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
 
-      {/* 错误提示 */}
       {error && (
-        <motion.div
-          className="mt-4 bg-red-50 dark:bg-red-500/10 border border-red-200 dark:border-red-500/20 rounded-lg p-4"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <p className="text-red-800 dark:text-red-300 font-medium">Error</p>
-          <p className="text-red-700 dark:text-red-400 text-sm">{error}</p>
-        </motion.div>
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 mt-6">
+          <p className="text-red-700 dark:text-red-400">{error}</p>
+        </div>
       )}
     </div>
   );
 }
-
-

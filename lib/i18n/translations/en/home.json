@@ -1,10 +1,14 @@
 {
   "hero": {
     "title": "TinyCompressor",
-    "subtitle": "Free Online Image Tools",
+    "subtitle": "Free Online Image Compression and Conversion Tools",
     "description": "Advanced image compression and conversion tools powered by cutting-edge algorithms. Reduce file sizes by up to 90% while maintaining perfect quality. Lightning-fast, completely secure, and 100% free forever.",
     "getStarted": "Start Compressing",
     "learnMore": "Try Converter",
+    "quickActions": {
+      "compressFiles": "Compress Files",
+      "convertFormats": "Convert Formats"
+    },
     "stats": {
       "sizeReduction": "Up to 90% Size Reduction",
       "supportedFormats": "16+ Supported Formats",
@@ -233,13 +237,6 @@
       "color": "orange"
     }
   ],
-  "hero": {
-    "subtitle": "Professional file optimization tools that reduce sizes by up to 95% while maintaining excellent quality. No registration required.",
-    "quickActions": {
-      "compressFiles": "Compress Files",
-      "convertFormats": "Convert Formats"
-    }
-  },
   "heroStats": [
     {
       "number": "15M+",

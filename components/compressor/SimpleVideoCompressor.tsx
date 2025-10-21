@@ -2,7 +2,7 @@
 
 import React, { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 import { Locale } from '@/lib/i18n';
 import { 
   compressVideoSimple,
@@ -36,7 +36,7 @@ export default function SimpleVideoCompressor({
   onComplete,
   onReset,
 }: SimpleVideoCompressorProps) {
-  const { t } = useModuleTranslation('compressors/video', locale);
+  const { t } = useTranslation('compressors/video' as any, locale);
   
   const [file, setFile] = useState<SimpleVideoFile | null>(null);
   const [isAdvancedMode, setIsAdvancedMode] = useState(false);
@@ -376,13 +376,6 @@ export default function SimpleVideoCompressor({
       transition={{ duration: 0.3 }}
       data-state="config"
     >
-      {/* 模式选择器 */}
-      <ModeSelector
-        isAdvancedMode={isAdvancedMode}
-        onModeChange={setIsAdvancedMode}
-        locale={locale}
-        format="video"
-      />
 
       <VideoPreviewCard
         file={file}
@@ -688,6 +681,30 @@ export default function SimpleVideoCompressor({
           <p className="text-red-800 dark:text-red-200">{error}</p>
         </motion.div>
       )}
+      
+      {/* 高级设置开关 */}
+      <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+        <div className="flex items-center">
+          <span className="text-sm font-medium text-text-primary">
+            {t('operation.settings.advanced') || 'Advanced'}
+          </span>
+        </div>
+        <button
+          onClick={() => setIsAdvancedMode(!isAdvancedMode)}
+          className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ${
+            isAdvancedMode ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+          }`}
+          role="switch"
+          aria-checked={isAdvancedMode}
+          aria-label="Toggle advanced settings"
+        >
+          <span
+            className={`inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform duration-200 ${
+              isAdvancedMode ? 'translate-x-6' : 'translate-x-0.5'
+            }`}
+          />
+        </button>
+      </div>
       
       <ActionButtons
         buttons={[

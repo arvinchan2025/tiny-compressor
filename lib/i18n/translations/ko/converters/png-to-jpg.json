@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "PNG to JPG 변환 - PNG 이미지 온라인 변환",
     "description": "PNG 이미지를 온라인으로 JPG 형식으로 변환하세요. 무료, 빠르고 사용하기 쉬운 PNG to JPG 변환 도구.",
@@ -216,9 +216,9 @@
       "advanced": "고급"
     },
     "upload": {
-      "title": "{format} 이미지를 여기에 드래그 앤 드롭하거나 클릭하여 선택",
-      "subtitle": "{sourceFormat} 형식 지원, 최대 50MB",
-      "selectFiles": "파일 선택"
+      "title": "PNG 파일을 여기에 드래그 앤 드롭하거나 클릭하여 선택",
+      "subtitle": "PNG 형식 지원, 최대 50MB",
+      "selectFiles": "PNG 파일 선택"
     },
     "errors": {
       "maxFiles": "최대 {maxFiles}개 파일 허용",

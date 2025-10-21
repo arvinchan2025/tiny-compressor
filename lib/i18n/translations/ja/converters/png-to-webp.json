@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "PNG to WebP変換 - PNG画像をオンラインで変換",
     "description": "PNG画像をオンラインでWebP形式に変換します。無料、高速、使いやすいPNG to WebP変換ツール。",
@@ -213,12 +213,12 @@
   "operation": {
     "upload": {
       "title": "PNGファイルをここにドラッグ＆ドロップするか、クリックして選択",
-      "subtitle": "PNG形式をサポート、最大{maxFiles}ファイル、各最大10MB",
+      "subtitle": "PNG形式をサポート、最大50MB",
       "selectFiles": "PNGファイルを選択"
     },
     "errors": {
       "maxFiles": "最大{maxFiles}ファイルまで許可",
-      "fileTooLarge": "ファイル{fileName}が大きすぎます。10MB未満のファイルを選択してください",
+      "fileTooLarge": "ファイル{fileName}が大きすぎます。50MB未満のファイルを選択してください",
       "unsupportedFormat": "サポートされていないファイル形式: {fileName}。PNGファイルのみサポートされています。",
       "uploadFailed": "ファイルのアップロードに失敗しました",
       "conversionFailed": "変換に失敗しました。もう一度お試しください。"

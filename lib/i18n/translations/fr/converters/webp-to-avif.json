@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "Convertisseur WebP vers AVIF - Convertir des Images WebP en Ligne",
     "description": "Convertissez des images WebP en format AVIF en ligne. Convertisseur WebP vers AVIF gratuit, rapide et facile à utiliser.",
@@ -212,13 +212,13 @@
   },
   "operation": {
     "upload": {
-      "title": "Glissez-déposez des fichiers WebP ici ou cliquez pour sélectionner",
-      "subtitle": "Supporte le format WebP, jusqu'à {maxFiles} fichiers, maximum 10MB chacun",
-      "selectFiles": "Sélectionner des Fichiers WebP"
+      "title": "Glissez-déposez votre fichier WebP ici ou cliquez pour sélectionner",
+      "subtitle": "Supporte le format WebP, maximum 50MB",
+      "selectFiles": "Sélectionner un Fichier WebP"
     },
     "errors": {
       "maxFiles": "Maximum {maxFiles} fichiers autorisés",
-      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Sélectionnez des fichiers de moins de 10MB",
+      "fileTooLarge": "Le fichier {fileName} est trop volumineux. Sélectionnez des fichiers de moins de 50MB",
       "unsupportedFormat": "Format de fichier non supporté : {fileName}. Seuls les fichiers WebP sont supportés.",
       "uploadFailed": "Échec du téléchargement du fichier",
       "conversionFailed": "La conversion a échoué. Veuillez réessayer."

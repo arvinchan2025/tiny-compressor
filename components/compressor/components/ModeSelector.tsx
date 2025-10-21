@@ -7,7 +7,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useModuleTranslation } from '@/hooks/useTranslationNew';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface ModeSelectorProps {
   isAdvancedMode: boolean;
@@ -17,7 +17,7 @@ interface ModeSelectorProps {
 }
 
 export default function ModeSelector({ isAdvancedMode, onModeChange, locale = 'en', format = 'png' }: ModeSelectorProps) {
-  const { t } = useModuleTranslation(`compressors/${format}`, locale as any);
+  const { t } = useTranslation(`compressors/${format}` as any, locale as any);
   
   return (
     <div className="flex justify-center mb-6">

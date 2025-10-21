@@ -1,4 +1,4 @@
-{
+﻿{
   "seo": {
     "title": "محول HEIC إلى JPG - تحويل صور HEIC عبر الإنترنت",
     "description": "حول صور HEIC إلى تنسيق JPG عبر الإنترنت. محول HEIC إلى JPG مجاني وسريع وسهل الاستخدام.",
@@ -212,9 +212,9 @@
   },
   "operation": {
     "upload": {
-      "title": "اسحب وأفلت ملفات HEIC هنا أو انقر للتحديد",
-      "subtitle": "يدعم تنسيق HEIC/HEIF، حتى {maxFiles} ملفات، الحد الأقصى 10 ميجابايت لكل منها",
-      "selectFiles": "حدد ملفات HEIC"
+      "title": "اسحب وأفلت ملف HEIC/HEIF هنا أو انقر للتحديد",
+      "subtitle": "يدعم تنسيق HEIC/HEIF، الحد الأقصى 50 ميجابايت",
+      "selectFiles": "حدد ملف HEIC/HEIF"
     },
     "errors": {
       "maxFiles": "الحد الأقصى {maxFiles} ملفات مسموح",
