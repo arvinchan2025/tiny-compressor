@@ -10,8 +10,8 @@ const fs = require('fs');
 const path = require('path');
 
 const baseUrl = 'https://tinycompressor.com';
-// 动态获取当前日期，格式为 YYYY-MM-DD
-const lastModified = new Date().toISOString().split('T')[0];
+// 动态获取当前日期和时间，格式为 YYYY-MM-DDTHH:mm:ssZ
+const lastModified = new Date().toISOString();
 
 // 所有11种支持的语言
 const locales = ['en', 'zh', 'ja', 'ko', 'ar', 'de', 'es', 'fr', 'it', 'pt', 'ru'];
@@ -126,16 +126,16 @@ function generateStats() {
 
 // 主函数
 function main() {
-  console.log('Generating sitemap.xml...\n');
+  console.log('🗺️  Generating sitemap.xml for build...\n');
   
   const stats = generateStats();
-  console.log('Sitemap Statistics:');
-  console.log(`- Total URLs: ${stats.totalUrls}`);
-  console.log(`- Languages: ${stats.languages}`);
-  console.log(`- Pages per language: ${stats.pages}`);
-  console.log(`  - Static pages: ${staticPages.length}`);
-  console.log(`  - Compressor pages: ${compressorPages.length}`);
-  console.log(`  - Converter pages: ${converterPages.length}`);
+  console.log('📊 Sitemap Statistics:');
+  console.log(`   - Total URLs: ${stats.totalUrls}`);
+  console.log(`   - Languages: ${stats.languages}`);
+  console.log(`   - Pages per language: ${stats.pages}`);
+  console.log(`     - Static pages: ${staticPages.length}`);
+  console.log(`     - Compressor pages: ${compressorPages.length}`);
+  console.log(`     - Converter pages: ${converterPages.length}`);
   console.log('');
   
   const xml = generateSitemap();
@@ -145,15 +145,11 @@ function main() {
   fs.writeFileSync(outputPath, xml, 'utf8');
   
   console.log(`✅ Sitemap generated successfully!`);
-  console.log(`   Location: public/sitemap.xml`);
-  console.log(`   Size: ${(xml.length / 1024).toFixed(2)} KB`);
-  console.log(`   Last Modified: ${lastModified}`);
+  console.log(`   📁 Location: public/sitemap.xml`);
+  console.log(`   📏 Size: ${(xml.length / 1024).toFixed(2)} KB`);
+  console.log(`   🕒 Last Modified: ${lastModified}`);
+  console.log(`   🚀 Ready for build deployment`);
   console.log('');
-  console.log('Next steps:');
-  console.log('1. Deploy to Vercel');
-  console.log('2. Verify at: https://tinycompressor.com/sitemap.xml');
-  console.log('3. Submit to Google Search Console');
-  console.log('4. Submit to Bing Webmaster Tools');
 }
 
 // 运行
