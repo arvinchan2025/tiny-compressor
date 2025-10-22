@@ -27,6 +27,8 @@ const nextConfig = {
     forceSwcTransforms: true,
     // 启用SWC压缩
     swcMinify: true,
+    // 优化字体加载
+    optimizePackageImports: ['lucide-react', '@squoosh/lib'],
   },
 
   // 开发环境禁用缓存
@@ -81,16 +83,53 @@ const nextConfig = {
 
             // 性能优化配置
             if (!dev) {
-              // 优化代码分割
+              // 移动端优化的代码分割
               config.optimization.splitChunks = {
                 chunks: 'all',
+                minSize: 10000, // 移动端减小最小包大小
+                maxSize: 150000, // 移动端减小最大包大小
                 cacheGroups: {
-                  // 翻译文件单独分包
+                  // 关键翻译文件（移动端优先）
+                  criticalTranslations: {
+                    test: /[\\/]lib[\\/]translations[\\/](common|home)[\\/]/,
+                    name: 'critical-translations',
+                    chunks: 'all',
+                    priority: 25,
+                    minSize: 0,
+                    maxSize: 50000,
+                  },
+                  // 其他翻译文件
                   translations: {
                     test: /[\\/]lib[\\/]translations[\\/]/,
                     name: 'translations',
                     chunks: 'all',
                     priority: 20,
+                    minSize: 0,
+                    maxSize: 80000,
+                  },
+                  // 核心UI组件（移动端关键）
+                  criticalUI: {
+                    test: /[\\/](lucide-react|react-dropzone)[\\/]/,
+                    name: 'critical-ui',
+                    chunks: 'all',
+                    priority: 18,
+                    maxSize: 60000,
+                  },
+                  // 图片处理库（按需加载）
+                  imageProcessing: {
+                    test: /[\\/](browser-image-compression)[\\/]/,
+                    name: 'image-processing',
+                    chunks: 'async', // 移动端异步加载
+                    priority: 15,
+                    maxSize: 100000,
+                  },
+                  // 其他UI库
+                  ui: {
+                    test: /[\\/](react-hook-form|react-hot-toast)[\\/]/,
+                    name: 'ui-libs',
+                    chunks: 'async',
+                    priority: 12,
+                    maxSize: 80000,
                   },
                   // 第三方库分包
                   vendor: {
@@ -98,6 +137,8 @@ const nextConfig = {
                     name: 'vendors',
                     chunks: 'all',
                     priority: 10,
+                    minSize: 0,
+                    maxSize: 120000,
                   },
                   // 公共代码分包
                   common: {
@@ -106,6 +147,8 @@ const nextConfig = {
                     chunks: 'all',
                     priority: 5,
                     reuseExistingChunk: true,
+                    minSize: 0,
+                    maxSize: 100000,
                   },
                 },
               };
@@ -120,11 +163,15 @@ const nextConfig = {
         },
   
   
-  // 图片优化配置
+  // 移动端优化的图片配置
   images: {
     formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // 移动端优先的设备尺寸
+    deviceSizes: [375, 414, 640, 750, 828, 1080, 1200],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    minimumCacheTTL: 300, // 移动端增加缓存时间
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
   // 压缩配置
@@ -164,7 +211,7 @@ const nextConfig = {
           }
         ]
       },
-      // 静态资源缓存策略
+      // 静态资源缓存策略（移动端优化）
       {
         source: '/_next/static/(.*)',
         headers: [
@@ -173,6 +220,24 @@ const nextConfig = {
             value: process.env.NODE_ENV === 'development' 
               ? 'no-cache, no-store, must-revalidate' 
               : 'public, max-age=31536000, immutable'
+          },
+          {
+            key: 'Vary',
+            value: 'Accept-Encoding'
+          }
+        ]
+      },
+      // 移动端关键资源优化
+      {
+        source: '/_next/static/chunks/critical-(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, stale-while-revalidate=604800'
+          },
+          {
+            key: 'Priority',
+            value: 'high'
           }
         ]
       },

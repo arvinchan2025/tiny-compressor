@@ -2,6 +2,8 @@ import { Locale } from '@/lib/i18n';
 import { Metadata } from 'next';
 import StandardPageLayout from '@/components/layout/StandardPageLayout';
 import ModernHomePage from '@/components/home/ModernHomePage';
+import ResourcePreloader from '@/components/performance/ResourcePreloader';
+import MobileCriticalPath from '@/components/performance/MobileCriticalPath';
 import { generateSEOContent } from '@/lib/seo-optimization';
 
 // Generate metadata for SEO
@@ -70,8 +72,12 @@ export default function RootPage() {
   const locale: Locale = 'en';
   
   return (
-    <StandardPageLayout locale={locale}>
-      <ModernHomePage locale={locale} />
-    </StandardPageLayout>
+    <>
+      <MobileCriticalPath />
+      <ResourcePreloader locale={locale} />
+      <StandardPageLayout locale={locale}>
+        <ModernHomePage locale={locale} />
+      </StandardPageLayout>
+    </>
   );
 }

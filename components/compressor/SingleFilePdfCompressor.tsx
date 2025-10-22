@@ -12,7 +12,6 @@ import UploadArea from '@/components/shared/UploadArea';
 import FileInfoCard from '@/components/shared/FileInfoCard';
 import ProgressIndicator from '@/components/shared/ProgressIndicator';
 import ActionButtons from '@/components/shared/ActionButtons';
-import ModeSelector from './components/ModeSelector';
 // PDF处理函数将在需要时动态导�?
 // import {
 //   createPdfFile,
@@ -254,12 +253,29 @@ export default function SingleFilePdfCompressor({
           >
             <div className="space-y-6">
             {/* 模式切换�?*/}
-            <ModeSelector
-              isAdvancedMode={isAdvancedMode}
-              onModeChange={setIsAdvancedMode}
-              locale={locale}
-              format="pdf"
-            />
+            {/* 高级设置开关 */}
+            <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center">
+                <span className="text-sm font-medium text-text-primary">
+                  {t('operation.settings.advanced') || 'Advanced'}
+                </span>
+              </div>
+              <button
+                onClick={() => setIsAdvancedMode(!isAdvancedMode)}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ${
+                  isAdvancedMode ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+                }`}
+                role="switch"
+                aria-checked={isAdvancedMode}
+                aria-label="Toggle advanced settings"
+              >
+                <span
+                  className={`inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform duration-200 ${
+                    isAdvancedMode ? 'translate-x-6' : 'translate-x-0.5'
+                  }`}
+                />
+              </button>
+            </div>
 
             {/* 文件信息 */}
             <FileInfoCard

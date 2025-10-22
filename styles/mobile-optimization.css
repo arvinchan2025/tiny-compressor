@@ -1,0 +1,92 @@
+/* 移动端性能优化样式 */
+
+/* 慢网络时的优化 */
+.slow-network * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* 移动端触摸优化 */
+@media (hover: none) and (pointer: coarse) {
+  /* 移除悬停效果 */
+  .hover\:bg-gray-100:hover {
+    background-color: transparent !important;
+  }
+  
+  .hover\:shadow-lg:hover {
+    box-shadow: none !important;
+  }
+  
+  /* 优化触摸目标大小 */
+  button, a, input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* 移动端滚动优化 */
+@media (max-width: 768px) {
+  html {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* 移动端关键渲染路径优化 */
+@media (max-width: 768px) {
+  /* 延迟非关键动画 */
+  .animate-pulse,
+  .animate-spin,
+  .animate-bounce {
+    animation-play-state: paused;
+  }
+  
+  /* 页面加载完成后启用动画 */
+  .loaded .animate-pulse,
+  .loaded .animate-spin,
+  .loaded .animate-bounce {
+    animation-play-state: running;
+  }
+}
+
+/* 移动端图片优化 */
+@media (max-width: 768px) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* 移动端字体优化 */
+@media (max-width: 768px) {
+  body {
+    font-display: swap;
+    font-synthesis: none;
+    text-rendering: optimizeSpeed;
+  }
+}
+
+/* 移动端布局优化 */
+@media (max-width: 768px) {
+  /* 减少重排和重绘 */
+  .transform {
+    will-change: transform;
+  }
+  
+  .opacity {
+    will-change: opacity;
+  }
+  
+  /* 优化滚动性能 */
+  .overflow-auto,
+  .overflow-scroll {
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+  }
+}

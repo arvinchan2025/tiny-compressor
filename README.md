@@ -1,29 +1,30 @@
 # TinyCompressor
 
-A modern, fast, and secure image compression tool built with Next.js and TypeScript.
+A modern, fast, and secure image compression and conversion tool built with Next.js 14 and TypeScript.
 
-## Features
+## ✨ Features
 
 - 🚀 **Lightning Fast**: Compress images in seconds with optimized algorithms
 - 🔒 **100% Secure**: Images are processed locally and never stored on servers
 - ⭐ **High Quality**: Maintain image quality while reducing file size significantly
 - 🎁 **Completely Free**: No registration required, no hidden costs, no limits
-- 🌍 **Internationalization**: Support for multiple languages (currently English)
+- 🌍 **Multilingual**: Support for 11 languages (EN, ZH, JA, KO, AR, DE, ES, FR, IT, PT, RU)
 - 📱 **Responsive Design**: Works perfectly on desktop and mobile devices
-- 🎨 **Modern UI**: Beautiful, clean interface with smooth animations
+- 🎨 **Modern UI**: Beautiful, clean interface with dark mode support
+- 🔄 **Format Conversion**: Convert between PNG, JPEG, WebP, AVIF, GIF, BMP formats
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14 with App Router
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Image Compression**: browser-image-compression
+- **Styling**: Tailwind CSS with custom design system
+- **Image Processing**: Squoosh library for compression
+- **Video Processing**: FFmpeg.wasm for video compression
 - **File Upload**: react-dropzone
-- **Internationalization**: next-intl
+- **Internationalization**: Custom translation system
 - **Icons**: Lucide React
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -32,106 +33,104 @@ A modern, fast, and secure image compression tool built with Next.js and TypeScr
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/tinycompressor.git
+git clone https://github.com/your-username/tinycompressor.git
 cd tinycompressor
 ```
 
-2. Install dependencies:
+2. Install dependencies
 ```bash
 npm install
 ```
 
-3. Run the development server:
+3. Run the development server
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Deployment
+## 📁 Project Structure
 
-### Vercel (Recommended)
+```
+tinycompressor/
+├── app/                    # Next.js App Router pages
+├── components/             # React components
+│   ├── compressor/        # Image compression components
+│   ├── converter/         # Image conversion components
+│   ├── ui/               # Reusable UI components
+│   └── shared/           # Shared components
+├── lib/                   # Utility libraries
+│   ├── i18n/             # Internationalization
+│   ├── image-processing/ # Image processing utilities
+│   └── video-processing/ # Video processing utilities
+├── hooks/                 # Custom React hooks
+├── types/                 # TypeScript type definitions
+├── public/               # Static assets
+└── docs/                 # Documentation
+```
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy with one click
+## 🌍 Supported Languages
 
-The project is already configured for Vercel deployment with the included `vercel.json` file.
+- 🇺🇸 English (EN)
+- 🇨🇳 Chinese (ZH)
+- 🇯🇵 Japanese (JA)
+- 🇰🇷 Korean (KO)
+- 🇸🇦 Arabic (AR)
+- 🇩🇪 German (DE)
+- 🇪🇸 Spanish (ES)
+- 🇫🇷 French (FR)
+- 🇮🇹 Italian (IT)
+- 🇵🇹 Portuguese (PT)
+- 🇷🇺 Russian (RU)
 
-### Other Platforms
+## 🎯 Supported Formats
 
-The project can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- Render
+### Image Compression
+- PNG, JPEG, WebP, AVIF, GIF, BMP
 
-## Usage
+### Image Conversion
+- PNG ↔ JPEG
+- PNG ↔ WebP
+- PNG ↔ AVIF
+- JPEG ↔ WebP
+- JPEG ↔ AVIF
+- WebP ↔ AVIF
 
-1. **Upload Images**: Drag and drop your images or click to browse
-2. **Adjust Settings**: Configure quality, dimensions, and output format
-3. **Compress**: Click the compress button to process your images
-4. **Download**: Download individual files or all compressed images at once
+## 🧪 Testing
 
-## Supported Formats
+```bash
+# Run unit tests
+npm run test
 
-- **Input**: JPEG, PNG, WebP, GIF, BMP
-- **Output**: JPEG, PNG, WebP
-- **Max File Size**: 10MB per image
+# Run E2E tests
+npm run test:e2e
 
-## Configuration
+# Run all tests
+npm run test:all
+```
 
-### Compression Settings
+## 🚀 Deployment
 
-- **Quality**: 10% - 100% (adjustable slider)
-- **Max Width**: 100px - 4000px
-- **Max Height**: 100px - 4000px
-- **Output Format**: JPEG, PNG, or WebP
+The project is ready for deployment on Vercel:
 
-### Internationalization
+```bash
+# Build for production
+npm run build
 
-To add support for additional languages:
+# Start production server
+npm run start
+```
 
-1. Create a new JSON file in `messages/` (e.g., `messages/es.json`)
-2. Add the locale to the `locales` array in `middleware.ts`
-3. Update the `i18n.ts` configuration
+## 📄 License
 
-## Performance
+This project is licensed under the MIT License.
 
-- Client-side processing ensures fast compression
-- Web Workers for non-blocking compression
-- Optimized algorithms for maximum efficiency
-- Lazy loading and code splitting for faster initial load
+## 🤝 Contributing
 
-## Security
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-- All processing happens in the browser
-- No images are uploaded to external servers
-- No data is stored or logged
-- Complete privacy protection
+## 📞 Support
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any issues or have questions, please open an issue on GitHub.
-
-## Acknowledgments
-
-- [browser-image-compression](https://github.com/Donaldcwl/browser-image-compression) for the compression library
-- [Next.js](https://nextjs.org/) for the amazing React framework
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-- [Framer Motion](https://www.framer.com/motion/) for smooth animations
-
+If you have any questions or need help, please open an issue on GitHub.

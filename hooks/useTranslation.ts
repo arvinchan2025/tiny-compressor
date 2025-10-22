@@ -87,34 +87,43 @@ export function useTranslation(module: TranslationModule = 'common/ui', provided
     setIsClient(true)
   }, [])
 
-  // 加载翻译数据 - 使用动态导入
+  // 翻译缓存
+  const translationCache = useMemo(() => new Map<string, any>(), [])
+
+  // 加载翻译数据 - 使用动态导入和缓存
   useEffect(() => {
     // 只在客户端加载翻译，服务器端不加载
     if (typeof window === 'undefined') return
+    
+    const cacheKey = `${locale}/${module}`
+    
+    // 检查缓存
+    if (translationCache.has(cacheKey)) {
+      setTranslations(translationCache.get(cacheKey))
+      setIsLoading(false)
+      return
+    }
     
     const loadTranslations = async () => {
       setIsLoading(true)
       try {
         // 动态导入翻译文件
-        console.log(`Attempting to load translations for ${locale}/${module}`)
         const translationData = await import(`@/lib/i18n/translations/${locale}/${module}.json`)
-        console.log(`Successfully loaded translations for ${locale}/${module}:`, translationData)
         const translations = translationData.default || translationData
-        console.log(`Setting translations:`, Object.keys(translations))
+        
+        // 缓存翻译数据
+        translationCache.set(cacheKey, translations)
         setTranslations(translations)
       } catch (error) {
         console.error(`Failed to load translations for ${locale}/${module}:`, error)
-        if (error instanceof Error) {
-          console.error(`Error details:`, error.message, error.stack)
-        }
         setTranslations({})
       } finally {
-        setIsLoading(false) // 确保加载状态被正确设置
+        setIsLoading(false)
       }
     }
 
     loadTranslations()
-  }, [isClient, locale, module])
+  }, [isClient, locale, module, translationCache])
 
   // Detect current language (only if no locale provided)
   useEffect(() => {

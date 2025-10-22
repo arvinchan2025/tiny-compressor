@@ -9,7 +9,6 @@ import React, { useState, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
 import { compressImage, validateImageFile, getImageMetadata } from '@/lib/image-processing/compression';
-import ModeSelector from './ModeSelector';
 import FileDropZone from './FileDropZone';
 import ResultsPanel from './ResultsPanel';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -335,13 +334,30 @@ export default function UnifiedCompressionManager({
   // 批量模式：使用原有的批量处理界面
   return (
     <div className="bg-white dark:bg-gray-850 rounded-2xl shadow-xl dark:shadow-2xl border border-slate-200 dark:border-gray-700 overflow-hidden transition-colors">
-      {/* 模式选择器 */}
+      {/* 高级设置开关 */}
       <div className="p-6 pb-4 bg-gray-50/50 dark:bg-gray-900/50 transition-colors">
-        <ModeSelector 
-          isAdvancedMode={isAdvancedMode}
-          onModeChange={handleModeChange}
-          locale={locale}
-        />
+        <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+          <div className="flex items-center">
+            <span className="text-sm font-medium text-text-primary">
+              {t('operation.settings.advanced') || 'Advanced'}
+            </span>
+          </div>
+          <button
+            onClick={() => handleModeChange(!isAdvancedMode)}
+            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ${
+              isAdvancedMode ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'
+            }`}
+            role="switch"
+            aria-checked={isAdvancedMode}
+            aria-label="Toggle advanced settings"
+          >
+            <span
+              className={`inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform duration-200 ${
+                isAdvancedMode ? 'translate-x-6' : 'translate-x-0.5'
+              }`}
+            />
+          </button>
+        </div>
       </div>
 
       {/* 文件上传区域 - 只在没有文件时显示 */}

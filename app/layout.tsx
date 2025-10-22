@@ -13,6 +13,7 @@ const inter = Inter({
   variable: '--font-inter',
   weight: ['400', '500', '600', '700'], // 仅加载需要的字重
   fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+  adjustFontFallback: true, // 优化字体回退
 });
 
 export const metadata: Metadata = {

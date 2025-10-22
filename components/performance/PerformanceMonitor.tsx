@@ -1,74 +1,37 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-
-interface PerformanceMetrics {
-  lcp?: number;
-  fid?: number;
-  cls?: number;
-  fcp?: number;
-  ttfb?: number;
-}
+import { useEffect } from 'react';
 
 export default function PerformanceMonitor() {
-  const [metrics, setMetrics] = useState<PerformanceMetrics>({});
-  const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
-    // Only run in browser environment
-    if (typeof window === 'undefined') return;
-
-    // Check if debug mode is enabled
-    const isDebugMode = window.location?.search?.includes('debug=perf');
-    if (!isDebugMode) return;
-
-    setIsVisible(true);
-
-    // Monitor performance metrics
-    const observer = new PerformanceObserver((list) => {
-      const entries = list.getEntries();
-      
-      entries.forEach((entry) => {
-        if (entry.entryType === 'largest-contentful-paint') {
-          setMetrics(prev => ({ ...prev, lcp: entry.startTime }));
-        } else if (entry.entryType === 'first-input') {
-          setMetrics(prev => ({ ...prev, fid: entry.processingStart - entry.startTime }));
-        } else if (entry.entryType === 'layout-shift') {
-          setMetrics(prev => ({ ...prev, cls: (prev.cls || 0) + (entry as any).value }));
-        } else if (entry.entryType === 'paint' && entry.name === 'first-contentful-paint') {
-          setMetrics(prev => ({ ...prev, fcp: entry.startTime }));
-        }
+    // 监控 Core Web Vitals
+    if (typeof window !== 'undefined' && 'web-vitals' in window) {
+      import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+        getCLS(console.log);
+        getFID(console.log);
+        getFCP(console.log);
+        getLCP(console.log);
+        getTTFB(console.log);
       });
+    }
+
+    // 监控资源加载时间
+    const observer = new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        if (entry.entryType === 'navigation') {
+          console.log('Navigation timing:', {
+            domContentLoaded: entry.domContentLoadedEventEnd - entry.domContentLoadedEventStart,
+            loadComplete: entry.loadEventEnd - entry.loadEventStart,
+            totalTime: entry.loadEventEnd - entry.fetchStart,
+          });
+        }
+      }
     });
 
-    // Observe different performance entry types
-    try {
-      observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift', 'paint'] });
-    } catch (error) {
-      console.warn('Performance monitoring not supported:', error);
-    }
+    observer.observe({ entryTypes: ['navigation'] });
 
-    // Monitor TTFB
-    const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
-    if (navigationEntry) {
-      setMetrics(prev => ({ ...prev, ttfb: navigationEntry.responseStart - navigationEntry.requestStart }));
-    }
-
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
-  if (!isVisible) return null;
-
-  return (
-    <div className="fixed bottom-4 right-4 bg-black/80 text-white p-4 rounded-lg text-xs font-mono z-50">
-      <div className="mb-2 font-bold">Performance Metrics</div>
-      <div>LCP: {metrics.lcp ? `${metrics.lcp.toFixed(2)}ms` : 'N/A'}</div>
-      <div>FID: {metrics.fid ? `${metrics.fid.toFixed(2)}ms` : 'N/A'}</div>
-      <div>CLS: {metrics.cls ? metrics.cls.toFixed(4) : 'N/A'}</div>
-      <div>FCP: {metrics.fcp ? `${metrics.fcp.toFixed(2)}ms` : 'N/A'}</div>
-      <div>TTFB: {metrics.ttfb ? `${metrics.ttfb.toFixed(2)}ms` : 'N/A'}</div>
-    </div>
-  );
+  return null;
 }
