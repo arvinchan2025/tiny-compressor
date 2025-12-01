@@ -28,7 +28,7 @@ const nextConfig = {
     // 启用SWC压缩
     swcMinify: true,
     // 优化字体加载
-    optimizePackageImports: ['lucide-react', '@squoosh/lib'],
+    optimizePackageImports: ['lucide-react'],
   },
 
   // 开发环境禁用缓存
@@ -67,6 +67,8 @@ const nextConfig = {
               fs: false,
               path: false,
               crypto: false,
+              stream: false, // 某些 Node.js 模块需要的
+              util: false, // 某些 Node.js 模块需要的
             };
 
             // 优化Worker加载

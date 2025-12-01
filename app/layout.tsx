@@ -151,6 +151,11 @@ export default function RootLayout({
           src="https://www.googletagmanager.com/gtag/js?id=G-R23Y0Z9XSP"
           strategy="afterInteractive"
         />
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8179572160013109"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];

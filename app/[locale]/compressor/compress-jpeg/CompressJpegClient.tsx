@@ -58,7 +58,8 @@ export default function CompressJpegClient({ locale }: CompressJpegClientProps) 
 
   const handleDownloadResult = useCallback((result: CompressionResult) => {
     try {
-      const url = URL.createObjectURL(result.compressedFile);
+      // 使用压缩后的文件数据（Blob）
+      const url = URL.createObjectURL(result.compressedFile.data);
       const a = document.createElement('a');
       a.href = url;
       a.download = result.compressedFile.name || result.originalFile.name.replace(/\.(jpg|jpeg|JPG|JPEG)$/, '_compressed.jpg');

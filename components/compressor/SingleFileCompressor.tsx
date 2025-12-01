@@ -6,6 +6,8 @@ import { Download, Check } from 'lucide-react';
 import { Locale } from '@/lib/i18n';
 import { useTranslation } from '@/hooks/useTranslation';
 import { ImageFile, CompressionOptions, CompressionResult } from '@/types/image';
+import { compressImage as compressImageLib, createImageFile } from '@/lib/image-processing/compression';
+import type { CompressionResult as LibCompressionResult } from '@/lib/image-processing/types';
 // Removed stateVariants import as framer-motion was removed
 import { Analytics } from '@/lib/analytics';
 import UploadArea from '@/components/shared/UploadArea';
@@ -94,44 +96,71 @@ export default function SingleFileCompressor({
       return;
     }
     
-    // 跟踪压缩开�?
+    // 跟踪压缩开始
     Analytics.compression.start(format);
     
     setState('processing');
     setProgress(0);
     
     try {
-      // 模拟压缩过程
-      // 实际项目中这里应该调用真实的压缩函数
-      for (let i = 0; i <= 100; i += 10) {
-        await new Promise(resolve => setTimeout(resolve, 100));
-        setProgress(i);
+      // 模拟进度更新
+      const progressInterval = setInterval(() => {
+        setProgress(prev => {
+          if (prev >= 90) {
+            clearInterval(progressInterval);
+            return 90;
+          }
+          return prev + 10;
+        });
+      }, 200);
+      
+      // 创建 ImageFile 对象
+      const imageFile = await createImageFile(file.file);
+      
+      // 调用实际的压缩函数
+      const libResult: LibCompressionResult = await compressImageLib(imageFile, {
+        ...settings,
+        format: format as any
+      });
+      
+      clearInterval(progressInterval);
+      setProgress(100);
+      
+      // 将 lib 的结果转换为组件使用的格式
+      // 从 Blob 创建 File 对象
+      const compressedFile = new File(
+        [libResult.compressedFile.data],
+        libResult.compressedFile.name,
+        { type: libResult.compressedFile.type }
+      );
+      
+      // 确保使用正确的原始大小和压缩后大小
+      // file.size 应该是原始文件大小
+      // libResult.compressedSize 应该是压缩后的文件大小
+      const originalSize = file.size || file.file?.size || libResult.originalSize || 0;
+      const compressedSize = libResult.compressedSize || compressedFile.size || 0;
+      
+      // 验证：压缩后的文件应该小于或等于原始文件（某些情况下可能相同）
+      if (compressedSize > originalSize * 1.1) {
+        console.warn('Compressed size is larger than original size. This may indicate a compression issue.');
       }
       
-      // 计算压缩后的大小（确保是有效数字�?
-      const originalSize = file.size || 0;
-      const compressedSize = Math.floor(originalSize * 0.6);
-      
-      // 模拟压缩结果
-      const mockResult: CompressionResult = {
-        originalFile: {
-          ...file,
-          size: file.size // 确保 size 属性正确设�?
-        },
-        compressedFile: file.file, // 实际应该是压缩后的文�?
+      const result: CompressionResult = {
+        originalFile: file,
+        compressedFile: compressedFile,
         compressedSize: compressedSize,
-        compressionRatio: 40,
-        processingTime: 1000,
+        compressionRatio: libResult.compressionRatio,
+        processingTime: libResult.processingTime,
         format
       };
       
-      setResult(mockResult);
+      setResult(result);
       setState('result');
       
       // 跟踪压缩完成
-      Analytics.compression.complete(format, 40);
+      Analytics.compression.complete(format, libResult.compressionRatio);
       
-      onComplete?.(mockResult);
+      onComplete?.(result);
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : t('operation.error.compressionFailed');
       setError(errorMessage);
@@ -141,25 +170,54 @@ export default function SingleFileCompressor({
       
       setState('config');
     }
-  }, [file, format, onComplete]);
+  }, [file, format, settings, onComplete, t]);
 
   // 下载处理
   const handleDownload = useCallback(() => {
     if (!result) return;
     
-    // 跟踪下载开�?
+    // 跟踪下载开始
     Analytics.download.start(format);
     
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(result.compressedFile);
-    link.download = `compressed_${result.originalFile.name}`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(link.href);
-    
-    // 跟踪下载完成
-    Analytics.download.complete(format, result.compressedSize);
+    try {
+      const link = document.createElement('a');
+      
+      // 兼容两种类型：
+      // 1. compressedFile 是 File 类型（@/types/image）
+      // 2. compressedFile 是对象，包含 data: Blob（lib/image-processing/types）
+      let blob: Blob | File;
+      let fileName: string;
+      
+      if (result.compressedFile instanceof File) {
+        // 类型 1: compressedFile 是 File
+        blob = result.compressedFile;
+        fileName = result.compressedFile.name || `compressed_${result.originalFile.name}`;
+      } else if (result.compressedFile && typeof result.compressedFile === 'object' && 'data' in result.compressedFile) {
+        // 类型 2: compressedFile 是对象，包含 data
+        blob = (result.compressedFile as any).data;
+        fileName = (result.compressedFile as any).name || `compressed_${result.originalFile.name}`;
+      } else {
+        throw new Error('Invalid compressedFile format');
+      }
+      
+      // 验证 blob 是否有效
+      if (!blob || !(blob instanceof Blob) && !(blob instanceof File)) {
+        throw new Error('Compressed file data is not a valid Blob or File');
+      }
+      
+      link.href = URL.createObjectURL(blob);
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+      
+      // 跟踪下载完成
+      Analytics.download.complete(format, result.compressedSize);
+    } catch (error) {
+      console.error('Download failed:', error);
+      setError(error instanceof Error ? error.message : 'Download failed');
+    }
   }, [result, format]);
 
   // 重置处理

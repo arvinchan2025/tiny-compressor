@@ -183,15 +183,10 @@ export const ImageProcessingLoader = {
   jszip: () => 
     DynamicLoader.load('jszip', () => import('jszip')),
   
-  // Squoosh WASM 库 (暂时注释，需要安装 @squoosh/lib)
-  // squoosh: () => 
-  //   DynamicLoader.load('@squoosh/lib', () => import('@squoosh/lib')),
-  
   // 预加载所有库
   preloadAll: () => {
     DynamicLoader.preload('browser-image-compression', () => import('browser-image-compression'));
     DynamicLoader.preload('jszip', () => import('jszip'));
-    // DynamicLoader.preload('@squoosh/lib', () => import('@squoosh/lib'));
   }
 };
 
