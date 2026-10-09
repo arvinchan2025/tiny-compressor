@@ -12,7 +12,7 @@ interface StandardFooterProps {
 
 export default function StandardFooter({ locale }: StandardFooterProps) {
   const currentYear = new Date().getFullYear();
-  const currentLocale = locale;
+  const currentLocale = locale ?? 'en';
   const { t } = useTranslation('footer', currentLocale);
 
   const quickLinks = [

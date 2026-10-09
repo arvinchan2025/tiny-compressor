@@ -12,6 +12,8 @@ import StandardIcon from './StandardIcon';
 import StandardContainer from './StandardContainer';
 import Image from 'next/image';
 import { getNavigationPath } from '@/lib/i18n/path-utils';
+import PricingView from "@/components/PricingView";
+import AccountView from "@/components/AccountView";
 
 interface StandardHeaderProps {
   currentLocale: Locale;
@@ -31,6 +33,7 @@ export default function StandardHeader({
   const isHomePage = pathname === `/${currentLocale}` || (currentLocale === 'en' && pathname === '/');
   const isCompressorPage = pathname.includes('/compressor');
   const isConverterPage = pathname.includes('/converter');
+  // const isViewerPage = pathname.includes('/viewer');
 
   const handleLogoClick = () => {
     const homePath = getNavigationPath('/', currentLocale);
@@ -61,7 +64,13 @@ export default function StandardHeader({
       path: '/converter',
       isActive: isConverterPage,
       icon: 'convert'
-    }
+    },
+    // {
+    //   name: translationLoading ? 'Viewer' : t('nav.viewer'),
+    //   path: '/viewer',
+    //   isActive: isViewerPage,
+    //   icon: 'convert'
+    // }
   ];
 
   return (
@@ -109,27 +118,28 @@ export default function StandardHeader({
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-3">
+            {/*<PricingView />*/}
+            <AccountView />
             {/* Theme Switcher */}
-            <div className="hidden lg:block">
-              <ThemeSwitcher />
-            </div>
+            {/*<div className="hidden lg:block">*/}
+            {/*  <ThemeSwitcher/>*/}
+            {/*</div>*/}
 
             {/* Language Switcher */}
-            <LanguageSwitcher
-              currentLocale={currentLocale}
-              onLanguageChange={onLanguageChange}
-            />
-
+            {/*<LanguageSwitcher*/}
+            {/*  currentLocale={currentLocale}*/}
+            {/*  onLanguageChange={onLanguageChange}*/}
+            {/*/>*/}
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
-              <StandardIcon 
-                name={isMobileMenuOpen ? 'close' : 'menu'} 
-                size="md" 
-                variant="default" 
-                className="w-5 h-5" 
+              <StandardIcon
+                name={isMobileMenuOpen ? 'close' : 'menu'}
+                size="md"
+                variant="default"
+                className="w-5 h-5"
               />
             </button>
           </div>
