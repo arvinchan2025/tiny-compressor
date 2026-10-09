@@ -7,6 +7,6 @@ export default function AccountView() {
       onClick={() => {
         window.location.href = '/auth/sign-in'
       }}
-    >Login In</button>
+    >Login</button>
   )
 }

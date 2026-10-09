@@ -8,7 +8,7 @@ interface TermsClientProps {
 }
 
 export default function TermsClient({ locale }: TermsClientProps) {
-  const { t, isLoading } = useTranslation('common');
+  const { t, isLoading } = useTranslation('terms', locale);
 
   if (isLoading) {
     return (
@@ -22,47 +22,47 @@ export default function TermsClient({ locale }: TermsClientProps) {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bg-white rounded-lg shadow-sm p-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">
-          {t('terms.title', 'Terms of Service')}
+          {t('title') || 'Terms of Service'}
         </h1>
         
         <div className="prose prose-gray max-w-none">
           <p className="text-gray-600 mb-6">
-            {t('terms.lastUpdated', 'Last updated: September 23, 2025')}
+            {t('lastUpdated') || 'Last updated: September 23, 2025'}
           </p>
           
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            {t('terms.sections.serviceDescription.title', 'Service Description')}
+            {t('serviceDescription.title') || 'Service Description'}
           </h2>
           <p className="text-gray-700 mb-4">
-            {t('terms.sections.serviceDescription.content', 'TinyCompressor provides free online image compression and conversion services. All processing is done locally in your browser.')}
+            {t('serviceDescription.content') || 'TinyCompressor provides free online image compression and conversion services. All processing is done locally in your browser.'}
           </p>
           
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            {t('terms.sections.acceptableUse.title', 'Acceptable Use')}
+            {t('acceptance.title') || 'Acceptable Use'}
           </h2>
           <p className="text-gray-700 mb-4">
-            {t('terms.sections.acceptableUse.content', 'You may use our service for lawful purposes only. Do not upload copyrighted material without permission.')}
+            {t('acceptance.content') || 'You may use our service for lawful purposes only. Do not upload copyrighted material without permission.'}
           </p>
           
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            {t('terms.sections.serviceAvailability.title', 'Service Availability')}
+            {t('userResponsibilities.title')}
           </h2>
           <p className="text-gray-700 mb-4">
-            {t('terms.sections.serviceAvailability.content', 'We strive to maintain high service availability but cannot guarantee uninterrupted access.')}
+            {t('userResponsibilities.content')}
           </p>
           
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            {t('terms.sections.limitationOfLiability.title', 'Limitation of Liability')}
+            {t('limitation.title')}
           </h2>
           <p className="text-gray-700 mb-4">
-            {t('terms.sections.limitationOfLiability.content', 'TinyCompressor is provided "as is" without warranties. We are not liable for any damages arising from use of our service.')}
+            {t('limitation.content')}
           </p>
           
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-            {t('terms.sections.changesToTerms.title', 'Changes to Terms')}
+            {t('modifications.title')}
           </h2>
           <p className="text-gray-700">
-            {t('terms.sections.changesToTerms.content', 'We may update these terms at any time. Continued use of our service constitutes acceptance of updated terms.')}
+            {t('modifications.content')}
           </p>
         </div>
       </div>
