@@ -12,16 +12,6 @@ export async function createClient() {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
     {
-      global: {
-        fetch: async (input, init) => {
-          try {
-            return await fetch(input, init);
-          } catch (error) {
-            console.error("Supabase fetch failed:", error);
-            throw error;
-          }
-        },
-      },
       cookies: {
         getAll() {
           return cookieStore.getAll();

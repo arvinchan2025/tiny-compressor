@@ -19,11 +19,10 @@ export async function GET(request: Request) {
     const supabase = await createClient()
     const {error} =
       await supabase.auth.exchangeCodeForSession(code)
-    console.log(">error>", code)
-    console.log(">error>", error?.message)
+    console.log(">error>", error)
     if (!error) {
       return NextResponse.redirect(
-        new URL('/pricing', url.origin)
+        new URL('/', url.origin)
       )
     }
   }

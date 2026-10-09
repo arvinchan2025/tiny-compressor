@@ -1,12 +1,13 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import type {Metadata} from 'next';
+import {Inter} from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
-import { ClientProviders } from '@/components/providers/ClientProviders';
+import {ClientProviders} from '@/components/providers/ClientProviders';
 import PerformanceMonitor from '@/components/performance/PerformanceMonitor';
+import {AuthProvider} from "@/components/auth/auth-provider";
 // import { ToastProvider } from '@/components/ui/Toast'; // 移除Toast，改用进度条
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap', // 字体加载时使用系统字体，避免阻塞渲染
   preload: true,
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   title: 'TinyCompressor - Free Online Image Compression Tool',
   description: 'Compress images online for free! Reduce file sizes by 60-90% while maintaining quality. Support JPG, PNG, WebP formats. No registration required.',
   keywords: 'image compression, compress images, reduce file size, online tool, free, JPG compression, PNG compression, WebP compression',
-  authors: [{ name: 'TinyCompressor Team' }],
+  authors: [{name: 'TinyCompressor Team'}],
   creator: 'TinyCompressor',
   publisher: 'TinyCompressor',
   formatDetection: {
@@ -84,31 +85,31 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: {
+                                     children,
+                                   }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* DNS 预解析和预连接 */}
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://unpkg.com" />
-        
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16" />
-        <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
-        <link rel="manifest" href="/site.webmanifest" />
-        
-        {/* 防闪烁脚本 - 必须在页面渲染前执行 */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+    <head>
+      {/* DNS 预解析和预连接 */}
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
+      <link rel="preconnect" href="https://www.googletagmanager.com"/>
+      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/>
+      <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous"/>
+      <link rel="dns-prefetch" href="https://unpkg.com"/>
+
+      {/* Favicon */}
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+      <link rel="icon" href="/favicon-16x16.svg" type="image/svg+xml" sizes="16x16"/>
+      <link rel="icon" href="/favicon-32x32.svg" type="image/svg+xml" sizes="32x32"/>
+      <link rel="apple-touch-icon" href="/apple-touch-icon.svg"/>
+      <link rel="manifest" href="/site.webmanifest"/>
+
+      {/* 防闪烁脚本 - 必须在页面渲染前执行 */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
               (function() {
                 try {
                   const STORAGE_KEY = 'tinycompressor-theme';
@@ -137,27 +138,29 @@ export default function RootLayout({
                 }
               })();
             `,
-          }}
-        />
-      </head>
-      <body className={inter.className} suppressHydrationWarning>
-        <ClientProviders>
-          {children}
-          <PerformanceMonitor />
-        </ClientProviders>
-        
-        {/* Google Analytics - 延迟加载，不阻塞首屏 */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-R23Y0Z9XSP"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8179572160013109"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+        }}
+      />
+    </head>
+    <body className={inter.className} suppressHydrationWarning>
+    <ClientProviders>
+      <AuthProvider>
+        {children}
+      </AuthProvider>
+      <PerformanceMonitor/>
+    </ClientProviders>
+
+    {/* Google Analytics - 延迟加载，不阻塞首屏 */}
+    <Script
+      src="https://www.googletagmanager.com/gtag/js?id=G-R23Y0Z9XSP"
+      strategy="afterInteractive"
+    />
+    <Script
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8179572160013109"
+      crossOrigin="anonymous"
+      strategy="afterInteractive"
+    />
+    <Script id="google-analytics" strategy="afterInteractive">
+      {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -169,8 +172,8 @@ export default function RootLayout({
               allow_ad_personalization_signals: false
             });
           `}
-        </Script>
-      </body>
+    </Script>
+    </body>
     </html>
   );
 }

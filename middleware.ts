@@ -1,12 +1,15 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { 
-  getSupportedLocales, 
-  defaultLocale, 
-  getLocaleFromPath, 
-  isMissingLocale, 
+import {NextRequest, NextResponse} from 'next/server'
+import {createClient} from '@/lib/supabase/server'
+import {
+  getSupportedLocales,
+  defaultLocale,
+  getLocaleFromPath,
+  isMissingLocale,
   isValidLocale,
-  getLocalizedPath 
+  getLocalizedPath
 } from '@/lib/i18n'
+import {refreshSupabaseSession} from "@/lib/supabase/middleware";
+import Any = jasmine.Any;
 
 // Get locale from request
 function getLocale(request: NextRequest): string {
@@ -29,9 +32,10 @@ function getLocale(request: NextRequest): string {
   return defaultLocale
 }
 
-export function middleware(request: NextRequest) {
+
+export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
-  
+
   // Skip static resources and API routes
   if (
     pathname.startsWith('/_next/') ||
@@ -47,48 +51,24 @@ export function middleware(request: NextRequest) {
   }
 
   const locale = getLocale(request)
-  
+
   // If URL is missing language prefix, redirect to URL with language prefix
-  if (isMissingLocale(pathname)) {
-    // For English (default locale), no redirect needed - just continue with the same path
-    if (locale === defaultLocale) {
-      const response = NextResponse.next()
-      response.headers.set('x-locale', locale)
-      response.cookies.set('NEXT_LOCALE', locale, {
-        maxAge: 60 * 60 * 24 * 365, // 1 year
-        httpOnly: false,
-        secure: process.env.NODE_ENV === 'production',
-        sameSite: 'lax'
-      })
-      return response
-    }
-    
+  let response = NextResponse.next()
+  if (isMissingLocale(pathname) && locale !== defaultLocale) {
     // For other languages, redirect to URL with language prefix
     const newPath = getLocalizedPath(pathname, locale)
     const newUrl = new URL(newPath, request.url)
-    
-    // Save language preference to cookie
-    const response = NextResponse.redirect(newUrl)
-    response.cookies.set('NEXT_LOCALE', locale, {
-      maxAge: 60 * 60 * 24 * 365, // 1 year
-      httpOnly: false,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax'
-    })
-    
-    return response
+    response = NextResponse.redirect(newUrl)
+  }else{
+    response.headers.set('x-locale', locale)
   }
-
-  // If URL has language prefix, set locale in headers for page use
-  const response = NextResponse.next()
-  response.headers.set('x-locale', locale)
+  response = await refreshSupabaseSession(request, response)
   response.cookies.set('NEXT_LOCALE', locale, {
     maxAge: 60 * 60 * 24 * 365, // 1 year
     httpOnly: false,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax'
   })
-
   return response
 }
 
