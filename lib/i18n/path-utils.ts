@@ -7,7 +7,6 @@ import {Locale, supportedLocales, defaultLocale} from '../i18n';
 import {get} from "react-hook-form";
 
 function getPathLocale(pathname: string): Locale | null {
-  console.log(">>>>>>>>", pathname)
   if(!pathname) return null
   const firstSegment = pathname.split('/').filter(Boolean)[0];
 

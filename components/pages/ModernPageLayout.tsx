@@ -34,7 +34,6 @@ export async function getPageStaticProps({params, category, format, targetFormat
   for (const lang of supportedLocales) {
     languages[lang] = getLocalizedPath(pathname, lang);
   }
-  console.log("getPageStaticProps:", params)
 
   return {
     title: t('seo.title'),
