@@ -19,7 +19,8 @@ export async function getCompressorStaticProps({params, format}: any) {
   return await getPageStaticProps({
     params,
     category,
-    format
+    format,
+    pathname: `/compressor/${format}`
   })
 }
 

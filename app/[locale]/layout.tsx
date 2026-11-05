@@ -15,6 +15,7 @@ import {
   isValidLocale,
   Locale,
 } from '@/lib/i18n';
+import {createTranslator, loadServerTranslations} from "@/lib/i18n/ssr-optimization";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -110,14 +111,17 @@ export async function generateMetadata({
   }
 
   const langInfo = languageInfo[locale];
+  const translations = await loadServerTranslations('home', locale);
+  const {t} = createTranslator(translations)
+  const title = `${t('hero.title')} - ${t('hero.subtitle')}`
+  const description = t('hero.description');
 
   return {
     metadataBase: new URL('https://tinycompressor.com'),
 
-    title: 'TinyCompressor - Free Online Image Compression Tool',
+    title: title,
 
-    description:
-      'Compress images online for free! Support JPG, PNG, WebP formats. Fast, secure, and privacy-friendly.',
+    description:description,
 
     keywords:
       'image compression, online compressor, JPG, PNG, WebP, free tool',
@@ -136,9 +140,8 @@ export async function generateMetadata({
       type: 'website',
       locale: langInfo.openGraphLocale,
       siteName: 'TinyCompressor',
-      title: 'TinyCompressor - Free Online Image Compression Tool',
-      description:
-        'Compress images online for free! Support JPG, PNG, WebP formats.',
+      title: title,
+      description:description,
       images: [
         {
           url: '/og-image.jpg',
@@ -151,8 +154,8 @@ export async function generateMetadata({
 
     twitter: {
       card: 'summary_large_image',
-      title: 'TinyCompressor - Free Online Image Compression Tool',
-      description: 'Compress images online for free!',
+      title: title,
+      description: description,
       images: ['/og-image.jpg'],
     },
 

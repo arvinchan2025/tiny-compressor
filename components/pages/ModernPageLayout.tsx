@@ -20,14 +20,21 @@ import {
   UseCasesSection
 } from "components/pages/sections";
 import {createTranslator, loadServerTranslations} from "@/lib/i18n/ssr-optimization";
+import {getLocalizedPath, supportedLocales} from "@/lib/i18n";
 
 // 懒加载压缩管理器组件 - LCP优化版本
 
-export async function getPageStaticProps({params, category, format, targetFormat}: any) {
+export async function getPageStaticProps({params, category, format, targetFormat, pathname}: any) {
   const {locale} = params;
   const translationModule = targetFormat ? `${format}-to-${targetFormat}` : format;
   const translations = await loadServerTranslations(`${category}/${translationModule}`, locale)
   const {t} = createTranslator(translations)
+  const languages: Record<string, string> = {};
+
+  for (const lang of supportedLocales) {
+    languages[lang] = getLocalizedPath(pathname, lang);
+  }
+  console.log("getPageStaticProps:", params)
 
   return {
     title: t('seo.title'),
@@ -44,10 +51,18 @@ export async function getPageStaticProps({params, category, format, targetFormat
       title: t('seo.title'),
       description: t('seo.description'),
     },
+    alternates: {
+      canonical: getLocalizedPath(pathname, locale),
+      languages: {
+        ...languages,
+        'x-default': getLocalizedPath(pathname, 'en'),
+      },
+    }
   };
 }
 
 export default async function ModernPageLayout({locale, category, format, targetFormat, maxFiles, operation}: any) {
+  console.log("ModernPageLayout:", format, targetFormat)
   const translationModule = targetFormat ? `${format}-to-${targetFormat}` : format;
   const translations = await loadServerTranslations(`${category}/${translationModule}`, locale)
   const translator = createTranslator(translations)
@@ -69,7 +84,7 @@ export default async function ModernPageLayout({locale, category, format, target
             format={format}
             maxFiles={maxFiles}
             sourceFormat={format}
-            sourtargetFormatceFormat={targetFormat}
+            targetFormat={targetFormat}
           />
 
           {/* Features Section - 延迟渲染直到翻译加载完成 */}

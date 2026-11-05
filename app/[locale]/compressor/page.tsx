@@ -3,7 +3,7 @@ import UnifiedClient from '@/components/UnifiedClient';
 import { Metadata } from 'next';
 import { SUPPORTED_LANGUAGES } from '@/lib/language-config';
 import {loadServerTranslations} from "@/lib/i18n/ssr-optimization";
-import {Locale} from "@/lib/i18n";
+import {getLocalizedPath, Locale, supportedLocales} from "@/lib/i18n";
 import UnifiedNavigation from "@/components/navigation/UnifiedNavigation";
 import React from "react";
 import ModernCompressorNavigation from "@/components/compressor/ModernCompressorNavigation";
@@ -80,7 +80,11 @@ export async function generateMetadata({ params }: CompressorPageProps): Promise
   };
 
   const meta = metadata[validLocale] || metadata.en;
-
+  const pathname = '/compressor'
+  const languages: Record<string, string> = {};
+  for (const lang of supportedLocales) {
+    languages[lang] = getLocalizedPath(pathname, lang);
+  }
   return {
     title: meta.title,
     description: meta.description,
@@ -96,7 +100,11 @@ export async function generateMetadata({ params }: CompressorPageProps): Promise
       description: meta.description,
     },
     alternates: {
-      canonical: `/compressor`,
+      canonical: getLocalizedPath(pathname, locale as Locale),
+      languages: {
+        ...languages,
+        'x-default': getLocalizedPath(pathname, 'en'),
+      },
     },
   };
 }

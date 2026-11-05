@@ -3,6 +3,7 @@ import UnifiedClient from '@/components/UnifiedClient';
 import { Metadata } from 'next';
 import { SUPPORTED_LANGUAGES } from '@/lib/language-config';
 import ModernConverterNavigation from '@/components/converter/ModernConverterNavigation';
+import {getLocalizedPath, Locale, supportedLocales} from "@/lib/i18n";
 
 interface ConverterPageProps {
   params: {
@@ -75,6 +76,11 @@ export async function generateMetadata({ params }: ConverterPageProps): Promise<
   };
 
   const meta = metadata[validLocale] || metadata.en;
+  const pathname = '/converter'
+  const languages: Record<string, string> = {};
+  for (const lang of supportedLocales) {
+    languages[lang] = getLocalizedPath(pathname, lang);
+  }
 
   return {
     title: meta.title,
@@ -91,7 +97,11 @@ export async function generateMetadata({ params }: ConverterPageProps): Promise<
       description: meta.description,
     },
     alternates: {
-      canonical: `/converter`,
+      canonical: getLocalizedPath(pathname, locale as Locale),
+      languages: {
+        ...languages,
+        'x-default': getLocalizedPath(pathname, 'en'),
+      },
     },
   };
 }
