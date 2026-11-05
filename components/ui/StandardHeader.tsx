@@ -121,11 +121,11 @@ export default function StandardHeader({
           {/* Right Side Actions */}
           <div className="flex items-center space-x-3">
             {/*<PricingView />*/}
-            <AccountView />
+            {/*<AccountView />*/}
             {/* Theme Switcher */}
-            {/*<div className="hidden lg:block">*/}
-            {/*  <ThemeSwitcher/>*/}
-            {/*</div>*/}
+            <div className="hidden lg:block">
+              <ThemeSwitcher/>
+            </div>
 
             {/* Language Switcher */}
             {/*<LanguageSwitcher*/}

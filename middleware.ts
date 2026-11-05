@@ -128,7 +128,8 @@ export async function middleware(request: NextRequest) {
         redirectUrl.pathname = `/${cookieLocale}`;
 
         response = NextResponse.redirect(redirectUrl, 307);
-        response = await refreshSupabaseSession(request, response);
+        // Hide
+        // response = await refreshSupabaseSession(request, response);
 
         return response;
       }
