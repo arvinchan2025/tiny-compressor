@@ -16,7 +16,7 @@ interface CompressorPageProps {
 
 export async function generateMetadata({ params }: CompressorPageProps): Promise<Metadata> {
   const { locale } = params;
-  const translations = await loadServerTranslations('', locale)
+  // const translations = await loadServerTranslations('', locale)
   const validLocale: SupportedLanguage = SUPPORTED_LANGUAGES.includes(locale as SupportedLanguage)
     ? (locale as SupportedLanguage)
     : 'en';

@@ -2,8 +2,6 @@ import {NextRequest, NextResponse} from 'next/server';
 
 import {defaultLocale, isValidLocale, Locale,} from '@/lib/i18n';
 
-import {refreshSupabaseSession} from '@/lib/supabase/middleware';
-
 const LOCALE_COOKIE = 'NEXT_LOCALE';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 

@@ -1,19 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import {useState} from 'react';
 // import { motion, AnimatePresence } from 'framer-motion'; // Removed to fix build issues
-import { useRouter, usePathname } from 'next/navigation';
-import { Locale } from '@/lib/i18n';
-import { useTranslation } from '@/hooks/useTranslation';
-import LanguageSwitcher from '../LanguageSwitcher';
+import {usePathname, useRouter} from 'next/navigation';
+import {Locale} from '@/lib/i18n';
 import ThemeSwitcher from '../ThemeSwitcher';
-import StandardButton from './StandardButton';
 import StandardIcon from './StandardIcon';
 import StandardContainer from './StandardContainer';
 import Image from 'next/image';
-import { getNavigationPath } from '@/lib/i18n/path-utils';
-import PricingView from "@/components/PricingView";
-import AccountView from "@/components/AccountView";
+import {getNavigationPath} from '@/lib/i18n/path-utils';
 import {createTranslator} from "@/lib/i18n/ssr-optimization";
 
 interface StandardHeaderProps {

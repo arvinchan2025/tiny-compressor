@@ -9,7 +9,6 @@ import '@/app/globals.css';
 
 import { ClientProviders } from '@/components/providers/ClientProviders';
 import PerformanceMonitor from '@/components/performance/PerformanceMonitor';
-import { AuthProvider } from '@/components/auth/auth-provider';
 
 import {
   supportedLocales,
@@ -263,9 +262,7 @@ export default function LocaleLayout({
 
       <body className={inter.className} suppressHydrationWarning>
         <ClientProviders>
-          <AuthProvider>
             {children}
-          </AuthProvider>
           <PerformanceMonitor />
         </ClientProviders>
 
