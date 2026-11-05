@@ -2,6 +2,7 @@ import { SupportedLanguage } from '@/types/i18n';
 import UnifiedClient from '@/components/UnifiedClient';
 import { Metadata } from 'next';
 import { SUPPORTED_LANGUAGES } from '@/lib/language-config';
+import ModernConverterNavigation from '@/components/converter/ModernConverterNavigation';
 
 interface ConverterPageProps {
   params: {
@@ -102,10 +103,8 @@ export default async function ConverterPage({ params }: ConverterPageProps) {
     : 'en';
 
   return (
-    <UnifiedClient 
+    <ModernConverterNavigation
       locale={validLocale} 
-      pageType="navigation"
-      sourceFormat="converter"
     />
   );
 }

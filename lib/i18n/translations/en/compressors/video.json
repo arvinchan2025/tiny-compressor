@@ -25,32 +25,32 @@
     "subtitle": "Everything you need for video compression",
     "items": [
       {
-        "icon": "zap",
+        "icon": "⚡",
         "title": "Fast Compression",
         "description": "Powered by FFmpeg.wasm for efficient video processing directly in your browser"
       },
       {
-        "icon": "shield",
+        "icon": "🛡️",
         "title": "100% Private",
         "description": "All processing happens locally in your browser. Your videos never leave your device"
       },
       {
-        "icon": "sliders",
+        "icon": "🎛️",
         "title": "Quality Presets",
         "description": "Choose from Low, Medium, or High quality presets for different compression needs"
       },
       {
-        "icon": "gauge",
+        "icon": "📊",
         "title": "Real-time Progress",
         "description": "Track compression progress with detailed time estimates and current processing stage"
       },
       {
-        "icon": "file-video",
+        "icon": "🎬",
         "title": "Multiple Formats",
         "description": "Support for MP4, WebM, AVI, MOV, MKV and other popular video formats"
       },
       {
-        "icon": "download",
+        "icon": "⬇️",
         "title": "Instant Download",
         "description": "Download your compressed video immediately after processing is complete"
       }
@@ -58,35 +58,35 @@
   },
   "technicalPrinciples": {
     "title": "How Video Compression Works",
-    "subtitle": "Understanding the technology behind video compression",
+    "description": "Understanding the technology behind video compression",
     "items": [
       {
-        "icon": "cpu",
+        "icon": "💻",
         "title": "Video Encoding",
         "description": "Uses H.264 codec to re-encode video with optimized compression settings, reducing file size while preserving quality"
       },
       {
-        "icon": "image",
+        "icon": "🖼️",
         "title": "Resolution Scaling",
         "description": "Optionally reduces video resolution (1080p, 720p, 480p, 360p) to significantly decrease file size"
       },
       {
-        "icon": "settings",
+        "icon": "⚙️",
         "title": "Bitrate Optimization",
         "description": "Adjusts video bitrate using CRF (Constant Rate Factor) for efficient compression"
       },
       {
-        "icon": "volume-2",
+        "icon": "🔊",
         "title": "Audio Compression",
         "description": "Re-encodes audio using AAC codec with optimized bitrate for smaller file size"
       },
       {
-        "icon": "layers",
+        "icon": "📚",
         "title": "FFmpeg Processing",
         "description": "Leverages FFmpeg.wasm, a WebAssembly port of FFmpeg, for powerful video processing in the browser"
       },
       {
-        "icon": "lock",
+        "icon": "🔒",
         "title": "Client-Side Processing",
         "description": "All compression happens in your browser using WebAssembly, ensuring complete privacy and security"
       }
@@ -94,35 +94,35 @@
   },
   "useCases": {
     "title": "Perfect For",
-    "subtitle": "Common scenarios where video compression helps",
+    "description": "Common scenarios where video compression helps",
     "items": [
       {
-        "icon": "share-2",
+        "icon": "📤",
         "title": "Social Media Sharing",
         "description": "Reduce video size to meet platform upload limits and ensure faster sharing on social networks"
       },
       {
-        "icon": "mail",
+        "icon": "✉️",
         "title": "Email Attachments",
         "description": "Compress videos to fit email attachment size limits without sacrificing too much quality"
       },
       {
-        "icon": "smartphone",
+        "icon": "📱",
         "title": "Mobile Storage",
         "description": "Free up storage space on your phone by compressing videos while keeping them watchable"
       },
       {
-        "icon": "cloud",
+        "icon": "☁️",
         "title": "Cloud Storage",
         "description": "Save cloud storage space and reduce backup time by compressing video files"
       },
       {
-        "icon": "globe",
+        "icon": "🌐",
         "title": "Website Videos",
         "description": "Optimize videos for web delivery, ensuring faster page load times and better user experience"
       },
       {
-        "icon": "users",
+        "icon": "👥",
         "title": "Video Presentations",
         "description": "Compress presentation videos for easier distribution to colleagues and clients"
       }
@@ -130,7 +130,7 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Common questions about video compression",
+    "description": "Common questions about video compression",
     "items": [
       {
         "question": "How much can I compress my video?",

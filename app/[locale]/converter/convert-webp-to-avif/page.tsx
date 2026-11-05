@@ -1,25 +1,31 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
 import ConvertWebpToAvifClient from './ConvertWebpToAvifClient';
+import ModernConverterLayout, {getConverterStaticProps} from "@/components/pages/ModernConverterLayout";
 
 interface ConvertWebpToAvifPageProps {
   params: {
     locale: SupportedLanguage;
   };
 }
+const format = 'webp'
+const targetFormat = 'avif'
 
-export async function generateMetadata({ params }: ConvertWebpToAvifPageProps): Promise<Metadata> {
-  const { locale } = params;
-  
-  return {
-    title: 'WebP to AVIF Converter - Free Online Image Format Converter',
-    description: 'Convert WebP to AVIF online for free! Next-generation compression technology with superior quality. Fast, secure, and completely private conversion.',
-    keywords: 'WebP to AVIF, convert WebP, image converter, free online converter, AVIF converter'
-  };
+export async function generateMetadata({params}: any): Promise<Metadata> {
+  const {locale} = params;
+  return await getConverterStaticProps({
+    params,
+    format,
+    targetFormat
+  })
 }
 
-export default function ConvertWebpToAvifPage({ params }: ConvertWebpToAvifPageProps) {
+export default function ConvertPage({params}: any) {
   return (
-    <ConvertWebpToAvifClient locale={params.locale} />
+    <ModernConverterLayout
+      locale={params.locale}
+      format={format}
+      targetFormat={targetFormat}
+    />
   );
 }

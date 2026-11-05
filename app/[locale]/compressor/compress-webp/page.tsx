@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
-import { SupportedLanguage } from '@/types/i18n';
-import CompressWebpClient from './CompressWebpClient';
+import {Metadata} from 'next';
+import {SupportedLanguage} from '@/types/i18n';
+import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/pages/ModernCompressorLayout";
 
 // 强制动态渲染
 export const dynamic = 'force-dynamic';
@@ -12,27 +12,19 @@ interface CompressWebpPageProps {
   };
 }
 
-export async function generateMetadata({ params }: CompressWebpPageProps): Promise<Metadata> {
-  const { locale } = params;
-  
-  return {
-    title: 'WebP Compressor - Compress WebP Images Online',
-    description: 'Compress WebP images online with our free WebP compressor. Superior compression with modern web optimization. Fast, secure, and easy to use.',
-    keywords: 'WebP compressor, compress WebP, WebP optimization, reduce WebP size, WebP compressor online, free WebP compressor',
-    openGraph: {
-      title: 'WebP Compressor - Compress WebP Images Online',
-      description: 'Compress WebP images online with our free WebP compressor. Superior compression with modern web optimization. Fast, secure, and easy to use.',
-      type: 'website',
-      locale: locale,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'WebP Compressor - Compress WebP Images Online',
-      description: 'Compress WebP images online with our free WebP compressor. Superior compression with modern web optimization. Fast, secure, and easy to use.',
-    },
-  };
+const format = 'webp'
+
+export async function generateMetadata(props: any): Promise<Metadata> {
+  return await getCompressorStaticProps({...props, format})
 }
 
-export default function CompressWebpPage({ params }: CompressWebpPageProps) {
-  return <CompressWebpClient locale={params.locale} />;
+export default function CompressPage({params}: any) {
+  return (
+    // <CompressPngClient locale={params.locale} />
+    <ModernCompressorLayout
+      locale={params.locale}
+      format={format}
+      maxFiles={10}
+    />
+  );
 }

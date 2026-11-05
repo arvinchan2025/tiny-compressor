@@ -22,35 +22,35 @@
   },
   "features": {
     "title": "Leistungsstarke Funktionen",
-    "subtitle": "Alles, was Sie für die Videokomprimierung benötigen",
+    "description": "Alles, was Sie für die Videokomprimierung benötigen",
     "items": [
       {
-        "icon": "zap",
+        "icon": "⚡",
         "title": "Schnelle Komprimierung",
         "description": "Angetrieben von FFmpeg.wasm für effiziente Videoverarbeitung direkt in Ihrem Browser"
       },
       {
-        "icon": "shield",
+        "icon": "🛡️",
         "title": "100% Privat",
         "description": "Alle Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Videos verlassen niemals Ihr Gerät"
       },
       {
-        "icon": "sliders",
+        "icon": "🎛️",
         "title": "Qualitätsvoreinstellungen",
         "description": "Wählen Sie aus niedrigen, mittleren oder hohen Qualitätsvoreinstellungen für verschiedene Komprimierungsanforderungen"
       },
       {
-        "icon": "gauge",
+        "icon": "📊",
         "title": "Echtzeit-Fortschritt",
         "description": "Verfolgen Sie den Komprimierungsfortschritt mit detaillierten Zeitschätzungen und aktueller Verarbeitungsphase"
       },
       {
-        "icon": "file-video",
+        "icon": "🎬",
         "title": "Mehrere Formate",
         "description": "Unterstützung für MP4, WebM, AVI, MOV, MKV und andere beliebte Videoformate"
       },
       {
-        "icon": "download",
+        "icon": "⬇️",
         "title": "Sofortiger Download",
         "description": "Laden Sie Ihr komprimiertes Video sofort nach Abschluss der Verarbeitung herunter"
       }
@@ -58,7 +58,7 @@
   },
   "technicalPrinciples": {
     "title": "Wie Videokomprimierung funktioniert",
-    "subtitle": "Verstehen der Technologie hinter der Videokomprimierung",
+    "description": "Verstehen der Technologie hinter der Videokomprimierung",
     "items": [
       {
         "icon": "cpu",
@@ -94,7 +94,7 @@
   },
   "useCases": {
     "title": "Perfekt Für",
-    "subtitle": "Häufige Szenarien, in denen Videokomprimierung hilft",
+    "description": "Häufige Szenarien, in denen Videokomprimierung hilft",
     "items": [
       {
         "icon": "share-2",
@@ -130,7 +130,7 @@
   },
   "faq": {
     "title": "Häufig Gestellte Fragen",
-    "subtitle": "Häufige Fragen zur Videokomprimierung",
+    "description": "Häufige Fragen zur Videokomprimierung",
     "items": [
       {
         "question": "Wie viel kann ich ein Video komprimieren?",

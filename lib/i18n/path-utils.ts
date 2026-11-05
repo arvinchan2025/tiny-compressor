@@ -3,7 +3,18 @@
  * 所有语言路径相关的逻辑都应该使用这个工具
  */
 
-import { Locale, supportedLocales, defaultLocale } from '../i18n';
+import {Locale, supportedLocales, defaultLocale} from '../i18n';
+import {get} from "react-hook-form";
+
+function getPathLocale(pathname: string): Locale | null {
+  const firstSegment = pathname.split('/').filter(Boolean)[0];
+
+  if (!firstSegment || !isValidLocale(firstSegment)) {
+    return null;
+  }
+
+  return firstSegment;
+}
 
 /**
  * 从路径中提取语言代码
@@ -11,13 +22,13 @@ import { Locale, supportedLocales, defaultLocale } from '../i18n';
  * @returns 语言代码，如果路径中没有语言前缀则返回默认语言
  */
 export function getLocaleFromPath(pathname: string): Locale {
-  const pathSegments = pathname.split('/').filter(Boolean);
-  
-  if (pathSegments.length > 0 && supportedLocales.includes(pathSegments[0] as Locale)) {
-    return pathSegments[0] as Locale;
-  }
-  
-  return defaultLocale;
+  // const pathSegments = pathname.split('/').filter(Boolean);
+  //
+  // if (pathSegments.length > 0 && supportedLocales.includes(pathSegments[0] as Locale)) {
+  //   return pathSegments[0] as Locale;
+  // }
+  //
+  return getPathLocale(pathname) ?? defaultLocale;
 }
 
 /**
@@ -26,13 +37,21 @@ export function getLocaleFromPath(pathname: string): Locale {
  * @returns 干净路径，如 "/compressor"
  */
 export function getCleanPath(pathname: string): string {
-  const locale = getLocaleFromPath(pathname);
-  
-  if (locale === defaultLocale) {
-    return pathname;
+  const locale = getPathLocale(pathname);
+
+  if (!locale) {
+    return pathname || '/';
   }
-  
-  return pathname.replace(`/${locale}`, '') || '/';
+
+  return pathname.replace(new RegExp(`^/${locale}(?=/|$)`), '') || '/';
+  //
+  // const locale = getLocaleFromPath(pathname);
+  //
+  // if (locale === defaultLocale) {
+  //   return pathname;
+  // }
+  //
+  // return pathname.replace(`/${locale}`, '') || '/';
 }
 
 /**
@@ -43,11 +62,11 @@ export function getCleanPath(pathname: string): string {
  */
 export function getLocalizedPath(pathname: string, locale: Locale): string {
   const cleanPath = getCleanPath(pathname);
-  
+
   if (locale === defaultLocale) {
     return cleanPath;
   }
-  
+
   return `/${locale}${cleanPath}`;
 }
 
@@ -58,12 +77,13 @@ export function getLocalizedPath(pathname: string, locale: Locale): string {
  * @returns 是否包含该语言前缀
  */
 export function isCurrentLanguagePath(pathname: string, locale: Locale): boolean {
-  if (locale === defaultLocale) {
-    // 英语路径不包含语言前缀
-    return !supportedLocales.some(lang => lang !== defaultLocale && pathname.startsWith(`/${lang}`));
-  }
-  
-  return pathname.startsWith(`/${locale}`);
+  return getLocaleFromPath(pathname) === locale;
+  // if (locale === defaultLocale) {
+  //   // 英语路径不包含语言前缀
+  //   return !supportedLocales.some(lang => lang !== defaultLocale && pathname.startsWith(`/${lang}`));
+  // }
+  //
+  // return pathname.startsWith(`/${locale}`);
 }
 
 /**
@@ -73,13 +93,23 @@ export function isCurrentLanguagePath(pathname: string, locale: Locale): boolean
  * @returns 移除语言前缀后的干净路径
  */
 export function removeLocalePrefix(pathname: string, currentLocale: Locale): string {
-  // 如果路径以当前语言前缀开头，移除它
-  if (pathname.startsWith(`/${currentLocale}/`) || pathname === `/${currentLocale}`) {
-    return pathname.replace(`/${currentLocale}`, '') || '/';
+  // 如果路径以当前语言前缀开头，移除它, 判断路径解析出来的语言是否为指定语言。英语没有显式前缀时，也属于英语路径
+  const pathLocale = getPathLocale(pathname);
+
+  if (pathLocale !== currentLocale) {
+    return pathname || '/';
   }
-  
-  // 否则返回原路径
-  return pathname;
+
+  return pathname.replace(
+    new RegExp(`^/${currentLocale}(?=/|$)`),
+    ''
+  ) || '/';
+  // if (pathname.startsWith(`/${currentLocale}/`) || pathname === `/${currentLocale}`) {
+  //   return pathname.replace(`/${currentLocale}`, '') || '/';
+  // }
+  //
+  // // 否则返回原路径
+  // return pathname;
 }
 
 /**
@@ -92,7 +122,7 @@ export function addLocalePrefix(cleanPath: string, locale: Locale): string {
   if (locale === defaultLocale) {
     return cleanPath;
   }
-  
+
   return `/${locale}${cleanPath}`;
 }
 
@@ -114,9 +144,10 @@ export function switchLocalePath(currentPath: string, currentLocale: Locale, new
  * @returns 是否缺少语言前缀
  */
 export function isMissingLocale(pathname: string): boolean {
-  return supportedLocales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  );
+  return getPathLocale(pathname) === null
+  // return supportedLocales.every(
+  //   (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  // );
 }
 
 /**
@@ -146,7 +177,7 @@ export function getNavigationPath(cleanPath: string, locale: Locale): string {
   if (locale === defaultLocale) {
     return cleanPath;
   }
-  
+
   return `/${locale}${cleanPath}`;
 }
 

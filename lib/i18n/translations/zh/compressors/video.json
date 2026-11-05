@@ -22,7 +22,7 @@
   },
   "features": {
     "title": "强大功能",
-    "subtitle": "视频压缩所需的一切",
+    "description": "视频压缩所需的一切",
     "items": [
       {
         "icon": "zap",
@@ -58,7 +58,7 @@
   },
   "technicalPrinciples": {
     "title": "视频压缩原理",
-    "subtitle": "了解视频压缩背后的技术",
+    "description": "了解视频压缩背后的技术",
     "items": [
       {
         "icon": "cpu",
@@ -94,7 +94,7 @@
   },
   "useCases": {
     "title": "适用场景",
-    "subtitle": "视频压缩的常见使用场景",
+    "description": "视频压缩的常见使用场景",
     "items": [
       {
         "icon": "share-2",
@@ -130,7 +130,7 @@
   },
   "faq": {
     "title": "常见问题",
-    "subtitle": "关于视频压缩的常见问题",
+    "description": "关于视频压缩的常见问题",
     "items": [
       {
         "question": "我可以压缩多少视频？",

@@ -22,7 +22,7 @@
   },
   "features": {
     "title": "Recursos Poderosos",
-    "subtitle": "Tudo o que você precisa para compressão de vídeo",
+    "description": "Tudo o que você precisa para compressão de vídeo",
     "items": [
       {
         "icon": "zap",
@@ -58,7 +58,7 @@
   },
   "technicalPrinciples": {
     "title": "Como Funciona a Compressão de Vídeo",
-    "subtitle": "Compreendendo a tecnologia por trás da compressão de vídeo",
+    "description": "Compreendendo a tecnologia por trás da compressão de vídeo",
     "items": [
       {
         "icon": "cpu",
@@ -94,7 +94,7 @@
   },
   "useCases": {
     "title": "Perfeito Para",
-    "subtitle": "Cenários comuns onde a compressão de vídeo ajuda",
+    "description": "Cenários comuns onde a compressão de vídeo ajuda",
     "items": [
       {
         "icon": "share-2",
@@ -130,7 +130,7 @@
   },
   "faq": {
     "title": "Perguntas Frequentes",
-    "subtitle": "Perguntas comuns sobre compressão de vídeo",
+    "description": "Perguntas comuns sobre compressão de vídeo",
     "items": [
       {
         "question": "Quanto posso comprimir um vídeo?",

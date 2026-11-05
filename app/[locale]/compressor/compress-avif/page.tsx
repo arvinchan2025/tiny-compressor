@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
-import { SupportedLanguage } from '@/types/i18n';
-import CompressAvifClient from './CompressAvifClient';
+import {Metadata} from 'next';
+import {SupportedLanguage} from '@/types/i18n';
+import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/pages/ModernCompressorLayout";
 
 // 强制动态渲染
 export const dynamic = 'force-dynamic';
@@ -11,30 +11,18 @@ interface CompressAvifPageProps {
     locale: SupportedLanguage;
   };
 }
-
-export async function generateMetadata({ params }: CompressAvifPageProps): Promise<Metadata> {
-  const { locale } = params;
-  
-  return {
-    title: 'AVIF Compressor - Compress AVIF Images Online',
-    description: 'Compress AVIF images online with our free AVIF compressor. Next-generation compression technology with superior quality. Fast, secure, and easy to use.',
-    keywords: 'AVIF compressor, compress AVIF, AVIF optimization, reduce AVIF size, AVIF compressor online, free AVIF compressor',
-    openGraph: {
-      title: 'AVIF Compressor - Compress AVIF Images Online',
-      description: 'Compress AVIF images online with our free AVIF compressor. Next-generation compression technology with superior quality. Fast, secure, and easy to use.',
-      type: 'website',
-      locale: locale,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'AVIF Compressor - Compress AVIF Images Online',
-      description: 'Compress AVIF images online with our free AVIF compressor. Next-generation compression technology with superior quality. Fast, secure, and easy to use.',
-    },
-  };
+const format = 'avif'
+export async function generateMetadata(props: any): Promise<Metadata> {
+  return await getCompressorStaticProps({...props, format})
 }
 
-export default function CompressAvifPage({ params }: CompressAvifPageProps) {
+export default function CompressPage({params}: any) {
   return (
-    <CompressAvifClient locale={params.locale} />
+    // <CompressPngClient locale={params.locale} />
+    <ModernCompressorLayout
+      locale={params.locale}
+      format={format}
+      maxFiles={10}
+    />
   );
 }

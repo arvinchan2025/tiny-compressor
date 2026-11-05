@@ -22,7 +22,7 @@
   },
   "features": {
     "title": "強力な機能",
-    "subtitle": "動画圧縮に必要なすべて",
+    "description": "動画圧縮に必要なすべて",
     "items": [
       {
         "icon": "zap",
@@ -58,7 +58,7 @@
   },
   "technicalPrinciples": {
     "title": "動画圧縮の仕組み",
-    "subtitle": "動画圧縮技術の理解",
+    "description": "動画圧縮技術の理解",
     "items": [
       {
         "icon": "cpu",
@@ -94,7 +94,7 @@
   },
   "useCases": {
     "title": "最適な用途",
-    "subtitle": "動画圧縮が役立つ一般的なシナリオ",
+    "description": "動画圧縮が役立つ一般的なシナリオ",
     "items": [
       {
         "icon": "share-2",
@@ -130,7 +130,7 @@
   },
   "faq": {
     "title": "よくある質問",
-    "subtitle": "動画圧縮に関する一般的な質問",
+    "description": "動画圧縮に関する一般的な質問",
     "items": [
       {
         "question": "動画はどのくらい圧縮できますか？",

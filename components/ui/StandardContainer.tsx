@@ -1,8 +1,8 @@
-'use client';
+// 'use client';
 
-import { forwardRef } from 'react';
+// import { forwardRef } from 'react';
 // import { motion } from 'framer-motion'; // Removed to fix build issues
-import { commonSpacing, responsiveSpacing, layoutUtils } from '@/lib/spacing-utils';
+import {commonSpacing, responsiveSpacing, layoutUtils} from '@/lib/spacing-utils';
 
 interface StandardContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   variant: 'page' | 'content' | 'section' | 'card';
@@ -11,38 +11,37 @@ interface StandardContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
 }
 
-const StandardContainer = forwardRef<HTMLDivElement, StandardContainerProps>(
-  ({
-    variant = 'content',
-    size = 'md',
-    center = true,
-    children,
-    className = '',
-    ...props
-  }, ref) => {
-    // 基础样式
-    const baseStyles = 'w-full';
-    
-    // 变体样式
-    const variantStyles = {
-      page: responsiveSpacing.pagePadding,
-      content: responsiveSpacing.contentPadding,
-      section: 'px-4 py-8 sm:py-12 lg:py-16',
-      card: commonSpacing.cardSpacing,
-    };
-    
-    // 尺寸样式
-    const sizeStyles = {
-      sm: 'max-w-2xl',
-      md: 'max-w-4xl',
-      lg: 'max-w-6xl',
-      xl: 'max-w-7xl',
-    };
-    
-    // 居中样式
-    const centerStyles = center ? 'mx-auto' : '';
-    
-    const containerClasses = `
+export default function StandardContainer({
+                                            variant = 'content',
+                                            size = 'md',
+                                            center = true,
+                                            children,
+                                            className = '',
+                                            ...props
+                                          }: StandardContainerProps) {
+  // 基础样式
+  const baseStyles = 'w-full';
+
+  // 变体样式
+  const variantStyles = {
+    page: responsiveSpacing.pagePadding,
+    content: responsiveSpacing.contentPadding,
+    section: 'px-4 py-8 sm:py-12 lg:py-16',
+    card: commonSpacing.cardSpacing,
+  };
+
+  // 尺寸样式
+  const sizeStyles = {
+    sm: 'max-w-2xl',
+    md: 'max-w-4xl',
+    lg: 'max-w-6xl',
+    xl: 'max-w-7xl',
+  };
+
+  // 居中样式
+  const centerStyles = center ? 'mx-auto' : '';
+
+  const containerClasses = `
       ${baseStyles}
       ${variantStyles[variant]}
       ${sizeStyles[size]}
@@ -50,18 +49,13 @@ const StandardContainer = forwardRef<HTMLDivElement, StandardContainerProps>(
       ${className}
     `.trim().replace(/\s+/g, ' ');
 
-    return (
-      <div
-        ref={ref}
-        className={containerClasses}
-        {...props}
-      >
-        {children}
-      </div>
-    );
-  }
-);
+  return (
+    <div
+      className={containerClasses}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
 
-StandardContainer.displayName = 'StandardContainer';
-
-export default StandardContainer;

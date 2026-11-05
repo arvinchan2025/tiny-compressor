@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
-import { SupportedLanguage } from '@/types/i18n';
-import ConvertPngToJpgClient from './ConvertPngToJpgClient';
+import {Metadata} from 'next';
+import {SupportedLanguage} from '@/types/i18n';
+import ModernConverterLayout, {getConverterStaticProps} from "@/components/pages/ModernConverterLayout";
 
 interface ConvertPngToJpgPageProps {
   params: {
@@ -8,16 +8,23 @@ interface ConvertPngToJpgPageProps {
   };
 }
 
-export async function generateMetadata({ params }: ConvertPngToJpgPageProps): Promise<Metadata> {
+const format = 'png'
+const targetFormat = 'jpg'
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { locale } = params;
-  
-  return {
-    title: 'PNG to JPG Converter - Free Online Image Format Converter',
-    description: 'Convert PNG to JPG online for free! Optimized compression and universal compatibility. Fast, secure, and completely private conversion.',
-    keywords: 'PNG to JPG, convert PNG, image converter, free online converter, JPG converter'
-  };
+  return await getConverterStaticProps({
+    params,
+    format,
+    targetFormat
+  })
 }
 
-export default function ConvertPngToJpgPage({ params }: ConvertPngToJpgPageProps) {
-  return <ConvertPngToJpgClient locale={params.locale} />;
+export default function ConvertPage({ params }: any) {
+  return (
+    <ModernConverterLayout
+      locale={params.locale}
+      format={format}
+      targetFormat={targetFormat}
+    />
+  );
 }

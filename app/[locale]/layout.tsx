@@ -1,120 +1,300 @@
+
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
-import { SupportedLanguage } from '@/types/i18n';
 import { Inter } from 'next/font/google';
-// import TranslationPreloader from '@/components/providers/TranslationPreloader';
+import Script from 'next/script';
 
-const inter = Inter({ subsets: ['latin'] });
+import '@/app/globals.css';
 
-// 支持的语言列表
-const locales = ['en', 'zh', 'es', 'de', 'fr', 'ar', 'ja', 'ko', 'pt', 'ru', 'it'];
+import { ClientProviders } from '@/components/providers/ClientProviders';
+import PerformanceMonitor from '@/components/performance/PerformanceMonitor';
+import { AuthProvider } from '@/components/auth/auth-provider';
 
-// 语言信息
+import {
+  supportedLocales,
+  isValidLocale,
+  Locale,
+} from '@/lib/i18n';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'],
+  fallback: [
+    'system-ui',
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Segoe UI',
+    'Roboto',
+    'sans-serif',
+  ],
+  adjustFontFallback: true,
+});
+
 const languageInfo = {
-  en: { name: 'English', nativeName: 'English', flag: '🇺🇸', direction: 'ltr', locale: 'en_US' },
-  zh: { name: 'Chinese', nativeName: '中文', flag: '🇨🇳', direction: 'ltr', locale: 'zh_CN' },
-  es: { name: 'Spanish', nativeName: 'Español', flag: '🇪🇸', direction: 'ltr', locale: 'es_ES' },
-  de: { name: 'German', nativeName: 'Deutsch', flag: '🇩🇪', direction: 'ltr', locale: 'de_DE' },
-  fr: { name: 'French', nativeName: 'Français', flag: '🇫🇷', direction: 'ltr', locale: 'fr_FR' },
-  ar: { name: 'Arabic', nativeName: 'العربية', flag: '🇸🇦', direction: 'rtl', locale: 'ar_SA' },
-  ja: { name: 'Japanese', nativeName: '日本語', flag: '🇯🇵', direction: 'ltr', locale: 'ja_JP' },
-  ko: { name: 'Korean', nativeName: '한국어', flag: '🇰🇷', direction: 'ltr', locale: 'ko_KR' },
-  pt: { name: 'Portuguese', nativeName: 'Português', flag: '🇵🇹', direction: 'ltr', locale: 'pt_PT' },
-  ru: { name: 'Russian', nativeName: 'Русский', flag: '🇷🇺', direction: 'ltr', locale: 'ru_RU' },
-  it: { name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹', direction: 'ltr', locale: 'it_IT' }
-} as const;
+  en: {
+    direction: 'ltr',
+    openGraphLocale: 'en_US',
+  },
+  zh: {
+    direction: 'ltr',
+    openGraphLocale: 'zh_CN',
+  },
+  es: {
+    direction: 'ltr',
+    openGraphLocale: 'es_ES',
+  },
+  de: {
+    direction: 'ltr',
+    openGraphLocale: 'de_DE',
+  },
+  fr: {
+    direction: 'ltr',
+    openGraphLocale: 'fr_FR',
+  },
+  ar: {
+    direction: 'rtl',
+    openGraphLocale: 'ar_SA',
+  },
+  ja: {
+    direction: 'ltr',
+    openGraphLocale: 'ja_JP',
+  },
+  ko: {
+    direction: 'ltr',
+    openGraphLocale: 'ko_KR',
+  },
+  pt: {
+    direction: 'ltr',
+    openGraphLocale: 'pt_PT',
+  },
+  ru: {
+    direction: 'ltr',
+    openGraphLocale: 'ru_RU',
+  },
+  it: {
+    direction: 'ltr',
+    openGraphLocale: 'it_IT',
+  },
+} as const satisfies Record<
+  Locale,
+  {
+    direction: 'ltr' | 'rtl';
+    openGraphLocale: string;
+  }
+>;
 
 interface LocaleLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
   params: {
     locale: string;
   };
 }
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return supportedLocales.map((locale) => ({ locale }));
 }
 
+// 不允许未声明的语言参数
+export const dynamicParams = false;
+
 export async function generateMetadata({
-  params: { locale }
+  params: { locale },
 }: {
   params: { locale: string };
-}) {
-  // 验证语言是否支持
-  const validLocale: SupportedLanguage = locales.includes(locale) ? (locale as SupportedLanguage) : 'en';
-  
-  const langInfo = languageInfo[validLocale];
-  const isRTL = langInfo.direction === 'rtl';
+}): Promise<Metadata> {
+  if (!isValidLocale(locale)) {
+    notFound();
+  }
 
-  // 基础元数据
-  const baseMetadata = {
+  const langInfo = languageInfo[locale];
+
+  return {
+    metadataBase: new URL('https://tinycompressor.com'),
+
     title: 'TinyCompressor - Free Online Image Compression Tool',
-    description: 'Compress images online for free! Support JPG, PNG, WebP formats. Fast, secure, and privacy-friendly.',
-    keywords: 'image compression, online compressor, JPG, PNG, WebP, free tool',
+
+    description:
+      'Compress images online for free! Support JPG, PNG, WebP formats. Fast, secure, and privacy-friendly.',
+
+    keywords:
+      'image compression, online compressor, JPG, PNG, WebP, free tool',
+
     authors: [{ name: 'TinyCompressor Team' }],
     creator: 'TinyCompressor',
     publisher: 'TinyCompressor',
-    robots: 'index, follow',
+
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+
     openGraph: {
       type: 'website',
-      locale: langInfo.locale,
-      url: validLocale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${validLocale}`,
+      locale: langInfo.openGraphLocale,
       siteName: 'TinyCompressor',
       title: 'TinyCompressor - Free Online Image Compression Tool',
-      description: 'Compress images online for free! Support JPG, PNG, WebP formats.',
+      description:
+        'Compress images online for free! Support JPG, PNG, WebP formats.',
       images: [
         {
           url: '/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: 'TinyCompressor - Image Compression Tool'
-        }
-      ]
+          alt: 'TinyCompressor - Image Compression Tool',
+        },
+      ],
     },
+
     twitter: {
       card: 'summary_large_image',
       title: 'TinyCompressor - Free Online Image Compression Tool',
       description: 'Compress images online for free!',
-      images: ['/og-image.jpg']
+      images: ['/og-image.jpg'],
     },
-    alternates: {
-      canonical: validLocale === 'en' ? 'https://tinycompressor.com' : `https://tinycompressor.com/${validLocale}`,
-      languages: {
-        'en': 'https://tinycompressor.com',
-        'zh': 'https://tinycompressor.com/zh',
-        'es': 'https://tinycompressor.com/es',
-        'de': 'https://tinycompressor.com/de',
-        'fr': 'https://tinycompressor.com/fr',
-        'ar': 'https://tinycompressor.com/ar',
-        'ja': 'https://tinycompressor.com/ja',
-        'ko': 'https://tinycompressor.com/ko',
-        'pt': 'https://tinycompressor.com/pt',
-        'ru': 'https://tinycompressor.com/ru',
-        'it': 'https://tinycompressor.com/it'
-      }
-    }
-  };
 
-  return baseMetadata;
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+
+    // canonical 和 hreflang 交给具体页面定义
+    // 避免子页面继承首页 URL
+  };
 }
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: LocaleLayoutProps) {
-  // 验证语言是否支持
-  const validLocale: SupportedLanguage = locales.includes(locale) ? (locale as SupportedLanguage) : 'en';
-  
-  if (!locales.includes(locale)) {
+  if (!isValidLocale(locale)) {
     notFound();
   }
 
-  const langInfo = languageInfo[validLocale];
-  const isRTL = langInfo.direction === 'rtl';
+  const langInfo = languageInfo[locale];
 
   return (
-    <div lang={validLocale} dir={isRTL ? 'rtl' : 'ltr'}>
-      {/* <TranslationPreloader locale={validLocale} /> */}
-      {children}
-    </div>
+    <html
+      lang={locale}
+      dir={langInfo.direction}
+      suppressHydrationWarning
+    >
+      <head>
+        <link
+          rel="dns-prefetch"
+          href="https://www.googletagmanager.com"
+        />
+        <link
+          rel="preconnect"
+          href="https://www.googletagmanager.com"
+        />
+        <link
+          rel="dns-prefetch"
+          href="https://cdn.jsdelivr.net"
+        />
+        <link
+          rel="preconnect"
+          href="https://cdn.jsdelivr.net"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="dns-prefetch"
+          href="https://unpkg.com"
+        />
+
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link
+          rel="icon"
+          href="/favicon-16x16.svg"
+          type="image/svg+xml"
+          sizes="16x16"
+        />
+        <link
+          rel="icon"
+          href="/favicon-32x32.svg"
+          type="image/svg+xml"
+          sizes="32x32"
+        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* 保留你原来的主题防闪烁脚本 */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const STORAGE_KEY = 'tinycompressor-theme';
+                  const savedTheme = localStorage.getItem(STORAGE_KEY);
+                  const systemDark = window.matchMedia(
+                    '(prefers-color-scheme: dark)'
+                  ).matches;
+
+                  const theme =
+                    savedTheme === 'dark' ||
+                    (!savedTheme && systemDark)
+                      ? 'dark'
+                      : 'light';
+
+                  document.documentElement.classList.add(theme);
+                  document.documentElement.setAttribute(
+                    'data-theme',
+                    theme
+                  );
+                } catch (e) {
+                  document.documentElement.classList.add('light');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
+
+      <body className={inter.className} suppressHydrationWarning>
+        <ClientProviders>
+          <AuthProvider>
+            {children}
+          </AuthProvider>
+          <PerformanceMonitor />
+        </ClientProviders>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R23Y0Z9XSP"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8179572160013109"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R23Y0Z9XSP', {
+              page_title: document.title,
+              page_location: window.location.href,
+              anonymize_ip: true,
+              allow_google_signals: true,
+              allow_ad_personalization_signals: false
+            });
+          `}
+        </Script>
+      </body>
+    </html>
   );
 }

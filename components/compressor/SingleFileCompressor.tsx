@@ -249,11 +249,13 @@ export default function SingleFileCompressor({
         {/* 状�?: 上传区域 */}
         {state === 'empty' && (
           <div
+            className="card-glass p-8"
+            data-state="empty"
           >
             <UploadArea
-              title={t('operation.upload.title', { format: format.toUpperCase() })}
-              subtitle={t('operation.upload.subtitle', { format: format.toUpperCase() })}
-              buttonText={t('operation.upload.selectFiles', { format: format.toUpperCase() })}
+              title={t('operation.upload.title', {format: format.toUpperCase()})}
+              subtitle={t('operation.upload.subtitle', {format: format.toUpperCase()})}
+              buttonText={t('operation.upload.selectFiles', {format: format.toUpperCase()})}
               acceptTypes={`image/${format}`}
               onFileSelect={handleFileSelect}
               accentColor="blue"
@@ -267,8 +269,8 @@ export default function SingleFileCompressor({
             className="card-glass p-6 sm:p-8"
           >
             <div className="space-y-6">
-            {/* 模式切换�?*/}
-            {/* 高级设置开关 */}
+              {/* 模式切换�?*/}
+              {/* 高级设置开关 */}
 
             {/* 文件信息 */}
             <FileInfoCard

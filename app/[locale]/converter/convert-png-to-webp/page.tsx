@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
-import { SupportedLanguage } from '@/types/i18n';
-import ConvertPngToWebpClient from './ConvertPngToWebpClient';
+import {Metadata} from 'next';
+import {SupportedLanguage} from '@/types/i18n';
+import ModernConverterLayout, {getConverterStaticProps} from "@/components/pages/ModernConverterLayout";
 
 interface ConvertPngToWebpPageProps {
   params: {
@@ -8,18 +8,24 @@ interface ConvertPngToWebpPageProps {
   };
 }
 
-export async function generateMetadata({ params }: ConvertPngToWebpPageProps): Promise<Metadata> {
-  const { locale } = params;
-  
-  return {
-    title: 'PNG to WebP Converter - Free Online Image Format Converter',
-    description: 'Convert PNG to WebP online for free! Superior compression and modern web optimization. Fast, secure, and completely private conversion.',
-    keywords: 'PNG to WebP, convert PNG, image converter, free online converter, WebP converter'
-  };
+const format = 'png'
+const targetFormat = 'webp'
+
+export async function generateMetadata({params}: any): Promise<Metadata> {
+  const {locale} = params;
+  return await getConverterStaticProps({
+    params,
+    format,
+    targetFormat
+  })
 }
 
-export default function ConvertPngToWebpPage({ params }: ConvertPngToWebpPageProps) {
+export default function ConvertPage({params}: any) {
   return (
-    <ConvertPngToWebpClient locale={params.locale} />
+    <ModernConverterLayout
+      locale={params.locale}
+      format={format}
+      targetFormat={targetFormat}
+    />
   );
 }

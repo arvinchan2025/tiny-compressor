@@ -1,25 +1,30 @@
-import { Metadata } from 'next';
-import { SupportedLanguage } from '@/types/i18n';
-import ConvertJpgToAvifClient from './ConvertJpgToAvifClient';
+import {Metadata} from 'next';
+import {SupportedLanguage} from '@/types/i18n';
+import ModernConverterLayout, {getConverterStaticProps} from "@/components/pages/ModernConverterLayout";
 
 interface ConvertJpgToAvifPageProps {
   params: {
     locale: SupportedLanguage;
   };
 }
+const format = 'jpg'
+const targetFormat = 'avif'
 
-export async function generateMetadata({ params }: ConvertJpgToAvifPageProps): Promise<Metadata> {
-  const { locale } = params;
-  
-  return {
-    title: 'JPG to AVIF Converter - Free Online Image Format Converter',
-    description: 'Convert JPG to AVIF online for free! Next-generation compression technology with superior quality. Fast, secure, and completely private conversion.',
-    keywords: 'JPG to AVIF, convert JPG, image converter, free online converter, AVIF converter'
-  };
+export async function generateMetadata({params}: any): Promise<Metadata> {
+  const {locale} = params;
+  return await getConverterStaticProps({
+    params,
+    format,
+    targetFormat
+  })
 }
 
-export default function ConvertJpgToAvifPage({ params }: ConvertJpgToAvifPageProps) {
+export default function ConvertPage({params}: any) {
   return (
-    <ConvertJpgToAvifClient locale={params.locale} />
+    <ModernConverterLayout
+      locale={params.locale}
+      format={format}
+      targetFormat={targetFormat}
+    />
   );
 }

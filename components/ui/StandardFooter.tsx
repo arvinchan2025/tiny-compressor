@@ -1,57 +1,58 @@
-'use client';
+// 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Locale } from '@/lib/i18n';
-import { useTranslation } from '@/hooks/useTranslation';
+import {getLocalizedPath, Locale} from '@/lib/i18n';
+// import { useTranslation } from '@/hooks/useTranslation';
 import StandardContainer from './StandardContainer';
+import {createTranslator} from "@/lib/i18n/ssr-optimization";
 
 interface StandardFooterProps {
   locale: Locale;
 }
 
-export default function StandardFooter({ locale }: StandardFooterProps) {
+export default async function StandardFooter(props: any) {
+  const {translations, currentLocale} = props
   const currentYear = new Date().getFullYear();
-  const currentLocale = locale ?? 'en';
-  const { t } = useTranslation('footer', currentLocale);
+  const {t} = createTranslator(translations)
+  // const { t } = useTranslation('footer', currentLocale);
 
   const quickLinks = [
     { 
-      name: t('links.home'), 
-      path: currentLocale === 'en' ? '/' : `/${currentLocale}`,
+      name: t('links.home'),
+      path: getLocalizedPath('/', currentLocale),
       icon: 'home'
     },
     { 
-      name: t('links.compressor'), 
-      path: currentLocale === 'en' ? '/compressor' : `/${currentLocale}/compressor`,
+      name: t('links.compressor'),
+      path: getLocalizedPath('/compressor', currentLocale),
       icon: 'compress'
     },
     { 
-      name: t('links.converter'), 
-      path: currentLocale === 'en' ? '/converter' : `/${currentLocale}/converter`,
+      name: t('links.converter'),
+      path: getLocalizedPath('/converter', currentLocale),
       icon: 'convert'
     }
   ];
 
   const formatLinks = [
     { 
-      name: t('formats.jpeg'), 
-      path: currentLocale === 'en' ? '/compressor/compress-jpeg' : `/${currentLocale}/compressor/compress-jpeg`,
+      name: t('formats.jpeg'),
+      path: getLocalizedPath('/compressor/compress-jpeg', currentLocale),
       icon: 'jpeg'
     },
     { 
-      name: t('formats.webp'), 
-      path: currentLocale === 'en' ? '/compressor/compress-webp' : `/${currentLocale}/compressor/compress-webp`,
+      name: t('formats.webp'),
+      path: getLocalizedPath('/compressor/compress-webp', currentLocale),
       icon: 'webp'
     },
     { 
-      name: t('formats.avif'), 
-      path: currentLocale === 'en' ? '/compressor/compress-avif' : `/${currentLocale}/compressor/compress-avif`,
+      name: t('formats.avif'),
+      path: getLocalizedPath('/compressor/compress-avif', currentLocale),
       icon: 'avif'
     },
     { 
-      name: t('formats.png'), 
-      path: currentLocale === 'en' ? '/compressor/compress-png' : `/${currentLocale}/compressor/compress-png`,
+      name: t('formats.png'),
+      path: getLocalizedPath('/compressor/compress-png', currentLocale),
       icon: 'png'
     }
   ];
@@ -59,12 +60,12 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
   const legalLinks = [
     { 
       name: t('legal.privacy'), 
-      path: currentLocale === 'en' ? '/privacy' : `/${currentLocale}/privacy`,
+      path: getLocalizedPath('/privacy', currentLocale),
       icon: 'privacy'
     },
     { 
       name: t('legal.terms'), 
-      path: currentLocale === 'en' ? '/terms' : `/${currentLocale}/terms`,
+      path: getLocalizedPath('/terms', currentLocale),
       icon: 'terms'
     }
   ];
@@ -75,80 +76,59 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
         <div className="py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* 品牌信息 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+            <div
               className="lg:col-span-1"
             >
               <h3 className="text-xl font-bold mb-4 text-white">{t('brand.name')}</h3>
               <p className="text-gray-400 dark:text-gray-500 mb-4">{t('brand.description')}</p>
               <div className="flex space-x-4">
-                <motion.a
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
+                <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="duration-200 hover:scale-110 active:scale-90 text-gray-400 hover:text-white transition-colors"
                 >
                   <span className="sr-only">{t('social.twitter')}</span>
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
                   </svg>
-                </motion.a>
-                <motion.a
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
+                </a>
+                <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="duration-200 hover:scale-110 active:scale-90 text-gray-400 hover:text-white transition-colors"
                 >
                   <span className="sr-only">{t('social.github')}</span>
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
                   </svg>
-                </motion.a>
+                </a>
               </div>
-            </motion.div>
+            </div>
 
             {/* 快速链接 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
+            <div>
               <h3 className="text-lg font-semibold mb-4 text-white">{t('sections.quickLinks')}</h3>
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
-                  <motion.li
+                  <li
                     key={link.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  >
+                   >
                     <a
                       href={link.path}
                       className="text-gray-400 dark:text-gray-500 hover:text-white dark:hover:text-gray-200 transition-colors"
                     >
                       {link.name}
                     </a>
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
 
             {/* 格式链接 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+            <div>
               <h3 className="text-lg font-semibold mb-4 text-white">{t('sections.formats')}</h3>
               <ul className="space-y-2">
                 {formatLinks.map((link, index) => (
-                  <motion.li
+                  <li
                     key={link.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
                   >
                     <a
                       href={link.path}
@@ -156,25 +136,18 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
                     >
                       {link.name}
                     </a>
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
 
             {/* 法律链接 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
+            <div>
               <h3 className="text-lg font-semibold mb-4 text-white">{t('sections.legal')}</h3>
               <ul className="space-y-2">
                 {legalLinks.map((link, index) => (
-                  <motion.li
+                  <li
                     key={link.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
                   >
                     <a
                       href={link.path}
@@ -182,17 +155,14 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
                     >
                       {link.name}
                     </a>
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
           </div>
 
           {/* 底部版权信息 */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+          <div
             className="mt-8 pt-8 border-t border-gray-800 dark:border-gray-900"
           >
             <div className="flex flex-col md:flex-row justify-between items-center">
@@ -203,7 +173,7 @@ export default function StandardFooter({ locale }: StandardFooterProps) {
                 {t('madeWith')} <span className="text-red-500 dark:text-red-400">♥</span> {t('by')} {t('author')}
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </StandardContainer>
     </footer>

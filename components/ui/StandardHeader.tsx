@@ -14,19 +14,21 @@ import Image from 'next/image';
 import { getNavigationPath } from '@/lib/i18n/path-utils';
 import PricingView from "@/components/PricingView";
 import AccountView from "@/components/AccountView";
+import {createTranslator} from "@/lib/i18n/ssr-optimization";
 
 interface StandardHeaderProps {
   currentLocale: Locale;
-  onLanguageChange: (locale: string) => void;
+  // onLanguageChange: (locale: string) => void;
 }
 
 export default function StandardHeader({ 
-  currentLocale, 
-  onLanguageChange 
-}: StandardHeaderProps) {
+  translations,
+  currentLocale,
+  // onLanguageChange
+}: any) {
   const router = useRouter();
   const pathname = usePathname();
-  const { t, isLoading: translationLoading } = useTranslation('common/navigation', currentLocale);
+  const {t} = createTranslator(translations)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // 页面状态检测
@@ -48,19 +50,19 @@ export default function StandardHeader({
 
   const navigationItems = [
     {
-      name: translationLoading ? 'Home' : t('nav.home'),
+      name: t('nav.home'),
       path: '/',
       isActive: isHomePage,
       icon: 'home'
     },
     {
-      name: translationLoading ? 'Compressor' : t('nav.compressor'),
+      name: t('nav.compressor'),
       path: '/compressor',
       isActive: isCompressorPage,
       icon: 'compress'
     },
     {
-      name: translationLoading ? 'Converter' : t('nav.converter'),
+      name: t('nav.converter'),
       path: '/converter',
       isActive: isConverterPage,
       icon: 'convert'
@@ -85,13 +87,13 @@ export default function StandardHeader({
             <div className="relative w-8 h-8">
               <Image
                 src="/logo.svg"
-                alt={translationLoading ? 'TinyCompressor' : t('brand.name')}
+                alt={'TinyCompressor'}
                 fill
                 className="object-contain"
               />
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-gray-100">
-              {translationLoading ? 'TinyCompressor' : t('brand.name')}
+              {'TinyCompressor'}
             </span>
           </div>
 

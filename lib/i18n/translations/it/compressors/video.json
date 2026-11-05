@@ -22,7 +22,7 @@
   },
   "features": {
     "title": "Funzionalità Potenti",
-    "subtitle": "Tutto ciò di cui hai bisogno per la compressione video",
+    "description": "Tutto ciò di cui hai bisogno per la compressione video",
     "items": [
       {
         "icon": "zap",
@@ -58,7 +58,7 @@
   },
   "technicalPrinciples": {
     "title": "Come Funziona la Compressione Video",
-    "subtitle": "Comprendere la tecnologia dietro la compressione video",
+    "description": "Comprendere la tecnologia dietro la compressione video",
     "items": [
       {
         "icon": "cpu",
@@ -94,7 +94,7 @@
   },
   "useCases": {
     "title": "Perfetto Per",
-    "subtitle": "Scenari comuni in cui la compressione video aiuta",
+    "description": "Scenari comuni in cui la compressione video aiuta",
     "items": [
       {
         "icon": "share-2",
@@ -130,7 +130,7 @@
   },
   "faq": {
     "title": "Domande Frequenti",
-    "subtitle": "Domande comuni sulla compressione video",
+    "description": "Domande comuni sulla compressione video",
     "items": [
       {
         "question": "Quanto posso comprimere un video?",

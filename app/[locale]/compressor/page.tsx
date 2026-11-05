@@ -2,15 +2,21 @@ import { SupportedLanguage } from '@/types/i18n';
 import UnifiedClient from '@/components/UnifiedClient';
 import { Metadata } from 'next';
 import { SUPPORTED_LANGUAGES } from '@/lib/language-config';
+import {loadServerTranslations} from "@/lib/i18n/ssr-optimization";
+import {Locale} from "@/lib/i18n";
+import UnifiedNavigation from "@/components/navigation/UnifiedNavigation";
+import React from "react";
+import ModernCompressorNavigation from "@/components/compressor/ModernCompressorNavigation";
 
 interface CompressorPageProps {
   params: {
-    locale: string;
+    locale: Locale;
   };
 }
 
 export async function generateMetadata({ params }: CompressorPageProps): Promise<Metadata> {
   const { locale } = params;
+  const translations = await loadServerTranslations('', locale)
   const validLocale: SupportedLanguage = SUPPORTED_LANGUAGES.includes(locale as SupportedLanguage)
     ? (locale as SupportedLanguage)
     : 'en';
@@ -102,10 +108,11 @@ export default async function CompressorPage({ params }: CompressorPageProps) {
     : 'en';
 
   return (
-    <UnifiedClient 
-      locale={validLocale} 
-      pageType="navigation"
-      sourceFormat="compressor"
-    />
+    <ModernCompressorNavigation locale={locale} />
+    // <UnifiedClient
+    //   locale={validLocale}
+    //   pageType="navigation"
+    //   sourceFormat="compressor"
+    // />
   );
 }

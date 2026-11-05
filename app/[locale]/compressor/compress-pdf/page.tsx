@@ -1,6 +1,7 @@
-import { Metadata } from 'next';
-import { SupportedLanguage } from '@/types/i18n';
-import PdfCompressorPage from '@/components/pages/PdfCompressorPage';
+import {Metadata} from 'next';
+import {SupportedLanguage} from '@/types/i18n';
+import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/pages/ModernCompressorLayout";
+import {PDFOperationSection} from "@/components/pages/sections/PDFOperationSection";
 
 // 强制动态渲染
 export const dynamic = 'force-dynamic';
@@ -12,28 +13,18 @@ interface CompressPdfPageProps {
   };
 }
 
-export async function generateMetadata({ params }: CompressPdfPageProps): Promise<Metadata> {
-  const { locale } = params;
-  
-  return {
-    title: 'PDF Compressor - Compress PDF Files Online Free',
-    description: 'Compress PDF files online with our free PDF compressor. Reduce PDF file size while maintaining quality. Fast, secure, and completely private compression.',
-    keywords: 'PDF compressor, compress PDF, PDF compression, free online tool, PDF optimizer, reduce PDF size',
-    openGraph: {
-      title: 'PDF Compressor - Compress PDF Files Online Free',
-      description: 'Compress PDF files online with our free PDF compressor. Reduce PDF file size while maintaining quality. Fast, secure, and completely private compression.',
-      type: 'website',
-      locale: locale,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'PDF Compressor - Compress PDF Files Online Free',
-      description: 'Compress PDF files online with our free PDF compressor. Reduce PDF file size while maintaining quality. Fast, secure, and completely private compression.',
-    },
-  };
+const format = 'pdf'
+
+export async function generateMetadata(props: any): Promise<Metadata> {
+  return await getCompressorStaticProps({...props, format})
 }
 
-export default function CompressPdfPage({ params }: CompressPdfPageProps) {
-  return <PdfCompressorPage locale={params.locale} />;
+export default function CompressPdfPage({params}: CompressPdfPageProps) {
+  return <ModernCompressorLayout
+    locale={params.locale}
+    format={format}
+    maxFiles={10}
+    operation={PDFOperationSection}
+  />;
 }
 

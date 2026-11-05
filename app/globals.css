@@ -1,9 +1,9 @@
+/* 移动端性能优化 */
+@import '@/styles/mobile-optimization.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* 移动端性能优化 */
-@import '../styles/mobile-optimization.css';
 
 @layer base {
   html {

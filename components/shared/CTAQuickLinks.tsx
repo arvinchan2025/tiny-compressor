@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -9,7 +9,8 @@ interface CTAQuickLinksProps {
   items: Array<{
     title: string;
     description: string;
-    url: string;
+    url?: string;
+    path?: string;
     icon?: string;
   }>;
   className?: string;
@@ -49,7 +50,7 @@ export default function CTAQuickLinks({
         
         <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {displayItems.map((item, index) => (
-            <Link key={index} href={item.url} className="group block h-full">
+            <Link key={index} href={(item.url ?? item.path ?? '/')} className="group block h-full">
               <div className="relative bg-white/20 backdrop-blur-xl border border-white/30 rounded-xl p-4 shadow-2xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 overflow-hidden h-full flex flex-col">
                 {/* 强制卡片背景 */}
                 <div className="absolute inset-0 bg-white/20 rounded-xl"></div>

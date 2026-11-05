@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
-import { SupportedLanguage } from '@/types/i18n';
-import CompressGifClient from './CompressGifClient';
+import {Metadata} from 'next';
+import {SupportedLanguage} from '@/types/i18n';
+import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/pages/ModernCompressorLayout";
 // 强制动态渲染
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -12,24 +12,18 @@ interface CompressGifPageProps {
     locale: SupportedLanguage;
   };
 }
-
-export async function generateMetadata({ params }: CompressGifPageProps): Promise<Metadata> {
-  const { locale } = params;
-  
-  return {
-    title: 'GIF Compressor - Free Online Image Compressor',
-    description: 'Compress GIF images and animations online for free! Advanced optimization for smaller file sizes.',
-    keywords: 'GIF compressor, compress GIF, image compressor, free online compressor, GIF optimizer',
-    robots: {
-      index: true,
-      follow: true,
-    },
-  };
+const format = 'gif'
+export async function generateMetadata(props: any): Promise<Metadata> {
+  return await getCompressorStaticProps({...props, format})
 }
 
-export default function CompressGifPage({ params }: CompressGifPageProps) {
-  const { locale } = params;
-  
-  return <CompressGifClient locale={locale} />;
+export default function CompressPage({params}: any) {
+  return (
+    // <CompressPngClient locale={params.locale} />
+    <ModernCompressorLayout
+      locale={params.locale}
+      format={format}
+      maxFiles={10}
+    />
+  );
 }
-

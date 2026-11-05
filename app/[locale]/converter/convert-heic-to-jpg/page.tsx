@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
 import ConvertHeicToJpgClient from './ConvertHeicToJpgClient';
+import ModernConverterLayout, {getConverterStaticProps} from "@/components/pages/ModernConverterLayout";
 
 interface ConvertHeicToJpgPageProps {
   params: {
@@ -8,18 +9,23 @@ interface ConvertHeicToJpgPageProps {
   };
 }
 
-export async function generateMetadata({ params }: ConvertHeicToJpgPageProps): Promise<Metadata> {
+const format = 'heic'
+const targetFormat = 'jpg'
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { locale } = params;
-  
-  return {
-    title: 'HEIC to JPG Converter - Free Online Image Format Converter',
-    description: 'Convert HEIC to JPG online for free! Improve compatibility with all devices and platforms. Fast, secure, and completely private conversion.',
-    keywords: 'HEIC to JPG, convert HEIC, image converter, free online converter, HEIC converter'
-  };
+  return await getConverterStaticProps({
+    params,
+    format,
+    targetFormat
+  })
 }
 
-export default function ConvertHeicToJpgPage({ params }: ConvertHeicToJpgPageProps) {
+export default function ConvertPage({ params }: any) {
   return (
-    <ConvertHeicToJpgClient locale={params.locale} />
+    <ModernConverterLayout
+      locale={params.locale}
+      format={format}
+      targetFormat={targetFormat}
+    />
   );
 }
