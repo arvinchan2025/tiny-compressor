@@ -21,7 +21,7 @@ export async function getConverterStaticProps({params, format, targetFormat}: an
     category,
     format,
     targetFormat,
-    pathname: `/converter/${format}-to-${targetFormat}`
+    pathname: `/converter/convert-${format}-to-${targetFormat}`
   })
 }
 

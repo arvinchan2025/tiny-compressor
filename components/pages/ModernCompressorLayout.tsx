@@ -20,7 +20,7 @@ export async function getCompressorStaticProps({params, format}: any) {
     params,
     category,
     format,
-    pathname: `/compressor/${format}`
+    pathname: `/compressor/compress-${format}`
   })
 }
 
@@ -43,14 +43,12 @@ interface ModernCompressorPageProps {
   maxFiles: number;
 }
 
-export default async function ModernCompressorLayout({locale, format, maxFiles, operation}: any) {
+export default async function ModernCompressorLayout(props: any) {
   return (
     <ModernPageLayout
-      locale={locale}
-      category={category}
-      format={format}
-      maxFiles={maxFiles}
-      operation={operation ?? CompressorOperationSection}
+      category={'compressors'}
+      operation={CompressorOperationSection}
+      {...props}
     />
   );
 }
