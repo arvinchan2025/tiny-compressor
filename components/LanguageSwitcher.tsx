@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Locale } from '@/lib/i18n';
+import React, {useState, useRef, useEffect} from 'react';
+import {Locale} from '@/lib/i18n';
 import {usePathname, useRouter} from "next/navigation";
 import {SUPPORTED_LOCALES} from "@/lib/language-config";
 
@@ -11,23 +11,23 @@ interface LanguageSwitcherProps {
 }
 
 const languages = [
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'zh', name: '中文', flag: '🇨🇳' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-  { code: 'ja', name: '日本語', flag: '🇯🇵' },
-  { code: 'ko', name: '한국어', flag: '🇰🇷' },
-  { code: 'pt', name: 'Português', flag: '🇵🇹' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-  { code: 'ar', name: 'العربية', flag: '🇸🇦' }
+  {code: 'en', name: 'English', flag: '🇺🇸'},
+  {code: 'zh', name: '中文', flag: '🇨🇳'},
+  {code: 'es', name: 'Español', flag: '🇪🇸'},
+  {code: 'fr', name: 'Français', flag: '🇫🇷'},
+  {code: 'de', name: 'Deutsch', flag: '🇩🇪'},
+  {code: 'it', name: 'Italiano', flag: '🇮🇹'},
+  {code: 'ja', name: '日本語', flag: '🇯🇵'},
+  {code: 'ko', name: '한국어', flag: '🇰🇷'},
+  {code: 'pt', name: 'Português', flag: '🇵🇹'},
+  {code: 'ru', name: 'Русский', flag: '🇷🇺'},
+  {code: 'ar', name: 'العربية', flag: '🇸🇦'}
 ];
 
-export default function LanguageSwitcher({ 
-  currentLocale, 
-  // onLanguageChange
-}: LanguageSwitcherProps) {
+export default function LanguageSwitcher({
+                                           currentLocale,
+                                           // onLanguageChange
+                                         }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -45,7 +45,7 @@ export default function LanguageSwitcher({
 
     // 保存用户语言偏好
     document.cookie = [
-      `preferred-locale=${nextLocale}`,
+      `NEXT_LOCALE=${nextLocale}`,
       'Path=/',
       'Max-Age=31536000',
       'SameSite=Lax',
@@ -64,7 +64,11 @@ export default function LanguageSwitcher({
     // 英文不使用 URL 前缀
     const prefix = nextLocale === 'en' ? [] : [nextLocale];
 
-    const nextPath = '/' + [...prefix, ...segments].join('/');
+    // 英文使用根路径
+    const nextPath =
+      nextLocale === 'en'
+        ? `/${segments.join('/')}`
+        : `/${nextLocale}/${segments.join('/')}`;
 
     router.push(
       nextPath + window.location.search + window.location.hash
@@ -104,12 +108,13 @@ export default function LanguageSwitcher({
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
         </svg>
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-50">
+        <div
+          className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-50">
           <div className="py-1">
             {languages.map((language) => (
               <button
@@ -131,7 +136,7 @@ export default function LanguageSwitcher({
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/>
                   </svg>
                 )}
               </button>
