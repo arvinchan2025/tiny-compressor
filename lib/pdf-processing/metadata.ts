@@ -1,7 +1,6 @@
-import { PDFDict, PDFName } from 'pdf-lib';
+import { PDFDict, PDFName, PDFDocument, PDFPage } from 'pdf-lib';
 
 import { loadPdfLib } from './pdf-loader';
-import type { PDFDocument, PDFPage } from 'pdf-lib';
 import type { PdfMetadata } from './types';
 
 const EMPTY_METADATA: PdfMetadata = {

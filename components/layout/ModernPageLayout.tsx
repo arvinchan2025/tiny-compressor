@@ -11,7 +11,6 @@
 import React from 'react';
 import StandardPageLayout from '@/components/layout/StandardPageLayout';
 import {
-  CompressorOperationSection,
   CTASection,
   FAQSection,
   FeaturesSection,
@@ -19,6 +18,7 @@ import {
   TechnicalSection,
   UseCasesSection
 } from "components/sections";
+import {CompressorOperationSection} from "@/components/operations"
 import {createTranslator, loadServerTranslations} from "@/lib/i18n/ssr-optimization";
 import {getLocalizedPath, supportedLocales} from "@/lib/i18n";
 
