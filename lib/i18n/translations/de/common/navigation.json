@@ -16,6 +16,11 @@
     "converter": "Konverter"
   },
   "compressor": {
+    "seo": {
+      "title": "Bildkompressor - Kostenloses Online-Komprimierungstool | TinyCompressor",
+      "description": "Bilder kostenlos online komprimieren! Reduzieren Sie JPG, PNG, WebP, AVIF, GIF Dateigrößen um bis zu 90% bei gleichbleibender Qualität. Intelligente Komprimierung mit Stapelverarbeitung. Keine Registrierung erforderlich.",
+      "keywords": "Bildkompressor, Bilder komprimieren, Dateigröße reduzieren, JPG-Komprimierung, PNG-Komprimierung, WebP-Komprimierung, AVIF-Komprimierung, GIF-Komprimierung, Stapelkomprimierung, Online-Bildoptimierer, kostenloses Bildkomprimierungstool"
+    },
     "title": "Bildkompressor",
     "subtitle": "Reduzieren Sie die Bilddateigröße um bis zu 90% bei Qualitätserhaltung. Schnell, sicher und völlig kostenlos.",
     "description": "Professionelle Bildkomprimierungs-Tools, die Ihnen helfen, Ihre Bilder für Web, E-Mail und Speicher zu optimieren. Unterstützung für alle wichtigen Bildformate mit fortschrittlichen Komprimierungsalgorithmen.",
@@ -198,6 +203,11 @@
     }
   },
   "converter": {
+    "seo": {
+      "title": "Bildkonverter - Kostenloser Online-Format-Konverter | TinyCompressor",
+      "description": "Konvertieren Sie Bilder zwischen JPG, PNG, WebP, AVIF, GIF, HEIC Formaten sofort. Hochwertige Formatkonvertierung mit Stapelverarbeitung. Kostenloses Online-Bildkonvertierungstool. Keine Registrierung erforderlich.",
+      "keywords": "Bildkonverter, Bilder konvertieren, JPG zu PNG, PNG zu JPG, WebP-Konverter, AVIF-Konverter, GIF-Konverter, HEIC-Konverter, Bildformat-Konverter, Online-Bildkonverter, kostenloses Bildkonvertierungstool, Stapel-Bildkonvertierung"
+    },
     "title": "Bildkonverter",
     "subtitle": "Konvertieren Sie Bilder zwischen verschiedenen Formaten mit hoher Qualität und schneller Verarbeitung.",
     "description": "Professionelle Bildkonvertierungs-Tools, die Ihre Bilder zwischen beliebten Formaten umwandeln. Unterstützung für PNG, JPEG, WebP, AVIF und HEIC mit fortschrittlicher Konvertierungstechnologie.",

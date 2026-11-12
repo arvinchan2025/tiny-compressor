@@ -190,8 +190,8 @@ export async function compressImage(
  * PNG 压缩 - 使用 browser-image-compression 或 Canvas API
  */
 async function compressPng(imageFile: ImageFile, options: CompressionOptions): Promise<CompressionResult> {
-  const { pngOptions = {} } = options;
-  const { optimizationLevel = 9 } = pngOptions;
+  // const { pngOptions = {} } = options;
+  const { optimizationLevel = 9 } = options;
   
   // 验证 imageFile.data 是否有效
   if (!imageFile.data || (!(imageFile.data instanceof File) && !(imageFile.data instanceof Blob))) {

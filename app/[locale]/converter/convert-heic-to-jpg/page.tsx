@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { SupportedLanguage } from '@/types/i18n';
 import ConvertHeicToJpgClient from './ConvertHeicToJpgClient';
-import ModernConverterLayout, {getConverterStaticProps} from "@/components/pages/ModernConverterLayout";
+import ModernConverterLayout, {getConverterStaticProps} from "@/components/converter/ModernConverterLayout";
 
 interface ConvertHeicToJpgPageProps {
   params: {

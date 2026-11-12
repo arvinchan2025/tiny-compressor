@@ -16,6 +16,11 @@
     "converter": "Converter"
   },
   "compressor": {
+    "seo": {
+      "title": "Image Compressor - Free Online Compression Tool | TinyCompressor",
+      "description": "Compress images online for free! Reduce JPG, PNG, WebP, AVIF, GIF file sizes by up to 90% while maintaining quality. Smart compression with batch processing. No registration required.",
+      "keywords": "image compressor, compress images, reduce file size, JPG compression, PNG compression, WebP compression, AVIF compression, GIF compression, batch compression, online image optimizer, free image compression tool"
+    },
     "title": "Image Compressor",
     "subtitle": "Reduce image file sizes by up to 90% while maintaining quality. Fast, secure, and completely free.",
     "description": "Professional image compression tools that help you optimize your images for web, email, and storage. Support for all major image formats with advanced compression algorithms.",
@@ -169,6 +174,11 @@
     }
   },
   "converter": {
+    "seo": {
+      "title": "Image Converter - Free Online Format Converter | TinyCompressor",
+      "description": "Convert images between JPG, PNG, WebP, AVIF, GIF, HEIC formats instantly. High-quality format conversion with batch processing. Free online image converter tool. No registration required.",
+      "keywords": "image converter, convert images, JPG to PNG, PNG to JPG, WebP converter, AVIF converter, GIF converter, HEIC converter, image format converter, online image converter, free image converter tool, batch image conversion"
+    },
     "title": "Image Converter",
     "subtitle": "Convert images between different formats with high quality and fast processing.",
     "description": "Professional image conversion tools that transform your images between popular formats. Support for PNG, JPEG, WebP, AVIF, and HEIC with advanced conversion technology.",

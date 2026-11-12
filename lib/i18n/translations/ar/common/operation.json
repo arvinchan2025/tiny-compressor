@@ -6,7 +6,7 @@
     },
     "upload": {
       "title": "اسحب وأفلت ملفك هنا أو انقر للاختيار",
-      "subtitle": "يدعم تنسيق {format}، الحد الأقصى 50 ميجابايت",
+      "subtitle": "يدعم تنسيق {{format}}، الحد الأقصى 50 ميجابايت",
       "selectFiles": "اختر الملف"
     },
     "preview": {
@@ -22,7 +22,7 @@
       "downloadAll": "تحميل الكل"
     },
     "status": {
-      "processing": "جاري المعالجة... {progress}%"
+      "processing": "جاري المعالجة... {{progress}}%"
     },
     "files": {
       "title": "الملفات المحددة",
@@ -82,7 +82,18 @@
       "successDescription": "تم تحويل صورتك وتحسينها. جاهزة للتحميل!",
       "download": "تحميل",
       "reset": "تحويل المزيد",
-      "sizeInfo": "الأصلي: {original} ميجابايت → المحول: {converted} ميجابايت ({change}% {changeType})"
+      "sizeInfo": "الأصلي: {original} ميجابايت → المحول: {converted} ميجابايت ({change}% {changeType})",
+      "title": "اكتمل الضغط! 🎉",
+      "compressed": "مضغوط",
+      "saved": "محفوظ",
+      "compressionRatio": "نسبة الضغط",
+      "sizeReduction": "تقليل الحجم",
+      "sizeIncrease": "زيادة الحجم",
+      "greatJob": "عمل رائع!",
+      "considerAdjusting": "فكر في ضبط الإعدادات",
+      "savedSpace": "تم توفير {amount} كيلوبايت",
+      "compressMore": "ضغط المزيد",
+      "sizeComparison": "مقارنة الحجم"
     },
     "errors": {
       "unknownError": "حدث خطأ غير معروف",

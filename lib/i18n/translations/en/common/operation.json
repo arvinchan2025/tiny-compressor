@@ -1,96 +1,118 @@
 {
   "operation": {
     "modes": {
-    "simple": "Simple",
-    "advanced": "Advanced"
-  },
-  "upload": {
-    "title": "Drag and drop your file here or click to select",
-    "subtitle": "Support {format} format, max 50MB",
-    "selectFiles": "Select File"
-  },
-  "preview": {
-    "formatConversion": "Format Conversion",
-    "currentFormat": "Current format",
-    "targetFormat": "Target format"
-  },
-  "actions": {
-    "download": "Download",
-    "reset": "Reset",
-    "cancel": "Cancel",
-    "convert": "Convert",
-    "downloadAll": "Download All"
-  },
-  "status": {
-    "processing": "Processing... {progress}%"
-  },
-  "files": {
-    "title": "Selected Files",
-    "name": "Name",
-    "dimensions": "Dimensions",
-    "sizeInfo": "Size",
-    "count": "{count} files selected",
-    "reset": "Reset All",
-    "remove": "Remove"
-  },
-  "stats": {
-    "qualityUsed": "Quality Used",
-    "processingTime": "Processing Time"
-  },
-  "progress": {
-    "label": "Conversion Progress",
-    "status": "Processing... {progress}% complete"
-  },
-  "converting": {
-    "message": "Converting your image...",
-    "progress": "Converting... {progress}%"
-  },
-  "convert": {
-    "start": "Convert",
-    "simpleStart": "Quick Convert",
-    "advancedStart": "Convert (Advanced)",
-    "processing": "Converting... {progress}%"
-  },
-  "settings": {
-    "title": "Conversion Settings",
-    "simple": "Simple",
-    "advanced": "Advanced",
-    "simpleTitle": "Quick Settings",
-    "advancedTitle": "Advanced Settings",
-    "quality": "Quality",
-    "metadata": "Preserve Metadata",
-    "optimize": "Optimize for Web"
-  },
-  "download": {
-    "downloadAll": "Download All Files"
-  },
-  "results": {
-    "subtitle": "Your image has been successfully optimized",
-    "count": "{count} files converted",
-    "original": "Original",
-    "originalFormat": "Original Format",
-    "newFormat": "New Format",
-    "fileSize": "File Size",
-    "converted": "Converted",
-    "convertedFormat": "{format} Format",
-    "sizeChange": "Size Change",
-    "time": "Time",
-    "format": "Format",
-    "smaller": "Smaller",
-    "larger": "Larger",
-    "successMessage": "Conversion successful!",
-    "successDescription": "Your image has been converted and optimized. Ready for download!",
-    "download": "Download",
-    "reset": "Convert More",
-    "sizeInfo": "Original: {original} MB → Converted: {converted} MB ({change}% {changeType})"
-  },
-  "errors": {
-    "unknownError": "Unknown error occurred",
-    "uploadFailed": "File upload failed",
-    "fileTooLarge": "File {fileName} is too large. Please select a file smaller than 50MB",
-    "unsupportedFormat": "Unsupported file format: {fileName}",
-    "conversionFailed": "Conversion failed",
-    "processingFailed": "Failed to process {fileName}"
-  }
+      "simple": "Simple",
+      "advanced": "Advanced"
+    },
+    "upload": {
+      "title": "Drag and drop your file here or click to select",
+      "subtitle": "Support {{format}} format, max 50MB",
+      "selectFiles": "Select File"
+    },
+    "preview": {
+      "formatConversion": "Format Conversion",
+      "currentFormat": "Current format",
+      "targetFormat": "Target format"
+    },
+    "actions": {
+      "download": "Download",
+      "reset": "Reset",
+      "cancel": "Cancel",
+      "convert": "Convert",
+      "compress": "Compress Now",
+      "downloadAll": "Download All"
+    },
+    "status": {
+      "processing": "Processing... {{progress}}%"
+    },
+    "files": {
+      "title": "Selected Files",
+      "name": "Name",
+      "dimensions": "Dimensions",
+      "sizeInfo": "Size",
+      "count": "{{count}} files selected",
+      "reset": "Reset All",
+      "remove": "Remove"
+    },
+    "stats": {
+      "qualityUsed": "Quality Used",
+      "processingTime": "Processing Time"
+    },
+    "progress": {
+      "label": "Conversion Progress",
+      "status": "Processing... {{progress}}% complete"
+    },
+    "converting": {
+      "message": "Converting your image...",
+      "progress": "Converting... {{progress}}%"
+    },
+    "convert": {
+      "start": "Convert",
+      "simpleStart": "Quick Convert",
+      "advancedStart": "Convert (Advanced)",
+      "processing": "Converting... {{progress}}%"
+    },
+    "settings": {
+      "title": "Conversion Settings",
+      "simple": "Simple",
+      "advanced": "Advanced",
+      "simpleTitle": "Quick Settings",
+      "advancedTitle": "Advanced Settings",
+      "quality": "Quality",
+      "qualityLow": "Low (Smaller file)",
+      "qualityMedium": "Medium",
+      "qualityHigh": "High (Best quality)",
+      "keepMetadata": "Keep Metadata",
+      "metadataDesc": "Preserve EXIF, GPS, and camera information",
+      "progressive": "Progressive JPEG",
+      "progressiveDesc": "Load images progressively for better web performance"
+    },
+    "download": {
+      "downloadAll": "Download All Files"
+    },
+    "results": {
+      "title": "Compression Complete! 🎉",
+      "subtitle": "Your image has been successfully optimized",
+      "count": "{{count}} files converted",
+      "original": "Original",
+      "originalFormat": "Original Format",
+      "newFormat": "New Format",
+      "fileSize": "File Size",
+      "converted": "Converted",
+      "convertedFormat": "{{format}} Format",
+      "sizeChange": "Size Change",
+      "time": "Time",
+      "format": "Format",
+      "smaller": "Smaller",
+      "larger": "Larger",
+      "successMessage": "Conversion successful!",
+      "successDescription": "Your image has been converted and optimized. Ready for download!",
+      "download": "Download",
+      "reset": "Convert More",
+      "sizeInfo": "Original: {{original}} MB → Converted: {converted} MB ({{change}}% {{changeType}})",
+      "compressed": "Compressed",
+      "saved": "Saved",
+      "compressionRatio": "Compression Ratio",
+      "sizeReduction": "Size Reduction",
+      "sizeIncrease": "Size Increase",
+      "greatJob": "Great job!",
+      "considerAdjusting": "Consider adjusting settings",
+      "savedSpace": "Saved {amount} KB",
+      "sizeComparison": "Size Comparison",
+      "compressMore": "Compress More"
+    },
+    "errors": {
+      "unknownError": "Unknown error occurred",
+      "uploadFailed": "File upload failed",
+      "fileTooLarge": "File {{fileName}} is too large. Please select a file smaller than 50MB",
+      "unsupportedFormat": "Unsupported file format: {{fileName}}",
+      "conversionFailed": "Conversion failed",
+      "processingFailed": "Failed to process {{fileName}}",
+      "metadataFailed": "Failed to read video metadata. The file may be corrupted",
+      "compressionFailed": "Video compression failed. Please try a different quality setting or file",
+      "loadFailed": "Failed to load FFmpeg. Please refresh the page and try again",
+      "browserNotSupported": "Your browser doesn't support video compression. Please use a modern browser such as Chrome, Edge, or Firefox",
+      "engineNotReady": "Video processing engine is still loading. Please wait..."
+    }
   }
 }

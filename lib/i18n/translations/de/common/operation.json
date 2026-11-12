@@ -6,7 +6,7 @@
     },
     "upload": {
       "title": "Ziehen Sie Ihre Datei hierher oder klicken Sie zum Auswählen",
-      "subtitle": "Unterstützt {format} Format, max. 50MB",
+      "subtitle": "Unterstützt {{format}} Format, max. 50MB",
       "selectFiles": "Datei Auswählen"
     },
     "preview": {
@@ -22,7 +22,7 @@
       "downloadAll": "Alle Herunterladen"
     },
     "status": {
-      "processing": "Verarbeitung... {progress}%"
+      "processing": "Verarbeitung... {{progress}}%"
     },
     "files": {
       "title": "Ausgewählte Dateien",
@@ -39,17 +39,17 @@
     },
     "progress": {
       "label": "Konvertierungsfortschritt",
-      "status": "Verarbeitung... {progress}% abgeschlossen"
+      "status": "Verarbeitung... {{progress}}% abgeschlossen"
     },
     "converting": {
       "message": "Ihr Bild wird konvertiert...",
-      "progress": "Konvertierung... {progress}%"
+      "progress": "Konvertierung... {{progress}}%"
     },
     "convert": {
       "start": "Konvertieren",
       "simpleStart": "Schnell Konvertieren",
       "advancedStart": "Konvertieren (Erweitert)",
-      "processing": "Konvertierung... {progress}%"
+      "processing": "Konvertierung... {{progress}}%"
     },
     "settings": {
       "title": "Konvertierungseinstellungen",
@@ -72,7 +72,7 @@
       "newFormat": "Neues Format",
       "fileSize": "Dateigröße",
       "converted": "Konvertiert",
-      "convertedFormat": "{format} Format",
+      "convertedFormat": "{{format}} Format",
       "sizeChange": "Größenänderung",
       "time": "Zeit",
       "format": "Format",
@@ -82,15 +82,22 @@
       "successDescription": "Ihr Bild wurde konvertiert und optimiert. Bereit zum Herunterladen!",
       "download": "Herunterladen",
       "reset": "Mehr Konvertieren",
-      "sizeInfo": "Original: {original} MB → Konvertiert: {converted} MB ({change}% {changeType})"
+      "sizeInfo": "Original: {{original}} MB → Konvertiert: {{converted}} MB ({{change}}% {{changeType}})"
     },
     "errors": {
       "unknownError": "Unbekannter Fehler aufgetreten",
       "uploadFailed": "Datei-Upload fehlgeschlagen",
-      "fileTooLarge": "Datei {fileName} ist zu groß. Bitte wählen Sie eine Datei kleiner als 50MB",
-      "unsupportedFormat": "Nicht unterstütztes Dateiformat: {fileName}",
+      "fileTooLarge": "Datei {{fileName}} ist zu groß. Bitte wählen Sie eine Datei kleiner als 50MB",
+      "unsupportedFormat": "Nicht unterstütztes Dateiformat: {{fileName}}",
       "conversionFailed": "Konvertierung fehlgeschlagen",
-      "processingFailed": "Fehler beim Verarbeiten von {fileName}"
+      "processingFailed": "Fehler beim Verarbeiten von {{fileName}}",
+      "title": "Fehler",
+      "tip": "💡 Tipp: Stellen Sie sicher, dass Ihre Datei ein gültiges PDF und unter 50MB ist",
+      "metadataFailed": "Fehler beim Lesen der Video-Metadaten. Die Datei könnte beschädigt sein",
+      "compressionFailed": "Videokomprimierung fehlgeschlagen. Bitte versuchen Sie eine andere Qualitätseinstellung oder Datei",
+      "loadFailed": "Fehler beim Laden von FFmpeg. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut",
+      "browserNotSupported": "Ihr Browser unterstützt keine Videokomprimierung. Bitte verwenden Sie einen modernen Browser wie Chrome, Edge oder Firefox",
+      "engineNotReady": "Video-Verarbeitungs-Engine lädt noch. Bitte warten..."
     }
   }
 }

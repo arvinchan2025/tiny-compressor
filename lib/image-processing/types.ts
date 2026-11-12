@@ -3,12 +3,16 @@
  */
 
 export interface CompressionOptions {
-  format: 'png' | 'jpeg' | 'webp' | 'avif' | 'gif';
+  format: 'png' | 'jpeg' | 'webp' | 'avif' | 'gif'|'bmp';
   quality?: number;
   keepMetadata?: boolean;
   progressive?: boolean;
+
   
   // PNG 特定选项
+  lossless?: boolean;
+  optimizationLevel: number;
+
   pngOptions?: {
     quality: number;
     lossless: boolean;
@@ -16,6 +20,8 @@ export interface CompressionOptions {
   };
   
   // JPEG 特定选项
+  optimizeHuffman?: boolean;
+  colorSpace?: 'auto' | 'srgb' | 'ycbcr';
   jpegOptions?: {
     quality: number;
     progressive: boolean;
@@ -24,6 +30,7 @@ export interface CompressionOptions {
   };
   
   // WebP 特定选项
+  method?: number;
   webpOptions?: {
     quality: number;
     lossless: boolean;
@@ -31,6 +38,7 @@ export interface CompressionOptions {
   };
   
   // AVIF 特定选项
+  speed: number;
   avifOptions?: {
     quality: number;
     lossless: boolean;
@@ -39,6 +47,8 @@ export interface CompressionOptions {
   };
   
   // GIF 特定选项
+  optimizeFrames: boolean;
+  colors: number;
   gifOptions?: {
     quality: number;
     lossless: boolean;

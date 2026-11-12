@@ -1,7 +1,7 @@
 import {Metadata} from 'next';
 import {SupportedLanguage} from '@/types/i18n';
-import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/pages/ModernCompressorLayout";
-import {PDFOperationSection} from "@/components/pages/sections/PDFOperationSection";
+import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/compressor/ModernCompressorLayout";
+import {PDFOperationSection} from "@/components/operations/PDFOperationSection";
 
 // 强制动态渲染
 export const dynamic = 'force-dynamic';

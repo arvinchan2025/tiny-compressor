@@ -1,6 +1,6 @@
 import {Metadata} from 'next';
 import {SupportedLanguage} from '@/types/i18n';
-import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/pages/ModernCompressorLayout";
+import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/compressor/ModernCompressorLayout";
 
 // 强制动态渲染
 // export const dynamic = 'force-dynamic';
@@ -20,11 +20,17 @@ export async function generateMetadata({params}: CompressPngPageProps): Promise<
 
 export default function CompressPngPage({params}: CompressPngPageProps) {
   return (
-    // <CompressPngClient locale={params.locale} />
     <ModernCompressorLayout
       locale={params.locale}
       format={format}
-      maxFiles={10}
+      operationProps={{
+        maxFiles: 10,
+        defaultSettings: {
+          quality: 6,
+          lossless: true,
+          optimizationLevel: 9
+        }
+      }}
     />
   );
 }

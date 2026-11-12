@@ -1,6 +1,6 @@
 import {Metadata} from 'next';
 import {SupportedLanguage} from '@/types/i18n';
-import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/pages/ModernCompressorLayout";
+import ModernCompressorLayout, {getCompressorStaticProps} from "@/components/compressor/ModernCompressorLayout";
 
 // 强制动态渲染
 export const dynamic = 'force-dynamic';
@@ -11,7 +11,9 @@ interface CompressAvifPageProps {
     locale: SupportedLanguage;
   };
 }
+
 const format = 'avif'
+
 export async function generateMetadata(props: any): Promise<Metadata> {
   return await getCompressorStaticProps({...props, format})
 }
@@ -22,7 +24,16 @@ export default function CompressPage({params}: any) {
     <ModernCompressorLayout
       locale={params.locale}
       format={format}
-      maxFiles={10}
+      operationProps={{
+        quality: 85,
+        gifOptions: {
+          quality: 85,
+          lossless: false,
+          optimizationLevel: 3,
+          optimizeFrames: true,
+          colors: 256
+        }
+      }}
     />
   );
 }

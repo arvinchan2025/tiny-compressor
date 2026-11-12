@@ -1,107 +1,106 @@
 /**
- * 现代化页面布局组件
- * 统一的页面结构，包含Header、主内容区域和Footer
+ * ModernCompressorPage - 现代化压缩器页面组件
+ *
+ * 这是一个完整的、现代化的压缩器页面组件
+ * 支持所有图像格式的压缩，具有统一的现代化设计
+ * 使用增强的翻译系统，支持懒加载和多语言
  */
 
-'use client';
+// 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { SupportedLanguage } from '@/types/i18n';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import StandardPageLayout from '@/components/layout/StandardPageLayout';
+import {
+  CompressorOperationSection,
+  CTASection,
+  FAQSection,
+  FeaturesSection,
+  HeroSection,
+  TechnicalSection,
+  UseCasesSection
+} from "components/sections";
+import {createTranslator, loadServerTranslations} from "@/lib/i18n/ssr-optimization";
+import {getLocalizedPath, supportedLocales} from "@/lib/i18n";
 
-interface ModernPageLayoutProps {
-  children: React.ReactNode;
-  locale: SupportedLanguage;
-  showHeader: boolean;
-  showFooter: boolean;
+// 懒加载压缩管理器组件 - LCP优化版本
+
+export async function getPageStaticProps(props: any) {
+  const {params, category, format, targetFormat, pathname, i18nPath} = props
+  const {locale} = params;
+  const translations = await loadServerTranslations(i18nPath, locale)
+  const {t} = createTranslator(translations)
+  const languages: Record<string, string> = {};
+
+  for (const lang of supportedLocales) {
+    languages[lang] = getLocalizedPath(pathname, lang);
+  }
+
+  return {
+    title: t('seo.title'),
+    description: t('seo.description'),
+    keywords: t('seo.keywords'),
+    openGraph: {
+      title: t('seo.title'),
+      description: t('seo.description'),
+      type: 'website',
+      locale: locale,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('seo.title'),
+      description: t('seo.description'),
+    },
+    alternates: {
+      canonical: getLocalizedPath(pathname, locale),
+      languages: {
+        ...languages,
+        'x-default': getLocalizedPath(pathname, 'en'),
+      },
+    }
+  };
 }
 
-export default function ModernPageLayout({ 
-  children, 
-  locale,
-  showHeader = true,
-  showFooter = true
-}: ModernPageLayoutProps) {
-  
-  // 页面级动画变体
-  const pageVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        ease: 'easeOut'
-      }
-    }
-  };
+export default async function ModernPageLayout(props: any) {
+  const {locale, category, format, targetFormat, operation, operationProps, i18nPath} = props
+  const translations = await loadServerTranslations(i18nPath, locale)
+  const operationTranslations = await loadServerTranslations('common/operation', locale)
+  const translator = createTranslator(translations)
+  const Operation = operation ?? CompressorOperationSection
+  // 关键内容优先渲染 - 不等待翻译加载
+  // 翻译加载状态只影响非关键内容
 
-  const contentVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: 'easeOut',
-        delay: 0.1
-      }
-    }
-  };
-
+  // 渲染主要内容
   return (
-    <motion.div
-      variants={pageVariants}
-      initial="hidden"
-      animate="visible"
-      className="min-h-screen flex flex-col bg-slate-50"
-    >
-      {/* Header */}
-      {showHeader && (
-        <motion.header
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-          className="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-200"
-        >
-          <Header 
-            currentLocale={locale}
-            onLanguageChange={(newLocale) => {
-              // 语言切换逻辑
-              window.location.href = `/${newLocale}${window.location.pathname.replace(/^\/[a-z]{2}/, '')}`;
-            }}
+    <>
+      <StandardPageLayout locale={locale}>
+        <div className="page-base min-h-screen">
+          {/* Hero Section - LCP优化版本 */}
+          <HeroSection translator={translator}/>
+
+          {/* Compression Operation Section */}
+          <Operation
+            translations={translations}
+            operationTranslations={operationTranslations}
+            {...props}
+            {...operationProps}
           />
-        </motion.header>
-      )}
 
-      {/* Main Content */}
-      <motion.main
-        variants={contentVariants}
-        className="flex-1"
-      >
-        {children}
-      </motion.main>
+          {/* Features Section - 延迟渲染直到翻译加载完成 */}
+          <FeaturesSection translator={translator}/>
 
-      {/* Footer */}
-      {showFooter && (
-        <motion.footer
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
-          className="mt-auto"
-        >
-          <Footer currentLocale={locale} />
-        </motion.footer>
-      )}
-    </motion.div>
+          {/* FAQ Section - 延迟渲染直到翻译加载完成 */}
+          <FAQSection translator={translator}/>
+
+          {/* Use Cases Section - 延迟渲染直到翻译加载完成 */}
+          <UseCasesSection translator={translator}/>
+
+          {/* Technical Principles Section - 延迟渲染直到翻译加载完成 */}
+          <TechnicalSection translator={translator}/>
+
+          {/* Quick Links Section - CTA Style - 延迟渲染直到翻译加载完成 */}
+          <CTASection translator={translator}/>
+        </div>
+      </StandardPageLayout>
+    </>
   );
 }
-
-
-
-
-
-
-
-

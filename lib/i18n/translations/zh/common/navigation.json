@@ -16,6 +16,11 @@
     "converter": "转换器"
   },
   "compressor": {
+    "seo": {
+      "title": "图片压缩器 - 免费在线压缩工具 | TinyCompressor",
+      "description": "免费在线压缩图片！将JPG、PNG、WebP、AVIF、GIF文件大小减少高达90%，同时保持质量。智能压缩，支持批量处理。无需注册。",
+      "keywords": "图片压缩器, 压缩图片, 减少文件大小, JPG压缩, PNG压缩, WebP压缩, AVIF压缩, GIF压缩, 批量压缩, 在线图片优化器, 免费图片压缩工具"
+    },
     "title": "图像压缩器",
     "subtitle": "在保持质量的同时将图像文件大小减少多达90%。快速、安全、完全免费。",
     "description": "专业的图像压缩工具，帮助您优化图像用于网页、邮件和存储。支持所有主要图像格式，采用先进的压缩算法。",
@@ -169,6 +174,11 @@
     }
   },
   "converter": {
+    "seo": {
+      "title": "图片转换器 - 免费在线格式转换工具 | TinyCompressor",
+      "description": "在JPG、PNG、WebP、AVIF、GIF、HEIC格式之间即时转换图片。高质量格式转换，支持批量处理。免费在线图片转换工具。无需注册。",
+      "keywords": "图片转换器, 转换图片, JPG转PNG, PNG转JPG, WebP转换器, AVIF转换器, GIF转换器, HEIC转换器, 图片格式转换器, 在线图片转换器, 免费图片转换工具, 批量图片转换"
+    },
     "title": "图像转换器",
     "subtitle": "在不同格式之间转换图像，具有高质量和快速处理。",
     "description": "专业的图像转换工具，将您的图像在流行格式之间转换。支持 PNG、JPEG、WebP、AVIF 和 HEIC，采用先进的转换技术。",

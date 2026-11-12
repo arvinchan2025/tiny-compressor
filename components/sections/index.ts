@@ -1,0 +1,6 @@
+export {HeroSection} from './HeroSection'
+export {FAQSection} from './FAQSection'
+export {UseCasesSection} from './UseCasesSection'
+export {TechnicalSection} from './TechnicalSection'
+export {FeaturesSection} from './FeaturesSection'
+export {CTASection} from './CTASection'

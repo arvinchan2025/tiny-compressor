@@ -16,6 +16,11 @@
     "converter": "Conversor"
   },
   "compressor": {
+    "seo": {
+      "title": "Compressor de Imagens - Ferramenta Gratuita de Compressão Online | TinyCompressor",
+      "description": "Comprima imagens online gratuitamente! Reduza o tamanho dos arquivos JPG, PNG, WebP, AVIF, GIF em até 90% mantendo a qualidade. Compressão inteligente com processamento em lote. Não requer registro.",
+      "keywords": "compressor de imagens, comprimir imagens, reduzir tamanho arquivo, compressão JPG, compressão PNG, compressão WebP, compressão AVIF, compressão GIF, compressão em lote, otimizador imagem online, ferramenta gratuita compressão imagem"
+    },
     "title": "Compressor de imagens",
     "subtitle": "Reduza o tamanho dos arquivos de imagem em até 90% mantendo a qualidade. Rápido, seguro e completamente gratuito.",
     "description": "Ferramentas profissionais de compressão de imagens que ajudam você a otimizar suas imagens para web, email e armazenamento. Suporte para todos os formatos de imagem principais com algoritmos de compressão avançados.",
@@ -195,6 +200,11 @@
     }
   },
   "converter": {
+    "seo": {
+      "title": "Conversor de Imagens - Conversor Gratuito de Formatos Online | TinyCompressor",
+      "description": "Converta imagens entre formatos JPG, PNG, WebP, AVIF, GIF, HEIC instantaneamente. Conversão de formatos de alta qualidade com processamento em lote. Ferramenta gratuita de conversão de imagens online. Não requer registro.",
+      "keywords": "conversor de imagens, converter imagens, JPG para PNG, PNG para JPG, conversor WebP, conversor AVIF, conversor GIF, conversor HEIC, conversor formato imagem, conversor imagem online, ferramenta gratuita conversão imagem, conversão imagem em lote"
+    },
     "title": "Conversor de imagens",
     "subtitle": "Converta imagens entre diferentes formatos com alta qualidade e processamento rápido.",
     "description": "Ferramentas profissionais de conversão de imagens que transformam suas imagens entre formatos populares. Suporte para PNG, JPEG, WebP, AVIF e HEIC com tecnologia de conversão avançada.",

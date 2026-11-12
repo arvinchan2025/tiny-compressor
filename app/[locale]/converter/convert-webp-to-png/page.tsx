@@ -1,12 +1,13 @@
 import {Metadata} from 'next';
 import {SupportedLanguage} from '@/types/i18n';
-import ModernConverterLayout, {getConverterStaticProps} from "@/components/pages/ModernConverterLayout";
+import ModernConverterLayout, {getConverterStaticProps} from "@/components/converter/ModernConverterLayout";
 
 interface ConvertWebpToPngPageProps {
   params: {
     locale: SupportedLanguage;
   };
 }
+
 const format = 'webp'
 const targetFormat = 'png'
 
