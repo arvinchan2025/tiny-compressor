@@ -17,22 +17,25 @@ import {
 } from '@/lib/i18n';
 import {createTranslator, loadServerTranslations} from "@/lib/i18n/ssr-optimization";
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  preload: true,
-  variable: '--font-inter',
-  weight: ['400', '500', '600', '700'],
-  fallback: [
-    'system-ui',
-    '-apple-system',
-    'BlinkMacSystemFont',
-    'Segoe UI',
-    'Roboto',
-    'sans-serif',
-  ],
-  adjustFontFallback: true,
-});
+// const inter = Inter({
+//   subsets: ['latin'],
+//   display: 'swap',
+//   preload: true,
+//   variable: '--font-inter',
+//   weight: ['400', '500', '600', '700'],
+//   fallback: [
+//     'system-ui',
+//     '-apple-system',
+//     'BlinkMacSystemFont',
+//     'Segoe UI',
+//     'Roboto',
+//     'sans-serif',
+//   ],
+//   adjustFontFallback: true,
+// });
+const inter = {
+  className: 'font-sans',
+};
 
 const languageInfo = {
   en: {
