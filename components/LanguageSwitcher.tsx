@@ -2,10 +2,12 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Locale } from '@/lib/i18n';
+import {usePathname, useRouter} from "next/navigation";
+import {SUPPORTED_LOCALES} from "@/lib/language-config";
 
 interface LanguageSwitcherProps {
   currentLocale: Locale;
-  onLanguageChange: (locale: string) => void;
+  onLanguageChange?: (locale: string) => void;
 }
 
 const languages = [
@@ -24,10 +26,50 @@ const languages = [
 
 export default function LanguageSwitcher({ 
   currentLocale, 
-  onLanguageChange 
+  // onLanguageChange
 }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+  const onLanguageChange = (locale: string) => {
+    if (!SUPPORTED_LOCALES.includes(locale as Locale)) {
+      return;
+    }
+
+    const nextLocale = locale as Locale;
+
+    if (nextLocale === currentLocale) {
+      return;
+    }
+
+    // 保存用户语言偏好
+    document.cookie = [
+      `preferred-locale=${nextLocale}`,
+      'Path=/',
+      'Max-Age=31536000',
+      'SameSite=Lax',
+    ].join('; ');
+
+    // 移除原语言前缀
+    const segments = pathname.split('/').filter(Boolean);
+
+    if (
+      segments.length > 0 &&
+      SUPPORTED_LOCALES.includes(segments[0] as Locale)
+    ) {
+      segments.shift();
+    }
+
+    // 英文不使用 URL 前缀
+    const prefix = nextLocale === 'en' ? [] : [nextLocale];
+
+    const nextPath = '/' + [...prefix, ...segments].join('/');
+
+    router.push(
+      nextPath + window.location.search + window.location.hash
+    );
+  };
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {

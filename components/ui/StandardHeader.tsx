@@ -10,6 +10,7 @@ import StandardContainer from './StandardContainer';
 import Image from 'next/image';
 import {getNavigationPath} from '@/lib/i18n/path-utils';
 import {createTranslator} from "@/lib/i18n/ssr-optimization";
+import LanguageSwitcher from '../LanguageSwitcher';
 
 interface StandardHeaderProps {
   currentLocale: Locale;
@@ -123,10 +124,10 @@ export default function StandardHeader({
             </div>
 
             {/* Language Switcher */}
-            {/*<LanguageSwitcher*/}
-            {/*  currentLocale={currentLocale}*/}
-            {/*  onLanguageChange={onLanguageChange}*/}
-            {/*/>*/}
+            <LanguageSwitcher
+              currentLocale={currentLocale}
+              // onLanguageChange={onLanguageChange}
+            />
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
