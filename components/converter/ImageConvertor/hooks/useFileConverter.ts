@@ -1,4 +1,3 @@
-
 import {
   useState,
   useCallback,
@@ -10,6 +9,7 @@ import {
   ImageFile,
   ConversionResult,
 } from '@/types/image';
+import {convertImage} from "@/lib/image-processing/conversion";
 
 interface UseSingleFileConverterOptions {
   sourceFormat: string;
@@ -52,12 +52,12 @@ function loadImageMetadata(
 }
 
 export function useFileConverter({
-  sourceFormat,
-  targetFormat,
-  initialFile,
-  onComplete,
-  onReset,
-}: any) {
+                                   sourceFormat,
+                                   targetFormat,
+                                   initialFile,
+                                   onComplete,
+                                   onReset,
+                                 }: any) {
   // -----------------------------------------------
   // State
   // -----------------------------------------------
@@ -238,25 +238,28 @@ export function useFileConverter({
        *   setProgress,
        * );
        */
-
-      for (let value = 0; value <= 100; value += 10) {
-        await new Promise((resolve) => setTimeout(resolve, 80));
-
-        if (!mountedRef.current) return;
-
-        setProgress(value);
-      }
-
-      const convertedResult: ConversionResult = {
-        originalFile: file,
-
-        // Mock only: this is still the original file.
-        convertedFile: file.file,
-
-        fromFormat: sourceFormat,
-        toFormat: targetFormat,
-        processingTime: Date.now() - startTime,
-      };
+      // for (let value = 0; value <= 100; value += 10) {
+      //   await new Promise((resolve) => setTimeout(resolve, 80));
+      //
+      //   if (!mountedRef.current) return;
+      //
+      //   setProgress(value);
+      // }
+      const convertedResult = await convertImage(
+        file,
+        sourceFormat,
+        targetFormat
+      );
+      // const convertedResult: ConversionResult = {
+      //   originalFile: file,
+      //
+      //   // Mock only: this is still the original file.
+      //   convertedFile: file.file,
+      //
+      //   fromFormat: sourceFormat,
+      //   toFormat: targetFormat,
+      //   processingTime: Date.now() - startTime,
+      // };
 
       if (!mountedRef.current) return;
 
